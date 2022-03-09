@@ -414,7 +414,7 @@ Die Reihenfolge ist nicht zufällig.
 ## Allgemeiner Teil
 
 Nun testen wir unsere Installation und machen uns dabei schon ein wenig mit VSCode vertraut. Wir werden einen neuen Ordner anlegen, eine neue Datei erstellen, ein Programm schreiben und dieses abarbeiten und debuggen.
-
+<details>
 Damit wir uns überhaupt zurechtfinden schauen wir uns aber erstmal an, was uns VSCode in der Grundansicht alles bietet:
   
   ![VSCodeUserInterface](https://user-images.githubusercontent.com/81232074/139573863-45d9073b-3110-40dc-8c92-5878025da812.png)
@@ -616,7 +616,7 @@ Eine ausführlichere Einführung in den Debugger gibt es hier:
 - [x] Programm geschrieben und gespeichert
 - [x] Programm abgearbeitet
 - [x] Programm debugt
-
+  </details>
 
 # Troubleshooting
 
