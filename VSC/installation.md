@@ -1,7 +1,6 @@
 # VSCode Installationsanleitung
 
-Dies ist eine Anleitung zur Installation von VSCode für die Vorlesung C.
-
+Dies ist eine Anleitung zur Installation von VSCode für die Vorlesung C.<br />
 Es beginnt mit einer betrisbssystem-spezifischen Anleitung für Linux, MacOS und Windows.<br />
 Im Anschluss daran gibt es einen allgemeinen Teil, in dem wir unsere Installation testen und ausprobieren.
 
