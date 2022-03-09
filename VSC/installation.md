@@ -6,18 +6,6 @@ Es beginnt mit einer betrisbssystem-spezifischen Anleitung für Linux, MacOS und
 
 Im Anschluss daran gibt es einen allgemeinen Teil, in dem wir unsere Installation testen und ausprobieren.
 
-Entworfen und getestet wurde die Anleitung auf frisch aufgesetzten Betriebssystemen. Sollte etwas nicht so funktionieren wie beschrieben schaut bitte in die Troubleshooting-Sektion. Hier gibt es zunächst einen allgemeinen Teil, der für alle gilt. Danach gibt es Abschnitte für die drei Betriebssysteme.
-
-
-## Linux
-
-<details>
-<summary>Click to expand</summary>
-
-Welcome to the light side. We all know you just clicked for the lulz.
-
-</details>
-
 ## MacOS
 
 <details>
@@ -663,9 +651,6 @@ Auch das Aufrufen des Compilers oder -noch öfter- des Debuggers kann Virenscann
 Der hauseigene Virenscanner von Windows (Defender) ist bisher eher zurückhaltend, bekannt sind Problem mit AntiVir und McAfee.
 
 In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstellen und es so probieren. Beim Testen von Compiler und Debugger kann man die Internetverbindung vorher trennen.
-
-
-## Linux
 
 ## MacOS
 
