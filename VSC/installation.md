@@ -137,22 +137,6 @@ und gehen dann wie auf den Screenshots markiert vor:
 
 <details> 
 <summary>Hier klicken um VSCode auf Windows zu installieren</summary> 
-
-<details> 
-<summary>Vorwort</summary> 
-Ihr seid im Begriff euch halbautomatisch 4 Programme, 3 Extensions, 1 Schriftartenfamilie und 2 Programmiersprachen zu installieren.
-Das spart eine Menge Zeit und wahrscheinlich zwei Dutzend Arbeitsschritte, bei denen sich Fehler einschleichen können. Trotzdem solltet ihr das nur bei absolut vertrauenswürdigen Quellen, wie hier einem Dokument aus einem Kurs der Hochschule, in Erwägung ziehen. 
-
-Für die Interessierten eine ganz kurze Erläuterung, was da vor sich geht.
-
-`<Set-ExecutionPolicy Bypass>`bedeutet, dass die üblichen Sicherheitseinstellungen umgangen werden und `<DownloadString('https://chocolatey.org/install.ps1')>` lädt ein Script (erkennbar an der Endung .ps1) aus dem Internet nach.
-
-Bei chocolatey handelt es sich um einen sogenannten „Packet Manager“, mit dem sich sehr einfach Programme installieren und aktualisieren lassen.
-Wer die Programme lieber von Hand installieren möchte, kann dies natürlich tun.
-Zunächst benötigen wir auch nur einen Complier und Debugger, wir nutzen mingw, und dann Visual Studio Code (es gibt auch Visual Studio ohne Code, das ist etwas anderes).
-Zu beachten ist jedoch, dass bei einer manuellen Installation Compiler und Debugger evtl. händisch zum „PATH“ hinzugefügt werden müssen. Das ist mit einer Suchmaschine eurer Wahl sicherlich auch kein Hexenwerk, sollte aber vor dem ersten Starten von VSCode erledigt sein.
-In VSCode empfehlen wir die Installation der Extensions „C/C++“ und „Code Runner“.
-</details>
   
 ### Installation von Visual Studio Code
 Zunächst rechts-klicken wir ganz unten links auf das Windows-Icon und wählen im erscheinenden Menü „Windows PowerShell (Administrator)“:
@@ -292,120 +276,14 @@ und gehen dann wie auf den Screenshots markiert vor:
 An dieser Stelle sind wir mit dem windows-spezifischen Teil der Installation und Grundeinrichtung durch, und begeben uns in den allgemeinen Teil dieses Tutorials, um unsere Arbeit zu testen und auszuprobieren.
   
 </details>  
-  
-### "Beta" Installation
-  
-<details> 
-<summary>Hier klicken um VSCode auf die kaum getestete Art zu installieren. </summary>
-  
-In diese PowerShell kopieren wir am Stück folgende Zeile:
-
-> Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-
-und bestätigen mit „Enter“ und warten ab, bis uns PowerShell einen frischen Eingabeprompt anbietet:
-
-<img width="163" alt="image" src="https://user-images.githubusercontent.com/78163337/111456918-d9065300-8717-11eb-93a9-88fddd8459ff.png">
-
-Damit wir uns sicher sein können, dass die Änderungen wirksam sind, schließen wir das PowerShell Fenster und öffnen ein neues (wieder mit Administrator-Rechten)
-Nun kopieren wir die folgende Zeile in die PowerShell, bestätigen mit Enter und warten wieder auf den Eingabeprompt. Hier passiert jetzt wirklich eine Menge und kann sich nach Internetverbindung und Rechner 20 - 30 Minuten hinziehen. Also bitte Geduld.
-
-  >choco install mingw --version=8.1.0 -y; choco install vscode vscode-cpptools vscode-code-runner vscode-gitlens vscode-icons vscode-live-share vscode-live-share-audio git cascadiafonts -y
-
-Jetzt kopiert ihr die Datei, installvscodeforc.exe in den Ordner, wo sich später euer Quellcode und eure Programme befinden sollen und führt sie aus, z. B. per Doppelklick. Dann lehnt ihr euch für ein, zwei Minütchen locker zurück.
-  
-Sollte es an dieser Stelle Probleme geben, hätte ich am ehesten einen Virenscanner im Verdacht. Die Lösung wäre es, diesen kurz zu deaktivieren, die Installation abzuschließen und ihn dann wieder zu aktivieren. Das ist natürlich euch überlassen.
-  
-Ein kleiner Hinweis vorab: 
-  
-Irgendwann wird VSCode wahrscheinlich
-  a) anbieten die Sprache zu wechseln (im Zweifelsfall auf die des Betriebssystems)
-  
-  und
-  
-  b) ein Update auf die Insiders-Version anbieten. 
-
-Zu a) Es ist natürlich Geschmacksache in welcher Sprache man seinen Editor haben möchte. Diese Anleitung bleibt bei Englisch. Ich empfehle daher dringend zumindest bis zum Ende dieses Tutorials die Sprache nicht zu ändern. Auch würde ich die Sprache nicht ändern, bevor der jeweilige Lehrende sagt, welche Sprache er oder sie benutzen wird. Ein gewichtiger Grund bei Englisch zu bleiben ist, dass es erfahrungsgemäß deutlich leichter ist einer Suchmaschine einen hilfreichen Treffer zu entlocken, wenn man eine englische Fehlermeldung eingibt.
-  
-Zu b) Davon am Insiders-Programm teilzunehmen wird abgeraten. Insiders bedeutet hier Beta-Tester und ein stabiler Betrieb ist wichtiger als die neuesten Features, die beim C-Programmieren kaum zum Tragen kommen werden.
-
-<img width="419" alt="image" src="https://user-images.githubusercontent.com/78163337/111457567-a446cb80-8718-11eb-9e1d-26213b51a86c.png">
-
-Die „richtige“ Antwort wäre also `<Nicht mehr anzeigen>`.
-
-Wir finden im Ordner Programmiersprache_C fertig vorbereitet die Datei HelloWorld.C
-
-<img width="421" alt="image" src="https://user-images.githubusercontent.com/78163337/111458047-44045980-8719-11eb-8bdf-54a3d9e8febd.png">
-
-Das Programm ist kurz und unspektakulär, aber ein echter Klassiker.
-
-Wir rechtsklicken in das Fenster mit unserem Code und wählen „Run Code“
-
-<img width="385" alt="image" src="https://user-images.githubusercontent.com/78163337/111458152-626a5500-8719-11eb-87fc-40ae6b391886.png">
-
-Weiter unten sehen wir in der Mitte von vielen anderen, eher kryptisch anmutenden Dingen, die Ausgabe unseres Programms, nämlich "hello world".
-
-<img width="283" alt="image" src="https://user-images.githubusercontent.com/78163337/111458210-77df7f00-8719-11eb-9e41-39180d41cfda.png">
-
-Wer diese Ausgabe "hello world" *nicht* erhält sollte sich an dieser Stelle der Troubleshooting-Sektion zuwenden. Solange ein Programm nicht abgearbeitet wird, wird auch das Folgende nicht funktionieren. Bei wem nur das "andere Zeug" drumherum anders aussieht, braucht sich keine Sorgen machen.
-
-Dies ist das Ende der "Beta-Installation". Bei Problemen stehe ich gerne unter der E-Mail Adresse im Moodlekurs zur Verfügung.
- 
-Eine abgebrochene Installation lässt sich mit den folgenden Befehlen, wieder in einer administrativen PowerShell, entfernen:
-  
-  >choco uninstall mingw vscode vscode-cpptools vscode-code-runner vscode-gitlens vscode-icons vscode-live-share vscode-live-share-audio git cascadiafonts -y
-
-Und danach
-
-  >Remove-Item C:\ProgramData\chocolatey -Recurse
-  
-</details>
-  
 </details>
 
 ## Ich habe VSCode bereits installiert
 
 <details>
-<summary>Click to expand</summary>
+<summary>Details</summary>
 
 Kein Problem. Du kannst der entsprechenden Anleitung trotzdem einfach folgen. Falls du MacOS nutzt überspring einfach den Schritt mit dem Herunterladen und Installieren von VSCode an sich, falls du Windows benutzt kannst du einfach der Anleitung 100% folgen.
-
-</details>
-
-## Ich möchte VSCode lieber manuell installieren
-
-<details>
-<summary>Click to expand</summary>
-
-Falls du Mac-User bist, sollte das kein gesteigertes Problem sein. Die Anleitung zeigt eigentlich nur ein Beispiel für eine manuelle Installation. Nur für Windows musste ich in die Trickkiste greifen, damit alles funktioniert. 
-  
-
-  Falls du Windows-User bist:
-
-Ok, ich respektiere das. Aber es gibt einen Grund, warum ich versucht habe die Installation so weit wie möglich zu automatisieren. Du solltest Computer mögen und selbstständig troubleshooten können.
-  
-Ich kann dir sagen, was die Installation laut Anleitung grob tut und wo ich kämpfen musste, aber den restlichen "Spaß" überlasse ich dir. 
-  
-Das ist die Liste der Dinge die wir installieren:
-  
-  mingw vscode vscode-cpptools vscode-code-runner vscode-gitlens vscode-icons vscode-live-share vscode-live-share-audio git cascadiafonts
-  
-Die Reihenfolge ist nicht zufällig. 
-  
-  mingw beinhaltet Compiler (gcc) und Debugger (gdb) für Windows. Der Debugger ist leider irgendwann aus dem Paket verschwunden. In der Anleitung kann
-  ich mit Chocolatey alte Versionen ziehen. In Version 8.1.0 war gdb noch dabei. Du kannst das gesamte Paket aber noch im Internet finden. [Hier ist der Download link](http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download), du musst allerdings selbst alle Konfigurationen vornehmen.
-  
-  vscode kannst du einfach runterladen und installieren. Das ist der leichte Teil. VSCode ist aber "nur" ein Editor mit Sonderleistungen, keine fertige C-Entwicklungsumgebung. 
-  Du benötigst die oben genannten Erweiterungen, die du aber ganz einfach über den Reiter *Extentions* finden und installieren kannst.  
-  Grundsätzlich solltest du nun einfach der Anleitung für das erste Projekt folgen können. Falls es aber Probleme gibt, bist du auf die alleine gestellt.
-  Schaue dazu gerne die Anleitung von Microsoft an, die mir sehr geholfen hat:
-  
-  https://code.visualstudio.com/docs/languages/cpp
-  
-  Tipp: Schau in die launch.json, task.json und settings.json aus dem git repository, das man lädt, wenn man der Anleitung folgt.
-  
-  git hat soweit ich mich erinnere keine weiteren Probleme gemacht. Brauchst du auch nicht zwangsläufig.
-  
-  cascadiafonts ist eine Schriftartenfamilie, die speziell für Programmier entwickelt wurde. Wenn du's bis hier geschafft hast, bekommst du das auch noch hin; ansonsten, egal, das ist fast nur Kosmetik, andere Schriftarten sind auch ok.
 
 </details>
   
