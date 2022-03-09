@@ -619,7 +619,7 @@ Eine ausführlichere Einführung in den Debugger gibt es hier:
   </details>
 
 # Troubleshooting
-
+<details>
 ## Allgemein
 
 ### Sonder- oder Leerzeichen irgendwo im Pfad?
@@ -701,3 +701,4 @@ Eine unvollständige Installation von Chocolatey kann man mit folgendem Befehl e
 > Remove-Item C:\ProgramData\chocolatey -Recurse
 
 </details>
+  </details>
