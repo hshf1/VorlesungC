@@ -2,7 +2,7 @@
 
 Dies ist eine Anleitung zur Installation von VSCode für die Vorlesung C.<br />
 Es beginnt mit einer betrisbssystem-spezifischen Anleitung für MacOS und Windows.<br />
-Im Anschluss daran gibt es einen allgemeinen Teil, in dem wir unsere Installation testen und ausprobieren.
+Für die Installation ist es erforderlich, dass ihr über die Adminrechte verfügt.<br />
 
 ## MacOS
 
@@ -277,6 +277,15 @@ An dieser Stelle sind wir mit dem windows-spezifischen Teil der Installation und
 Kein Problem. Du kannst der entsprechenden Anleitung trotzdem einfach folgen. Falls du MacOS nutzt überspring einfach den Schritt mit dem Herunterladen und Installieren von VSCode an sich, falls du Windows benutzt kannst du einfach der Anleitung 100% folgen.
 
 </details>
+  
+## Deinstallieren und neu installieren
+  <details>
+  <summary>Hier klicken um bei Fehlern VSCode zu deinstallieren und neu zu installieren.</summary>
+  
+    Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler auftreten, so könnt ihr es komplett deinstallieren und wieder anhand der oberen
+    Anleitung neu installieren.
+    
+  </details>
 
 # Troubleshooting
 <details>
