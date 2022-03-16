@@ -7,7 +7,7 @@ Für die Installation ist es erforderlich, dass ihr über die Adminrechte verfü
 ## MacOS
 
 <details>
-  <summary>Hier klicken um bei Fehlern VSCode zu deinstallieren und neu zu installieren.</summary>
+  <summary>Hier klicken, um bei Fehler VSCode zu deinstallieren und neu zu installieren.</summary>
   
     Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler auftreten, so könnt ihr es komplett deinstallieren und wieder anhand der oberen
     Anleitung neu installieren.
@@ -15,7 +15,7 @@ Für die Installation ist es erforderlich, dass ihr über die Adminrechte verfü
   </details>
 
 <details>
-<summary>Hier klicken um VSCode auf MacOS zu installieren</summary>  
+<summary>Hier klicken, um VSCode auf dem MacOS zu installieren.</summary>  
 
 ### Bevor wir beginnen
 Damit wir mit Visual Studio Code C programmieren können brauchen wir einen Compiler und Debugger. 
@@ -150,7 +150,7 @@ Kein Problem. Du kannst der entsprechenden Anleitung trotzdem einfach folgen. Fa
 ## Windows
 
   <details>
-  <summary>Hier klicken um bei Fehlern VSCode zu deinstallieren und neu zu installieren.</summary>
+  <summary>Hier klicken, um bei Fehler VSCode zu deinstallieren und neu zu installieren.</summary>
   
     Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler auftreten, so könnt ihr es komplett deinstallieren und wieder anhand der oberen
     Anleitung neu installieren.
@@ -158,7 +158,7 @@ Kein Problem. Du kannst der entsprechenden Anleitung trotzdem einfach folgen. Fa
   </details>
   
 <details> 
-<summary>Hier klicken um VSCode auf Windows zu installieren</summary> 
+<summary>Hier klicken, um VSCode auf dem Windows zu installieren.</summary> 
   
 ### Installation von Visual Studio Code
 Zunächst rechts-klicken wir ganz unten links auf das Windows-Icon und wählen im erscheinenden Menü „Windows PowerShell (Administrator)“:
