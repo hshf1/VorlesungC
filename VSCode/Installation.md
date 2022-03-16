@@ -139,6 +139,13 @@ und gehen dann wie auf den Screenshots markiert vor:
 
 
 </details>
+  
+<details>
+<summary>Hier klicken, falls VSCode schon installiert ist.</summary>
+
+Kein Problem. Du kannst der entsprechenden Anleitung trotzdem einfach folgen. Falls du MacOS nutzt überspring einfach den Schritt mit dem Herunterladen und Installieren von VSCode an sich, falls du Windows benutzt kannst du einfach der Anleitung 100% folgen.
+
+</details>
 
 ## Windows
 
@@ -285,15 +292,12 @@ An dieser Stelle sind wir mit dem windows-spezifischen Teil der Installation und
   
 </details>  
 
-## Ich habe VSCode bereits installiert
-
 <details>
-<summary>Details</summary>
+<summary>Hier klicken, falls VSCode schon installiert ist.</summary>
 
 Kein Problem. Du kannst der entsprechenden Anleitung trotzdem einfach folgen. Falls du MacOS nutzt überspring einfach den Schritt mit dem Herunterladen und Installieren von VSCode an sich, falls du Windows benutzt kannst du einfach der Anleitung 100% folgen.
 
 </details>
-  
 
 # Troubleshooting
 <details>
