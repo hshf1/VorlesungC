@@ -92,8 +92,9 @@ Jetzt kopieren wir die folgende Zeile in die PowerShell, bestätigen mit Enter u
 
 > choco install vscode vscode-cpptools vscode-code-runner vscode-gitlens git cascadiafonts python -y
 
-Dieses Mal kann das ein paar Minütchen dauern, wir warten einfach, bis der neue Eingabepromt zu sehen ist.
+Dieses Mal kann das ein paar Minütchen dauern, wir warten einfach, bis der neue Eingabepromt zu sehen ist.<br />
 
+Hiermit wäre die Installation auch schon fertig und wir können mit [Grundeinstellungen](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Grundeinstellungen.md) und [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
 </details>  
 
 <details>
