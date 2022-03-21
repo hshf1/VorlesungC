@@ -51,6 +51,7 @@ Wir möchten die drei Extensions C/C++, Code Runner und GitLens. Oft gibt es ein
 ![image](https://user-images.githubusercontent.com/78163337/112048726-00618380-8b4f-11eb-84c5-c4ed73dc9d22.png)
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Grundeinstellungen](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Grundeinstellungen.md) und [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
+  </details>
   
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
