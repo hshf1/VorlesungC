@@ -1,8 +1,7 @@
 # Gelöste Probleme (in Bearbeitung)
 
 Dies ist eine Sammlung bekannter Fehlermeldungen.
-
-Sie ist nicht sortiert und nicht vollständig, da manche Fehlermeldungen an anderer Stelle besser aufgehoben sind. 
+Solltest du keine Lösung zu deinem Problem finden, so schick bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.
 
 ### Die Idee ist es die github Suchfunktion für dieses Respository zu nutzen:
 
