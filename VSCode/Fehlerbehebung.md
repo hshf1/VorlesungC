@@ -1,4 +1,4 @@
-# Gelöste Probleme (in Bearbeitung)
+# Fehlerbehebung (in Bearbeitung)
 
 Dies ist eine Sammlung bekannter Fehlermeldungen.
 Solltest du keine Lösung zu deinem Problem finden, so schick bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.
@@ -30,8 +30,6 @@ Interessanterweise ist beim Ausführen des Programms (mittels Code Runner) oft C
 
 Mehr Lösungshinweise gibt es in der [Troubleshooting Sektion](https://github.com/hshf1/cprog/blob/main/installation.md#troubleshooting) der Installationsanleitung.
 
-# Troubleshooting
-<details>
 ## Allgemein
 
 ### Sonder- oder Leerzeichen irgendwo im Pfad?
@@ -113,4 +111,3 @@ Eine unvollständige Installation von Chocolatey kann man mit folgendem Befehl e
 > Remove-Item C:\ProgramData\chocolatey -Recurse
 
 </details>
-  </details>
