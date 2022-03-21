@@ -24,10 +24,9 @@ ein und überprüfen das Ergebnis wieder mit
 
 Nun sollte eine Versionsnummer angezeigt werden und wir können mit Schritt 2 weiter machen.
 
-### Installation von Visual Studio Code
-Wir öffnen im Browser unserer Wahl die folgende Website:
+### Schritt 2
+Wir laden VSCode für Mac herunter, indem wir auf den folgenden Link klicken:
 https://code.visualstudio.com/docs?dv=osx
-und laden dadurch VS Code for Mac herunter.
 
 Danach schieben wir im Finder einfach die Datei `<Visual Studio Code.app>` in den `<Programme>` Ordner. 
 
