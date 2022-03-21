@@ -10,10 +10,10 @@ Für die Installation ist es erforderlich, dass ihr über Adminrechte verfügt.<
 <summary>Hier klicken, um VSCode auf dem MacOS zu installieren.</summary>  
 
 ### Bevor wir beginnen
-Damit wir mit Visual Studio Code C programmieren können brauchen wir einen Compiler und Debugger. 
+Damit wir mit Visual Studio Code C programmieren können, brauchen wir einen Compiler und Debugger. 
 
-Dazu öffnen wir, z. B. mit Spotlight oder aus dem Launchpad, ein Terminal und überprüfen, ob dies der Fall ist, indem wir
-> clang –version
+Dazu öffnen wir den Terminal und überprüfen, ob dies der Fall ist, indem wir
+> clang –version <
 eingeben. Bekommen wir eine Vesionsnummer angezeigt können wir bei Schritt 1 weitermachen.
 Ist dies nicht der Fall geben wir
 > Xcode-select –install
