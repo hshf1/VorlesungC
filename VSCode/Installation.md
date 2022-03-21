@@ -13,10 +13,12 @@ Für die Installation ist es erforderlich, dass ihr über Adminrechte verfügt.<
 Damit wir mit Visual Studio Code C programmieren können, brauchen wir einen Compiler und Debugger. 
 
 Dazu öffnen wir den Terminal und überprüfen, ob dies der Fall ist, indem wir
-> clang –version <
+> clang –version
+
 eingeben. Bekommen wir eine Vesionsnummer angezeigt können wir bei Schritt 1 weitermachen.
 Ist dies nicht der Fall geben wir
 > Xcode-select –install
+
 ein und überprüfen das Ergebnis mit einem weiteren 
 > clang –version
 
