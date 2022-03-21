@@ -212,7 +212,7 @@ Das ist kein Problem. Du kannst der Anleitung zu 100% folgen.
   <details>
   <summary>Hier klicken, um bei Fehler VSCode zu deinstallieren und neu zu installieren.</summary>
 Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler auftreten, so könnt ihr es komplett deinstallieren und wieder anhand der oberen Anleitung neu installieren.
-    
+<br />
 Dafür müsst ihr diese Programme deinstallieren:
     
 Zum Schluss starten wir noch die PowerShell mit Adminrechten und geben folgenden Code ein:
