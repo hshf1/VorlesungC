@@ -56,15 +56,15 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Grundeinst
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
 
-Kein Problem. Du kannst der entsprechenden Anleitung trotzdem einfach folgen. Falls du MacOS nutzt überspring einfach den Schritt mit dem Herunterladen und Installieren von VSCode an sich, falls du Windows benutzt kannst du einfach der Anleitung 100% folgen.
+Das ist kein Problem, nach Schritt 1 kannst du in diesem Fall Schritt 2 überspringen und mit Schritt 3 weiter machen.
 
 </details>
   
   <details>
   <summary>Hier klicken, um bei Fehler VSCode zu deinstallieren und neu zu installieren.</summary>
   
-    Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler auftreten, so könnt ihr es komplett deinstallieren und wieder anhand der oberen
-    Anleitung neu installieren.
+Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler auftreten, so könnt ihr es komplett deinstallieren 
+und wieder anhand der oberen Anleitung neu installieren.
     
   </details>
 
