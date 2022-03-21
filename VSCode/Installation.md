@@ -7,14 +7,6 @@ Für die Installation ist es erforderlich, dass ihr über Adminrechte verfügt.<
 ## MacOS
 
 <details>
-  <summary>Hier klicken, um bei Fehler VSCode zu deinstallieren und neu zu installieren.</summary>
-  
-    Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler auftreten, so könnt ihr es komplett deinstallieren und wieder anhand der oberen
-    Anleitung neu installieren.
-    
-  </details>
-
-<details>
 <summary>Hier klicken, um VSCode auf dem MacOS zu installieren.</summary>  
 
 ### Bevor wir beginnen
@@ -146,9 +138,7 @@ und gehen dann wie auf den Screenshots markiert vor:
 Kein Problem. Du kannst der entsprechenden Anleitung trotzdem einfach folgen. Falls du MacOS nutzt überspring einfach den Schritt mit dem Herunterladen und Installieren von VSCode an sich, falls du Windows benutzt kannst du einfach der Anleitung 100% folgen.
 
 </details>
-
-## Windows
-
+  
   <details>
   <summary>Hier klicken, um bei Fehler VSCode zu deinstallieren und neu zu installieren.</summary>
   
@@ -156,6 +146,8 @@ Kein Problem. Du kannst der entsprechenden Anleitung trotzdem einfach folgen. Fa
     Anleitung neu installieren.
     
   </details>
+
+## Windows
   
 <details> 
 <summary>Hier klicken, um VSCode auf dem Windows zu installieren.</summary> 
@@ -298,3 +290,10 @@ An dieser Stelle sind wir mit dem windows-spezifischen Teil der Installation und
 Kein Problem. Du kannst der entsprechenden Anleitung trotzdem einfach folgen. Falls du MacOS nutzt überspring einfach den Schritt mit dem Herunterladen und Installieren von VSCode an sich, falls du Windows benutzt kannst du einfach der Anleitung 100% folgen.
 
 </details>
+  <details>
+  <summary>Hier klicken, um bei Fehler VSCode zu deinstallieren und neu zu installieren.</summary>
+  
+    Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler auftreten, so könnt ihr es komplett deinstallieren und wieder anhand der oberen
+    Anleitung neu installieren.
+    
+  </details>
