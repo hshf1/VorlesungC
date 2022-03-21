@@ -82,11 +82,13 @@ und bestätigen mit „Enter“ und warten solange, bis uns PowerShell einen fri
 
 <img width="163" alt="image" src="https://user-images.githubusercontent.com/78163337/111456918-d9065300-8717-11eb-93a9-88fddd8459ff.png">
 
+### Schritt 2
 Nun schließen wir die PowerShell und öffnen es wie vorhin erneut mit Adminrechten.
 Nun kopieren wir die folgende Zeile in die PowerShell, bestätigen mit Enter und warten wieder auf den Eingabeprompt.
 
 > choco install mingw --version=8.1.0 -y
 
+### Schritt 3
 Wir schließen die PowerShell und öffnen es wie vorhin erneut mit Adminrechten.
 Jetzt kopieren wir die folgende Zeile in die PowerShell, bestätigen mit Enter und warten wieder auf den Eingabepromt.
 
