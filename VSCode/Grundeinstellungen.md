@@ -124,15 +124,10 @@ Jetzt ist es endlich soweit und wir öffnen Visual Studio Code.
 Ein kleiner Hinweis vorab: 
   
 Irgendwann wird VSCode wahrscheinlich
-  a) anbieten die Sprache zu wechseln (im Zweifelsfall auf die des Betriebssystems)
-  
-  und
-   
+  a) anbieten die Sprache zu wechseln (im Zweifelsfall auf die des Betriebssystems)   
 
 Zu a) Es ist natürlich Geschmacksache in welcher Sprache man seinen Editor haben möchte. Diese Anleitung bleibt bei Englisch. Ich empfehle daher dringend zumindest bis zum Ende dieses Tutorials die Sprache nicht zu ändern. Auch würde ich die Sprache nicht ändern, bevor der jeweilige Lehrende sagt, welche Sprache er oder sie benutzen wird. Ein gewichtiger Grund bei Englisch zu bleiben ist, dass es erfahrungsgemäß deutlich leichter ist einer Suchmaschine einen hilfreichen Treffer zu entlocken, wenn man eine englische Fehlermeldung eingibt.
   
-<img width="419" alt="image" src="https://user-images.githubusercontent.com/78163337/111457567-a446cb80-8718-11eb-9e1d-26213b51a86c.png">
-
 In der Startansicht wählen wir „Open folder…“
 
 <img width="239" alt="image" src="https://user-images.githubusercontent.com/78163337/111457735-dce6a500-8718-11eb-8ad8-504a45538b74.png">
