@@ -206,14 +206,18 @@ An dieser Stelle sind wir mit dem windows-spezifischen Teil der Installation und
 
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
-
-Kein Problem. Du kannst der entsprechenden Anleitung trotzdem einfach folgen. Falls du MacOS nutzt überspring einfach den Schritt mit dem Herunterladen und Installieren von VSCode an sich, falls du Windows benutzt kannst du einfach der Anleitung 100% folgen.
+Das ist kein Problem. Du kannst der Anleitung zu 100% folgen.
 
 </details>
   <details>
   <summary>Hier klicken, um bei Fehler VSCode zu deinstallieren und neu zu installieren.</summary>
-  
-    Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler auftreten, so könnt ihr es komplett deinstallieren und wieder anhand der oberen
-    Anleitung neu installieren.
+Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler auftreten, so könnt ihr es komplett deinstallieren und wieder anhand der oberen Anleitung neu installieren.
+    
+Dafür müsst ihr diese Programme deinstallieren:
+    
+Zum Schluss starten wir noch die PowerShell mit Adminrechten und geben folgenden Code ein:
+> Remove-Item C:\ProgramData\chocolatey -Recurse
+    
+Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
     
   </details>
