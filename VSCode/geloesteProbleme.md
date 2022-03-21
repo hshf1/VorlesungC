@@ -1,4 +1,4 @@
-# Gelöste Probleme
+# Gelöste Probleme (in Bearbeitung)
 
 Dies ist eine Sammlung bekannter Fehlermeldungen.
 
