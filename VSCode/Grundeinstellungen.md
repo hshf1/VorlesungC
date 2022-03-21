@@ -1,4 +1,4 @@
-### Konfiguration von VSCode
+### Konfiguration von VSCode (in Bearbeitung)
 
 #### Grundeinrichtung
 
