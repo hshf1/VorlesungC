@@ -30,16 +30,13 @@ https://code.visualstudio.com/docs?dv=osx
 
 Danach schieben wir im Finder einfach die Datei `<Visual Studio Code.app>` in den `<Programme>` Ordner. 
 
-### Konfiguration von VSCode
-
-#### Grundeinrichtung
-
-Wir öffnen als nächstes unser Visual Studio Code.
+### Schritt 3
+Wir öffnen als nächstes Visual Studio Code.<br />
 Ein kleiner Hinweis vorab: Irgendwann wir VSCode wahrscheinlich ein Update auf die Insiders-Version anbieten. Davon wird abgeraten. Insiders bedeutet hier Beta-Tester und ein stabiler Betrieb ist wichtiger als die neuesten Features, die beim C-Programmieren kaum zum Tragen kommen werden.
 
 <img width="419" alt="image" src="https://user-images.githubusercontent.com/78163337/111457567-a446cb80-8718-11eb-9e1d-26213b51a86c.png">
 
-Die „richtige“ Antwort wäre also `<Nicht mehr anzeigen>`.
+Bei dieser Meldung also einfach auf `<Nicht mehr anzeigen>` klicken.
 
 Nun installieren wir einige Erweiterungen, in dem wir auf das Symbol mit 3+1 Quadraten auf der linken Seite klicken:
 
@@ -53,87 +50,7 @@ Wir möchten die drei Extensions C/C++, Code Runner und GitLens. Oft gibt es ein
 
 ![image](https://user-images.githubusercontent.com/78163337/112048726-00618380-8b4f-11eb-84c5-c4ed73dc9d22.png)
 
-In der Startansicht wählen wir `<„Open folder…“>`
-
-Hier können wir z.B. im Ordner „Dokumente“ einen neuen Ordner „Projekte“ anlegen.
-In diesem erstellen wir eine neue Datei,
-
-nennen sie 
-> HelloWorld.c
-Und füllen sie auch gleich mit unserem ersten kleinen Programm:
-
-<img width="376" alt="image" src="https://user-images.githubusercontent.com/78163337/112048927-369f0300-8b4f-11eb-9c8b-967b51e6c29b.png">
-
-Wir rechtsklicken (oder control+Klick) in das Fenster mit unserem Code und wählen „Run Code“. Alternativ Klicken wir oben rechts auf Play oder benutzen die Tastenkombination aus dem Screenshot:
-
-![image](https://user-images.githubusercontent.com/78163337/112048960-41f22e80-8b4f-11eb-9cb2-14f6c10ee3bd.png)
-
-Sollte es dabei Problemchen geben, kann das an einem Tippfehler liegen, mit dem wir uns hier nicht lange aufhalten wollen. 
-
-<details>
-<summary>Daher hier das Programm zum Kopieren und Einfügen</summary>
-
-> #include <stdio.h>
-> int main(){
->   printf("Hello World!\n");
->   return 0;
-> }
-
-</details>
-
-Spätestens jetzt können wir uns hoffentlich über unser erstes Programm freuen:
-
-<img width="283" alt="image" src="https://user-images.githubusercontent.com/78163337/112049524-09068980-8b50-11eb-94c8-79f7167ca78e.png">
-
-##### Code-Runner
-
-Damit wir später auch Programme mit Benutzereingaben, z. B. mit scanf, ausführen können, klicken wir unten links auf das Zahnrad und wählen dann Settings.
-
-<img width="219" alt="image" src="https://user-images.githubusercontent.com/78163337/112049574-1ae82c80-8b50-11eb-9a04-7d40bc4943b6.png">
-
-Dort geben wir „code-runner.runintermimal“ in die Suche ein und setzen den entsprechenden Haken. 
-
-![image](https://user-images.githubusercontent.com/78163337/111459615-351ea680-871b-11eb-9819-b7dce6bfdf37.png)
-
-#### Konfiguration des Debuggers
-
-Für den Fall, dass es in etwas komplizierteren Programmen zu Beginn mal nicht ganz rund läuft, richten wir auch gleich noch den Debugger ein.
-Ein Debugger ist ein Werkzeug, das bei der Fehlersuche behilflich ist. Man kann es sich vielleicht als MRT oder Röntgengerät mit eingebauter Zeitlupe vorstellen.
-
-Unser erstes Beispielprogramm HelloWorld.c funktioniert einerseits gut und enthält andererseits keine Variablen und nur eine Zeile sinnvoll "untersuchbaren" Code, sodass es zum Ausprobieren des Debuggers ungeeignet ist.
-
-Wir wählen links die Datei debugtest.c und klicken oben auf
-
-> Terminal
-
-und dann
-
-> Configure Default Build Task
-
-Auf meinem Rechner ist noch ein weiterer Compiler installiert, nicht irritieren lassen, wenn die Auswahl ein wenig anders aussieht.
-
-![image](https://user-images.githubusercontent.com/78163337/112050085-bd081480-8b50-11eb-80df-a291eb903839.png)
-
-In unserem Projekte Ordner legt uns VSCode nun automatisch eine Datei „tasks.json“ an. Diese gilt auch für alle Programme in diesem Ordner, wir müssen diesen Schritt also nur einmal ausführen. Sollte es im Folgenden Probleme geben, ist eine funktionierende Version dieser Datei im Anhang. Pfade, etc. können aber abweichen, daher dient diese eher dem Vergleich, als dem kompletten Ersetzen.
-
-Wir schreiben nun unser zweites Programm „debugtest.c“, mit dem Inhalt aus dem Screenshot unten:
-
-<img width="226" alt="image" src="https://user-images.githubusercontent.com/78163337/112050268-f2146700-8b50-11eb-8565-632c2626e7f5.png">
-
-**_Jetzt ist es wichtig, dass tatsächlich auch debugtest.c geöffnet und markiert ist (Focus hat), und nicht tasks.json, da VSCode nun eine weitere Konfigurationsdatei erzeugen wird, und zwar basierend auf der aktiven Datei._**
-
-Wir achten also darauf, dass wir unseren Code sehen können und klicken oben auf
-> Run
-und dann
-> Start Debugging
-und gehen dann wie auf den Screenshots markiert vor:
-
-![image](https://user-images.githubusercontent.com/78163337/112050854-939bb880-8b51-11eb-82ba-055a312bffa0.png)
-
-![image](https://user-images.githubusercontent.com/78163337/112050881-97c7d600-8b51-11eb-869a-f05a0b726c1c.png)
-
-
-</details>
+Hiermit wäre die Installation auch schon fertig und wir können mit [Grundeinstellungen](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Grundeinstellungen.md) und [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
   
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
