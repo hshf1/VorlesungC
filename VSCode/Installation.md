@@ -34,11 +34,6 @@ Danach schieben wir im Finder einfach die Datei `<Visual Studio Code.app>` in de
 
 ### Schritt 3
 Wir öffnen als nächstes Visual Studio Code.<br />
-Ein kleiner Hinweis vorab: Irgendwann wir VSCode wahrscheinlich ein Update auf die Insiders-Version anbieten. Davon wird abgeraten. Insiders bedeutet hier Beta-Tester und ein stabiler Betrieb ist wichtiger als die neuesten Features, die beim C-Programmieren kaum zum Tragen kommen werden.
-
-<img width="419" alt="image" src="https://user-images.githubusercontent.com/78163337/111457567-a446cb80-8718-11eb-9e1d-26213b51a86c.png">
-
-Bei dieser Meldung also einfach auf `<Nicht mehr anzeigen>` klicken.
 
 Nun installieren wir einige Erweiterungen, in dem wir auf das Symbol mit 3+1 Quadraten auf der linken Seite klicken:
 
@@ -74,8 +69,8 @@ https://support.apple.com/de-de/HT202235
 <details> 
 <summary>Hier klicken, um VSCode auf dem Windows zu installieren.</summary> 
   
-### Installation von Visual Studio Code
-Zunächst rechts-klicken wir ganz unten links auf das Windows-Icon und wählen im erscheinenden Menü „Windows PowerShell (Administrator)“:
+### Schritt 1
+Zunächst rechts-klicken wir auf das Windows-Icon und wählen im erscheinenden Menü „Windows PowerShell (Administrator)“:
 
 <img width="276" alt="image" src="https://user-images.githubusercontent.com/78163337/111452622-000e5600-8713-11eb-9c34-0cbfdfcc411c.png">
   
@@ -83,21 +78,21 @@ In diese PowerShell kopieren wir am Stück folgende Zeile:
 
 > Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-und bestätigen mit „Enter“ und warten ab, bis uns PowerShell einen frischen Eingabeprompt anbietet:
+und bestätigen mit „Enter“ und warten solange, bis uns PowerShell einen frischen Eingabeprompt anbietet:
 
 <img width="163" alt="image" src="https://user-images.githubusercontent.com/78163337/111456918-d9065300-8717-11eb-93a9-88fddd8459ff.png">
 
-Damit wir uns sicher sein können, dass die Änderungen wirksam sind, schließen wir das PowerShell Fenster und öffnen ein neues (wieder mit Administrator-Rechten)
+Nun schließen wir die PowerShell und öffnen es wie vorhin erneut mit Adminrechten.
 Nun kopieren wir die folgende Zeile in die PowerShell, bestätigen mit Enter und warten wieder auf den Eingabeprompt.
 
 > choco install mingw --version=8.1.0 -y
 
-Und noch ein drittes Mal:
+Wir schließen die PowerShell und öffnen es wie vorhin erneut mit Adminrechten.
+Jetzt kopieren wir die folgende Zeile in die PowerShell, bestätigen mit Enter und warten wieder auf den Eingabepromt.
 
 > choco install vscode vscode-cpptools vscode-code-runner vscode-gitlens git cascadiafonts python -y
 
-Dieses Mal kann sich die Sache auch ein paar Minütchen ziehen, nicht nervös werden.
-An dieser Stelle haben wir alles installiert was wir brauchen und können uns an die Einrichtung von VSCode machen.
+Dieses Mal kann das ein paar Minütchen dauern, wir warten einfach, bis der neue Eingabepromt zu sehen ist.
 
 ### Konfiguration von VSCode
 
