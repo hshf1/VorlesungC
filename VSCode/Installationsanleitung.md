@@ -85,6 +85,8 @@ und bestätigen mit „Enter“ und warten solange, bis uns PowerShell einen fri
 ### Schritt 2
 Nun schließen wir die PowerShell und öffnen es wie vorhin erneut mit Adminrechten.
 Nun kopieren wir die folgende Zeile in die PowerShell, bestätigen mit Enter und warten wieder auf den Eingabeprompt.
+  
+> cd %USERPROFILE%\Downloads & installChocolatey.cmd
 
 Dieses Mal kann das ein paar Minuten dauern, wir warten einfach, bis der neue Eingabepromt zu sehen ist.<br />
 
