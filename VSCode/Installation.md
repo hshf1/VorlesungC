@@ -92,7 +92,7 @@ Nun kopieren wir die folgende Zeile in die PowerShell, bestätigen mit Enter und
 Wir schließen die PowerShell und öffnen es wie vorhin erneut mit Adminrechten.
 Jetzt kopieren wir die folgende Zeile in die PowerShell, bestätigen mit Enter und warten wieder auf den Eingabepromt.
 
-> choco install vscode vscode-cpptools vscode-code-runner vscode-gitlens git cascadiafonts python -y
+> choco install vscode vscode-cpptools vscode-vsliveshare vscode-code-runner vscode-gitlens git cascadiafonts python -y
 
 Dieses Mal kann das ein paar Minütchen dauern, wir warten einfach, bis der neue Eingabepromt zu sehen ist.<br />
 
