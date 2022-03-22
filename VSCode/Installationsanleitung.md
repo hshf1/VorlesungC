@@ -70,21 +70,12 @@ https://support.apple.com/de-de/HT202235
 <summary>Hier klicken, um VSCode auf dem Windows zu installieren.</summary> 
   
 ### Schritt 1
-Zunächst rechts-klicken wir auf das Windows-Icon und wählen im erscheinenden Menü „Windows PowerShell (Administrator)“:
-
-<img width="276" alt="image" src="https://user-images.githubusercontent.com/78163337/111452622-000e5600-8713-11eb-9c34-0cbfdfcc411c.png">
-  
-In diese PowerShell kopieren wir am Stück folgende Zeile:
-
-> Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-
-und bestätigen mit „Enter“ und warten solange, bis uns PowerShell einen frischen Eingabeprompt anbietet:
 
 <img width="163" alt="image" src="https://user-images.githubusercontent.com/78163337/111456918-d9065300-8717-11eb-93a9-88fddd8459ff.png">
 
 ### Schritt 2
-Nun schließen wir die PowerShell und öffnen es wie vorhin erneut mit Adminrechten.
-Nun kopieren wir die folgende Zeile in die PowerShell, bestätigen mit Enter und warten wieder auf den Eingabeprompt.
+Wir öffnen das Terminal mit Adminrechten.
+Nun kopieren wir die folgende Zeile in das Terminal, bestätigen mit Enter und warten wieder auf den Eingabeprompt.
   
 > cd %USERPROFILE%\Downloads & installChocolatey.cmd
 
@@ -130,8 +121,6 @@ und bestätigen mit „Enter“ und warten solange, bis uns PowerShell einen fri
 ### Schritt 2
 Nun schließen wir die PowerShell und öffnen es wie vorhin erneut mit Adminrechten.
 Nun kopieren wir die folgende Zeile in die PowerShell, bestätigen mit Enter und warten wieder auf den Eingabeprompt.
-    
-> cd %USERPROFILE%\Downloads & installChocolatey.cmd
 
 > choco install mingw --version=8.1.0 -y
 
