@@ -112,7 +112,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
   <details> 
 <summary>Alternative Installation, falls die empfohlene Anleitung oben nicht funktioniert.</summary> 
     
-Dies ist eine alternative Möglichkeit, VSCode auf Windows zu installieren und sollte nur genutzt werden, wenn die Anleitung 
+Dies ist eine alternative Möglichkeit, VSCode auf Windows zu installieren und sollte nur genutzt werden, wenn die empfohlene Anleitung ein Stück weiter oben nicht funktioniert.
   
 ### Schritt 1
 Zunächst rechts-klicken wir auf das Windows-Icon und wählen im erscheinenden Menü „Windows PowerShell (Administrator)“:
