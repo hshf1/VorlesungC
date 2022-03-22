@@ -116,3 +116,7 @@ Zum Schluss starten wir noch die PowerShell mit Adminrechten und geben folgenden
 Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
     
   </details>
+  
+BETA
+  cd %USERPROFILE%\Downloads & installChocolatey.cmd
+  
