@@ -398,3 +398,9 @@ Eine ausführlichere Einführung in den Debugger gibt es hier:
 - [x] Programm geschrieben und gespeichert
 - [x] Programm abgearbeitet
 - [x] Programm debugt
+
+##Debuggen
+
+<details>
+<summary>Debuggen</summary>
+  </details>
