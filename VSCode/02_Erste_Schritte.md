@@ -214,7 +214,7 @@ Im Panel kann man sich das Terminal, bestehende Probleme, den output oder die De
   
 Die Status Bar tut das was der Name schon sagt. Besonders relevant ist für uns die Stelle wo im Beispiel UTF-8 steht. Wenn man das verstellt, kann es zu merkwürdigem Verhalten bei der Darstellung mancher Zeichen kommen, wie ä, ü, ß, ...  Was da bei wem stehen muss, erfahren wir gleich.
 
-### .vsode und settings.json
+### .vscode und settings.json
   
 Im "obersten" Ordner befindet sich hoffentlich ein Ordner namens .vscode, in dem sich wiederum eine Datei namens settings.json befindet.
   
@@ -274,12 +274,6 @@ Wir begeben uns in unsere neu angelegte Datei beispielProgramm.c
 
 und fügen folgenden Text ein:
 
-> 
->
-> 
->
-> 
->     
 >     
 >     /*Ein Programm ohne höheres Ziel. Wir wollen nur VSCode kennenlernen und den Debugger ausprobieren*/
 >     
@@ -376,11 +370,11 @@ Die letze Zeile ruft dann einfach unsere gerade kreierte ausführbare Datei auf,
 - [x] Datei angelegt
 - [x] Programm geschrieben und gespeichert
 - [x] Programm abgearbeitet
-- [ ] Programm debugt
 
+## Debuggen
 
-### Programm debuggen
-
+<details>
+<summary>Debuggen</summary>
 Das Folgende ist eher ein Funktionstest oder ein erstes Kennenlernen des Debuggers, kein kompletter Vorgehensvorschlag oder Best Practice zum Debuggen! Einen Link zu einer etwas tiefergehenden Einführung zur Arbeit mit dem Debugger findet ihr am Ende dieser Sektion!  
   
 Zum Debugger gelangen wir z.B., indem wir links auf das Symbol mit Play-Button und Käfer ([Bug](https://de.wikipedia.org/wiki/Programmfehler)) klicken.
@@ -392,15 +386,4 @@ Eine ausführlichere Einführung in den Debugger gibt es hier:
   
   https://github.com/hshf1/vscodeforc/blob/main/debugging.md
   
-  
-- [x] Ordner angelegt
-- [x] Datei angelegt
-- [x] Programm geschrieben und gespeichert
-- [x] Programm abgearbeitet
-- [x] Programm debugt
-
-## Debuggen
-
-<details>
-<summary>Debuggen</summary>
-  </details>
+</details>
