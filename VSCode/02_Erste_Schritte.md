@@ -102,22 +102,6 @@ und gehen dann wie auf den Screenshots markiert vor:
 
 ### Konfiguration von VSCode
 
-#### Grundeinrichtung
-
-Auch die Grundeinrichtung von VSCode beginnen wir in PowerShell, diesmal jedoch als normaler Benutzer. Der Nutzer in diesem Beispiel heißt mail und er möchte seine Programm im „Dokumente“-Ordner aufbewahren, also wechseln wir mit 
-
-> cd Documents
-
-in das Verzeichnis:
-
-<img width="159" alt="image" src="https://user-images.githubusercontent.com/78163337/111457345-5a5de580-8718-11eb-84e8-60ab31ce04f5.png">
-
-Dort laden wir uns mit
-
-> git clone https://github.com/hshf1/vscodeforc.git
-
-die Konfiguration (fast) fix und fertig von Github herunter:
-
 Jetzt ist es endlich soweit und wir öffnen Visual Studio Code.
   
 In der Startansicht wählen wir „Open folder…“
