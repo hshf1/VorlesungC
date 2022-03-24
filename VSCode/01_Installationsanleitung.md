@@ -95,7 +95,8 @@ Nun kopieren wir die folgende Zeile in das Terminal, bestätigen mit Enter und w
 
 Dieses Mal kann das ein paar Minuten dauern, wir warten einfach, bis der neue Eingabepromt zu sehen ist.
 
-![Schritt 2 Ende](https://user-images.githubusercontent.com/100713757/159832082-d23a04d2-42b3-400c-8861-7ebe39054771.png)
+![Schritt 2 Ende](https://user-images.githubusercontent.com/100713757/159840845-0ed0b1a5-feb6-4bdf-84c7-316d3cf0072e.png)
+
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
 </details>  
