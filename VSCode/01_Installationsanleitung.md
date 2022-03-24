@@ -49,9 +49,6 @@ Wir möchten die vier Extensions C/C++, Code Runner, Live Share und GitLens. Oft
   
 ![image](https://user-images.githubusercontent.com/100713757/159911055-cba05f87-f11f-402c-bec2-1551c6098574.png)
   
-<img width="1191" alt="Bildschirmfoto 2022-03-24 um 12 54 15" src="https://user-images.githubusercontent.com/100713757/159911055-cba05f87-f11f-402c-bec2-1551c6098574.png">
-
-
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
   </details>
   
