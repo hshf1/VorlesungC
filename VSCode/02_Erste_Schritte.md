@@ -2,7 +2,7 @@
 
 ## Allgemeiner Hinweis
 <details>
-<summary>Allgemeiner Hinweis</summary>
+<summary>anzeigen</summary>
 VSCode wird wahrscheinlich ein Update auf die Insiders-Version (Beta-Version) anbieten, wovon abgeraten wird. Ein stabiler Betrieb ist wichtiger als die neuesten Features, die beim C-Programmieren kaum zum Tragen kommen werden.
 
 <img width="419" alt="image" src="https://user-images.githubusercontent.com/78163337/111457567-a446cb80-8718-11eb-9e1d-26213b51a86c.png">
@@ -13,46 +13,32 @@ Bei dieser Meldung also einfach auf `<Nicht mehr anzeigen>` klicken.
 ## Grundeinstellungen
 
 <details>
-  <summary>Test</summary>
-  # Grundeinstellungen (in Bearbeitung)
+  <summary>anzeigen</summary>
+
+### Schritt 1
+  
+Damit wir VSCode testen können und es später auch etwas leichter mit den Einstellungen haben, laden wir uns unseren Projekt-Ordner hier runter:
 https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/hshf1/VorlesungC/tree/main/VSCode/VSCode
-#### Grundeinrichtung
+
+Den heruntergeladenen ZIP-Ordner entpacken wir und schieben es in ein Verzeichnis unserer Wahl (z.B. Dokumente oder Desktop). Damit auch die Voreinstellungen die wir für euch vorbereitet funktionieren, ist es wichtig den .vscode Ordner immer da zu haben, wo ihr eure Programmdateien speichert.
+Ihr könnt entweder den ganzen runtergeladenen Ordner verschieben oder wenn ihr an mehreren Orten etwas speichert, dann kopiert euch den Ordner .vscode einfach da mit rein.
+
+### Schritt 2
 
 In der Startansicht wählen wir `<„Open folder…“>`
 
-Hier können wir z.B. im Ordner „Dokumente“ einen neuen Ordner „Projekte“ anlegen.
-In diesem erstellen wir eine neue Datei,
-
-nennen sie 
-> HelloWorld.c
-Und füllen sie auch gleich mit unserem ersten kleinen Programm:
-
-<img width="376" alt="image" src="https://user-images.githubusercontent.com/78163337/112048927-369f0300-8b4f-11eb-9c8b-967b51e6c29b.png">
-
-Wir rechtsklicken (oder control+Klick) in das Fenster mit unserem Code und wählen „Run Code“. Alternativ Klicken wir oben rechts auf Play oder benutzen die Tastenkombination aus dem Screenshot:
+Hier wählen wir den Ordner, den wir in Schritt 1 runtergeladen haben. Ihr könnt direkt den Hauptordner VSCode auswählen oder den Unterordner Projekte.
+Nun haben wir im Explorer von VSCode eine Liste mit unseren Dateien und sehen auch den Ordner .vscode mit den ganzen Einstellungen darin. Wir gehen zuerst auf die Datei HelloWorld.c und starten das Programm, indem wir oben rechts auf Play drücken oder ein rechtsklick im Code machen und Run Code wählen.
 
 ![image](https://user-images.githubusercontent.com/78163337/112048960-41f22e80-8b4f-11eb-9cb2-14f6c10ee3bd.png)
-
-Sollte es dabei Problemchen geben, kann das an einem Tippfehler liegen, mit dem wir uns hier nicht lange aufhalten wollen. 
-
-<details>
-<summary>Daher hier das Programm zum Kopieren und Einfügen</summary>
-
-> #include <stdio.h>
-> int main(){
->   printf("Hello World!\n");
->   return 0;
-> }
-
-</details>
-
-Spätestens jetzt können wir uns hoffentlich über unser erstes Programm freuen:
+  
+Jetzt sollte das Programm erfolgreich durchlaufen worden sein und wir sehen im unteren Terminal die printf-Ausgabe hello world.
 
 <img width="283" alt="image" src="https://user-images.githubusercontent.com/78163337/112049524-09068980-8b50-11eb-94c8-79f7167ca78e.png">
 
-##### Code-Runner
+### Schritt 3
 
-Damit wir später auch Programme mit Benutzereingaben, z. B. mit scanf, ausführen können, klicken wir unten links auf das Zahnrad und wählen dann Settings.
+Damit wir später auch Programme mit Benutzereingaben, z. B. mit scanf ausführen können, klicken wir unten links auf das Zahnrad und wählen dann Settings.
 
 <img width="219" alt="image" src="https://user-images.githubusercontent.com/78163337/112049574-1ae82c80-8b50-11eb-9a04-7d40bc4943b6.png">
 
