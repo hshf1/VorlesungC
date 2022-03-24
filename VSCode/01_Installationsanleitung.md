@@ -79,6 +79,7 @@ Nachdem klicken auf RAW öffnet sich eine Seite, auf der wir mit einem rechtskli
 ![Schritt 1 Speichern unter](https://user-images.githubusercontent.com/100713757/159830836-fe4893a6-8524-473b-82b2-50b131aefe5a.jpg)
   
 Wichtig ist jetzt, dass die Datei mit einer .cmd Endung gespeichert wird! Die Datei muss im Downloadsordner mit dem Namen installChoco.cmd gespeichert sein.
+  
 ![Schritt 1 richtige Endung](https://user-images.githubusercontent.com/100713757/159831085-d213d866-d19a-42f4-ba7a-f20aa68c5fe8.png)
 
 ### Schritt 2
