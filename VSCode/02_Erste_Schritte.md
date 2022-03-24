@@ -1,5 +1,13 @@
 # Erste Schritte (in Bearbeitung)
 
+## Allgemeiner Hinweise
+
+Ein kleiner Hinweis vorab: Irgendwann wir VSCode wahrscheinlich ein Update auf die Insiders-Version anbieten. Davon wird abgeraten. Insiders bedeutet hier Beta-Tester und ein stabiler Betrieb ist wichtiger als die neuesten Features, die beim C-Programmieren kaum zum Tragen kommen werden.
+
+<img width="419" alt="image" src="https://user-images.githubusercontent.com/78163337/111457567-a446cb80-8718-11eb-9e1d-26213b51a86c.png">
+
+Bei dieser Meldung also einfach auf `<Nicht mehr anzeigen>` klicken.
+
 ## Grundeinstellungen
 
 <details>
@@ -109,17 +117,6 @@ Dort laden wir uns mit
 die Konfiguration (fast) fix und fertig von Github herunter:
 
 Jetzt ist es endlich soweit und wir öffnen Visual Studio Code.
-
-
-  
-
-  
-Ein kleiner Hinweis vorab: 
-  
-Irgendwann wird VSCode wahrscheinlich
-  a) anbieten die Sprache zu wechseln (im Zweifelsfall auf die des Betriebssystems)   
-
-Zu a) Es ist natürlich Geschmacksache in welcher Sprache man seinen Editor haben möchte. Diese Anleitung bleibt bei Englisch. Ich empfehle daher dringend zumindest bis zum Ende dieses Tutorials die Sprache nicht zu ändern. Auch würde ich die Sprache nicht ändern, bevor der jeweilige Lehrende sagt, welche Sprache er oder sie benutzen wird. Ein gewichtiger Grund bei Englisch zu bleiben ist, dass es erfahrungsgemäß deutlich leichter ist einer Suchmaschine einen hilfreichen Treffer zu entlocken, wenn man eine englische Fehlermeldung eingibt.
   
 In der Startansicht wählen wir „Open folder…“
 
@@ -187,12 +184,6 @@ An dieser Stelle sind wir mit dem windows-spezifischen Teil der Installation und
   
 
   </details>
-
-Ein kleiner Hinweis vorab: Irgendwann wir VSCode wahrscheinlich ein Update auf die Insiders-Version anbieten. Davon wird abgeraten. Insiders bedeutet hier Beta-Tester und ein stabiler Betrieb ist wichtiger als die neuesten Features, die beim C-Programmieren kaum zum Tragen kommen werden.
-
-<img width="419" alt="image" src="https://user-images.githubusercontent.com/78163337/111457567-a446cb80-8718-11eb-9e1d-26213b51a86c.png">
-
-Bei dieser Meldung also einfach auf `<Nicht mehr anzeigen>` klicken.
 
 Nun testen wir unsere Installation und machen uns dabei schon ein wenig mit VSCode vertraut. Wir werden einen neuen Ordner anlegen, eine neue Datei erstellen, ein Programm schreiben und dieses abarbeiten und debuggen.
 
