@@ -12,10 +12,30 @@ Immer dran denken, eure Programme zu speichern, bevor ihr diese ausführt. Sonst
 
 Ordnernamen und auch Dateinamen sollten weder Leerzeichen noch Umlaute enthalten! Solltet ihr eine Fehlermeldung kriegen, ist dies als erstes zu überprüfen und ggf. anzupassen. Neue Dateien, die ihr erstellt, müssen die Endung .c haben. So sagt ihr VSCode, dass ihr mit C programmieren wollt.
 
-## Grundeinstellungen
+## Erste Schritte
+
+<details> 
+  <summary>Grundansicht VSCode</summary>
+
+Damit wir uns überhaupt zurechtfinden, schauen wir uns aber erstmal an was uns VSCode in der Grundansicht alles bietet:
+![VSCodeUserInterface](https://user-images.githubusercontent.com/81232074/139573863-45d9073b-3110-40dc-8c92-5878025da812.png)
+
+In der Activity Bar können wir auswählen, was uns in der Side Bar angezeigt wird. Standardmäßig ist ganz oben 
+der Explorer, in dem wir unsere Dateien auswählen können, darunter 
+die Suche, die ziemlich selbsterklärend sein sollte, dann
+die Source Control, die sehr cool aber nicht klausurrelevant ist, anschließend
+der Debugger, der später in diesem Dokument noch näher erläutert wird und schließlich
+der Marketplace für "Extensions", mit denen sich VSCode erweitern und anpassen lässt. 
+  
+In den Editor Groups kann man seinen Code bearbeiten. Im Beispiel sind zwei zu sehen, was praktisch sein kann, wenn man z. B. herausbekommen möchte, warum die Schleife im letzten Programm ging und im aktuellen nicht.
+  
+Im Panel kann man sich das Terminal, bestehende Probleme, den output oder die Debug Console anzeigen lassen. Wichtig ist hier, dass C-Programme ins Terminal ausgeben und _nicht_ in den Output, was man vielleicht zunächst erwarten würde.
+  
+Die Status Bar tut das was der Name schon sagt. Besonders relevant ist für uns die Stelle wo im Beispiel UTF-8 steht. Wenn man das verstellt, kann es zu merkwürdigem Verhalten bei der Darstellung mancher Zeichen kommen, wie ä, ü, ß, usw.
+</details>
 
 <details>
-  <summary>Hier erweitern</summary>
+  <summary>Erste schritte</summary>
 
 ### Schritt 1
   
@@ -65,32 +85,6 @@ Eine genauere Anleitung zum [Debuggen](https://github.com/hshf1/VorlesungC/blob/
   
 </details>
 
-Nun testen wir unsere Installation und machen uns dabei schon ein wenig mit VSCode vertraut. Wir werden einen neuen Ordner anlegen, eine neue Datei erstellen, ein Programm schreiben und dieses abarbeiten und debuggen.
-
-Damit wir uns überhaupt zurechtfinden schauen wir uns aber erstmal an, was uns VSCode in der Grundansicht alles bietet:
-  
-  ![VSCodeUserInterface](https://user-images.githubusercontent.com/81232074/139573863-45d9073b-3110-40dc-8c92-5878025da812.png)
-
-In der Activity Bar können wir auswählen, was uns in der Side Bar angezeigt wird. Standardmäßig ist ganz oben 
-  der Explorer, in dem wir unsere Dateien auswählen können, darunter 
-  die Suche, die ziemlich selbsterklärend sein sollte, dann
-  die Source Control, die sehr cool aber nicht klausurrelevant ist, anschließend
-  der Debugger, der später in diesem Dokument noch näher erläutert wird und schließlich
-  der Marketplace für "Extensions", mit denen sich VSCode erweitern und anpassen lässt. 
-  
-In den Editor Groups kann man seinen Code bearbeiten. Im Beispiel sind zwei zu sehen, was praktisch sein kann, wenn man z. B. herausbekommen möchte, warum die Schleife im letzten Programm ging und im aktuellen nicht.
-  
-Im Panel kann man sich das Terminal, bestehende Probleme, den output oder die Debug Console anzeigen lassen. Wichtig ist hier, dass C-Programme ins Terminal ausgeben und _nicht_ in den Output, was man vielleicht zunächst erwarten würde.
-  
-Die Status Bar tut das was der Name schon sagt. Besonders relevant ist für uns die Stelle wo im Beispiel UTF-8 steht. Wenn man das verstellt, kann es zu merkwürdigem Verhalten bei der Darstellung mancher Zeichen kommen, wie ä, ü, ß, ...  Was da bei wem stehen muss, erfahren wir gleich.
-
-### .vscode und settings.json
-  
-Im "obersten" Ordner befindet sich hoffentlich ein Ordner namens .vscode, in dem sich wiederum eine Datei namens settings.json befindet.
-  
-Diese Datei gibt vscode Hinweise, wie es sich bitte verhalten soll, z. B. ob es nicht vielleicht ab und an mal alle Dateien speichern soll. 
-Aus meiner Sicht vernünftige Grundeinstellungen habe ich da schon mal vorbereitet. Je nach Betriebssystem sollte man noch das sogenannte "encoding" voreinstellen. Dazu entfernt man die beiden Schrägstriche (//) am Beginn der Zeile. utfbom für MacOS und cp437 für Windows.
-  
 ## Debuggen
 
 <details>
@@ -424,4 +418,11 @@ Die letze Zeile ruft dann einfach unsere gerade kreierte ausführbare Datei auf,
 - [x] Programm geschrieben und gespeichert
 - [x] Programm abgearbeitet
 
+### .vscode und settings.json
+  
+Im "obersten" Ordner befindet sich hoffentlich ein Ordner namens .vscode, in dem sich wiederum eine Datei namens settings.json befindet.
+  
+Diese Datei gibt vscode Hinweise, wie es sich bitte verhalten soll, z. B. ob es nicht vielleicht ab und an mal alle Dateien speichern soll. 
+Aus meiner Sicht vernünftige Grundeinstellungen habe ich da schon mal vorbereitet. Je nach Betriebssystem sollte man noch das sogenannte "encoding" voreinstellen. Dazu entfernt man die beiden Schrägstriche (//) am Beginn der Zeile. utfbom für MacOS und cp437 für Windows.
+  
 --->
