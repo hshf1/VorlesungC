@@ -13,7 +13,7 @@ Außerdem bitte immer dran denken, eure Programme zu speichern, bevor ihr diese 
 ## Grundeinstellungen
 
 <details>
-  <summary>Hier erweitern.</summary>
+  <summary>Hier erweitern</summary>
 
 ### Schritt 1
   
