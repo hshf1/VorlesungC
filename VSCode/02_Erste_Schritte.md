@@ -1,14 +1,13 @@
 # Erste Schritte (in Bearbeitung)
 
 ## Allgemeiner Hinweis
-<details>
-<summary>anzeigen</summary>
+
 VSCode wird wahrscheinlich ein Update auf die Insiders-Version (Beta-Version) anbieten, wovon abgeraten wird. Ein stabiler Betrieb ist wichtiger als die neuesten Features, die beim C-Programmieren kaum zum Tragen kommen werden.
 
 <img width="419" alt="image" src="https://user-images.githubusercontent.com/78163337/111457567-a446cb80-8718-11eb-9e1d-26213b51a86c.png">
 
 Bei dieser Meldung also einfach auf `<Nicht mehr anzeigen>` klicken.
-</details>
+
 
 ## Grundeinstellungen
 
@@ -46,11 +45,29 @@ Dort geben wir „code-runner.runintermimal“ in die Suche ein und überprüfen
 
 ![image](https://user-images.githubusercontent.com/78163337/111459615-351ea680-871b-11eb-9819-b7dce6bfdf37.png)
 
+### Schritt 4
+
+Unser erstes Beispielprogramm HelloWorld.c funktioniert einerseits gut und enthält andererseits keine Variablen und nur eine Zeile sinnvoll "untersuchbaren" Code, sodass es zum Ausprobieren des Debuggers ungeeignet ist.
+
+Wir wählen daher links die Datei debugtest.c und klicken oben auf
+
+> Run
+
+und dann
+
+> Start Debugging
+
+und gehen dann wie auf den Screenshots markiert vor:
+
+<img width="453" alt="image" src="https://user-images.githubusercontent.com/78163337/111460420-3ef4d980-871c-11eb-8171-68ef90b857eb.png">
+
+<img width="453" alt="image" src="https://user-images.githubusercontent.com/78163337/111460432-42886080-871c-11eb-8ad9-c00c8c94a59f.png">
+
+An dieser Stelle sind wir mit dem windows-spezifischen Teil der Installation und Grundeinrichtung durch, und begeben uns in den allgemeinen Teil dieses Tutorials, um unsere Arbeit zu testen und auszuprobieren. Eine genauere Anleitung zum [Debuggen](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md#debuggen) findet ihr weiter unten.
   
   
   
-  
-  
+ <!--- 
 #### Konfiguration des Debuggers
 
 Für den Fall, dass es in etwas komplizierteren Programmen zu Beginn mal nicht ganz rund läuft, richten wir auch gleich noch den Debugger ein.
@@ -71,6 +88,8 @@ Auf meinem Rechner ist noch ein weiterer Compiler installiert, nicht irritieren 
 ![image](https://user-images.githubusercontent.com/78163337/112050085-bd081480-8b50-11eb-80df-a291eb903839.png)
 
 In unserem Projekte Ordner legt uns VSCode nun automatisch eine Datei „tasks.json“ an. Diese gilt auch für alle Programme in diesem Ordner, wir müssen diesen Schritt also nur einmal ausführen. Sollte es im Folgenden Probleme geben, ist eine funktionierende Version dieser Datei im Anhang. Pfade, etc. können aber abweichen, daher dient diese eher dem Vergleich, als dem kompletten Ersetzen.
+
+--->
 
 Wir schreiben nun unser zweites Programm „debugtest.c“, mit dem Inhalt aus dem Screenshot unten:
 
@@ -133,30 +152,6 @@ Also begeben wir uns die die Settings, geben „code-runner.runinterminal“ in 
 <img width="310" alt="image" src="https://user-images.githubusercontent.com/78163337/111459570-246e3080-871b-11eb-8050-d287916a961c.png">
 
 ![image](https://user-images.githubusercontent.com/78163337/111459615-351ea680-871b-11eb-9819-b7dce6bfdf37.png) --->
-
-#### Konfiguration des Debuggers
-
-Für den Fall, dass es in etwas komplizierteren Programmen zu Beginn mal nicht ganz rund läuft, richten wir auch gleich noch den Debugger ein.
-Ein Debugger ist ein Werkzeug, das bei der Fehlersuche behilflich ist. Man kann es sich vielleicht als MRT oder Röntgengerät mit eingebauter Zeitlupe vorstellen.
-
-Unser erstes Beispielprogramm HelloWorld.c funktioniert einerseits gut und enthält andererseits keine Variablen und nur eine Zeile sinnvoll "untersuchbaren" Code, sodass es zum Ausprobieren des Debuggers ungeeignet ist.
-
-Wir wählen daher links die Datei debugtest.c und klicken oben auf
-
-> Run
-
-und dann
-
-> Start Debugging
-
-und gehen dann wie auf den Screenshots markiert vor:
-
-<img width="453" alt="image" src="https://user-images.githubusercontent.com/78163337/111460420-3ef4d980-871c-11eb-8171-68ef90b857eb.png">
-
-<img width="453" alt="image" src="https://user-images.githubusercontent.com/78163337/111460432-42886080-871c-11eb-8ad9-c00c8c94a59f.png">
-
-An dieser Stelle sind wir mit dem windows-spezifischen Teil der Installation und Grundeinrichtung durch, und begeben uns in den allgemeinen Teil dieses Tutorials, um unsere Arbeit zu testen und auszuprobieren.
-  
 
   </details>
 
