@@ -8,6 +8,7 @@ VSCode wird wahrscheinlich ein Update auf die Insiders-Version (Beta-Version) an
 
 Bei dieser Meldung also einfach auf `<Nicht mehr anzeigen>` klicken.
 
+Außerdem bitte immer dran denken, eure Programme zu speichern bevor ihr diese ausführt. Sonst wird nur der letzte gespeicherte Zustand ausgeführt und nicht der aktuelle.
 
 ## Grundeinstellungen
 
@@ -47,23 +48,14 @@ Dort geben wir „code-runner.runintermimal“ in die Suche ein und überprüfen
 
 ### Schritt 4
 
-Unser erstes Beispielprogramm HelloWorld.c funktioniert einerseits gut und enthält andererseits keine Variablen und nur eine Zeile sinnvoll "untersuchbaren" Code, sodass es zum Ausprobieren des Debuggers ungeeignet ist.
-
-Wir wählen daher links die Datei debugtest.c und klicken oben auf
-
-> Run
-
-und dann
-
-> Start Debugging
-
-und gehen dann wie auf den Screenshots markiert vor:
+Um den Debugger einzustellen und zu testen öffnen wir die Datei debugtest.c und klicken oben auf 'Run' dann 'Start Debugging' und gehen dann wie auf den Screenshots markiert vor:
 
 <img width="453" alt="image" src="https://user-images.githubusercontent.com/78163337/111460420-3ef4d980-871c-11eb-8171-68ef90b857eb.png">
 
 <img width="453" alt="image" src="https://user-images.githubusercontent.com/78163337/111460432-42886080-871c-11eb-8ad9-c00c8c94a59f.png">
 
-An dieser Stelle sind wir mit dem windows-spezifischen Teil der Installation und Grundeinrichtung durch, und begeben uns in den allgemeinen Teil dieses Tutorials, um unsere Arbeit zu testen und auszuprobieren. Eine genauere Anleitung zum [Debuggen](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md#debuggen) findet ihr weiter unten.
+Es öffnet sich eine .json Datei, welche wir wieder einfach schließen können.
+Eine genauere Anleitung zum [Debuggen](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md#debuggen) findet ihr weiter unten.
   
   
   
