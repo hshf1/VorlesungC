@@ -63,17 +63,6 @@ Interessanterweise ist beim Ausführen des Programms (mittels Code Runner) oft C
 
 </details>
 
-
-<details>
-<summary>"Running the contributed command :'extension.pickRemoteNativeProcess' failed"</summary>
-
-[Problem mit dem Virenscanner](https://github.com/hshf1/cprog/blob/main/installation.md#virenscanner)
-
-</details>
-
-
-Mehr Lösungshinweise gibt es in der [Troubleshooting Sektion](https://github.com/hshf1/cprog/blob/main/installation.md#troubleshooting) der Installationsanleitung.
-
 ## Allgemein
 
 ### Sonder- oder Leerzeichen irgendwo im Pfad?
@@ -113,4 +102,11 @@ Solltest du keine Lösung zu deinem Problem finden, so schick bitte eine E-Mail 
 ### Die Idee ist es die github Suchfunktion für dieses Respository zu nutzen:
 
 ![githubSuche](https://user-images.githubusercontent.com/81232074/113470733-0f520b00-9458-11eb-9f0c-46f9ba9994a9.png)
+
+<details>
+<summary>"Running the contributed command :'extension.pickRemoteNativeProcess' failed"</summary>
+
+[Problem mit dem Virenscanner](https://github.com/hshf1/cprog/blob/main/installation.md#virenscanner)
+
+</details>
 -->
