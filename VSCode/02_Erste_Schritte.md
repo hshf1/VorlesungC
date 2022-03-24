@@ -89,7 +89,6 @@ und gehen dann wie auf den Screenshots markiert vor:
 
 
 </details>
-<br /><br />
 
 ### Konfiguration von VSCode
 
