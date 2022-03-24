@@ -1,11 +1,55 @@
 # Fehlerbehebung (in Bearbeitung)
 
-Dies ist eine Sammlung bekannter Fehlermeldungen.
-Solltest du keine Lösung zu deinem Problem finden, so schick bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.
+## Allgemeine Fehler
 
-### Die Idee ist es die github Suchfunktion für dieses Respository zu nutzen:
+## MacOs Fehler
 
-![githubSuche](https://user-images.githubusercontent.com/81232074/113470733-0f520b00-9458-11eb-9f0c-46f9ba9994a9.png)
+### XCRUN
+<details>
+<summary>xcrun: error: invalid active developer path... </summary>
+
+Dann hat die Installation von xcode-select nicht geklappt. Manchmal "verschwindet" die Installation auch nach einem Update, z.B. des Betriebssystems.
+
+Dies lässt sich im Terminal wie folgt beheben:
+
+> xcode-select --install
+
+</details>
+
+### GitLens
+<details>
+<summary>"GitLens was unable to find Git. Please make sure Git is installed. Also ensure that Git is either in the PATH, or that 'git.path' is pointed to its installed location."</summary>
+
+Dann hat vermutlich die Installation von xcode-select nicht geklappt. Manchmal "verschwindet" die Installation auch nach einem Update, z.B. des Betriebssystems.
+
+Dies lässt sich im Terminal wie folgt beheben:
+
+> xcode-select --install
+
+</details>
+
+## Windows Fehler
+
+### Choco
+<details>
+<summary>Die Benennung "choco" wurde nicht als Name eines Cmdlet, einer Funktion, einer Skriptdatei oder eines ausführbaren Programms erkannt.</summary>
+
+Entweder wurde chocolatey nicht installiert, das Ende der Installation wurde nicht abgewartet oder die PowerShell Sitzung wurde nach der Installation nicht beendet.
+
+Also einmal PowerShell beenden und (wieder als Administrator) neu öffnen. Wenn das nicht hilft den vorherigen Schritt wiederholen.
+
+</details>
+
+### Existing Chocolatey installation
+<details>
+<summary>An existing Chocolatey installation was detected. Installation will not continue.
+For security reasons, this script will not overwrite existing installations.</summary>
+
+Eine unvollständige Installation von Chocolatey kann man mit folgendem Befehl entfernen:
+
+> Remove-Item C:\ProgramData\chocolatey -Recurse
+
+</details>
 
 
 <details>
@@ -62,52 +106,11 @@ Der hauseigene Virenscanner von Windows (Defender) ist bisher eher zurückhalten
 
 In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstellen und es so probieren. Beim Testen von Compiler und Debugger kann man die Internetverbindung vorher trennen.
 
-## MacOS
+<!--
+Dies ist eine Sammlung bekannter Fehlermeldungen.
+Solltest du keine Lösung zu deinem Problem finden, so schick bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.
 
-### XCRUN
-<details>
-<summary>xcrun: error: invalid active developer path... </summary>
+### Die Idee ist es die github Suchfunktion für dieses Respository zu nutzen:
 
-Dann hat die Installation von xcode-select nicht geklappt. Manchmal "verschwindet" die Installation auch nach einem Update, z.B. des Betriebssystems.
-
-Dies lässt sich im Terminal wie folgt beheben:
-
-> xcode-select --install
-
-</details>
-
-### GitLens
-<details>
-<summary>"GitLens was unable to find Git. Please make sure Git is installed. Also ensure that Git is either in the PATH, or that 'git.path' is pointed to its installed location."</summary>
-
-Dann hat vermutlich die Installation von xcode-select nicht geklappt. Manchmal "verschwindet" die Installation auch nach einem Update, z.B. des Betriebssystems.
-
-Dies lässt sich im Terminal wie folgt beheben:
-
-> xcode-select --install
-
-</details>
-
-## Windows
-
-### Choco
-<details>
-<summary>Die Benennung "choco" wurde nicht als Name eines Cmdlet, einer Funktion, einer Skriptdatei oder eines ausführbaren Programms erkannt.</summary>
-
-Entweder wurde chocolatey nicht installiert, das Ende der Installation wurde nicht abgewartet oder die PowerShell Sitzung wurde nach der Installation nicht beendet.
-
-Also einmal PowerShell beenden und (wieder als Administrator) neu öffnen. Wenn das nicht hilft den vorherigen Schritt wiederholen.
-
-</details>
-
-### Existing Chocolatey installation
-<details>
-<summary>An existing Chocolatey installation was detected. Installation will not continue.
-For security reasons, this script will not overwrite existing installations.</summary>
-
-
-Eine unvollständige Installation von Chocolatey kann man mit folgendem Befehl entfernen:
-
-> Remove-Item C:\ProgramData\chocolatey -Recurse
-
-</details>
+![githubSuche](https://user-images.githubusercontent.com/81232074/113470733-0f520b00-9458-11eb-9f0c-46f9ba9994a9.png)
+-->
