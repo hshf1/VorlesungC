@@ -399,7 +399,7 @@ Eine ausführlichere Einführung in den Debugger gibt es hier:
 - [x] Programm abgearbeitet
 - [x] Programm debugt
 
-##Debuggen
+## Debuggen
 
 <details>
 <summary>Debuggen</summary>
