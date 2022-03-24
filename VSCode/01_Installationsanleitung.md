@@ -47,7 +47,7 @@ Wir möchten die drei Extensions C/C++, Code Runner und GitLens. Oft gibt es ein
 
 ![image](https://user-images.githubusercontent.com/78163337/112048726-00618380-8b4f-11eb-84c5-c4ed73dc9d22.png)
 
-Hiermit wäre die Installation auch schon fertig und wir können mit [Grundeinstellungen](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Grundeinstellungen.md) und [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
   </details>
   
 <details>
@@ -97,7 +97,7 @@ Dieses Mal kann das ein paar Minuten dauern, wir warten einfach, bis der neue Ei
 
 ![Schritt 2 Ende](https://user-images.githubusercontent.com/100713757/159832082-d23a04d2-42b3-400c-8861-7ebe39054771.png)
 
-Hiermit wäre die Installation auch schon fertig und wir können mit [Grundeinstellungen](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Grundeinstellungen.md) und [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
 </details>  
 
 <details>
@@ -148,6 +148,6 @@ Jetzt kopieren wir die folgende Zeile in die PowerShell, bestätigen mit Enter u
 
 Dieses Mal kann das ein paar Minütchen dauern, wir warten einfach, bis der neue Eingabepromt zu sehen ist.<br />
 
-Hiermit wäre die Installation auch schon fertig und wir können mit [Grundeinstellungen](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Grundeinstellungen.md) und [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
 </details>
   
