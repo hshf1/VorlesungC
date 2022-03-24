@@ -8,12 +8,12 @@ VSCode wird wahrscheinlich ein Update auf die Insiders-Version (Beta-Version) an
 
 Bei dieser Meldung also einfach auf `<Nicht mehr anzeigen>` klicken.
 
-Außerdem bitte immer dran denken, eure Programme zu speichern bevor ihr diese ausführt. Sonst wird nur der letzte gespeicherte Zustand ausgeführt und nicht der aktuelle.
+Außerdem bitte immer dran denken, eure Programme zu speichern, bevor ihr diese ausführt. Sonst wird nur der letzte gespeicherte Zustand ausgeführt und nicht der aktuelle.
 
 ## Grundeinstellungen
 
 <details>
-  <summary>anzeigen</summary>
+  <summary>Hier erweitern.</summary>
 
 ### Schritt 1
   
@@ -57,8 +57,6 @@ Um den Debugger einzustellen und zu testen öffnen wir die Datei debugtest.c und
 Es öffnet sich eine .json Datei, welche wir wieder einfach schließen können.
 Eine genauere Anleitung zum [Debuggen](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md#debuggen) findet ihr weiter unten.
   
-  
-  
  <!--- 
 #### Konfiguration des Debuggers
 
@@ -81,8 +79,6 @@ Auf meinem Rechner ist noch ein weiterer Compiler installiert, nicht irritieren 
 
 In unserem Projekte Ordner legt uns VSCode nun automatisch eine Datei „tasks.json“ an. Diese gilt auch für alle Programme in diesem Ordner, wir müssen diesen Schritt also nur einmal ausführen. Sollte es im Folgenden Probleme geben, ist eine funktionierende Version dieser Datei im Anhang. Pfade, etc. können aber abweichen, daher dient diese eher dem Vergleich, als dem kompletten Ersetzen.
 
---->
-
 Wir schreiben nun unser zweites Programm „debugtest.c“, mit dem Inhalt aus dem Screenshot unten:
 
 <img width="226" alt="image" src="https://user-images.githubusercontent.com/78163337/112050268-f2146700-8b50-11eb-8565-632c2626e7f5.png">
@@ -99,7 +95,7 @@ und gehen dann wie auf den Screenshots markiert vor:
 
 ![image](https://user-images.githubusercontent.com/78163337/112050881-97c7d600-8b51-11eb-869a-f05a0b726c1c.png)
 
-
+--->
 </details>
 
 ### Konfiguration von VSCode
