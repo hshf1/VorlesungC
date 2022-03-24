@@ -115,8 +115,8 @@ Dafür müsst ihr diese Programme deinstallieren:
 ![Deinstallation](https://user-images.githubusercontent.com/100713757/159841162-32f5c2e6-24e2-4f33-a9a5-d7a18cd034ac.png)
 
     
-Zum Schluss starten wir noch die PowerShell mit Adminrechten und geben folgenden Code ein:
-> Remove-Item C:\ProgramData\chocolatey -Recurse
+Zum Schluss starten wir noch die Eingabeaufforderung (CMD) mit Adminrechten und geben folgenden Code ein:
+> RMDIR /S /Q C:\ProgramData\chocolatey
     
 Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
     
