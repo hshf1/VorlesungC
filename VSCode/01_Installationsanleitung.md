@@ -71,19 +71,30 @@ https://support.apple.com/de-de/HT202235
   
 ### Schritt 1
 
-Wir gehen auf den Link und klicken auf RAW.
+Wir öffnen den Link https://github.com/hshf1/VorlesungC/blob/main/VSCode/installChoco.cmd und klicken auf RAW.
 
 ![Schritt 1 RAW](https://user-images.githubusercontent.com/100713757/159829992-537c8122-34d4-43ba-a61b-131393a84bb4.jpg)
   
-<img width="163" alt="image" src="https://user-images.githubusercontent.com/78163337/111456918-d9065300-8717-11eb-93a9-88fddd8459ff.png">
+Nachdem klicken auf RAW öffnet sich eine Seite, auf der wir mit einem rechtsklick auf Seite speichern unter gehen.
+![Schritt 1 Speichern unter](https://user-images.githubusercontent.com/100713757/159830836-fe4893a6-8524-473b-82b2-50b131aefe5a.jpg)
+  
+Wichtig ist jetzt, dass die Datei mit einer .cmd Endung gespeichert wird! Die Datei muss im Downloadsordner mit dem Namen installChoco.cmd gespeichert sein.
+![Schritt 1 richtige Endung](https://user-images.githubusercontent.com/100713757/159831085-d213d866-d19a-42f4-ba7a-f20aa68c5fe8.png)
 
 ### Schritt 2
-Wir öffnen das Terminal mit Adminrechten.
+Wir öffnen die Eingabeaufforderung als Administrator.
+  
+![Schritt 2 CMD](https://user-images.githubusercontent.com/100713757/159831542-2f08c9b7-ef1c-4feb-a8a8-435d69435238.jpg)
+
 Nun kopieren wir die folgende Zeile in das Terminal, bestätigen mit Enter und warten wieder auf den Eingabeprompt.
   
-> cd %USERPROFILE%\Downloads & installChocolatey.cmd
+> cd %USERPROFILE%\Downloads & installChoco.cmd
+  
+![Schritt 2 Code](https://user-images.githubusercontent.com/100713757/159831925-92e8b154-19cc-4aec-b434-c62facb4813f.png)
 
-Dieses Mal kann das ein paar Minuten dauern, wir warten einfach, bis der neue Eingabepromt zu sehen ist.<br />
+Dieses Mal kann das ein paar Minuten dauern, wir warten einfach, bis der neue Eingabepromt zu sehen ist.
+
+![Schritt 2 Ende](https://user-images.githubusercontent.com/100713757/159832082-d23a04d2-42b3-400c-8861-7ebe39054771.png)
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Grundeinstellungen](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Grundeinstellungen.md) und [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
 </details>  
