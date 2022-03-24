@@ -111,6 +111,9 @@ Das ist kein Problem. Du kannst der Anleitung zu 100% folgen.
 Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler auftreten, so könnt ihr es komplett deinstallieren und wieder anhand der oberen Anleitung neu installieren.
 <br /><br />
 Dafür müsst ihr diese Programme deinstallieren:
+
+![Deinstallation](https://user-images.githubusercontent.com/100713757/159841162-32f5c2e6-24e2-4f33-a9a5-d7a18cd034ac.png)
+
     
 Zum Schluss starten wir noch die PowerShell mit Adminrechten und geben folgenden Code ein:
 > Remove-Item C:\ProgramData\chocolatey -Recurse
