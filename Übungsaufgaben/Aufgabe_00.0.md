@@ -91,4 +91,3 @@ Hier was für die Fortgeschrittenen!
 
 Alle Angaben sollen nun nicht im printf() Befehl stehen, sonder von der Tastatur eingelesen werden.
 </details>
-© 2021 GitHub, Inc.
