@@ -28,7 +28,11 @@ Ihr könnt entweder den ganzen runtergeladenen Ordner verschieben oder wenn ihr 
 In der Startansicht wählen wir `<„Open folder…“>`
 
 Hier wählen wir den Ordner, den wir in Schritt 1 runtergeladen haben. Ihr könnt direkt den Hauptordner VSCode auswählen oder den Unterordner Projekte.
-Nun haben wir im Explorer von VSCode eine Liste mit unseren Dateien und sehen auch den Ordner .vscode mit den ganzen Einstellungen darin. Wir gehen zuerst auf die Datei HelloWorld.c und starten das Programm, indem wir oben rechts auf Play drücken oder ein rechtsklick im Code machen und Run Code wählen.
+Nun haben wir im Explorer von VSCode eine Liste mit unseren Dateien und sehen auch den Ordner .vscode mit den ganzen Einstellungen darin. 
+
+<img width="421" alt="image" src="https://user-images.githubusercontent.com/78163337/111458047-44045980-8719-11eb-8bdf-54a3d9e8febd.png">  
+  
+Wir gehen zuerst auf die Datei HelloWorld.c und starten das Programm, indem wir oben rechts auf Play drücken oder ein rechtsklick im Code machen und Run Code wählen.
 
 ![image](https://user-images.githubusercontent.com/78163337/112048960-41f22e80-8b4f-11eb-9cb2-14f6c10ee3bd.png)
   
@@ -97,7 +101,7 @@ und gehen dann wie auf den Screenshots markiert vor:
 
 --->
 </details>
-
+<!--
 ### Konfiguration von VSCode
 
 Jetzt ist es endlich soweit und wir öffnen Visual Studio Code.
@@ -110,13 +114,13 @@ Und wählen unter Dokumente\VSCodeForC\ den Ordner Projekte
   
 #### Es ist wichtig, dass es genau dieser Ordner ist!
   
-  Erläuterung: VSCode sucht im obersten geöffneten Ordner, und nur dort, nach einem Ordner ".vscode". Wenn es fündig wird entnimmt es diesem Einstellungen die man sonst von Hand vornehmen müsste. Die habe ich vorbereitet und als ihr den "git"-Befehl ausgeführt habt, habt ihr die runtergeladen. Wenn ihr aus irgendeinem Grund beim Öffnen von VSCode oder später in VSCode einen Ordner öffnet und dort Programme speichern möchtet, muss in diesen Ordner eine Kopie des .vscode-Ordners.
+  Erläuterung: VSCode sucht im obersten geöffneten Ordner, und nur dort, nach einem Ordner ".vscode". Wenn es fündig wird entnimmt es diesem Einstellungen die man sonst von Hand vornehmen müsste. Die habe ich vorbereitet und als ihr den "git"-Befehl ausgeführt habt, habt ihr die runtergeladen. Wenn ihr aus irgendeinem Grund beim Öffnen von VSCode oder später in VSCode einen Ordner öffnet und dort Programme speichern möchtet, muss in diesen Ordner eine Kopie des .vscode-Ordners. 
 
 <img width="371" alt="image" src="https://user-images.githubusercontent.com/78163337/111457815-f7b91980-8718-11eb-8ec2-c96cdb9df8e1.png">
 
-Wir finden im Ordner Programmiersprache_C fertig vorbereitet die Datei HelloWorld.C
+Wir finden im Ordner Programmiersprache_C fertig vorbereitet die Datei HelloWorld.C -->
 
-<img width="421" alt="image" src="https://user-images.githubusercontent.com/78163337/111458047-44045980-8719-11eb-8bdf-54a3d9e8febd.png">
+
 
 Das Programm ist kurz und unspektakulär, aber ein echter Klassiker.
 
