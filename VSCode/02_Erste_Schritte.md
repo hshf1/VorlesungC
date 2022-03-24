@@ -81,11 +81,14 @@ Um den Debugger einzustellen und zu testen öffnen wir die Datei debugtest.c und
 <img width="453" alt="image" src="https://user-images.githubusercontent.com/78163337/111460432-42886080-871c-11eb-8ad9-c00c8c94a59f.png">
 
 Es öffnet sich eine .json Datei, welche wir wieder einfach schließen können.
-Eine genauere Anleitung zum [Debuggen](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md#debuggen) findet ihr weiter unten.
+Eine genauere Anleitung zum Debuggen findet ihr weiter unten.
   
 </details>
 
-## Debuggen
+<details>
+  <summary>Live Share</summary>
+  Folgt
+</details>
 
 <details>
 <summary>Debuggen</summary>
