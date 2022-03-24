@@ -1,3 +1,4 @@
+![Screenshot (3)_LI](https://user-images.githubusercontent.com/100713757/159829992-537c8122-34d4-43ba-a61b-131393a84bb4.jpg)
 # VSCode Installationsanleitung
 
 Dies ist eine Anleitung zur Installation von VSCode für die Vorlesung C.<br />
