@@ -1,4 +1,3 @@
-![Screenshot (3)_LI](https://user-images.githubusercontent.com/100713757/159829992-537c8122-34d4-43ba-a61b-131393a84bb4.jpg)
 # VSCode Installationsanleitung
 
 Dies ist eine Anleitung zur Installation von VSCode für die Vorlesung C.<br />
@@ -72,6 +71,10 @@ https://support.apple.com/de-de/HT202235
   
 ### Schritt 1
 
+Wir gehen auf den Link und klicken auf RAW.
+
+![Schritt 1 RAW](https://user-images.githubusercontent.com/100713757/159829992-537c8122-34d4-43ba-a61b-131393a84bb4.jpg)
+  
 <img width="163" alt="image" src="https://user-images.githubusercontent.com/78163337/111456918-d9065300-8717-11eb-93a9-88fddd8459ff.png">
 
 ### Schritt 2
