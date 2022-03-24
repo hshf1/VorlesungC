@@ -61,6 +61,19 @@ Um den Debugger einzustellen und zu testen öffnen wir die Datei debugtest.c und
 Es öffnet sich eine .json Datei, welche wir wieder einfach schließen können.
 Eine genauere Anleitung zum [Debuggen](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md#debuggen) findet ihr weiter unten.
   
+
+Das Programm ist kurz und unspektakulär, aber ein echter Klassiker.
+
+Wir rechtsklicken in das Fenster mit unserem Code und wählen „Run Code“
+
+<img width="385" alt="image" src="https://user-images.githubusercontent.com/78163337/111458152-626a5500-8719-11eb-87fc-40ae6b391886.png">
+
+Weiter unten sehen wir in der Mitte von vielen anderen, eher kryptisch anmutenden Dingen, die Ausgabe unseres Programms, nämlich "hello world".
+
+<img width="283" alt="image" src="https://user-images.githubusercontent.com/78163337/111458210-77df7f00-8719-11eb-9e41-39180d41cfda.png">
+
+Wer diese Ausgabe *nicht* erhält sollte sich an dieser Stelle der Troubleshooting-Sektion zuwenden. Solange ein Programm nicht abgearbeitet wird, wird auch das Folgende nicht funktionieren.
+  
  <!--- 
 #### Konfiguration des Debuggers
 
@@ -119,21 +132,6 @@ Und wählen unter Dokumente\VSCodeForC\ den Ordner Projekte
 <img width="371" alt="image" src="https://user-images.githubusercontent.com/78163337/111457815-f7b91980-8718-11eb-8ec2-c96cdb9df8e1.png">
 
 Wir finden im Ordner Programmiersprache_C fertig vorbereitet die Datei HelloWorld.C -->
-
-
-
-Das Programm ist kurz und unspektakulär, aber ein echter Klassiker.
-
-Wir rechtsklicken in das Fenster mit unserem Code und wählen „Run Code“
-
-<img width="385" alt="image" src="https://user-images.githubusercontent.com/78163337/111458152-626a5500-8719-11eb-87fc-40ae6b391886.png">
-
-Weiter unten sehen wir in der Mitte von vielen anderen, eher kryptisch anmutenden Dingen, die Ausgabe unseres Programms, nämlich "hello world".
-
-<img width="283" alt="image" src="https://user-images.githubusercontent.com/78163337/111458210-77df7f00-8719-11eb-9e41-39180d41cfda.png">
-
-Wer diese Ausgabe *nicht* erhält sollte sich an dieser Stelle der Troubleshooting-Sektion zuwenden. Solange ein Programm nicht abgearbeitet wird, wird auch das Folgende nicht funktionieren.
-
   <!--- 
 ##### code-runner
 
