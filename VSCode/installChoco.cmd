@@ -6,3 +6,4 @@ SET DIR=%~dp0%
 SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 choco install mingw --version=8.1.0 -y
 choco install vscode vscode-cpptools vscode-vsliveshare vscode-code-runner vscode-gitlens git cascadiafonts python -y
+
