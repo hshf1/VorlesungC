@@ -42,10 +42,15 @@ Damit wir später auch Programme mit Benutzereingaben, z. B. mit scanf ausführe
 
 <img width="219" alt="image" src="https://user-images.githubusercontent.com/78163337/112049574-1ae82c80-8b50-11eb-9a04-7d40bc4943b6.png">
 
-Dort geben wir „code-runner.runintermimal“ in die Suche ein und setzen den entsprechenden Haken. 
+Dort geben wir „code-runner.runintermimal“ in die Suche ein und überprüfen, ob der Haken gesetzt ist. Falls nicht, setzen wir den entsprechenden Haken. 
 
 ![image](https://user-images.githubusercontent.com/78163337/111459615-351ea680-871b-11eb-9819-b7dce6bfdf37.png)
 
+  
+  
+  
+  
+  
 #### Konfiguration des Debuggers
 
 Für den Fall, dass es in etwas komplizierteren Programmen zu Beginn mal nicht ganz rund läuft, richten wir auch gleich noch den Debugger ein.
@@ -118,9 +123,7 @@ Weiter unten sehen wir in der Mitte von vielen anderen, eher kryptisch anmutende
 
 Wer diese Ausgabe *nicht* erhält sollte sich an dieser Stelle der Troubleshooting-Sektion zuwenden. Solange ein Programm nicht abgearbeitet wird, wird auch das Folgende nicht funktionieren.
 
-
-
-  
+  <!--- 
 ##### code-runner
 
 Damit unsere Programme später Input vom Terminal entgegennehmen können, z. B. mit scanf, müssen wir noch eine Einstellung vornehmen.
@@ -129,7 +132,7 @@ Also begeben wir uns die die Settings, geben „code-runner.runinterminal“ in 
 
 <img width="310" alt="image" src="https://user-images.githubusercontent.com/78163337/111459570-246e3080-871b-11eb-8050-d287916a961c.png">
 
-![image](https://user-images.githubusercontent.com/78163337/111459615-351ea680-871b-11eb-9819-b7dce6bfdf37.png)
+![image](https://user-images.githubusercontent.com/78163337/111459615-351ea680-871b-11eb-9819-b7dce6bfdf37.png) --->
 
 #### Konfiguration des Debuggers
 
