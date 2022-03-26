@@ -84,29 +84,27 @@ Bei Windowssystemen öffnet sich eine .json Datei, welche wir wieder einfach sch
 Bei MacOSsystemen dagegen öffnet sich keine und man kann jedes mal beim Debuggen die zwei Schritte aus den obigen Screenshots durchlaufen oder man erstellt in dem Ordner, wo die Programmdateien sich befinden mit VSCode einen Ordner Namens '.vscode'. In diesen Ordner wird nun mit VSCode eine Datei mit dem Namen launch.json angelegt und der folgende Code reinkopiert und gespeichert.
 <details>
   <summary>launch.json für MacOS</summary>
-  '''
-  {
-    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
-    // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
-    // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "gcc - Aktive Datei erstellen und debuggen",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb",
-            "preLaunchTask": "C/C++: gcc Aktive Datei kompilieren"
-        }
-    ]
-}
-  '''
+>  {
+>   // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+>   // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+>   // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+>   "version": "0.2.0",
+>   "configurations": [
+>       {
+>           "name": "gcc - Aktive Datei erstellen und debuggen",
+>           "type": "lldb",
+>           "request": "launch",
+>           "program": "${fileDirname}/${fileBasenameNoExtension}",
+>           "args": [],
+>           "stopAtEntry": false,
+>           "cwd": "${fileDirname}",
+>           "environment": [],
+>           "externalConsole": false,
+>           "MIMode": "lldb",
+>           "preLaunchTask": "C/C++: gcc Aktive Datei kompilieren"
+>       }
+>   ]
+>}
   </details>
 
 
