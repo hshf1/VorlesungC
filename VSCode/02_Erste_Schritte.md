@@ -82,8 +82,7 @@ Um den Debugger einzustellen und zu testen öffnen wir die Datei debugtest.c und
 
 Bei Windowssystemen öffnet sich eine .json Datei, welche wir wieder einfach schließen können. 
 Bei MacOSsystemen dagegen öffnet sich keine und man kann jedes mal beim Debuggen die zwei Schritte aus den obigen Screenshots durchlaufen oder man erstellt in dem Ordner, wo die Programmdateien sich befinden mit VSCode einen Ordner Namens '.vscode'. In diesen Ordner wird nun mit VSCode eine Datei mit dem Namen launch.json angelegt und der folgende Code reinkopiert und gespeichert:
-<details>
-  <summary>launch.json für MacOS</summary>
+
  ``` 
  {<br />
    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.<br />
@@ -107,8 +106,6 @@ Bei MacOSsystemen dagegen öffnet sich keine und man kann jedes mal beim Debugge
    ]<br />
 }<br />
   ```
-  </details>
-
 
 Eine genauere Anleitung zum Debuggen findet ihr weiter unten.
   
