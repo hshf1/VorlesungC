@@ -112,7 +112,7 @@ Eine genauere Anleitung zum Debuggen findet ihr weiter unten.
 </details>
 
 <details>
-  <summary>Live Share</summary>
+  <summary>Live Share (in Bearbeitung)</summary>
   Folgt
 </details>
 
