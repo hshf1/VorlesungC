@@ -53,7 +53,7 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
   
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
-Das ist kein Problem, nach Schritt 1 kannst du in diesem Fall Schritt 2 überspringen und mit Schritt 3 weiter machen.
+Das ist kein Problem, dann führe nur Schritt 1 und Schritt 3 aus.
 
 </details>
   
