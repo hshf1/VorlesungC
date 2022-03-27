@@ -1,4 +1,4 @@
-# Erste Schritte (in Bearbeitung)
+# Erste Schritte
 
 ## Allgemeine Hinweise
 
