@@ -113,38 +113,38 @@ Eine genauere Anleitung zum Debuggen findet ihr weiter unten.
 </details>
 
 <details>
-  <summary>Live Share (in Bearbeitung)</summary>
+  <summary>Live Share</summary>
 Zur Verwendung von Live Share muss die Erweiterung Live Share Extension Pack in VSCode installiert sein. Dieses sollte bei der Installation von VSCode mitinstalliert worden sein. Falls dies nicht der Fall ist, z.B. weil nach einer alten Anleitung installiert wurde, dann installiert ihr die Erweiterung, indem ihr Links auf die 3+1 Würfel drauf klickt und im Suchfenster Live Share Extension Pack eingebt.
 
-[Erweiterung LiveShare](https://user-images.githubusercontent.com/100713757/160299351-5c54548a-d681-4181-b5f5-3c4b2e6700cb.png)
+![Erweiterung LiveShare](https://user-images.githubusercontent.com/100713757/160299351-5c54548a-d681-4181-b5f5-3c4b2e6700cb.png)
   
 Dann müsst ihr nur die Erweiterung installieren und VSCode neustarten.
   
 Nach dem Neustart sollte unten links im blauen Balken ein Button von LiveShare erscheinen.
 
-[LiveShare Button](https://user-images.githubusercontent.com/100713757/160299453-9d938a4f-389c-49b5-b110-bfa4a1e433ac.png)
+![LiveShare Button](https://user-images.githubusercontent.com/100713757/160299453-9d938a4f-389c-49b5-b110-bfa4a1e433ac.png)
 
 Dort klicken wir auf den Live Share Button und es öffnet sich oben ein Menü mit der Auswahl, wie man sich anmelden möchte. Es besteht die Möglichkeit, mit einem vorhandenen GitHub Account sich anzumelden oder mit einem Microsoft Konto. Einen Microsoft Konto habt ihr von der Hochschule bekommen, dieser kann auch hier verwendet werden.
   
-[LiveShare Anmeldung](https://user-images.githubusercontent.com/100713757/160299585-7ebcbdd2-83c6-4ff6-a569-6239965a048b.png)
+![LiveShare Anmeldung](https://user-images.githubusercontent.com/100713757/160299585-7ebcbdd2-83c6-4ff6-a569-6239965a048b.png)
   
 Nach der Anmeldung ist unten links im blauen Balken neben dem Live Share Button nun auch ein Button mit dem Namen eures Kontos, den ihr zur Anmeldung genutzt habt.
   
-[LiveShare nach Anmeldung](https://user-images.githubusercontent.com/100713757/160299637-de41d750-f513-4321-bfa5-de56354c1e07.png)
+![LiveShare nach Anmeldung](https://user-images.githubusercontent.com/100713757/160299637-de41d750-f513-4321-bfa5-de56354c1e07.png)
   
 Klicken wir nun auf unseren Namen, erscheint oben ein Menü. Da können wir auswählen, ob wir eine normale Collaboration Session starten wollen, wo jeder schreiben und lesen kann, eine read-only Collaboration Session starten wollen, wo jeder eingeladene nur lesen kann oder ob wir einer vorhandenen Collaboration Session mittels eines links beitreten wollen.
   
-[Live Share Collaboration](https://user-images.githubusercontent.com/100713757/160299828-b53d5fb5-570c-460f-89c2-e0e95115dffd.png)
+![Live Share Collaboration](https://user-images.githubusercontent.com/100713757/160299828-b53d5fb5-570c-460f-89c2-e0e95115dffd.png)
   
 Wir können auch neben dem Namen auf den Live Share Button klicken. Der öffnet dann eine normale Collaboration Session und man bekommt rechts unten eine Auswahlmöglichkeit.
   
-[LiveShare Button](https://user-images.githubusercontent.com/100713757/160299918-62a373dd-8545-44ac-ad63-c17ed769d1e3.png)
+![LiveShare Button](https://user-images.githubusercontent.com/100713757/160299918-62a373dd-8545-44ac-ad63-c17ed769d1e3.png)
 
 Man kann auch hier auswählen, ob man die normalle Session in eine read-only Session umwandeln möchte und man kann den Einladungslink nochmal kopieren. Diesen Link könnt ihr allen schicken, die beitreten sollen. Auch eingeladene Personen benötigen Live Share.
   
 Wenn wir während der Session wieder unten links im blauen Balken auf unseren Namen klicken, so öffnet sich oben wieder ein Menü.
   
-[LiveShare Exit](https://user-images.githubusercontent.com/100713757/160300082-1aeb9b75-39a1-4a64-a0c1-e61d8fa6da6e.png)
+![LiveShare Exit](https://user-images.githubusercontent.com/100713757/160300082-1aeb9b75-39a1-4a64-a0c1-e61d8fa6da6e.png)
   
 Dort können wir den Einladungslink wieder kopieren, einen Audio Call starten oder die Session beenden.
   
