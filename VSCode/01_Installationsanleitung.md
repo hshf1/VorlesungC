@@ -1,8 +1,7 @@
 # VSCode Installationsanleitung
 
 Dies ist eine Anleitung (von Studenten für Studenten) zur Installation von VSCode für die Vorlesung C.<br />
-Es beginnt mit einer betrisbssystem-spezifischen Anleitung für MacOS und Windows.<br />
-Für die Installation ist es erforderlich, dass ihr über Adminrechte verfügt.<br />
+Für die Installation ist es erforderlich, dass ihr über <b>Adminrechte</b> verfügt.<br />
 
 Sollten während der Installation Probleme auftreten, so schickt ihr bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.
 
