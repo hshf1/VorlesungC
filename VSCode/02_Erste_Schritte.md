@@ -119,7 +119,6 @@ Zur Verwendung von Live Share muss die Erweiterung Live Share Extension Pack in 
 ![Erweiterung LiveShare](https://user-images.githubusercontent.com/100713757/160299351-5c54548a-d681-4181-b5f5-3c4b2e6700cb.png)
   
 Dann müsst ihr nur die Erweiterung installieren und VSCode neustarten.
-  
 Nach dem Neustart sollte unten links im blauen Balken ein Button von LiveShare erscheinen.
 
 ![LiveShare Button](https://user-images.githubusercontent.com/100713757/160299453-9d938a4f-389c-49b5-b110-bfa4a1e433ac.png)
