@@ -75,7 +75,7 @@ https://support.apple.com/de-de/HT202235
 Wir laden den ZIP-Ordner hier runter:   
 [installChoco.zip](https://github.com/hshf1/VorlesungC/files/8366981/installChoco.zip)
   
-Die Datei im ZIP-Ordner entpacken wir im Downloadsordner und lassen es da.
+Die Datei im ZIP-Ordner entpacken wir direkt in den Downloadsordner und lassen es da. Es darf nicht in einem weiteren Ordner sein!
 
 <!--Wir öffnen den Link https://github.com/hshf1/VorlesungC/blob/main/VSCode/installChoco.cmd und klicken auf RAW.
 
