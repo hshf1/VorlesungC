@@ -116,32 +116,7 @@ Um den Debugger einzustellen und zu testen öffnen wir die Datei debugtest.c und
 <img width="453" alt="image" src="https://user-images.githubusercontent.com/78163337/111460432-42886080-871c-11eb-8ad9-c00c8c94a59f.png">
 
 Bei Windowssystemen öffnet sich eine .json Datei, welche wir wieder einfach schließen können. 
-Bei MacOSsystemen dagegen öffnet sich keine und man kann jedes mal beim Debuggen die zwei Schritte aus den obigen Screenshots durchlaufen oder man erstellt in dem Ordner, wo die Programmdateien sich befinden mit VSCode einen Ordner Namens '.vscode'. In diesen Ordner wird nun mit VSCode eine Datei mit dem Namen launch.json angelegt und der folgende Code reinkopiert und gespeichert (NUR FÜR MacOS NUTZER):
-
- ``` 
- {
-   // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
-   // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
-   // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
-   "version": "0.2.0",
-   "configurations": [
-       {
-           "name": "gcc - Aktive Datei erstellen und debuggen",
-           "type": "lldb",
-           "request": "launch",
-           "program": "${fileDirname}/${fileBasenameNoExtension}",
-           "args": [],
-           "stopAtEntry": false,
-           "cwd": "${fileDirname}",
-           "environment": [],
-           "externalConsole": false,
-           "MIMode": "lldb",
-           "preLaunchTask": "C/C++: gcc Aktive Datei kompilieren"
-       }
-   ]
-}
-  ```
-
+Bei MacOS haben wir das in Schritt 1 schon alles erledigt und der Debugger sollte einfach funktionieren.
 Eine genauere Anleitung zum Debuggen findet ihr weiter unten.
   
 </details>
@@ -520,5 +495,33 @@ Im "obersten" Ordner befindet sich hoffentlich ein Ordner namens .vscode, in dem
   
 Diese Datei gibt vscode Hinweise, wie es sich bitte verhalten soll, z. B. ob es nicht vielleicht ab und an mal alle Dateien speichern soll. 
 Aus meiner Sicht vernünftige Grundeinstellungen habe ich da schon mal vorbereitet. Je nach Betriebssystem sollte man noch das sogenannte "encoding" voreinstellen. Dazu entfernt man die beiden Schrägstriche (//) am Beginn der Zeile. utfbom für MacOS und cp437 für Windows.
+
+Bei Windowssystemen öffnet sich eine .json Datei, welche wir wieder einfach schließen können. 
+Bei MacOSsystemen dagegen öffnet sich keine und man kann jedes mal beim Debuggen die zwei Schritte aus den obigen Screenshots durchlaufen oder man erstellt in dem Ordner, wo die Programmdateien sich befinden mit VSCode einen Ordner Namens '.vscode'. In diesen Ordner wird nun mit VSCode eine Datei mit dem Namen launch.json angelegt und der folgende Code reinkopiert und gespeichert (NUR FÜR MacOS NUTZER):
+
+ ``` 
+ {
+   // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+   // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+   // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+   "version": "0.2.0",
+   "configurations": [
+       {
+           "name": "gcc - Aktive Datei erstellen und debuggen",
+           "type": "lldb",
+           "request": "launch",
+           "program": "${fileDirname}/${fileBasenameNoExtension}",
+           "args": [],
+           "stopAtEntry": false,
+           "cwd": "${fileDirname}",
+           "environment": [],
+           "externalConsole": false,
+           "MIMode": "lldb",
+           "preLaunchTask": "C/C++: gcc Aktive Datei kompilieren"
+       }
+   ]
+}
+  ```
+
   
 --->
