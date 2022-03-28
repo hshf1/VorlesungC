@@ -40,6 +40,37 @@ Die Status Bar tut das was der Name schon sagt. Besonders relevant ist für uns 
 
 ### Schritt 1
   
+<details>
+  <summary>MacOS</summary>
+  
+### Schritt 1.1
+  
+ACHTUNG NUR FÜR MacOS Nutzer!<br />
+Um die Einstellungen überall zu haben, egal wo wir die Programme speichern und von anfang an überall debuggen können, laden wir zuerst den ZIP-Ordner herunter: [SettingsMAC.zip](https://github.com/hshf1/VorlesungC/files/8366561/SettingsMAC.zip)
+
+### Schritt 1.2
+  
+Nun gehe wir im Finder auf Gehe zu und gehen da auf Gehe zum Ordner.
+  
+![image](https://user-images.githubusercontent.com/100713757/160494364-ae34d538-8420-4e91-b3d8-b47f8dd8bf89.png)
+
+In der Suchleichte geben wir folgende Adresse ein: 
+ACHTUNG: [Platzhalter] müsst ihr zusammen mit den eckigen Klammern nach eurem Benutzernamen auf dem MacOS umbennenen. 
+
+>  /Users/[Platzhalter]/Library/Application Support/Code/User
+  
+In meinem Fall ist mein Benutzername ck und sieht wie folgt dann aus:
+  
+![image](https://user-images.githubusercontent.com/100713757/160494625-2aace6a3-2697-4d48-8494-5722c8affd83.png)
+  
+In den geöffneten Ordner kopiert ihr nun die 3 Dateien aus dem aus Schritt 1 runtergeladenen ZIP-Ordner. Falls da schon Dateien mit dem selben Namen vorhanden sind, ersetzt diese einfach.
+  
+Nun sollten die 3 Dateien sich in diesem Ordner befinden.
+  
+![image](https://user-images.githubusercontent.com/100713757/160494882-73fbd31a-1ba8-4774-b266-010bd286027e.png)
+  
+</details>
+  
 Damit wir VSCode testen können und es später auch etwas leichter mit den Einstellungen haben, laden wir uns unseren Projekt-Ordner hier runter:
 https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/hshf1/VorlesungC/tree/main/VSCode/VSCode
 
