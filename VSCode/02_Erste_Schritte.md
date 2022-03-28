@@ -70,7 +70,7 @@ Nun sollten die 3 Dateien sich in diesem Ordner befinden.
 ![image](https://user-images.githubusercontent.com/100713757/160494882-73fbd31a-1ba8-4774-b266-010bd286027e.png)
   
 </details>
-<detaisl>
+<details>
   <summary>Windows</summary>
 Damit wir VSCode testen können und es später auch etwas leichter mit den Einstellungen haben, laden wir uns unseren Projekt-Ordner hier runter:
 https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/hshf1/VorlesungC/tree/main/VSCode/VSCode
