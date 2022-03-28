@@ -70,12 +70,15 @@ Nun sollten die 3 Dateien sich in diesem Ordner befinden.
 ![image](https://user-images.githubusercontent.com/100713757/160494882-73fbd31a-1ba8-4774-b266-010bd286027e.png)
   
 </details>
-  
+<detaisl>
+  <summary>Windows</summary>
 Damit wir VSCode testen können und es später auch etwas leichter mit den Einstellungen haben, laden wir uns unseren Projekt-Ordner hier runter:
 https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/hshf1/VorlesungC/tree/main/VSCode/VSCode
 
 Den heruntergeladenen ZIP-Ordner entpacken wir und schieben es in ein Verzeichnis unserer Wahl (z.B. Dokumente oder Desktop). Damit auch die Voreinstellungen die wir für euch vorbereitet funktionieren, ist es wichtig den .vscode Ordner immer da zu haben, wo ihr eure Programmdateien speichert.
 Ihr könnt entweder den ganzen runtergeladenen Ordner verschieben oder wenn ihr an mehreren Orten etwas speichert, dann kopiert euch den Ordner .vscode einfach da mit rein.
+  
+  </details>
 
 ### Schritt 2
 
