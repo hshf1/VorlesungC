@@ -48,7 +48,7 @@ Wir möchten die vier Extensions C/C++, Code Runner, Live Share und GitLens. Oft
   
 ![image](https://user-images.githubusercontent.com/100713757/159911055-cba05f87-f11f-402c-bec2-1551c6098574.png)
   
-Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
   </details>
   
 <details>
@@ -104,7 +104,7 @@ Dieses Mal kann das ein paar Minuten dauern, wir warten einfach, bis der neue Ei
 ![Schritt 2 Ende](https://user-images.githubusercontent.com/100713757/159840845-0ed0b1a5-feb6-4bdf-84c7-316d3cf0072e.png)
 
 
-Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/67a86c1534ef6b539dfbc47624ca17eff7ef9528/VSCode/02_Erste_Schritte.md) weiter machen.
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
 </details>  
 
 <details>
