@@ -93,28 +93,6 @@ Wir gehen zuerst auf die Datei HelloWorld.c und starten das Programm, indem wir 
 Jetzt sollte das Programm erfolgreich durchlaufen worden sein und wir sehen im unteren Terminal die printf-Ausgabe hello world.
 
 <img width="283" alt="image" src="https://user-images.githubusercontent.com/78163337/112049524-09068980-8b50-11eb-94c8-79f7167ca78e.png">
-
-### Schritt 3
-
-Damit wir später auch Programme mit Benutzereingaben, z. B. mit scanf ausführen können, klicken wir unten links auf das Zahnrad und wählen dann Settings.
-
-<img width="219" alt="image" src="https://user-images.githubusercontent.com/78163337/112049574-1ae82c80-8b50-11eb-9a04-7d40bc4943b6.png">
-
-Dort geben wir „code-runner.runintermimal“ in die Suche ein und überprüfen, ob der Haken gesetzt ist. Falls nicht, setzen wir den entsprechenden Haken. 
-
-![image](https://user-images.githubusercontent.com/78163337/111459615-351ea680-871b-11eb-9819-b7dce6bfdf37.png)
-
-### Schritt 4
-
-Um den Debugger einzustellen und zu testen öffnen wir die Datei debugtest.c und klicken oben auf 'Run' dann 'Start Debugging' und gehen dann wie auf den Screenshots markiert vor:
-
-<img width="453" alt="image" src="https://user-images.githubusercontent.com/78163337/111460420-3ef4d980-871c-11eb-8171-68ef90b857eb.png">
-
-<img width="453" alt="image" src="https://user-images.githubusercontent.com/78163337/111460432-42886080-871c-11eb-8ad9-c00c8c94a59f.png">
-
-Bei Windowssystemen öffnet sich eine .json Datei, welche wir wieder einfach schließen können. 
-Bei MacOS haben wir das in Schritt 1 schon alles erledigt und der Debugger sollte einfach funktionieren.
-Eine genauere Anleitung zum Debuggen findet ihr weiter unten.
   
 </details>
 
@@ -521,4 +499,26 @@ Bei MacOSsystemen dagegen öffnet sich keine und man kann jedes mal beim Debugge
   ```
 
   
+### Schritt 3
+
+Damit wir später auch Programme mit Benutzereingaben, z. B. mit scanf ausführen können, klicken wir unten links auf das Zahnrad und wählen dann Settings.
+
+<img width="219" alt="image" src="https://user-images.githubusercontent.com/78163337/112049574-1ae82c80-8b50-11eb-9a04-7d40bc4943b6.png">
+
+Dort geben wir „code-runner.runintermimal“ in die Suche ein und überprüfen, ob der Haken gesetzt ist. Falls nicht, setzen wir den entsprechenden Haken. 
+
+![image](https://user-images.githubusercontent.com/78163337/111459615-351ea680-871b-11eb-9819-b7dce6bfdf37.png)
+
+### Schritt 4
+
+Um den Debugger einzustellen und zu testen öffnen wir die Datei debugtest.c und klicken oben auf 'Run' dann 'Start Debugging' und gehen dann wie auf den Screenshots markiert vor:
+
+<img width="453" alt="image" src="https://user-images.githubusercontent.com/78163337/111460420-3ef4d980-871c-11eb-8171-68ef90b857eb.png">
+
+<img width="453" alt="image" src="https://user-images.githubusercontent.com/78163337/111460432-42886080-871c-11eb-8ad9-c00c8c94a59f.png">
+
+Bei Windowssystemen öffnet sich eine .json Datei, welche wir wieder einfach schließen können. 
+Bei MacOS haben wir das in Schritt 1 schon alles erledigt und der Debugger sollte einfach funktionieren.
+Eine genauere Anleitung zum Debuggen findet ihr weiter unten.
+
 --->
