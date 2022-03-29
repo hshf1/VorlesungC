@@ -16,7 +16,7 @@ Ordnernamen und auch Dateinamen sollten weder Leerzeichen noch Umlaute enthalten
 ## Grundansicht VSCode
 
 <details> 
-  <summary>Macht euch mit der Umgebung von VSCode vertraut.</summary>
+  <summary>Mit der Umgebung von VSCode vertraut machen</summary>
 
 Damit wir uns überhaupt zurechtfinden, schauen wir uns aber erstmal an was uns VSCode in der Grundansicht alles bietet:
 ![VSCodeUserInterface](https://user-images.githubusercontent.com/81232074/139573863-45d9073b-3110-40dc-8c92-5878025da812.png)
