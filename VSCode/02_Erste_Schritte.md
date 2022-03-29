@@ -93,7 +93,23 @@ Um eine neue Datei zu erstellen, gehen wir im VSCode Explorer neben dem Namen un
 
 ![images](https://user-images.githubusercontent.com/100713757/160576382-884093a7-e1b5-4cf1-a55e-46d3fc850a89.png)
 
-<img width="421" alt="image" src="https://user-images.githubusercontent.com/78163337/111458047-44045980-8719-11eb-8bdf-54a3d9e8febd.png">  
+### Schritt 3
+  
+Nun geben wir in unserer neu erstellten Datei folgenden Code ein, um den Code-Runner und den Debugger einmal zu prüfen.
+
+'''
+#include <stdio.h>
+  
+int main(){
+  int x = 0;
+  x++;
+  x= x + ++x;
+  
+  printf("Die Zahl lautet: %d.\n", x);
+  }
+'''
+  
+  <img width="421" alt="image" src="https://user-images.githubusercontent.com/78163337/111458047-44045980-8719-11eb-8bdf-54a3d9e8febd.png">  
   
 Wir gehen zuerst auf die Datei HelloWorld.c und starten das Programm, indem wir oben rechts auf Play drücken oder ein rechtsklick im Code machen und Run Code wählen.
 
