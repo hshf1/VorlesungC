@@ -3,7 +3,7 @@
 Dies ist eine Anleitung (von Studenten für Studenten) zur Installation von VSCode für die Vorlesung C.<br />
 Für die Installation ist es erforderlich, dass ihr über <b>Adminrechte</b> verfügt.<br />
 
-Sollten während der Installation Probleme auftreten, so schickt ihr bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.
+Sollten während der Installation Probleme auftreten, schaut hier nach einer Lösung: [03_Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md). Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt ihr bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.
 
 ## MacOS
 
