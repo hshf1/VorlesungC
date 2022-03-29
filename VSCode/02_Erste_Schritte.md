@@ -72,6 +72,9 @@ Nun sollten die 3 Dateien sich in diesem Ordner befinden.
 </details>
 <details>
   <summary>Windows</summary>
+  
+### Schritt 1.1
+  
 ACHTUNG NUR FÜR WINDOWS NUTZER!<br />
 Diesen Schritt können Windows Nutzer überspringen, da es mit der Installation zusammen erfolgt ist. Einfach mit Schritt 2 weiter machen.
   
@@ -81,8 +84,8 @@ Diesen Schritt können Windows Nutzer überspringen, da es mit der Installation 
 
 In der Startansicht wählen wir `<„Open folder…“>`
 
-Hier wählen wir den Ordner, den wir in Schritt 1 runtergeladen haben. Ihr könnt direkt den Hauptordner VSCode auswählen oder den Unterordner Projekte.
-Nun haben wir im Explorer von VSCode eine Liste mit unseren Dateien und sehen auch den Ordner .vscode mit den ganzen Einstellungen darin. 
+Hier wählen wir irgendeinen Ordner, in der wir unsere Programme speichern wollen.
+Höchstwahrscheinlich ist das ein leerer Ordner und wir erstellen nun unsere erste Datei darin.
 
 <img width="421" alt="image" src="https://user-images.githubusercontent.com/78163337/111458047-44045980-8719-11eb-8bdf-54a3d9e8febd.png">  
   
