@@ -38,51 +38,9 @@ Die Status Bar tut das was der Name schon sagt. Besonders relevant ist für uns 
 ## Erste Schritte
 
 <details>
-  <summary>Erste Schritte</summary>
+  <summary>Code starten und debuggen</summary>
 
 ### Schritt 1
-  
-<details>
-  <summary>MacOS</summary>
-  
-### Schritt 1.1
-  
-ACHTUNG NUR FÜR MacOS NUTZER!<br />
-Um die Einstellungen überall zu haben, egal wo wir die Programme speichern und von anfang an überall debuggen können, laden wir zuerst den ZIP-Ordner herunter: [SettingsMAC.zip](https://github.com/hshf1/VorlesungC/files/8366561/SettingsMAC.zip)
-
-### Schritt 1.2
-  
-Nun gehe wir im Finder auf Gehe zu und gehen da auf Gehe zum Ordner.
-  
-![image](https://user-images.githubusercontent.com/100713757/160494364-ae34d538-8420-4e91-b3d8-b47f8dd8bf89.png)
-
-In der Suchleichte geben wir folgende Adresse ein: 
-ACHTUNG: [Platzhalter] müsst ihr zusammen mit den eckigen Klammern nach eurem Benutzernamen auf dem MacOS umbennenen. 
-
->  /Users/[Platzhalter]/Library/Application Support/Code/User
-  
-In meinem Fall ist mein Benutzername ck und sieht wie folgt dann aus:
-  
-![image](https://user-images.githubusercontent.com/100713757/160494625-2aace6a3-2697-4d48-8494-5722c8affd83.png)
-  
-In den geöffneten Ordner kopiert ihr nun die 3 Dateien aus dem aus Schritt 1 runtergeladenen ZIP-Ordner. Falls da schon Dateien mit dem selben Namen vorhanden sind, ersetzt diese einfach.
-  
-Nun sollten die 3 Dateien sich in diesem Ordner befinden.
-  
-![image](https://user-images.githubusercontent.com/100713757/160494882-73fbd31a-1ba8-4774-b266-010bd286027e.png)
-  
-</details>
-<details>
-  <summary>Windows</summary>
-  
-### Schritt 1.1
-  
-ACHTUNG NUR FÜR WINDOWS NUTZER!<br />
-Diesen Schritt können Windows Nutzer überspringen, da es mit der Installation zusammen erfolgt ist. Einfach mit Schritt 2 weiter machen.
-  
-  </details>
-
-### Schritt 2
 
 In der Startansicht wählen wir `<„Open folder…“>`
 
@@ -95,7 +53,7 @@ Um eine neue Datei zu erstellen, gehen wir im VSCode Explorer neben dem Namen un
 
 ![images](https://user-images.githubusercontent.com/100713757/160576382-884093a7-e1b5-4cf1-a55e-46d3fc850a89.png)
 
-### Schritt 3
+### Schritt 2
   
 Nun geben wir in unserer neu erstellten Datei folgenden Code ein, um den Code-Runner und den Debugger einmal zu prüfen. Nicht vergessen: Änderungen vor dem starten oder Debuggen des Programmes speichern!
 
@@ -114,8 +72,10 @@ printf("Die Zahl lautet %d.\n", x);
   
 </details>
 
+## Live Share
+  
 <details>
-  <summary>Live Share</summary>
+  <summary>Live Share Anleitung</summary>
 Zur Verwendung von Live Share muss die Erweiterung Live Share Extension Pack in VSCode installiert sein. Dieses sollte bei der Installation von VSCode mitinstalliert worden sein. Falls dies nicht der Fall ist, z.B. weil nach einer alten Anleitung installiert wurde, dann installiert ihr die Erweiterung, indem ihr Links auf die 3+1 Würfel drauf klickt und im Suchfenster Live Share Extension Pack eingebt.
 
 ![Erweiterung LiveShare](https://user-images.githubusercontent.com/100713757/160299351-5c54548a-d681-4181-b5f5-3c4b2e6700cb.png)
@@ -150,9 +110,11 @@ Wenn wir während der Session wieder unten links im blauen Balken auf unseren Na
 Dort können wir den Einladungslink wieder kopieren, einen Audio Call starten oder die Session beenden.
   
 </details>
+  
+## Debuggen
 
 <details>
-<summary>Debuggen</summary>
+<summary>Ausführliche Anleitung zum Debuggen</summary>
 Das Folgende ist eher ein Funktionstest oder ein erstes Kennenlernen des Debuggers, kein kompletter Vorgehensvorschlag oder Best Practice zum Debuggen! Einen Link zu einer etwas tiefergehenden Einführung zur Arbeit mit dem Debugger findet ihr am Ende dieser Sektion!  
   
 Zum Debugger gelangen wir z.B., indem wir links auf das Symbol mit Play-Button und Käfer ([Bug](https://de.wikipedia.org/wiki/Programmfehler)) klicken.
