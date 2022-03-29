@@ -13,8 +13,10 @@ Immer dran denken, eure Programme zu speichern, bevor ihr diese ausführt. Sonst
 
 Ordnernamen und auch Dateinamen sollten weder Leerzeichen noch Umlaute enthalten! Solltet ihr eine Fehlermeldung kriegen, ist dies als erstes zu überprüfen und ggf. anzupassen. Neue Dateien, die ihr erstellt, müssen die Endung .c haben. So sagt ihr VSCode, dass ihr mit C programmieren wollt.
 
+## Grundansicht VSCode
+
 <details> 
-  <summary>Grundansicht VSCode</summary>
+  <summary>Macht euch mit der Umgebung von VSCode vertraut.</summary>
 
 Damit wir uns überhaupt zurechtfinden, schauen wir uns aber erstmal an was uns VSCode in der Grundansicht alles bietet:
 ![VSCodeUserInterface](https://user-images.githubusercontent.com/81232074/139573863-45d9073b-3110-40dc-8c92-5878025da812.png)
@@ -32,6 +34,8 @@ Im Panel kann man sich das Terminal, bestehende Probleme, den output oder die De
   
 Die Status Bar tut das was der Name schon sagt. Besonders relevant ist für uns die Stelle wo im Beispiel UTF-8 steht. Wenn man das verstellt, kann es zu merkwürdigem Verhalten bei der Darstellung mancher Zeichen kommen, wie ä, ü, ß, usw.
 </details>
+
+## Erste Schritte
 
 <details>
   <summary>Erste Schritte</summary>
