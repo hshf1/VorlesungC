@@ -45,7 +45,7 @@ Die Status Bar tut das was der Name schon sagt. Besonders relevant ist für uns 
   
 ### Schritt 1.1
   
-ACHTUNG NUR FÜR MacOS Nutzer!<br />
+ACHTUNG NUR FÜR MacOS NUTZER!<br />
 Um die Einstellungen überall zu haben, egal wo wir die Programme speichern und von anfang an überall debuggen können, laden wir zuerst den ZIP-Ordner herunter: [SettingsMAC.zip](https://github.com/hshf1/VorlesungC/files/8366561/SettingsMAC.zip)
 
 ### Schritt 1.2
@@ -72,11 +72,8 @@ Nun sollten die 3 Dateien sich in diesem Ordner befinden.
 </details>
 <details>
   <summary>Windows</summary>
-Damit wir VSCode testen können und es später auch etwas leichter mit den Einstellungen haben, laden wir uns unseren Projekt-Ordner hier runter:
-https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/hshf1/VorlesungC/tree/main/VSCode/VSCode
-
-Den heruntergeladenen ZIP-Ordner entpacken wir und schieben es in ein Verzeichnis unserer Wahl (z.B. Dokumente oder Desktop). Damit auch die Voreinstellungen die wir für euch vorbereitet funktionieren, ist es wichtig den .vscode Ordner immer da zu haben, wo ihr eure Programmdateien speichert.
-Ihr könnt entweder den ganzen runtergeladenen Ordner verschieben oder wenn ihr an mehreren Orten etwas speichert, dann kopiert euch den Ordner .vscode einfach da mit rein.
+ACHTUNG NUR FÜR WINDOWS NUTZER!<br />
+Diesen Schritt können Windows Nutzer überspringen, da es mit der Installation zusammen erfolgt ist. Einfach mit Schritt 2 weiter machen.
   
   </details>
 
