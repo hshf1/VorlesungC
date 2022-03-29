@@ -85,7 +85,13 @@ Diesen Schritt können Windows Nutzer überspringen, da es mit der Installation 
 In der Startansicht wählen wir `<„Open folder…“>`
 
 Hier wählen wir irgendeinen Ordner, in der wir unsere Programme speichern wollen.
-Höchstwahrscheinlich ist das ein leerer Ordner und wir erstellen nun unsere erste Datei darin.
+Höchstwahrscheinlich ist das ein leerer Ordner und wir erstellen nun unsere erste Datei darin. Denkt dran, dass weder Umlaute noch Leerzeichen im Ordner- oder Dateinamen enthalten sind.
+  
+![image](https://user-images.githubusercontent.com/100713757/160576258-b32cd335-9008-454a-8c44-84c15d4fe8b9.png)
+  
+Um eine neue Datei zu erstellen, gehen wir im VSCode Explorer neben dem Namen unseres Ordners und klicken auf das erste Button, dass Blatt mit einem plus und benennen unserer Datei, in meinem Fall z.B. helloworld.c. Wichtig ist, dass ihr die Endung .c habt, damit VSCode weiß, in welcher Sprache ihr programmieren wollt.
+
+![images](https://user-images.githubusercontent.com/100713757/160576382-884093a7-e1b5-4cf1-a55e-46d3fc850a89.png)
 
 <img width="421" alt="image" src="https://user-images.githubusercontent.com/78163337/111458047-44045980-8719-11eb-8bdf-54a3d9e8febd.png">  
   
