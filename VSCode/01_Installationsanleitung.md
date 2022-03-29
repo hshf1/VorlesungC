@@ -76,7 +76,8 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
   
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
-Das ist kein Problem, dann führe nur Schritt 1 und Schritt 3 aus.
+  
+Das ist kein Problem, dann führe die oben beschriebene Installation ohne Schritt 2 durch.
 
 </details>
   
@@ -126,13 +127,13 @@ Dieses Mal kann das ein paar Minuten dauern, wir warten einfach, bis der neue Ei
 
 ![Schritt 2 Ende](https://user-images.githubusercontent.com/100713757/159840845-0ed0b1a5-feb6-4bdf-84c7-316d3cf0072e.png)
 
-
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
 </details>  
 
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
-Das ist kein Problem. Du kannst der Anleitung zu 100% folgen.
+  
+Das ist kein Problem, führe die oben beschriebene Installationsanleitung einfach ganz normal durch. Bereits installierte Programme bleiben erhalten und nur fehlende dazu installiert.
 
 </details>
   <details>
