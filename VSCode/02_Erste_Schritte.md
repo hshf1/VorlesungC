@@ -110,16 +110,6 @@ printf("Die Zahl lautet %d.\n", x);
 }
 ```
   
-  <img width="421" alt="image" src="https://user-images.githubusercontent.com/78163337/111458047-44045980-8719-11eb-8bdf-54a3d9e8febd.png">  
-  
-Wir gehen zuerst auf die Datei HelloWorld.c und starten das Programm, indem wir oben rechts auf Play drücken oder ein rechtsklick im Code machen und Run Code wählen.
-
-![image](https://user-images.githubusercontent.com/78163337/112048960-41f22e80-8b4f-11eb-9cb2-14f6c10ee3bd.png)
-  
-Jetzt sollte das Programm erfolgreich durchlaufen worden sein und wir sehen im unteren Terminal die printf-Ausgabe hello world.
-
-<img width="283" alt="image" src="https://user-images.githubusercontent.com/78163337/112049524-09068980-8b50-11eb-94c8-79f7167ca78e.png">
-  
 </details>
 
 <details>
@@ -548,4 +538,14 @@ Bei Windowssystemen öffnet sich eine .json Datei, welche wir wieder einfach sch
 Bei MacOS haben wir das in Schritt 1 schon alles erledigt und der Debugger sollte einfach funktionieren.
 Eine genauere Anleitung zum Debuggen findet ihr weiter unten.
 
+
+ <img width="421" alt="image" src="https://user-images.githubusercontent.com/78163337/111458047-44045980-8719-11eb-8bdf-54a3d9e8febd.png">  
+  
+Wir gehen zuerst auf die Datei HelloWorld.c und starten das Programm, indem wir oben rechts auf Play drücken oder ein rechtsklick im Code machen und Run Code wählen.
+
+![image](https://user-images.githubusercontent.com/78163337/112048960-41f22e80-8b4f-11eb-9cb2-14f6c10ee3bd.png)
+  
+Jetzt sollte das Programm erfolgreich durchlaufen worden sein und wir sehen im unteren Terminal die printf-Ausgabe hello world.
+
+<img width="283" alt="image" src="https://user-images.githubusercontent.com/78163337/112049524-09068980-8b50-11eb-94c8-79f7167ca78e.png">
 --->
