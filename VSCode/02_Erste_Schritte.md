@@ -1,5 +1,3 @@
-# Erste Schritte
-
 ## Allgemeine Hinweise
 
 VSCode wird wahrscheinlich ein Update auf die Insiders-Version (Beta-Version) anbieten, wovon abgeraten wird.<br />
@@ -12,8 +10,6 @@ Bei dieser Meldung also einfach auf `<Nicht mehr anzeigen>` klicken.
 Immer dran denken, eure Programme zu speichern, bevor ihr diese ausführt. Sonst wird nur der letzte gespeicherte Zustand ausgeführt und nicht der aktuelle.
 
 Ordnernamen und auch Dateinamen sollten weder Leerzeichen noch Umlaute enthalten! Solltet ihr eine Fehlermeldung kriegen, ist dies als erstes zu überprüfen und ggf. anzupassen. Neue Dateien, die ihr erstellt, müssen die Endung .c haben. So sagt ihr VSCode, dass ihr mit C programmieren wollt.
-
-##
 
 <details> 
   <summary>Grundansicht VSCode</summary>
@@ -95,7 +91,7 @@ Um eine neue Datei zu erstellen, gehen wir im VSCode Explorer neben dem Namen un
 
 ### Schritt 3
   
-Nun geben wir in unserer neu erstellten Datei folgenden Code ein, um den Code-Runner und den Debugger einmal zu prüfen.
+Nun geben wir in unserer neu erstellten Datei folgenden Code ein, um den Code-Runner und den Debugger einmal zu prüfen. Nicht vergessen: Änderungen vor dem starten oder Debuggen des Programmes speichern!
 
   ```c
 #include <stdio.h>
