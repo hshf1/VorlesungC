@@ -133,7 +133,8 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
   
-Das ist kein Problem, führe die oben beschriebene Installationsanleitung einfach ganz normal durch. Bereits installierte Programme bleiben erhalten und nur fehlende dazu installiert.
+Das ist kein Problem, führe die oben beschriebene Installationsanleitung einfach ganz normal durch.<br />
+Bereits installierte Programme bleiben erhalten und nur fehlende dazu installiert.
 
 </details>
   <details>
