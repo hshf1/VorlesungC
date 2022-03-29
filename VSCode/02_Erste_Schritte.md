@@ -98,16 +98,16 @@ Um eine neue Datei zu erstellen, gehen wir im VSCode Explorer neben dem Namen un
 Nun geben wir in unserer neu erstellten Datei folgenden Code ein, um den Code-Runner und den Debugger einmal zu prüfen.
 
   ```c
-  
 #include <stdio.h>
-  
+
 int main(){
-  int x = 0;
-  x++;
-  x= x + ++x;
-  
-  printf("Die Zahl lautet: %d.\n", x);
-  }
+
+int x = 0;
+x++;
+
+printf("Die Zahl lautet %d.\n", x);
+
+}
 ```
   
   <img width="421" alt="image" src="https://user-images.githubusercontent.com/78163337/111458047-44045980-8719-11eb-8bdf-54a3d9e8febd.png">  
