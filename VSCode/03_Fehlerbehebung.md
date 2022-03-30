@@ -1,6 +1,6 @@
 # Fehlerbehebung (in Bearbeitung)
 
-Sollte eure Fehler hier nicht enthalten sein, so schickt ihr bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in.
+Sollte euer Fehler hier nicht enthalten sein, so schickt ihr bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in.
 
 ## Allgemeine Fehler
 
