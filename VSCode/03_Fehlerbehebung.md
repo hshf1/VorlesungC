@@ -8,21 +8,13 @@ Sollte euer Fehler hier nicht enthalten sein, so schickt ihr bitte eine E-Mail m
 
 Insbesondere, aber nicht nur, bei den Fehlermeldungen
 
-#### File not found
+### File not found oder No such file or directory
 
-oder
-
-#### No such file or directory
-
-sollte man dies nochmal genau überprüfen.
+sollte man dies nochmal genau überprüfen:
 
   Heißt die Datei z. B. Prüfsumme.c?
   Irgendeiner der Ordner, in der sich die Datei schließlich befindet "Übung" oder "Neue Projekte"?
   Ist der Benutzername Ségolène?
-  
-### .vscode-Ordner nicht im "obersten" geöffneten Ordner?
-  
-  Der erste geöffnete Ordner in VSCode muss einen Ordner .vscode enthalten, der wiederum die Dateien launch.json, settings.json und tasks.json enthalten muss. Diesen .vscode-Ordner solltet ihr bei euch im Ordner "vscodeforc" finden und könnt ihn gerne kopieren und mehrfach verwenden. 
   
 ### Virenscanner?
 
@@ -83,6 +75,10 @@ Eine unvollständige Installation von Chocolatey kann man mit folgendem Befehl e
 > Remove-Item C:\ProgramData\chocolatey -Recurse
 
 </details>
+
+### .vscode-Ordner nicht im "obersten" geöffneten Ordner?
+  
+  Bei alten Installationen muss der erste geöffnete Ordner in VSCode einen Ordner .vscode enthalten, der wiederum die Dateien launch.json, settings.json und tasks.json enthalten muss. Dieser Fehler lässt sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
 
 
 <details>
