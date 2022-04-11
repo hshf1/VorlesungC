@@ -72,6 +72,8 @@ printf("Die Zahl lautet %d.\n", x);
 
 ## Live Share
   
+Live Share ist eine optionale Erweiterung für euch. Ihr könnt damit zusammen mit anderen Studenten, die VSCode und diese Erweiterung installiert haben, zusammen programmieren. Eine Begrenzung der Anzahl gleichzeitiger Teilnehmer ist nicht bekannt und ihr könnt euch so gegenseitig auch bei schwierigen Aufgaben helfen und die Aufgabe aufteilen bzw. jeder seinen eigenen Losungsweg präsentieren. Auch wird euch euer Prof. damit bei der Vorlesung einladen, ihn beim coden direkt über VSCode mitzuverfolgen bzw. ihr könnt Vorschläge und Programmieransätze so direkt mit dem Prof. teilen.
+  
 <details>
   <summary>Live Share Anleitung</summary>
 Zur Verwendung von Live Share muss die Erweiterung Live Share Extension Pack in VSCode installiert sein. Dieses sollte bei der Installation von VSCode mitinstalliert worden sein. Falls dies nicht der Fall ist, z.B. weil nach einer alten Anleitung installiert wurde, dann installiert ihr die Erweiterung, indem ihr Links auf die 3+1 Würfel drauf klickt und im Suchfenster Live Share Extension Pack eingebt.
