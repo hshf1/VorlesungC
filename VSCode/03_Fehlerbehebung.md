@@ -70,15 +70,14 @@ Also einmal PowerShell beenden und (wieder als Administrator) neu öffnen. Wenn 
 <summary>An existing Chocolatey installation was detected. Installation will not continue.
 For security reasons, this script will not overwrite existing installations.</summary>
 
-Eine unvollständige Installation von Chocolatey kann man mit folgendem Befehl entfernen:
+Eine unvollständige Installation von Chocolatey kann man mit folgendem Befehl im CMD Terminal mit Administrationsrechten entfernen:
 
-> Remove-Item C:\ProgramData\chocolatey -Recurse
+> RMDIR /S /Q C:\ProgramData\chocolatey
 
 </details>
 
 ### .vscode-Ordner nicht im "obersten" geöffneten Ordner?
-  
-  Bei alten Installationen muss der erste geöffnete Ordner in VSCode einen Ordner .vscode enthalten, der wiederum die Dateien launch.json, settings.json und tasks.json enthalten muss. Dieser Fehler lässt sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
+Bei alten Installationen muss der erste geöffnete Ordner in VSCode einen Ordner .vscode enthalten, der wiederum die Dateien launch.json, settings.json und tasks.json enthalten muss. Dieser Fehler lässt sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
 
 
 <details>
