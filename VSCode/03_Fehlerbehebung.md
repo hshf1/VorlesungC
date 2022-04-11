@@ -1,8 +1,38 @@
-# Fehlerbehebung (in Bearbeitung)
+# Fehlerbehebung
 
-Sollte euer Fehler hier nicht enthalten sein, so schickt ihr bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in.
+Sollte euer Fehler hier nicht enthalten sein, so schickt ihr bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in. 
 
 ## Allgemeine Fehler
+
+### Sonder- oder Leerzeichen irgendwo im Pfad?
+
+Insbesondere, aber nicht nur, bei den Fehlermeldungen
+
+#### File not found
+
+oder
+
+#### No such file or directory
+
+sollte man dies nochmal genau überprüfen.
+
+  Heißt die Datei z. B. Prüfsumme.c?
+  Irgendeiner der Ordner, in der sich die Datei schließlich befindet "Übung" oder "Neue Projekte"?
+  Ist der Benutzername Ségolène?
+  
+### .vscode-Ordner nicht im "obersten" geöffneten Ordner?
+  
+  Der erste geöffnete Ordner in VSCode muss einen Ordner .vscode enthalten, der wiederum die Dateien launch.json, settings.json und tasks.json enthalten muss. Diesen .vscode-Ordner solltet ihr bei euch im Ordner "vscodeforc" finden und könnt ihn gerne kopieren und mehrfach verwenden. 
+  
+### Virenscanner?
+
+Bei der Installation, insbesondere dem Herunterladen und Installieren von Chocolatey können übereifrige Virenscanner Probleme machen.
+
+Auch das Aufrufen des Compilers oder -noch öfter- des Debuggers kann Virenscanner irritieren.
+
+Der hauseigene Virenscanner von Windows (Defender) ist bisher eher zurückhaltend, bekannt sind Problem mit AntiVir und McAfee.
+
+In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstellen und es so probieren. Beim Testen von Compiler und Debugger kann man die Internetverbindung vorher trennen.
 
 ## MacOs Fehler
 
@@ -31,6 +61,7 @@ Dies lässt sich im Terminal wie folgt beheben:
 </details>
 
 ## Windows Fehler
+Als allgemeine Fehlerbehebung könnt ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholen, ohne etwas zu deinstallieren. In der Regel lassen sich so einige Fehler automatisch beheben.
 
 ### Choco
 <details>
@@ -64,38 +95,6 @@ Ein vielversprechender erster Versuch ist es am unteren rechten Rand des VSCode-
 Interessanterweise ist beim Ausführen des Programms (mittels Code Runner) oft CP437 und für den Debugger UTF-8 oder UTF-8 with BOM die richtige Wahl.
 
 </details>
-
-## Allgemein
-
-### Sonder- oder Leerzeichen irgendwo im Pfad?
-
-Insbesondere, aber nicht nur, bei den Fehlermeldungen
-
-#### File not found
-
-oder
-
-#### No such file or directory
-
-sollte man dies nochmal genau überprüfen.
-
-  Heißt die Datei z. B. Prüfsumme.c?
-  Irgendeiner der Ordner, in der sich die Datei schließlich befindet "Übung" oder "Neue Projekte"?
-  Ist der Benutzername Ségolène?
-  
-### .vscode-Ordner nicht im "obersten" geöffneten Ordner?
-  
-  Der erste geöffnete Ordner in VSCode muss einen Ordner .vscode enthalten, der wiederum die Dateien launch.json, settings.json und tasks.json enthalten muss. Diesen .vscode-Ordner solltet ihr bei euch im Ordner "vscodeforc" finden und könnt ihn gerne kopieren und mehrfach verwenden. 
-  
-### Virenscanner?
-
-Bei der Installation, insbesondere dem Herunterladen und Installieren von Chocolatey können übereifrige Virenscanner Probleme machen.
-
-Auch das Aufrufen des Compilers oder -noch öfter- des Debuggers kann Virenscanner irritieren.
-
-Der hauseigene Virenscanner von Windows (Defender) ist bisher eher zurückhaltend, bekannt sind Problem mit AntiVir und McAfee.
-
-In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstellen und es so probieren. Beim Testen von Compiler und Debugger kann man die Internetverbindung vorher trennen.
 
 <!--
 Dies ist eine Sammlung bekannter Fehlermeldungen.
