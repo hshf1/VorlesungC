@@ -186,3 +186,8 @@ Dieses Mal kann das ein paar Minütchen dauern, wir warten einfach, bis der neue
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
 </details>
+  
+## Computerraum an der Hochschule
+<details>
+  <summary>VSCode im Computerraum der Hochschule nutzen</summary>
+</details>
