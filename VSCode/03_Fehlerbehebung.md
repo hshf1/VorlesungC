@@ -55,13 +55,17 @@ Dies lässt sich im Terminal wie folgt beheben:
 ## Windows Fehler
 Als allgemeine Fehlerbehebung könnt ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholen, ohne etwas zu deinstallieren. In der Regel lassen sich so einige Fehler automatisch beheben.
 
+### Datei a.exe nicht gefunden
+<details>
+  <summary>Beim debuggen oder ausführen kommt die Fehlermeldung, a.exe wurde nicht gefunden.</summary>
+  Dieser Fehler lässt sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
+  </details>
+
 ### Choco
 <details>
 <summary>Die Benennung "choco" wurde nicht als Name eines Cmdlet, einer Funktion, einer Skriptdatei oder eines ausführbaren Programms erkannt.</summary>
 
-Entweder wurde chocolatey nicht installiert, das Ende der Installation wurde nicht abgewartet oder die PowerShell Sitzung wurde nach der Installation nicht beendet.
-
-Also einmal PowerShell beenden und (wieder als Administrator) neu öffnen. Wenn das nicht hilft den vorherigen Schritt wiederholen.
+Entweder wurde chocolatey nicht installiert, das Ende der Installation wurde nicht abgewartet oder das CMD Terminal wurde nach der Installation nicht beendet. Einfach Terminal schließen und wieder als Administrator öffnen. Bleibt der Fehler, so lässt es sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
 
 </details>
 
