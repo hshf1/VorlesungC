@@ -98,7 +98,7 @@ https://support.apple.com/de-de/HT202235
 ### Schritt 1
 
 Wir laden den ZIP-Ordner hier runter:
-[installChoco.zip](https://github.com/hshf1/VorlesungC/files/8498836/installChoco.zip)
+[installChoco.zip](https://github.com/hshf1/VorlesungC/files/8498844/installChoco.zip)
 
 Die Datei im ZIP-Ordner entpacken wir direkt in den Downloadsordner und lassen es da. Es darf nicht in einem weiteren Ordner sein!
 
