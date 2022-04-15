@@ -98,20 +98,9 @@ https://support.apple.com/de-de/HT202235
 ### Schritt 1
 
 Wir laden den ZIP-Ordner hier runter:
-[installChoco.zip](https://github.com/hshf1/VorlesungC/files/8367038/installChoco.zip)   
-  
+[installChoco.zip](https://github.com/hshf1/VorlesungC/files/8498836/installChoco.zip)
+
 Die Datei im ZIP-Ordner entpacken wir direkt in den Downloadsordner und lassen es da. Es darf nicht in einem weiteren Ordner sein!
-
-<!--Wir öffnen den Link https://github.com/hshf1/VorlesungC/blob/main/VSCode/installChoco.cmd und klicken auf RAW.
-
-![Schritt 1 RAW](https://user-images.githubusercontent.com/100713757/159829992-537c8122-34d4-43ba-a61b-131393a84bb4.jpg)
-  
-Nachdem klicken auf RAW öffnet sich eine Seite, auf der wir mit einem rechtsklick auf Seite speichern unter gehen.
-![Schritt 1 Speichern unter](https://user-images.githubusercontent.com/100713757/159830836-fe4893a6-8524-473b-82b2-50b131aefe5a.jpg)
-  
-Wichtig ist jetzt, dass die Datei mit einer .cmd Endung gespeichert wird! Die Datei muss im Downloadsordner mit dem Namen installChoco.cmd gespeichert sein.
-  
-![Schritt 1 richtige Endung](https://user-images.githubusercontent.com/100713757/159831085-d213d866-d19a-42f4-ba7a-f20aa68c5fe8.png)-->
 
 ### Schritt 2
 Wir öffnen die Eingabeaufforderung als Administrator.
