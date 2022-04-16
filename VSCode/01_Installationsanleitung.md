@@ -51,7 +51,7 @@ Wir möchten die vier Extensions C/C++, Code Runner, Live Share und GitLens. Oft
   
 ### Schritt 4
   
-Um die Einstellungen überall zu haben, egal wo wir die Programme speichern und von anfang an überall debuggen können, laden wir zuerst den ZIP-Ordner herunter: [SettingsMAC.zip](https://github.com/hshf1/VorlesungC/files/8366561/SettingsMAC.zip)
+Um die Einstellungen überall zu haben, egal wo wir die Programme speichern und von anfang an überall debuggen können, laden wir zuerst den ZIP-Ordner herunter: [SettingsMAC.zip](https://github.com/hshf1/VorlesungC/files/8498985/SettingsMAC.zip)
 
 Nun gehe wir im Finder auf Gehe zu und gehen da auf Gehe zum Ordner.
   
