@@ -148,30 +148,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
     
 Dies ist eine alternative Möglichkeit, VSCode auf Windows zu installieren und sollte nur genutzt werden, wenn die empfohlene Anleitung ein Stück weiter oben nicht funktioniert.
   
-### Schritt 1
-Zunächst rechts-klicken wir auf das Windows-Icon und wählen im erscheinenden Menü „Windows PowerShell (Administrator)“:
-
-<img width="276" alt="image" src="https://user-images.githubusercontent.com/78163337/111452622-000e5600-8713-11eb-9c34-0cbfdfcc411c.png">
-  
-In diese PowerShell kopieren wir am Stück folgende Zeile:
-
-und bestätigen mit „Enter“ und warten solange, bis uns PowerShell einen frischen Eingabeprompt anbietet:
-
-<img width="163" alt="image" src="https://user-images.githubusercontent.com/78163337/111456918-d9065300-8717-11eb-93a9-88fddd8459ff.png">
-
-### Schritt 2
-Nun schließen wir die PowerShell und öffnen es wie vorhin erneut mit Adminrechten.
-Nun kopieren wir die folgende Zeile in die PowerShell, bestätigen mit Enter und warten wieder auf den Eingabeprompt.
-
-> choco install mingw --version=8.1.0 -y
-
-### Schritt 3
-Wir schließen die PowerShell und öffnen es wie vorhin erneut mit Adminrechten.
-Jetzt kopieren wir die folgende Zeile in die PowerShell, bestätigen mit Enter und warten wieder auf den Eingabepromt.
-
-> choco install vscode vscode-cpptools vscode-vsliveshare vscode-code-runner vscode-gitlens git cascadiafonts python -y
-
-Dieses Mal kann das ein paar Minütchen dauern, wir warten einfach, bis der neue Eingabepromt zu sehen ist.<br />
+Installiert folgende Datei: [installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8499144/installVSCode.zip)
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
 </details>
