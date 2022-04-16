@@ -53,7 +53,8 @@ Dies lässt sich im Terminal wie folgt beheben:
 </details>
 
 ## Windows Fehler
-Als allgemeine Fehlerbehebung könnt ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholen, ohne etwas zu deinstallieren. In der Regel lassen sich so einige Fehler automatisch beheben.
+Als allgemeine Fehlerbehebung könnt ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholen, ohne etwas zu deinstallieren.<br /> 
+In der Regel lassen sich so einige Fehler automatisch beheben.
 
 ### Datei a.exe nicht gefunden
 <details>
