@@ -148,7 +148,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
     
 Dies ist eine alternative Möglichkeit, VSCode auf Windows zu installieren und sollte nur genutzt werden, wenn die empfohlene Anleitung ein Stück weiter oben nicht funktioniert.
   
-Installiert folgende Datei: [installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8499188/installVSCode.zip)
+Installiert folgende Datei: [installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8499193/installVSCode.zip)
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
 </details>
