@@ -211,6 +211,7 @@ Wir öffnen die Eingabeaufforderung als Administrator.
 Nun kopieren wir die folgende Zeile in das Terminal, bestätigen mit Enter und warten wieder auf den Eingabeprompt.
   
 > cd Downloads & installVSCodeCR.cmd
+  
 ![Schritt 2 Code](https://user-images.githubusercontent.com/100713757/163715340-2e0fce0a-a461-41ef-a4cd-6a18741551d8.png)
 
 Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
