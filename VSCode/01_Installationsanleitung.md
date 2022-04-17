@@ -20,13 +20,19 @@ Danach schieben wir im Finder einfach die Datei `<Visual Studio Code.app>` in de
 ### Schritt 2
   
 Ladet die folgende Datei herunter: [installVSCode.sh.zip](https://github.com/hshf1/VorlesungC/files/8500938/installVSCode.sh.zip)
+
+Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop).
+<img width="401" alt="Bildschirmfoto 2022-04-17 um 05 35 45" src="https://user-images.githubusercontent.com/100713757/163699203-aff40972-d3a1-4212-ad96-71e6606950f9.png">
+Nun öffnet ihr das Terminal 
+<img width="566" alt="Bildschirmfoto 2022-04-17 um 05 31 43" src="https://user-images.githubusercontent.com/100713757/163699216-b1eb7dd1-ffce-4bcd-be21-1691adaf0c6b.png">
   
-Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop).<br />
-Nun öffnet ihr das Terminal und gebt folgendes ein:
+und gebt folgendes ein:
   
 > sh ~/Desktop/installVSCode.sh
   
-Nun werdet ihr nach eurem Passwort gefragt. Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt.
+<img width="750" alt="Bildschirmfoto 2022-04-17 um 05 33 50" src="https://user-images.githubusercontent.com/100713757/163699227-a2bf91bd-3c4f-42d6-a16b-a7946f22f5c9.png">
+
+Nun werdet ihr nach eurem Passwort gefragt. Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt und drückt auf Enter auf der Tastatur.
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
 
@@ -35,7 +41,7 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
   
-Das ist kein Problem, dann führe die oben beschriebene Installation ohne Schritt 2 durch.
+Das ist kein Problem, dann führe bei der oben beschriebene Installation nur Schritt 2 durch.
 
 </details>
   
