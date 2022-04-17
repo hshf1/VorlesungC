@@ -10,6 +10,22 @@ Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt i
 
 <details>
   <summary>Hier klicken, um VSCode auf dem MacOS zu installieren.</summary>
+
+### Schritt 1
+Wir laden VSCode für Mac herunter, indem wir auf den folgenden Link klicken:
+https://code.visualstudio.com/docs?dv=osx
+
+Danach schieben wir im Finder einfach die Datei `<Visual Studio Code.app>` in den `<Programme>` Ordner. 
+  
+### Schritt 2
+  
+Ladet die folgende Datei herunter: [installVSCode.sh.zip](https://github.com/hshf1/VorlesungC/files/8500938/installVSCode.sh.zip)<br />
+Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop).<br />
+Nun öffnet ihr das Terminal und gebt folgendes ein:
+  
+
+
+
   </details>
   
 <details>
