@@ -22,7 +22,8 @@ Danach schieben wir im Finder einfach die Datei `<Visual Studio Code.app>` in de
 Ladet die folgende Datei herunter: [installVSCode.sh.zip](https://github.com/hshf1/VorlesungC/files/8500938/installVSCode.sh.zip)
 
 Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop). <br />
-<img width="401" alt="Bildschirmfoto 2022-04-17 um 05 35 45" src="https://user-images.githubusercontent.com/100713757/163699203-aff40972-d3a1-4212-ad96-71e6606950f9.png"> 
+<img width="401" alt="Bildschirmfoto 2022-04-17 um 05 35 45" src="https://user-images.githubusercontent.com/100713757/163699203-aff40972-d3a1-4212-ad96-71e6606950f9.png"> <br />
+  
 Nun öffnet ihr das Terminal <br />
 <img width="566" alt="Bildschirmfoto 2022-04-17 um 05 31 43" src="https://user-images.githubusercontent.com/100713757/163699216-b1eb7dd1-ffce-4bcd-be21-1691adaf0c6b.png">
   
@@ -30,9 +31,16 @@ und gebt folgendes ein:
   
 > sh ~/Desktop/installVSCode.sh
   
-<img width="750" alt="Bildschirmfoto 2022-04-17 um 05 33 50" src="https://user-images.githubusercontent.com/100713757/163699227-a2bf91bd-3c4f-42d6-a16b-a7946f22f5c9.png">
+<img width="561" alt="Bildschirmfoto 2022-04-17 um 05 38 53" src="https://user-images.githubusercontent.com/100713757/163699298-7f71c5ab-07f6-43cd-857b-e3eb61dab502.png">
 
-Nun werdet ihr nach eurem Passwort gefragt. Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt und drückt auf Enter auf der Tastatur.
+Nun werdet ihr nach eurem Passwort gefragt. <br />
+
+<img width="561" alt="Bildschirmfoto 2022-04-17 um 05 38 59" src="https://user-images.githubusercontent.com/100713757/163699305-1b6cf156-158f-4c7c-880f-c51858000e5e.png">
+  
+Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt und drückt auf Enter auf der Tastatur.
+  
+Am Ende sollte dann Installation beendet erscheinen. <br />
+<img width="750" alt="Bildschirmfoto 2022-04-17 um 05 33 50" src="https://user-images.githubusercontent.com/100713757/163699227-a2bf91bd-3c4f-42d6-a16b-a7946f22f5c9.png">
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
 
