@@ -19,7 +19,8 @@ Danach schieben wir im Finder einfach die Datei `<Visual Studio Code.app>` in de
   
 ### Schritt 2
   
-Ladet die folgende Datei herunter: [installVSCode.sh.zip](https://github.com/hshf1/VorlesungC/files/8500938/installVSCode.sh.zip) <br />
+Ladet die folgende Datei herunter: [installVSCode.sh.zip](https://github.com/hshf1/VorlesungC/files/8500938/installVSCode.sh.zip)
+  
 Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop).<br />
 Nun öffnet ihr das Terminal und gebt folgendes ein:
   
