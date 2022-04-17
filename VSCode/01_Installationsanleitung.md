@@ -139,6 +139,7 @@ Wir laden den ZIP-Ordner hier runter:
 [installChoco.zip](https://github.com/hshf1/VorlesungC/files/8498844/installChoco.zip)
 
 Die Datei im ZIP-Ordner entpacken wir direkt in den Downloadsordner und lassen es da. Es darf nicht in einem weiteren Ordner sein!
+![Schritt 1](https://user-images.githubusercontent.com/100713757/163715189-8d3b902b-be32-405e-8b38-47a029ef3ab3.png)
 
 ### Schritt 2
 Wir öffnen die Eingabeaufforderung als Administrator.
