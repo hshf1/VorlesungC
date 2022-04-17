@@ -201,17 +201,16 @@ Wir laden den ZIP-Ordner hier runter:
 [installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8501606/installVSCodeCR.zip)
 
 Die Datei im ZIP-Ordner entpacken wir direkt in den Downloadsordner und lassen es da. Es darf nicht in einem weiteren Ordner sein!
-![Screenshot (14)](https://user-images.githubusercontent.com/100713757/163715189-8d3b902b-be32-405e-8b38-47a029ef3ab3.png)
+![Schritt 1](https://user-images.githubusercontent.com/100713757/163715189-8d3b902b-be32-405e-8b38-47a029ef3ab3.png)
 
 ### Schritt 2
 Wir öffnen die Eingabeaufforderung als Administrator.
-  
-![Schritt 2 CMD](https://user-images.githubusercontent.com/100713757/159831542-2f08c9b7-ef1c-4feb-a8a8-435d69435238.jpg)
+![Schritt 2 CMD](https://user-images.githubusercontent.com/100713757/163715267-52645198-8e2e-4d54-bd15-9d208b6eb2f4.png)
 
 Nun kopieren wir die folgende Zeile in das Terminal, bestätigen mit Enter und warten wieder auf den Eingabeprompt.
   
-> cd %USERPROFILE%\Downloads & installChoco.cmd
-  
-![Schritt 2 Code](https://user-images.githubusercontent.com/100713757/159831925-92e8b154-19cc-4aec-b434-c62facb4813f.png)
+> cd Downloads & installVSCodeCR.cmd
+![Schritt 2 Code](https://user-images.githubusercontent.com/100713757/163715340-2e0fce0a-a461-41ef-a4cd-6a18741551d8.png)
 
+Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
 </details>
