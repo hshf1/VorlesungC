@@ -9,7 +9,26 @@ Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt i
 ## MacOS
 
 <details>
-<summary>Hier klicken, um VSCode auf dem MacOS zu installieren.</summary>  
+  <summary>Hier klicken, um VSCode auf dem MacOS zu installieren.</summary>
+  </details>
+  
+<details>
+<summary>Hier klicken, falls VSCode schon installiert ist.</summary>
+  
+Das ist kein Problem, dann führe die oben beschriebene Installation ohne Schritt 2 durch.
+
+</details>
+  
+  <details>
+  <summary>Hier klicken, um bei Fehler VSCode zu deinstallieren und neu zu installieren.</summary>
+Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler auftreten, so könnt ihr VSCode deinstallieren 
+und wieder anhand der oberen Anleitung neu installieren. Wie Programme auf einem MacOS deinstalliert/gelöscht werden, ist hier erklärt:
+https://support.apple.com/de-de/HT202235
+    
+  </details>
+  
+  <details>
+<summary>Alternative MacOS Installation, falls die empfohlene Anleitung oben nicht funktioniert.</summary>  
 
 ### Schritt 1
 Damit wir mit Visual Studio Code C programmieren können, brauchen wir einen Compiler und Debugger. 
@@ -74,21 +93,6 @@ Nun sollten die 3 Dateien sich in diesem Ordner befinden.
   
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
   </details>
-  
-<details>
-<summary>Hier klicken, falls VSCode schon installiert ist.</summary>
-  
-Das ist kein Problem, dann führe die oben beschriebene Installation ohne Schritt 2 durch.
-
-</details>
-  
-  <details>
-  <summary>Hier klicken, um bei Fehler VSCode zu deinstallieren und neu zu installieren.</summary>
-Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler auftreten, so könnt ihr VSCode deinstallieren 
-und wieder anhand der oberen Anleitung neu installieren. Wie Programme auf einem MacOS deinstalliert/gelöscht werden, ist hier erklärt:
-https://support.apple.com/de-de/HT202235
-    
-  </details>
 
 ## Windows
   
@@ -144,7 +148,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
   </details>
   
   <details> 
-<summary>Alternative Installation, falls die empfohlene Anleitung oben nicht funktioniert.</summary> 
+<summary>Alternative Windows Installation, falls die empfohlene Anleitung oben nicht funktioniert.</summary> 
     
 Dies ist eine alternative Möglichkeit, VSCode auf Windows zu installieren und sollte nur genutzt werden, wenn die empfohlene Anleitung ein Stück weiter oben nicht funktioniert.
   
