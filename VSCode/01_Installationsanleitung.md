@@ -21,9 +21,9 @@ Danach schieben wir im Finder einfach die Datei `<Visual Studio Code.app>` in de
   
 Ladet die folgende Datei herunter: [installVSCode.sh.zip](https://github.com/hshf1/VorlesungC/files/8500938/installVSCode.sh.zip)
 
-Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop).
-<img width="401" alt="Bildschirmfoto 2022-04-17 um 05 35 45" src="https://user-images.githubusercontent.com/100713757/163699203-aff40972-d3a1-4212-ad96-71e6606950f9.png">
-Nun öffnet ihr das Terminal 
+Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop). <br />
+<img width="401" alt="Bildschirmfoto 2022-04-17 um 05 35 45" src="https://user-images.githubusercontent.com/100713757/163699203-aff40972-d3a1-4212-ad96-71e6606950f9.png"> 
+Nun öffnet ihr das Terminal <br />
 <img width="566" alt="Bildschirmfoto 2022-04-17 um 05 31 43" src="https://user-images.githubusercontent.com/100713757/163699216-b1eb7dd1-ffce-4bcd-be21-1691adaf0c6b.png">
   
 und gebt folgendes ein:
