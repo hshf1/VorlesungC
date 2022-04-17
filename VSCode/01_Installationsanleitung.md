@@ -24,8 +24,11 @@ Ladet die folgende Datei herunter: [installVSCode.sh.zip](https://github.com/hsh
 Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop).<br />
 Nun öffnet ihr das Terminal und gebt folgendes ein:
   
+> sh ~/Desktop/installVSCode.sh
+  
+Nun werdet ihr nach eurem Passwort gefragt. Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt.
 
-
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
 
   </details>
   
