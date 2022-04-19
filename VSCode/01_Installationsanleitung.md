@@ -189,9 +189,7 @@ Nun kopieren wir die folgende Zeile in das Terminal, bestätigen mit Enter und w
   
 ![Schritt 2 Code](https://user-images.githubusercontent.com/100713757/159831925-92e8b154-19cc-4aec-b434-c62facb4813f.png)
 
-Dieses Mal kann das ein paar Minuten dauern, wir warten einfach, bis der neue Eingabepromt zu sehen ist.
-
-![Schritt 2 Ende](https://user-images.githubusercontent.com/100713757/159840845-0ed0b1a5-feb6-4bdf-84c7-316d3cf0072e.png)
+Dieses Mal kann das ein paar Minuten dauern. Sobald die Installation fertig ist, wird sich das Terminal nach 5 Sekunden selbst schließen.
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
 </details>  
