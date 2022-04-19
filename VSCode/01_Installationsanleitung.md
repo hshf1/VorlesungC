@@ -1,4 +1,4 @@
-# VSCode Installationsanleitung
+# VSCode Installationsanleitung V1.01
 
 Dies ist eine Anleitung (von Studenten für Studenten) zur Installation von VSCode für die Vorlesung C.<br />
 Für die Installation ist es erforderlich, dass ihr über <b>Adminrechte</b> verfügt.<br />
@@ -129,36 +129,18 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
   </details>
 
 ## Windows
-  
-<details> 
+
+ <details> 
 <summary>Hier klicken, um VSCode auf dem Windows zu installieren.</summary> 
+    
+Solltet ihr bei der Installation Probleme aufgrund eures Virenscanners oder durch Windows Defender haben, so könnt ihr die alternative Installation weiter untern nutzen.
   
-### Schritt 1
+Ladet folgende Datei herunter und entpackt es: [installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8517029/installVSCode.zip)
+Nun startet ihr das Programm als Administrator und folgt den Befehlen. 
 
-Wir laden den ZIP-Ordner hier runter:
-[installChoco.zip](https://github.com/hshf1/VorlesungC/files/8498844/installChoco.zip)
-
-Die Datei im ZIP-Ordner entpacken wir direkt in den Downloadsordner und lassen es da. Es darf nicht in einem weiteren Ordner sein!
-![Schritt 1](https://user-images.githubusercontent.com/100713757/163715189-8d3b902b-be32-405e-8b38-47a029ef3ab3.png)
-
-### Schritt 2
-Wir öffnen die Eingabeaufforderung als Administrator.
-  
-![Schritt 2 CMD](https://user-images.githubusercontent.com/100713757/159831542-2f08c9b7-ef1c-4feb-a8a8-435d69435238.jpg)
-
-Nun kopieren wir die folgende Zeile in das Terminal, bestätigen mit Enter und warten wieder auf den Eingabeprompt.
-  
-> cd %USERPROFILE%\Downloads & installChoco.cmd
-  
-![Schritt 2 Code](https://user-images.githubusercontent.com/100713757/159831925-92e8b154-19cc-4aec-b434-c62facb4813f.png)
-
-Dieses Mal kann das ein paar Minuten dauern, wir warten einfach, bis der neue Eingabepromt zu sehen ist.
-
-![Schritt 2 Ende](https://user-images.githubusercontent.com/100713757/159840845-0ed0b1a5-feb6-4bdf-84c7-316d3cf0072e.png)
-
-Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
-</details>  
-
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
+</details>
+    
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
   
@@ -181,16 +163,35 @@ Zum Schluss starten wir noch die Eingabeaufforderung (CMD) mit Adminrechten und 
 Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
     
   </details>
-  
-  <details> 
-<summary>Alternative Windows Installation, falls die empfohlene Anleitung oben nicht funktioniert.</summary> 
     
-Dies ist eine alternative Möglichkeit, VSCode auf Windows zu installieren und sollte nur genutzt werden, wenn die empfohlene Anleitung ein Stück weiter oben nicht funktioniert.
+    <details> 
+<summary>Alternative Windows Installation, falls die empfohlene Anleitung oben nicht funktioniert.</summary> 
   
-Installiert folgende Datei: [installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8499208/installVSCode.zip)
+### Schritt 1
 
-Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
-</details>
+Wir laden den ZIP-Ordner hier runter:
+[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8517033/installVSCode.zip)
+
+Die Datei im ZIP-Ordner entpacken wir direkt in den Downloadsordner und lassen es da. Es darf nicht in einem weiteren Ordner sein!
+![Schritt 1](https://user-images.githubusercontent.com/100713757/163715189-8d3b902b-be32-405e-8b38-47a029ef3ab3.png)
+
+### Schritt 2
+Wir öffnen die Eingabeaufforderung als Administrator.
+  
+![Schritt 2 CMD](https://user-images.githubusercontent.com/100713757/159831542-2f08c9b7-ef1c-4feb-a8a8-435d69435238.jpg)
+
+Nun kopieren wir die folgende Zeile in das Terminal, bestätigen mit Enter und warten wieder auf den Eingabeprompt.
+  
+> cd %USERPROFILE%\Downloads & installVSCode.cmd
+  
+![Schritt 2 Code](https://user-images.githubusercontent.com/100713757/159831925-92e8b154-19cc-4aec-b434-c62facb4813f.png)
+
+Dieses Mal kann das ein paar Minuten dauern, wir warten einfach, bis der neue Eingabepromt zu sehen ist.
+
+![Schritt 2 Ende](https://user-images.githubusercontent.com/100713757/159840845-0ed0b1a5-feb6-4bdf-84c7-316d3cf0072e.png)
+
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
+</details>  
   
 ## Computerraum an der Hochschule
 <details>
