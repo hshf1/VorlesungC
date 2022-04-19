@@ -167,7 +167,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
     
   </details>
     
-    <details> 
+<details> 
 <summary>Alternative Windows Installation, falls die empfohlene Anleitung oben nicht funktioniert.</summary> 
   
 ### Schritt 1
