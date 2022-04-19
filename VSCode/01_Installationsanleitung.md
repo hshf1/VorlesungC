@@ -173,7 +173,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 ### Schritt 1
 
 Wir laden den ZIP-Ordner hier runter:
-[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8517033/installVSCode.zip)
+[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8517088/installVSCode.zip)
 
 Die Datei im ZIP-Ordner entpacken wir direkt in den Downloadsordner und lassen es da. Es darf nicht in einem weiteren Ordner sein!
 ![Schritt 1](https://user-images.githubusercontent.com/100713757/163715189-8d3b902b-be32-405e-8b38-47a029ef3ab3.png)
@@ -195,13 +195,24 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
 </details>  
   
 ## Computerraum an der Hochschule
+<details> 
+<summary>Hier klicken, um VSCode auf im Computerraum der Hochschule zu nutzen.</summary> 
+    
+Solltet ihr bei der Installation Probleme aufgrund eures Virenscanners oder durch Windows Defender haben, so könnt ihr die alternative Installation weiter unten nutzen.
+  
+Ladet folgende Datei herunter und entpackt es: [installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8517082/installVSCodeCR.zip)
+Nun startet ihr das Programm als Administrator und folgt den Befehlen. 
+
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
+</details>
+
 <details>
-  <summary>VSCode im Computerraum der Hochschule nutzen</summary>
+  <summary>Alternative Installation, um VSCode im Computerraum der Hochschule nutzen.</summary>
 
 ### Schritt 1
 
 Wir laden den ZIP-Ordner hier runter:
-[installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8516038/installVSCodeCR.zip)
+[installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8517085/installVSCodeCR.zip)
 
 Die Datei im ZIP-Ordner entpacken wir direkt in den Downloadsordner und lassen es da. Es darf nicht in einem weiteren Ordner sein!
 ![Schritt 1](https://user-images.githubusercontent.com/100713757/163715189-8d3b902b-be32-405e-8b38-47a029ef3ab3.png)
