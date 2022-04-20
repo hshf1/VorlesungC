@@ -22,7 +22,7 @@ Danach schieben wir im Finder einfach die Datei `<Visual Studio Code.app>` in de
   
 ### Schritt 2
   
-Ladet die folgende Datei herunter: [installVSCode.sh.zip](https://github.com/hshf1/VorlesungC/files/8517136/installVSCode.sh.zip)
+Ladet die folgende Datei herunter: [installVSCode.sh.zip](https://github.com/hshf1/VorlesungC/files/8517147/installVSCode.sh.zip)
 
 Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop). <br />
 <img width="401" alt="Bildschirmfoto 2022-04-17 um 05 35 45" src="https://user-images.githubusercontent.com/100713757/163699203-aff40972-d3a1-4212-ad96-71e6606950f9.png"> <br />
