@@ -6,8 +6,7 @@ Für die Installation ist es erforderlich, dass ihr über <b>Adminrechte</b> ver
 Sollten während der Installation Probleme auftreten, schaut hier nach einer Lösung: [03_Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md). <br />
 Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt ihr bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.
 
-Aktuell:
-<b>Hochschule Hannover 20.04.2022 V1.01</b>
+<b>Aktuell: Hochschule Hannover 20.04.2022 V1.01</b>
 
 ## MacOS
 
