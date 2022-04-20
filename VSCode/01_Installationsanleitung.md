@@ -7,7 +7,7 @@ Sollten während der Installation Probleme auftreten, schaut hier nach einer Lö
 Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt ihr bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.
 
 Aktuell:
-Hochschule Hannover 20.04.2022 V1.01
+<b>Hochschule Hannover 20.04.2022 V1.01</b>
 
 ## MacOS
 
