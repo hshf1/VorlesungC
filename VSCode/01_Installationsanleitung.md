@@ -199,8 +199,8 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
     
 Solltet ihr bei der Installation Probleme aufgrund eures Virenscanners oder durch Windows Defender haben, so könnt ihr die alternative Installation weiter unten nutzen.
   
-Ladet folgende Datei herunter und entpackt es: [installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8517082/installVSCodeCR.zip) <br />
-Nun startet ihr das Programm als Administrator und folgt den Befehlen. 
+Ladet folgende Datei herunter und entpackt es: [installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8538657/installVSCodeCR.zip) <br />
+Nun startet ihr das Programm und folgt den Befehlen. 
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
 </details>
@@ -211,7 +211,7 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
 ### Schritt 1
 
 Wir laden den ZIP-Ordner hier runter:
-[installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8517085/installVSCodeCR.zip)
+[installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8538663/installVSCodeCR.zip)
 
 Die Datei im ZIP-Ordner entpacken wir direkt in den Downloadsordner und lassen es da. Es darf nicht in einem weiteren Ordner sein!
 ![Schritt 1](https://user-images.githubusercontent.com/100713757/163715189-8d3b902b-be32-405e-8b38-47a029ef3ab3.png)
