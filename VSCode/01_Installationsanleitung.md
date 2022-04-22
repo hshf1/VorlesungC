@@ -194,7 +194,7 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
 </details>  
   
 ## Computerraum an der Hochschule
-<details> 
+<!-- <details> 
 <summary>Hier klicken, um VSCode auf im Computerraum der Hochschule zu nutzen.</summary> 
     
 Solltet ihr bei der Installation Probleme aufgrund eures Virenscanners oder durch Windows Defender haben, so könnt ihr die alternative Installation weiter unten nutzen.
@@ -203,10 +203,10 @@ Ladet folgende Datei herunter und entpackt es: [installVSCodeCR.zip](https://git
 Nun startet ihr das Programm und folgt den Befehlen. 
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
-</details>
+</details> -->
 
 <details>
-  <summary>Alternative Installation, um VSCode im Computerraum der Hochschule nutzen.</summary>
+  <summary>Hier klicken, um VSCode auf im Computerraum der Hochschule zu nutzen.</summary>
 
 ### Schritt 1
 
