@@ -217,7 +217,7 @@ Die Datei im ZIP-Ordner schieben wir in den Downloadsordner oder auf den Desktop
 ![Schritt 1](https://user-images.githubusercontent.com/100713757/163715189-8d3b902b-be32-405e-8b38-47a029ef3ab3.png)
 
 ### Schritt 2
-Nun starten wir VSCode und öffnen einen Ordner. Um den debugger nutzen zu können, muss man mit VSCode den Ordner direkt über das Netzlaufwerk mit deiner Kennung öffnen.
+Nun starten wir VSCode und öffnen einen Ordner. Um den debugger nutzen zu können, muss du mit VSCode den Ordner direkt über das Netzlaufwerk mit deiner Kennung öffnen.
 
 Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
 </details>
