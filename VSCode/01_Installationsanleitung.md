@@ -213,18 +213,11 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
 Wir laden den ZIP-Ordner hier runter:
 [installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8538663/installVSCodeCR.zip)
 
-Die Datei im ZIP-Ordner entpacken wir direkt in den Downloadsordner und lassen es da. Es darf nicht in einem weiteren Ordner sein!
+Die Datei im ZIP-Ordner schieben wir in den Downloadsordner oder auf den Desktop und starten die Datei von dort aus.
 ![Schritt 1](https://user-images.githubusercontent.com/100713757/163715189-8d3b902b-be32-405e-8b38-47a029ef3ab3.png)
 
 ### Schritt 2
-Wir öffnen die Eingabeaufforderung als Administrator.
-![Schritt 2 CMD](https://user-images.githubusercontent.com/100713757/163715267-52645198-8e2e-4d54-bd15-9d208b6eb2f4.png)
-
-Nun kopieren wir die folgende Zeile in das Terminal, bestätigen mit Enter und warten wieder auf den Eingabeprompt.
-  
-> cd Downloads & installVSCodeCR.cmd
-  
-![Schritt 2 Code](https://user-images.githubusercontent.com/100713757/163715340-2e0fce0a-a461-41ef-a4cd-6a18741551d8.png)
+Nun starten wir VSCode und öffnen einen Ordner. Um den debugger nutzen zu können, muss man mit VSCode den Ordner direkt über das Netzlaufwerk mit deiner Kennung öffnen.
 
 Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
 </details>
