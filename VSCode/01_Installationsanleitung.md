@@ -130,17 +130,24 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
 
 ## Windows
 <b>Aktuelle Version: V1.02 01.05.2022</b>
-
- <details> 
-<summary>Hier klicken, um VSCode auf dem Windows zu installieren.</summary> 
     
-Solltet ihr bei der Installation Probleme aufgrund eures Virenscanners oder durch Windows Defender haben, so könnt ihr die alternative Installation weiter untern nutzen.
+<details> 
+<summary>Hier klicken, um VSCode auf dem Windows zu installieren.</summary> 
   
-Ladet folgende Datei herunter und entpackt es: [installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8517029/installVSCode.zip) <br />
-Nun startet ihr das Programm als Administrator und folgt den Befehlen. 
+### Schritt 1
 
-Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
-</details>
+Wir laden den ZIP-Ordner hier runter: 
+[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8598310/installVSCode.zip)
+
+Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop und mit einem rechtsklick starten wir die Datei mit Administrationsrechten.
+Sobald die Installation erfolgt ist, bekommt ihr darüber eine Meldung, dass Terminal schließt sich und ein Logfile öffnet sich.
+
+### Schritt 2
+
+Dieses Mal kann das ein paar Minuten dauern. Sobald die Installation fertig ist, wird sich das Terminal nach 5 Sekunden selbst schließen.
+
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
+</details>      
     
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
@@ -164,8 +171,50 @@ Zum Schluss starten wir noch die Eingabeaufforderung (CMD) mit Adminrechten und 
 Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
     
   </details>
+  
+## Computerraum an der Hochschule
+
+<details>
+  <summary>Hier klicken, um VSCode auf im Computerraum der Hochschule zu nutzen.</summary>
+
+### Schritt 1
+
+Wir laden den ZIP-Ordner hier runter:
+[installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8538663/installVSCodeCR.zip)
+
+Die Datei im ZIP-Ordner schieben wir in den Downloadsordner oder auf den Desktop und starten die Datei von dort aus.
+![Schritt 1](https://user-images.githubusercontent.com/100713757/163715189-8d3b902b-be32-405e-8b38-47a029ef3ab3.png)
+
+### Schritt 2
+Nun starten wir VSCode und öffnen einen Ordner. Um den debugger nutzen zu können, muss du mit VSCode den Ordner direkt über das Netzlaufwerk mit deiner Kennung öffnen.
+
+Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
+</details>
+
+<!-- <details> 
+<summary>Hier klicken, um VSCode auf im Computerraum der Hochschule zu nutzen.</summary> 
     
-<details> 
+Solltet ihr bei der Installation Probleme aufgrund eures Virenscanners oder durch Windows Defender haben, so könnt ihr die alternative Installation weiter unten nutzen.
+  
+Ladet folgende Datei herunter und entpackt es: [installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8538657/installVSCodeCR.zip) <br />
+Nun startet ihr das Programm und folgt den Befehlen. 
+
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
+</details> -->
+    
+<!--  <details> 
+<summary>Hier klicken, um VSCode auf dem Windows zu installieren.</summary> 
+    
+Solltet ihr bei der Installation Probleme aufgrund eures Virenscanners oder durch Windows Defender haben, so könnt ihr die alternative Installation weiter untern nutzen.
+  
+Ladet folgende Datei herunter und entpackt es: [installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8517029/installVSCode.zip) <br />
+Nun startet ihr das Programm als Administrator und folgt den Befehlen. 
+
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
+</details>
+--->
+    
+<!-- <details> 
 <summary>Alternative Windows Installation, falls die empfohlene Anleitung oben nicht funktioniert.</summary> 
   
 ### Schritt 1
@@ -191,32 +240,4 @@ Dieses Mal kann das ein paar Minuten dauern. Sobald die Installation fertig ist,
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
 </details>  
-  
-## Computerraum an der Hochschule
-<!-- <details> 
-<summary>Hier klicken, um VSCode auf im Computerraum der Hochschule zu nutzen.</summary> 
-    
-Solltet ihr bei der Installation Probleme aufgrund eures Virenscanners oder durch Windows Defender haben, so könnt ihr die alternative Installation weiter unten nutzen.
-  
-Ladet folgende Datei herunter und entpackt es: [installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8538657/installVSCodeCR.zip) <br />
-Nun startet ihr das Programm und folgt den Befehlen. 
-
-Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Erste_Schritte.md) weiter machen.
-</details> -->
-
-<details>
-  <summary>Hier klicken, um VSCode auf im Computerraum der Hochschule zu nutzen.</summary>
-
-### Schritt 1
-
-Wir laden den ZIP-Ordner hier runter:
-[installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8538663/installVSCodeCR.zip)
-
-Die Datei im ZIP-Ordner schieben wir in den Downloadsordner oder auf den Desktop und starten die Datei von dort aus.
-![Schritt 1](https://user-images.githubusercontent.com/100713757/163715189-8d3b902b-be32-405e-8b38-47a029ef3ab3.png)
-
-### Schritt 2
-Nun starten wir VSCode und öffnen einen Ordner. Um den debugger nutzen zu können, muss du mit VSCode den Ordner direkt über das Netzlaufwerk mit deiner Kennung öffnen.
-
-Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
-</details>
+--> 
