@@ -133,19 +133,29 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
     
 <details> 
 <summary>Hier klicken, um VSCode auf dem Windows zu installieren.</summary> 
-  
-### Schritt 1
 
 Wir laden den ZIP-Ordner hier runter: 
-[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8599051/installVSCode.zip)
+[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8599080/installVSCode.zip)
+  
+Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
+![Screenshot (18)](https://user-images.githubusercontent.com/100713757/166149097-c7db2762-97ca-4e0d-8d5a-8b200b9b0154.png)
+  
+Mit einem rechtsklick starten wir die Datei mit Administrationsrechten.
+![Screenshot (19)_LI](https://user-images.githubusercontent.com/100713757/166149297-687bde95-dcd8-4953-a427-0f4aa85b07bf.jpg)
 
-Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop und mit einem rechtsklick starten wir die Datei mit Administrationsrechten.
-Sobald die Installation erfolgt ist, bekommt ihr darüber eine Meldung, dass Terminal schließt sich und ein Logfile öffnet sich.
+Es kann die Meldung auftauchen, dass Windows den Computer schützt. Das kommt standardmäßig bei allen Batch-Dateien vor, die aus dem Internet runtergeladen werden. In diesem Fall klickt ihr auf weitere Informationen und anschließend auf den erscheinenden Button <b>Trotzdem ausführen</b>.
+![Screenshot (20)_LI](https://user-images.githubusercontent.com/100713757/166149294-92720791-6f03-44db-af79-039775eeab98.jpg)
+![Screenshot (21)_LI](https://user-images.githubusercontent.com/100713757/166149327-3bf6a5d3-277c-4748-bc6d-35f3116d4f44.jpg)
 
-### Schritt 2
+Nun läuft die Installation von alleine und meldet euch, wenn es fertig ist.
+![Screenshot (22)](https://user-images.githubusercontent.com/100713757/166149376-7700c166-11da-442f-a8ab-68e2da784fe9.png)
 
-Dieses Mal kann das ein paar Minuten dauern. Sobald die Installation fertig ist, wird sich das Terminal nach 5 Sekunden selbst schließen.
-
+Bei der Meldung klicken wir auf <b>OK</b>, dass Terminal schließt nun automatisch und es erscheint ein Logfile, welches sich auf eurem Desktop befindet.
+![Screenshot (23)](https://user-images.githubusercontent.com/100713757/166149506-b4171410-2132-45ac-af4d-1284638c1e3d.png)
+  
+Ist kein Fehler aufgetreten könnt ihr die Logfile auch wieder löschen. Sollten Probleme oder Fehler auftauchen, stehen diese da drin.
+Zur Problembehandlung könnt ihr im Logfile sehen, was nicht geklappt hat. Solltet ihr das Problem nicht beheben können, schickt bitte die Logfile mit als Anhang.
+  
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
 </details>      
     
