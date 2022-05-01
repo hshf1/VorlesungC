@@ -12,7 +12,7 @@ Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt i
   <summary>Hier klicken, um VSCode auf dem MacOS zu installieren. (Aktuelle Version: V1.02 01.05.2022)</summary>
   
 
-[installVSCode.zip 00-00-36-035.zip](https://github.com/hshf1/VorlesungC/files/8599865/installVSCode.zip.00-00-36-035.zip)
+[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8599869/installVSCode.zip)
 
 
 
