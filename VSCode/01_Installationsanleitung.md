@@ -137,7 +137,7 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
 ### Schritt 1
 
 Wir laden den ZIP-Ordner hier runter: 
-[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8598310/installVSCode.zip)
+[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8599051/installVSCode.zip)
 
 Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop und mit einem rechtsklick starten wir die Datei mit Administrationsrechten.
 Sobald die Installation erfolgt ist, bekommt ihr darüber eine Meldung, dass Terminal schließt sich und ein Logfile öffnet sich.
