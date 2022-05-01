@@ -196,7 +196,11 @@ Wir laden den ZIP-Ordner hier runter:
 Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
 ![Screenshot (18)](https://user-images.githubusercontent.com/100713757/166149097-c7db2762-97ca-4e0d-8d5a-8b200b9b0154.png)
   
-Mit einem linken Doppelklick starten wir einfach das Programm. Nun läuft die Installation von alleine und meldet euch, wenn es fertig ist.
+Mit einem linken Doppelklick starten wir einfach das Programm. Es kann die Meldung auftauchen, dass Windows den Computer schützt. Das kommt standardmäßig bei allen Batch-Dateien vor, die aus dem Internet runtergeladen werden. In diesem Fall klickt ihr auf weitere Informationen und anschließend auf den erscheinenden Button <b>Trotzdem ausführen</b>.
+![Screenshot (20)_LI](https://user-images.githubusercontent.com/100713757/166149294-92720791-6f03-44db-af79-039775eeab98.jpg)
+![Screenshot (21)_LI](https://user-images.githubusercontent.com/100713757/166149327-3bf6a5d3-277c-4748-bc6d-35f3116d4f44.jpg)
+
+Nun läuft die Installation von alleine und meldet euch, wenn es fertig ist.
 ![Screenshot (22)](https://user-images.githubusercontent.com/100713757/166149376-7700c166-11da-442f-a8ab-68e2da784fe9.png)
 
 Bei der Meldung klicken wir auf <b>OK</b>, dass Terminal schließt nun automatisch und es erscheint ein Logfile, welches sich auf eurem Desktop befindet.
