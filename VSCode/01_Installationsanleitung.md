@@ -183,6 +183,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
   </details>
   
 ## Computerraum an der Hochschule
+<b>Aktuelle Version: V1.03 01.05.2022</b>
 
 <details>
   <summary>Hier klicken, um VSCode auf im Computerraum der Hochschule zu nutzen.</summary>
