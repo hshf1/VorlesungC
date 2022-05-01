@@ -129,10 +129,9 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
   </details>
 
 ## Windows
-<b>Aktuelle Version: V1.02 01.05.2022</b>
     
 <details> 
-<summary>Hier klicken, um VSCode auf dem Windows zu installieren.</summary> 
+<summary>Hier klicken, um VSCode auf dem Windows zu installieren. (Aktuelle Version: V1.02 01.05.2022)</summary> 
 
 Wir laden den ZIP-Ordner hier runter: 
 [installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8599233/installVSCode.zip)
@@ -167,7 +166,7 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 
 </details>
   <details>
-  <summary>Hier klicken, um bei Fehler VSCode zu deinstallieren und neu zu installieren.</summary>
+  <summary>Hier klicken, um bei anhaltenden Fehlern VSCode zu deinstallieren und neu zu installieren. (Aktuelle Version: V1.00 01.05.2022)</summary>
 Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. Danach kann man erneut die oben beschriebene Installation durchführen.
 <br /><br />
     
