@@ -13,9 +13,8 @@ Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt i
   
 
 
-[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8599763/installVSCode.zip)
+  [installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8599769/installVSCode.zip)
 
-  
   
 
 ### Schritt 1
