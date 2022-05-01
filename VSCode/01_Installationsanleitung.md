@@ -128,7 +128,8 @@ Nun sollten die 3 Dateien sich in diesem Ordner befinden.
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
   </details>
 
-## Windows Version 1.02
+## Windows
+<b>Aktuelle Version: 1.02</b>
 
  <details> 
 <summary>Hier klicken, um VSCode auf dem Windows zu installieren.</summary> 
