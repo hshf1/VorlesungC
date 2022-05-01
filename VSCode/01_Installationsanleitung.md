@@ -129,7 +129,7 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
   </details>
 
 ## Windows
-<b>Hochschule Hannover 01.05.2022 V1.02 VSCode installation</b>
+<b>Aktuelle Version: V1.02 01.05.2022</b>
 
  <details> 
 <summary>Hier klicken, um VSCode auf dem Windows zu installieren.</summary> 
