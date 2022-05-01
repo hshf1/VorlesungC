@@ -168,15 +168,30 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 </details>
   <details>
   <summary>Hier klicken, um bei Fehler VSCode zu deinstallieren und neu zu installieren.</summary>
-Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler auftreten, so könnt ihr es komplett deinstallieren und wieder anhand der oberen Anleitung neu installieren.
+Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. Danach kann man erneut die oben beschriebene Installation durchführen.
 <br /><br />
-Dafür müsst ihr diese Programme deinstallieren:
-
-![Deinstallation](https://user-images.githubusercontent.com/100713757/159841162-32f5c2e6-24e2-4f33-a9a5-d7a18cd034ac.png)
-
     
-Zum Schluss starten wir noch die Eingabeaufforderung (CMD) mit Adminrechten und geben folgenden Code ein:
-> RMDIR /S /Q C:\ProgramData\chocolatey
+Wir laden den ZIP-Ordner hier runter: 
+[uninstallVSCode.zip](https://github.com/hshf1/VorlesungC/files/8599287/uninstallVSCode.zip)
+
+Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
+![Screenshot (18)](https://user-images.githubusercontent.com/100713757/166149097-c7db2762-97ca-4e0d-8d5a-8b200b9b0154.png)
+  
+Mit einem rechtsklick starten wir die Datei mit Administrationsrechten.
+![Screenshot (19)_LI](https://user-images.githubusercontent.com/100713757/166149297-687bde95-dcd8-4953-a427-0f4aa85b07bf.jpg)
+
+Es kann die Meldung auftauchen, dass Windows den Computer schützt. Das kommt standardmäßig bei allen Batch-Dateien vor, die aus dem Internet runtergeladen werden. In diesem Fall klickt ihr auf weitere Informationen und anschließend auf den erscheinenden Button <b>Trotzdem ausführen</b>.
+![Screenshot (20)_LI](https://user-images.githubusercontent.com/100713757/166149294-92720791-6f03-44db-af79-039775eeab98.jpg)
+![Screenshot (21)_LI](https://user-images.githubusercontent.com/100713757/166149327-3bf6a5d3-277c-4748-bc6d-35f3116d4f44.jpg)
+
+Nun läuft die Deinstallation von alleine und meldet euch, wenn es fertig ist.
+![Screenshot (22)](https://user-images.githubusercontent.com/100713757/166149376-7700c166-11da-442f-a8ab-68e2da784fe9.png)
+
+Bei der Meldung klicken wir auf <b>OK</b>, dass Terminal schließt nun automatisch und es erscheint ein Logfile, welches sich auf eurem Desktop befindet.
+![Screenshot (23)](https://user-images.githubusercontent.com/100713757/166149506-b4171410-2132-45ac-af4d-1284638c1e3d.png)
+  
+Ist kein Fehler aufgetreten könnt ihr die Logfile auch wieder löschen. Sollten Probleme oder Fehler auftauchen, stehen diese da drin.
+Zur Problembehandlung könnt ihr im Logfile sehen, was nicht geklappt hat. Solltet ihr das Problem nicht beheben können, schickt bitte die Logfile mit als Anhang.
     
 Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
     
