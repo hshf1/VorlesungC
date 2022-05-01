@@ -132,7 +132,10 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
     
 <details> 
 <summary>Hier klicken, um VSCode auf dem Windows zu installieren. (Aktuelle Version: V1.02 01.05.2022)</summary> 
-
+<br />
+Ihr könnt die Installation bei Problemen oder bei bereits installiertem VSCode ohne etwas deinstallieren zu müssen einfach ausführen. <br />
+Es werden automatisch nur fehlende oder unvollständige installationen durchgeführt.
+  
 Wir laden den ZIP-Ordner hier runter:
 [installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8599233/installVSCode.zip)
 
