@@ -191,11 +191,20 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 ### Schritt 1
 
 Wir laden den ZIP-Ordner hier runter:
-[installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8538663/installVSCodeCR.zip)
+[installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8599153/installVSCodeCR.zip)
+  
+Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
+![Screenshot (18)](https://user-images.githubusercontent.com/100713757/166149097-c7db2762-97ca-4e0d-8d5a-8b200b9b0154.png)
+  
+Mit einem linken Doppelklick starten wir einfach das Programm. Nun läuft die Installation von alleine und meldet euch, wenn es fertig ist.
+![Screenshot (22)](https://user-images.githubusercontent.com/100713757/166149376-7700c166-11da-442f-a8ab-68e2da784fe9.png)
 
-Die Datei im ZIP-Ordner schieben wir in den Downloadsordner oder auf den Desktop und starten die Datei von dort aus.
-![Schritt 1](https://user-images.githubusercontent.com/100713757/163715189-8d3b902b-be32-405e-8b38-47a029ef3ab3.png)
-
+Bei der Meldung klicken wir auf <b>OK</b>, dass Terminal schließt nun automatisch und es erscheint ein Logfile, welches sich auf eurem Desktop befindet.
+![Screenshot (23)](https://user-images.githubusercontent.com/100713757/166149506-b4171410-2132-45ac-af4d-1284638c1e3d.png)
+  
+Ist kein Fehler aufgetreten könnt ihr die Logfile auch wieder löschen. Sollten Probleme oder Fehler auftauchen, stehen diese da drin.
+Zur Problembehandlung könnt ihr im Logfile sehen, was nicht geklappt hat. Solltet ihr das Problem nicht beheben können, schickt bitte die Logfile mit als Anhang.
+  
 ### Schritt 2
 Nun starten wir VSCode und öffnen einen Ordner. Um den debugger nutzen zu können, muss du mit VSCode den Ordner direkt über das Netzlaufwerk mit deiner Kennung öffnen.
 
