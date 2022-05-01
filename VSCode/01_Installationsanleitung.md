@@ -11,18 +11,7 @@ Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt i
 <details>
   <summary>Hier klicken, um VSCode auf dem MacOS zu installieren. (Aktuelle Version: V1.02 01.05.2022)</summary>
   
-[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8599872/installVSCode.zip)
-
-
-### Schritt 1
-Wir laden VSCode für Mac herunter, indem wir auf den folgenden Link klicken:
-https://code.visualstudio.com/docs?dv=osx
-
-Danach schieben wir im Finder einfach die Datei `<Visual Studio Code.app>` in den `<Programme>` Ordner. 
-  
-### Schritt 2
-  
-Ladet die folgende Datei herunter: [installVSCode.sh.zip](https://github.com/hshf1/VorlesungC/files/8517147/installVSCode.sh.zip)
+Ladet die folgende Datei herunter: [installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8599884/installVSCode.zip)
 
 Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop). <br />
 <img width="401" alt="Bildschirmfoto 2022-04-17 um 05 35 45" src="https://user-images.githubusercontent.com/100713757/163699203-aff40972-d3a1-4212-ad96-71e6606950f9.png"> <br />
@@ -42,8 +31,10 @@ Nun werdet ihr nach eurem Passwort gefragt. <br />
   
 Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt und drückt auf Enter auf der Tastatur.
   
-Am Ende sollte dann Installation beendet erscheinen. <br />
+Am Ende sollte dann für 5 Sekunden Installation beendet erscheinen. <br />
 <img width="750" alt="Bildschirmfoto 2022-04-17 um 05 33 50" src="https://user-images.githubusercontent.com/100713757/163699227-a2bf91bd-3c4f-42d6-a16b-a7946f22f5c9.png">
+  
+Der Termina beendet sich selbst und öffnet eine auf eurem Schreibtisch (Desktop) befindende Logfile, die ihr nach erfolgreicher Installation löschen könnt. Bei anhaltenden Problemen bitte diesen Logfile im Anhang per Mail abschicken.
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
 
@@ -62,73 +53,6 @@ Falls bei der Installation oder der anschließenden Nutzung von VSCode fehler au
 und wieder anhand der oberen Anleitung neu installieren. Wie Programme auf einem MacOS deinstalliert/gelöscht werden, ist hier erklärt:
 https://support.apple.com/de-de/HT202235
     
-  </details>
-  
-  <details>
-<summary>Alternative MacOS Installation, falls die empfohlene Anleitung oben nicht funktioniert.</summary>  
-
-### Schritt 1
-Damit wir mit Visual Studio Code C programmieren können, brauchen wir einen Compiler und Debugger. 
-
-Dazu öffnen wir den Terminal und überprüfen, ob dies bereits vorhanden ist, indem wir
-> clang –version
-
-im Terminal eingeben. Bekommen wir eine Versionsnummer angezeigt, können wir mit Schritt 2 weiter machen. Bekommen wir aber 
-mit der Abfrage keine Versionsnummer angezeit, so geben wir im Terminal
-> Xcode-select –install
-
-ein und überprüfen das Ergebnis wieder mit 
-> clang –version
-
-Nun sollte eine Versionsnummer angezeigt werden und wir können mit Schritt 2 weiter machen.
-
-### Schritt 2
-Wir laden VSCode für Mac herunter, indem wir auf den folgenden Link klicken:
-https://code.visualstudio.com/docs?dv=osx
-
-Danach schieben wir im Finder einfach die Datei `<Visual Studio Code.app>` in den `<Programme>` Ordner. 
-
-### Schritt 3
-Wir öffnen als nächstes Visual Studio Code.<br />
-
-Nun installieren wir einige Erweiterungen, in dem wir auf das Symbol mit 3+1 Quadraten auf der linken Seite klicken:
-
-<img width="367" alt="image" src="https://user-images.githubusercontent.com/78163337/112048606-e031c480-8b4e-11eb-81a7-13dccddf3201.png">
-
-Wir möchten die vier Extensions C/C++, Code Runner, Live Share und GitLens. Oft gibt es eine reguläre, stabile und eine Vorab-Test-Version. Man kann sich an den Downloadzahlen aus den folgenden Screenshots orientieren, um die stabile Version zu erwischen:
-
-![image](https://user-images.githubusercontent.com/78163337/112048686-f50e5800-8b4e-11eb-871f-51418cd4aaf6.png)
-
-![image](https://user-images.githubusercontent.com/78163337/112048709-fb9ccf80-8b4e-11eb-8c6b-92e817526a56.png)
-
-![image](https://user-images.githubusercontent.com/78163337/112048726-00618380-8b4f-11eb-84c5-c4ed73dc9d22.png)
-  
-![image](https://user-images.githubusercontent.com/100713757/159911055-cba05f87-f11f-402c-bec2-1551c6098574.png)
-  
-### Schritt 4
-  
-Um die Einstellungen überall zu haben, egal wo wir die Programme speichern und von anfang an überall debuggen können, laden wir zuerst den ZIP-Ordner herunter: [SettingsMAC.zip](https://github.com/hshf1/VorlesungC/files/8498985/SettingsMAC.zip)
-
-Nun gehe wir im Finder auf Gehe zu und gehen da auf Gehe zum Ordner.
-  
-![image](https://user-images.githubusercontent.com/100713757/160494364-ae34d538-8420-4e91-b3d8-b47f8dd8bf89.png)
-
-In der Suchleichte geben wir folgende Adresse ein: 
-ACHTUNG: [Platzhalter] müsst ihr zusammen mit den eckigen Klammern nach eurem Benutzernamen auf dem MacOS umbennenen. 
-
->  /Users/[Platzhalter]/Library/Application Support/Code/User
-  
-In meinem Fall ist mein Benutzername ck und sieht wie folgt dann aus:
-  
-![image](https://user-images.githubusercontent.com/100713757/160494625-2aace6a3-2697-4d48-8494-5722c8affd83.png)
-  
-In den geöffneten Ordner kopiert ihr nun die 3 Dateien aus dem aus Schritt 1 runtergeladenen ZIP-Ordner. Falls da schon Dateien mit dem selben Namen vorhanden sind, ersetzt diese einfach.
-  
-Nun sollten die 3 Dateien sich in diesem Ordner befinden.
-  
-![image](https://user-images.githubusercontent.com/100713757/160494882-73fbd31a-1ba8-4774-b266-010bd286027e.png)
-  
-Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
   </details>
 
 ## Windows
@@ -234,6 +158,73 @@ Nun starten wir VSCode und öffnen einen Ordner. Um den debugger nutzen zu könn
 
 Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
 </details>
+
+<!-- <details>
+<summary>Alternative MacOS Installation, falls die empfohlene Anleitung oben nicht funktioniert.</summary>  
+
+### Schritt 1
+Damit wir mit Visual Studio Code C programmieren können, brauchen wir einen Compiler und Debugger. 
+
+Dazu öffnen wir den Terminal und überprüfen, ob dies bereits vorhanden ist, indem wir
+> clang –version
+
+im Terminal eingeben. Bekommen wir eine Versionsnummer angezeigt, können wir mit Schritt 2 weiter machen. Bekommen wir aber 
+mit der Abfrage keine Versionsnummer angezeit, so geben wir im Terminal
+> Xcode-select –install
+
+ein und überprüfen das Ergebnis wieder mit 
+> clang –version
+
+Nun sollte eine Versionsnummer angezeigt werden und wir können mit Schritt 2 weiter machen.
+
+### Schritt 2
+Wir laden VSCode für Mac herunter, indem wir auf den folgenden Link klicken:
+https://code.visualstudio.com/docs?dv=osx
+
+Danach schieben wir im Finder einfach die Datei `<Visual Studio Code.app>` in den `<Programme>` Ordner. 
+
+### Schritt 3
+Wir öffnen als nächstes Visual Studio Code.<br />
+
+Nun installieren wir einige Erweiterungen, in dem wir auf das Symbol mit 3+1 Quadraten auf der linken Seite klicken:
+
+<img width="367" alt="image" src="https://user-images.githubusercontent.com/78163337/112048606-e031c480-8b4e-11eb-81a7-13dccddf3201.png">
+
+Wir möchten die vier Extensions C/C++, Code Runner, Live Share und GitLens. Oft gibt es eine reguläre, stabile und eine Vorab-Test-Version. Man kann sich an den Downloadzahlen aus den folgenden Screenshots orientieren, um die stabile Version zu erwischen:
+
+![image](https://user-images.githubusercontent.com/78163337/112048686-f50e5800-8b4e-11eb-871f-51418cd4aaf6.png)
+
+![image](https://user-images.githubusercontent.com/78163337/112048709-fb9ccf80-8b4e-11eb-8c6b-92e817526a56.png)
+
+![image](https://user-images.githubusercontent.com/78163337/112048726-00618380-8b4f-11eb-84c5-c4ed73dc9d22.png)
+  
+![image](https://user-images.githubusercontent.com/100713757/159911055-cba05f87-f11f-402c-bec2-1551c6098574.png)
+  
+### Schritt 4
+  
+Um die Einstellungen überall zu haben, egal wo wir die Programme speichern und von anfang an überall debuggen können, laden wir zuerst den ZIP-Ordner herunter: [SettingsMAC.zip](https://github.com/hshf1/VorlesungC/files/8498985/SettingsMAC.zip)
+
+Nun gehe wir im Finder auf Gehe zu und gehen da auf Gehe zum Ordner.
+  
+![image](https://user-images.githubusercontent.com/100713757/160494364-ae34d538-8420-4e91-b3d8-b47f8dd8bf89.png)
+
+In der Suchleichte geben wir folgende Adresse ein: 
+ACHTUNG: [Platzhalter] müsst ihr zusammen mit den eckigen Klammern nach eurem Benutzernamen auf dem MacOS umbennenen. 
+
+>  /Users/[Platzhalter]/Library/Application Support/Code/User
+  
+In meinem Fall ist mein Benutzername ck und sieht wie folgt dann aus:
+  
+![image](https://user-images.githubusercontent.com/100713757/160494625-2aace6a3-2697-4d48-8494-5722c8affd83.png)
+  
+In den geöffneten Ordner kopiert ihr nun die 3 Dateien aus dem aus Schritt 1 runtergeladenen ZIP-Ordner. Falls da schon Dateien mit dem selben Namen vorhanden sind, ersetzt diese einfach.
+  
+Nun sollten die 3 Dateien sich in diesem Ordner befinden.
+  
+![image](https://user-images.githubusercontent.com/100713757/160494882-73fbd31a-1ba8-4774-b266-010bd286027e.png)
+  
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
+  </details> ---> 
 
 <!-- <details> 
 <summary>Hier klicken, um VSCode auf im Computerraum der Hochschule zu nutzen.</summary> 
