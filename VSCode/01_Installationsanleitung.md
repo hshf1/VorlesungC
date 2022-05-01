@@ -135,7 +135,7 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
 <summary>Hier klicken, um VSCode auf dem Windows zu installieren.</summary> 
 
 Wir laden den ZIP-Ordner hier runter: 
-[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8599141/installVSCode.zip)
+[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8599233/installVSCode.zip)
   
 Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
 ![Screenshot (18)](https://user-images.githubusercontent.com/100713757/166149097-c7db2762-97ca-4e0d-8d5a-8b200b9b0154.png)
@@ -191,7 +191,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 ### Schritt 1
 
 Wir laden den ZIP-Ordner hier runter:
-[installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8599153/installVSCodeCR.zip)
+[installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8599235/installVSCodeCR.zip)
   
 Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
 ![Screenshot (18)](https://user-images.githubusercontent.com/100713757/166149097-c7db2762-97ca-4e0d-8d5a-8b200b9b0154.png)
