@@ -132,6 +132,8 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 
 <details>
   <summary>Hier klicken, um VSCode auf im Computerraum der Hochschule zu nutzen. (Aktuelle Version: V1.03 01.05.2022)</summary>
+  
+<b>Anmerkung: Um im Computerraum richtig debuggen zu können, muss Schritt 2 befolgt werden. Andernfalls erhält man eine Fehlermeldung beim Ausführen des Debuggers.</b>
 
 ### Schritt 1
 
@@ -155,8 +157,27 @@ Ist kein Fehler aufgetreten könnt ihr die Logfile auch wieder löschen. Sollten
 Zur Problembehandlung könnt ihr im Logfile sehen, was nicht geklappt hat. Solltet ihr das Problem nicht beheben können, schickt bitte die Logfile mit als Anhang.
   
 ### Schritt 2
-Nun starten wir VSCode und öffnen einen Ordner. Um den debugger nutzen zu können, muss du mit VSCode den Ordner direkt über das Netzlaufwerk mit deiner Kennung öffnen.
+Um im Computerraum debuggen zu können, ist es erforderlich, den Ordner direkt über den Netzlaufwerkverzeichnis zu öffnen.
+Nach dem Start von VSCode klicken wir auf Open Folder.
+  
+![Screenshot (1)](https://user-images.githubusercontent.com/100713757/168243894-209938d6-c5b7-44e6-afa0-bb3072cfe8f6.png)
 
+Dann gehen wir auf Dieser PC.
+  
+![Screenshot (2)](https://user-images.githubusercontent.com/100713757/168244010-46a3c191-c587-4af2-a8ac-e7da979685f2.png)
+
+Und dort klicken wir auf den Netzlaufwerk mit dem Namen der eigenen Benutzerkennung.
+  
+![Screenshot (3)](https://user-images.githubusercontent.com/100713757/168244174-d539e84b-cf00-4eda-b1eb-8e517865720d.png)
+
+Nun gehen wir noch auf Systemordner.
+  
+![Screenshot (4)](https://user-images.githubusercontent.com/100713757/168244323-6e0ecd94-6db6-4493-8fbc-8c06571460b2.png)
+  
+![Screenshot (6)](https://user-images.githubusercontent.com/100713757/168244473-e47306cd-3c71-4a78-a36d-3ad6ede3cdee.png)
+  
+Von hier aus können wir unseren Ordner dann auswählen und debuggen können.
+  
 Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
 </details>
 
