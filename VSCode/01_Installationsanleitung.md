@@ -79,7 +79,6 @@ Es kann die Meldung auftauchen, dass Windows den Computer schützt. Das kommt st
 
 Nun läuft die Installation von alleine und meldet euch, wenn es fertig ist.
 ![Screenshot (22)](https://user-images.githubusercontent.com/100713757/166149376-7700c166-11da-442f-a8ab-68e2da784fe9.png)
-[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8878879/installVSCode.zip)
 
 Bei der Meldung klicken wir auf <b>OK</b>, dass Terminal schließt nun automatisch und es erscheint ein Logfile, welches sich auf eurem Desktop befindet.
 ![Screenshot (23)](https://user-images.githubusercontent.com/100713757/166149506-b4171410-2132-45ac-af4d-1284638c1e3d.png)
