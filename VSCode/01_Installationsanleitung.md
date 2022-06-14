@@ -4,7 +4,7 @@ Dies ist eine Anleitung (von Studenten für Studenten) zur Installation von VSCo
 Für die Installation ist es erforderlich, dass ihr über <b>Adminrechte</b> verfügt.<br />
 
 Sollten während der Installation Probleme auftreten, schaut hier nach einer Lösung: [03_Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md). <br />
-Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt ihr bitte eine E-Mail mit der Logfile im Anhang an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.
+Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt ihr bitte eine E-Mail mit dem Logfile im Anhang an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.
 
 ## MacOS
 
