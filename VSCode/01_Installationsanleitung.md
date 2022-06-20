@@ -65,8 +65,8 @@ Ihr könnt die Installation bei Problemen oder bei bereits installiertem VSCode 
 Es werden automatisch nur fehlende oder unvollständige installationen durchgeführt. <br /><br />
   
 Wir laden den ZIP-Ordner hier runter:
-[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8936710/installVSCode.zip)
-
+[installVSCode.zip](https://github.com/hshf1/VorlesungC/files/8936762/installVSCode.zip)
+  
 Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
 ![Screenshot (18)](https://user-images.githubusercontent.com/100713757/166149097-c7db2762-97ca-4e0d-8d5a-8b200b9b0154.png)
   
@@ -97,14 +97,14 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 
 </details>
   <details>
-  <summary>Hier klicken, um bei anhaltenden Fehlern VSCode zu deinstallieren und neu zu installieren. (Aktuelle Version: V1.00 01.05.2022)</summary>
+  <summary>Hier klicken, um bei anhaltenden Fehlern VSCode zu deinstallieren und neu zu installieren. (Aktuelle Version: V1.01 20.06.2022)</summary>
     <br />
 Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. Danach kann man erneut die oben beschriebene Installation durchführen.
 <br /><br />
     
 Wir laden den ZIP-Ordner hier runter: 
-[uninstallVSCode.zip](https://github.com/hshf1/VorlesungC/files/8599287/uninstallVSCode.zip)
-
+[uninstallVSCode.zip](https://github.com/hshf1/VorlesungC/files/8936767/uninstallVSCode.zip)
+  
 Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
 ![Screenshot (18)](https://user-images.githubusercontent.com/100713757/166149097-c7db2762-97ca-4e0d-8d5a-8b200b9b0154.png)
   
