@@ -9,7 +9,7 @@ int function1 (int Param1, int  Param2)
 {
    int Wert = 0;
    Wert = Param1 * Param2*MWST;
-   anweisung2;
+   //anweisung2;
 
    return Wert;
 }
