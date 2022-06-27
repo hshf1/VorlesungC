@@ -1,7 +1,7 @@
 // Folie 2– erstescprog3.c
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>
 
 int main (void)
 {
