@@ -1,8 +1,8 @@
 // Folie 4- funktionsrumpf.c
 
-double CalcProduct(int iWert, float fWert) 
+double CalcProduct(int Wert1, float Wert2) 
 {
-    double dErgebnis;
-    dErgebnis = iWert * fWert;
-    return dErgebnis;
+    double Ergebnis;
+    Ergebnis = Wert1 * Wert2;
+    return Ergebnis;
 }
