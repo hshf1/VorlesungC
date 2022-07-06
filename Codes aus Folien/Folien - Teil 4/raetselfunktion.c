@@ -1,19 +1,19 @@
 // Folie 4 – raetselfunktion.c
 #include <stdio.h>
 
-int Quadrat(int iWert) {   
-	return iWert * iWert; 
+int Quadrat(int Wert1) {   
+	return Wert1 * Wert1; 
 }	
 
-//Berechne (iWert1+iWert2)^2
-int SummeZumQuadrat(int iWert1, int iWert2) {
-	int iRes = Quadrat(iWert1 + iWert2);
-	return iWert2; 
+//Berechne (Wert1+Wert2)^2
+int SummeZumQuadrat(int Wert1, int Wert2) {
+	int Res = Quadrat(Wert1 + Wert2);
+	return Wert2; 
 }
 
 int main() {
-	int iZahl1 = 1; //lokale Variable
-	int iZahl2 = 2; 
+	int Zahl1 = 1; //lokale Variable
+	int Zahl2 = 2; 
 
-	printf("Zahl: %d",SummeZumQuadrat(iZahl1, iZahl2)); 
+	printf("Zahl: %d",SummeZumQuadrat(Zahl1, Zahl2)); 
 }
