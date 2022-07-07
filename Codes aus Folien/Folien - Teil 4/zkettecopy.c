@@ -3,16 +3,16 @@
 #include <stdio.h>
 
 int main(void) {
-    char cString1[80+1];
-    char cString2[80+1]="Der String ist leer";
+    char String1[80+1];
+    char String2[80+1]="Der String ist leer";
     puts("Geben Sie max 80 Zeichen ein");
-    fgets(cString1,81,stdin);
+    fgets(String1,81,stdin);
 
-    puts(cString1);
-    puts(cString2);
+    puts(String1);
+    puts(String2);
 
-    strcpy(cString2, cString1);
+    strcpy(String2, String1);
 
-    puts (cString1);
-    puts (cString2);
+    puts (String1);
+    puts (String2);
 }
