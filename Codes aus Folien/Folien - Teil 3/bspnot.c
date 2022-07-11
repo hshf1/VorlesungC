@@ -4,18 +4,17 @@
 
 int main (void)
 {
-    int iZahl;
+    int Zahl;
 
     printf("Bitte geben Sie eine Ganzzahl ein: ");
-    scanf("%d", &iZahl);
+    scanf("%d", &Zahl);
 
-    if (!(iZahl == 0))
+    if (!(Zahl == 0))
     {
         printf("Die Zahl ist ungleich Null\n");
     }
-    if (iZahl != 0)
+    if (Zahl != 0)
     {
         printf("Die Zahl ist ungleich Null\n");
     }
-    return 0;
 }
