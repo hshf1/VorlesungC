@@ -4,10 +4,9 @@
  
 int main(void)
 {
-    double dZahl = 0.0;
+    double Zahl = 0.0;
  
     printf("Bitte geben Sie eine Zahl ein: ");
-    scanf("%f", &dZahl );
-    printf("Zahl %f\n", dZahl );
-    return 0;
+    scanf("%f", &Zahl );
+    printf("Zahl %f\n", Zahl );
 }
