@@ -4,11 +4,11 @@
  
 int main(void)
 {
-    int iCount;
+    int Count;
     int merkCount;
  
-    for (iCount = 1, merkCount = 2; iCount <= 10; iCount++)
+    for (Count = 1, merkCount = 2; Count <= 10; Count++)
     {
-        printf("%d * %d = %d\n", iCount, merkCount, iCount * merkCount);
+        printf("%d * %d = %d\n", Count, merkCount, Count * merkCount);
     }
 }
