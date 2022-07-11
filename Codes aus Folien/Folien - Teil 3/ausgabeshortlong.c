@@ -8,5 +8,4 @@ int main(void)
     /* Zu großer Wert für short */
     printf("Short Integer-Zahl: %hd\n", 100000);
     printf("Long Double Float-Zahl: %Lf\n",100.45);
-    return 0;
 }
