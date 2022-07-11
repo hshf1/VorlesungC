@@ -4,9 +4,9 @@
  
 int main (void)
 {
-    char cZeichenGross;
+    char ZeichenGross;
  
-    for (cZeichenGross = 'A'; cZeichenGross < 'C'; cZeichenGross++){
-        printf("Schleifendurchlauf: %c\n", cZeichenGross);
+    for (ZeichenGross = 'A'; ZeichenGross < 'C'; ZeichenGross++){
+        printf("Schleifendurchlauf: %c\n", ZeichenGross);
     }
 }
