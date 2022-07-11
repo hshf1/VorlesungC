@@ -4,18 +4,18 @@
  
 int main (void)
 {
-    int iCount;
-    float fZaehler;
+    int Count;
+    float Zaehler;
  
-    for (iCount = 0; iCount < 10; iCount++) {
-        printf("Schleifendurchlauf %d\n", iCount);
+    for (Count = 0; Count < 10; Count++) {
+        printf("Schleifendurchlauf %d\n", Count);
     }
  
-    for (iCount = 10; iCount > 0; iCount -= 1) {
-        printf("Schleifendurchlauf %d\n", iCount);
+    for (Count = 10; Count > 0; Count -= 1) {
+        printf("Schleifendurchlauf %d\n", Count);
     }
  
-    for (fZaehler = 5.0; fZaehler > 0.0; fZaehler -= 0.25) {
-        printf("Schleifendurchlauf %.2f\n", fZaehler);
+    for (Zaehler = 5.0; Zaehler > 0.0; Zaehler -= 0.25) {
+        printf("Schleifendurchlauf %.2f\n", Zaehler);
     }
 }
