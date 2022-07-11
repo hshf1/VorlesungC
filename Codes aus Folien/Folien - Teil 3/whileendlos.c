@@ -4,14 +4,13 @@
  
 int main(void)
 {
-    long lZaehler = 0;
+    long Zaehler = 0;
  
     while ( 1 ) /* No way to escape */
     {  
-        printf("Diese Meldung endlos ausgeben%ld\n", lZaehler);
-        lZaehler++; 
+        printf("Diese Meldung endlos ausgeben%ld\n", Zaehler);
+        Zaehler++; 
     }
     
     printf("Diese Zeile wird niemals erreicht werden");
-    return 0;
 }
