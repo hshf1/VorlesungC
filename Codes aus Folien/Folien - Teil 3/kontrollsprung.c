@@ -4,19 +4,19 @@
  
 int main(void)
 {
-    int iZahl; int iErgebnis = 0;
+    int Zahl; int Ergebnis = 0;
  
     while (1)  {    //potenzial unendliche Schleife!!!
         printf("Bitte geben Sie einen Wert ein: "); 
-        scanf("%d", &iZahl);
-        if (iZahl == 0)
+        scanf("%d", &Zahl);
+        if (Zahl == 0)
         {
             break; // Abbruch der Schleife
         } 
         else 
         {
-            iErgebnis += iZahl;
+            Ergebnis += Zahl;
         }
     }
-    printf("\nDie Summe betraegt: %d\n", iErgebnis);
+    printf("\nDie Summe betraegt: %d\n", Ergebnis);
 }
