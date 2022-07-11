@@ -4,12 +4,12 @@
  
 int main(void) 
 {
-    int iCount;
-    int iErgebnis;  
+    int Count;
+    int Ergebnis;  
  
-    for (iCount = 1; iCount * iCount <= 30; iCount++)
+    for (Count = 1; Count * Count <= 30; Count++)
     {
-        iErgebnis = iCount * iCount;
-        printf("Ergebnis: %d\n", iErgebnis);
+        Ergebnis = Count * Count;
+        printf("Ergebnis: %d\n", Ergebnis);
     }
 }
