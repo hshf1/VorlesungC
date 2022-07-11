@@ -3,17 +3,16 @@
 #include <stdio.h>
  
 int main(void){
-    int iCount;
-    int iErgebnis;
+    int Count;
+    int Ergebnis;
  
-    iCount = 1;     //Initialisierung Schleifenvariable
-    iErgebnis =0;
+    Count = 1;     //Initialisierung Schleifenvariable
+    Ergebnis =0;
  
     do {
-        iErgebnis = iErgebnis + iCount;
-        printf("Ergebnis %d: %d\n", iCount, iErgebnis);
-        iCount++;   // Reinitialisierung der Schleifenvariablen
+        Ergebnis = Ergebnis + Count;
+        printf("Ergebnis %d: %d\n", Count, Ergebnis);
+        Count++;   // Reinitialisierung der Schleifenvariablen
     }
-    while (iCount <=10);    // Ist die Bedingung erfüllt?
-    return 0;
+    while (Count <=10);    // Ist die Bedingung erfüllt?
 }
