@@ -4,12 +4,12 @@
 
 int main (void)
 {
-    int iZahl;
+    int Zahl;
 
     printf("Geben Sie einen Wert zwischen 10 und 20 ein: " );
-    scanf("%d", &iZahl);
+    scanf("%d", &Zahl);
 
-    if ((iZahl < 10) || (iZahl > 20))
+    if ((Zahl < 10) || (Zahl > 20))
     {
         printf("Falsche Eingabe! \n");
     }
