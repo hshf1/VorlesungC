@@ -4,11 +4,11 @@
 
 int main (void)
 {
-    int iNote;
+    int Note;
 
-    scanf("%d", &iNote);
+    scanf("%d", &Note);
 
-    switch (iNote)
+    switch (Note)
     {
         case 1: printf("sehr gut");                         break;
         case 2: printf("gut");                              break;
