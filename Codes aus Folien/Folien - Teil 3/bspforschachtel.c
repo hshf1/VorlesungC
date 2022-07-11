@@ -4,14 +4,14 @@
  
 int main (void)
 {
-    int iCount;
-    int iMal;
+    int Count;
+    int Mal;
  
     // Das kleine ein-mal-eins
  
-    for (iCount = 1; iCount <= 10; iCount++){
-        for (iMal = 1; iMal <= 10; iMal++){
-            printf("%d * %d = %d\n", iCount, iMal, iCount*iMal);
+    for (Count = 1; Count <= 10; Count++){
+        for (Mal = 1; Mal <= 10; Mal++){
+            printf("%d * %d = %d\n", Count, Mal, Count*Mal);
         }
     }
 }
