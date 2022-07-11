@@ -4,13 +4,13 @@
  
 int main(void) 
 {
-    int iCount;
-    int iErgebnis;  
+    int Count;
+    int Ergebnis;  
  
-    iErgebnis = 50;
+    Ergebnis = 50;
  
-    for (iCount = 0;  iErgebnis <= 75; iErgebnis = ++iCount * 5 + 50)
+    for (Count = 0;  Ergebnis <= 75; Ergebnis = ++Count * 5 + 50)
     {
-        printf("Ergebnis %d: %d\n", iCount, iErgebnis);
+        printf("Ergebnis %d: %d\n", Count, Ergebnis);
     }
 }
