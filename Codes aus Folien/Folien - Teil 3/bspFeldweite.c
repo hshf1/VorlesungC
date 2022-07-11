@@ -4,11 +4,10 @@
  
 int main(void) 
 {
-    float fZahlFLOAT = 1.234567;
+    float ZahlFLOAT = 1.234567;
  
-    printf("Format f   :#%f#\n",    fZahlFLOAT );
-    printf("Format 10f :#%10f#\n",  fZahlFLOAT );
-    printf("Format 010f:#%010f#\n", fZahlFLOAT );
-    printf("Format 5f  :#%5f#\n",   fZahlFLOAT );
-    return 0;
+    printf("Format f   :#%f#\n",    ZahlFLOAT );
+    printf("Format 10f :#%10f#\n",  ZahlFLOAT );
+    printf("Format 010f:#%010f#\n", ZahlFLOAT );
+    printf("Format 5f  :#%5f#\n",   ZahlFLOAT );
 }
