@@ -4,10 +4,10 @@
  
 int main(void)
 {
-    int iCount;
+    int Count;
     
-    for (printf("Bitte geben Sie eine Zahl ein: "); iCount != 5;) 
+    for (printf("Bitte geben Sie eine Zahl ein: "); Count != 5;) 
     {
-        scanf("%d", &iCount);
+        scanf("%d", &Count);
     }
 }
