@@ -4,13 +4,13 @@
  
 int main (void)
 {
-    char cEingabe;
+    char Eingabe;
 
     // vorrangegangener Code ...
 
-    scanf("%c", &cEingabe);
+    scanf("%c", &Eingabe);
 
-    switch (cEingabe)
+    switch (Eingabe)
     {
         case 'E': printf("Neuen Eintrag einfügen"); break;
         case 'L': printf("Eintrag löschen");        break;
