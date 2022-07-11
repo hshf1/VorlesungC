@@ -2,15 +2,14 @@
 
 #include <stdio.h>
  
-const double dPI = 3.14159265;
+const double PI = 3.14159265;
  
 int main(void)
 {
-    double dRadius = 3.4;
-    double dUmfang = 0.0;
-    double dFlaeche = 0.0;
+    double Radius = 3.4;
+    double Umfang = 0.0;
+    double Flaeche = 0.0;
 
-    dUmfang = 2 * dPI * dRadius;
-    dFlaeche = dPI * (dRadius * dRadius);
-    return 0;
+    Umfang = 2 * PI * Radius;
+    Flaeche = PI * (Radius * Radius);
 }
