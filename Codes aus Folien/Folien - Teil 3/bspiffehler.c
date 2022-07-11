@@ -4,12 +4,12 @@
 
 int main(void)
 {
-    int iMax           = 0;
-    int iScanresult    = 0;
+    int Max           = 0;
+    int Scanresult    = 0;
 
     printf("Geben Sie eine Ganzzahl ein ");
-    iScanresult = scanf("%d", &iMax);
-    if (iScanresult = 0) 
+    Scanresult = scanf("%d", &Max);
+    if (Scanresult = 0) 
     {
         printf("Fehleingabe: Es wurde keine Zahl eingegeben.\n\n");
     }
