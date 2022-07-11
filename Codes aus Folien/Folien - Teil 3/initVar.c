@@ -4,14 +4,13 @@
  
 int main(void)
 {
-    int iBreite;
-    int iHoehe;
-    int iUmfang;
-    int iFlaeche;
+    int Breite;
+    int Hoehe;
+    int Umfang;
+    int Flaeche;
  
-    iBreite = 5;
-    iHoehe = 5;
-    iUmfang = 2 * (iBreite + iHoehe);
-    iFlaeche = (iBreite * iHoehe);
-    return 0;
+    Breite = 5;
+    Hoehe = 5;
+    Umfang = 2 * (Breite + Hoehe);
+    Flaeche = (Breite * Hoehe);
 }
