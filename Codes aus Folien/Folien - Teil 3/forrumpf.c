@@ -4,10 +4,10 @@
  
 int main(void)
 {
-    int iCount;
+    int Count;
  
-    for (iCount = 20;  iCount > 0; ) {
-        printf("Ergebnis %d\n", iCount);
-        iCount = iCount - 2;
+    for (Count = 20;  Count > 0; ) {
+        printf("Ergebnis %d\n", Count);
+        Count = Count - 2;
   }
 }
