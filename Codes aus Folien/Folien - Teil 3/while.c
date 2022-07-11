@@ -4,18 +4,17 @@
  
 int main(void)
 {
-    int iCount;
-    int iErgebnis;
+    int Count;
+    int Ergebnis;
  
-    iCount = 1;  /* Initialisierung der Schleifenvariablen */
-    iErgebnis = 0;
+    Count = 1;  /* Initialisierung der Schleifenvariablen */
+    Ergebnis = 0;
     
     /* Solange Bedingung erfüllt ist, führe aus... */
-    while (iCount <= 10) 
+    while (Count <= 10) 
     {
-        iErgebnis = iErgebnis + iCount;
-        printf("Schleifendurchlauf %d: %d\n", iCount, iErgebnis);
-        iCount++;   /* Reinitialisierung der Schleifenvariable */
+        Ergebnis = Ergebnis + Count;
+        printf("Schleifendurchlauf %d: %d\n", Count, Ergebnis);
+        Count++;   /* Reinitialisierung der Schleifenvariable */
     }
-    return 0;
 }
