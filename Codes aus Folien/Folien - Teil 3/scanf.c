@@ -5,12 +5,11 @@
  
 int main(void)
 {
-    char cZ1 = '0';
-    int iErg;
+    char Z1 = '0';
+    int Erg;
     
-    iErg = scanf("das muss exakt stimmen: %c", &cZ1);
-    printf("Eingabe: %c\n", cZ1 );
-    printf("Zuweisungen: %d\n", iErg);
+    Erg = scanf("das muss exakt stimmen: %c", &Z1);
+    printf("Eingabe: %c\n", Z1 );
+    printf("Zuweisungen: %d\n", Erg);
     system("pause");
-    return 0;
 }
