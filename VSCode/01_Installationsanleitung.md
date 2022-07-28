@@ -1,4 +1,4 @@
-![[GitHub Discussions](https://github.com/hshf1/VorlesungC/discussions)](https://img.shields.io/github/discussions/hshf1/VorlesungC)
+![[GitHub Discussions](https://github.com/hshf1/VorlesungC/discussions)(https://img.shields.io/github/discussions/hshf1/VorlesungC)
 
 # VSCode Installationsanleitung
 
