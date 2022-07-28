@@ -1,5 +1,4 @@
-![Custom badge](https://img.shields.io/endpoint?url=https://github.com/hshf1/VorlesungC/discussions&style={
-  "schemaVersion": 1,
+![Custom badge](https://img.shields.io/endpoint?url=https://github.com/hshf1/VorlesungC/discussions&style={"schemaVersion": 1,
   "label": "hello",
   "message": "sweet world",
   "color": "orange"
