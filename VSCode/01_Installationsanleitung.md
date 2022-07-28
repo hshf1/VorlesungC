@@ -2,9 +2,6 @@
 
 # VSCode Installationsanleitung
 
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/hshf1/VorlesungC/discussions" data-icon="octicon-comment-discussion" data-size="large" aria-label="Discuss hshf1/VorlesungC on GitHub">Discuss</a>
-
 Dies ist eine Anleitung (von Studenten für Studenten) zur Installation von VSCode für die Vorlesung C.<br />
 Für die Installation ist es erforderlich, dass ihr über <b>Adminrechte</b> verfügt.<br />
 
