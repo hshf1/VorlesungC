@@ -93,7 +93,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 Ihr könnt die Installation bei Problemen oder bei bereits installiertem VSCode ohne etwas deinstallieren zu müssen einfach ausführen. <br />
 Es werden automatisch nur fehlende oder unvollständige installationen durchgeführt. <br /><br />
 
-<a href="https://github.com/hshf1/VorlesungC/files/8936799/installVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.04_20.06.2022-success" height="50" /></a>
+<a href="https://github.com/hshf1/VorlesungC/files/8936799/installVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.04_20.06.2022-success?logo=windows" height="50" /></a>
 <br /><br />
   
 Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
@@ -131,7 +131,7 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. Danach kann man erneut die oben beschriebene Installation durchführen.
 <br /><br />
 
-<a href="https://github.com/hshf1/VorlesungC/files/8936792/uninstallVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.01_20.06.2022-success" height="50" /></a>
+<a href="https://github.com/hshf1/VorlesungC/files/8936792/uninstallVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.01_20.06.2022-success?logo=windows" height="50" /></a>
 <br /><br />
   
 Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
@@ -165,9 +165,10 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 <b>Anmerkung: Um im Computerraum richtig debuggen zu können, muss Schritt 2 befolgt werden. Andernfalls erhält man eine Fehlermeldung beim Ausführen des Debuggers.</b>
 
 ### Schritt 1
-
-Wir laden den ZIP-Ordner hier runter:
-[installVSCodeCR.zip](https://github.com/hshf1/VorlesungC/files/8937057/installVSCodeCR.zip)
+  
+<br />
+<a href="https://github.com/hshf1/VorlesungC/files/8937057/installVSCodeCR.zip"><img src="https://img.shields.io/badge/Download-v1.01_20.06.2022-success?logo=windows" height="50" /></a>
+<br /><br />
   
 Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
 ![Screenshot (18)](https://user-images.githubusercontent.com/100713757/166149097-c7db2762-97ca-4e0d-8d5a-8b200b9b0154.png)
