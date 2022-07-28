@@ -11,7 +11,7 @@ Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt i
 ## MacOS
 
 <details>
-  <summary>Hier klicken, um VSCode auf dem MacOS zu installieren. <a href="https://github.com/hshf1/VorlesungC/discussions/categories/01_vscode"><img src="https://img.shields.io/badge/Version-1.02_01.05.2022-success" /></a></summary>
+  <summary>Hier klicken, um VSCode auf dem MacOS zu installieren.</summary>
   
 Klickt auf den Button und ladet die folgende Datei herunter: <a href="https://github.com/hshf1/VorlesungC/files/8599884/installVSCode.zip"><img src="https://img.shields.io/badge/Version-1.02_01.05.2022-success" /></a>
 
