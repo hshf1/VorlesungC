@@ -1,6 +1,6 @@
 <a href="https://github.com/hshf1/VorlesungC/discussions"><img src="https://img.shields.io/badge/Allgemein-Q%26A-informational?logo=github" height="25"/></a>
 <a href="https://github.com/hshf1/VorlesungC/discussions/categories/02_übungsaufgaben"><img src="https://img.shields.io/badge/Übungsaufgaben-Q%26A-informational?logo=c" height="25"/></a>
-<a href="https://github.com/hshf1/VorlesungC/discussions/9"><img src="https://img.shields.io/badge/Aufgabe_bewerten-informational?logo=c" height="25"/></a>
+<a href="https://github.com/hshf1/VorlesungC/discussions/9"><img src="https://img.shields.io/badge/Aufgabe_bewerten-success?logo=c" height="25"/></a>
 <a href="https://moodle.hs-hannover.de/course/view.php?id=20754"><img src="https://img.shields.io/badge/LearnerLab-orange?logo=c" height="25"/></a>
 
 # Aufgabe 4
