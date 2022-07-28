@@ -1,8 +1,4 @@
-
-[![Join the chat at https://gitter.im/Payum/Payum](https://badges.gitter.im/Payum/Payum.svg)](https://gitter.im/Payum/Payum?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://travis-ci.org/Payum/Payum.png?branch=master)](https://travis-ci.org/Payum/Payum)
-[![Total Downloads](https://poser.pugx.org/payum/payum/d/total.png)](https://packagist.org/packages/payum/payum)
-[![Latest Stable Version](https://poser.pugx.org/payum/payum/version.png)](https://packagist.org/packages/payum/payum)
+![Custom badge](https://img.shields.io/endpoint?color=yellow&label=Test&logo=yes&logoColor=blue&url=https%3A%2F%2Fshields.redsparr0w.com%2F2473%2Fmonday)
 
 # VSCode Installationsanleitung
 
