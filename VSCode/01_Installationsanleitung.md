@@ -1,7 +1,3 @@
-<body>
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-
 # VSCode Installationsanleitung
 
 <a class="github-button" href="https://github.com/ntkme/github-buttons/discussions" data-icon="octicon-comment-discussion" aria-label="Discuss ntkme/github-buttons on GitHub">Discuss</a>
@@ -211,4 +207,3 @@ Von hier aus können wir unseren Ordner dann auswählen und debuggen können.
   
 Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
 </details>
-</body>
