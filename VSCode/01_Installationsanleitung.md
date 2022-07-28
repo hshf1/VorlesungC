@@ -1,5 +1,8 @@
 # VSCode Installationsanleitung
 
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 Dies ist eine Anleitung (von Studenten für Studenten) zur Installation von VSCode für die Vorlesung C.<br />
 Für die Installation ist es erforderlich, dass ihr über <b>Adminrechte</b> verfügt.<br />
 
