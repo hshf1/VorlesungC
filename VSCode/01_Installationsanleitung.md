@@ -1,4 +1,4 @@
-<img alt="GitHub Discussions" src="https://img.shields.io/github/discussions/hshf1/VorlesungC">
+<img alt="GitHub Discussions" src="https://img.shields.io/github/discussions/hshf1/VorlesungC"><a href="https://github.com/hshf1/VorlesungC/discussions">
 
 # VSCode Installationsanleitung
 
