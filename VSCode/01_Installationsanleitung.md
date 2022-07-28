@@ -1,4 +1,4 @@
-<a href="[https://github.com/hshf1/VorlesungC/discussions](https://github.com/hshf1/VorlesungC/discussions/categories/01_vscode)"><img src="https://img.shields.io/badge/Q%26A-Installation-informational" /></a>
+<a href="https://github.com/hshf1/VorlesungC/discussions/categories/01_vscode"><img src="https://img.shields.io/badge/Q%26A-VSCode-informational" /></a>
   
 # VSCode Installationsanleitung
 
