@@ -56,7 +56,7 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 <br />
 Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. Danach kann man erneut die oben beschriebene Installation durchführen.
 <br /><br />
-<a href="https://github.com/hshf1/VorlesungC/files/8937317/uninstallVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.00_20.06.2022-success?logo=macos" height="50" /></a>
+<a href="https://github.com/hshf1/VorlesungC/files/8937317/uninstallVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.00_20.06.2022-success?logo=apple" height="50" /></a>
 <br /><br />
 
 Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop). <br />
