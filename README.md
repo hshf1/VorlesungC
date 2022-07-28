@@ -3,5 +3,3 @@
 <a href="https://github.com/hshf1/VorlesungC/discussions/categories/02_übungsaufgaben"><img src="https://img.shields.io/badge/Übungsaufgaben-Q%26A-informational?logo=c" height="25"/></a>
 <a href="https://github.com/hshf1/VorlesungC/discussions/categories/05_umfragen"><img src="https://img.shields.io/badge/Umfragen-red?logo=c" height="25"/></a>
 <a href="https://moodle.hs-hannover.de/course/view.php?id=20754"><img src="https://img.shields.io/badge/LearnerLab-orange?logo=c" height="25"/></a>
-
-https://github.com/hshf1/VorlesungC/discussions/20#discussion-4260618
