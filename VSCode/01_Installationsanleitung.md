@@ -1,4 +1,4 @@
-![Custom badge](https://img.shields.io/endpoint?color=yellow&label=Test&logo=yes&logoColor=blue&url=https%3A%2F%2Fshields.redsparr0w.com%2F2473%2Fmonday)
+![Custom badge](https://img.shields.io/endpoint?color=lightgrey&label=Q%26A&url=https%3A%2F%2Fgithub.com%2Fhshf1%2FVorlesungC%2Fdiscussions)
 
 # VSCode Installationsanleitung
 
