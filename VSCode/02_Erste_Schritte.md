@@ -1,6 +1,6 @@
 ## Allgemeine Hinweise
 
-<div id="sfcbkk92bh5ndxbtz85n56x829ugeth6kra"></div><<br><noscript><a href="https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md" title="hit counter"><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=bkk92bh5ndxbtz85n56x829ugeth6kra" border="0" title="hit counter" alt="hit counter"></a></noscript>
+<div id="sfcmr8d68apej3r4hk6q8aa284h9545qx13"></div><script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=mr8d68apej3r4hk6q8aa284h9545qx13&down=async" async></script><br><a href="https://www.freecounterstat.com">web page counter</a><noscript><a href="https://www.freecounterstat.com" title="web page counter"><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=mr8d68apej3r4hk6q8aa284h9545qx13" border="0" title="web page counter" alt="web page counter"></a></noscript>
 
 Bei Problemen und Fehlern schaut hier: [03_Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md).
 
