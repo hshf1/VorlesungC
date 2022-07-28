@@ -1,4 +1,4 @@
-![(https://img.shields.io/github/discussions/hshf1/VorlesungC)](https://github.com/hshf1/VorlesungC/discussions)
+<img alt="GitHub Discussions" src="https://img.shields.io/github/discussions/hshf1/VorlesungC">
 
 # VSCode Installationsanleitung
 
