@@ -14,7 +14,7 @@ Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt i
   <summary>Hier klicken, um VSCode auf dem MacOS zu installieren.</summary>
 <br />
 <a href="https://github.com/hshf1/VorlesungC/files/8599884/installVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.02_01.05.2022-success" height="50" /></a>
-
+<br />
 Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop). <br />
 <img width="401" alt="Bildschirmfoto 2022-04-17 um 05 35 45" src="https://user-images.githubusercontent.com/100713757/163699203-aff40972-d3a1-4212-ad96-71e6606950f9.png"> <br />
   
