@@ -1,4 +1,4 @@
-<a href="https://github.com/hshf1/VorlesungC/discussions/categories/01_vscode"><img src="https://img.shields.io/badge/Q%26A-VSCode-informational?logo=visualstudiocode" height="25"/></a>
+<a href="https://github.com/hshf1/VorlesungC/discussions/categories/01_vscode"><img src="https://img.shields.io/badge/VSCode-Q%26A-informational?logo=visualstudiocode" height="25"/></a>
   
 # VSCode Installationsanleitung
 
