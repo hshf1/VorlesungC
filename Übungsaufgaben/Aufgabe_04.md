@@ -12,7 +12,6 @@ Nutzen sie hierfür eine Zählschleife.
 - [ ] Ausgabe von Zahl und Zeichen
 
 
-
 ## Tipp - Schleife
 <details>
 <summary>Klicken zum Öffnen</summary>
