@@ -1,9 +1,5 @@
 ## Allgemeine Hinweise
 
-<div id="sfcmr8d68apej3r4hk6q8aa284h9545qx13"></div>
-<script src="https://counter9.stat.ovh/private/counter.js?c=mr8d68apej3r4hk6q8aa284h9545qx13"></script>
-<noscript><a href="https://www.freecounterstat.com" title="web page counter"><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=mr8d68apej3r4hk6q8aa284h9545qx13" border="0" title="web page counter" alt="web page counter"></a></noscript>
-
 Bei Problemen und Fehlern schaut hier: [03_Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md).
 
 VSCode wird wahrscheinlich ein Update auf die Insiders-Version (Beta-Version) anbieten, wovon abgeraten wird.<br />
