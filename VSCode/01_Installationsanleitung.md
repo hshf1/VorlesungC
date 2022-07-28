@@ -161,11 +161,10 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 
 <details>
   <summary>Hier klicken, um VSCode auf im Computerraum der Hochschule zu nutzen. (Aktuelle Version: V1.04 20.06.2022)</summary>
-  
+<br />
 <b>Anmerkung: Um im Computerraum richtig debuggen zu können, muss Schritt 2 befolgt werden. Andernfalls erhält man eine Fehlermeldung beim Ausführen des Debuggers.</b>
 
 ### Schritt 1
-  
 <br />
 <a href="https://github.com/hshf1/VorlesungC/files/8937057/installVSCodeCR.zip"><img src="https://img.shields.io/badge/Download-v1.01_20.06.2022-success?logo=windows" height="50" /></a>
 <br /><br />
