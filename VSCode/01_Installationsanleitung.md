@@ -1,3 +1,4 @@
+<body>
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
@@ -210,3 +211,4 @@ Von hier aus können wir unseren Ordner dann auswählen und debuggen können.
   
 Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
 </details>
+</body>
