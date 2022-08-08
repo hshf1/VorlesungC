@@ -9,4 +9,6 @@ int main (void)
     for (ZeichenGross = 'A'; ZeichenGross < 'C'; ZeichenGross++){
         printf("Schleifendurchlauf: %c\n", ZeichenGross);
     }
+    
+    return 0;
 }
