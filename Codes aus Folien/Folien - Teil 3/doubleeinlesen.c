@@ -9,4 +9,6 @@ int main(void)
     printf("Bitte geben Sie eine Zahl ein: ");
     scanf("%f", &Zahl );
     printf("Zahl %f\n", Zahl );
+    
+    return 0;
 }
