@@ -12,4 +12,6 @@ int main(void){
     // alternativ:
     // scanf("%c", &zeichen);
     } while (zeichen < '0'  || zeichen > '9');
+    
+    return 0;
 }
