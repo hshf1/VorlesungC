@@ -21,4 +21,6 @@ int main (void)
     }
 
     // ... nachfolgender Code
+    
+    return 0;
 }
