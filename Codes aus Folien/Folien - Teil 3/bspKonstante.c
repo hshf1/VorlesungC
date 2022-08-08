@@ -12,4 +12,6 @@ int main(void)
 
     Umfang = 2 * PI * Radius;
     Flaeche = PI * (Radius * Radius);
+ 
+    return 0;
 }
