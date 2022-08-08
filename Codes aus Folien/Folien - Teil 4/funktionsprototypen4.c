@@ -12,4 +12,6 @@ int main(void)
     const float Zahl2= 4.5;
     double Uebergabe;
     Uebergabe = CalcProduct(Zahl1, Zahl2);
+    
+    return 0;
 }
