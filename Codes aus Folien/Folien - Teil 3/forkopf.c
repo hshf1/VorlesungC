@@ -12,4 +12,6 @@ int main(void)
         Ergebnis = Count * Count;
         printf("Ergebnis: %d\n", Ergebnis);
     }
+    
+    return 0;
 }
