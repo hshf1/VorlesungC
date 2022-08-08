@@ -12,4 +12,6 @@ int main(void) {
     Firstwert.Betrag = &Kosten;
     Firstwert.Rate = &Zinsen;
     *Firstwert.Betrag = 100.99;
+    
+    return 0;
 }
