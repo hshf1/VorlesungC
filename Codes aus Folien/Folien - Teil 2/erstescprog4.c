@@ -8,4 +8,6 @@ int main (void)
     printf("Hello World\n");
     system("pause");
     dasGibtsgarnicht();
+    
+    return 0;
 }
