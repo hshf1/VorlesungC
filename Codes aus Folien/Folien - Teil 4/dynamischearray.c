@@ -14,4 +14,6 @@ int main (void) {
     }
     free(value);
     value = NULL;
+    
+    return 0;
 }
