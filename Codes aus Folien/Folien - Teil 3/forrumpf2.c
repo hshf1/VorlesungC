@@ -13,4 +13,6 @@ int main(void)
         printf("Ergebnis %d\n", Count);
         Count = Count - 2;
     }
+    
+    return 0;
 }
