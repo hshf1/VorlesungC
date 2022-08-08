@@ -15,4 +15,6 @@ int main(void){
     } while (y > 0.01 || y < -0.01);
     
     printf("Nullstelle: %.4f", x);
+    
+    return 0;
 }
