@@ -7,4 +7,6 @@ int main(void) {
     char *Text2 [] = {"Auto", "Hund", "Haus"}; //Stringtabelle Typ 2
     
     printf("%s", Text[1]+1);
+    
+    return 0;
 }
