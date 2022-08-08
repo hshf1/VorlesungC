@@ -10,4 +10,6 @@ int main(void) {
     Reihe[1] = 2.5;
     Reihe[2] = 3.5;
     Reihe[3] = 4.5;
+    
+    return 0;
 }
