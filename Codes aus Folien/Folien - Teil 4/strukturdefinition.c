@@ -9,4 +9,6 @@ int main(void) {
         float minBestand;
     } art;
     art.artikelnummer = 1;
+    
+    return 0;
 }
