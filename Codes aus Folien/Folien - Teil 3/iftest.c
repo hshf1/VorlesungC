@@ -18,4 +18,5 @@ int main (void)
     if (++a==2 && a*2==2) printf("TRUE\n");
     else printf("FALSE\n");
  
+    return 0;
 }
