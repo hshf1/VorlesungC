@@ -6,4 +6,6 @@ int main(void) {
     int *pF = feld;
     printf("%d\n", *pF++); 
     printf("%d\n%d", *pF + 2, *(pF + 2)); 
+    
+    return 0;
 }
