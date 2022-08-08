@@ -10,4 +10,6 @@ typedef struct ARTIKEL {
 
 int main(void) {
     artikel_t Art = { 1, "Apfel pro kg", 1.99, 5.0, 3.0};
+    
+    return 0;
 }
