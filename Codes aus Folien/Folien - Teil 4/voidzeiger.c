@@ -9,5 +9,7 @@ int main(void)
     Wert = 10;
     Zeiger = &Wert;
     
-printf("pointer: Adr. %p, Wert %d\n", Zeiger, *(int *)Zeiger);
+    printf("pointer: Adr. %p, Wert %d\n", Zeiger, *(int *)Zeiger);
+    
+    return 0;
 }
