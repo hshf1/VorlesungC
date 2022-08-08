@@ -18,4 +18,6 @@ int main (void)
     for (Zaehler = 5.0; Zaehler > 0.0; Zaehler -= 0.25) {
         printf("Schleifendurchlauf %.2f\n", Zaehler);
     }
+    
+    return 0;
 }
