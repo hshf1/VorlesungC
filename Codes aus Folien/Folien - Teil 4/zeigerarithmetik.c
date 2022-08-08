@@ -8,4 +8,6 @@ int main(void) {
     printf("%d\n", *pointer);
     printf("%d\n", *(pointer + 1));
     printf("%d\n", *(pointer++));
+    
+    return 0;
 }
