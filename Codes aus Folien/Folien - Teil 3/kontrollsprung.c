@@ -19,4 +19,6 @@ int main(void)
         }
     }
     printf("\nDie Summe betraegt: %d\n", Ergebnis);
+    
+    return 0;
 }
