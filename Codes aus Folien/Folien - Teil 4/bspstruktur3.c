@@ -13,4 +13,6 @@ int main(void) {
 
     printf("Artikel.name: %s\n", Art1.Name);
     printf("Artikel.preis: %6.2f\n", *Art1.Preis);
+    
+    return 0;
 }
