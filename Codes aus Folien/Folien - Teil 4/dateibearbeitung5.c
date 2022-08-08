@@ -14,4 +14,6 @@ int main() {
     fread(messwerte, sizeof(int), 4, fp); 
 
     fclose(fp);
+    
+    return 0;
 }
