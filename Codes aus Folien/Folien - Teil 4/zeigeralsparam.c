@@ -11,4 +11,6 @@ int main(void) {
     printf("%f\n", Wert); 
     malZwei(&Wert);
     printf("%f\n", Wert); 
+   
+    return 0;
 }
