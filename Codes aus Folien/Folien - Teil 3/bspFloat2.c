@@ -16,4 +16,6 @@ int main(void)
     printf("Float Format +010.4f  :#%+010.4f#\n",  ZahlFl);
     printf("Float Format -010.4f  :#%-010.4f#\n",  ZahlFl);
     printf("Float Format -+010.4f :#%-+010.4f#\n", ZahlFl);
+    
+    return 0;
 }
