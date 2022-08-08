@@ -16,4 +16,6 @@ int main(void) {
     printf("Gebe eine Zahl ein: ");
     Zahl = eingabe();
     ausgabe(Zahl);
+    
+    return 0;
 }
