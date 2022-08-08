@@ -21,4 +21,6 @@ int main(void)
     putchar(c2);
     putchar('\n');
     printf("Ansi-Wert: %d \n", c2);
+    
+    return 0;
 }
