@@ -15,4 +15,6 @@ int main(void) {
 
     puts (String1);
     puts (String2);
+    
+    return 0;
 }
