@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
+int main(void) {
     int *ptr = NULL;
     ptr = (int *) malloc( 10*sizeof( int ) );
     if (ptr == NULL) {
@@ -15,4 +15,6 @@ int main() {
         printf("%d",*ptr+1);
         free(ptr);
     }
+    
+    return 0;
 }
