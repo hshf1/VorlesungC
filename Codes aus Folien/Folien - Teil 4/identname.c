@@ -7,5 +7,7 @@ int main(void)
     int Mal;
     for (...) {
         int Zahl;
- }
+    }
+    
+    return 0;
 }
