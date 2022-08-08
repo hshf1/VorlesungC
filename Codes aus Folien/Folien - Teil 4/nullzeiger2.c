@@ -10,4 +10,7 @@ int main(void) {
     else {
         *Zeiger = 3;
     }
+    
+    system("Pause");
+    return 0;
 }
