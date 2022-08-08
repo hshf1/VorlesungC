@@ -1,6 +1,7 @@
 // Folie 4 – dateibearbeitung.c
 #include <stdio.h>
 #include <stdlib.h>
+
 int main(void) {
     int i;
     FILE *filePointer;
@@ -19,4 +20,6 @@ int main(void) {
 
     fclose(filePointer);
     filePointer = NULL;
+    
+    return 0;
 }
