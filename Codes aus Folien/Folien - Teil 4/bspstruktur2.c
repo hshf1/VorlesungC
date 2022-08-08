@@ -12,4 +12,6 @@ int main(void) {
     printf("Artikel.name: %s\n", Art1.Name);
     printf("Artikel.name, 2. Buchstabe: %c", Art1.Name[1]);
     system("pause");
+    
+    return 0;
 }
