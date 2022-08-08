@@ -8,4 +8,6 @@ int main(void)
            "Dies ist ein Test, um die Genauigkeit "
            "zu erklaeren.");
     printf("Teststring 10.15s   :#%10.15s#\n","Dies");
+    
+    return 0;
 }
