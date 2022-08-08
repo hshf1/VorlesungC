@@ -13,4 +13,6 @@ int main(void)
     }
     
     printf("Diese Zeile wird niemals erreicht werden");
+    
+    return 0;
 }
