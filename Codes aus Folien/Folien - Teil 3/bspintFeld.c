@@ -14,4 +14,6 @@ int main(void){
     }
 
     printf("%d", zaehler);
+    
+    return 0;
 }
