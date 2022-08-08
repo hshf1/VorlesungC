@@ -9,4 +9,6 @@ int main(void) {
     zeiger = pointer;
     *zeiger = 5;
     *pointer = *zeiger * 2;
+    
+    return 0;
 }
