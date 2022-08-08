@@ -12,4 +12,6 @@ int main(void){
     }
     
     printf("Anzahl Zeichen: %d\n", len);
+    
+    return 0;
 }
