@@ -12,4 +12,6 @@ int main(void)
     printf("Eingabe: %c\n", Z1 );
     printf("Zuweisungen: %d\n", Erg);
     system("pause");
+    
+    return 0;
 }
