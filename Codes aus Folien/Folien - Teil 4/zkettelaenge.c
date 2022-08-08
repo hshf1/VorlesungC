@@ -15,4 +15,5 @@ int main(void) {
     printf("Es wurden %d Zeichen eingegeben\n\n", Laenge);
 
     system("Pause");
+    return 0;
 }
