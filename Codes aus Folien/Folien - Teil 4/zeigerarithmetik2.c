@@ -10,4 +10,6 @@ int main(void) {
     printf("%d\n", *(pointer++));
     printf("%d\n", *(++pointer));
     printf("%d\n", *(pointer - 1));
+    
+    return 0;
 }
