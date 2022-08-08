@@ -13,4 +13,6 @@ int main(void) {
     printf("Artikel.Name: %s", Art1.Name);
     printf("Artikel.Preis: %6.2f", Art1.Preis);
     system("pause");
+    
+    return 0;
 }
