@@ -5,10 +5,13 @@
 int main(void) 
 {
     int *Zeiger = NULL;
+    
     if (Zeiger == NULL) { 
         printf("Keine gueltige Adresse\n");
     }
     else {
         *Zeiger = 3;
     }
+    
+    return 0;
 }
