@@ -10,4 +10,6 @@ int main(void)
     printf("Format 10f :#%10f#\n",  ZahlFLOAT );
     printf("Format 010f:#%010f#\n", ZahlFLOAT );
     printf("Format 5f  :#%5f#\n",   ZahlFLOAT );
+    
+    return 0;
 }
