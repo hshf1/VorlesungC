@@ -10,4 +10,6 @@ int main(void)
     printf("Float Format .4f      :#%.4f#\n",      ZahlFl);
     printf("Float Format 8.4f     :#%8.4f#\n",     ZahlFl);
     printf("Float Format 10.4f    :#%10.4f#\n",    ZahlFl);
+    
+    return 0;
 }
