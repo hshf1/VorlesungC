@@ -30,5 +30,7 @@ int main(void)
 
     Result = (double) 5 + 1/2;
     printf("Ergebnis: %.1f\n", Result); /* Ergebnis: 5.0 */
+    
+    return 0;
 }
 
