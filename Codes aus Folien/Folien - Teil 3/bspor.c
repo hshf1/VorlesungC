@@ -13,4 +13,6 @@ int main (void)
     {
         printf("Falsche Eingabe! \n");
     }
+    
+    return 0;
 }
