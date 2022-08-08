@@ -20,4 +20,6 @@ int main(void) {
         printf("%d \t %5.2f \t %s\n", ArtFeld[i].Nummer, ArtFeld[i].Preis,
          ArtFeld[i].Name);
     }
+    
+    return 0;
 }
