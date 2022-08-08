@@ -9,5 +9,7 @@ int main(void)
     for (Count = 20;  Count > 0; ) {
         printf("Ergebnis %d\n", Count);
         Count = Count - 2;
-  }
+    }
+    
+    return 0;
 }
