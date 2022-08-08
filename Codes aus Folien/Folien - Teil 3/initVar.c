@@ -13,4 +13,6 @@ int main(void)
     Hoehe = 5;
     Umfang = 2 * (Breite + Hoehe);
     Flaeche = (Breite * Hoehe);
+    
+    return 0;
 }
