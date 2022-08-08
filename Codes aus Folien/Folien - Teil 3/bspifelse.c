@@ -17,5 +17,8 @@ int main (void)
     else { 
         printf("Erste Zahl ist kleiner als zweite Zahl\n");
     }
+    
     system("Pause"); //Windows
+    
+    return 0;
 }
