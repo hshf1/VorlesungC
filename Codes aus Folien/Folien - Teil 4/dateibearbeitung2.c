@@ -26,4 +26,6 @@ int main(void) {
   
     fclose(filePointer);
     filePointer = NULL;
+	
+    return 0;
 }
