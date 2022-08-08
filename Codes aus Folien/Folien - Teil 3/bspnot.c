@@ -17,4 +17,6 @@ int main (void)
     {
         printf("Die Zahl ist ungleich Null\n");
     }
+    
+    return 0;
 }
