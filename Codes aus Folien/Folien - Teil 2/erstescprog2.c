@@ -13,6 +13,8 @@ hier steht ein mehrzeiliger Kommentar
 int main (void)
 {
     printf("Hello World\n");
-    system("pause"); //Windows -> Mac 
+    system("pause"); //Windows -> Mac
     //system( "read -n 1 -s -p \"Pause\"; echo");
+    
+    return 0;
 }
