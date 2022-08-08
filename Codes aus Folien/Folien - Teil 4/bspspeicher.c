@@ -30,4 +30,6 @@ int main(){
         printf("Pointer nach löschen:\n");
         printf("   Adr: \t%p\n", ptr);
     }
+    
+    return 0;
 }
