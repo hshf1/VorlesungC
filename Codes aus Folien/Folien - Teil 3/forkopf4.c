@@ -11,4 +11,6 @@ int main(void)
     {
         printf("%d * %d = %d\n", Count, merkCount, Count * merkCount);
     }
+    
+    return 0;
 }
