@@ -13,4 +13,6 @@ int main(void)
     {
         printf("Fehleingabe: Es wurde keine Ganzzahl eingegeben.\n\n");
     }
+    
+    return 0;
 }
