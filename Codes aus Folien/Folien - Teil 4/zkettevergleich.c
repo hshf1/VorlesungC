@@ -5,6 +5,9 @@
 int main(void) {
     char S1 [] = "xxAxx";
     char S2 [] = "xxBxx";
+    
     printf("%d\n", strcmp(S1,S2));
     printf("%d\n", strcmp(S2,S1));
+    
+    return 0;
 }
