@@ -1,6 +1,6 @@
 // Folie 4 – aufbaufunktionen.c
-int main(void)
 
+int main(void)
 {
     int Zahl;
     int Mal=5;
