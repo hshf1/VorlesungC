@@ -14,4 +14,6 @@ int main() {
     printf("%d", Zahl);
     ZahlenTest();
     printf("%d", Zahl);
+    
+    return 0;
 }
