@@ -19,4 +19,6 @@ int main (void)
         default:
         printf("Noten 1 - 6 bitte!");
     }
+    
+    return 0;
 }
