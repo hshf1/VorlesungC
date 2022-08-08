@@ -16,4 +16,6 @@ int main(void)
     printf("Neg Integer Format  u: #%u#\n", ZahlNEG);
     printf("Integer Format      X: #%X#\n", ZahlNEG);
     printf("Float Format        f: #%f#\n", ZahlFLOAT);
+    
+    return 0;
 }
