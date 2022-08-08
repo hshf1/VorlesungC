@@ -4,7 +4,8 @@
  
 int main(void)
 {
-   printf("So kann man wirklich ganz endlos lange Textstrings" 
-          "drucken, die so lang sind, dass"
-          " Sie ueber eine Zeile hinausgehen\n\n");    
+    printf("So kann man wirklich ganz endlos lange Textstrings" 
+           "drucken, die so lang sind, dass"
+           " Sie ueber eine Zeile hinausgehen\n\n");    
+    return 0;
 }
