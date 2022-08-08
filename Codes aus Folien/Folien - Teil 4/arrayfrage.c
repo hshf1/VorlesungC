@@ -8,4 +8,6 @@ int main() {
         Feld[i] = Feld[i+1];
         printf("%d ", Feld[i]);
     }
+    
+    return 0;
 }
