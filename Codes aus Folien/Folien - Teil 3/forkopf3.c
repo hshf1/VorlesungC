@@ -10,4 +10,6 @@ int main(void)
     {
         scanf("%d", &Count);
     }
+    
+    return 0;
 }
