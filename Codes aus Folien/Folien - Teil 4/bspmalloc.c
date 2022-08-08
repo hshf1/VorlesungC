@@ -3,10 +3,12 @@
 
 int main (void) 
 {
-	int *ptr;
-	ptr = (int *) malloc ( 4*sizeof( int ) );
-	if (ptr != NULL) 
-   {
-	   *ptr = 99;
-	}
+    int *ptr;
+    ptr = (int *) malloc ( 4*sizeof( int ) );
+    if (ptr != NULL) 
+    {
+        *ptr = 99;
+    }
+	
+    return 0;
 }
