@@ -18,4 +18,6 @@ int main(void) {
             printf(" %.2f", Sonnenaufgang[Zeile] [Spalte]);
             }
     }
+    
+    return 0;
 }
