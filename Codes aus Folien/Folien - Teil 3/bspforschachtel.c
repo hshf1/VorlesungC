@@ -14,4 +14,6 @@ int main (void)
             printf("%d * %d = %d\n", Count, Mal, Count*Mal);
         }
     }
+    
+    return 0;
 }
