@@ -22,4 +22,6 @@ int main (void)
     } else {
         printf("Keine korrekte Eingabe\n");
     }
+    
+    return 0;
 }
