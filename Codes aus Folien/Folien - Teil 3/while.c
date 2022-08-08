@@ -17,4 +17,6 @@ int main(void)
         printf("Schleifendurchlauf %d: %d\n", Count, Ergebnis);
         Count++;   /* Reinitialisierung der Schleifenvariable */
     }
+    
+    return 0;
 }
