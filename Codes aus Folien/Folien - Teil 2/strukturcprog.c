@@ -21,4 +21,5 @@ int main (void)
    Anzahl = 4;
 
    Erg = function1(Preis, Anzahl);
+   return 0;
 }
