@@ -2,7 +2,8 @@
  
 #include <stdio.h>
  
-int main(void){
+int main(void)
+{
     int Count;
     int Ergebnis;
  
@@ -15,4 +16,6 @@ int main(void){
         Count++;   // Reinitialisierung der Schleifenvariablen
     }
     while (Count <=10);    // Ist die Bedingung erfüllt?
+    
+    return 0;
 }
