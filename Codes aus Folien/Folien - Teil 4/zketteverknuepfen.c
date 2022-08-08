@@ -16,4 +16,6 @@ int main(void) {
     } else {
         puts("Passt nicht");    
     } 
+	
+    return 0;
 }
