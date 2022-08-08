@@ -16,4 +16,6 @@ int main(void){
     }
     
     printf("Ergebnis: %d", a);
+    
+    return 0;
 }
