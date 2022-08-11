@@ -1,10 +1,10 @@
 echo 'Hochschule Hannover 20.04.2022 V1.01'
 clear && printf '\e[3J'
-echo 'Compiler wird ├╝berpr├╝ft bzw. installiert.'
+echo 'Compiler wird überprüft bzw. installiert.'
 sudo command xcode-select --install 
-echo 'Falls Compiler nicht installiert war, ist das Installationsmen├╝ daf├╝r erschienen, 
-ansonsten sollte hierdr├╝ber die Fehlermeldung stehen, dass es bereits installiert ist.'
-echo 'Pfad von VSCode wird im System hinzugef├╝gt. VSCode muss bereits heruntergeladen und ins Programmverzeichnis verschoben worden sein!'
+echo 'Falls Compiler nicht installiert war, ist das Installationsmenü dafür erschienen, 
+ansonsten sollte hierdrüber die Fehlermeldung stehen, dass es bereits installiert ist.'
+echo 'Pfad von VSCode wird im System hinzugefügt. VSCode muss bereits heruntergeladen und ins Programmverzeichnis verschoben worden sein!'
 cat << EOF >> ~/.bash_profile
 # Add Visual Studio Code (code)
 export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
@@ -22,19 +22,19 @@ echo '{
    // Allgemeine Nutzereinstellungen
 "extensions.ignoreRecommendations": true,       // Keine Empfehlungen mehr Anzeigen
 "files.encoding": "utf8",                       // Zur richtigen Darstellung von Umlauten
-//"files.autoGuessEncoding": true,              // Zurzeit deaktiviert, da noch instabil! Automatische Anpassung der Encodierung, falls m├╢glich
+//"files.autoGuessEncoding": true,              // Zurzeit deaktiviert, da noch instabil! Automatische Anpassung der Encodierung, falls möglich
 "editor.unicodeHighlight.nonBasicASCII": false, // Nicht Basic ASCII Zeichen nicht hervorheben
-"files.autoSave": "onFocusChange",              // Dateien werden bei ├änderungen des Fokus automatisch gespeichert
-"code-runner.saveFileBeforeRun": true,          // speichert aktuelle Datei bevor sie mit CodeRunner ausgef├╝hrt wird
+"files.autoSave": "onFocusChange",              // Dateien werden bei Änderungen des Fokus automatisch gespeichert
+"code-runner.saveFileBeforeRun": true,          // speichert aktuelle Datei bevor sie mit CodeRunner ausgeführt wird
 "editor.bracketPairColorization.enabled": true, // Um Klammern und andere farbig darzustellen
 "editor.insertSpaces": true,                    // Ersetzt ein Tab durch Leerzeichen
 "editor.tabSize": 4,                            // Setzt die Zahl der durch einen Tab zu ersetzenden Leerzeichen
 "editor.renderWhitespace": "none",              // Zeigt keine Leerzeichen ein 
 //"editor.renderWhitespace": "selection",       // Nur im markierten Bereich Leerzeichen anzeigen
-"code-runner.runInTerminal": true,              // Um Eingaben in seinem Programm t├ñtigen zu k├╢nnen z.B. f├╝r scanf
+"code-runner.runInTerminal": true,              // Um Eingaben in seinem Programm tätigen zu können z.B. für scanf
 "code-runner.preserveFocus": false,             // damit springt man automatisch ins Terminal bei Abarbeitung
 "code-runner.defaultLanguage": "C",
-    // Einstellungen f├╝r den Debugger
+    // Einstellungen für den Debugger
     "launch": {
 		"version": "0.2.0",
 		"configurations": [
@@ -56,8 +56,8 @@ echo '{
 	}
 }' >settings.json
 echo '{
-    // Verwendet IntelliSense zum Ermitteln m├╢glicher Attribute.
-    // Zeigen Sie auf vorhandene Attribute, um die zugeh├╢rigen Beschreibungen anzuzeigen.
+    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+    // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
     // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
