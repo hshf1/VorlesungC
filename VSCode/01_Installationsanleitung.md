@@ -158,6 +158,15 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
     
   </details>
   
+## Linux (coming soon...)
+
+<details>
+  <summary>Hier klicken, um VSCode auf Linux zu installieren.</summary>
+<br />
+<b>Coming soon...</b>
+</details>
+
+  
 ## Computerraum an der Hochschule
 
 <details>
