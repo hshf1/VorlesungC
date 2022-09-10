@@ -163,7 +163,8 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 <details>
   <summary>Hier klicken, um VSCode auf Linux zu installieren.</summary>
 <br />
-<b>Coming soon...</b>
+<b>Coming soon...</b><br />
+<a href="https://github.com/hshf1/VorlesungC/files/9539871/installVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.00_10.09.2022-success?logo=linux" height="50" /></a>
 </details>
 
   
