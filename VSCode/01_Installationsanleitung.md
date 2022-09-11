@@ -163,10 +163,24 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 <details>
   <summary>Hier klicken, um VSCode auf Linux zu installieren.</summary>
 <br />
-<b>Coming soon...</b><br />
-<a href="https://github.com/hshf1/VorlesungC/files/9539871/installVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.00_10.09.2022-success?logo=linux" height="50" /></a>
-</details>
+<a href="https://github.com/hshf1/VorlesungC/files/9541810/installVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.00_10.09.2022-success?logo=linux" height="50" /></a>
+<br /><br />
+Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop). <br />
+<img width="401" alt="Bildschirmfoto 2022-04-17 um 05 35 45" src="https://user-images.githubusercontent.com/100713757/163699203-aff40972-d3a1-4212-ad96-71e6606950f9.png"> <br />
+  
+Nun öffnet ihr das Terminal <br />
+<img width="566" alt="Bildschirmfoto 2022-04-17 um 05 31 43" src="https://user-images.githubusercontent.com/100713757/163699216-b1eb7dd1-ffce-4bcd-be21-1691adaf0c6b.png">
+  
+und gebt folgendes ein:
+  
+> sh ~/Desktop/installVSCode.sh
+  
+<img width="561" alt="Bildschirmfoto 2022-04-17 um 05 38 53" src="https://user-images.githubusercontent.com/100713757/163699298-7f71c5ab-07f6-43cd-857b-e3eb61dab502.png">
 
+Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Desktop) befindende Logfile, die ihr nach erfolgreicher Installation löschen könnt. Bei anhaltenden Problemen bitte diesen Logfile im Anhang per Mail abschicken.
+
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
+</details>
   
 ## Computerraum an der Hochschule
 
