@@ -6,4 +6,4 @@
 
 Herzlich Willkommen!
 
-Erstellt euch bitte ein GitHub Konto um an Diskussionen, Fragen, Umfragen und weiterem mitzumachen.
+Erstellt euch bitte ein GitHub Konto um an Diskussionen und Umfragen mitzumachen oder hier eigene Fragen zu erstellen.
