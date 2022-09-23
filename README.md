@@ -6,4 +6,4 @@
 
 Herzlich Willkommen!
 
-Erstellt euch bitte ein GitHub Konto um an Diskussionen und Umfragen mitzumachen oder hier eigene Fragen zu erstellen. Es kann auch ein Anonymer Benutzername genutzt werden.
+Erstellt euch bitte ein GitHub Account um an Diskussionen und Umfragen teilzunehmen oder hier eigene Fragen zu erstellen. Es kann auch ein anonymer Benutzername genutzt werden.
