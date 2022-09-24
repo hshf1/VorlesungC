@@ -48,6 +48,19 @@ Die Unterfunktion "berechneE12" soll zu der Widerstandsnummer den passenden Wide
          float Wid = berechneE12(3); // Wid sollte nun den Wert 1.77828 enthalten
 
 <details>
+  <summary>Info - E12 Reihe</summary>
+ 
+ Die E12-Reihe ist eine Widerstandsreihe, welche eine logarithmische Verteilung aufweist.
+ Sie hat pro Dekade 12 Widerstandswerte, die sich von Dekade zu Dekade lediglich um den Faktor 10 unterscheiden. Die angegebene Formel im Link reicht aus um alle Widerstände in richtiger Reihenfolge bis 10000 Ohm zu berechnen. (Sie müssen sich mit Dekaden nicht weiter beschäftigen)
+ Wie sich die E12-Reihe berechnen lässt, kann unter dem Wikipedia-Link nachgelesen werden.
+ 
+ Wiki:
+ https://de.wikipedia.org/wiki/E-Reihe
+ 
+ Beachten Sie das die realen E12-Werte leicht vom Formelergebnis abweichen. ***Nutzen Sie Ihr Formelergebnis als gute Näherung!***
+</details>
+
+<details>
 <summary>Tipp - E12 Reihe</summary>
 
 Es kann die Funktion pow() mit 10 hoch i/12 verwendet werden. pow() befindet sich in der math.h Bibliothek.
@@ -110,18 +123,6 @@ In der Hauptfunktion oder in einer Unterfunktion ist eine Suche nach der besten 
  **Hinweis:** Sie brauchen eine doppelte For-Schleife um jede Kombination zu erstellen. Speichern Sie die Kombination mit der kleinsten Differenz zum Wunschwiderstand in einer Variablen ab! 
  
  **7.5**  Geben Sie die beste gefundene Kombination von Widerständen aus. Ermitteln Sie die Abweichung in Ohm und Prozent vom Wunschwert und geben Sie diese aus.
-  
-  
-# Info E12
- 
- Die E12-Reihe ist eine Widerstandsreihe, welche eine logarithmische Verteilung aufweist.
- Sie hat pro Dekade 12 Widerstandswerte, die sich von Dekade zu Dekade lediglich um den Faktor 10 unterscheiden. Die angegebene Formel im Link reicht aus um alle Widerstände in richtiger Reihenfolge bis 10000 Ohm zu berechnen. (Sie müssen sich mit Dekaden nicht weiter beschäftigen)
- Wie sich die E12-Reihe berechnen lässt, kann unter dem Wikipedia-Link nachgelesen werden.
- 
- Wiki:
- https://de.wikipedia.org/wiki/E-Reihe
- 
- Beachten Sie das die realen E12-Werte leicht vom Formelergebnis abweichen. ***Nutzen Sie Ihr Formelergebnis als gute Näherung!*** 
   
  ## Tipp - Widerstände berechnen
   
