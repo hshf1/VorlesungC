@@ -51,7 +51,7 @@ Die Unterfunktion "berechneE12" soll zu der Widerstandsnummer den passenden Wide
 <summary>Tipp - E12 Reihe</summary>
 
 Es kann die Funktion pow() mit 10 hoch i/12 verwendet werden. pow() befindet sich in der math.h Bibliothek.
->float Wid = pow(10, i/12) // i ist eine Zählvariable in diesem Fall
+>float Wid = pow(10, i/12) // i ist eine Variable in diesem Fall
 >
 
  </details>
