@@ -193,8 +193,6 @@ Die beste gefundene Kombination von Widerständen ist auszugeben. Die Abweichung
   
 Das bisherige Programm hat einen Nachteil. Wenn der Nutzer einen Widerstand, wie z.B. 1000 Ohm als Wunschwert angibt, dann versucht das Programm diesen als Kombination von zwei Widerständen zu erzeugen. Das Ergebnis ist jedoch schlechter, als hätten es einfach nur den einen Widerstand (1000 Ohm) aus der E12 Reihe genommen. Das Programm ist so zu erweitern, dass auch geprüft wird, ob ein einzelner Widerstand der E12 Reihe ein noch besseres Ergebnis erzeugt, als die Kombination von zweien. 
 
-Hinweis: Es existiert nur eine Musterlösung für Zusatz Teil 2. Überprüfen Sie ihr Programm nicht durch Vergleich mit einer Lösung, sondern durch Erprobung mit passenden Zahlen. 
-
 ### Weiterer Zusatzteil für noch mehr C-Expertise & Gehirntraining 
 <details>
  <summary>Klicken zum Öffnen</summary>
