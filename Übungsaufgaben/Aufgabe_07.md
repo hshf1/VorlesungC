@@ -47,6 +47,15 @@ Die Unterfunktion "berechneE12" soll zu der Widerstandsnummer den passenden Wide
          Beispiel: 
          float Wid = berechneE12(3); // Wid sollte nun den Wert 1.77828 enthalten
 
+<details>
+<summary>Tipp - E12 Reihe</summary>
+
+Es kann die Funktion pow() mit 10 hoch i/12 verwendet werden. pow() befindet sich in der math.h Bibliothek.
+>Wid = pow(10, i/12) // i ist eine Zählvariable in diesem Fall
+>
+
+ </details>
+
 ### 7.2 Unterfunktion "E_Reihe"
 
 Mit der Unterfunktion "E_Reihe" ist die E12 Reihe bis 10.000 Ohm auszurechen und tabellarisch auszugeben. 
@@ -113,19 +122,6 @@ In der Hauptfunktion oder in einer Unterfunktion ist eine Suche nach der besten 
  https://de.wikipedia.org/wiki/E-Reihe
  
  Beachten Sie das die realen E12-Werte leicht vom Formelergebnis abweichen. ***Nutzen Sie Ihr Formelergebnis als gute Näherung!*** 
-
-  
-## Tipp - E12 Reihe
-
-<details>
-<summary>Klicken zum Öffnen</summary>
-
-Geben Sie die E12-Reihe von 1 bis 10.000 an.
-
-Es kann die Funktion pow() mit 10 hoch x/12 verwendet werden.
-pow() befindet sich in der math.h Bibliothek
-
- </details>
   
  ## Tipp - Widerstände berechnen
   
