@@ -5,6 +5,37 @@
 
 # Aufgabe 7
 
+<details>
+<summary>Rückblick Unterfunktionen</summary>
+  
+Unterfunktionen sind immer dann sehr hilfreich, wenn sie eine Aufgabe erfüllen, welche mehrfach benötigt wird. (z.B. in Schleifen) Was ist für die Unterfunktion notwendigß Welchen Rückgabe-Typ soll die Funktion haben, welche und wie viele Parameter muss der Unterfunktion übergeben werden? Es kann nur ein Wert zurückgegeben werden!
+  
+  ```C
+  int berechneSumme(int iZahl1, int iZahl2){ 
+    /* Die Unterfunktion ist vom Typen Int und bekommt zwei Integerwerte übergeben.
+    Diese heißen für die Unterfunktion iZahl1 und iZahl2
+    Im Hauptprogramm können die Werte andere Namen haben(s.u.)! */
+    int iSumme;                // Nur für die Unterfunktion wird eine weitere Variable mit dem Namen iSumme angelegt
+    iSumme = iZahl1 + iZahl2;  // In iBums wird das Ergebnis aus iZahl1 und iZahl2 gespeichert
+    return iSumme;             // Die Zahl aus iSumme ist der Rückgabewert
+  }
+  
+  int main (){
+  
+  int iZahlA = 5;
+  int iZahlB = 12;
+  int iZahlC;
+  
+  iZahlC = berechneSumme(iZahlA, iZahlB);
+  /*iZahlC wird der Rückgabewert aus der Unterfunktion berechneSumme() zugewiesen.
+    iZahlA aus dem Hauptprogramm heißt für die Unterfunktion iZahl1 und iZahlB ist iZahl2.
+    Wichtig ist, dass die Datentypen übereinstimmen, sonst kommt es zu Fehlern.*/
+  
+  }
+  ```
+
+</details>
+
 Für das Projekt ist ein Widerstand zu suchen. Dafür steht der Baukasten der [E12 Reihe](https://de.wikipedia.org/wiki/E-Reihe) mit den Widerständen von 1 Ohm bis 10.000 Ohm zur Verfügung. Leider ist kein Widerstand dabei, der nah genug am Wunschwert liegt. Diesem ist durch 2 [parallel geschaltete Widerstände](https://studyflix.de/elektrotechnik/parallelschaltung-widerstand-4533) aus der E12 Reihe möglichst nahezukommen. Es ist ein Programm zu entwickeln, das alle Kombinationen automatisch erstellt und das beste Widerstandspaar für Sie ermittelt und ausgibt.<br />
 
 Folgenden Punkte sind mit dem Programm zu erfüllen:  
@@ -144,42 +175,6 @@ Dies wird wiederholt bis soviel Variable i als auch Variable k den Wert 4 erreic
    Überprüfen Sie auch, ob die Differenz negativ ist. (20 Ohm kleiner als der gesuchte Widerstand ist besser als 50 Ohm größer!) Eine Multiplikation mit -1 kann Ihre Differenz wieder positiv machen. 
 
   </details>
-  
-  
-   ## Tipp - Unterfunktion
-<details>
-<summary>Klicken zum Öffnen</summary>
-  
-Unterfunktionen sind immer dann sehr hilfreich, wenn Sie eine Aufgabe erfüllen, welche mehrfach benötigt wird. (z.B. in Schleifen)
-  Überlegen Sie sich, was Sie für das Unterprogramm benötigen. Welchen Rückgabe-Typ soll die Funktion haben, welche und wie viele Parameter möchten Sie der Unterfunktion übergeben?
-  Es kann nur ein Wert zurückgegeben werden!
-  
-  ```C
-  int berechneSumme(int iZahl1, int iZahl2){ 
-    /* Die Unterfunktion ist vom Typen Int und bekommt zwei Integerwerte übergeben.
-    Diese heißen für die Unterfunktion iZahl1 und iZahl2
-    Im Hauptprogramm können die Werte andere Namen haben(s.u.)! */
-    int iSumme;                // Nur für die Unterfunktion wird eine weitere Variable mit dem Namen iSumme angelegt
-    iSumme = iZahl1 + iZahl2;  // In iBums wird das Ergebnis aus iZahl1 und iZahl2 gespeichert
-    return iSumme;             // Die Zahl aus iSumme ist der Rückgabewert
-  }
-  
-  int main (){
-  
-  int iZahlA = 5;
-  int iZahlB = 12;
-  int iZahlC;
-  
-  iZahlC = berechneSumme(iZahlA, iZahlB);
-  /*iZahlC wird der Rückgabewert aus der Unterfunktion berechneSumme() zugewiesen.
-    iZahlA aus dem Hauptprogramm heißt für die Unterfunktion iZahl1 und iZahlB ist iZahl2.
-    Wichtig ist, dass die Datentypen übereinstimmen, sonst kommt es zu Fehlern.*/
-  
-  }
-  ```
-
-</details>
-</details>
 
 ## Zusatz - Eine Programmerweiterung
 
