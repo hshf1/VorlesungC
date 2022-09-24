@@ -42,7 +42,7 @@ Folgenden Punkte sind mit dem Programm zu erfüllen:
 
 <details>
   <summary>Unterfunktion "berechneE12"</summary>
-***Unterfunktion "berechneE12"***
+**Unterfunktion "berechneE12"**
 
 Die Unterfunktion "berechneE12" soll zu der Widerstandsnummer den passenden Widerstandswert zurück geben.
  
