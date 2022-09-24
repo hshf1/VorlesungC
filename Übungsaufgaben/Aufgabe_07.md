@@ -7,30 +7,43 @@
 
 In dieser Aufgabe lernen Sie Unterprogramme (Funktionen) und geschachtelte FOR-Schleifen anzuwenden. 
 
-Sie suchen für Ihr Projekt einen Widerstand. Sie haben den Baukasten der E12 Reihe mit den Widerständen von 1 bis 10.000 Ohm.
-Leider ist kein Widerstand dabei, der nah genug an ihrem Wunschwert liegt. Sie möchten diesem durch 2 parallel geschaltete Widerstände aus der E12 Reihe möglichst nahekommen.  Entwickeln Sie ein Programm, das alle Kombinationen automatisch erstellt und das beste Widerstandspaar für Sie ermittelt und ausgibt.
-Ihr Programm soll die folgenden Punkte erfüllen:  
-  
-**7.1** Berechnen Sie die E12 Reihe bis 10.000 Ohm und geben Sie diese tabellarisch aus. 
+Für das Projekt ist ein Widerstand zu suchen. Dafür steht der Baukasten der [E12 Reihe](https://de.wikipedia.org/wiki/E-Reihe) mit den Widerständen von 1 Ohm bis 10.000 Ohm zur Verfügung. Leider ist kein Widerstand dabei, der nah genug am Wunschwert liegt. Diesem ist durch 2 [parallel geschaltete Widerstände](https://studyflix.de/elektrotechnik/parallelschaltung-widerstand-4533) aus der E12 Reihe möglichst nahezukommen. Es ist ein Programm zu entwickeln, das alle Kombinationen automatisch erstellt und das beste Widerstandspaar für Sie ermittelt und ausgibt.<br />
+Folgenden Punkte sind mit dem Programm zu erfüllen:  
+
+### 7.1 Unterfunktion "berechneE12"
+
+Die Unterfunktion "berechneE12" soll zu der Widerstandsnummer den passenden Widerstandswert zurück geben.
+ 
+         Beispiel: 
+         float fWid = berechneE12(3); // fWid sollte nun den Wert 1.77828 enthalten
+
+### 7.2 Unterfunktion "E_Reihe"
+
+Mit der Unterfunktion "E_Reihe" ist die E12 Reihe bis 10.000 Ohm auszurechen und tabellarisch auszugeben. 
 
          Beispiel: 
          Nr: 1 Widerstand:      1.0
          Nr: 2 Widerstand:      1.2
          Nr: 3 Widerstand:      1.5
          usw. 
-         Geben Sie es mit einer Nachkommastelle und eine Feldweite von 8 Zeichen aus. (%8.1f) 
-         Wieviele Widerstände gibt es kleiner/gleich 10000 Ohm? 
-**7.2** Erstellen Sie eine Funktion "berechneE12", welche zu der Widerstandsnummer den passenden Widerstandswert zurück gibt. Ändern Sie dann das Programm aus 7.1 so ab, dass es Ihre neue Funktion nutzt. 
- 
-         Beispiel: 
-         float fWid = berechneE12(3); // fWid sollte nun den Wert 1.77828 enthalten
+         Es ist mit einer Nachkommastelle und einer Feldweite von 8 Zeichen auszugeben. (%8.1f)
+         Dabei ist die Berechnung mittels der Unterfunktion "berechneE12" durchzuführen.
+         Wieviele Widerstände gibt es kleiner/gleich 10.000 Ohm?
       
-**7.3** Erstellen Sie eine Funktion "berechneR_Parallel" zur Berechnung von Parallelwiderständen. Testen Sie Ihre Unterfunktion mit zwei Werten.
+### 7.3 Unterfunktion "berechneR_Parallel"
+
+In der Unterfunktion "berechneR_Parallel" sind die Parallelwiderstände zu berechnen und das Ergebnis zurückzugeben.
 
         Beispiel:
         float fWid = berechneR_Parallel(500,1000);  // fWid sollte nun den Wert 333.33333 enthalten
         
-**7.4** Fragen Sie den Nutzer nach seinem Wunschwiderstand und lesen Sie diesen ein. Erstellen Sie eine Suche nach der besten Kombination von Widerständen um dem nahe zu kommen. Dazu müssen Sie jede Kombination von 2 Widerständen aus der E12 Reihe bis 10000 Ohm prüfen und errechnen wie nahe diese am Wunschwiderstand liegt. 
+### 7.4 Abfrage Wunschwiderstand
+
+In der Hauptfunktion oder in einer Unterfunktion ist der Wunschwiderstand vom Nutzer abzufragen und einzulesen.
+
+### 7.5 Widerstand finden und speichern
+
+In der Hauptfunktion oder in einer Unterfunktion ist eine Suche nach der besten Kombination von Widerständen zu erstellen, um dem Wunschwiderstand nahe zu kommen. Dazu ist jede Kombination von 2 Widerständen aus der E12 Reihe bis 10.000 Ohm zu prüfen und zu errechnen, wie nahe diese am Wunschwiderstand liegt. 
  
         Beispiel Algorithmus: 
         Nutzer gibt 3 Ohm ein.
