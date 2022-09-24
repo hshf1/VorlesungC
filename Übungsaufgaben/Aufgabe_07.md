@@ -40,7 +40,7 @@ Für das Projekt ist ein Widerstand zu suchen. Dafür steht der Baukasten der [E
 
 Folgenden Punkte sind mit dem Programm zu erfüllen:  
 
-### 7.1 Unterfunktion "berechneE12"
+#### Unterfunktion "berechneE12"
 
 Die Unterfunktion "berechneE12" soll zu der Widerstandsnummer den passenden Widerstandswert zurück geben.
  
@@ -56,7 +56,7 @@ Es kann die Funktion pow() mit 10 hoch i/12 verwendet werden. pow() befindet sic
 
  </details>
 
-### 7.2 Unterfunktion "E_Reihe"
+#### Unterfunktion "E_Reihe"
 
 Mit der Unterfunktion "E_Reihe" ist die E12 Reihe bis 10.000 Ohm auszurechen und tabellarisch auszugeben. 
 
@@ -69,7 +69,7 @@ Mit der Unterfunktion "E_Reihe" ist die E12 Reihe bis 10.000 Ohm auszurechen und
          Dabei ist die Berechnung mittels der Unterfunktion "berechneE12" durchzuführen.
          Wieviele Widerstände gibt es kleiner/gleich 10.000 Ohm?
       
-### 7.3 Unterfunktion "berechneR_Parallel"
+#### Unterfunktion "berechneR_Parallel"
 
 In der Unterfunktion "berechneR_Parallel" sind die Parallelwiderstände zu berechnen und das Ergebnis zurückzugeben.
 
@@ -88,11 +88,11 @@ In der Unterfunktion "berechneR_Parallel" sind die Parallelwiderstände zu berec
   
   </details>
 
-### 7.4 Abfrage Wunschwiderstand
+#### Abfrage Wunschwiderstand
 
 In der Hauptfunktion oder in einer Unterfunktion ist der Wunschwiderstand vom Nutzer abzufragen und einzulesen.
 
-### 7.5 Widerstand finden und speichern
+#### Widerstand finden und speichern
 
 In der Hauptfunktion oder in einer Unterfunktion ist eine Suche nach der besten Kombination von Widerständen zu erstellen, um dem Wunschwiderstand nahe zu kommen. Dazu ist jede Kombination von 2 Widerständen aus der E12 Reihe bis 10.000 Ohm zu prüfen und zu errechnen, wie nahe diese am Wunschwiderstand liegt. 
  
