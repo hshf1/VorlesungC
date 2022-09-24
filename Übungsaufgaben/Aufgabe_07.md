@@ -40,6 +40,8 @@ Für das Projekt ist ein Widerstand zu suchen. Dafür steht der Baukasten der [E
 
 Folgenden Punkte sind mit dem Programm zu erfüllen:  
 
+<details>
+  <summary>Unterfunktion "berechneE12"</summary>
 #### Unterfunktion "berechneE12"
 
 Die Unterfunktion "berechneE12" soll zu der Widerstandsnummer den passenden Widerstandswert zurück geben.
@@ -68,7 +70,10 @@ Es kann die Funktion pow() mit 10 hoch i/12 verwendet werden. pow() befindet sic
 >
 
  </details>
+  </details>
 
+<details>
+  <summary>Unterfunktion "E_Reihe"</summary>
 #### Unterfunktion "E_Reihe"
 
 Mit der Unterfunktion "E_Reihe" ist die E12 Reihe bis 10.000 Ohm auszurechen und tabellarisch auszugeben. 
@@ -82,6 +87,10 @@ Mit der Unterfunktion "E_Reihe" ist die E12 Reihe bis 10.000 Ohm auszurechen und
          Dabei ist die Berechnung mittels der Unterfunktion "berechneE12" durchzuführen.
          Wieviele Widerstände gibt es kleiner/gleich 10.000 Ohm?
       
+</details>
+
+<details>
+  <summary>Unterfunktion "berechneR_Parallel"</summary>
 #### Unterfunktion "berechneR_Parallel"
 
 In der Unterfunktion "berechneR_Parallel" sind die Parallelwiderstände zu berechnen und das Ergebnis zurückzugeben.
@@ -101,10 +110,18 @@ In der Unterfunktion "berechneR_Parallel" sind die Parallelwiderstände zu berec
   
   </details>
 
+</details>
+
+<details>
+  <summary>Abfrage Wunschwiderstand</summary>
 #### Abfrage Wunschwiderstand
 
 In der Hauptfunktion oder in einer Unterfunktion ist der Wunschwiderstand vom Nutzer abzufragen und einzulesen.
+  
+</details>
 
+<details>
+  <summary>Widerstand finden und speichern</summary>
 #### Widerstand finden und speichern
 
 In der Hauptfunktion oder in einer Unterfunktion ist eine Suche nach der besten Kombination von Widerständen zu erstellen, um dem Wunschwiderstand nahe zu kommen. Dazu ist jede Kombination von 2 Widerständen aus der E12 Reihe bis 10.000 Ohm zu prüfen und zu errechnen, wie nahe diese am Wunschwiderstand liegt. 
@@ -160,11 +177,17 @@ Dies wird wiederholt bis soviel Variable i als auch Variable k den Wert 4 erreic
    Überprüfen Sie auch, ob die Differenz negativ ist. (20 Ohm kleiner als der gesuchte Widerstand ist besser als 50 Ohm größer!) Eine Multiplikation mit -1 kann Ihre Differenz wieder positiv machen. 
 
   </details>
- 
+
+</details>
+
+<details>
+  <summary>Ausgabe</summary>
 #### Ausgabe
 
 Geben Sie die beste gefundene Kombination von Widerständen aus. Ermitteln Sie die Abweichung in Ohm und Prozent vom Wunschwert und geben Sie diese aus.
 
+</details>
+  
 ## Zusatz - Eine Programmerweiterung
 
 <details>
@@ -172,7 +195,7 @@ Geben Sie die beste gefundene Kombination von Widerständen aus. Ermitteln Sie d
   
 **Zusatz Teil 1**
   
-Das bisherige Programm hat einen Nachteil. Wenn der Nutzer einen Widerstand, wie z.B. 1000 Ohm als Wunschwert angibt, dann versucht das Programm diesen als Kombination von zwei Widerständen zu erzeugen. Das Ergebnis ist jedoch schlechter, als hätten Sie einfach nur den einen Widerstand (1000 Ohm) aus der E12 Reihe genommen. Erweitern Sie ihr Programm so, dass auch geprüft wird, ob ein einzelner Widerstand der E12 Reihe ein noch besseres Ergebnis erzeugt, als die Kombination von zweien. 
+Das bisherige Programm hat einen Nachteil. Wenn der Nutzer einen Widerstand, wie z.B. 1000 Ohm als Wunschwert angibt, dann versucht das Programm diesen als Kombination von zwei Widerständen zu erzeugen. Das Ergebnis ist jedoch schlechter, als hätten es einfach nur den einen Widerstand (1000 Ohm) aus der E12 Reihe genommen. Das Programm ist so zu erweitern, dass auch geprüft wird, ob ein einzelner Widerstand der E12 Reihe ein noch besseres Ergebnis erzeugt, als die Kombination von zweien. 
 
 Hinweis: Es existiert nur eine Musterlösung für Zusatz Teil 2. Überprüfen Sie ihr Programm nicht durch Vergleich mit einer Lösung, sondern durch Erprobung mit passenden Zahlen. 
 
@@ -182,13 +205,12 @@ Hinweis: Es existiert nur eine Musterlösung für Zusatz Teil 2. Überprüfen Si
   
  **Zusatz Teil2**
   
- Sie dürfen nun 3 Widerstände für Ihren gesuchten Widerstand benutzen und **beliebig** anordnen.
+ Es dürfen nun 3 Widerstände für den gesuchten Widerstand genutzt und **beliebig** angeordnet werden.
  
- Schreiben Sie ihr Programm so um, dass die gegebene E12 Reihe den gesuchten Widerstand aus allen möglichen Kombinationen (Parallel und Serie) die beste Kombination berechnet.
- Die Widerstandswerte und die verwendete Kombination sind am Ende auf dem Bildschirm auszugeben.
+ Das Programm ist nun so umzuschreiben, dass die gegebene E12 Reihe den gesuchten Widerstand aus allen möglichen Kombinationen (Parallel und Reihe) die beste Kombination berechnet. Die Widerstandswerte und die verwendete Kombination sind am Ende auf dem Bildschirm auszugeben.
 
- Testen Sie Ihr Programm mit einem Widerstand von 3542.58 Ohm, welcher wieder über die Tastatur eingegeben werden soll.
- Ihr Programm sollte z.B. folgendes raus finden: Bester Wert 3542.77 Ohm (Widerstand 1 || 2 + 3) 
+ Das Programm ist mit einem Widerstand von 3542.58 Ohm zu testen, welcher wieder über die Tastatur eingegeben werden soll.
+ Das Programm sollte z.B. folgendes raus finden: Bester Wert 3542.77 Ohm (Widerstand 1 || 2 + 3) 
   
  Welche Werte haben diese 3 Widerstände dann? 
    
