@@ -11,24 +11,24 @@
 Unterfunktionen sind immer dann sehr hilfreich, wenn sie eine Aufgabe erfüllen, welche mehrfach benötigt wird. (z.B. in Schleifen) Was ist für die Unterfunktion notwendigß Welchen Rückgabe-Typ soll die Funktion haben, welche und wie viele Parameter muss der Unterfunktion übergeben werden? Es kann nur ein Wert zurückgegeben werden!
   
   ```C
-  int berechneSumme(int iZahl1, int iZahl2){ 
+  int berechneSumme(int Zahl1, int Zahl2){ 
     /* Die Unterfunktion ist vom Typen Int und bekommt zwei Integerwerte übergeben.
-    Diese heißen für die Unterfunktion iZahl1 und iZahl2
+    Diese heißen für die Unterfunktion Zahl1 und Zahl2
     Im Hauptprogramm können die Werte andere Namen haben(s.u.)! */
-    int iSumme;                // Nur für die Unterfunktion wird eine weitere Variable mit dem Namen iSumme angelegt
-    iSumme = iZahl1 + iZahl2;  // In iBums wird das Ergebnis aus iZahl1 und iZahl2 gespeichert
-    return iSumme;             // Die Zahl aus iSumme ist der Rückgabewert
+    int Summe;                // Nur für die Unterfunktion wird eine weitere Variable mit dem Namen Summe angelegt
+    Summe = Zahl1 + Zahl2;    // In Summe wird das Ergebnis aus Zahl1 plus Zahl2 gespeichert
+    return Summe;             // Die Zahl aus Summe ist der Rückgabewert
   }
   
   int main (){
   
-  int iZahlA = 5;
-  int iZahlB = 12;
-  int iZahlC;
+  int ZahlA = 5;
+  int ZahlB = 12;
+  int ZahlC;
   
-  iZahlC = berechneSumme(iZahlA, iZahlB);
-  /*iZahlC wird der Rückgabewert aus der Unterfunktion berechneSumme() zugewiesen.
-    iZahlA aus dem Hauptprogramm heißt für die Unterfunktion iZahl1 und iZahlB ist iZahl2.
+  ZahlC = berechneSumme(ZahlA, ZahlB);
+  /*ZahlC wird der Rückgabewert aus der Unterfunktion berechneSumme() zugewiesen.
+    ZahlA aus dem Hauptprogramm heißt für die Unterfunktion Zahl1 und ZahlB ist Zahl2.
     Wichtig ist, dass die Datentypen übereinstimmen, sonst kommt es zu Fehlern.*/
   
   }
@@ -45,7 +45,7 @@ Folgenden Punkte sind mit dem Programm zu erfüllen:
 Die Unterfunktion "berechneE12" soll zu der Widerstandsnummer den passenden Widerstandswert zurück geben.
  
          Beispiel: 
-         float fWid = berechneE12(3); // fWid sollte nun den Wert 1.77828 enthalten
+         float Wid = berechneE12(3); // Wid sollte nun den Wert 1.77828 enthalten
 
 ### 7.2 Unterfunktion "E_Reihe"
 
@@ -65,7 +65,7 @@ Mit der Unterfunktion "E_Reihe" ist die E12 Reihe bis 10.000 Ohm auszurechen und
 In der Unterfunktion "berechneR_Parallel" sind die Parallelwiderstände zu berechnen und das Ergebnis zurückzugeben.
 
         Beispiel:
-        float fWid = berechneR_Parallel(500,1000);  // fWid sollte nun den Wert 333.33333 enthalten
+        float Wid = berechneR_Parallel(500,1000);  // Wid sollte nun den Wert 333.33333 enthalten
           
   <details>
   <summary>Tipp - Berechnung einer Parallelschaltung</summary>
