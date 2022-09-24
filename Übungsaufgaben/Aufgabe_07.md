@@ -118,18 +118,11 @@ In der Hauptfunktion oder in einer Unterfunktion ist eine Suche nach der besten 
         ?) Parallelwiderstand Widerstand 1 (1.2 Ohm) und Widerstand 1 (1.2 Ohm). Ergebnis: 0.6 Ohm.  Abstand zum Ziel: 2.4 Ohm. 
         ?) Parallelwiderstand Widerstand 1 (1.2 Ohm) und Widerstand 2 (1.5 Ohm). Ergebnis: 0.66 Ohm. Abstand zum Ziel: 2.34 Ohm. 
         usw.
-        
-        
- **Hinweis:** Sie brauchen eine doppelte For-Schleife um jede Kombination zu erstellen. Speichern Sie die Kombination mit der kleinsten Differenz zum Wunschwiderstand in einer Variablen ab! 
- 
- **7.5**  Geben Sie die beste gefundene Kombination von Widerständen aus. Ermitteln Sie die Abweichung in Ohm und Prozent vom Wunschwert und geben Sie diese aus.
-  
- ## Tipp - Widerstände berechnen
   
   <details>
-  <summary>Klicken zum Öffnen</summary>
+  <summary>Tipp - Widerstandskombinationen berechen</summary>
 
- Um alle Widerstandskombinationen zu berechnen, kann eine doppelte for-Schleife verwendet werden 
+Um alle Widerstandskombinationen zu berechnen, kann eine doppelte for-Schleife verwendet werden.
   
   Beispiel:
   
@@ -156,10 +149,13 @@ Die äußere Schleife startet. Variable i wird auf 0 gesetzt. Zunächst wird die
 Dies wird wiederholt bis soviel Variable i als auch Variable k den Wert 4 erreicht haben. 
 
 </details>
+
+
+
+**Hinweis:** Sie brauchen eine doppelte For-Schleife um jede Kombination zu erstellen. Speichern Sie die Kombination mit der kleinsten Differenz zum Wunschwiderstand in einer Variablen ab! 
+ 
+ **7.5**  Geben Sie die beste gefundene Kombination von Widerständen aus. Ermitteln Sie die Abweichung in Ohm und Prozent vom Wunschwert und geben Sie diese aus.
   
-
-
-
 ## Tipp - Widerstände speichern
 
 
