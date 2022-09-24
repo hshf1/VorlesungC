@@ -119,7 +119,9 @@ In der Hauptfunktion oder in einer Unterfunktion ist eine Suche nach der besten 
         ?) Parallelwiderstand Widerstand 1 (1.2 Ohm) und Widerstand 2 (1.5 Ohm). Ergebnis: 0.66 Ohm. Abstand zum Ziel: 2.34 Ohm. 
         usw.
   
-  <details>
+**Hinweis:** Sie brauchen eine doppelte For-Schleife um jede Kombination zu erstellen. Speichern Sie die Kombination mit der kleinsten Differenz zum Wunschwiderstand in einer Variablen ab! 
+
+<details>
   <summary>Tipp - Widerstandskombinationen berechen</summary>
 
 Um alle Widerstandskombinationen zu berechnen, kann eine doppelte for-Schleife verwendet werden.
@@ -129,38 +131,28 @@ Um alle Widerstandskombinationen zu berechnen, kann eine doppelte for-Schleife v
     int i=0;              //Schleifenvariable
     int k=0;
     int Ergebnis=0;
-    float fWid1, fWid2; //Widerstaende
+    float Wid1, Wid2;     //Widerstaende
    
     // Doppelte for-Schleife mit den Schleifenvariablen i und k
-    for(i=0;i<4;i++){
+    for(i=0; i<4; i++){
    
-       for(k=0;k<4;k++){
+       for(k=0; k<4; k++){
      
-        fWid1 = BerechneE12(i); 
-        fWid2 = BerechneE12(k); 
-        printf("Lieber Studierender: Ist die Kombination aus %f und %f die beste?", fWid1,fWid2); 
+        Wid1 = berechneE12(i); 
+        Wid2 = berechneE12(k); 
+        printf("Lieber Studierender: Ist die Kombination aus %f und %f die beste?", Wid1, Wid2); 
        
       }
      }
-   
-   
+
 Die erste For-Schleife ist die "äußere" Schleife mit Schleifenvariable i. In dieser ist eine zweite Schleife mit der Schleifenvariable k enthalten.
 Die äußere Schleife startet. Variable i wird auf 0 gesetzt. Zunächst wird die innere "k"-Schleife 4 Mal durchlaufen. Dann erhöht die äußere i-Schleife i um 1 und dann wird wieder wird die innere k-Schleife 4 Mal durchlaufen. 
 Dies wird wiederholt bis soviel Variable i als auch Variable k den Wert 4 erreicht haben. 
 
 </details>
 
-
-
-**Hinweis:** Sie brauchen eine doppelte For-Schleife um jede Kombination zu erstellen. Speichern Sie die Kombination mit der kleinsten Differenz zum Wunschwiderstand in einer Variablen ab! 
- 
- **7.5**  Geben Sie die beste gefundene Kombination von Widerständen aus. Ermitteln Sie die Abweichung in Ohm und Prozent vom Wunschwert und geben Sie diese aus.
-  
-## Tipp - Widerstände speichern
-
-
 <details>
- <summary>Klicken zum Öffnen</summary>
+ <summary>Tipp - Widerstand speichern</summary>
   
    Prüfen Sie in jedem Schleifendurchlauf, ob die Kombination der zwei aktuellen Widerstände die bisher beste ist. Bilden Sie dazu die Differenz zwischen aktuellen Parallelwiderstand und Wunschwiderstand. Prüfen Sie mit einer IF-Abdfrage, ob diese Differenz kleiner ist als alle sonstigen bisher gefundenen. Wenn dem so ist, dann speichern Sie sowohl diesen Differenzwert und auch die beiden aktuellen Widerstände in eigenen Variablen ab. 
    Ist der passendste Widerstand gefunden, kann der Zähler gespeichert und als Rückgabewert übergeben werden.
@@ -168,6 +160,10 @@ Dies wird wiederholt bis soviel Variable i als auch Variable k den Wert 4 erreic
    Überprüfen Sie auch, ob die Differenz negativ ist. (20 Ohm kleiner als der gesuchte Widerstand ist besser als 50 Ohm größer!) Eine Multiplikation mit -1 kann Ihre Differenz wieder positiv machen. 
 
   </details>
+ 
+#### Ausgabe
+
+Geben Sie die beste gefundene Kombination von Widerständen aus. Ermitteln Sie die Abweichung in Ohm und Prozent vom Wunschwert und geben Sie diese aus.
 
 ## Zusatz - Eine Programmerweiterung
 
