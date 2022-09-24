@@ -5,8 +5,6 @@
 
 # Aufgabe 7
 
-In dieser Aufgabe lernen Sie Unterprogramme (Funktionen) und geschachtelte FOR-Schleifen anzuwenden. 
-
 Für das Projekt ist ein Widerstand zu suchen. Dafür steht der Baukasten der [E12 Reihe](https://de.wikipedia.org/wiki/E-Reihe) mit den Widerständen von 1 Ohm bis 10.000 Ohm zur Verfügung. Leider ist kein Widerstand dabei, der nah genug am Wunschwert liegt. Diesem ist durch 2 [parallel geschaltete Widerstände](https://studyflix.de/elektrotechnik/parallelschaltung-widerstand-4533) aus der E12 Reihe möglichst nahezukommen. Es ist ein Programm zu entwickeln, das alle Kombinationen automatisch erstellt und das beste Widerstandspaar für Sie ermittelt und ausgibt.<br />
 Folgenden Punkte sind mit dem Programm zu erfüllen:  
 
