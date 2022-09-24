@@ -42,8 +42,7 @@ Folgenden Punkte sind mit dem Programm zu erfüllen:
 
 <details>
   <summary>Unterfunktion "berechneE12"</summary>
-**Unterfunktion "berechneE12"**
-
+<br />
 Die Unterfunktion "berechneE12" soll zu der Widerstandsnummer den passenden Widerstandswert zurück geben.
  
          Beispiel: 
@@ -70,12 +69,12 @@ Es kann die Funktion pow() mit 10 hoch i/12 verwendet werden. pow() befindet sic
 >
 
  </details>
+  <br />
   </details>
 
 <details>
   <summary>Unterfunktion "E_Reihe"</summary>
-#### Unterfunktion "E_Reihe"
-
+<br />
 Mit der Unterfunktion "E_Reihe" ist die E12 Reihe bis 10.000 Ohm auszurechen und tabellarisch auszugeben. 
 
          Beispiel: 
@@ -88,11 +87,10 @@ Mit der Unterfunktion "E_Reihe" ist die E12 Reihe bis 10.000 Ohm auszurechen und
          Wieviele Widerstände gibt es kleiner/gleich 10.000 Ohm?
       
 </details>
-
+<br />
 <details>
   <summary>Unterfunktion "berechneR_Parallel"</summary>
-#### Unterfunktion "berechneR_Parallel"
-
+<br />
 In der Unterfunktion "berechneR_Parallel" sind die Parallelwiderstände zu berechnen und das Ergebnis zurückzugeben.
 
         Beispiel:
@@ -109,21 +107,19 @@ In der Unterfunktion "berechneR_Parallel" sind die Parallelwiderstände zu berec
    realisiert werden.
   
   </details>
-
+<br />
 </details>
 
 <details>
   <summary>Abfrage Wunschwiderstand</summary>
-#### Abfrage Wunschwiderstand
-
+<br />
 In der Hauptfunktion oder in einer Unterfunktion ist der Wunschwiderstand vom Nutzer abzufragen und einzulesen.
-  
+<br />
 </details>
 
 <details>
   <summary>Widerstand finden und speichern</summary>
-#### Widerstand finden und speichern
-
+<br />
 In der Hauptfunktion oder in einer Unterfunktion ist eine Suche nach der besten Kombination von Widerständen zu erstellen, um dem Wunschwiderstand nahe zu kommen. Dazu ist jede Kombination von 2 Widerständen aus der E12 Reihe bis 10.000 Ohm zu prüfen und zu errechnen, wie nahe diese am Wunschwiderstand liegt. 
  
         Beispiel Algorithmus: 
@@ -177,15 +173,14 @@ Dies wird wiederholt bis soviel Variable i als auch Variable k den Wert 4 erreic
    Überprüfen Sie auch, ob die Differenz negativ ist. (20 Ohm kleiner als der gesuchte Widerstand ist besser als 50 Ohm größer!) Eine Multiplikation mit -1 kann Ihre Differenz wieder positiv machen. 
 
   </details>
-
+<br />
 </details>
 
 <details>
   <summary>Ausgabe</summary>
-#### Ausgabe
-
+<br />
 Geben Sie die beste gefundene Kombination von Widerständen aus. Ermitteln Sie die Abweichung in Ohm und Prozent vom Wunschwert und geben Sie diese aus.
-
+<br />
 </details>
   
 ## Zusatz - Eine Programmerweiterung
