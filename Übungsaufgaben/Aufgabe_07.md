@@ -86,8 +86,9 @@ Mit der Unterfunktion "E_Reihe" ist die E12 Reihe bis 10.000 Ohm auszurechen und
          Dabei ist die Berechnung mittels der Unterfunktion "berechneE12" durchzuführen.
          Wieviele Widerstände gibt es kleiner/gleich 10.000 Ohm?
       
-</details>
 <br />
+</details>
+
 <details>
   <summary>Unterfunktion "berechneR_Parallel"</summary>
 <br />
