@@ -35,7 +35,19 @@ In der Unterfunktion "berechneR_Parallel" sind die Parallelwiderstände zu berec
 
         Beispiel:
         float fWid = berechneR_Parallel(500,1000);  // fWid sollte nun den Wert 333.33333 enthalten
-        
+          
+  <details>
+  <summary>Tipp - Berechnung einer Parallelschaltung</summary>
+  
+  Die Parallelschaltung kann durch 
+  
+  >(R1*R2)/(R1+R2)
+  >
+ 
+   realisiert werden.
+  
+  </details>
+
 ### 7.4 Abfrage Wunschwiderstand
 
 In der Hauptfunktion oder in einer Unterfunktion ist der Wunschwiderstand vom Nutzer abzufragen und einzulesen.
@@ -83,21 +95,6 @@ Es kann die Funktion pow() mit 10 hoch x/12 verwendet werden.
 pow() befindet sich in der math.h Bibliothek
 
  </details>
-  
-  ## Tipp - Parallelschaltung
-  
-  <details>
-  <summary>Klicken zum Öffnen</summary>
-  
-  Die Parallelschaltung kann durch 
-  
-  >(R1*R2)/(R1+R2)
-  >
- 
-   realisiert werden.
-  
-  </details>
-
   
  ## Tipp - Widerstände berechnen
   
