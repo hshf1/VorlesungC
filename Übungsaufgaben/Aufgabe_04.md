@@ -5,40 +5,32 @@
 
 # Aufgabe 4
 
-Erstellen Sie ein Programm, das die ASCII-Zeichen NR. 48 bis 57 als Zahlenwert und als Zeichen ausgibt.
-Nutzen sie hierfür eine Zählschleife.
+Es ist ein Programm zu erstellen, dass die ASCII-Zeichen NR. 48 bis 57 als Zahlenwert (Hexadezimal) und als Zeichen ausgibt. Hierfür ist eine Zählschleife zu nutzen.
 
-- [ ] Zählschleife
-- [ ] Ausgabe von Zahl und Zeichen
-
-
-## Tipp - Schleife
 <details>
-<summary>Klicken zum Öffnen</summary>
+<summary>Tipp - Schleife</summary>
   
-   Schreibe Sie eine Schleife, welche von 48 bis 57 hochzählt.
-  Sie können eine ```for``` oder eine ```while``` Schleife verwenden. 
- 
+ Eine Schleife, welche von 48 bis 57 hochzählt. Es kann eine ```for``` oder eine ```while``` Schleife verwendet werden. 
   
 </details>
 
-
-## Tipp - Ausgabe
 <details>
-<summary>Klicken zum Öffnen</summary>
+<summary>Tipp - Ausgabe</summary>
 
-Die Ausgabe kann in der Schleife ausgeführt werden.
-Mit dem passenden Datentypen reicht eine Variable für Zahl und Zeichen bei der Ausgabe.
+Die Ausgabe kann in der Schleife ausgeführt werden. Mit dem passenden Datentypen reicht eine Variable für Zahl und Zeichen bei der Ausgabe.
   
-  ### Tipp
 <details>
-<summary>Klicken zum Öffnen</summary>
+<summary>Tipp - Datentyp</summary>
     
-  Versuchen Sie es mal mit einem ```char```
+```char```
     
   </details> 
 </details>
 
+<ins><b>So kann die Ausgabe dann aussehen</b></ins>
+<br />
+
+![bsp_ausgabe](https://user-images.githubusercontent.com/100713757/192163365-f89be058-da17-4352-ae65-6043ea3c0270.gif)
 
 ## Level 2 ~ Freiwillig
 <details>
