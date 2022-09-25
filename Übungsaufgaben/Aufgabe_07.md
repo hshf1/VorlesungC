@@ -183,7 +183,7 @@ Dies wird wiederholt bis soviel Variable i als auch Variable k den Wert 4 erreic
 Die beste gefundene Kombination von Widerständen ist auszugeben. Die Abweichung in Ohm und Prozent vom Wunschwert ist zu ermitteln und auszugeben.
 <br />
 </details>
-<br />
+
 <ins><b>So kann die Ausgabe dann aussehen</b></ins>
 <br />
 
