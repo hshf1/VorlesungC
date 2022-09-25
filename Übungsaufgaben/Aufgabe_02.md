@@ -41,7 +41,7 @@ Der Mittelwert ist das Ergebnis aus der Summe der Einzelwerte, geteilt durch die
 ## Tipp - Formatierung
 <details>
 <summary>Klicken zum Öffnen</summary>
-  Bei der Ausgabe über ```printf()``` kann aus der Kombination von einem Punkt "." mit einer Zahl festgelegt werden wie viel Kommastellen auf dem Bildschirm angezeigt werden.
+  Bei der Ausgabe über ``` printf() ``` kann aus der Kombination von einem Punkt "." mit einer Zahl festgelegt werden wie viel Kommastellen auf dem Bildschirm angezeigt werden.
   Diese Kombination wird zwischen das Prozentzeichen und dem Zeichen für den Datentypen gesetzt.
   
   ```C
