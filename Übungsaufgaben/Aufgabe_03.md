@@ -5,9 +5,7 @@
 
 # Aufgabe 3
 
-Das Programm soll den Zinsertrag Ihres Kapitals und das resultierende Gesamtkapital ja nach Dauer der Anlage berechnen.
-
-Dazu sind nach der Ausgabe der Aufgabenstellung das Kapital, der Zinssatz und die Dauer der Anlage in Jahren einzugeben. Die Ausgabe soll mit zwei Stellen nach dem Komma erfolgen.
+Das Programm soll den Zinsertrag Ihres Kapitals und das resultierende Gesamtkapital ja nach Dauer der Anlage berechnen. Dazu sind nach der Ausgabe der Aufgabenstellung das Kapital, der Zinssatz und die Dauer der Anlage in Jahren einzugeben. Die Ausgabe soll mit zwei Stellen nach dem Komma erfolgen.
 
 <details>
 <summary>Tipp - berechnen</summary>
