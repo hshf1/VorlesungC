@@ -5,19 +5,19 @@
 
 # Aufgabe 6
 
-Für ganzzahlige Radien von 1<=R<=10 sollen die Kreisfläche und das Kugelvolumen berechnet werden.
-Die Werte sollen tabellarisch mit zwei Stellen nach dem Komma ausgegeben werden.
+Für ganzzahlige Radien von 1<=R<=10 sollen die Kreisfläche und das Kugelvolumen berechnet werden. Die Werte sollen tabellarisch mit zwei Stellen nach dem Komma ausgegeben werden.
 
-
-### Tipp - Ausgabe
 <details>
-<summary>Klicken zum Öffnen</summary>
+<summary>Tipp - Ausgabe</summary>
 
-Benutzen Sie den Zeilenverschub nach jeder Erhöhung, um nicht alle Werte in einer Zeile zu haben.
-```printf()``` kann auch in einer Schleife aufgerufen werden!
+```printf(\n)``` kann auch in einer Schleife aufgerufen werden! Der Zeilenverschub im printf wird genutzt, um nicht alle Werte in einer Zeile zu haben.
 
 </details>
+<br />
+<ins><b>So kann die Ausgabe dann aussehen</b></ins>
+<br />
 
+![bsp_ausgabe](https://user-images.githubusercontent.com/100713757/192162150-2513ec8b-ec8d-40f4-b48e-149712738e56.gif)
 
 # Level 2
 <details>
