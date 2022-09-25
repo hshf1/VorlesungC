@@ -184,7 +184,7 @@ Die beste gefundene Kombination von Widerständen ist auszugeben. Die Abweichung
 <br />
 </details>
 
-/underline(So kann die Ausgabe dann aussehen)
+/undermark(So kann die Ausgabe dann aussehen)
 ![bsp_ausgabe](https://user-images.githubusercontent.com/100713757/192147909-55720873-2d5c-4218-8780-91309b28fd27.gif)
 
   
