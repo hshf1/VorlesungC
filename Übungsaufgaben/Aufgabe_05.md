@@ -13,8 +13,7 @@ Nach der Eingabe einer ganzen Zahl ist zu überprüfen, ob diese Zahl kleiner 10
 Da für diese Aufgabe nur eine Zahl benötigt wird, kann die Schleifenbedingung <100 direkt in die Schleife eingebunden werden. Dabei ist es egal, ob Sie eine for, while oder do-while Schleife verwenden.
   
 </details>
-  
-<br />
+
 <ins><b>So kann die Ausgabe dann aussehen</b></ins>
 <br />
 
