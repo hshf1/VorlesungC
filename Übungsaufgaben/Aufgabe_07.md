@@ -191,7 +191,7 @@ Die beste gefundene Kombination von Widerständen ist auszugeben. Die Abweichung
   
 **Zusatz Teil 1**
   
-Das bisherige Programm hat einen Nachteil. Wenn der Nutzer einen Widerstand, wie z.B. 1000 Ohm als Wunschwert angibt, dann versucht das Programm diesen als Kombination von zwei Widerständen zu erzeugen. Das Ergebnis ist jedoch schlechter, als hätten es einfach nur den einen Widerstand (1000 Ohm) aus der E12 Reihe genommen. Das Programm ist so zu erweitern, dass auch geprüft wird, ob ein einzelner Widerstand der E12 Reihe ein noch besseres Ergebnis erzeugt, als die Kombination von zweien. 
+Das bisherige Programm hat einen Nachteil. Wenn der Nutzer einen Widerstand, wie z.B. 1000 Ohm als Wunschwert angibt, dann versucht das Programm diesen als Kombination von zwei Widerständen zu erzeugen. Das Ergebnis ist jedoch schlechter, als hätte es einfach nur den einen Widerstand (1000 Ohm) aus der E12 Reihe genommen. Das Programm ist so zu erweitern, dass auch geprüft wird, ob ein einzelner Widerstand der E12 Reihe ein noch besseres Ergebnis erzeugt, als die Kombination von zweien. 
 
 ### Weiterer Zusatzteil für noch mehr C-Expertise & Gehirntraining 
 <details>
@@ -213,7 +213,7 @@ Das bisherige Programm hat einen Nachteil. Wenn der Nutzer einen Widerstand, wie
 
 # Level 2 ~ Freiwillig - Reale Klausuraufgabe
 <details>
- <summary>Klicken zum Öffnen</summary>
+ <summary>Klausur SS 21 A5</summary>
   Klausur SS 21 (Aufgabe 5)   - Eine weitere Übungsaufgabe zur doppelte FOR-Schleife ist diese ganz reale Klausuraufgabe: 
   
   Sie haben in ihrer Firma ein Lager mit 7 Stangen unterschiedlicher Länge. Ein Kunde möchte 2 Stangen kaufen, welche in ihrer Gesamtlänge (also beide Längen addiert) möglichst auf eine von ihm angegebene Wunschlänge kommt. Ziel ist ein Programm, welches Ihnen die bestmögliche Kombination von Stangen ermittelt und ausgibt, wie nah sie damit an die angegebene Wunschlänge kommen. Befolgen Sie die Anweisungen in den Kommentaren im Programm. Überall wo "....." steht müssen Sie etwas programmieren. Sie können das ganze zur besseren übersicht auch  einfach in VSC kopieren.
