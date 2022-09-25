@@ -183,8 +183,9 @@ Dies wird wiederholt bis soviel Variable i als auch Variable k den Wert 4 erreic
 Die beste gefundene Kombination von Widerständen ist auszugeben. Die Abweichung in Ohm und Prozent vom Wunschwert ist zu ermitteln und auszugeben.
 <br />
 </details>
-
-<ins>So kann die Ausgabe dann aussehen</ins>
+<br />
+**<ins>So kann die Ausgabe dann aussehen</ins>**
+<br />
 ![bsp_ausgabe](https://user-images.githubusercontent.com/100713757/192147909-55720873-2d5c-4218-8780-91309b28fd27.gif)
 
   
