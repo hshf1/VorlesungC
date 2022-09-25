@@ -15,7 +15,7 @@ Die Ausgabe soll mit zwei Stellen nach dem Komma erfolgen.
 <details>
 <summary>Klicken zum Öffnen</summary>
 Das Kapital lässt sich am einfachsten mit einer Potenzfunktion berechnen. Diese befindet sich in der ```math.h``` Bibliothek.
-  Mit der Funktion '''pow(a,b)''' wird der Wert für a^b berechnet.
+  Mit der Funktion ```pow(a,b)``` wird der Wert für a^b berechnet.
   
   Eine weitere Möglichkeit wäre die Programmierung einer Schleife, die Ihnen jährlich das neue Kapital mit dem Zinssatz ausrechnet.
 </details>
