@@ -13,7 +13,7 @@ Für ganzzahlige Radien von 1<=R<=10 sollen die Kreisfläche und das Kugelvolume
 ```printf(\n)``` kann auch in einer Schleife aufgerufen werden! Der Zeilenverschub im printf wird genutzt, um nicht alle Werte in einer Zeile zu haben.
 
 </details>
-<br />
+
 <ins><b>So kann die Ausgabe dann aussehen</b></ins>
 <br />
 
