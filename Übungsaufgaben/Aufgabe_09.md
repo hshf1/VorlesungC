@@ -26,9 +26,8 @@ _Erhält einen Zeiger auf die vorher eingegebene und korrigierte Zahl und gibt d
 
 Testen Sie Ihr Programm mit unterschiedlichen Testfällen.
 
-## Tipp - scanf()
 <details>
-  <summary>Klicken zum Öffnen</summary>
+  <summary>Tipp - scanf()</summary>
   
   ```scanf``` liest von der Tastatur ein und vergleicht mit der angegebenen Formatanweisung.
   Bei dem bereits bekannten verfahren weisen Sie mit dem "&" dem eingelesenen Werte eine Adresse zu, in welche diese gespeichert werden soll.
@@ -48,11 +47,8 @@ Testen Sie Ihr Programm mit unterschiedlichen Testfällen.
   
   </details>
 
-## Beispiel Pointer
 <details>
-<summary>Klicken zum Öffnen</summary>
-  
-  
+<summary>Beispiel - Pointer</summary>
 
   In dem folgenden Beispiel wird ein Pointer an ein Unterprogramm übergeben und in diesem Unterprogramm wird der eingelese Wert direkt an die in der main deklarierten Variable gespeichert.
   ![Screenshot (41)](https://user-images.githubusercontent.com/79829648/121770494-e477e780-cb69-11eb-82ef-566f3bb7d404.png)
@@ -88,6 +84,11 @@ Im ersten Punkt mit "Buchstabe einlesen", ist noch eine Fehlerabfrage eingebaut,
   
   </details>
   </details>
+  
+<ins><b>So kann die Ausgabe dann aussehen</b></ins>
+<br />
+
+![bsp_ausgabe](https://user-images.githubusercontent.com/100713757/192599702-0f3ee02a-5067-4b52-bd9e-a2b8a161c71c.gif)
 
 ## Zusatz
 <details>
