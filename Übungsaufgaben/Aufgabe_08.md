@@ -59,10 +59,7 @@ Ihr Programm soll nun so erweitert/verändert werden, dass die unten aufgelistet
   
 Suche nach dem größten Feldelement und Ausgabe seiner Position (Index) im Feld.
 
-
-
 </details>
-
 
 ## 8.3
 
