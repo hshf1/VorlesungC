@@ -16,6 +16,38 @@
  - Geben Sie die Zeichenkette nur mit Konsonanten aus, Vokale sind ersatzlos gestrichen.
  - Geben Sie die Länge der so entstandenen Zeichenkette und die prozentuale Kompressionsrate aus.
 
+ <details>
+ <summary>Tipp - Zeichenkette einlesen</summary>
+ Um eine Zeichenkette einzulesen, gibt es drei Varianten, die verwendet werden können:
+ 
+- gets(zeichenkette)
+- fgets(zeichenkette, zeichenanzahl, stdin)
+  - stdin steht für die Tastatur mit fgets kann auch von anderen Quellen gelesen werden
+- scanf("%<anzahl>s", zeichenkette)
+  -  https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm
+ 
+ </details>
+ 
+ <details>
+ <summary>Tipp - Zeichenkette umdrehen</summary>
+ 
+ - (for-)Schleifen können auch runter zählen
+ - Ein Zwischenspeicher oder eine zweite Zeichenkette könnte hilfreich sein
+ 
+ </details>
+ 
+<details>
+ <summary>Tipp - Vokale</summary>
+ 
+ - Zeichen können auch in Zahlen umgewandelt werden. Dafür gibt es eine bestimmte Tabelle (ASCII)
+ - Mittels einer oder mehrerer logische(n/r) Operation(en) können die gewünschten Kriterien kombiniert werden. Möglicherweise macht auch die CASE Anweisung Sinn. 
+ 
+ </details>
+
+<ins><b>So kann die Ausgabe dann aussehen</b></ins>
+<br />
+
+![bsp_ausgabe](https://user-images.githubusercontent.com/100713757/192606784-f63ede01-8f85-4b34-8a5a-57aba9421a5c.gif)
 
 ## Zusatz
 <details>
@@ -29,41 +61,6 @@
  <summary>Klicken zum Öffnen</summary>
  Auch die Großbuchstaben Ä, Ö und Ü sollen gezählt werden.
  
- </details>
- 
-
- ## Tipp - Zeichenkette einlesen
- <details>
- <summary>Klicken zum Öffnen</summary>
- Um eine Zeichenkette einzulesen, gibt es drei Varianten, die verwendet werden können:
- 
-- gets(zeichenkette)
-- fgets(zeichenkette, zeichenanzahl, stdin)
-  - stdin steht für die Tastatur mit fgets kann auch von anderen Quellen gelesen werden
-- scanf("%<anzahl>s", zeichenkette)
-  -  https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm
- 
- </details>
- 
- ## Tipp - Zeichnkette umdrehen
- <details>
- <summary>Klicken zum Öffnen</summary>
- 
- - (for-)Schleifen können auch runter zählen
- - Ein Zwischenspeicher oder eine zweite Zeichenkette könnte hilfreich sein
- 
- </details>
- 
-  ## Tipp - Vokale
- <details>
- <summary>Klicken zum Öffnen</summary>
- 
- - Zeichen können auch in Zahlen umgewandelt werden. Dafür gibt es eine bestimmte Tabelle (ASCII)
- - Mittels einer oder mehrerer logische(n/r) Operation(en) können die gewünschten Kriterien kombiniert werden. Möglicherweise macht auch die CASE Anweisung Sinn. 
- 
- 
-
- </details>
 </details>
 
  # Level 2
