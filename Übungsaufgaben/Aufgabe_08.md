@@ -18,21 +18,15 @@ Erstellen Sie ein Feld von 10 int-Werten und Initialisieren Sie das Feld mit bel
 
 Das alles soll in der Hauptfunktion main() geschrieben werden. Erstellen Sie vor der Programmerstellung ein Struktogramm.
 
-
-### Tipp 1 - Summe berechnen
 <details>
-<summary>Klicken zum Öffnen</summary>
+<summary>Tipp - Summe berechnen</summary>
   
 Berechnen Sie die Summe des Feldes mit der Hilfe einer for() oder while() Schleife.
 
-
 </details>
 
-
-
-### Tipp 2 - Größtes Feldelement finden
 <details>
-<summary>Klicken zum Öffnen</summary>
+<summary>Tipp - größtes Feldelement finden</summary>
 
 Erstellen Sie sich eine Hilfsvariable für den größten Wert und eine weitere für die Position des größten Werts im Feld. 
 Überprüfen Sie mit einer Schleife jeden Wert des Feld und testen Sie, ob dieser größer ist als der Wert Ihrer Hilfvariable. Wenn das so ist, dann speichern Sie den neu gefunden Wert und die Position in den Hilfsvariablen ab.
@@ -41,9 +35,10 @@ Frage: Mit welchen Werten sollten Ihre Hilfsvariablen initialisiert werden?
 
 </details>
 
+<ins><b>So kann die Ausgabe dann aussehen</b></ins>
+<br />
 
-
-
+![bsp_ausgabe](https://user-images.githubusercontent.com/100713757/192598275-2a5b7307-af24-4baa-a636-e0d724131964.gif)
 
 ##  8.2
 
