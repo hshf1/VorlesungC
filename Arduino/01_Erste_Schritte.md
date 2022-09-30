@@ -66,7 +66,7 @@ https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datas
 
 </details>
 
-Beim erstellen eines neuen Projektes ist der Projektname, der Boardtyp und der gewünschte Framework auszuwählen. In diesem Fall wird folgendes genutzt:
+Beim erstellen eines neuen Projektes ist der Projektname, der Boardtyp und der gewünschte Framework auszuwählen. In diesem Beispiel wird als Board "AI Thinker ESP32-CAM" genutzt (weitere Test's zeigten, dass wohl auch "NodeMCU-32S" funktioniert).
   
 <img width="598" alt="platformio_8" src="https://user-images.githubusercontent.com/100713757/193326577-fe029476-c9c9-40db-b37a-498981a714e8.png">
 
