@@ -1,6 +1,6 @@
 # Erste Schritte
 
-## Programmieren in VSCode
+## Arduino programmieren in VSCode
 
 VSCode wird hier vorausgesetzt. Sollte VSCode noch nicht installiert worden sein, so ist dies gemäß der [01_Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) zu installieren. Weiterhin wird eine zusätzliche Erweiterung benötigt.
 
@@ -45,6 +45,27 @@ Es öffnet sich die Startseite von PlatformIO:
 
 <details>
 <summary>ESP32-Wroom-32</summary>
+  
+Datasheet: https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
 
+Je nach genutztem Chip wird ein Treiber benötigt. Bei der ESP32-Wroom-32 wird (normalerweise) die CP2102 genutzt.
+
+<details>
+<summary>Treiber für CP210x</summary>
+
+Treiber für CP210x können hier heruntergeladen und installiert werden: https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads
   
 </details>
+  
+<details>
+<summary>Treiber für andere</summary>
+  
+Hier ist eine kleine Liste über weitere Treiber, falls nötig: https://www.number13.de/esp-32-treiber-driver-windows-mac-linux/  
+  
+</details>
+
+Beim erstellen eines neuen Projektes ist der Projektname, der Boardtyp und der gewünschte Framework auszuwählen. In diesem Fall wird folgendes genutzt:
+  
+<img width="598" alt="platformio_8" src="https://user-images.githubusercontent.com/100713757/193326577-fe029476-c9c9-40db-b37a-498981a714e8.png">
+
+Das Erstellen des ersten neuen Projektes kann einige Zeit in Anspruch nehmen, da die erforderlichen Datenbanken/Libraries für das Board und das Framework heruntergeladen werden.
