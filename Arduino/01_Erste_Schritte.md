@@ -59,6 +59,8 @@ Hier ist eine kleine Liste über weitere Treiber, falls nötig: https://www.numb
 
 ### Projekt erstellen
 
+Diese Anleitung bezieht sich auf die ESP32-Wroom-32, wobei auch andere Arduino Boards genutzt werden können. Nur die jeweilige Boardauswahl und die interne PIN-Belegungen unterscheiden sich.
+
 <details>
 <summary>ESP32-Wroom-32 - Datasheet</summary>
   
