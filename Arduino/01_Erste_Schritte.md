@@ -6,6 +6,9 @@ VSCode wird hier vorausgesetzt. Sollte VSCode noch nicht installiert worden sein
 
 ### PlatformIO IDE
 
+<details>
+<summary>Hier klicken zum Installieren von PlatformIO IDE</summary>
+
 Die Erweiterung wird wie folgt installiert:
 
 <img width="528" alt="platformio_1" src="https://user-images.githubusercontent.com/100713757/193317622-483bc10d-a7be-49bf-9865-1c8c2eba477d.png">
@@ -16,6 +19,8 @@ Die Erweiterung wird wie folgt installiert:
 
 <br />
 Die Installation kann einen kleinen Augenblick dauern. Sobald die Installation abgeschlossen wurde, meldet VSCode dies und bittet um einen Neustart von VSCode.
+  
+</details>
 
 ## Liste der Boards (in Zukunft können weitere folgen)
 
