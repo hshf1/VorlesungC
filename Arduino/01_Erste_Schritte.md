@@ -41,13 +41,6 @@ Es öffnet sich die Startseite von PlatformIO:
 
 </details>
 
-## Liste der Boards (in Zukunft können weitere folgen)
-
-<details>
-<summary>ESP32-Wroom-32</summary>
-  
-Datasheet: https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
-
 Je nach genutztem Chip wird ein Treiber benötigt. Bei der ESP32-Wroom-32 wird (normalerweise) die CP2102 genutzt.
 
 <details>
@@ -64,21 +57,34 @@ Hier ist eine kleine Liste über weitere Treiber, falls nötig: https://www.numb
   
 </details>
 
+### Projekt erstellen
+
+<details>
+<summary>ESP32-Wroom-32 - Datasheet</summary>
+  
+https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
+
+</details>
+
 Beim erstellen eines neuen Projektes ist der Projektname, der Boardtyp und der gewünschte Framework auszuwählen. In diesem Fall wird folgendes genutzt:
   
 <img width="598" alt="platformio_8" src="https://user-images.githubusercontent.com/100713757/193326577-fe029476-c9c9-40db-b37a-498981a714e8.png">
 
 Das Erstellen des ersten neuen Projektes kann einige Zeit in Anspruch nehmen, da die erforderlichen Datenbanken/Libraries für das Board und das Framework heruntergeladen werden.
   
-</details>
-
 ## Arduino Cloud
   
 Für die [Arduino Cloud](https://create.arduino.cc/iot/) muss zunächst ein Konto erstellt werden. Unter Dashboard stehen Widgets zur Verfügung. In diesem Beispiel werden die Widgets Status, Switch und Value genutzt. 
+
+
   
 Unter Things sind die gewünschten Variablen zu erstellen. In der kostenfreien Version können 5 Variablen angelegt werden. In diesem Beispiel nutzen wir folgende Variablen:
+
+
   
 Nun ist der Board auszuwählen:
+
+
   
 Der Secret Key und die Geräte-ID sind zu speichern! Unter der Boardauswahl ist das Netzwerk festzulegen. Dort sind folgende Angaben notwendig:
 SSID (Netzwerkname/WLan-name), Password (Netzwerkschlüssel/WLan-Password) und der Secret Key (der vorhin bei der Boardauswahl gespeichert werden sollte).
