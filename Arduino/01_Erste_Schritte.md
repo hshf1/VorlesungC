@@ -70,4 +70,15 @@ Beim erstellen eines neuen Projektes ist der Projektname, der Boardtyp und der g
 
 Das Erstellen des ersten neuen Projektes kann einige Zeit in Anspruch nehmen, da die erforderlichen Datenbanken/Libraries für das Board und das Framework heruntergeladen werden.
 
+## Arduino Cloud
   
+Für die [Arduino Cloud](https://create.arduino.cc/iot/) muss zunächst ein Konto erstellt werden. Unter Dashboard stehen Widgets zur Verfügung. In diesem Beispiel werden die Widgets Status, Switch und Value genutzt. 
+  
+Unter Things sind die gewünschten Variablen zu erstellen. In der kostenfreien Version können 5 Variablen angelegt werden. In diesem Beispiel nutzen wir folgende Variablen:
+  
+Nun ist der Board auszuwählen:
+  
+Der Secret Key und die Geräte-ID sind zu speichern! Unter der Boardauswahl ist das Netzwerk festzulegen. Dort sind folgende Angaben notwendig:
+SSID (Netzwerkname/WLan-name), Password (Netzwerkschlüssel/WLan-Password) und der Secret Key (der vorhin bei der Boardauswahl gespeichert werden sollte).
+  
+
