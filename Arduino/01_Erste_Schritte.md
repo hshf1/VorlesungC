@@ -69,6 +69,8 @@ Beim erstellen eines neuen Projektes ist der Projektname, der Boardtyp und der g
 <img width="598" alt="platformio_8" src="https://user-images.githubusercontent.com/100713757/193326577-fe029476-c9c9-40db-b37a-498981a714e8.png">
 
 Das Erstellen des ersten neuen Projektes kann einige Zeit in Anspruch nehmen, da die erforderlichen Datenbanken/Libraries für das Board und das Framework heruntergeladen werden.
+  
+</details>
 
 ## Arduino Cloud
   
