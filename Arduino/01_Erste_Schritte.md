@@ -57,17 +57,19 @@ Hier ist eine kleine Liste über weitere Treiber, falls nötig: https://www.numb
   
 </details>
 
+<details>
+<summary>Automatische/Manuelle Portzuweisung</summary>
+
 Unter Devices ist einsehbar, ob PlatformIO bereits das Arduino Board erkennt:
 
 <img width="1128" alt="platformio_8" src="https://user-images.githubusercontent.com/100713757/193403723-754494f9-a4f6-4e57-aab1-9387c5b9a3ae.png">
 
-Ist nur ein Board angeschlossen und es wird hier angezeigt, so lädt es später automatisch in das richtige hoch beim Uploaden. Sind jedoch mehrere Boards angeschlossen oder das Board wird unter Devices nicht angezeigt, so kann später in der Datei "platformio.ini" das manuell bestimmt werden. 
+Ist nur ein Board angeschlossen und es wird hier angezeigt, so lädt es später automatisch in das richtige hoch beim Uploaden. Sind jedoch mehrere Boards angeschlossen oder das Board wird unter Devices nicht angezeigt, so kann später in der Datei "platformio.ini" im Projekt das manuell bestimmt werden. 
 
 <details>
 <summary>Beispiel - platformio.ini mit manuelle Portzuweisung</summary>
- 
 
->; PlatformIO Project Configuration File <br />
+>; PlatformIO Project Configuration File || das ; wird hier als Kommentarfunktion genutzt<br />
 >;<br />
 >;   Build options: build flags, source filter<br />
 >;   Upload options: custom upload port, speed and extra flags<br />
@@ -81,9 +83,11 @@ Ist nur ein Board angeschlossen und es wird hier angezeigt, so lädt es später 
 >platform = espressif32<br />
 >board = esp32cam<br />
 >framework = arduino<br />
->upload_port = COM3 \\Manuelle Portzuweisung, Windows COMx, MacOs /dev/cu.usbserial-000x<br />
+>upload_port = COM3 ;Manuelle Portzuweisung, Windows COMx, MacOs /dev/cu.usbserial-000x<br />
 ><br />
   
+</details>
+
 </details>
 
 ### Blinklicht Projekt erstellen
@@ -99,12 +103,48 @@ https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datas
 
 Beim erstellen eines neuen Projektes ist der Projektname, der Boardtyp und der gewünschte Framework auszuwählen. In diesem Beispiel wird als Board "AI Thinker ESP32-CAM" genutzt (weitere Test's zeigten, dass wohl auch "NodeMCU-32S" funktioniert).
   
-<img width="598" alt="platformio_8" src="https://user-images.githubusercontent.com/100713757/193326577-fe029476-c9c9-40db-b37a-498981a714e8.png">
+<img width="598" alt="platformio_9" src="https://user-images.githubusercontent.com/100713757/193326577-fe029476-c9c9-40db-b37a-498981a714e8.png">
 
 Das Erstellen des ersten neuen Projektes kann einige Zeit in Anspruch nehmen, da die erforderlichen Datenbanken/Libraries für das Board und das Framework heruntergeladen werden.
 
+Sobald das Projekt erstellt wurde, befinden sich Links im Ordnermenü mehrere Dateien.
 
+<img width="247" alt="platformio_10" src="https://user-images.githubusercontent.com/100713757/193404140-5b3809fe-8231-4acb-9e94-62452e946692.png">
+
+In der Datei "platformio.ini" befinden sich Einstellungen, unteranderem kann da eine manuelle Portzuweisung festgelegt werden. Im Ordner src befindet sich die "main.cpp". Diese Datei beinhaltet die void setup(), was das Board einmal beim Start abläuft, als auch die void loop() Funktion, die in Dauerschleife abgespielt wird.
+
+<details>
+<summary>Beispielcode - Blinklicht in main.cpp</summary>
+
+```cpp
+#include <Arduino.h> // Library der Arduino
+
+const int LED_BUILTIN = 2; // Zuteilung einer (Pin-)Nummer
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(LED_BUILTIN, OUTPUT); // Zuweisung, dass LED_BUILTIN bzw. digitalPin 2 ein Output ist
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(LED_BUILTIN, HIGH); // Dem Output LED_BUILTIN den Wert HIGH schreiben -> LED leuchtet
+  delay(1000); // Zeitverzögerung in Millisekunden
+  digitalWrite(LED_BUILTIN, LOW); // Dem Output LED_BUILTIN den Wert LOW schreiben -> LED leuchtet nicht
+  delay(1000);
+}
+```
+
+</details>
   
+Ist das Programm fertig geschrieben, kann unten an der Leiste mittels dem Pfeil nach rechts das Programm in das Board hochgeladen werden.
+  
+<img width="579" alt="platformio_11" src="https://user-images.githubusercontent.com/100713757/193404786-882da482-661c-4135-875b-fefb3b53e2a6.png">
+  
+Der erfolgreiche Upload wird mit einem "success" im Terminal signalisiert:
+  
+<img width="690" alt="platformio_12" src="https://user-images.githubusercontent.com/100713757/193404948-e492aacd-ca7d-409d-9d45-944da605aeab.png">
+
 ## Arduino Cloud
   
 Für die [Arduino Cloud](https://create.arduino.cc/iot/) muss zunächst ein Konto erstellt werden. Unter Dashboard stehen Widgets zur Verfügung. In diesem Beispiel werden die Widgets Status, Switch und Value genutzt. 
