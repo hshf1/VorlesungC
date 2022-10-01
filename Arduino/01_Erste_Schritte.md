@@ -147,19 +147,97 @@ Der erfolgreiche Upload wird mit einem "success" im Terminal signalisiert:
 
 ## Arduino Cloud
   
-Für die [Arduino Cloud](https://create.arduino.cc/iot/) muss zunächst ein Konto erstellt werden. Unter Dashboard stehen Widgets zur Verfügung. In diesem Beispiel werden die Widgets Status, Switch und Value genutzt. 
-
-
+Für die [Arduino Cloud](https://create.arduino.cc/iot/) muss zunächst ein Konto erstellt werden. Unter Things sind die gewünschten Variablen zu erstellen. In der kostenfreien Version können 5 Variablen angelegt werden. In diesem Beispiel nutzen wir folgende Variablen:
   
-Unter Things sind die gewünschten Variablen zu erstellen. In der kostenfreien Version können 5 Variablen angelegt werden. In diesem Beispiel nutzen wir folgende Variablen:
-
-
+<details>
+<summary>Einstellung der Variable "led_status"</summary>
   
-Nun ist der Board auszuwählen:
+<img width="649" alt="arduinocloud_1" src="https://user-images.githubusercontent.com/100713757/193405489-05a7d664-8b81-438e-97d9-f3cc58374c2f.png">
 
-
+</details>
   
-Der Secret Key und die Geräte-ID sind zu speichern! Unter der Boardauswahl ist das Netzwerk festzulegen. Dort sind folgende Angaben notwendig:
-SSID (Netzwerkname/WLan-name), Password (Netzwerkschlüssel/WLan-Password) und der Secret Key (der vorhin bei der Boardauswahl gespeichert werden sollte).
+<details>
+<summary>Einstellung der Variable "led_onoff"</summary>
   
+<img width="649" alt="arduinocloud_2" src="https://user-images.githubusercontent.com/100713757/193405525-3c4ecea2-1432-41d4-8bbc-c799fe7c488e.png">
+  
+</details>
+  
+<details>
+<summary>Einstellung der Variable "workingtime"</summary>
+  
+<img width="649" alt="arduinocloud_3" src="https://user-images.githubusercontent.com/100713757/193405559-aedd6553-79d2-44d9-9043-02c073a5e66c.png">
 
+</details>
+
+Es kann ein Dashboard erstellt werden, wo verschiedene Widgets zur Verfügung stehen, die mit Variablen verlinkbar sind. In diesem Beispiel werden die Widgets Status, Switch und Value genutzt. 
+
+<img width="719" alt="arduinocloud_4" src="https://user-images.githubusercontent.com/100713757/193405191-7bbbba2f-1977-42e5-9379-39da96c87f62.png">
+  
+<details>
+<summary>Einstellung des Widgets "Status"</summary>
+  
+<img width="915" alt="arduinocloud_5" src="https://user-images.githubusercontent.com/100713757/193405713-bf2f7a1a-7668-4087-9ecf-0ca80e119f07.png">
+  
+</details>
+
+<details>
+<summary>Einstellung des Widgets "Switch"</summary>
+
+<img width="1008" alt="arduinocloud_6" src="https://user-images.githubusercontent.com/100713757/193405751-6c742940-99af-47b7-8197-2994c550b637.png">
+  
+</details>
+  
+<details>
+<summary>Einstellung des Widgets "Value"</summary>
+  
+<img width="1008" alt="arduinocloud_7" src="https://user-images.githubusercontent.com/100713757/193405660-46537539-7b4d-4dfc-a6d4-2adf731e01aa.png">
+
+</details>
+  
+In den Einstellungen der Widgets sieht man bereits die Verlinkung mit den Variablen, dies funktioniert so:
+  
+<details>
+<summary>Widgets mit Variablen verlinken</summary>
+  
+<img width="336" alt="arduinocloud_8" src="https://user-images.githubusercontent.com/100713757/193405920-b1189b03-92d9-4ee6-bcf6-d21f8215acbc.png">
+  
+<img width="863" alt="arduinocloud_9" src="https://user-images.githubusercontent.com/100713757/193406008-aae79bb3-1ecb-4765-9301-f940f2f7a47d.png">
+
+<img width="863" alt="arduinocloud_10" src="https://user-images.githubusercontent.com/100713757/193406011-efc0f367-c1df-488a-9d5c-9cc6f1dc82d0.png">
+
+<img width="344" alt="arduinocloud_11" src="https://user-images.githubusercontent.com/100713757/193406013-727e6e7b-3021-46ce-b0d4-fe404f5c9c9a.png">
+  
+</details>
+
+Zurück in Things müssen noch das Gerät und das Netzwerk eingestellt werden.
+  
+<img width="979" alt="arduinocloud_12" src="https://user-images.githubusercontent.com/100713757/193406122-bf83257c-235c-4391-be8d-cdcffb70b314.png">
+
+<details>
+<summary>1. Gerät auswählen</summary>
+  
+WICHTIG! Secret Key unbedingt Downloaden/abspeichern!
+  
+<img width="339" alt="arduinocloud_13" src="https://user-images.githubusercontent.com/100713757/193406487-c83a3a51-224d-4279-998e-7c39728cfa4a.png">
+
+<img width="649" alt="arduinocloud_14" src="https://user-images.githubusercontent.com/100713757/193406492-a2eb7465-0011-4dfa-ab8a-7721921ba57c.png">
+  
+<img width="649" alt="arduinocloud_15" src="https://user-images.githubusercontent.com/100713757/193406495-36dd2dac-d11d-4e9e-b849-e27cfebfc7d3.png">
+  
+<img width="649" alt="arduinocloud_16" src="https://user-images.githubusercontent.com/100713757/193406500-54892851-421f-4b38-8bc5-8df12d9df021.png">
+
+<img width="649" alt="arduinocloud_17" src="https://user-images.githubusercontent.com/100713757/193406510-ee91bd32-310f-4b2d-b246-2213fde7af3f.png">
+
+</details>
+  
+<details>
+<summary>2. Netzwerk einstellen (Nach Geräteauswahl!)</summary>
+  
+Der vorhin gespeicherte Secret Key wird hier nun benötigt.
+  
+<img width="322" alt="arduinocloud_18" src="https://user-images.githubusercontent.com/100713757/193406563-7607af05-9a92-429d-a681-fb0ae849f539.png">
+  
+<img width="650" alt="arduinocloud_19" src="https://user-images.githubusercontent.com/100713757/193406639-48e10171-671f-4f99-a6af-07c74db529b2.png">
+
+</details>
