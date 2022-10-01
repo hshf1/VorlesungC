@@ -65,23 +65,24 @@ Ist nur ein Board angeschlossen und es wird hier angezeigt, so lädt es später 
 
 <details>
 <summary>Beispiel - platformio.ini mit manuelle Portzuweisung</summary>
-  
->; PlatformIO Project Configuration File
->;
->;   Build options: build flags, source filter
->;   Upload options: custom upload port, speed and extra flags
->;   Library options: dependencies, extra library storages
->;   Advanced options: extra scripting
->;
->; Please visit documentation for the other options and examples
->; https://docs.platformio.org/page/projectconf.html
->
->[env:esp32cam]
->platform = espressif32
->board = esp32cam
->framework = arduino
->upload_port = COM3 \\Manuelle Portzuweisung, Windows COMx, MacOs /dev/cu.usbserial-000x
->
+ 
+
+>; PlatformIO Project Configuration File <br />
+>;<br />
+>;   Build options: build flags, source filter<br />
+>;   Upload options: custom upload port, speed and extra flags<br />
+>;   Library options: dependencies, extra library storages<br />
+>;   Advanced options: extra scripting<br />
+>;<br />
+>; Please visit documentation for the other options and examples<br />
+>; https://docs.platformio.org/page/projectconf.html<br />
+><br />
+>[env:esp32cam]<br />
+>platform = espressif32<br />
+>board = esp32cam<br />
+>framework = arduino<br />
+>upload_port = COM3 \\Manuelle Portzuweisung, Windows COMx, MacOs /dev/cu.usbserial-000x<br />
+><br />
   
 </details>
 
