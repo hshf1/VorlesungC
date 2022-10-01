@@ -41,7 +41,7 @@ Es öffnet sich die Startseite von PlatformIO:
 
 </details>
 
-Je nach genutztem Chip wird ein Treiber benötigt. Bei der ESP32-Wroom-32 wird (normalerweise) die CP2102 genutzt.
+Je nach genutztem Chip wird ein Treiber benötigt. Bei der hier verwendeten ESP32-Wroom-32 wird (normalerweise) die CP2102 genutzt.
 
 <details>
 <summary>Treiber für CP210x</summary>
@@ -57,9 +57,37 @@ Hier ist eine kleine Liste über weitere Treiber, falls nötig: https://www.numb
   
 </details>
 
-### Projekt erstellen
+Unter Devices ist einsehbar, ob PlatformIO bereits das Arduino Board erkennt:
 
-Diese Anleitung bezieht sich auf die ESP32-Wroom-32, wobei auch andere Arduino Boards genutzt werden können. Nur die jeweilige Boardauswahl und die interne PIN-Belegungen unterscheiden sich.
+<img width="1128" alt="platformio_8" src="https://user-images.githubusercontent.com/100713757/193403723-754494f9-a4f6-4e57-aab1-9387c5b9a3ae.png">
+
+Ist nur ein Board angeschlossen und es wird hier angezeigt, so lädt es später automatisch in das richtige hoch beim Uploaden. Sind jedoch mehrere Boards angeschlossen oder das Board wird unter Devices nicht angezeigt, so kann später in der Datei "platformio.ini" das manuell bestimmt werden. 
+
+<details>
+<summary>Beispiel - platformio.ini mit manuelle Portzuweisung</summary>
+  
+>; PlatformIO Project Configuration File
+>;
+>;   Build options: build flags, source filter
+>;   Upload options: custom upload port, speed and extra flags
+>;   Library options: dependencies, extra library storages
+>;   Advanced options: extra scripting
+>;
+>; Please visit documentation for the other options and examples
+>; https://docs.platformio.org/page/projectconf.html
+>
+>[env:esp32cam]
+>platform = espressif32
+>board = esp32cam
+>framework = arduino
+>upload_port = COM3 \\Manuelle Portzuweisung, Windows COMx, MacOs /dev/cu.usbserial-000x
+>
+  
+</details>
+
+### Blinklicht Projekt erstellen
+
+Diese Anleitung bezieht sich auf die ESP32-Wroom-32, wobei auch andere Arduino Boards genutzt werden können. Nur die jeweilige Boardauswahl und ggf. die interne PIN-Belegung unterscheiden sich. Die digitale Pin-Belegung ist in den Libraries einsehbar.
 
 <details>
 <summary>ESP32-Wroom-32 - Datasheet</summary>
@@ -73,6 +101,8 @@ Beim erstellen eines neuen Projektes ist der Projektname, der Boardtyp und der g
 <img width="598" alt="platformio_8" src="https://user-images.githubusercontent.com/100713757/193326577-fe029476-c9c9-40db-b37a-498981a714e8.png">
 
 Das Erstellen des ersten neuen Projektes kann einige Zeit in Anspruch nehmen, da die erforderlichen Datenbanken/Libraries für das Board und das Framework heruntergeladen werden.
+
+
   
 ## Arduino Cloud
   
