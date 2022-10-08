@@ -201,6 +201,8 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 ### Schritt 1
 <br />
 <a href="https://github.com/hshf1/VorlesungC/files/8937057/installVSCodeCR.zip"><img src="https://img.shields.io/badge/Download-v1.04_20.06.2022-success?logo=windows" height="50" /></a>
+<br />
+<a href="https://github.com/hshf1/VorlesungC/files/9740386/installVSCodeCR.zip"><img src="https://img.shields.io/badge/Download-v1.05Beta_1_09.10.2022-success?logo=windows" height="25" /></a>
 <br /><br />
   
 Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
