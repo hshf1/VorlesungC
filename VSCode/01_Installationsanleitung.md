@@ -163,7 +163,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 <details>
   <summary>Hier klicken, um VSCode auf Linux zu installieren.</summary>
 <br />
-Bisher getestet für: Ubuntu.<br /><br />
+Bisher getestet für: Ubuntu / Zorin 15.3<br /><br />
 <a href="https://github.com/hshf1/VorlesungC/files/9541810/installVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.00_10.09.2022-success?logo=linux" height="50" /></a>
 <br /><br />
 Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop). <br />
@@ -201,8 +201,6 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 ### Schritt 1
 <br />
 <a href="https://github.com/hshf1/VorlesungC/files/8937057/installVSCodeCR.zip"><img src="https://img.shields.io/badge/Download-v1.04_20.06.2022-success?logo=windows" height="50" /></a>
-<br />
-<a href="https://github.com/hshf1/VorlesungC/files/9740386/installVSCodeCR.zip"><img src="https://img.shields.io/badge/Download-v1.05Beta_1_09.10.2022-success?logo=windows" height="25" /></a>
 <br /><br />
   
 Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
