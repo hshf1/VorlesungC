@@ -17,7 +17,7 @@ Das Kapital lässt sich am einfachsten mit einer Potenzfunktion berechnen. Diese
 <details>
   <summary>Tipp - formatieren</summary>
   
-Zum Formatieren von Kommazahlen existiert ein Tipp in Aufgabe 2: https://github.com/hshf1/cprog/blob/main/Aufgabe_02.md
+Zum Formatieren von Kommazahlen existiert ein Tipp in Aufgabe 2: https://github.com/hshf1/VorlesungC/blob/main/Übungsaufgaben/Aufgabe_02.md
   
   </details>
   
