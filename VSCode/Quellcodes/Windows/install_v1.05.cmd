@@ -1,3 +1,5 @@
+:: Erstellt am 12.08.2022 von Can Kocak | Hochschule Hannover
+
 @echo off
 set mydate=%date%
 set mytime=%time%
