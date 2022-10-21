@@ -1,3 +1,5 @@
+:: Erstellt am 16.04.2022 von Can Kocak | Hochschule Hannover
+
 @echo off
 SET DIR=%~dp0%
 
