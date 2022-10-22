@@ -100,7 +100,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 <summary>Ohne Download VSCode auf Windows installieren.</summary>
 <br />
 AKTUELLER HINWEIS: Auf Windows 11 bzw. an Windowssystemen, die OneDrive nutzen, kommt es zurzeit zu einer Fehlermeldung am Ende der Installation, dass der Pfad für die LogDatei nicht gefunden wurde. Dies wird demnächst behoben, hat jedoch keine Auswirkung auf die Installation. VSCode kann dennoch nach der Installation genutzt werden!
-<br />
+<br /><br />
 Für die Installation ohne Download ist die Windows Eingabeaufforderung (Windows Terminal) als Administrator zu starten.
 
 ![Screenshot (29)_LI](https://user-images.githubusercontent.com/100713757/197366401-965de1cc-424d-459d-beeb-154240fe5653.jpg)
@@ -117,7 +117,7 @@ curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/V
 <summary>Mit Download VSCode auf Windows installieren.</summary> 
 <br />
 AKTUELLER HINWEIS: Auf Windows 11 bzw. an Windowssystemen, die OneDrive nutzen, kommt es zurzeit zu einer Fehlermeldung am Ende der Installation, dass der Pfad für die LogDatei nicht gefunden wurde. Dies wird demnächst behoben, hat jedoch keine Auswirkung auf die Installation. VSCode kann dennoch nach der Installation genutzt werden!
-<br />
+<br /><br />
 Ihr könnt die Installation bei Problemen oder bei bereits installiertem VSCode ohne etwas deinstallieren zu müssen einfach ausführen. <br />
 Es werden automatisch nur fehlende oder unvollständige installationen durchgeführt. <br /><br />
 
