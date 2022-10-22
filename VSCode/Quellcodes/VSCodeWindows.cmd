@@ -32,7 +32,7 @@ echo ---------------------------------------------------------------------------
 echo.
 ) >> %logfile%
 
-if uninstall = "true" (echo uninstall funkiton >> %logfile%)
+if uninstall == "true" (echo uninstall funkiton >> %logfile%)
 
 :: Betriebssystem in logdatei speichern
 echo Betriebssystem wird ermittelt...
