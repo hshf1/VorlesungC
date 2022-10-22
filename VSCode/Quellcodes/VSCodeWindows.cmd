@@ -32,7 +32,7 @@ echo ---------------------------------------------------------------------------
 echo.
 ) >> %logfile%
 
-if uninstall == "true" (
+if %uninstall% == "true" (
 (
 echo uninstall funkiton 
 echo>CON) >> %logfile%
