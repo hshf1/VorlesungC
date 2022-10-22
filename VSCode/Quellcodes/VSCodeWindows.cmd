@@ -14,7 +14,6 @@ set vscerweiterung= "C:\Program Files\Microsoft VS Code\bin\code"
 
 :: Wenn deinstallationsvariable auf true, dann deinstallation ausführen
 if %option%==1 (
-
 :: Beginn Logdatei
 (
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
