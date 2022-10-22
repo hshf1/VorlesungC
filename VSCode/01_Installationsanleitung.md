@@ -108,7 +108,7 @@ Für die Installation ohne Download ist die Windows Eingabeaufforderung (Windows
 Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 
 ```cmd
-curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeWindows.cmd -o %temp%\VSCodeWindows.cmd && %temp%\VSCodeWindows.cmd && del %temp%\VSCodeWindows.cmd %% EXIT /B
+curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeWindows.cmd -o %temp%\VSCodeWindows.cmd && %temp%\VSCodeWindows.cmd && del %temp%\VSCodeWindows.cmd && EXIT /B
 ```
 
 </details>  
