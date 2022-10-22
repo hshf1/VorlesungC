@@ -1,7 +1,4 @@
-rem Erstellt am 16.04.2022 von Can Kocak | Hochschule Hannover
-rem Zuletzt bearbeitet am 21.10.2022 von Can Kocak | Hochschule Hannover
 
-rem Variablen setzen
 @echo off
 set mydate=%date%
 set mytime=%time%
@@ -12,7 +9,6 @@ set tasksjson= %APPDATA%\Code\User\tasks.json
 set workspace= %APPDATA%\Code\User\C_Uebung.code-workspace
 set vscerweiterung= "C:\Program Files\Microsoft VS Code\bin\code"
 
-rem Beginn der logdatei
 (
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -32,14 +28,12 @@ echo ---------------------------------------------------------------------------
 echo.
 echo >CON) >> %logfile%
 
-rem Betriebssystem in logdatei speichern
 echo Betriebssystem wird ermittelt...
 FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO (
 echo Meldung: Ausführendes System: %%i %%j %%k
 echo.
 echo >CON) >> %logfile%
 
-rem Prüfen, ob als Admin gestartet, wenn nicht Skript beenden und in logdatei eintragen
 echo Adminrechte...
 fsutil dirty query %systemdrive% >nul
 if %errorlevel% == 0 (
