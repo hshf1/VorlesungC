@@ -1,4 +1,4 @@
-# Erstellt am 21.10.2022 von Can Kocak | Hochschule Hannover
+# Erstellt am 16.04.2022 von Can Kocak | Hochschule Hannover
 # Zuletzt bearbeitet am 22.10.2022 von Can Kocak | Hochschule Hannover
 
 # Nach User-Passwort fragen und als Admin ausführen
