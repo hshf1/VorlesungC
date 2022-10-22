@@ -95,9 +95,28 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 
 <!--Start Windows-Anleitung-->
 ## Windows
+
+<details>
+<summary>Ohne Download VSCode auf Windows installieren.</summary>
+<br />
+AKTUELLER HINWEIS: Auf Windows 11 bzw. an Windowssystemen, die OneDrive nutzen, kommt es zurzeit zu einer Fehlermeldung am Ende der Installation, dass der Pfad für die LogDatei nicht gefunden wurde. Dies wird demnächst behoben, hat jedoch keine Auswirkung auf die Installation. VSCode kann dennoch nach der Installation genutzt werden!
+<br />
+Für die Installation ohne Download ist die Windows Eingabeaufforderung (Windows Terminal) als Administrator zu starten.
+
+![Screenshot (29)_LI](https://user-images.githubusercontent.com/100713757/197366401-965de1cc-424d-459d-beeb-154240fe5653.jpg)
+
+Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+
+```cmd
+curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeWindows.cmd -o %temp%\VSCodeWindows.cmd && %temp%\VSCodeWindows.cmd && del %temp%\VSCodeWindows.cmd %% EXIT /B
+```
+
+</details>  
     
 <details> 
-<summary>Hier klicken, um VSCode auf dem Windows zu installieren.</summary> 
+<summary>Mit Download VSCode auf Windows installieren.</summary> 
+<br />
+AKTUELLER HINWEIS: Auf Windows 11 bzw. an Windowssystemen, die OneDrive nutzen, kommt es zurzeit zu einer Fehlermeldung am Ende der Installation, dass der Pfad für die LogDatei nicht gefunden wurde. Dies wird demnächst behoben, hat jedoch keine Auswirkung auf die Installation. VSCode kann dennoch nach der Installation genutzt werden!
 <br />
 Ihr könnt die Installation bei Problemen oder bei bereits installiertem VSCode ohne etwas deinstallieren zu müssen einfach ausführen. <br />
 Es werden automatisch nur fehlende oder unvollständige installationen durchgeführt. <br /><br />
@@ -137,7 +156,7 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 </details>
   <details>
   <summary>Hier klicken, um bei anhaltenden Fehlern VSCode zu deinstallieren und neu zu installieren.</summary>
-    <br />
+<br />
 Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. Danach kann man erneut die oben beschriebene Installation durchführen.
 <br /><br />
 
