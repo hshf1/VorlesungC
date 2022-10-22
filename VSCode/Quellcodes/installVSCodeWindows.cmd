@@ -1,19 +1,29 @@
-:: Erstellt am 16.04.2022 von Can Kocak | Hochschule Hannover
+:: Erstellt am 20.04.2022 von Can Kocak | Hochschule Hannover
 
 @echo off
-SET DIR=%~dp0%
 
-%systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "((new-object net.webclient).DownloadFile('https://community.chocolatey.org/install.ps1','install.ps1'))"
-%systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%DIR%install.ps1' %*"
-SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+echo Hochschule Hannover 20.04.2022 V1.01
+
+echo Choco Installationsdaten werden runtergeladen und installiert.
+%systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "((new-object net.webclient).DownloadFile('https://community.chocolatey.org/install.ps1','%USERPROFILE%/AppData/Local/Temp/installChoco.ps1'))"
+%systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%USERPROFILE%/AppData/Local/Temp/installChoco.ps1' %*"
+
+echo Umgebungsvariable wird gesetzt.
+setx Path "%ALLUSERSPROFILE%\chocolatey\bin;C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps"
+
+echo Compiler und Debugger werden installiert.
 choco install mingw --version=8.1.0 -y
-choco install vscode vscode-cpptools vscode-vsliveshare vscode-code-runner vscode-gitlens git cascadiafonts python -y
-
+echo.
+echo VSCode wird installiert.
+choco install vscode -y
+echo.
+echo Falls vorhanden werden alte Settings entfernt.
 cd %APPDATA%\Code\User
 del "settings.json"
 del "launch.json"
 del "tasks.json"
-
+echo.
+echo Neue Globale Settings werden erstellt.
 (echo {
 echo // Use IntelliSense to learn about possible attributes.
 echo // Hover to view descriptions of existing attributes.
@@ -49,7 +59,7 @@ echo >CON ) >launch.json
 echo    // Allgemeine Nutzereinstellungen
 echo "extensions.ignoreRecommendations": true,       // Keine Empfehlungen mehr Anzeigen
 echo "files.encoding": "cp437",                      // Zur richtigen Darstellung von Umlauten
-echo "files.autoGuessEncoding": true,                // Automatische Anpassung der Encodierung, falls möglich
+echo //"files.autoGuessEncoding": true,              // Zurzeit, deaktiviert, da noch instabil! Automatische Anpassung der Encodierung, falls möglich
 echo "editor.unicodeHighlight.nonBasicASCII": false, // Nicht Basic ASCII Zeichen nicht hervorheben
 echo "files.autoSave": "onFocusChange",              // Dateien werden bei Änderungen des Fokus automatisch gespeichert
 echo "code-runner.saveFileBeforeRun": true,          // speichert aktuelle Datei bevor sie mit CodeRunner ausgeführt wird
@@ -129,3 +139,9 @@ echo	}
 echo ]
 echo }
 echo >CON ) >tasks.json
+echo.
+echo VSCode Extensions werden installiert.
+code --install-extension formulahendry.code-runner --install-extension ms-vscode.cpptools --install-extension ms-vsliveshare.vsliveshare-pack & (echo.
+echo Installation beendet!
+timeout 5 > NUL 
+exit /B)
