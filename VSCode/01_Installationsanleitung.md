@@ -1,21 +1,24 @@
+<!--Start Buttons (im oberen Bereich der Seite)-->
 <a href="https://github.com/hshf1/VorlesungC/discussions"><img src="https://img.shields.io/badge/Allgemein-Q%26A-informational?logo=github" height="25"/></a>
 <a href="https://github.com/hshf1/VorlesungC/discussions/categories/01_vscode"><img src="https://img.shields.io/badge/VSCode-Q%26A-informational?logo=visualstudiocode" height="25"/></a>
 <a href="https://github.com/hshf1/VorlesungC/discussions/5"><img src="https://img.shields.io/badge/Anleitung_bewerten-red?logo=visualstudiocode" height="25"/></a>
-  
+<!--Ende Buttons-->
+<!--Start Anleitung-->
 # VSCode Installationsanleitung
 
 Dies ist eine Anleitung (von Studenten für Studenten) zur Installation von VSCode für die Vorlesung C.<br />
-Für die Installation ist es erforderlich, dass ihr über <b>Adminrechte</b> verfügt.<br />
+Für die Installation ist es erforderlich, dass über <b>Adminrechte</b> verfügt wird.<br />
 
 Sollten während der Installation Probleme auftreten, schaut hier nach einer Lösung: [03_Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md). <br />
 Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt ihr bitte eine E-Mail mit der Logfile im Anhang an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.
-
+<!--Start MacOS-Anleitung-->
 ## MacOS
 
 <details>
   <summary>Hier klicken, um VSCode auf dem MacOS zu installieren.</summary>
 <br />
-<a href="https://github.com/hshf1/VorlesungC/files/9840809/installVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.03_21.10.2022-success?logo=apple" height="50" /></a>
+
+  <a href="https://github.com/hshf1/VorlesungC/files/9840809/installVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.03_21.10.2022-success?logo=apple" height="50" /></a>
 
 <br /><br />
 
@@ -44,8 +47,9 @@ Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Deskto
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
 
-  </details>
-  
+
+</details>
+
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
   
@@ -87,7 +91,8 @@ Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Deskto
     
 Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
   </details>
-
+<!--Ende MacOS-Anleitung-->
+<!--Start Windows-Anleitung-->
 ## Windows
     
 <details> 
@@ -160,7 +165,8 @@ Zur Problembehandlung könnt ihr im Logfile sehen, was nicht geklappt hat. Sollt
 Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
     
   </details>
-  
+<!--Ende Windows-Anleitung-->
+<!--Start Linux-Anleitung-->
 ## Linux
 
 <details>
@@ -193,7 +199,8 @@ Das ist kein Problem, führe die oben beschriebene Installationsanleitung einfac
 Bereits installierte Programme bleiben erhalten und nur fehlende dazu installiert.
 
 </details>
-  
+<!--Ende Linux-Anleitung-->
+<!--Start Computerraum-Anleitung-->
 ## Computerraum an der Hochschule
 
 <details>
@@ -246,3 +253,5 @@ Von hier aus können wir unseren Ordner dann auswählen und debuggen können.
   
 Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
 </details>
+<!--Ende Computerraum-Anleitung-->
+<!--Ende Anleitung-->
