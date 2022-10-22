@@ -32,6 +32,8 @@ echo ---------------------------------------------------------------------------
 echo.
 ) >> %logfile%
 
+if uninstall = "true" (echo uninstall funkiton >> %logfile%)
+
 :: Betriebssystem in logdatei speichern
 echo Betriebssystem wird ermittelt...
 FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO (
