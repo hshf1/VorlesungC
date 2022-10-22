@@ -2,7 +2,7 @@
 # Zuletzt bearbeitet am 22.10.2022 von Can Kocak | Hochschule Hannover
 
 # Nach User-Passwort fragen und als Admin ausführen
-sudo ''
+sudo -v
 
 # Beginn Deinstallation, falls gewünscht
 if [ "$uninstall" = "true" ]; then
@@ -93,6 +93,9 @@ echo 'Installation beendet!
 
 # Öffne die Logdatei
 open ~/Desktop/logVSC.txt
+
+# Als Admin wieder abmelden gegencommand für sudo -v
+sudo -k
 
 # Warte 5 Sekunden bis die nächste Zeile bearbeitet wird
 sleep 5
@@ -459,6 +462,9 @@ echo 'Installation beendet!
 
 # Die logdatei öffnen
 open ~/Desktop/logVSC.txt
+
+# Als Admin wieder abmelden, gegecommand für sudo -v
+sudo -k
 
 # 5 Sekunden warten, bevor nächste Zeile bearbeitet wird
 sleep 5
