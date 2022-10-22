@@ -1,4 +1,4 @@
-:: Erstellt am 20.06.2022 von Can Kocak | Hochschule Hannover
+:: Erstellt am 12.08.2022 von Can Kocak | Hochschule Hannover
 
 @echo off
 set mydate=%date%
@@ -14,7 +14,7 @@ echo ---------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo Logfile zur Installation am %mydate% um%mytime%.
 echo.
-echo Hochschule Hannover 20.06.2022 V1.04 VSCode Installation.
+echo Hochschule Hannover v1.05 12.08.2022 VSCode Installation.
 echo.
 echo Die aktuelle Version gibt es hier:
 echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
@@ -381,7 +381,7 @@ echo >CON) >> %logfile%
 echo.
 echo >CON) >> %logfile%
 )
-call %vscerweiterung% --install-extension ms-vscode.cpptools@1.9.8
+call %vscerweiterung% --install-extension ms-vscode.cpptools
 if %errorlevel% == 0 (
 (echo Meldung: C/C++ Extension wurde/ist installiert.
 echo.
