@@ -167,6 +167,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
     
   </details>
 <!--Ende Windows-Anleitung-->
+
 <!--Start Linux-Anleitung-->
 ## Linux
 
@@ -201,6 +202,7 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 
 </details>
 <!--Ende Linux-Anleitung-->
+
 <!--Start Computerraum-Anleitung-->
 ## Computerraum an der Hochschule
 
