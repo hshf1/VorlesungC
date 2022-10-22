@@ -1,20 +1,24 @@
-:: Erstellt am 12.08.2022 von Can Kocak | Hochschule Hannover
+:: Erstellt am 16.04.2022 von Can Kocak | Hochschule Hannover
+:: Zuletzt bearbeitet am 21.10.2022 von Can Kocak | Hochschule Hannover
 
+:: Variablen setzen
 @echo off
 set mydate=%date%
 set mytime=%time%
-set logfile="%USERPROFILE%\Desktop\logVSC.txt"
-set settingsjson="%APPDATA%\Code\User\settings.json"
-set launchjson="%APPDATA%\Code\User\launch.json"
-set tasksjson="%APPDATA%\Code\User\tasks.json"
-set vscerweiterung="C:\Program Files\Microsoft VS Code\bin\code"
+set logfile= %USERPROFILE%\Desktop\logVSC.txt
+set settingsjson= %APPDATA%\Code\User\settings.json
+set launchjson= %APPDATA%\Code\User\launch.json
+set tasksjson= %APPDATA%\Code\User\tasks.json
+set workspace= %APPDATA%\Code\User\C_Uebung.code-workspace
+set vscerweiterung= "C:\Program Files\Microsoft VS Code\bin\code"
 
+:: Beginn der logdatei
 (
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo Logfile zur Installation am %mydate% um%mytime%.
 echo.
-echo Hochschule Hannover v1.05 12.08.2022 VSCode Installation.
+echo Hochschule Hannover | Zuletzt bearbeitet am 21.10.2022 VSCode Installation für Windows.
 echo.
 echo Die aktuelle Version gibt es hier:
 echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
@@ -28,12 +32,14 @@ echo ---------------------------------------------------------------------------
 echo.
 echo >CON) >> %logfile%
 
+:: Betriebssystem in logdatei speichern
 echo Betriebssystem wird ermittelt...
 FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO (
 echo Meldung: Ausführendes System: %%i %%j %%k
 echo.
 echo >CON) >> %logfile%
 
+:: Prüfen, ob als Admin gestartet, wenn nicht Skript beenden und in logdatei eintragen
 echo Adminrechte...
 fsutil dirty query %systemdrive% >nul
 if %errorlevel% == 0 (
@@ -50,9 +56,11 @@ echo >CON) >> %logfile%
 echo msgbox"Installation abgebrochen! Das Programm muss mit Adminrechten gestartet werden.",vbInformation , "Installation abgebrochen."> %temp%\msg.vbs 
 %Temp%\msg.vbs 
 erase %temp%\msg.vbs
-goto beenden
+start "" %logfile%
+EXIT /B
 )
 
+:: Internetverbindung prüfen und in logdatei eintragen
 echo Internetverbindung wird geprüft...
 ping -n 1 google.de
 if %errorlevel% == 0 (
@@ -68,6 +76,7 @@ echo.
 echo >CON) >> %logfile%
 )
 
+:: Nach Choco suchen, wenn nicht vorhanden oder fehlerhaft installiert löschen und neu installieren
 echo Choco wird gesucht...
 choco -v
 if %errorlevel% == 0 (
@@ -105,6 +114,7 @@ echo >CON) >> %logfile%
 )
 )
 
+:: Umgebungsvariable setzen um code zu nutzen und libraries zu finden -> logdatei eintragen
 echo Umgebungsvariable wird gesetzt.
 setx Path "%ALLUSERSPROFILE%\chocolatey\bin;C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps"
 echo %Path% >> "%USERPROFILE%\AppData\Local\Temp\pathaktuell.txt"
@@ -120,6 +130,7 @@ echo >CON) >> %logfile%
 )
 del "%USERPROFILE%\AppData\Local\Temp\pathaktuell.txt"
 
+:: Prüfen ob choco vorhanden ist, manchmal fehlerhaft, wenn neu installiert
 choco -v 
 if %errorlevel% == 0 (
 if %myVar% == 1 (
@@ -132,6 +143,7 @@ echo.
 echo >CON) >> %logfile%
 )
 
+:: Compiler und Debugger installieren mit choco und in logdatei eintragen
 echo Compiler und Debugger werden installiert...
 choco install mingw --version=8.1.0 -y
 if ERRORLEVEL == 0 (
@@ -144,6 +156,7 @@ echo.
 echo >CON) >> %logfile%
 )
 
+:: VScode installieren bzw. neu installieren, falls fehlerhaft und in logdatei eintragen
 echo VSCode wird installiert...
 if NOT EXIST "C:\Program Files\Microsoft VS Code\Code.exe" if EXIST "C:\ProgramData\chocolatey\choco.exe" (
 (echo Meldung: VSCode wurde nicht gefunden. VSCode wird installiert.
@@ -162,6 +175,7 @@ echo.
 echo >CON) >> %logfile%
 )
 
+:: Alte settings.json suchen und löschen
 echo Alte Einstellungen werden gesucht und ersetzt/erstellt...
 if NOT EXIST %APPDATA%\Code\User (
 mkdir %APPDATA%\Code\User\
@@ -185,6 +199,8 @@ echo.
 echo >CON) >> %logfile%
 )
 )
+
+:: Neue settings.json erstellen
 (echo {
 echo    // Allgemeine Nutzereinstellungen
 echo "liveshare.anonymousGuestApproval": "accept",   // Live Share eingeladene Anonyme Nutzer automatisch akzeptieren
@@ -194,7 +210,7 @@ echo "files.encoding": "cp437",                      // Zur richtigen Darstellun
 echo //"files.autoGuessEncoding": true,              // Zurzeit, deaktiviert, da noch instabil! Automatische Anpassung der Encodierung, falls möglich
 echo "editor.unicodeHighlight.nonBasicASCII": false, // Nicht Basic ASCII Zeichen nicht hervorheben
 echo "files.autoSave": "onFocusChange",              // Dateien werden bei Änderungen des Fokus automatisch gespeichert
-echo "code-runner.saveFileBeforeRun": true,          // speichert aktuelle Datei bevor sie mit CodeRunner ausgeführt wird
+echo "code-runner.saveFileBeforeRun": true,          // speichert aktuelle Datei bevor sie mit CodeRunner ausgef�hrt wird
 echo "editor.bracketPairColorization.enabled": true, // Um Klammern und andere farbig darzustellen
 echo "editor.insertSpaces": true,                    // Ersezt ein Tab durch Leerzeichen
 echo "editor.tabSize": 4,                            // Setzt die Zahl der durch einen Tab zu ersetzenden Leerzeichen
@@ -244,6 +260,8 @@ echo   }]
 echo }
 echo }
 echo >CON) > %settingsjson%
+
+:: Prüfen ob neue settings.json erstellt wurde und in logdatei eintrage
 if EXIST %settingsjson% (
 (echo Meldung: Neue settings.json wurde erfolgreich erstellt.
 echo.
@@ -254,6 +272,7 @@ echo.
 echo >CON) >> %logfile%
 )
 
+:: Prüfen ob alte launch.json vorhanden ist und löschen -> logdatei eintragen
 if NOT EXIST %launchjson% (
 (echo Meldung: Alte launch.json wurde nicht gefunden.
 echo.
@@ -273,6 +292,8 @@ echo.
 echo >CON) >> %logfile%
 )
 )
+
+:: Neue launch.json erstellen
 (echo {
 echo // Use IntelliSense to learn about possible attributes.
 echo // Hover to view descriptions of existing attributes.
@@ -303,6 +324,8 @@ echo    }
 echo ]
 echo } 
 echo >CON ) > %launchjson%
+
+:: Prüfen ob neue launch.json erstellt wurde und in logdatei eintragen
 if EXIST %launchjson% (
 (echo Meldung: Neue launch.json wurde erfolgreich erstellt.
 echo.
@@ -313,6 +336,7 @@ echo.
 echo >CON) >> %logfile%
 )
 
+:: Prüfen, ob alte tasks.json vorhanden ist und löschen -> logdatei eintragen
 if NOT EXIST %tasksjson% (
 (echo Meldung: Alte tasks.json wurde nicht gefunden.
 echo.
@@ -332,6 +356,8 @@ echo.
 echo >CON) >> %logfile%
 )
 )
+
+:: Neue tasks.json erstellen
 (echo {
 echo "version": "2.0.0",
 echo "tasks": [
@@ -360,6 +386,8 @@ echo	}
 echo ]
 echo }
 echo >CON ) > %tasksjson%
+
+:: Prüfen, ob neue tasks.json erstellt wurde und in logdatei eintragen
 if EXIST %tasksjson% (
 (echo Meldung: Neue tasks.json wurde erfolgreich erstellt.
 echo.
@@ -370,7 +398,7 @@ echo.
 echo >CON) >> %logfile%
 )
 
-echo VSCode Extensions werden installiert...
+:: Die Erweiterung code-runner installieren und in logdatei eintragen
 call %vscerweiterung% --install-extension formulahendry.code-runner
 if %errorlevel% == 0 (
 (echo Meldung: Code-Runner Extension wurde/ist installiert.
@@ -381,6 +409,8 @@ echo >CON) >> %logfile%
 echo.
 echo >CON) >> %logfile%
 )
+
+:: Die Erweiterung C/C++ installieren und in logdatei eintragen
 call %vscerweiterung% --install-extension ms-vscode.cpptools
 if %errorlevel% == 0 (
 (echo Meldung: C/C++ Extension wurde/ist installiert.
@@ -391,6 +421,8 @@ echo >CON) >> %logfile%
 echo.
 echo >CON) >> %logfile%
 )
+
+:: Die Erweiterung LiveShare installieren und in logdatei eintragen
 call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare
 if %errorlevel% == 0 (
 (echo Meldung: Live Share Extension wurde/ist installiert.
@@ -401,6 +433,8 @@ echo >CON) >> %logfile%
 echo.
 echo >CON) >> %logfile%
 )
+
+:: Die Erweiterung LiveShareAudio installieren und in logdatei eintragen
 call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare-audio
 if %errorlevel% == 0 (
 (echo Meldung: Live Share Audio Extension wurde/ist installiert.
@@ -412,14 +446,61 @@ echo.
 echo >CON) >> %logfile%
 )
 
+:: Wenn Ordner nicht vorhanden, dann erstellen
+if NOT EXIST %USERPROFILE%\Documents\C_Uebung\ (
+mkdir %USERPROFILE%\Documents\C_Uebung\
+)
+
+:: Wenn Datei vorhanden, löschen
+if EXIST %USERPROFILE%\Documents\C_Uebung\testprog.c (
+del %USERPROFILE%\Documents\C_Uebung\testprog.c
+)
+
+:: Testprogramm in C erstellen
+echo #include ^<stdio.h^> > %USERPROFILE%\Documents\C_Uebung\testprog.c
+echo. >> %USERPROFILE%\Documents\C_Uebung\testprog.c
+echo int main(){ >> %USERPROFILE%\Documents\C_Uebung\testprog.c
+echo    int x = 0; >> %USERPROFILE%\Documents\C_Uebung\testprog.c
+echo    x++; >> %USERPROFILE%\Documents\C_Uebung\testprog.c
+echo    printf("Hello World! Nummer: %%d\n", x); >> %USERPROFILE%\Documents\C_Uebung\testprog.c
+echo } >> %USERPROFILE%\Documents\C_Uebung\testprog.c
+
+:: Prüfen ob Datei vorhanden, wenn ja löschen
+if EXIST %workspace% (
+del %workspace%
+)
+
+:: Workspace erstellen
+(echo {
+echo	"folders": [
+echo		{
+echo			"path": "../../../../Documents/C_Uebung"
+echo		}
+echo	]
+echo }
+echo >CON ) > %workspace%
+
+:: Prüfen ob Datei vorhanden, wenn ja löschen
+if EXIST "%USERPROFILE%\Desktop\C_Uebung.code-workspace" (
+del "%USERPROFILE%\Desktop\C_Uebung.code-workspace"
+)
+
+:: Verknüpfung zum Workspace auf dem Desktop erstellen -> kann später überall hin verschoben werden
+mklink "%USERPROFILE%\Desktop\C_Uebung.code-workspace" "%APPDATA%\Code\User\C_Uebung.code-workspace"
+
+:: Installation Ende -> logdatei Ende
 (
 echo Installation beendet!
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo >CON) >> %logfile%
 
+:: PopUp Fenster
 echo msgbox"Installation beendet.",vbInformation , "Installation beendet!"> %temp%\msg.vbs 
 %temp%\msg.vbs
 erase %temp%\msg.vbs
-:beenden
+
+:: logdatei starten
 start "" %logfile%
+
+:: Terminal automatisch beenden
 EXIT /B
