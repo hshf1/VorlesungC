@@ -14,13 +14,13 @@ set vscerweiterung= "C:\Program Files\Microsoft VS Code\bin\code"
 
 :: Beginn der logdatei
 (
-echo( ---------------------------------------------------------------------------------------------------------------------------------------------------------
-echo( ---------------------------------------------------------------------------------------------------------------------------------------------------------
-echo( Logfile zur Installation am %mydate% um%mytime%.
-echo.(
-echo( Hochschule Hannover Zuletzt bearbeitet am 21.10.2022 VSCode Installation für Windows.
-echo.(
-echo( Die aktuelle Version gibt es hier:
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Logfile zur Installation am %mydate% um%mytime%.
+
+Hochschule Hannover Zuletzt bearbeitet am 21.10.2022 VSCode Installation für Windows.
+
+Die aktuelle Version gibt es hier:
 echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
 echo.
 echo Bei Problemen könnt ihr hier nach Lösungen schauen:
