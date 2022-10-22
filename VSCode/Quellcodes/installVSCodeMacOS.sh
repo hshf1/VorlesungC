@@ -1,13 +1,19 @@
-# Erstellt am 01.05.2022 von Can Kocak | Hochschule Hannover
+# Erstellt am 21.10.2022 von Can Kocak | Hochschule Hannover
 
+# Nach User-Passwort fragen und als Admin ausführen
 sudo ''
-echo 'Installation VSCode'
+
+# Beginn der logdatei
 echo '-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
 ' >> ~/Desktop/logVSC.txt
+
+# aktuelle Uhrzeit und Datum in logdatei erfassen
 date '+Logfile zur Installation am %d.%m.%Y um %H:%M:%S.' >> ~/Desktop/logVSC.txt
+
+# Information in der logdatei
 echo '
-Hochschule Hannover 01.05.2022 V1.02 VSCode Installation.
+Hochschule Hannover 21.10.2022 V1.03 VSCode Installation.
 
 Die aktuelle Version gibt es unter https://github.com/hshf1/VorlesungC/blob/main/VSCode/
 
@@ -20,11 +26,22 @@ Wenn alles funktioniert, kann diese Datei gelöscht werden.
 
 ' >> ~/Desktop/logVSC.txt
 
-echo 'Betriebssystem wird ermittelt...'
+# Info über Betriebssystem in logdatei eintragen
 echo 'Meldung: Ausführendes System:' >> ~/Desktop/logVSC.txt
 sw_vers >> ~/Desktop/logVSC.txt
 echo '' >> ~/Desktop/logVSC.txt
 
+# Testen, ob Internetverbindung vorhanden ist und in logdatei eintragen
+ping -c 1 www.google.com
+if (( $? == 0))
+then echo 'Meldung: Es konnte eine Verbindung zum Internet erkannt werden!
+' >> ~/Desktop/logVSC.txt
+else echo 'Fehler: Es konnte keine Verbindung zum Internet erkannt werden!
+           Für die vollständige Installation ist eine Internetverbindung notwendig.
+' >> ~/Desktop/logVSC.txt
+fi
+
+# Abfrage, ob VSCode vorhanden, wenn nicht -> Download und Installation mit Eintrag in logdatei
 file=/Applications/Visual\ Studio\ Code.app
 if [ -e "$file" ]
 then echo 'Meldung: VSCode ist im richtigen Ordner bereits installiert.
@@ -42,6 +59,7 @@ else echo 'Fehler: Bei der Installation von VSCode ist ein Fehler aufgetreten!
 fi
 fi
 
+# Compiler vorhanden? Wenn nein installieren und Eintrag in logdatei
 echo 'Compiler wird überprüft bzw. installiert...'
 sudo command xcode-select --install
 if (( $? == 0))
@@ -52,11 +70,12 @@ clang --version
 if (( $? == 0))
 then echo 'Meldung: Compiler bereits installiert.
 ' >> ~/Desktop/logVSC.txt
-else echo 'Fehler: Bei der Installation vom Compiler ist ein Fehler aufgetreten!
+else echo 'Fehler: Bei der Installation vom Compiler ist ein Fehler aufgetreten! Falls neu installiert ggf. falsche Fehlermeldung.
 ' >> ~/Desktop/logVSC.txt
 fi
 fi
 
+# Umgebungsvariable hinzufügen um code im Terminal zu nutzen und Eintrag in logdatei
 echo 'Umgebungsvariable wird hinzugefügt...'
 cat << EOF >> ~/.bash_profile
 # Add Visual Studio Code (code)
@@ -68,15 +87,19 @@ then echo 'Meldung: Umgebungsvariable wurde erfolgreich hinzugefügt.
 else echo 'Fehler: Umgebungsvariable konnte nicht hinzugefügt werden!
 ' >> ~/Desktop/logVSC.txt
 fi
+
+# Profil aktualisieren um neue Umgebungsvariable nutzen zu können
 source ~/.bash_profile
 
-echo 'Alte Einstellungen werden gesucht und ersetzt/erstellt...'
+# Wenn VSCode Ordner nicht vorhanden, dann erstellen
 file=~/Library/Application\ Support/Code
 if [ -d "$file" ]
 then ''
 else mkdir ~/Library/Application\ Support/Code
 mkdir ~/Library/Application\ Support/Code/User
 fi
+
+# Falls alte settings.json gefunden, dann löschen und in logdatei eintragen
 file=~/Library/Application\ Support/Code/User/settings.json
 if [ -e "$file" ] 
 then echo 'Meldung: Alte settings.json wurden gefunden.
@@ -91,6 +114,8 @@ fi
 else echo 'Meldung: Alte settings.json wurden nicht gefunden.
 ' >> ~/Desktop/logVSC.txt
 fi
+
+# neue settings.json erstellen
 echo '{
    // Allgemeine Nutzereinstellungen
 "liveshare.anonymousGuestApproval": "accept",   // Live Share eingeladene Anonyme Nutzer automatisch akzeptieren
@@ -106,6 +131,7 @@ echo '{
 "editor.tabSize": 4,                            // Setzt die Zahl der durch einen Tab zu ersetzenden Leerzeichen
 "editor.renderWhitespace": "none",              // Zeigt keine Leerzeichen ein 
 //"editor.renderWhitespace": "selection",       // Nur im markierten Bereich Leerzeichen anzeigen
+"C_Cpp.debugShortcut": false,                   // Deaktivieren der nicht getesteten neuen Funktion von C/C++ Erweiterung
 "code-runner.runInTerminal": true,              // Um Eingaben in seinem Programm tätigen zu können z.B. für scanf
 "code-runner.preserveFocus": false,             // damit springt man automatisch ins Terminal bei Abarbeitung
 "code-runner.defaultLanguage": "C",
@@ -130,12 +156,16 @@ echo '{
 		]
 	}
 }' > ~/Library/Application\ Support/Code/User/settings.json
+
+# Prüfung ob Datei erstellt werden konnte
 if [ -e "$file" ] 
 then echo 'Meldung: Neue settings.json wurden erfolgreich erstellt.
 ' >> ~/Desktop/logVSC.txt
 else echo 'Fehler: Neue settings.json konnten nicht erstellt werden.
 ' >> ~/Desktop/logVSC.txt
 fi
+
+# Prüfen ob launch.json vorhanden, wenn ja löschen und Eintrag in logdatei
 file=~/Library/Application\ Support/Code/User/launch.json
 if [ -e "$file" ] 
 then echo 'Meldung: Alte launch.json wurden gefunden.
@@ -150,6 +180,8 @@ fi
 else echo 'Meldung: Alte launch.json wurden nicht gefunden.
 ' >> ~/Desktop/logVSC.txt
 fi
+
+# neue launch.json erstellen
 echo '{
     // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
     // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
@@ -171,12 +203,16 @@ echo '{
         }
     ]
 }' > ~/Library/Application\ Support/Code/User/launch.json
+
+# Prüfung ob Datei erstellt werden konnte
 if [ -e "$file" ] 
 then echo 'Meldung: Neue launch.json wurden erfolgreich erstellt.
 ' >> ~/Desktop/logVSC.txt
 else echo 'Fehler: Neue launch.json konnten nicht erstellt werden.
 ' >> ~/Desktop/logVSC.txt
 fi
+
+# Prüfen ob alte tasks.json da, wenn ja löschen und in logdatei eintragen
 file=~/Library/Application\ Support/Code/User/tasks.json
 if [ -e "$file" ] 
 then echo 'Meldung: Alte tasks.json wurden gefunden.
@@ -191,6 +227,8 @@ fi
 else echo 'Meldung: Alte tasks.json wurden nicht gefunden.
 ' >> ~/Desktop/logVSC.txt
 fi
+
+# neue tasks.json erstellen
 echo '{
     "tasks": [
         {
@@ -218,6 +256,8 @@ echo '{
     ],
     "version": "2.0.0"
 }' > ~/Library/Application\ Support/Code/User/tasks.json
+
+# Prüfung ob Datei erstellt werden konnte
 if [ -e "$file" ] 
 then echo 'Meldung: Neue tasks.json wurden erfolgreich erstellt.
 ' >> ~/Desktop/logVSC.txt
@@ -225,7 +265,7 @@ else echo 'Fehler: Neue tasks.json konnten nicht erstellt werden.
 ' >> ~/Desktop/logVSC.txt
 fi
 
-echo 'Extensions werden installiert...'
+# Die Erweiterung code-runner installieren und in logdatei eintragen
 code --install-extension formulahendry.code-runner
 if (( $? == 0))
 then echo 'Meldung: Die Extension Code-Runner wurde erfolgreich installiert.
@@ -233,6 +273,8 @@ then echo 'Meldung: Die Extension Code-Runner wurde erfolgreich installiert.
 else echo 'Fehler: Bei der Installation der Extension Code-Runner trat ein Fehler.
 ' >> ~/Desktop/logVSC.txt
 fi
+
+# Die Erweiterung C/C++ installieren und in logdatei eintragen
 code --install-extension ms-vscode.cpptools
 if (( $? == 0))
 then echo 'Meldung: Die Extension C/C++ wurde erfolgreich installiert.
@@ -240,6 +282,8 @@ then echo 'Meldung: Die Extension C/C++ wurde erfolgreich installiert.
 else echo 'Fehler: Bei der Installation der Extension C/C++ trat ein Fehler.
 ' >> ~/Desktop/logVSC.txt
 fi
+
+# Die Erweiterung liveshare installieren und in logdatei eintragen
 code --install-extension ms-vsliveshare.vsliveshare-pack
 if (( $? == 0))
 then echo 'Meldung: Die Extension Live Share wurde erfolgreich installiert.
@@ -247,6 +291,8 @@ then echo 'Meldung: Die Extension Live Share wurde erfolgreich installiert.
 else echo 'Fehler: Bei der Installation der Extension Live Share trat ein Fehler.
 ' >> ~/Desktop/logVSC.txt
 fi
+
+# Die Erweiterung lldb installieren und in logdatei eintragen
 code --install-extension vadimcn.vscode-lldb
 if (( $? == 0))
 then echo 'Meldung: Die Extension lldb Compiler wurde erfolgreich installiert.
@@ -255,10 +301,62 @@ else echo 'Fehler: Bei der Installation der Extension lldb Compiler trat ein Feh
 ' >> ~/Desktop/logVSC.txt
 fi
 
-echo 'Installation beendet!'
+# Wenn Ordner nicht vorhanden, dann erstellen
+file=~/Documents/C_Uebung
+if [ -d "$file" ]
+then ''
+else mkdir ~/Documents/C_Uebung
+fi
+
+# Wenn Datei vorhanden, löschen
+file= ~/Documents/C_Uebung/testprog.c
+if [ -e "$file" ] 
+then rm ~/Documents/C_Uebung/testprog.c
+fi
+
+# Testprogramm in C erstellen
+echo '#include <stdio.h>
+
+int main(){
+    int x = 0;
+    x++;
+    printf("Hello World! Nummer: %d\n", x);
+}' >> ~/Documents/C_Uebung/testprog.c
+
+# Prüfen ob Datei vorhanden, wenn ja löschen
+file= ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
+if [ -e "$file" ] 
+then rm ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
+fi
+
+# Workspace erstellen
+echo '{
+	"folders": [
+		{
+			"path": "../../../../Documents/cprog"
+		}
+	]
+}' >> ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
+
+# Prüfen ob Datei vorhanden, wenn ja löschen
+file= ~/Desktop/C_Uebung.code-workspace
+if [ -e "$file" ] 
+then rm ~/Desktop/C_Uebung.code-workspace
+fi
+
+# Verknüpfung zum Workspace auf dem Desktop erstellen -> kann später überall hin verschoben werden
+ln -s ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace ~/Desktop/C_Uebung.code-workspace
+
+# Ende Installation und Ende logdatei
 echo 'Installation beendet!
 -------------------------------------------------------------------------------------------
 ' >> ~/Desktop/logVSC.txt
+
+# Die logdatei öffnen
 open ~/Desktop/logVSC.txt
+
+# 5 Sekunden warten, bevor nächste Zeile bearbeitet wird
 sleep 5
+
+# Terminal automatisch schließen nach beenden des Skripts
 killall Terminal
