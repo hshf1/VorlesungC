@@ -8,7 +8,7 @@ set launchjson= %APPDATA%\Code\User\launch.json
 set tasksjson= %APPDATA%\Code\User\tasks.json
 set workspace= %APPDATA%\Code\User\C_Uebung.code-workspace
 set vscerweiterung= "C:\Program Files\Microsoft VS Code\bin\code"
-
+ 
 (
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
