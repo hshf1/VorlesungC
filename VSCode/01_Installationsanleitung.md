@@ -92,6 +92,7 @@ Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Deskto
 Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
   </details>
 <!--Ende MacOS-Anleitung-->
+
 <!--Start Windows-Anleitung-->
 ## Windows
     
