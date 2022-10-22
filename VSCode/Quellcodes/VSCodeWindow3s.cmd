@@ -59,8 +59,7 @@ echo msgbox"Installation abgebrochen! Das Programm muss mit Adminrechten gestart
 %Temp%\msg.vbs 
 erase %temp%\msg.vbs
 start "" %logfile%
-EXIT /B
-)
+EXIT /B)
 
 :: Internetverbindung überprüfen
 echo Internetverbindung wird geprüft...
@@ -165,8 +164,7 @@ erase %temp%\msg.vbs
 start "" %logfile%
 
 :: Terminal beenden
-EXIT /B
-)
+EXIT /B)
 
 :: Beginn der logdatei
 @(
