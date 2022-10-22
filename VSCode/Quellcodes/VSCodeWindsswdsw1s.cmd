@@ -16,7 +16,7 @@ set vscerweiterung= "C:\Program Files\Microsoft VS Code\bin\code"
 @(
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
-echo Logfile zur Installation am %mydate% um%mytime%.
+echo Logfile zur Installation am %mydate% um %mytime%.
 echo.
 echo Hochschule Hannover ^| Zuletzt bearbeitet am 21.10.2022 VSCode Installation für Windows.
 echo.
