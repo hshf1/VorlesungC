@@ -13,7 +13,7 @@ set workspace= %APPDATA%\Code\User\C_Uebung.code-workspace
 set vscerweiterung= "C:\Program Files\Microsoft VS Code\bin\code"
 
 :: Wenn deinstallationsvariable auf true, dann deinstallation ausführen
-if %option% (
+
 :: Beginn Logdatei
 (
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -166,7 +166,7 @@ start "" %logfile%
 
 :: Terminal beenden
 EXIT /B
-)
+
 
 :: Beginn der logdatei
 @(
