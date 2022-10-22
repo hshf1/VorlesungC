@@ -1,3 +1,5 @@
+# Erstellt am 20.04.2022 von Can Kocak | Hochschule Hannover
+
 echo 'Hochschule Hannover 20.04.2022 V1.01'
 clear && printf '\e[3J'
 echo 'Compiler wird überprüft bzw. installiert.'
