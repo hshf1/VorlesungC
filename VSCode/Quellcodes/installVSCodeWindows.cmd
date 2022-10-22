@@ -1,4 +1,4 @@
-:: Erstellt am 14.06.2022 von Can Kocak | Hochschule Hannover
+:: Erstellt am 20.06.2022 von Can Kocak | Hochschule Hannover
 
 @echo off
 set mydate=%date%
@@ -12,17 +12,18 @@ set vscerweiterung="C:\Program Files\Microsoft VS Code\bin\code"
 (
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
-echo Logfile zur Installation am %mydate% um %mytime%.
+echo Logfile zur Installation am %mydate% um%mytime%.
 echo.
-echo Hochschule Hannover 14.06.2022 V1.03 VSCode installation.
+echo Hochschule Hannover 20.06.2022 V1.04 VSCode Installation.
 echo.
-echo Die aktuelle Version gibt es unter https://github.com/hshf1/VorlesungC/blob/main/VSCode/
+echo Die aktuelle Version gibt es hier:
+echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
 echo.
-echo Bei Problemen könnt ihr hier sehen, was falsch gelaufen ist und unter dem Link
+echo Bei Problemen könnt ihr hier nach Lösungen schauen:
 echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
-echo findet ihr mögliche Lösungen. Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
+echo Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
 echo.
-echo Wenn alles funktioniert, kann diese Datei gelöscht werden.
+echo Fehler sind an "Fehler :" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo.
 echo >CON) >> %logfile%
@@ -33,7 +34,7 @@ echo Meldung: Ausführendes System: %%i %%j %%k
 echo.
 echo >CON) >> %logfile%
 
-echo Adminrechte werden gelesen...
+echo Adminrechte...
 fsutil dirty query %systemdrive% >nul
 if %errorlevel% == 0 (
 (
@@ -50,6 +51,21 @@ echo msgbox"Installation abgebrochen! Das Programm muss mit Adminrechten gestart
 %Temp%\msg.vbs 
 erase %temp%\msg.vbs
 goto beenden
+)
+
+echo Internetverbindung wird geprüft...
+ping -n 1 google.de
+if %errorlevel% == 0 (
+(
+echo Meldung: Es konnte eine Verbindung zum Internet erkannt werden!
+echo.
+echo >CON) >> %logfile%
+) ELSE (
+(
+echo Fehler : Es konnte keine Verbindung zum Internet erkannt werden!
+echo          Für die Installation ist eine Internetverbindung notwendig.
+echo.
+echo >CON) >> %logfile%
 )
 
 echo Choco wird gesucht...
@@ -375,13 +391,23 @@ echo >CON) >> %logfile%
 echo.
 echo >CON) >> %logfile%
 )
-call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare-pack
+call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare
 if %errorlevel% == 0 (
 (echo Meldung: Live Share Extension wurde/ist installiert.
 echo.
 echo >CON) >> %logfile%
 ) ELSE (
 (echo Fehler: Bei der Installation von der Live Share Extension ist ein Fehler aufgetreten!
+echo.
+echo >CON) >> %logfile%
+)
+call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare-audio
+if %errorlevel% == 0 (
+(echo Meldung: Live Share Audio Extension wurde/ist installiert.
+echo.
+echo >CON) >> %logfile%
+) ELSE (
+(echo Fehler: Bei der Installation von der Live Share Audio Extension ist ein Fehler aufgetreten!
 echo.
 echo >CON) >> %logfile%
 )
@@ -392,7 +418,8 @@ echo ---------------------------------------------------------------------------
 echo >CON) >> %logfile%
 
 echo msgbox"Installation beendet.",vbInformation , "Installation beendet!"> %temp%\msg.vbs 
-%Temp%\msg.vbs 
+%temp%\msg.vbs
 erase %temp%\msg.vbs
 :beenden
-cmd /c start %USERPROFILE%\Desktop\logVSC.txt
+start "" %logfile%
+EXIT /B
