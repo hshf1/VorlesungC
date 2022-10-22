@@ -6,12 +6,19 @@ sudo ''
 
 # Beginn Deinstallation, falls gewünscht
 if [ "$uninstall" = "true" ]; then
-sudo ''
+
+# Ausgabe im Terminal
 echo 'Deinstallation VSCode'
+
+# Beginn der Logdatei
 echo '-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
 ' >> ~/Desktop/logVSC.txt
+
+# Datum und Uhrzeit in Logdatei speichern
 date '+Logfile zur Deinstallation am %d.%m.%Y um %H:%M:%S.' >> ~/Desktop/logVSC.txt
+
+# Information in Logdatei einpflegen
 echo '
 Hochschule Hannover | Zuletzt bearbeitet am 22.10.2022 VSCode Deinstallation MacOS.
 
@@ -27,21 +34,23 @@ Fehler sind an "Fehler :" zu erkennen. Sind keine Fehler vorhanden, dann kann di
 
 ' >> ~/Desktop/logVSC.txt
 
+# Ausgabe des Betriebssystem in der Logdatei
 echo 'Betriebssystem wird ermittelt...'
 echo 'Meldung: Ausführendes System:' >> ~/Desktop/logVSC.txt
 sw_vers >> ~/Desktop/logVSC.txt
 echo '' >> ~/Desktop/logVSC.txt
 
+# Testen der Internetverbindung
 echo 'Internetverbindung...'
 ping -c 1 www.google.com
 if (( $? == 0))
 then echo 'Meldung: Es konnte eine Verbindung zum Internet erkannt werden!
 ' >> ~/Desktop/logVSC.txt
-else echo 'Fehler: Es konnte keine Verbindung zum Internet erkannt werden!
-           Für die vollständige Installation ist eine Internetverbindung notwendig.
+else echo 'Meldung: Es konnte keine Verbindung zum Internet erkannt werden!
 ' >> ~/Desktop/logVSC.txt
 fi
 
+# Löschen von VSCode und Ausgabe in der Logdatei
 echo 'VSCode entfernen...'
 rm -R /Applications/Visual\ Studio\ Code.app
 file=/Applications/Visual\ Studio\ Code.app
@@ -52,6 +61,7 @@ else echo 'Meldung: VSCode wurde erfolgreich entfernt.
 ' >> ~/Desktop/logVSC.txt
 fi
 
+# Löschen aller Einstellungen und Ausgabe in der Logdatei
 echo 'Alte Einstellungen werden entfernt...'
 rm -R ~/Library/Application\ Support/Code
 file=~/Library/Application\ Support/Code
@@ -62,6 +72,7 @@ else echo 'Meldung: Alte Einstellungen wurden erfolgreich entfernt.
 ' >> ~/Desktop/logVSC.txt
 fi
 
+# Löschen aller Extensions und Ausgabe in der Logdatei
 echo 'Extensions werden deinstalliert...'
 rm -R ~/.vscode
 file=~/.vscode
@@ -72,13 +83,24 @@ else echo 'Meldung: VSCode Extensions wurden erfolgreich entfernt.
 ' >> ~/Desktop/logVSC.txt
 fi
 
-echo 'Installation beendet!'
+# Ausgabe im Terminal
+echo 'Deinstallation beendet! Das Terminal kann nun geschlossen werden.'
+
+# Ausgabe in der Logdatei
 echo 'Installation beendet!
 -------------------------------------------------------------------------------------------
 ' >> ~/Desktop/logVSC.txt
+
+# Öffne die Logdatei
 open ~/Desktop/logVSC.txt
+
+# Warte 5 Sekunden bis die nächste Zeile bearbeitet wird
 sleep 5
-exit 0 # exit 0 ersetz killall Terminal-> Terminal wird so nicht mehr automatisch beendet
+
+# exit 0 ersetz killall Terminal-> Terminal wird so nicht mehr automatisch beendet
+exit 0
+
+# Ende der If-Anweisung
 fi
 # Ende Deinstallation -> Skript wird beendet
 
@@ -427,6 +449,9 @@ fi
 # Verknüpfung zum Workspace auf dem Desktop erstellen -> kann später überall hin verschoben werden
 ln -s ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace ~/Desktop/C_Uebung.code-workspace
 
+# Ausgabe im Terminal
+echo 'Installation beendet! Das Terminal kann jetzt geschlossen werden.'
+
 # Ende Installation und Ende logdatei
 echo 'Installation beendet!
 -------------------------------------------------------------------------------------------
@@ -438,5 +463,5 @@ open ~/Desktop/logVSC.txt
 # 5 Sekunden warten, bevor nächste Zeile bearbeitet wird
 sleep 5
 
-# Terminal automatisch schließen nach beenden des Skripts
-exit 0 # exit 0 ersetz killall Terminal-> Terminal wird so nicht mehr automatisch beendet
+# exit 0 ersetz killall Terminal-> Terminal wird so nicht mehr automatisch beendet
+exit 0 
