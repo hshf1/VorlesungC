@@ -12,33 +12,8 @@ set tasksjson= %APPDATA%\Code\User\tasks.json
 set workspace= %APPDATA%\Code\User\C_Uebung.code-workspace
 set vscerweiterung= "C:\Program Files\Microsoft VS Code\bin\code"
 
-:: Beginn der logdatei
-@(
-echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
-echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
-echo Logfile zur Installation am %mydate% um %mytime%.
-echo.
-echo Hochschule Hannover ^| Zuletzt bearbeitet am 21.10.2022 VSCode Installation für Windows.
-echo.
-echo Die aktuelle Version gibt es hier:
-echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
-echo.
-echo Bei Problemen könnt ihr hier nach Lösungen schauen:
-echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
-echo Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
-echo.
-echo Fehler sind an "Fehler :" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
-echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
-echo.
-) >> %logfile%
-
 :: Wenn Deinstallation gewählt, nur deinstallieren
 if %uninstall% == "true" (
-@echo off
-set mydate=%date%
-set mytime=%time%
-set logfile="%USERPROFILE%\Desktop\logVSC.txt"
-
 (
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -178,6 +153,26 @@ erase %temp%\msg.vbs
 start "" %logfile%
 EXIT /B
 )
+
+:: Beginn der logdatei
+@(
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
+echo Logfile zur Installation am %mydate% um %mytime%.
+echo.
+echo Hochschule Hannover ^| Zuletzt bearbeitet am 21.10.2022 VSCode Installation für Windows.
+echo.
+echo Die aktuelle Version gibt es hier:
+echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
+echo.
+echo Bei Problemen könnt ihr hier nach Lösungen schauen:
+echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
+echo Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
+echo.
+echo Fehler sind an "Fehler :" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
+echo.
+) >> %logfile%
 
 :: Betriebssystem in logdatei speichern
 echo Betriebssystem wird ermittelt...
