@@ -1,4 +1,5 @@
 # Erstellt am 21.10.2022 von Can Kocak | Hochschule Hannover
+# Zuletzt bearbeitet am 22.10.2022 von Can Kocak | Hochschule Hannover
 
 # Nach User-Passwort fragen und als Admin ausführen
 sudo ''
@@ -12,7 +13,7 @@ echo '--------------------------------------------------------------------------
 ' >> ~/Desktop/logVSC.txt
 date '+Logfile zur Deinstallation am %d.%m.%Y um %H:%M:%S.' >> ~/Desktop/logVSC.txt
 echo '
-Hochschule Hannover 20.06.2022 V1.00 VSCode Deinstallation.
+Hochschule Hannover | Zuletzt bearbeitet am 22.10.2022 VSCode Deinstallation MacOS.
 
 Die aktuelle Version gibt es hier:
 https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
