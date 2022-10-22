@@ -1,3 +1,5 @@
+# Erstellt am 01.05.2022 von Can Kocak | Hochschule Hannover
+
 sudo ''
 echo 'Installation VSCode'
 echo '-------------------------------------------------------------------------------------------
