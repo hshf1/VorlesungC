@@ -1,5 +1,5 @@
 :: Erstellt am 16.04.2022 von Can Kocak | Hochschule Hannover
-:: Zuletzt bearbeitet am 21.10.2022 von Can Kocak | Hochschule Hannover
+:: Zuletzt bearbeitet am 22.10.2022 von Can Kocak | Hochschule Hannover
 
 :: Variablen setzen
 @echo off
@@ -12,14 +12,16 @@ set tasksjson= %APPDATA%\Code\User\tasks.json
 set workspace= %APPDATA%\Code\User\C_Uebung.code-workspace
 set vscerweiterung= "C:\Program Files\Microsoft VS Code\bin\code"
 
-:: Wenn Deinstallation gewählt, nur deinstallieren
-if %uninstall% == "true" (
+:: Wenn deinstallationsvariable auf true, dann deinstallation ausführen
+if uninstall=="true" (
+
+:: Beginn Logdatei
 (
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
-echo Logfile zur Deinstallation am %mydate% um%mytime%.
+echo Logfile zur Deinstallation am %mydate% um %mytime%.
 echo. 
-echo Hochschule Hannover 20.06.2022 V1.01 VSCode Deinstallation.
+echo Hochschule Hannover ^| Zuletzt bearbeitet am 22.10.2022 VSCode Deinstallation für Windows.
 echo.
 echo Die aktuelle Version gibt es hier:
 echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
@@ -33,12 +35,14 @@ echo ---------------------------------------------------------------------------
 echo.
 echo >CON) >> %logfile%
 
+:: Betriebssystem ermitteln und in Logdatei speichern
 echo Betriebssystem wird ermittelt...
 FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO (
 echo Meldung: Ausführendes System: %%i %%j %%k
 echo.
 echo >CON) >> %logfile%
 
+:: Adminrechte überprüfen, ggf. abbrechen
 echo Adminrechte...
 fsutil dirty query %systemdrive% >nul
 if %errorlevel% == 0 (
@@ -55,9 +59,11 @@ echo >CON) >> %logfile%
 echo msgbox"Installation abgebrochen! Das Programm muss mit Adminrechten gestartet werden.",vbInformation , "Installation abgebrochen."> %temp%\msg.vbs 
 %Temp%\msg.vbs 
 erase %temp%\msg.vbs
-goto beenden
+start "" %logfile%
+EXIT /B
 )
 
+:: Internetverbindung überprüfen
 echo Internetverbindung wird geprüft...
 ping -n 1 google.de
 if %errorlevel% == 0 (
@@ -72,6 +78,7 @@ echo.
 echo >CON) >> %logfile%
 )
 
+:: Chocoverzeichnis entfernen
 echo Choco wird entfernt...
 rd /s /q "C:\ProgramData\chocolatey"
 if NOT EXIST "C:\ProgramData\chocolatey" (
@@ -91,6 +98,7 @@ echo >CON) >> %logfile%
 )
 )
 
+:: VSCode deinstallieren
 echo VSCode wird deinstalliert...
 call "C:\Program Files\Microsoft VS Code\unins000.exe"
 if NOT EXIST "C:\Program Files\Microsoft VS Code\Code.exe" (
@@ -103,6 +111,7 @@ echo.
 echo >CON) >> %logfile%
 )
 
+:: Alte Einstellungen entfernen und Verzeichnis löschen
 echo Alte Einstellungen werden gesucht und entfernt...
 rd /s /q "%APPDATA%\Code"
 if NOT EXIST "%APPDATA%\Code" (
@@ -122,6 +131,7 @@ echo >CON) >> %logfile%
 )
 )
 
+:: VSCode Extensions entfernen
 echo VSCode Extensions...
 rd /s /q "%USERPROFILE%\.vscode"
 if EXIST "%USERPROFILE%\.vscode" (
@@ -141,16 +151,21 @@ echo >CON) >> %logfile%
 )
 )
 
+:: Deinstallation beendet
 (
 echo Deinstallation beendet!
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo >CON) >> %logfile%
 
+:: Deinstallation in PopUp anzeigen
 echo msgbox"Deinstallation beendet!",vbInformation , "Deinstallation beendet."> %temp%\msg.vbs 
 %Temp%\msg.vbs 
 erase %temp%\msg.vbs
-:beenden
+
+:: Logdatei anzeigen
 start "" %logfile%
+
+:: Terminal beenden
 EXIT /B
 )
 
