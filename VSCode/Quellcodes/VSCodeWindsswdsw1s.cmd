@@ -18,7 +18,7 @@ echo ---------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo Logfile zur Installation am %mydate% um%mytime%.
 echo.
-echo Hochschule Hannover Zuletzt bearbeitet am 21.10.2022 VSCode Installation für Windows.
+echo Hochschule Hannover ^| Zuletzt bearbeitet am 21.10.2022 VSCode Installation für Windows.
 echo.
 echo Die aktuelle Version gibt es hier:
 echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
