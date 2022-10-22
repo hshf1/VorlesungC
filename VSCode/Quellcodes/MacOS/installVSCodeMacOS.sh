@@ -1,3 +1,6 @@
+# Erstellt am 20.04.2022 von Can Kocak | Hochschule Hannover
+
+echo 'Hochschule Hannover 20.04.2022 V1.01'
 clear && printf '\e[3J'
 echo 'Compiler wird überprüft bzw. installiert.'
 sudo command xcode-select --install 
@@ -21,7 +24,7 @@ echo '{
    // Allgemeine Nutzereinstellungen
 "extensions.ignoreRecommendations": true,       // Keine Empfehlungen mehr Anzeigen
 "files.encoding": "utf8",                       // Zur richtigen Darstellung von Umlauten
-"files.autoGuessEncoding": true,                // Automatische Anpassung der Encodierung, falls möglich
+//"files.autoGuessEncoding": true,              // Zurzeit deaktiviert, da noch instabil! Automatische Anpassung der Encodierung, falls möglich
 "editor.unicodeHighlight.nonBasicASCII": false, // Nicht Basic ASCII Zeichen nicht hervorheben
 "files.autoSave": "onFocusChange",              // Dateien werden bei Änderungen des Fokus automatisch gespeichert
 "code-runner.saveFileBeforeRun": true,          // speichert aktuelle Datei bevor sie mit CodeRunner ausgeführt wird
@@ -111,3 +114,5 @@ code --install-extension ms-vsliveshare.vsliveshare-pack
 code --install-extension vadimcn.vscode-lldb
 echo 'Extensions wurden installiert!'
 echo 'Installation beendet!'
+sleep 5s
+killall Terminal
