@@ -13,22 +13,23 @@ set workspace= %APPDATA%\Code\User\C_Uebung.code-workspace
 set vscerweiterung= "C:\Program Files\Microsoft VS Code\bin\code"
 
 :: Beginn der logdatei
-(---------------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------
-Logfile zur Installation am %mydate% um%mytime%.
-
-Hochschule Hannover Zuletzt bearbeitet am 21.10.2022 VSCode Installation für Windows.
-
-Die aktuelle Version gibt es hier:
-https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
-
-Bei Problemen könnt ihr hier nach Lösungen schauen:
-https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
-Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
-
-Fehler sind an "Fehler :" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
----------------------------------------------------------------------------------------------------------------------------------------------------------
-
+@(
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
+echo Logfile zur Installation am %mydate% um%mytime%.
+echo.
+echo Hochschule Hannover Zuletzt bearbeitet am 21.10.2022 VSCode Installation für Windows.
+echo.
+echo Die aktuelle Version gibt es hier:
+echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
+echo.
+echo Bei Problemen könnt ihr hier nach Lösungen schauen:
+echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
+echo Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
+echo.
+echo Fehler sind an "Fehler :" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
+echo.
 ) >> %logfile%
 
 :: Betriebssystem in logdatei speichern
