@@ -20,7 +20,7 @@ date '+Logfile zur Deinstallation am %d.%m.%Y um %H:%M:%S.' >> ~/Desktop/logVSC.
 
 # Information in Logdatei einpflegen
 echo '
-Hochschule Hannover | Zuletzt bearbeitet am 22.10.2022 VSCode Deinstallation MacOS.
+Hochschule Hannover | Zuletzt bearbeitet am 22.10.2022 VSCode Deinstallation für MacOS.
 
 Die aktuelle Version gibt es hier:
 https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
@@ -118,7 +118,7 @@ date '+Logfile zur Installation am %d.%m.%Y um %H:%M:%S.' >> ~/Desktop/logVSC.tx
 
 # Information in der logdatei
 echo '
-Hochschule Hannover 21.10.2022 V1.03 VSCode Installation.
+Hochschule Hannover | Zuletzt bearbeitet am 22.10.2022 VSCode Installation für MacOS.
 
 Die aktuelle Version gibt es unter https://github.com/hshf1/VorlesungC/blob/main/VSCode/
 
