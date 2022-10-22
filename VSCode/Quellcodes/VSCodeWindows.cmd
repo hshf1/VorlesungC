@@ -32,10 +32,151 @@ echo ---------------------------------------------------------------------------
 echo.
 ) >> %logfile%
 
+:: Wenn Deinstallation gewählt, nur deinstallieren
 if %uninstall% == "true" (
+@echo off
+set mydate=%date%
+set mytime=%time%
+set logfile="%USERPROFILE%\Desktop\logVSC.txt"
+
 (
-echo uninstall funkiton 
-echo>CON) >> %logfile%
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
+echo Logfile zur Deinstallation am %mydate% um%mytime%.
+echo. 
+echo Hochschule Hannover 20.06.2022 V1.01 VSCode Deinstallation.
+echo.
+echo Die aktuelle Version gibt es hier:
+echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
+echo.
+echo Bei Problemen könnt ihr hier nach Lösungen schauen:
+echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
+echo Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
+echo.
+echo Fehler sind an "Fehler :" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
+echo.
+echo >CON) >> %logfile%
+
+echo Betriebssystem wird ermittelt...
+FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO (
+echo Meldung: Ausführendes System: %%i %%j %%k
+echo.
+echo >CON) >> %logfile%
+
+echo Adminrechte...
+fsutil dirty query %systemdrive% >nul
+if %errorlevel% == 0 (
+(
+echo Meldung: Das Programm wurde erfolgreich mit Adminrechten gestartet.
+echo.
+echo >CON) >> %logfile%
+) ELSE (
+(
+echo Fehler : Das Programm wurde nicht mit Adminrechten gestartet! Das Programm wird vorzeitig beendet.
+echo          Das Programm muss mit Adminrechten gestartet werden!
+echo.
+echo >CON) >> %logfile%
+echo msgbox"Installation abgebrochen! Das Programm muss mit Adminrechten gestartet werden.",vbInformation , "Installation abgebrochen."> %temp%\msg.vbs 
+%Temp%\msg.vbs 
+erase %temp%\msg.vbs
+goto beenden
+)
+
+echo Internetverbindung wird geprüft...
+ping -n 1 google.de
+if %errorlevel% == 0 (
+(
+echo Meldung: Es konnte eine Verbindung zum Internet erkannt werden!
+echo.
+echo >CON) >> %logfile%
+) ELSE (
+(
+echo Meldung: Es konnte keine Verbindung zum Internet erkannt werden.
+echo.
+echo >CON) >> %logfile%
+)
+
+echo Choco wird entfernt...
+rd /s /q "C:\ProgramData\chocolatey"
+if NOT EXIST "C:\ProgramData\chocolatey" (
+(echo Meldung: Das Verzeichnis von Choco wurde vollständig entfernt.
+echo.
+echo >CON) >> %logfile%
+) ELSE (
+rd /s /q "C:\ProgramData\chocolatey"
+if NOT EXIST "C:\ProgramData\chocolatey" (
+(echo Meldung: Das Verzeichnis von Choco wurde vollständig entfernt.
+echo.
+echo >CON) >> %logfile%
+) ELSE (
+(echo Fehler: Das Verzeichnis von Choco konnte nicht entfernt werden.
+echo.
+echo >CON) >> %logfile%
+)
+)
+
+echo VSCode wird deinstalliert...
+call "C:\Program Files\Microsoft VS Code\unins000.exe"
+if NOT EXIST "C:\Program Files\Microsoft VS Code\Code.exe" (
+(echo Meldung: VSCode wurde erfolgreich deinstalliert.
+echo. 
+echo >CON) >> %logfile%
+) ELSE (
+(echo Fehler: VSCode konnte nicht deinstalliert werden.
+echo.
+echo >CON) >> %logfile%
+)
+
+echo Alte Einstellungen werden gesucht und entfernt...
+rd /s /q "%APPDATA%\Code"
+if NOT EXIST "%APPDATA%\Code" (
+(echo Meldung: Alte Einstellungen wurden erfolgreich gelöscht.
+echo.
+echo >CON) >> %logfile%
+) ELSE (
+rd /s /q "%APPDATA%\Code"
+if NOT EXIST "%APPDATA%\Code" (
+(echo Meldung: Alte Einstellungen wurden erfolgreich gelöscht.
+echo.
+echo >CON) >> %logfile% 
+) ELSE (
+(echo Fehler: Alte Einstellungen konnten nicht gelöscht werden.
+echo.
+echo >CON) >> %logfile%
+)
+)
+
+echo VSCode Extensions...
+rd /s /q "%USERPROFILE%\.vscode"
+if EXIST "%USERPROFILE%\.vscode" (
+(echo Fehler: Die Extensions von VSCode konnten nicht gelöscht werden.
+echo.
+echo >CON) >> %logfile%
+) ELSE (
+rd /s /q "%USERPROFILE%\.vscode"
+if EXIST "%USERPROFILE%\.vscode" (
+(echo Fehler: Die Extensions von VSCode konnten nicht gelöscht werden.
+echo.
+echo >CON) >> %logfile%
+) ELSE (
+(echo Meldung: Die Extensions von VSCode konnten erfolgreich gelöscht werden.
+echo.
+echo >CON) >> %logfile%
+)
+)
+
+(
+echo Deinstallation beendet!
+echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
+echo >CON) >> %logfile%
+
+echo msgbox"Deinstallation beendet!",vbInformation , "Deinstallation beendet."> %temp%\msg.vbs 
+%Temp%\msg.vbs 
+erase %temp%\msg.vbs
+:beenden
+start "" %logfile%
+EXIT /B
 )
 
 :: Betriebssystem in logdatei speichern
