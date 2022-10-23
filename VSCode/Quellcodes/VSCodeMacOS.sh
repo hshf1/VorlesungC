@@ -31,7 +31,7 @@ send_analytics_event()
 # We send one event to count the number of times this script is ran. At the
 # end we also report success / failure, but it's possible that the script
 # will crash before we get to that point, so we manually count invocations here.
-send_analytics_event start
+send_analytics_event "start"
 
 # Beginn Deinstallation, falls gewünscht
 if [ "$uninstall" = "true" ]; then
