@@ -97,7 +97,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 ## Windows
 <!--Neue Windows-Anleitung ohne Download-->
 <details>
-<summary>Ohne Download VSCode auf Windows installieren.</summary>
+<summary>VSCode auf Windows installieren.</summary>
 <br />
 AKTUELLER HINWEIS: Auf Windows 11 bzw. an Windowssystemen, die OneDrive nutzen, kommt es zurzeit zu einer Fehlermeldung am Ende der Installation, dass der Pfad für die LogDatei nicht gefunden wurde. Dies wird demnächst behoben, hat jedoch keine Auswirkung auf die Installation. VSCode kann dennoch nach der Installation genutzt werden!
 <br /><br />
@@ -111,12 +111,12 @@ Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-
 curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeWindows.cmd -o %temp%\VSCodeWindows.cmd && %temp%\VSCodeWindows.cmd && del %temp%\VSCodeWindows.cmd && EXIT /B
 ```
 
-Nun läuft die Installation von alleine und meldet euch, wenn es fertig ist.
-<br />
+Nun läuft die Installation von alleine und meldet euch, wenn es fertig ist. <br /><br />
+  
 ![Screenshot (22)](https://user-images.githubusercontent.com/100713757/166149376-7700c166-11da-442f-a8ab-68e2da784fe9.png)
 
-Bei der Meldung klicken wir auf <b>OK</b>, dass Terminal schließt nun automatisch und es erscheint ein Logfile, welches sich auf eurem Desktop befindet.
-<br />
+Bei der Meldung klicken wir auf <b>OK</b>, dass Terminal schließt nun automatisch und es erscheint ein Logfile, welches sich auf eurem Desktop befindet. <br /><br />
+  
 ![Screenshot (23)](https://user-images.githubusercontent.com/100713757/166149506-b4171410-2132-45ac-af4d-1284638c1e3d.png)
   
 Ist kein Fehler aufgetreten könnt ihr die Logfile auch wieder löschen. Sollten Probleme oder Fehler auftauchen, stehen diese da drin.
@@ -127,6 +127,7 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
 </details>  
 <!--Ende neue Windows-Anleitung ohne Download-->
 
+<!-- Alte Windows-Anleitung wird auskommentiert
 <details> 
 <summary>Mit Download VSCode auf Windows installieren.</summary> 
 <br />
@@ -159,7 +160,8 @@ Ist kein Fehler aufgetreten könnt ihr die Logfile auch wieder löschen. Sollten
 Zur Problembehandlung könnt ihr im Logfile sehen, was nicht geklappt hat. Solltet ihr das Problem nicht beheben können, schickt bitte die Logfile mit als Anhang.
   
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
-</details>      
+</details>
+Alte Windows-Anleitung Ende der Auskommentierung-->
     
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
