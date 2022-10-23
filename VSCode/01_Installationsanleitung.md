@@ -6,10 +6,6 @@
 <!--Start Anleitung-->
 # VSCode Installationsanleitung
 
-Test <SCRIPT LANGUAGE="VBScript">Dim WshShell
-Set WshShell = Wscript.CreateObject("Wscript.Shell")
-WshShell.Run("%comspec% /c Dir && pause")</SCRIPT>
-
 Dies ist eine Anleitung (von Studenten für Studenten) zur Installation von VSCode für die Vorlesung C.<br />
 Für die Installation ist es erforderlich, dass über <b>Adminrechte</b> verfügt wird.<br />
 
