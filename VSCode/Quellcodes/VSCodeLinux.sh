@@ -301,51 +301,6 @@ else echo 'Fehler: Bei der Installation der Extension lldb Compiler trat ein Feh
 ' >> ~/Desktop/logVSC.txt
 fi
 
-# Wenn Ordner nicht vorhanden, dann erstellen
-file=~/Documents/C_Uebung
-if [ -d "$file" ]
-then ''
-else mkdir ~/Documents/C_Uebung
-fi
-
-# Wenn Datei vorhanden, löschen
-file= ~/Documents/C_Uebung/testprog.c
-if [ -e "$file" ] 
-then rm ~/Documents/C_Uebung/testprog.c
-fi
-
-# Testprogramm in C erstellen
-echo '#include <stdio.h>
-int main(){
-    int x = 0;
-    x++;
-    printf("Hello World! Nummer: %d\n", x);
-}' >> ~/Documents/C_Uebung/testprog.c
-
-# Prüfen ob Datei vorhanden, wenn ja löschen
-file= ~/.config/Code/User/C_Uebung.code-workspace
-if [ -e "$file" ] 
-then rm ~/.config/Code/User/C_Uebung.code-workspace
-fi
-
-# Workspace erstellen
-echo '{
-	"folders": [
-		{
-			"path": "../../../../Documents/C_Uebung"
-		}
-	]
-}' >> ~/.config/Code/User/C_Uebung.code-workspace
-
-# Prüfen ob Datei vorhanden, wenn ja löschen
-file= ~/Desktop/C_Uebung.code-workspace
-if [ -e "$file" ] 
-then rm ~/Desktop/C_Uebung.code-workspace
-fi
-
-# Verknüpfung zum Workspace auf dem Desktop erstellen -> kann später überall hin verschoben werden
-ln -s ~/.config/Code/User/C_Uebung.code-workspace ~/Desktop/C_Uebung.code-workspace
-
 # end of logfile
 echo 'Installation beendet!
 -------------------------------------------------------------------------------------------
