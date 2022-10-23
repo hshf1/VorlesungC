@@ -1,37 +1,6 @@
 # Erstellt am 10.09.2022 von Can Kocak | Hochschule Hannover
 # Zuletzt bearbeitet am 23.10.2022 von Can Kocak | Hochschule Hannover
 
-# Google-Analytics zur Analyse von Fehlern und zur Fehlerbehebung - Wenn es nicht genutzt werden soll, Argument analytics=false
-# We begin by generating a unique ID for tracking the anonymous session.
-CID=$(head -80 /dev/urandom | LC_ALL=c tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
-# Credit: https://gist.github.com/earthgecko/3089509
-
-# We can use this CID in all calls to the Google Analytics endpoint via
-# this reusable function.
-send_analytics_event()
-{
-    # We only make the API call in the case of the "analytics" variable
-    # not being set to "false". If it is set to false, this function
-    # performs no operation.
-
-    if [ ! "$analytics" = "false" ]; then
-        curl -s https://www.google-analytics.com/collect \
-            -d "tid=UA-246628805-1" \
-            -d "t=event" \
-            -d "ec=vscode_github" \
-            -d "ea=$1" \
-	    -d "aip=1" \
-            -d "v=1" \
-            -d "cid=$CID" \
-            -o /dev/null
-    fi
-}
-
-# We send one event to count the number of times this script is ran. At the
-# end we also report success / failure, but it's possible that the script
-# will crash before we get to that point, so we manually count invocations here.
-send_analytics_event start
-
 # begin of uninstall if var is set
 if [ "$uninstall" = "true" ]; then
 echo Deinstallation noch nicht möglich, weiteres folgt...
