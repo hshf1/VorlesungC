@@ -1,12 +1,17 @@
 @echo off
 
+echo Hochschule Hannover 20.04.2022 Computerraum V1.01
+echo.
+echo Umgebungsvariablen werden gesetzt.
 setx Path "%Path%;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin"
-
+echo.
+echo Falls vorhanden, werden alte Settings gelöscht.
 cd %APPDATA%\Code\User
 del "settings.json"
 del "launch.json"
 del "tasks.json"
-
+echo.
+echo Neue globale Settings werden erstellt.
 (echo {
 echo // Use IntelliSense to learn about possible attributes.
 echo // Hover to view descriptions of existing attributes.
@@ -122,5 +127,9 @@ echo	}
 echo ]
 echo }
 echo >CON ) >tasks.json
-
-code --install-extension eamodio.gitlens --install-extension formulahendry.code-runner --install-extension ms-vscode.cpptools --install-extension ms-vsliveshare.vsliveshare-pack
+echo.
+echo VSCode Extensions werden installiert.
+code --install-extension eamodio.gitlens --install-extension formulahendry.code-runner --install-extension ms-vscode.cpptools --install-extension ms-vsliveshare.vsliveshare-pack & (echo.
+echo Installation beendet!
+timeout 5 > NUL 
+exit /B)
