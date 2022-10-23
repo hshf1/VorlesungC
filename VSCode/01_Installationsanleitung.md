@@ -299,6 +299,27 @@ Deinstallation Ende der Auskommentierung-->
 <!--Start Linux-Anleitung-->
 ## Linux
 
+<!--Neue Linux-Anleiung-->
+<details>
+<summary>VSCode auf Linux installieren.</summary>
+<br />
+Bisher getestet für: Ubuntu / Zorin 15.3<br /><br />
+Für die Installation ist das Terminal zu öffnen.<br />
+
+<img width="566" alt="Bildschirmfoto 2022-04-17 um 05 31 43" src="https://user-images.githubusercontent.com/100713757/163699216-b1eb7dd1-ffce-4bcd-be21-1691adaf0c6b.png">
+  
+Der folgende Code wird kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+```sh
+sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeLinux.sh | bash && exit
+```
+
+Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Desktop) befindende Logfile, die ihr nach erfolgreicher Installation löschen könnt. Bei anhaltenden Problemen bitte diesen Logfile im Anhang per Mail abschicken.
+
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
+
+</details>
+
+<!--Alte Linux-Anleitung
 <details>
   <summary>Hier klicken, um VSCode auf Linux zu installieren.</summary>
 <br />
@@ -321,6 +342,7 @@ Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Deskto
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
 </details>
+Ende alte Linux-Anleitung-->
 
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
