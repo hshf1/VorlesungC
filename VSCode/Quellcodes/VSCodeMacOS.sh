@@ -2,7 +2,7 @@
 # Zuletzt bearbeitet am 22.10.2022 von Can Kocak | Hochschule Hannover
 
 # Nach User-Passwort fragen und als Admin ausführen
-# sudo -v
+sudo ''
 
 # Beginn Deinstallation, falls gewünscht
 if [ "$uninstall" = "true" ]; then
