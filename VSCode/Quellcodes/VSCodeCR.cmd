@@ -10,7 +10,6 @@ set launchjson="%APPDATA%\Code\User\launch.json"
 set tasksjson="%APPDATA%\Code\User\tasks.json"
 set vscerweiterung="C:\Program Files\Microsoft VS Code\bin\code"
 set testprogcdatei="U:\C_Uebung\testprog.c"
-set workspace="U:\C_Uebung\C_Uebung.code-workspace"
 set %cuebungstart="%USERPROFILE%\Desktop\C_Uebung.cmd"
 
 (
