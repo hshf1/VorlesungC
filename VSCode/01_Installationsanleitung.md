@@ -26,13 +26,13 @@ Nun wird folgender Code kopiert, im Terminal eingefügt und mit der ENTER-Taste 
 ```sh
 curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeMacOS.sh | bash 
 ```
-
+<!--Passwort wird zurzeit nicht abgefragt: sudo wurde entfernt
 Nun werdet ihr nach eurem Passwort gefragt. <br />
 
 <img width="561" alt="Bildschirmfoto 2022-04-17 um 05 38 59" src="https://user-images.githubusercontent.com/100713757/163699305-1b6cf156-158f-4c7c-880f-c51858000e5e.png">
   
-Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt und drückt auf Enter auf der Tastatur.
-  
+Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt und drückt auf Enter auf der Tastatur. -->
+
 Am Ende sollte dann für 5 Sekunden Installation beendet erscheinen. <br />
 <img width="750" alt="Bildschirmfoto 2022-04-17 um 05 33 50" src="https://user-images.githubusercontent.com/100713757/163699227-a2bf91bd-3c4f-42d6-a16b-a7946f22f5c9.png">
   
@@ -102,12 +102,12 @@ Nun wird folgender Code kopiert, im Terminal eingefügt und mit der ENTER-Taste 
 ```sh
 curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeMacOS.sh | uninstall=true bash 
 ```
-
+<!--Passwort wird zurzeit nicht abgefragt: sudo wurde entfernt
 Nun werdet ihr nach eurem Passwort gefragt. <br />
 
 <img width="561" alt="Bildschirmfoto 2022-04-17 um 05 38 59" src="https://user-images.githubusercontent.com/100713757/163699305-1b6cf156-158f-4c7c-880f-c51858000e5e.png">
   
-Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt und drückt auf Enter auf der Tastatur.
+Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt und drückt auf Enter auf der Tastatur.-->
   
 Am Ende sollte dann für 5 Sekunden Installation beendet erscheinen. <br />
 <img width="750" alt="Bildschirmfoto 2022-04-17 um 05 33 50" src="https://user-images.githubusercontent.com/100713757/163699227-a2bf91bd-3c4f-42d6-a16b-a7946f22f5c9.png">
