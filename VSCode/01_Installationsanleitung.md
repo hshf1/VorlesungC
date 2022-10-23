@@ -6,6 +6,10 @@
 <!--Start Anleitung-->
 # VSCode Installationsanleitung
 
+Test <SCRIPT LANGUAGE="VBScript"><!--
+Hier z.B. dein Code..
+--></SCRIPT>
+
 Dies ist eine Anleitung (von Studenten für Studenten) zur Installation von VSCode für die Vorlesung C.<br />
 Für die Installation ist es erforderlich, dass über <b>Adminrechte</b> verfügt wird.<br />
 
