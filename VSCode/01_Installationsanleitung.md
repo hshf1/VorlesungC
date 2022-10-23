@@ -81,13 +81,44 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
 Ende der Auskommentierung-->
 
 <details>
-<summary>Hier klicken, falls VSCode schon installiert ist.</summary>
+<summary>VSCode ist bereits installiert.</summary>
   
 Das ist kein Problem, führe die oben beschriebene Installationsanleitung einfach ganz normal durch.
 Bereits installierte Programme bleiben erhalten und nur fehlende dazu installiert.
 
 </details>
+
+<details>
+<summary>VSCode auf MacOS deinstallieren.</summary>
+<br />
+Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. Danach kann man erneut die oben beschriebene Installation durchführen.
+<br />
+Für die Deinstallation von VSCode auf dem MacOS ist das Terminal zu starten.<br /><br />
   
+<img width="392" alt="Bildschirmfoto 2022-10-23 um 02 47 45" src="https://user-images.githubusercontent.com/100713757/197367855-42cb8849-0f3f-48de-88da-cea064dcccfe.png">
+
+Nun wird folgender Code kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+  
+```sh
+curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeMacOS.sh | uninstall=true bash 
+```
+
+Nun werdet ihr nach eurem Passwort gefragt. <br />
+
+<img width="561" alt="Bildschirmfoto 2022-04-17 um 05 38 59" src="https://user-images.githubusercontent.com/100713757/163699305-1b6cf156-158f-4c7c-880f-c51858000e5e.png">
+  
+Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt und drückt auf Enter auf der Tastatur.
+  
+Am Ende sollte dann für 5 Sekunden Installation beendet erscheinen. <br />
+<img width="750" alt="Bildschirmfoto 2022-04-17 um 05 33 50" src="https://user-images.githubusercontent.com/100713757/163699227-a2bf91bd-3c4f-42d6-a16b-a7946f22f5c9.png">
+  
+Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Desktop) befindende Logfile. Ist kein Fehler aufgetreten könnt ihr die Logfile auch wieder löschen. Sollten Probleme oder Fehler auftauchen, stehen diese da drin. Zur Problembehandlung könnt ihr im Logfile sehen, was nicht geklappt hat. Solltet ihr das Problem nicht beheben können, schickt bitte die Logfile mit als Anhang.
+    
+Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
+  
+</details>
+
+<!--Alte Deinstallationsanleitung auskommentiert
   <details>
   <summary>Hier klicken, um bei Fehler VSCode zu deinstallieren und neu zu installieren.</summary>
 <br />
@@ -121,6 +152,7 @@ Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Deskto
     
 Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
   </details>
+Ende der Auskommentierung der alten Deinstallation-->
 <!--Ende MacOS-Anleitung-->
 
 <!--Start Windows-Anleitung-->
@@ -194,7 +226,7 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
 Alte Windows-Anleitung Ende der Auskommentierung-->
     
 <details>
-<summary>Hier klicken, falls VSCode schon installiert ist.</summary>
+<summary>VSCode ist bereits installiert.</summary>
   
 Das ist kein Problem, führe die oben beschriebene Installationsanleitung einfach ganz normal durch.<br />
 Bereits installierte Programme bleiben erhalten und nur fehlende dazu installiert.
