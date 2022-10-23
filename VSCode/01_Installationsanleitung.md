@@ -101,7 +101,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 <br />
 AKTUELLER HINWEIS: Auf Windows 11 bzw. an Windowssystemen, die OneDrive nutzen, kommt es zurzeit zu einer Fehlermeldung am Ende der Installation, dass der Pfad für die LogDatei nicht gefunden wurde. Dies wird demnächst behoben, hat jedoch keine Auswirkung auf die Installation. VSCode kann dennoch nach der Installation genutzt werden!
 <br /><br />
-Für die Installation ohne Download ist die Windows Eingabeaufforderung (Windows Terminal) als Administrator zu starten.<br /><br />
+Für die Installation ist die Windows Eingabeaufforderung (Windows Terminal) als Administrator zu starten.<br /><br />
   
 ![Screenshot (29)_LI](https://user-images.githubusercontent.com/100713757/197366401-965de1cc-424d-459d-beeb-154240fe5653.jpg)
 
@@ -170,6 +170,36 @@ Das ist kein Problem, führe die oben beschriebene Installationsanleitung einfac
 Bereits installierte Programme bleiben erhalten und nur fehlende dazu installiert.
 
 </details>
+
+<details>
+<summary>VSCode auf Windows deinstallieren.</summary>
+<br />
+Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben lassen, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. Danach kann man erneut die oben beschriebene Installation durchführen.
+<br />
+Für die Deinstallation ist die Windows Eingabeaufforderung (Windows Terminal) als Administrator zu starten.<br /><br />
+  
+![Screenshot (29)_LI](https://user-images.githubusercontent.com/100713757/197366401-965de1cc-424d-459d-beeb-154240fe5653.jpg)
+
+Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+
+```cmd
+curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeWindows.cmd -o %temp%\VSCodeWindows.cmd && %temp%\VSCodeWindows.cmd uninstall && del %temp%\VSCodeWindows.cmd && EXIT /B
+```
+
+Nun läuft die Deinstallation von alleine und meldet euch, wenn es fertig ist.
+![Screenshot (22)](https://user-images.githubusercontent.com/100713757/166149376-7700c166-11da-442f-a8ab-68e2da784fe9.png)
+
+Bei der Meldung klicken wir auf <b>OK</b>, dass Terminal schließt nun automatisch und es erscheint ein Logfile, welches sich auf eurem Desktop befindet.
+![Screenshot (23)](https://user-images.githubusercontent.com/100713757/166149506-b4171410-2132-45ac-af4d-1284638c1e3d.png)
+  
+Ist kein Fehler aufgetreten könnt ihr die Logfile auch wieder löschen. Sollten Probleme oder Fehler auftauchen, stehen diese da drin.
+Zur Problembehandlung könnt ihr im Logfile sehen, was nicht geklappt hat. Solltet ihr das Problem nicht beheben können, schickt bitte die Logfile mit als Anhang.
+    
+Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
+  
+</details>
+  
+<!--Alte Deinstallation für Windows auskommentiert
   <details>
   <summary>Hier klicken, um bei anhaltenden Fehlern VSCode zu deinstallieren und neu zu installieren.</summary>
 <br />
@@ -201,6 +231,7 @@ Zur Problembehandlung könnt ihr im Logfile sehen, was nicht geklappt hat. Sollt
 Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
     
   </details>
+Deinstallation Ende der Auskommentierung-->
 <!--Ende Windows-Anleitung-->
 
 <!--Start Linux-Anleitung-->
