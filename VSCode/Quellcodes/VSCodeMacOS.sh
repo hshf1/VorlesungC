@@ -2,7 +2,7 @@
 # Zuletzt bearbeitet am 22.10.2022 von Can Kocak | Hochschule Hannover
 
 # Nach User-Passwort fragen und als Admin ausführen
-sudo ''
+# sudo -v
 
 # Beginn Deinstallation, falls gewünscht
 if [ "$uninstall" = "true" ]; then
@@ -438,7 +438,7 @@ fi
 echo '{
 	"folders": [
 		{
-			"path": "../../../../Documents/cprog"
+			"path": "../../../../Documents/C_Uebung"
 		}
 	]
 }' >> ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
