@@ -15,6 +15,35 @@ Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt i
 ## MacOS
 
 <details>
+<summary>VSCode auf MacOS installieren.</summary>
+
+Für die Installation von VSCode auf dem MacOS ist das Terminal zu starten.<br /><br />
+  
+<img width="392" alt="Bildschirmfoto 2022-10-23 um 02 47 45" src="https://user-images.githubusercontent.com/100713757/197367855-42cb8849-0f3f-48de-88da-cea064dcccfe.png">
+
+Nun wird folgender Code kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+  
+```sh
+curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeMacOS.sh | bash 
+```
+
+Nun werdet ihr nach eurem Passwort gefragt. <br />
+
+<img width="561" alt="Bildschirmfoto 2022-04-17 um 05 38 59" src="https://user-images.githubusercontent.com/100713757/163699305-1b6cf156-158f-4c7c-880f-c51858000e5e.png">
+  
+Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt und drückt auf Enter auf der Tastatur.
+  
+Am Ende sollte dann für 5 Sekunden Installation beendet erscheinen. <br />
+<img width="750" alt="Bildschirmfoto 2022-04-17 um 05 33 50" src="https://user-images.githubusercontent.com/100713757/163699227-a2bf91bd-3c4f-42d6-a16b-a7946f22f5c9.png">
+  
+Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Desktop) befindende Logfile, die ihr nach erfolgreicher Installation löschen könnt. Bei anhaltenden Problemen bitte diesen Logfile im Anhang per Mail abschicken.
+
+Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
+  
+</details>
+
+<!--Alte MacOS-Anleitung auskommentieren
+<details>
   <summary>Hier klicken, um VSCode auf dem MacOS zu installieren.</summary>
 <br />
 
@@ -49,6 +78,7 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
 
 
 </details>
+Ende der Auskommentierung-->
 
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
