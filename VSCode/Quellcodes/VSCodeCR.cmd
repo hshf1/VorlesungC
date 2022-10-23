@@ -1,18 +1,20 @@
 @echo off
 set mydate=%date%
 set mytime=%time%
-set logfile="%USERPROFILE%\Desktop\logVSC.txt"
+set logfile="U:\Systemordner\Desktop\logVSC.txt"
 set settingsjson="%APPDATA%\Code\User\settings.json"
 set launchjson="%APPDATA%\Code\User\launch.json"
 set tasksjson="%APPDATA%\Code\User\tasks.json"
 set vscerweiterung="C:\Program Files\Microsoft VS Code\bin\code"
+set testprogcdatei="U:\C_Uebung\testprog_c.c"
+set %cuebungstart="%USERPROFILE%\Desktop\C_Uebung.cmd"
 
 (
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo Logfile zur Installation am %mydate% um%mytime%.
 echo. 
-echo Hochschule Hannover 20.06.2022 V1.04 VSCode Installation für den Computerraum der HsH.
+echo Hochschule Hannover 12.10.2022 V1.05 VSCode Installation für den Computerraum der HsH.
 echo.
 echo Die aktuelle Version gibt es hier:
 echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
@@ -20,6 +22,9 @@ echo.
 echo Bei Problemen könnt ihr hier nach Lösungen schauen:
 echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
 echo Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
+echo.
+echo Auf dem Desktop befindet sich der Shortcut C_Uebung.cmd -> zum Programmieren diese Datei nutzen.
+echo Die Datei kann nach belieben verschoben werden. Sollte diese Datei nicht vorhanden sein ist die Installationsdatei erneut auszuführen.
 echo.
 echo Fehler sind an "Fehler :" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -86,7 +91,7 @@ echo "editor.tabSize": 4,                            // Setzt die Zahl der durch
 echo "editor.renderWhitespace": "none",              // Zeigt keine Leerzeichen ein 
 echo //"editor.renderWhitespace": "selection",       // Nur im markierten Bereich Leerzeichen anzeigen
 echo "extensions.autoUpdate": false,                 // Deaktivieren von Auto-Updates der Extensions
-echo "C_Cpp.debugShortcut": false,                   // Deaktivieren der instabilen neue Funktion von C/C++ Erweiterung
+echo "C_Cpp.debugShortcut": false,                   // Deaktivieren der nicht getesteten neuen Funktion von C/C++ Erweiterung
 echo "code-runner.runInTerminal": true,              // Um Eingaben in seinem Programm tätigen zu können z.B. für scanf
 echo "code-runner.preserveFocus": false,             // damit springt man automatisch ins Terminal bei Abarbeitung
 echo "code-runner.executorMap": {
@@ -266,7 +271,7 @@ echo >CON) >> %logfile%
 echo.
 echo >CON) >> %logfile%
 )
-call %vscerweiterung% --install-extension ms-vscode.cpptools@1.9.8
+call %vscerweiterung% --install-extension ms-vscode.cpptools
 if %errorlevel% == 0 (
 (echo Meldung: C/C++ Extension wurde/ist installiert.
 echo.
@@ -297,6 +302,23 @@ echo.
 echo >CON) >> %logfile%
 )
 
+if not exist "U:\C_Uebung\" mkdir U:\C_Uebung
+
+if EXIST "U:\C_Uebung\testprog_c.c" del U:\C_Uebung\testprog_c.c
+
+echo #include ^<stdio.h^> >> %testprogcdatei%
+echo. >> %testprogcdatei%
+echo int main(){ >> %testprogcdatei%
+echo    int x = 0; >> %testprogcdatei%
+echo    x++; >> %testprogcdatei%
+echo    printf("Hello World! x = %%d\n", x); >> %testprogcdatei%
+echo } >> %testprogcdatei%
+
+if EXIST U:\Systemordner\Desktop\C_Uebung.cmd del U:\Systemordner\Desktop\C_Uebung.cmd
+
+echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r %USERPROFILE%/Desktop/test >> %cuebungstart%
+echo EXIT /B >> %cuebungstart%
+
 (
 echo Installation beendet!
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -306,4 +328,5 @@ echo msgbox"Installation beendet.",vbInformation , "Installation beendet!"> %tem
 %temp%\msg.vbs 
 erase %temp%\msg.vbs
 start "" %logfile%
+start "" U:\Systemordner\Desktop\C_Uebung.code-workspace
 EXIT /B
