@@ -1,9 +1,6 @@
 # Erstellt am 16.04.2022 von Can Kocak | Hochschule Hannover
 # Zuletzt bearbeitet am 22.10.2022 von Can Kocak | Hochschule Hannover
 
-# Nach User-Passwort fragen und als Admin ausführen
-# sudo ''
-
 # Beginn Deinstallation, falls gewünscht
 if [ "$uninstall" = "true" ]; then
 
@@ -94,9 +91,6 @@ echo 'Installation beendet!
 # Öffne die Logdatei
 open ~/Desktop/logVSC.txt
 
-# Als Admin wieder abmelden gegencommand für sudo -v
-sudo -k
-
 # Warte 5 Sekunden bis die nächste Zeile bearbeitet wird
 sleep 5
 
@@ -166,7 +160,7 @@ fi
 
 # Compiler vorhanden? Wenn nein installieren und Eintrag in logdatei
 echo 'Compiler wird überprüft bzw. installiert...'
-sudo command xcode-select --install
+command xcode-select --install
 if (( $? == 0))
 then echo 'Meldung: Compiler fehlt und wird installiert. -> externes Installationsmenü sollte erschienen sein!
 ' >> ~/Desktop/logVSC.txt
@@ -462,9 +456,6 @@ echo 'Installation beendet!
 
 # Die logdatei öffnen
 open ~/Desktop/logVSC.txt
-
-# Als Admin wieder abmelden, gegecommand für sudo -v
-sudo -k
 
 # 5 Sekunden warten, bevor nächste Zeile bearbeitet wird
 sleep 5
