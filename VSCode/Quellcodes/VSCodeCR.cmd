@@ -3,7 +3,7 @@
 echo Hochschule Hannover 20.04.2022 Computerraum V1.01
 echo.
 echo Umgebungsvariablen werden gesetzt.
-setx Path "%Path%;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin"
+setx Path "%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin"
 echo.
 echo Falls vorhanden, werden alte Settings gelöscht.
 cd %APPDATA%\Code\User
@@ -47,7 +47,6 @@ echo >CON ) >launch.json
 echo    // Allgemeine Nutzereinstellungen
 echo "extensions.ignoreRecommendations": true,       // Keine Empfehlungen mehr Anzeigen
 echo "files.encoding": "cp437",                      // Zur richtigen Darstellung von Umlauten
-echo "files.autoGuessEncoding": true,                // Automatische Anpassung der Encodierung, falls möglich
 echo "editor.unicodeHighlight.nonBasicASCII": false, // Nicht Basic ASCII Zeichen nicht hervorheben
 echo "files.autoSave": "onFocusChange",              // Dateien werden bei Änderungen des Fokus automatisch gespeichert
 echo "code-runner.saveFileBeforeRun": true,          // speichert aktuelle Datei bevor sie mit CodeRunner ausgeführt wird
@@ -129,7 +128,7 @@ echo }
 echo >CON ) >tasks.json
 echo.
 echo VSCode Extensions werden installiert.
-code --install-extension eamodio.gitlens --install-extension formulahendry.code-runner --install-extension ms-vscode.cpptools --install-extension ms-vsliveshare.vsliveshare-pack & (echo.
+code --install-extension formulahendry.code-runner --install-extension ms-vscode.cpptools --install-extension ms-vsliveshare.vsliveshare-pack & (echo.
 echo Installation beendet!
 timeout 5 > NUL 
 exit /B)
