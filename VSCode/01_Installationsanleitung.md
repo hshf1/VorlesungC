@@ -16,7 +16,7 @@ Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt i
 
 <details>
 <summary>VSCode auf MacOS installieren.</summary>
-
+<br />
 Für die Installation von VSCode auf dem MacOS ist das Terminal zu starten.<br /><br />
   
 <img width="392" alt="Bildschirmfoto 2022-10-23 um 02 47 45" src="https://user-images.githubusercontent.com/100713757/197367855-42cb8849-0f3f-48de-88da-cea064dcccfe.png">
