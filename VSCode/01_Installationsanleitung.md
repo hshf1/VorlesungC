@@ -357,6 +357,58 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 ## Computerraum an der Hochschule
 
 <details>
+<summary>VSCode auf Rechner im CR installieren.</summary>
+<br />
+<b>Anmerkung: Um im Computerraum richtig debuggen zu können, muss Schritt 2 befolgt werden. Andernfalls erhält man eine Fehlermeldung beim Ausführen des Debuggers.</b>
+<br /><br />
+Für die Installation ist die Windows Eingabeaufforderung (Windows Terminal) zu starten. (Wenn Terminal nicht gefunden wird, nach "cmd" suchen.<br /><br />
+  
+![Screenshot (29)_LI](https://user-images.githubusercontent.com/100713757/197366401-965de1cc-424d-459d-beeb-154240fe5653.jpg)
+
+Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+
+```cmd
+curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeCR.cmd -o %temp%\VSCodeCR.cmd && %temp%\VSCodeCR.cmd && del %temp%\VSCodeCR.cmd && EXIT /B
+```
+  
+Nun läuft die Installation von alleine und meldet euch, wenn es fertig ist.
+![Screenshot (22)](https://user-images.githubusercontent.com/100713757/166149376-7700c166-11da-442f-a8ab-68e2da784fe9.png)
+
+Bei der Meldung klicken wir auf <b>OK</b>, dass Terminal schließt nun automatisch und es erscheint ein Logfile, welches sich auf eurem Desktop befindet.
+![Screenshot (23)](https://user-images.githubusercontent.com/100713757/166149506-b4171410-2132-45ac-af4d-1284638c1e3d.png)
+  
+Ist kein Fehler aufgetreten könnt ihr die Logfile auch wieder löschen. Sollten Probleme oder Fehler auftauchen, stehen diese da drin.
+Zur Problembehandlung könnt ihr im Logfile sehen, was nicht geklappt hat. Solltet ihr das Problem nicht beheben können, schickt bitte die Logfile mit als Anhang.
+  
+### Schritt 2
+Um im Computerraum debuggen zu können, ist es erforderlich, den Ordner direkt über den Netzlaufwerkverzeichnis zu öffnen.
+Nach dem Start von VSCode klicken wir auf Open Folder.
+  
+![Screenshot (1)](https://user-images.githubusercontent.com/100713757/168243894-209938d6-c5b7-44e6-afa0-bb3072cfe8f6.png)
+
+Dann gehen wir auf Dieser PC.
+  
+![Screenshot (2)](https://user-images.githubusercontent.com/100713757/168244010-46a3c191-c587-4af2-a8ac-e7da979685f2.png)
+
+Und dort klicken wir auf den Netzlaufwerk mit dem Namen der eigenen Benutzerkennung.
+  
+![Screenshot (3)](https://user-images.githubusercontent.com/100713757/168244174-d539e84b-cf00-4eda-b1eb-8e517865720d.png)
+
+Nun gehen wir noch auf Systemordner.
+  
+![Screenshot (4)](https://user-images.githubusercontent.com/100713757/168244323-6e0ecd94-6db6-4493-8fbc-8c06571460b2.png)
+  
+![Screenshot (6)](https://user-images.githubusercontent.com/100713757/168244473-e47306cd-3c71-4a78-a36d-3ad6ede3cdee.png)
+  
+Von hier aus können wir unseren Ordner dann auswählen und debuggen können.
+  
+Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
+  
+  
+</details>
+
+<!--Alte CR-Anleitung wird auskommentiert
+<details>
   <summary>Hier klicken, um VSCode auf im Computerraum der Hochschule zu nutzen.</summary>
 <br />
 <b>Anmerkung: Um im Computerraum richtig debuggen zu können, muss Schritt 2 befolgt werden. Andernfalls erhält man eine Fehlermeldung beim Ausführen des Debuggers.</b>
@@ -406,5 +458,6 @@ Von hier aus können wir unseren Ordner dann auswählen und debuggen können.
   
 Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
 </details>
+Alte CR-Anleitung Ende Auskommentierung-->
 <!--Ende Computerraum-Anleitung-->
 <!--Ende Anleitung-->
