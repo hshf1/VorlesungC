@@ -29,7 +29,7 @@ Für die Installation von VSCode auf dem MacOS ist das Terminal zu starten.<br /
 Nun wird folgender Code kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
   
 ```sh
-curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeMacOS.sh | bash 
+curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/VSCode.sh | bash 
 ```
 <!--Passwort wird zurzeit nicht abgefragt: sudo wurde entfernt
 Nun werdet ihr nach eurem Passwort gefragt. <br />
