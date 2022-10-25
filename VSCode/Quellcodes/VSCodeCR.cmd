@@ -26,7 +26,7 @@ echo Bei Problemen könnt ihr hier nach Lösungen schauen:
 echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
 echo Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
 echo.
-echo Auf dem Desktop befindet sich der Shortcut C_Uebung.cmd -> zum Programmieren diese Datei nutzen.
+echo Auf dem Desktop befindet sich der Shortcut C_Uebung.cmd, zum Programmieren doppelklick auf diese Datei.
 echo Die Datei kann nach belieben verschoben werden. Sollte diese Datei nicht vorhanden sein ist die Installationsdatei erneut auszuführen.
 echo.
 echo Fehler sind an "Fehler :" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
@@ -329,7 +329,7 @@ echo } >> %testprogcdatei%
 :: delete file if exist
 if EXIST "U:\Systemordner\Desktop\C_Uebung.cmd" del U:\Systemordner\Desktop\C_Uebung.cmd
 
-:: create batch to open folder in VSCode
+:: create batch to open folder in VSCode (in process)
 :: echo if NOT EXIST "%USERPROFILE%\.vscode\installiert.txt" ( >> %cuebungstart%
 :: echo curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeCR.cmd -o %temp%\VSCodeCR.cmd ^&^& %temp%\VSCodeCR.cmd ^&^& del %temp%\VSCodeCR.cmd ^&^& EXIT /B >> %cuebungstart%
 :: echo ) >> %cuebungstart%
@@ -337,7 +337,6 @@ echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r U:\C_Uebung >> %c
 echo EXIT /B >> %cuebungstart%
 
 echo. > "%USERPROFILE%\.vscode\installiert.txt"
-
 
 (
 echo Installation beendet!
