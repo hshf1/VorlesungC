@@ -10,7 +10,7 @@ set launchjson="%APPDATA%\Code\User\launch.json"
 set tasksjson="%APPDATA%\Code\User\tasks.json"
 set vscerweiterung="C:\Program Files\Microsoft VS Code\bin\code"
 set testprogcdatei="U:\C_Uebung\testprog.c"
-set %cuebungstart="%USERPROFILE%\Desktop\C_Uebung.cmd"
+set %cuebungstart="U:\Systemordner\Desktop\C_Uebung.cmd"
 
 (
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -34,13 +34,13 @@ echo ---------------------------------------------------------------------------
 echo.
 echo >CON) >> %logfile%
 
-# determine OS and writing in logfile
+:: determine OS and writing in logfile
 FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO (
 echo Meldung: Ausführendes System: %%i %%j %%k
 echo.
 echo >CON) >> %logfile%
 
-# set environment variables
+:: set environment variables
 setx Path "%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin"
 echo %Path% >> "%temp%\pathaktuell.txt"
 findstr Dev-Cpp\MinGW64\bin "%temp%\pathaktuell.txt"
@@ -263,7 +263,7 @@ echo.
 echo >CON) >> %logfile%
 )
 
-# install extension code-runner and write in logfile
+:: install extension code-runner and write in logfile
 call %vscerweiterung% --install-extension formulahendry.code-runner
 if %errorlevel% == 0 (
 (echo Meldung: Code-Runner Extension wurde/ist installiert.
@@ -275,7 +275,7 @@ echo.
 echo >CON) >> %logfile%
 )
 
-# install extension C/C++ and write in logfile
+:: install extension C/C++ and write in logfile
 call %vscerweiterung% --install-extension ms-vscode.cpptools
 if %errorlevel% == 0 (
 (echo Meldung: C/C++ Extension wurde/ist installiert.
@@ -287,7 +287,7 @@ echo.
 echo >CON) >> %logfile%
 )
 
-# install extension LiveShare and write in logfile
+:: install extension LiveShare and write in logfile
 call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare
 if %errorlevel% == 0 (
 (echo Meldung: Live Share Extension wurde/ist installiert.
@@ -299,7 +299,7 @@ echo.
 echo >CON) >> %logfile%
 )
 
-# install extension LiveShare-Audio and write in logfile
+:: install extension LiveShare-Audio and write in logfile
 call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare-audio
 if %errorlevel% == 0 (
 (echo Meldung: Live Share Audio Extension wurde/ist installiert.
@@ -311,13 +311,13 @@ echo.
 echo >CON) >> %logfile%
 )
 
-# create folder if not exist
+:: create folder if not exist
 if not exist "U:\C_Uebung\" mkdir U:\C_Uebung
 
-# delete file if exist
+:: delete file if exist
 if EXIST "U:\C_Uebung\testprog.c" del U:\C_Uebung\testprog.c
 
-# create file with following content 
+:: create file with following content 
 echo #include ^<stdio.h^> >> %testprogcdatei%
 echo. >> %testprogcdatei%
 echo int main(){ >> %testprogcdatei%
@@ -326,10 +326,10 @@ echo    x++; >> %testprogcdatei%
 echo    printf("Hello World! x = %%d\n", x); >> %testprogcdatei%
 echo } >> %testprogcdatei%
 
-# delete file if exist
+:: delete file if exist
 if EXIST U:\Systemordner\Desktop\C_Uebung.cmd del U:\Systemordner\Desktop\C_Uebung.cmd
 
-# create batch to open folder in VSCode
+:: create batch to open folder in VSCode
 echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r U:\C_Uebung >> %cuebungstart%
 echo EXIT /B >> %cuebungstart%
 
