@@ -1,11 +1,14 @@
-# created by Can Kocak | 16.04.2022 | Hochschule Hannover
-# last modified by Can Kocak | 22.10.2022 | Hochschule Hannover
+#################################################################
+#				    VSCode Installation for MacOS				#
+# 		created	by Can Kocak | 16.04.2022 | Hochschule Hannover	#
+# last modified by Can Kocak | 22.10.2022 | Hochschule Hannover	#
+#################################################################
 
 # get current date and time
 dateinfo=$( date '+%F' )
 timeinfo=$( date '+%H:%M:%S' )
 
-# check if install or uninstall
+# check if do install or uninstall
 if [ "$uninstall" = "true" ];
 then usageinfo="Deinstallation"
 else usageinfo="Installation"
@@ -21,7 +24,7 @@ then pinginfo=""
 else pinginfo=""
 fi
 
-### begin uninstall if var is true
+#### begin uninstall if var is true ####
 
 if [ "$uninstall" = "true" ]; then
 
@@ -59,17 +62,11 @@ fi
 # Ausgabe im Terminal
 echo 'Deinstallation beendet! Das Terminal kann nun geschlossen werden.'
 
-# Öffne die Logdatei
-open ~/Desktop/logVSC.txt
+#### end uninstall ####
 
-# exit 0 ersetz killall Terminal-> Terminal wird so nicht mehr automatisch beendet
-exit 0
+else
 
-# Ende der If-Anweisung
-fi
-# Ende Deinstallation -> Skript wird beendet
-
-# Beginn der Installation, falls keine Deinstallation gewünscht
+#### begin install if not deinstall ####
 
 # Abfrage, ob VSCode vorhanden, wenn nicht -> Download und Installation mit Eintrag in logdatei
 file=/Applications/Visual\ Studio\ Code.app
@@ -188,19 +185,14 @@ fi
 # Ausgabe im Terminal
 echo 'Installation beendet! Das Terminal kann jetzt geschlossen werden.'
 
-# Die logdatei öffnen
-open ~/Desktop/logVSC.txt
+#### end install ####
+fi
 
-# exit 0 ersetz killall Terminal-> Terminal wird so nicht mehr automatisch beendet
-exit 0
-
-# logfile
-
-# Beginn der Logdatei
+# write logfile
 echo '-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
 Logfile zur xxx am $dateinfo um %timeinfo.
-Hochschule Hannover | Zuletzt bearbeitet am 22.10.2022 VSCode Deinstallation für MacOS.
+Hochschule Hannover | VSCode Deinstallation für MacOS.
 
 Die aktuelle Version gibt es hier:
 https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
@@ -218,3 +210,9 @@ Meldung: Es konnte eine Verbindung zum Internet erkannt werden!
 Installation beendet!
 -------------------------------------------------------------------------------------------
 ' >> ~/Desktop/logVSC.txt
+
+# Die logdatei öffnen
+open ~/Desktop/logVSC.txt
+
+# exit 0 ersetz killall Terminal-> Terminal wird so nicht mehr automatisch beendet
+exit 0
