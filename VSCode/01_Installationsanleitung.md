@@ -363,8 +363,6 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 <br /><br />
 Für die Installation ist die Windows Eingabeaufforderung (Windows Terminal) zu starten. (Wenn Terminal nicht gefunden wird, nach "cmd" suchen.<br /><br />
   
-![Screenshot (29)_LI](https://user-images.githubusercontent.com/100713757/197366401-965de1cc-424d-459d-beeb-154240fe5653.jpg)
-
 Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 
 ```cmd
