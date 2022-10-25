@@ -326,14 +326,9 @@ echo    x++; >> %testprogcdatei%
 echo    printf("Hello World! x = %%d\n", x); >> %testprogcdatei%
 echo } >> %testprogcdatei%
 
-:: delete file if exist
-if EXIST U:\Systemordner\Desktop\C_Uebung.cmd del U:\Systemordner\Desktop\C_Uebung.cmd
-
 :: create batch to open folder in VSCode
-(
-echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r U:\C_Uebung 
-echo EXIT /B
-echo >CON) >> %cuebungstart%
+echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r U:\C_Uebung >> %cuebungstart%
+echo EXIT /B >> %cuebungstart%
 
 (
 echo Installation beendet!
