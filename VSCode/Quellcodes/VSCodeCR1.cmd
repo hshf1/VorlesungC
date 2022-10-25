@@ -336,9 +336,8 @@ echo ) >> %cuebungstart%
 echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r U:\C_Uebung >> %cuebungstart%
 echo EXIT /B >> %cuebungstart%
 
-if NOT EXIST "%USERPROFILE%\.vscode\installiert.txt" (
-echo. >> "%USERPROFILE%\.vscode\installiert.txt"
-)
+echo. > "%USERPROFILE%\.vscode\installiert.txt"
+
 
 (
 echo Installation beendet!
