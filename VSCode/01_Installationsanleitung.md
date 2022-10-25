@@ -12,7 +12,8 @@ Für die Installation ist es erforderlich, dass über <b>Adminrechte</b> verfüg
 Sollten während der Installation Probleme auftreten, schaut hier nach einer Lösung: [03_Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md). <br />
 Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt ihr bitte eine E-Mail mit der Logfile im Anhang an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.<br />
 
-:warning:<b>NEU:</b> Nach der Installation erscheint eine Datei auf dem Desktop mit dem Namen "C_Uebung.code-workspace" (im Computerraum heißt es "C_Uebung.cmd"). Die Datei kann nach belieben verschoben werden. Mit einem Doppelklick auf diese Datei öffnet sich VSCode automatisch mit dem Ordner, der bei der Installation miterstellt wurde (in Dokumente/C_Uebung bzw. im Computerraum U:/C_Uebung). Dort können Programme erstellt und gespeichert werden. Der Debugger und der Runner funktionieren nur richtig, wenn ein Ordner geöffnet wurde. So hilft die Verknüpfung, dies nicht zu vergessen. 
+:warning:<b>Hinweis:</b>:warning:<br />
+Nach der Installation erscheint eine Datei auf dem Desktop mit dem Namen "C_Uebung.code-workspace" (im Computerraum heißt es "C_Uebung.cmd"). Die Datei kann nach belieben verschoben werden. Mit einem Doppelklick auf diese Datei öffnet sich VSCode automatisch mit dem Ordner, der bei der Installation miterstellt wurde (in Dokumente/C_Uebung bzw. im Computerraum U:/C_Uebung). Dort können Programme erstellt und gespeichert werden. Der Debugger und der Runner funktionieren nur richtig, wenn ein Ordner geöffnet wurde. So hilft die Verknüpfung, dies nicht zu vergessen. 
 <!--Start MacOS-Anleitung-->
 ## MacOS
 
