@@ -233,7 +233,7 @@ $softwareinfo
 
 $pinginfo
 
-"
+" >>~/Desktop/logVSC.txt
 if [ "$uninstall" = "true" ]; then
 echo "$vscinfo
 
