@@ -326,9 +326,6 @@ echo    x++; >> %testprogcdatei%
 echo    printf("Hello World! x = %%d\n", x); >> %testprogcdatei%
 echo } >> %testprogcdatei%
 
-:: delete file if exist
-if EXIST U:\Systemordner\Desktop\C_Uebung.cmd del U:\Systemordner\Desktop\C_Uebung.cmd
-
 
 (
 echo Installation beendet!
