@@ -16,7 +16,7 @@ else
 	usageinfo="Installation"
 fi
 
-# determine systeminformation
+# determine systeminformation 
 softwareinfo=$(sw_vers)
 
 # check internet connection
