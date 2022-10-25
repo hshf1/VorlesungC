@@ -330,9 +330,9 @@ echo } >> %testprogcdatei%
 if EXIST "U:\Systemordner\Desktop\C_Uebung.cmd" del U:\Systemordner\Desktop\C_Uebung.cmd
 
 :: create batch to open folder in VSCode
-echo if NOT EXIST "%USERPROFILE%\.vscode\installiert.txt" ( >> %cuebungstart%
-echo curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeCR.cmd -o %temp%\VSCodeCR.cmd ^&^& %temp%\VSCodeCR.cmd ^&^& del %temp%\VSCodeCR.cmd ^&^& EXIT /B >> %cuebungstart%
-echo ) >> %cuebungstart%
+:: echo if NOT EXIST "%USERPROFILE%\.vscode\installiert.txt" ( >> %cuebungstart%
+:: echo curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeCR.cmd -o %temp%\VSCodeCR.cmd ^&^& %temp%\VSCodeCR.cmd ^&^& del %temp%\VSCodeCR.cmd ^&^& EXIT /B >> %cuebungstart%
+:: echo ) >> %cuebungstart%
 echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r U:\C_Uebung >> %cuebungstart%
 echo EXIT /B >> %cuebungstart%
 
