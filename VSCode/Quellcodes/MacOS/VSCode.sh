@@ -214,9 +214,9 @@ else
 fi
 
 # write logfile
-echo "-------------------------------------------------------------------------------------------
+echo '-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
-Logfile zur $usageinfo von VSCode für MacOS am $dateinfo um $timeinfo.
+Logfile zur '$usageinfo' von VSCode für MacOS am '$dateinfo' um '$timeinfo'.
 
 Die aktuelle Version gibt es hier:
 https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
@@ -225,37 +225,37 @@ Bei Problemen könnt ihr hier nach Lösungen schauen:
 https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
 Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
 
-Fehler sind an \"Fehler :\" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
+Fehler sind an "Fehler :" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
 -------------------------------------------------------------------------------------------
 
 Ausführendes Betriebssystem:
-$softwareinfo 
+'$softwareinfo'
 
-$pinginfo
+'$pinginfo'
 
-",($uninstall != "true" ? "$vscinfo2" : "$vscinfo2");"
+',($uninstall != "true" ? "$vscinfo2" : "$vscinfo2");'
 
-",($uninstall != "true" ? "$gccinfo" : "$jsonfolder");"
+',($uninstall != "true" ? "$gccinfo" : "$jsonfolder");'
 
-",($uninstall != "true" ? "$pathinfo" : "$extensioninfo");"
+',($uninstall != "true" ? "$pathinfo" : "$extensioninfo");'
 
-",($uninstall != "true" ? "$settingsinfo" : "not more than");"
+',($uninstall != "true" ? "$settingsinfo" : "not more than");'
 
-",($uninstall != "true" ? "$launchinfo" : );"
+',($uninstall != "true" ? "$launchinfo" : );'
 
-",($uninstall != "true" ? "$tasksinfo" : );"
+',($uninstall != "true" ? "$tasksinfo" : );'
 
-",($uninstall != "true" ? "$coderunnerinfo" : );"
+',($uninstall != "true" ? "$coderunnerinfo" : );'
 
-",($uninstall != "true" ? "$cppinfo" : );"
+',($uninstall != "true" ? "$cppinfo" : );'
 
-",($uninstall != "true" ? "$liveshareinfo" : );"
+',($uninstall != "true" ? "$liveshareinfo" : );'
 
-",($uninstall != "true" ? "$lldbinfo" : );"
+',($uninstall != "true" ? "$lldbinfo" : );'
 
-$usageinfo beendet!
+'$usageinfo' beendet!
 -------------------------------------------------------------------------------------------
-" >>~/Desktop/logVSC.txt
+' >>~/Desktop/logVSC.txt
 
 # open logfile
 open ~/Desktop/logVSC.txt
