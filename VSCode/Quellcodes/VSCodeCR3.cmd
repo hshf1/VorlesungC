@@ -326,6 +326,10 @@ echo    x++; >> %testprogcdatei%
 echo    printf("Hello World! x = %%d\n", x); >> %testprogcdatei%
 echo } >> %testprogcdatei%
 
+:: create batch to open folder in VSCode
+echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r U:\C_Uebung > %cuebungstart%
+echo EXIT /B >> %cuebungstart%
+
 
 (
 echo Installation beendet!
