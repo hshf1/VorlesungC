@@ -10,7 +10,7 @@ set launchjson="%APPDATA%\Code\User\launch.json"
 set tasksjson="%APPDATA%\Code\User\tasks.json"
 set vscerweiterung="C:\Program Files\Microsoft VS Code\bin\code"
 set testprogcdatei="U:\C_Uebung\testprog.c"
-set %cuebungstart="U:\Systemordner\Desktop\C_Uebung.cmd"
+set %cuebungstart="U:\Systemordner\Desktop\C_Uebung.c"
 
 (
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -330,6 +330,7 @@ echo } >> %testprogcdatei%
 if EXIST "U:\Systemordner\Desktop\C_Uebung.cmd" del U:\Systemordner\Desktop\C_Uebung.cmd
 
 :: create batch to open folder in VSCode
+echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r U:\C_Uebung >> %cuebungstart%
 echo start >> %cuebungstart%
 
 (
