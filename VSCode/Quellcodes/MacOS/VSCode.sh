@@ -233,25 +233,25 @@ $softwareinfo
 
 $pinginfo
 
-".($uninstall = "true" ? "$vscinfo2" : "$vscinfo2")."
+",($uninstall != "true" ? "$vscinfo2" : "$vscinfo2");"
 
-".($uninstall != "true" ? "$gccinfo" : "$jsonfolder")."
+",($uninstall != "true" ? "$gccinfo" : "$jsonfolder");"
 
-".($uninstall != "true" ? "$pathinfo" : "$extensioninfo")."
+",($uninstall != "true" ? "$pathinfo" : "$extensioninfo");"
 
-".($uninstall != "true" ? "$settingsinfo" : "not more than")."
+",($uninstall != "true" ? "$settingsinfo" : "not more than");"
 
-".($uninstall != "true" ? "$launchinfo" : )."
+",($uninstall != "true" ? "$launchinfo" : );"
 
-".($uninstall != "true" ? "$tasksinfo" : )."
+",($uninstall != "true" ? "$tasksinfo" : );"
 
-".($uninstall != "true" ? "$coderunnerinfo" : )."
+",($uninstall != "true" ? "$coderunnerinfo" : );"
 
-".($uninstall != "true" ? "$cppinfo" : )."
+",($uninstall != "true" ? "$cppinfo" : );"
 
-".($uninstall != "true" ? "$liveshareinfo" : )."
+",($uninstall != "true" ? "$liveshareinfo" : );"
 
-".($uninstall != "true" ? "$lldbinfo" : )."
+",($uninstall != "true" ? "$lldbinfo" : );"
 
 $usageinfo beendet!
 -------------------------------------------------------------------------------------------
