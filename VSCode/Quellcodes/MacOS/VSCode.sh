@@ -27,6 +27,14 @@ else
     pinginfo=""
 fi
 
+workspacepath="{
+    \"folders\": [
+        {
+	        \"path\": \"../../../../Documents/C_Uebung\"
+        }
+    ]
+}"
+
 #### begin uninstall if var is true ####
 
 if [ "$uninstall" = "true" ]; then
@@ -76,14 +84,17 @@ else
 
     ## Stage: doing install ##
 
-    # Abfrage, ob VSCode vorhanden, wenn nicht -> Download und Installation mit Eintrag in logdatei
+    # check vscode if not exist install
     file=/Applications/Visual\ Studio\ Code.app
     if [ -e "$file" ]; then
         vscinfo="Meldung: VSCode ist im richtigen Ordner bereits installiert."
     else
         vscinfo="Meldung: VSCode ist noch nicht vorhanden und wird heruntergeladen."
+        # download/overwrite vsc.zip
         curl -o ~/Downloads/vsc.zip https://az764295.vo.msecnd.net/stable/dfd34e8260c270da74b5c2d86d61aee4b6d56977/VSCode-darwin-universal.zip
+        # unzip with target Applications
         unzip ~/Downloads/vsc.zip -d /Applications
+        # after unzip delete zipfile
         rm ~/Downloads/vsc.zip
         if [ -e "$file" ]; then
             vscinfo2="Meldung: VSCode wurde erfolgreich installiert."
@@ -92,7 +103,7 @@ else
         fi
     fi
 
-    # Compiler vorhanden? Wenn nein installieren und Eintrag in logdatei
+    # install compiler if exist do nothing
     command xcode-select --install
     if (($? == 0)); then
         gccinfo="Meldung: Compiler fehlt und wird installiert. -> externes Installationsmenü sollte erschienen sein!"
@@ -105,7 +116,7 @@ else
         fi
     fi
 
-    # Umgebungsvariable hinzufügen um code im Terminal zu nutzen und Eintrag in logdatei
+    # set environmentpath
     cat <<-EOF >>~/.bash_profile
 	# Add Visual Studio Code (code)
 	export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
@@ -116,7 +127,7 @@ else
         pathinfo="Fehler: Umgebungsvariable konnte nicht hinzugefügt werden!"
     fi
 
-    # Profil aktualisieren um neue Umgebungsvariable nutzen zu können
+    # refresh terminal bash profile with new environmentpath
     source ~/.bash_profile
 
     # create/overwrite settings.json and create direction if not exist
@@ -137,14 +148,8 @@ else
     # install vscode extension lldb (compiler)
     code --install-extension vadimcn.vscode-lldb
 
-    # create/overwrite vscode workspace
-    echo "{
-	\"folders\": [
-		{
-			\"path\": \"../../../../Documents/C_Uebung\"
-		}
-	]
-}" >~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
+    # create/overwrite vscode workspace (var is set on the top)
+    echo $workspacepath > ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
 
     # link vscode workspace on the desktop - then the desktop link can be moved anywhere
     ln -sf ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace ~/Desktop/C_Uebung.code-workspace
@@ -206,7 +211,7 @@ else
     # Ausgabe im Terminal
     echo 'Installation beendet! Das Terminal kann jetzt geschlossen werden.'
 
-#### end install ####
+    #### end install ####
 fi
 
 # write logfile
