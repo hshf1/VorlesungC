@@ -1,6 +1,7 @@
-:: Erstellt am 19.04.2022 von Can Kocak | Hochschule Hannover
-:: Zuletzt bearbeitet am 23.10.2022 von Can Kocak | Hochschule Hannover
+:: Created 19.04.2022 by Can Kocak | Hochschule Hannover
+:: last modified 25.10.2022 by Can Kocak | Hochschule Hannover
 
+:: @echo off prevent showing all code in terminal
 @echo off
 set mydate=%date%
 set mytime=%time%
@@ -17,7 +18,7 @@ echo ---------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo Logfile zur Windows-Computerraum-Installation am %mydate% um %mytime%.
 echo. 
-echo Hochschule Hannover ^| Zuletzt bearbeitet am 23.10.2022.
+echo Hochschule Hannover
 echo.
 echo Die aktuelle Version gibt es hier:
 echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
