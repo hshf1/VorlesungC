@@ -44,9 +44,9 @@ if [ "$uninstall" = "true" ]; then
 
     # rm -R /Applications/Visual\ Studio\ Code.app
     if [ -e "/Applications/Visual Studio Code.app" ]; then
-        vscodeinfo="Fehler: VSCode konnte nicht entfernt werden."
+        vscinfo="Fehler: VSCode konnte nicht entfernt werden."
     else
-        vscodeinfo="Meldung: VSCode wurde erfolgreich entfernt."
+        vscinfo="Meldung: VSCode wurde erfolgreich entfernt."
     fi
 
     # rm -R ~/Library/Application\ Support/Code
@@ -228,8 +228,30 @@ Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schi
 Fehler sind an \"Fehler :\" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
 -------------------------------------------------------------------------------------------
 
-Meldung: Ausführendes System:
-Meldung: Es konnte eine Verbindung zum Internet erkannt werden!
+Ausführendes Betriebssystem:
+$softwareinfo 
+
+$pinginfo
+
+".($uninstall != "true" ? "$vscinfo2" : "$vscinfo2")."
+
+".($uninstall != "true" ? "$gccinfo" : "$jsonfolder")."
+
+".($uninstall != "true" ? "$pathinfo" : "$extensioninfo")."
+
+".($uninstall != "true" ? "$settingsinfo" : "not more than")."
+
+".($uninstall != "true" ? "$launchinfo" : )."
+
+".($uninstall != "true" ? "$tasksinfo" : )."
+
+".($uninstall != "true" ? "$coderunnerinfo" : )."
+
+".($uninstall != "true" ? "$cppinfo" : )."
+
+".($uninstall != "true" ? "$liveshareinfo" : )."
+
+".($uninstall != "true" ? "$lldbinfo" : )."
 
 $usageinfo beendet!
 -------------------------------------------------------------------------------------------
