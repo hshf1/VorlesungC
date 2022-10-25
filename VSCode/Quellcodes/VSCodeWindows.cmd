@@ -1,5 +1,5 @@
-:: Erstellt am 16.04.2022 von Can Kocak | Hochschule Hannover
-:: Zuletzt bearbeitet am 22.10.2022 von Can Kocak | Hochschule Hannover
+:: created by Can Kocak | 16.04.2022 | Hochschule Hannover
+:: last modified by Can Kocak | 25.10.2022 | Hochschule Hannover
 
 :: Variablen setzen
 @echo off
@@ -12,6 +12,7 @@ set tasksjson= %APPDATA%\Code\User\tasks.json
 set workspace= %APPDATA%\Code\User\C_Uebung.code-workspace
 set vscerweiterung= "C:\Program Files\Microsoft VS Code\bin\code"
 
+:: If Code (in Installationsanleitung) get parameter uninstall, then go to :UNINSTALL in this script
 if /i "%~1"=="uninstall" (GOTO UNINSTALL)
 
 :: Beginn der logdatei
@@ -20,7 +21,7 @@ echo ---------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo Logfile zur Installation am %mydate% um %mytime%.
 echo.
-echo Hochschule Hannover ^| Zuletzt bearbeitet am 22.10.2022 VSCode Installation für Windows.
+echo Hochschule Hannover
 echo.
 echo Die aktuelle Version gibt es hier:
 echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
@@ -653,6 +654,8 @@ echo >CON) >> %logfile%
 echo msgbox"Deinstallation beendet!",vbInformation , "Deinstallation beendet."> %temp%\msg.vbs 
 %Temp%\msg.vbs 
 erase %temp%\msg.vbs
+
+:: Logdatei wird nur im Fehlerfall erzeugt
 
 :: Logdatei anzeigen
 start "" %logfile%
