@@ -347,13 +347,7 @@ echo '{
 			"path": "../../../../Documents/C_Uebung"
 		}
 	]
-}' >> ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
-
-# Prüfen ob Datei vorhanden, wenn ja löschen
-file= ~/Desktop/C_Uebung.code-workspace
-if [ -e "$file" ] 
-then rm ~/Desktop/C_Uebung.code-workspace
-fi
+}' > ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
 
 # Verknüpfung zum Workspace auf dem Desktop erstellen -> kann später überall hin verschoben werden
 ln -s ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace ~/Desktop/C_Uebung.code-workspace
