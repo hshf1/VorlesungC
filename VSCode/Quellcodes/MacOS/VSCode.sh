@@ -144,7 +144,7 @@ else
 			\"path\": \"../../../../Documents/C_Uebung\"
 		}
 	]
-}" >~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
+}" >~/Library/Application\ Support/Code/User/C_Uebung.code-workspace 
 
 	# link vscode workspace on the desktop - then the desktop link can be moved anywhere
 	ln -sf ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace ~/Desktop/C_Uebung.code-workspace
