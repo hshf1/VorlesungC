@@ -233,7 +233,7 @@ $softwareinfo
 
 $pinginfo
 
-".($uninstall != "true" ? "$vscinfo2" : "$vscinfo2")."
+".($uninstall = "true" ? "$vscinfo2" : "$vscinfo2")."
 
 ".($uninstall != "true" ? "$gccinfo" : "$jsonfolder")."
 
