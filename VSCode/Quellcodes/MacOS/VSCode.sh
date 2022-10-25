@@ -27,13 +27,13 @@ else
     pinginfo=""
 fi
 
-workspacepath="{
-    \"folders\": [
+workspacepath='{
+    "folders": [
         {
-	        \"path\": \"../../../../Documents/C_Uebung\"
+	        "path\": "../../../../Documents/C_Uebung"
         }
     ]
-}"
+}'
 
 #### begin uninstall if var is true ####
 
