@@ -236,3 +236,4 @@ open ~/Desktop/logVSC.txt
 
 # exit script
 exit 0
+
