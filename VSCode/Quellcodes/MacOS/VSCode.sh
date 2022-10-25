@@ -5,18 +5,18 @@
 # last modified by Can Kocak | 22.10.2022 | Hochschule Hannover #
 #################################################################
 
-# get current date and time 
+# get current date and time
 dateinfo=$(date '+%F')
 timeinfo=$(date '+%H:%M:%S')
 
 # check if do install or uninstall
 if [ "$uninstall" = "true" ]; then
-	usageinfo="Deinstallation"
+    usageinfo="Deinstallation"
 else
 	usageinfo="Installation"
 fi
 
-# determine systeminformation 
+# determine systeminformation
 softwareinfo=$(sw_vers)
 
 # check internet connection
@@ -144,7 +144,7 @@ else
 			\"path\": \"../../../../Documents/C_Uebung\"
 		}
 	]
-}" >~/Library/Application\ Support/Code/User/C_Uebung.code-workspace 
+}" >~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
 
 	# link vscode workspace on the desktop - then the desktop link can be moved anywhere
 	ln -sf ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace ~/Desktop/C_Uebung.code-workspace
