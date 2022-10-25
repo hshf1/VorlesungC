@@ -361,8 +361,10 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 <br />
 <b>Anmerkung: Um im Computerraum richtig debuggen zu können, muss Schritt 2 befolgt werden. Andernfalls erhält man eine Fehlermeldung beim Ausführen des Debuggers.</b>
 <br /><br />
-Für die Installation ist die Windows Eingabeaufforderung (Windows Terminal) zu starten. (Wenn Terminal nicht gefunden wird, nach "cmd" suchen.<br /><br />
+Für die Installation ist die Windows Eingabeaufforderung (Windows Terminal) ganz normal zu starten. (Wenn Terminal nicht gefunden wird, nach "cmd" suchen.<br /><br />
   
+![cr_terminal](https://user-images.githubusercontent.com/100713757/197754867-00515001-4d1d-49ce-a25e-7a02ed615506.png)
+
 Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 
 ```cmd
