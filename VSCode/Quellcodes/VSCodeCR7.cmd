@@ -330,7 +330,7 @@ echo } >> %testprogcdatei%
 if EXIST "U:\Systemordner\Desktop\C_Uebung.cmd" del U:\Systemordner\Desktop\C_Uebung.cmd
 
 :: create batch to open folder in VSCode
-echo EXIT /B >> %cuebungstart%
+echo EXIT ^/B >> %cuebungstart%
 
 (
 echo Installation beendet!
