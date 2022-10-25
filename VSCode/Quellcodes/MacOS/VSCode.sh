@@ -214,9 +214,9 @@ else
 fi
 
 # write logfile
-echo '-------------------------------------------------------------------------------------------
+echo "-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
-Logfile zur '$usageinfo' von VSCode für MacOS am '$dateinfo' um '$timeinfo'.
+Logfile zur $usageinfo von VSCode für MacOS am $dateinfo um $timeinfo.
 
 Die aktuelle Version gibt es hier:
 https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
@@ -225,37 +225,46 @@ Bei Problemen könnt ihr hier nach Lösungen schauen:
 https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
 Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
 
-Fehler sind an "Fehler :" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
+Fehler sind an \"Fehler :\" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
 -------------------------------------------------------------------------------------------
 
 Ausführendes Betriebssystem:
-'$softwareinfo'
+$softwareinfo 
 
-'$pinginfo'
+$pinginfo
 
-',($uninstall != "true" ? "$vscinfo2" : "$vscinfo2");'
+"
+if [ "$uninstall" = "true" ]; then
+echo "$vscinfo
 
-',($uninstall != "true" ? "$gccinfo" : "$jsonfolder");'
+$jsonfolder
 
-',($uninstall != "true" ? "$pathinfo" : "$extensioninfo");'
+$extensioninfo" >>~/Desktop/logVSC.txt
+else
+echo "$vscinfo2
 
-',($uninstall != "true" ? "$settingsinfo" : "not more than");'
+$gccinfo
 
-',($uninstall != "true" ? "$launchinfo" : );'
+$pathinfo
 
-',($uninstall != "true" ? "$tasksinfo" : );'
+$settingsinfo
 
-',($uninstall != "true" ? "$coderunnerinfo" : );'
+$launchinfo
 
-',($uninstall != "true" ? "$cppinfo" : );'
+$tasksinfo
 
-',($uninstall != "true" ? "$liveshareinfo" : );'
+$coderunnerinfo
 
-',($uninstall != "true" ? "$lldbinfo" : );'
+$cppinfo
 
-'$usageinfo' beendet!
+$liveshareinfo
+
+$lldbinfo" >>~/Desktop/logVSC.txt
+fi
+echo "
+$usageinfo beendet!
 -------------------------------------------------------------------------------------------
-' >>~/Desktop/logVSC.txt
+" >>~/Desktop/logVSC.txt
 
 # open logfile
 open ~/Desktop/logVSC.txt
