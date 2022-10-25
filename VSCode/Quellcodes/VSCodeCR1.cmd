@@ -332,8 +332,8 @@ if EXIST U:\Systemordner\Desktop\C_Uebung.cmd del U:\Systemordner\Desktop\C_Uebu
 :: create batch to open folder in VSCode
 (
 echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r U:\C_Uebung 
+echo EXIT /B
 echo >CON) >> %cuebungstart%
-echo EXIT /B >> %cuebungstart%
 
 (
 echo Installation beendet!
