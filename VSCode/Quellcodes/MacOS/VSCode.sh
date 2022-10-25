@@ -190,32 +190,8 @@ fi
 # Profil aktualisieren um neue Umgebungsvariable nutzen zu können
 source ~/.bash_profile
 
-# Wenn VSCode Ordner nicht vorhanden, dann erstellen
-file=~/Library/Application\ Support/Code
-if [ -d "$file" ]
-then ''
-else mkdir ~/Library/Application\ Support/Code
-mkdir ~/Library/Application\ Support/Code/User
-fi
-
-# Falls alte settings.json gefunden, dann löschen und in logdatei eintragen
-file=~/Library/Application\ Support/Code/User/settings.json
-if [ -e "$file" ] 
-then echo 'Meldung: Alte settings.json wurden gefunden.
-' >> ~/Desktop/logVSC.txt
-rm ~/Library/Application\ Support/Code/User/settings.json
-if [ -e "$file" ]
-then echo 'Fehler: Alte settings.json konnten nicht gelöscht werden.
-' >> ~/Desktop/logVSC.txt
-else echo 'Meldung: Alte settings.json konnten erfolgreich gelöscht werden.
-' >> ~/Desktop/logVSC.txt
-fi
-else echo 'Meldung: Alte settings.json wurden nicht gefunden.
-' >> ~/Desktop/logVSC.txt
-fi
-
 # neue settings.json erstellen
-curl -o ~/Library/Application\ Support/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/settings.json
+curl --create-dirs -o ~/Library/Application\ Support/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/settings.json
 
 # Prüfung ob Datei erstellt werden konnte
 file=~/Library/Application\ Support/Code/User/settings.json
@@ -223,22 +199,6 @@ if [ -e "$file" ]
 then echo 'Meldung: Neue settings.json wurden erfolgreich erstellt.
 ' >> ~/Desktop/logVSC.txt
 else echo 'Fehler: Neue settings.json konnten nicht erstellt werden.
-' >> ~/Desktop/logVSC.txt
-fi
-
-# Prüfen ob launch.json vorhanden, wenn ja löschen und Eintrag in logdatei
-file=~/Library/Application\ Support/Code/User/launch.json
-if [ -e "$file" ] 
-then echo 'Meldung: Alte launch.json wurden gefunden.
-' >> ~/Desktop/logVSC.txt
-rm ~/Library/Application\ Support/Code/User/launch.json
-if [ -e "$file" ]
-then echo 'Fehler: Alte launch.json konnten nicht gelöscht werden.
-' >> ~/Desktop/logVSC.txt
-else echo 'Meldung: Alte launch.json konnten erfolgreich gelöscht werden.
-' >> ~/Desktop/logVSC.txt
-fi
-else echo 'Meldung: Alte launch.json wurden nicht gefunden.
 ' >> ~/Desktop/logVSC.txt
 fi
 
@@ -251,22 +211,6 @@ if [ -e "$file" ]
 then echo 'Meldung: Neue launch.json wurden erfolgreich erstellt.
 ' >> ~/Desktop/logVSC.txt
 else echo 'Fehler: Neue launch.json konnten nicht erstellt werden.
-' >> ~/Desktop/logVSC.txt
-fi
-
-# Prüfen ob alte tasks.json da, wenn ja löschen und in logdatei eintragen
-file=~/Library/Application\ Support/Code/User/tasks.json
-if [ -e "$file" ] 
-then echo 'Meldung: Alte tasks.json wurden gefunden.
-' >> ~/Desktop/logVSC.txt
-rm ~/Library/Application\ Support/Code/User/tasks.json
-if [ -e "$file" ]
-then echo 'Fehler: Alte tasks.json konnten nicht gelöscht werden.
-' >> ~/Desktop/logVSC.txt
-else echo 'Meldung: Alte tasks.json konnten erfolgreich gelöscht werden.
-' >> ~/Desktop/logVSC.txt
-fi
-else echo 'Meldung: Alte tasks.json wurden nicht gefunden.
 ' >> ~/Desktop/logVSC.txt
 fi
 
@@ -318,27 +262,8 @@ else echo 'Fehler: Bei der Installation der Extension lldb Compiler trat ein Feh
 ' >> ~/Desktop/logVSC.txt
 fi
 
-# Wenn Ordner nicht vorhanden, dann erstellen
-file=~/Documents/C_Uebung
-if [ -d "$file" ]
-then ''
-else mkdir ~/Documents/C_Uebung
-fi
-
-# Wenn Datei vorhanden, löschen
-file= ~/Documents/C_Uebung/testprog.c
-if [ -e "$file" ] 
-then rm ~/Documents/C_Uebung/testprog.c
-fi
-
 # Testprogramm in C erstellen
-curl -o ~/Documents/C_Uebung/testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/testprog.c
-
-# Prüfen ob Datei vorhanden, wenn ja löschen
-file= ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
-if [ -e "$file" ] 
-then rm ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
-fi
+curl --create-dirs -o ~/Documents/C_Uebung/testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/testprog.c
 
 # Workspace erstellen
 echo '{
@@ -350,7 +275,7 @@ echo '{
 }' > ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
 
 # Verknüpfung zum Workspace auf dem Desktop erstellen -> kann später überall hin verschoben werden
-ln -s ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace ~/Desktop/C_Uebung.code-workspace
+ln -sf ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace ~/Desktop/C_Uebung.code-workspace
 
 # Ausgabe im Terminal
 echo 'Installation beendet! Das Terminal kann jetzt geschlossen werden.'
@@ -368,3 +293,92 @@ sleep 5
 
 # exit 0 ersetz killall Terminal-> Terminal wird so nicht mehr automatisch beendet
 exit 0 
+
+
+
+
+# löschen?
+#
+#
+#
+
+# Prüfen ob Datei vorhanden, wenn ja löschen
+# file= ~/Desktop/C_Uebung.code-workspace
+# if [ -e "$file" ] 
+# then rm ~/Desktop/C_Uebung.code-workspace
+# fi
+
+# Prüfen ob Datei vorhanden, wenn ja löschen
+# file= ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
+# if [ -e "$file" ] 
+# then rm ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
+# fi
+
+# Wenn Datei vorhanden, löschen
+# file= ~/Documents/C_Uebung/testprog.c
+# if [ -e "$file" ] 
+# then rm ~/Documents/C_Uebung/testprog.c
+# fi
+
+# Prüfen ob alte tasks.json da, wenn ja löschen und in logdatei eintragen
+# file=~/Library/Application\ Support/Code/User/tasks.json
+# if [ -e "$file" ] 
+# then echo 'Meldung: Alte tasks.json wurden gefunden.
+# ' >> ~/Desktop/logVSC.txt
+# rm ~/Library/Application\ Support/Code/User/tasks.json
+# if [ -e "$file" ]
+# then echo 'Fehler: Alte tasks.json konnten nicht gelöscht werden.
+# ' >> ~/Desktop/logVSC.txt
+# else echo 'Meldung: Alte tasks.json konnten erfolgreich gelöscht werden.
+# ' >> ~/Desktop/logVSC.txt
+# fi
+# else echo 'Meldung: Alte tasks.json wurden nicht gefunden.
+# ' >> ~/Desktop/logVSC.txt
+# fi
+
+# Prüfen ob launch.json vorhanden, wenn ja löschen und Eintrag in logdatei
+# file=~/Library/Application\ Support/Code/User/launch.json
+# if [ -e "$file" ] 
+# then echo 'Meldung: Alte launch.json wurden gefunden.
+# ' >> ~/Desktop/logVSC.txt
+# rm ~/Library/Application\ Support/Code/User/launch.json
+# if [ -e "$file" ]
+# then echo 'Fehler: Alte launch.json konnten nicht gelöscht werden.
+# ' >> ~/Desktop/logVSC.txt
+# else echo 'Meldung: Alte launch.json konnten erfolgreich gelöscht werden.
+# ' >> ~/Desktop/logVSC.txt
+# fi
+# else echo 'Meldung: Alte launch.json wurden nicht gefunden.
+# ' >> ~/Desktop/logVSC.txt
+# fi
+
+# Falls alte settings.json gefunden, dann löschen und in logdatei eintragen
+# file=~/Library/Application\ Support/Code/User/settings.json
+# if [ -e "$file" ] 
+# then echo 'Meldung: Alte settings.json wurden gefunden.
+# ' >> ~/Desktop/logVSC.txt
+# rm ~/Library/Application\ Support/Code/User/settings.json
+# if [ -e "$file" ]
+# then echo 'Fehler: Alte settings.json konnten nicht gelöscht werden.
+# ' >> ~/Desktop/logVSC.txt
+# else echo 'Meldung: Alte settings.json konnten erfolgreich gelöscht werden.
+# ' >> ~/Desktop/logVSC.txt
+# fi
+# else echo 'Meldung: Alte settings.json wurden nicht gefunden.
+# ' >> ~/Desktop/logVSC.txt
+# fi
+
+# Wenn Ordner nicht vorhanden, dann erstellen
+# file=~/Documents/C_Uebung
+# if [ -d "$file" ]
+# then ''
+# else mkdir ~/Documents/C_Uebung
+# fi
+
+# Wenn VSCode Ordner nicht vorhanden, dann erstellen
+# file=~/Library/Application\ Support/Code
+# if [ -d "$file" ]
+# then ''
+# else mkdir ~/Library/Application\ Support/Code
+# mkdir ~/Library/Application\ Support/Code/User
+# fi
