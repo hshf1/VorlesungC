@@ -1,5 +1,3 @@
-// settings.json for MacOS
-
 {
     // Allgemeine Nutzereinstellungen
  "liveshare.anonymousGuestApproval": "accept",   // Live Share eingeladene Anonyme Nutzer automatisch akzeptieren
