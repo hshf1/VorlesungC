@@ -5,17 +5,17 @@
 # last modified by Can Kocak | 26.10.2022 | Hochschule Hannover #
 #################################################################
 
-# for install VSCode open terminal and execute following code
+# for install VSCode open terminal and execute following code (copy oneline without #)
 #
 # curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/VSCode.sh | bash 
 #
-# load script and execute it with bash shell
+# description: load script and execute it with bash shell
 
-# for uninstall VSCode open terminal end execute following code
+# for uninstall VSCode open terminal end execute following code (copy oneline without #)
 #
 # curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/VSCode.sh | uninstall=true bash 
 #
-# load script and execute it with bash shell while set parameter for this terminal
+# description: load script and execute it with bash shell while set parameter for this terminal
 
 # get current date and time
 dateinfo=$(date '+%F')
