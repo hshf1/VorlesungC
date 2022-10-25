@@ -1,7 +1,7 @@
 #################################################################
-#				    VSCode Installation for MacOS				#
-# 		created	by Can Kocak | 16.04.2022 | Hochschule Hannover	#
-# last modified by Can Kocak | 22.10.2022 | Hochschule Hannover	#
+#                   VSCode Installation for MacOS               #
+#       created by Can Kocak | 16.04.2022 | Hochschule Hannover #
+# last modified by Can Kocak | 22.10.2022 | Hochschule Hannover #
 #################################################################
 
 # get current date and time
