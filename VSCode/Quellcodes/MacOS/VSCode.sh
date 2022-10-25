@@ -1,5 +1,5 @@
-# Erstellt am 16.04.2022 von Can Kocak | Hochschule Hannover
-# Zuletzt bearbeitet am 22.10.2022 von Can Kocak | Hochschule Hannover
+# created by Can Kocak | 16.04.2022 | Hochschule Hannover
+# last modified by Can Kocak | 22.10.2022 | Hochschule Hannover
 
 # Beginn Deinstallation, falls gewünscht
 if [ "$uninstall" = "true" ]; then
@@ -215,48 +215,10 @@ else echo 'Meldung: Alte settings.json wurden nicht gefunden.
 fi
 
 # neue settings.json erstellen
-echo '{
-   // Allgemeine Nutzereinstellungen
-"liveshare.anonymousGuestApproval": "accept",   // Live Share eingeladene Anonyme Nutzer automatisch akzeptieren
-"liveshare.guestApprovalRequired": false,       // Live Share um eingeladene Nutzer automatisch zu akzeptieren auf false einstellen
-"extensions.ignoreRecommendations": true,       // Keine Empfehlungen mehr Anzeigen
-"files.encoding": "utf8",                       // Zur richtigen Darstellung von Umlauten
-//"files.autoGuessEncoding": true,              // Zurzeit deaktiviert, da noch instabil! Automatische Anpassung der Encodierung, falls möglich
-"editor.unicodeHighlight.nonBasicASCII": false, // Nicht Basic ASCII Zeichen nicht hervorheben
-"files.autoSave": "onFocusChange",              // Dateien werden bei Änderungen des Fokus automatisch gespeichert
-"code-runner.saveFileBeforeRun": true,          // speichert aktuelle Datei bevor sie mit CodeRunner ausgeführt wird
-"editor.bracketPairColorization.enabled": true, // Um Klammern und andere farbig darzustellen
-"editor.insertSpaces": true,                    // Ersetzt ein Tab durch Leerzeichen
-"editor.tabSize": 4,                            // Setzt die Zahl der durch einen Tab zu ersetzenden Leerzeichen
-"editor.renderWhitespace": "none",              // Zeigt keine Leerzeichen ein 
-//"editor.renderWhitespace": "selection",       // Nur im markierten Bereich Leerzeichen anzeigen
-"C_Cpp.debugShortcut": false,                   // Deaktivieren der nicht getesteten neuen Funktion von C/C++ Erweiterung
-"code-runner.runInTerminal": true,              // Um Eingaben in seinem Programm tätigen zu können z.B. für scanf
-"code-runner.preserveFocus": false,             // damit springt man automatisch ins Terminal bei Abarbeitung
-"code-runner.defaultLanguage": "C",
-    // Einstellungen für den Debugger
-    "launch": {
-		"version": "0.2.0",
-		"configurations": [
-			{
-			"type": "lldb",
-			"request": "launch",
-			"name": "debuggen",
-			"runtimeExecutable": "/usr/bin/gcc",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb",
-            "preLaunchTask": "C/C++: gcc Aktive Datei kompilieren"
-			}
-		]
-	}
-}' > ~/Library/Application\ Support/Code/User/settings.json
+curl -o ~/Library/Application\ Support/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/settings.json
 
 # Prüfung ob Datei erstellt werden konnte
+file=~/Library/Application\ Support/Code/User/settings.json
 if [ -e "$file" ] 
 then echo 'Meldung: Neue settings.json wurden erfolgreich erstellt.
 ' >> ~/Desktop/logVSC.txt
@@ -281,29 +243,10 @@ else echo 'Meldung: Alte launch.json wurden nicht gefunden.
 fi
 
 # neue launch.json erstellen
-echo '{
-    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
-    // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
-    // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "gcc - Aktive Datei erstellen und debuggen",
-            "type": "lldb",
-            "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
-            "environment": [],
-            "externalConsole": false,
-            "MIMode": "lldb",
-            "preLaunchTask": "C/C++: gcc Aktive Datei kompilieren"
-        }
-    ]
-}' > ~/Library/Application\ Support/Code/User/launch.json
+curl -o ~/Library/Application\ Support/Code/User/launch.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/launch.json
 
 # Prüfung ob Datei erstellt werden konnte
+file=~/Library/Application\ Support/Code/User/launch.json
 if [ -e "$file" ] 
 then echo 'Meldung: Neue launch.json wurden erfolgreich erstellt.
 ' >> ~/Desktop/logVSC.txt
@@ -328,35 +271,10 @@ else echo 'Meldung: Alte tasks.json wurden nicht gefunden.
 fi
 
 # neue tasks.json erstellen
-echo '{
-    "tasks": [
-        {
-            "type": "cppbuild",
-            "label": "C/C++: gcc Aktive Datei kompilieren",
-            "command": "/usr/bin/gcc",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "Vom Debugger generierte Aufgabe."
-        }
-    ],
-    "version": "2.0.0"
-}' > ~/Library/Application\ Support/Code/User/tasks.json
+curl -o ~/Library/Application\ Support/Code/User/tasks.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/tasks.json
 
 # Prüfung ob Datei erstellt werden konnte
+file=~/Library/Application\ Support/Code/User/tasks.json
 if [ -e "$file" ] 
 then echo 'Meldung: Neue tasks.json wurden erfolgreich erstellt.
 ' >> ~/Desktop/logVSC.txt
@@ -414,13 +332,7 @@ then rm ~/Documents/C_Uebung/testprog.c
 fi
 
 # Testprogramm in C erstellen
-echo '#include <stdio.h>
-
-int main(){
-    int x = 0;
-    x++;
-    printf("Hello World! Nummer: %d\n", x);
-}' >> ~/Documents/C_Uebung/testprog.c
+curl -o ~/Documents/C_Uebung/testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/testprog.c
 
 # Prüfen ob Datei vorhanden, wenn ja löschen
 file= ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
