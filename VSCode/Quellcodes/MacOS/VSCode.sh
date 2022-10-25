@@ -79,9 +79,8 @@ else
     # check vscode if not exist install
     file=/Applications/Visual\ Studio\ Code.app
     if [ -e "$file" ]; then
-        vscinfo="Meldung: VSCode ist im richtigen Ordner bereits installiert."
+        vscinfo2="Meldung: VSCode ist im richtigen Ordner bereits installiert."
     else
-        vscinfo="Meldung: VSCode ist noch nicht vorhanden und wird heruntergeladen."
         # download/overwrite vsc.zip
         curl -o ~/Downloads/vsc.zip https://az764295.vo.msecnd.net/stable/dfd34e8260c270da74b5c2d86d61aee4b6d56977/VSCode-darwin-universal.zip
         # unzip with target Applications
@@ -213,7 +212,7 @@ else
     #### end install ####
 fi
 
-# write logfile
+# write logfile with variables
 echo "-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
 Logfile zur $usageinfo von VSCode für MacOS am $dateinfo um $timeinfo.
@@ -232,7 +231,6 @@ Ausführendes Betriebssystem:
 $softwareinfo 
 
 $pinginfo
-
 " >>~/Desktop/logVSC.txt
 if [ "$uninstall" = "true" ]; then
 echo "$vscinfo
