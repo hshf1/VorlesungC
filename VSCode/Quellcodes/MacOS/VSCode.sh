@@ -5,7 +5,7 @@
 # last modified by Can Kocak | 22.10.2022 | Hochschule Hannover #
 #################################################################
 
-# get current date and time
+# get current date and time 
 dateinfo=$(date '+%F')
 timeinfo=$(date '+%H:%M:%S')
 
