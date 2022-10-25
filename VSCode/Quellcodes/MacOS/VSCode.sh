@@ -190,10 +190,9 @@ echo 'Installation beendet! Das Terminal kann jetzt geschlossen werden.'
 fi
 
 # write logfile
-echo '-------------------------------------------------------------------------------------------
+echo "-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
-Logfile zur xxx am $dateinfo um %timeinfo.
-Hochschule Hannover | VSCode Deinstallation für MacOS.
+Logfile zur $usageinfo von VSCode für MacOS am $dateinfo um $timeinfo.
 
 Die aktuelle Version gibt es hier:
 https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
@@ -202,7 +201,7 @@ Bei Problemen könnt ihr hier nach Lösungen schauen:
 https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
 Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
 
-Fehler sind an "Fehler :" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
+Fehler sind an \"Fehler :\" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
 -------------------------------------------------------------------------------------------
 
 Meldung: Ausführendes System:
@@ -210,7 +209,7 @@ Meldung: Es konnte eine Verbindung zum Internet erkannt werden!
 
 Installation beendet!
 -------------------------------------------------------------------------------------------
-' >> ~/Desktop/logVSC.txt
+" >> ~/Desktop/logVSC.txt
 
 # Die logdatei öffnen
 open ~/Desktop/logVSC.txt
