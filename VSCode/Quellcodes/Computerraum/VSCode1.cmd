@@ -42,7 +42,6 @@ if %errorlevel% == 0 (
 
 :: set environment variables
 setx Path "%Path%;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin"
-
 :: create/overwrite settings.json and create direction if not exist
 curl --create-dirs -o U:/.vscode/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/settings.json
 :: create/overwrite launch.json
@@ -60,7 +59,7 @@ call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare
 :: install vscode extension Liveshare-Audio
 call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare-audio
 
-if EXIST U:\.vscode if NOT EXIST U:\.vscode\extensions
+if EXIST U:\.vscode if NOT EXIST U:\.vscode\extensions del U:\.vscode
 if NOT EXIST U:\.vscode xcopy %USERPROFILE%\.vscode U:\ /E /H /C /I
 del %USERPROFILE%\.vscode
 
