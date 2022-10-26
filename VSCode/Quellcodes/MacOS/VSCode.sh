@@ -184,7 +184,7 @@ else
     installedextensions=$( code --list-extensions )
 
     # check if code-runner installed
-    if [ echo code --list-extensions | grep code-runner ]; then
+    if [ echo "$installedextensions" | grep 'code-runner' > /dev/null 2>&1 ]; then
         coderunnerinfo="Meldung: Die Extension Code-Runner wurde erfolgreich installiert."
     else
         coderunnerinfo="Fehler: Bei der Installation der Extension Code-Runner trat ein Fehler."
