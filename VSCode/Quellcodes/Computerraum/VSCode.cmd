@@ -1,5 +1,4 @@
-:: Created 19.04.2022 by Can Kocak | Hochschule Hannover
-:: last modified 25.10.2022 by Can Kocak | Hochschule Hannover
+:: nur testfile! nicht nutzen!
 
 :: setx VSCODE_EXTENSIONS U:\.vscode will be settings there too?
 :: setx VSCODE_APPDATA U\Code
@@ -9,9 +8,9 @@
 set mydate=%date%
 set mytime=%time%
 set logfile="U:\Systemordner\Desktop\logVSC.txt"
-set settingsjson="%APPDATA%\Code\User\settings.json"
-set launchjson="%APPDATA%\Code\User\launch.json"
-set tasksjson="%APPDATA%\Code\User\tasks.json"
+set settingsjson="U:\.vscode\Code\User\settings.json"
+set launchjson="U:\.vscode\Code\User\launch.json"
+set tasksjson="U:\.vscode\Code\User\tasks.json"
 set vscerweiterung="C:\Program Files\Microsoft VS Code\bin\code"
 set testprogcdatei="U:\C_Uebung\testprog.c"
 set cuebungstart="U:\Systemordner\Desktop\C_Uebung.cmd"
@@ -59,9 +58,12 @@ echo >CON) >> %logfile%
 )
 del "%temp%\pathaktuell.txt"
 
+setx VSCODE_EXTENSIONS U:\.vscode\extensions
+setx VSCODE_APPDATA U:\.vscode
+
 echo Alte Einstellungen werden gesucht und ersetzt/erstellt...
-if NOT EXIST "%APPDATA%\Code\User" (
-mkdir "%APPDATA%\Code\User\"
+if NOT EXIST "U:\.vscode\Code\User" (
+mkdir "U:\.vscode\Code\User\"
 )
 if NOT EXIST %settingsjson% (
 (echo Meldung: Alte settings.json wurde nicht gefunden.
