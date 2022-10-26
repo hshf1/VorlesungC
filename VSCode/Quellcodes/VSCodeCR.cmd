@@ -1,6 +1,9 @@
 :: Created 19.04.2022 by Can Kocak | Hochschule Hannover
 :: last modified 25.10.2022 by Can Kocak | Hochschule Hannover
 
+:: setx VSCODE_EXTENSIONS U:\.vscode will be settings there too?
+:: setx VSCODE_APPDATA U\Code
+
 :: @echo off prevent showing all code in terminal
 @echo off
 set mydate=%date%
