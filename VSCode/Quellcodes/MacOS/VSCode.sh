@@ -174,36 +174,38 @@ else
     fi
 
     # check if tasks.json exist
-    file=~/Library/Application\ Support/Code/User/taskss.json
+    file=~/Library/Application\ Support/Code/User/tasks.json
     if [ -e "$file" ]; then
         tasksinfo="Meldung: Neue tasks.json wurden erfolgreich erstellt."
     else
         tasksinfo="Fehler: Neue tasks.json konnten nicht erstellt werden."
     fi
 
+    installedextensions=$( code --list-extensions )
+
     # check if code-runner installed
-    if [ code --list-extensions | grep -q "code-runner" ]; then
+    if [ echo code --list-extensions | grep code-runner ]; then
         coderunnerinfo="Meldung: Die Extension Code-Runner wurde erfolgreich installiert."
     else
         coderunnerinfo="Fehler: Bei der Installation der Extension Code-Runner trat ein Fehler."
     fi
 
     # check if C/C++ installed
-    if [ code --list-extensions | grep -q "cpptools" ]; then
+    if [ echo code --list-extensions | grep cpptoolss ]; then
         cppinfo="Meldung: Die Extension C/C++ wurde erfolgreich installiert."
     else
         cppinfo="Fehler: Bei der Installation der Extension C/C++ trat ein Fehler."
     fi
 
     # check if liveshare installed
-    if [ code --list-extensions | grep -q "liveshare" ]; then
+    if [ code --list-extensions | grep liveshare ]; then
         liveshareinfo="Meldung: Die Extension Live Share wurde erfolgreich installiert."
     else
         liveshareinfo="Fehler: Bei der Installation der Extension Live Share trat ein Fehler."
     fi
 
     # check if lldb installed
-    if [ code --list-extensions | grep -q "code-runner" ]; then
+    if [ code --list-extensions | grep -q code-runner ]; then
         lldbinfo="Meldung: Die Extension lldb Compiler wurde erfolgreich installiert."
     else
         lldbinfo="Fehler: Bei der Installation der Extension lldb Compiler trat ein Fehler."
