@@ -60,7 +60,8 @@ call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare
 :: install vscode extension Liveshare-Audio
 call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare-audio
 
-xcopy %USERPROFILE%\.vscode U:\ /E /H /C /I
+if EXIST U:\.vscode if NOT EXIST U:\.vscode\extensions
+if NOT EXIST U:\.vscode xcopy %USERPROFILE%\.vscode U:\ /E /H /C /I
 del %USERPROFILE%\.vscode
 
 :: change direction for extensions in environment varbiable for more information look https://github.com/microsoft/vscode/blob/a5f84617e22e6e32afc18a808828f1e233361244/src/vs/platform/environment/node/environmentService.ts#L121
