@@ -136,6 +136,9 @@ echo >CON) >> %logfile%
 )
 del "%USERPROFILE%\AppData\Local\Temp\pathaktuell.txt"
 
+setx VSCODE_EXTENSIONS %USERPROFILE%/Desktop/U/.vscode
+setx VSCODE_APPDATA %USERPROFILE%/Desktop/U/.vscode
+
 :: Prüfen ob choco vorhanden ist, manchmal fehlerhaft, wenn neu installiert
 choco -v 
 if %errorlevel% == 0 (
