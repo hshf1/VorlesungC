@@ -17,6 +17,9 @@
 #
 # load script and execute it with bash shell while set parameter for this terminal
 
+# in need to change extensionspath add environment variable VSCODE_EXTENSIONS YOURPATH
+# in need to change settingspath add environment variable VSCODE_APPDATA YOURPATH
+
 # get current date and time
 dateinfo=$(date '+%F')
 timeinfo=$(date '+%H:%M:%S')
