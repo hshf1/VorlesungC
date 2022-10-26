@@ -11,6 +11,10 @@
 ::
 :: description: curl to downloads file, %temp%\VSCode.cmd to start script, del to delete script after finished, EXIT /B to exit script and close terminal
 
+:: dont show own commands in terminal
+@echo off
+
+:: set variables
 set mydate=%date%
 set mytime=%time%
 set logfile="U:\Systemordner\Desktop\logVSC.txt"
@@ -22,9 +26,7 @@ set testprogcdatei="U:\C_Uebung\testprog.c"
 set cuebungstart="U:\Systemordner\Desktop\C_Uebung.cmd"
 
 :: determine systeminformation
-FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO (
-    set system_info="%%i %%j %%k"
-)
+FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO set system_info=%%i %%j %%k
 
 :: check internet connection
 ping -n 1 google.de
@@ -45,15 +47,15 @@ setx VSCODE_EXTENSIONS U:\.vscode\extensions
 :: change direction for global settings folder in environment variable for more information look https://github.com/microsoft/vscode/blob/a5f84617e22e6e32afc18a808828f1e233361244/src/paths.js
 setx VSCODE_APPDATA U:\.vscode
 :: create/overwrite settings.json and create direction if not exist
-curl --create-dirs -o U:/.vscode/Code/User https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/settings.json
+curl --create-dirs -o U:/.vscode/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/settings.json
 :: create/overwrite launch.json
-curl -o https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/launch.json
+curl -o U:/.vscode/Code/User/launch.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/launch.json
 :: create/overwrite tasks.json
-curl -o https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Computerraum/tasks.json
+curl -o U:/.vscode/Code/User/tasks.json https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Computerraum/tasks.json
 :: create/overwrite testprog.c and create direction if not exist - usage is to test debugger and coderunner
 curl --create-dirs -o U:/C_Uebung/testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/testprog.c
 :: start VSCode to surely initialize new environment and close again
-call %vscerweiterung% && taskkill /IM code.exe >nul
+call %vscerweiterung% && timeout /T 5 /NOBREAK && taskkill /IM code.exe >nul
 :: install vscode extension code-runner
 call %vscerweiterung% --install-extension formulahendry.code-runner
 :: install vscode extension C/C++
@@ -75,7 +77,8 @@ echo EXIT /B >> %cuebungstart%
 
 :: checking environment paths
 echo %Path% > "%temp%\pathaktuell.txt"
-IF findstr Dev-Cpp\MinGW64\bin "%temp%\pathaktuell.txt" (
+findstr Dev-Cpp\MinGW64\bin "%temp%\pathaktuell.txt"
+if %errorlevel% == 0 (
     set path_info="Meldung: Umgebungsvariable wurde erfolgreich gesetzt."
 ) ELSE (
     set path_info="Fehler: Umgebungsvariable konnte nicht gesetzt werden!"
