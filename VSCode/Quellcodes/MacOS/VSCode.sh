@@ -158,49 +158,52 @@ else
     ## Stage: checking install ##
 
     # check if settings.json exist
-    if [ -e "~/Library/Application Support/Code/User/settings.json" ]; then
+    file=~/Library/Application\ Support/Code/User/settings.json
+    if [ -e "$file" ]; then
         settingsinfo="Meldung: Neue settings.json wurden erfolgreich erstellt."
     else
         settingsinfo="Fehler: Neue settings.json konnten nicht erstellt werden."
     fi
 
     # check if launch.json exist
-    if [ -e "~/Library/Application Support/Code/User/launch.json" ]; then
+    file=~/Library/Application\ Support/Code/User/launch.json
+    if [ -e "$file" ]; then
         launchinfo="Meldung: Neue launch.json wurden erfolgreich erstellt."
     else
         launchinfo="Fehler: Neue launch.json konnten nicht erstellt werden."
     fi
 
     # check if tasks.json exist
-    if [ -e "~/Library/Application Support/Code/User/tasks.json" ]; then
+    file=~/Library/Application\ Support/Code/User/taskss.json
+    if [ -e "$file" ]; then
         tasksinfo="Meldung: Neue tasks.json wurden erfolgreich erstellt."
     else
         tasksinfo="Fehler: Neue tasks.json konnten nicht erstellt werden."
     fi
 
     # check if code-runner installed
-    if [ echo code --list-extensions | grep -q "code-runner" ]; then
+    if [ code --list-extensions | grep -q "code-runner" ]; then
         coderunnerinfo="Meldung: Die Extension Code-Runner wurde erfolgreich installiert."
     else
         coderunnerinfo="Fehler: Bei der Installation der Extension Code-Runner trat ein Fehler."
     fi
 
     # check if C/C++ installed
-    if [ echo code --list-extensions | grep -q "cpptools" ]; then
+    if [ code --list-extensions | grep -q "cpptools" ]; then
         cppinfo="Meldung: Die Extension C/C++ wurde erfolgreich installiert."
     else
         cppinfo="Fehler: Bei der Installation der Extension C/C++ trat ein Fehler."
     fi
 
     # check if liveshare installed
-    if [ echo code --list-extensions | grep -q "liveshare" ]; then
+    if [ code --list-extensions | grep -q "liveshare" ]; then
         liveshareinfo="Meldung: Die Extension Live Share wurde erfolgreich installiert."
     else
         liveshareinfo="Fehler: Bei der Installation der Extension Live Share trat ein Fehler."
     fi
 
     # check if lldb installed
-    if [ echo code --list-extensions | grep -q "code-runner" ]; then
+    if [ code --list-extensions | grep -q "code-runner" ]; then
         lldbinfo="Meldung: Die Extension lldb Compiler wurde erfolgreich installiert."
     else
         lldbinfo="Fehler: Bei der Installation der Extension lldb Compiler trat ein Fehler."
