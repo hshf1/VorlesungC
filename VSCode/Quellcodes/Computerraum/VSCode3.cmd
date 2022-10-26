@@ -55,7 +55,9 @@ curl -o U:/.vscode/Code/User/tasks.json https://github.com/hshf1/VorlesungC/blob
 :: create/overwrite testprog.c and create direction if not exist - usage is to test debugger and coderunner
 curl --create-dirs -o U:/C_Uebung/testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/testprog.c
 :: start VSCode to surely initialize new environment and close again
-code && timeout /T 5 /NOBREAK && taskkill /IM Code.exe /F
+code
+timeout /T 5 /NOBREAK
+taskkill /im Code.exe /t /f
 :: install vscode extension code-runner
 call %vscerweiterung% --install-extension formulahendry.code-runner
 :: install vscode extension C/C++
