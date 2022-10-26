@@ -116,7 +116,7 @@ if EXIST %tasksjson% (
     set tasksjson_info="Fehler : Neue tasks.json konnte nicht erfolgreich erstellt werden!"
 )
 
-echo call %vscerweiterung% --list-extension > "%temp%\listextension.txt"
+call %vscerweiterung% --list-extension > "%temp%\listextension.txt"
 
 :: install extension code-runner and write in logfile
 findstr code-runner "%temp%\listextension.txt"
