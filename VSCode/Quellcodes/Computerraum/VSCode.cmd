@@ -1,10 +1,16 @@
-:: nur testfile! nicht nutzen!
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::                          VSCode Installation for Computerraum ::
+::                   created for Hochschule Hannover Vorlesung C ::
+::       created by Can Kocak | 19.04.2022 | Hochschule Hannover ::
+:: last modified by Can Kocak | 26.10.2022 | Hochschule Hannover ::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-:: setx VSCODE_EXTENSIONS U:\.vscode will be settings there too?
-:: setx VSCODE_APPDATA U\Code
+:: to install the configuration for VSCode open terminal (no need for being administrator) and execute following code (copy oneline without ::)
+::
+:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/VSCode.cmd && %temp%\VSCode.cmd && del %temp%\VSCode.cmd && EXIT /B
+::
+:: description: curl to downloads file, %temp%\VSCode.cmd to start script, del to delete script after finished, EXIT /B to exit script and close terminal
 
-:: @echo off prevent showing all code in terminal
-@echo off
 set mydate=%date%
 set mytime=%time%
 set logfile="U:\Systemordner\Desktop\logVSC.txt"
@@ -15,12 +21,133 @@ set vscerweiterung="C:\Program Files\Microsoft VS Code\bin\code"
 set testprogcdatei="U:\C_Uebung\testprog.c"
 set cuebungstart="U:\Systemordner\Desktop\C_Uebung.cmd"
 
+:: determine systeminformation
+FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO (
+    set system_info="%%i %%j %%k"
+)
+
+:: check internet connection
+ping -n 1 google.de
+if %errorlevel% == 0 (
+    set ping_info="Meldung: Es konnte eine Verbindung zum Internet erkannt werden!"
+) ELSE (
+    set ping_info="Meldung: Es konnte keine Verbindung zum Internet erkannt werden!"
+)
+
+:: begin install
+
+:: Stage: doing install
+
+:: set environment variables
+setx Path "%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin"
+:: change direction for extensions in environment varbiable
+setx VSCODE_EXTENSIONS U:\.vscode\extensions
+:: change direction for global settings folder in environment variable
+setx VSCODE_APPDATA U:\.vscode
+:: create/overwrite settings.json and create direction if not exist
+curl --create-dirs -o U:/.vscode/Code/User https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/settings.json
+:: create/overwrite launch.json
+curl -o https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/launch.json
+:: create/overwrite tasks.json
+curl -o https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Computerraum/tasks.json
+:: create/overwrite testprog.c and create direction if not exist - usage is to test debugger and coderunner
+curl --create-dirs -o U:/C_Uebung/testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/testprog.c
+:: install vscode extension code-runner
+call %vscerweiterung% --install-extension formulahendry.code-runner
+:: install vscode extension C/C++
+call %vscerweiterung% --install-extension ms-vscode.cpptools
+:: install vscode extension Liveshare
+call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare
+:: install vscode extension Liveshare-Audio
+call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare-audio
+
+:: create batchfile to start vsc with the folge C_Uebung and ensure the environment paths
+echo :: change direction for extensions in environment varbiable > %cuebungstart%
+echo setx VSCODE_EXTENSIONS U:\.vscode\extensions >> %cuebungstart%
+echo :: change direction for global settings folder in environment variable >> %cuebungstart%
+echo setx VSCODE_APPDATA U:\.vscode >> %cuebungstart%
+echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r U:\C_Uebung >> %cuebungstart%
+echo EXIT /B >> %cuebungstart%
+
+:: Stage: checking install
+
+:: checking environment paths
+echo %Path% > "%temp%\pathaktuell.txt"
+IF findstr Dev-Cpp\MinGW64\bin "%temp%\pathaktuell.txt" (
+    set path_info="Meldung: Umgebungsvariable wurde erfolgreich gesetzt."
+) ELSE (
+    set path_info="Fehler: Umgebungsvariable konnte nicht gesetzt werden!"
+)
+del "%temp%\pathaktuell.txt"
+if %VSCODE_EXTENSIONS% == "U:\.vscode\extensions" (
+    set path2_info="Extensionsordner erfolgreich in Umgebungsvariable geändert."
+) ELSE (
+    set path2_info="Extensionsordner konnte nicht erfolgreich in Umgebungsvariable geändert werden."
+)
+if %VSCODE_APPDATA% == "U:\.vscode" (
+    set path3_info="Globale Settingsordner erfolgreich in Umgebungsvariable geändert."
+) ELSE (
+    set path3_info="Globale Settingsordner konnte nicht erfolgreich in Umgebungsvariable geändert werden."
+)
+
+:: check if settings.json exist
+if EXIST %settingsjson% (
+    set settingsjson_info="Meldung: Neue settings.json wurde erfolgreich erstellt."
+) ELSE (
+    set settingsjson_info="Fehler: Neue settings.json konnte nicht erfolgreich erstellt werden!"
+)
+
+:: check if launch.json exist
+if EXIST %launchjson% (
+    set launchjson_info="Meldung: Neue launch.json wurde erfolgreich erstellt."
+) ELSE (
+    set launchjson_info="Fehler: Neue launch.json konnte nicht erfolgreich erstellt werden!"
+)
+
+:: check if tasks.json exist
+if EXIST %tasksjson% (
+    set tasksjson_info="Meldung: Neue tasks.json wurde erfolgreich erstellt."
+) ELSE (
+    set tasksjson_info="Fehler : Neue tasks.json konnte nicht erfolgreich erstellt werden!"
+)
+
+echo call %vscerweiterung% --list-extension > "%temp%\listextension.txt"
+
+:: install extension code-runner and write in logfile
+if findstr code-runner "%temp%\listextension.txt" (
+    set coderunner_info="Meldung: Code-Runner Extension wurde/ist installiert."
+) ELSE (
+    set coderunner_info="Fehler : Bei der Installation von der Code-Runner Extension ist ein Fehler aufgetreten!"
+)
+
+:: install extension C/C++ and write in logfile
+if findstr cpptools "%temp%\listextension.txt" (
+    set cpptools_info="Meldung: C/C++ Extension wurde/ist installiert."
+) ELSE (
+    set cpptools_info="Fehler: Bei der Installation von der C/C++ Extension ist ein Fehler aufgetreten!"
+)
+
+:: install extension LiveShare and write in logfile
+if findstr liveshare "%temp%\listextension.txt" (
+    set liveshare_info="Meldung: Live Share Extension wurde/ist installiert."
+) ELSE (
+    set liveshare_info="Fehler: Bei der Installation von der Live Share Extension ist ein Fehler aufgetreten!"
+)
+
+:: install extension LiveShare-Audio and write in logfile
+if findstr liveshare-audio "%temp%\listextension.txt" (
+    set liveshareaudio_info="Meldung: Live Share Audio Extension wurde/ist installiert."
+) ELSE (
+    set liveshareaudio_info="Fehler: Bei der Installation von der Live Share Audio Extension ist ein Fehler aufgetreten!"
+)
+
+:: end install
+
+:: begin logfile
 (
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
-echo Logfile zur Windows-Computerraum-Installation am %mydate% um %mytime%.
-echo. 
-echo Hochschule Hannover
+echo Logfile zur Installation von VSCode für Windows-Computerraum am %mydate% um %mytime%.
 echo.
 echo Die aktuelle Version gibt es hier:
 echo https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
@@ -35,209 +162,40 @@ echo.
 echo Fehler sind an "Fehler :" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo.
-echo >CON) >> %logfile%
-
-:: determine OS and writing in logfile
-FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO (
-echo Meldung: Ausführendes System: %%i %%j %%k
+echo Ausführendes Betriebssystem:
+echo %system_info%
 echo.
-echo >CON) >> %logfile%
-
-:: set environment variables
-setx Path "%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin"
-echo %Path% >> "%temp%\pathaktuell.txt"
-findstr Dev-Cpp\MinGW64\bin "%temp%\pathaktuell.txt"
-IF %errorlevel% == 0 (
-(echo Meldung: Umgebungsvariable wurde erfolgreich gesetzt.
+echo %path_info%
 echo.
-echo >CON) >> %logfile%
-) ELSE (
-(echo Fehler: Umgebungsvariable konnte nicht gesetzt werden!
+echo %path2_info%
 echo.
-echo >CON) >> %logfile%
-)
-del "%temp%\pathaktuell.txt"
-
-setx VSCODE_EXTENSIONS U:\.vscode\extensions
-setx VSCODE_APPDATA U:\.vscode
-
-echo Alte Einstellungen werden gesucht und ersetzt/erstellt...
-if NOT EXIST "U:\.vscode\Code\User" (
-mkdir "U:\.vscode\Code\User\"
-)
-if NOT EXIST %settingsjson% (
-(echo Meldung: Alte settings.json wurde nicht gefunden.
+echo %path3_info%
 echo.
-echo >CON) >> %logfile%
-) ELSE (
-(echo Meldung: Alte settings.json wurde gefunden.
+echo %settingsjson_info%
 echo.
-echo >CON) >> %logfile%
-del %settingsjson%
-if NOT EXIST %settingsjson% (
-(echo Meldung: Alte settings.json wurde erfolgreich entfernt.
+echo %launchjson_info%
 echo.
-echo >CON) >> %logfile%
-) ELSE (
-(echo Fehler: Alte settings.json konnte nicht erfolgreich entfernt werden!
+echo %tasksjson_info%
 echo.
-echo >CON) >> %logfile%
-)
-)
-
-if EXIST %settingsjson% (
-(echo Meldung: Neue settings.json wurde erfolgreich erstellt.
+echo %coderunner_info%
 echo.
-echo >CON) >> %logfile%
-) ELSE (
-(echo Fehler: Neue settings.json konnte nicht erfolgreich erstellt werden!
+echo %cpptools_info%
 echo.
-echo >CON) >> %logfile%
-)
-
-if NOT EXIST %launchjson% (
-(echo Meldung: Alte launch.json wurde nicht gefunden.
+echo %liveshare_info%
 echo.
-echo >CON) >> %logfile%
-) ELSE (
-(echo Meldung: Alte launch.json wurde gefunden.
+echo %liveshareaudio_info%
 echo.
-echo >CON) >> %logfile%
-del %launchjson%
-if NOT EXIST %launchjson% (
-(echo Meldung: Alte launch.json wurde erfolgreich entfernt.
-echo.
-echo >CON) >> %logfile%
-) ELSE (
-(echo Fehler: Alte launch.json konnte nicht erfolgreich entfernt werden!
-echo.
-echo >CON) >> %logfile%
-)
-)
-
-if EXIST %launchjson% (
-(echo Meldung: Neue launch.json wurde erfolgreich erstellt.
-echo.
-echo >CON) >> %logfile%
-) ELSE (
-(echo Fehler: Neue launch.json konnte nicht erfolgreich erstellt werden!
-echo.
-echo >CON) >> %logfile%
-)
-
-if NOT EXIST %tasksjson% (
-(echo Meldung: Alte tasks.json wurde nicht gefunden.
-echo.
-echo >CON) >> %logfile%
-) ELSE (
-(echo Meldung: Alte tasks.json wurde gefunden.
-echo.
-echo >CON) >> %logfile%
-del %tasksjson%
-if NOT EXIST %tasksjson% (
-(echo Meldung: Alte tasks.json wurde erfolgreich entfernt.
-echo.
-echo >CON) >> %logfile%
-) ELSE (
-(echo Fehler: Alte tasks.json konnte nicht erfolgreich entfernt werden!
-echo.
-echo >CON) >> %logfile%
-)
-)
-
-
-if EXIST %tasksjson% (
-(echo Meldung: Neue tasks.json wurde erfolgreich erstellt.
-echo.
-echo >CON) >> %logfile%
-) ELSE (
-(echo Fehler : Neue tasks.json konnte nicht erfolgreich erstellt werden!
-echo.
-echo >CON) >> %logfile%
-)
-
-:: install extension code-runner and write in logfile
-call %vscerweiterung% --install-extension formulahendry.code-runner
-if %errorlevel% == 0 (
-(echo Meldung: Code-Runner Extension wurde/ist installiert.
-echo.
-echo >CON) >> %logfile%
-) ELSE (
-(echo Fehler : Bei der Installation von der Code-Runner Extension ist ein Fehler aufgetreten!
-echo.
-echo >CON) >> %logfile%
-)
-
-:: install extension C/C++ and write in logfile
-call %vscerweiterung% --install-extension ms-vscode.cpptools
-if %errorlevel% == 0 (
-(echo Meldung: C/C++ Extension wurde/ist installiert.
-echo.
-echo >CON) >> %logfile%
-) ELSE (
-(echo Fehler: Bei der Installation von der C/C++ Extension ist ein Fehler aufgetreten!
-echo.
-echo >CON) >> %logfile%
-)
-
-:: install extension LiveShare and write in logfile
-call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare
-if %errorlevel% == 0 (
-(echo Meldung: Live Share Extension wurde/ist installiert.
-echo.
-echo >CON) >> %logfile%
-) ELSE (
-(echo Fehler: Bei der Installation von der Live Share Extension ist ein Fehler aufgetreten!
-echo.
-echo >CON) >> %logfile%
-)
-
-:: install extension LiveShare-Audio and write in logfile
-call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare-audio
-if %errorlevel% == 0 (
-(echo Meldung: Live Share Audio Extension wurde/ist installiert.
-echo.
-echo >CON) >> %logfile%
-) ELSE (
-(echo Fehler: Bei der Installation von der Live Share Audio Extension ist ein Fehler aufgetreten!
-echo.
-echo >CON) >> %logfile%
-)
-
-:: create folder if not exist
-if not exist "U:\C_Uebung\" mkdir U:\C_Uebung
-
-:: delete file if exist
-if EXIST "U:\C_Uebung\testprog.c" del U:\C_Uebung\testprog.c
-
-:: create file with following content 
-echo #include ^<stdio.h^> >> %testprogcdatei%
-echo. >> %testprogcdatei%
-echo int main(){ >> %testprogcdatei%
-echo    int x = 0; >> %testprogcdatei%
-echo    x++; >> %testprogcdatei%
-echo    printf("Hello World! x = %%d\n", x); >> %testprogcdatei%
-echo } >> %testprogcdatei%
-
-:: delete file if exist
-if EXIST "U:\Systemordner\Desktop\C_Uebung.cmd" del U:\Systemordner\Desktop\C_Uebung.cmd
-
-:: create batch to open folder in VSCode (in process)
-:: echo if NOT EXIST "%USERPROFILE%\.vscode\installiert.txt" ( >> %cuebungstart%
-:: echo curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeCR.cmd -o %temp%\VSCodeCR.cmd ^&^& %temp%\VSCodeCR.cmd ^&^& del %temp%\VSCodeCR.cmd ^&^& EXIT /B >> %cuebungstart%
-:: echo ) >> %cuebungstart%
-echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r U:\C_Uebung >> %cuebungstart%
-echo EXIT /B >> %cuebungstart%
-
-echo. > "%USERPROFILE%\.vscode\installiert.txt"
-
-(
 echo Installation beendet!
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo >CON) >> %logfile%
 
+:: popup install finished
 echo msgbox"Installation beendet.",vbInformation , "Installation beendet!"> %temp%\msg.vbs 
 %temp%\msg.vbs 
 erase %temp%\msg.vbs
+
+:: open logfile
 start "" %logfile%
+
+:: exit script and close terminal
 EXIT /B
