@@ -1,6 +1,9 @@
 :: created by Can Kocak | 16.04.2022 | Hochschule Hannover
 :: last modified by Can Kocak | 25.10.2022 | Hochschule Hannover
 
+:: setx VSCODE_EXTENSIONS U:\.vscode will be settings there too?
+:: setx VSCODE_APPDATA U\Code
+
 :: Variablen setzen
 @echo off
 set mydate=%date%
