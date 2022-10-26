@@ -42,6 +42,7 @@ if %errorlevel% == 0 (
 
 :: set environment variables
 setx Path "%Path%;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin"
+
 :: create/overwrite settings.json and create direction if not exist
 curl --create-dirs -o U:/.vscode/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/settings.json
 :: create/overwrite launch.json
@@ -50,13 +51,6 @@ curl -o U:/.vscode/Code/User/launch.json https://raw.githubusercontent.com/hshf1
 curl -o U:/.vscode/Code/User/tasks.json https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Computerraum/tasks.json
 :: create/overwrite testprog.c and create direction if not exist - usage is to test debugger and coderunner
 curl --create-dirs -o U:/C_Uebung/testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/testprog.c
-:: start VSCode to surely initialize new environment and close again
-call code
-:: change direction for extensions in environment varbiable for more information look https://github.com/microsoft/vscode/blob/a5f84617e22e6e32afc18a808828f1e233361244/src/vs/platform/environment/node/environmentService.ts#L121
-setx VSCODE_EXTENSIONS U:\.vscode\extensions
-:: change direction for global settings folder in environment variable for more information look https://github.com/microsoft/vscode/blob/a5f84617e22e6e32afc18a808828f1e233361244/src/paths.js
-setx VSCODE_APPDATA U:\.vscode
-timeout /T 5 /NOBREAK && taskkill /im Code.exe /t /f
 :: install vscode extension code-runner
 call %vscerweiterung% --install-extension formulahendry.code-runner
 :: install vscode extension C/C++
@@ -65,6 +59,14 @@ call %vscerweiterung% --install-extension ms-vscode.cpptools
 call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare
 :: install vscode extension Liveshare-Audio
 call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare-audio
+
+xcopy %USERPROFILE%\.vscode U:\ /E /H /C /I
+del %USERPROFILE%\.vscode
+
+:: change direction for extensions in environment varbiable for more information look https://github.com/microsoft/vscode/blob/a5f84617e22e6e32afc18a808828f1e233361244/src/vs/platform/environment/node/environmentService.ts#L121
+setx VSCODE_EXTENSIONS U:\.vscode\extensions
+:: change direction for global settings folder in environment variable for more information look https://github.com/microsoft/vscode/blob/a5f84617e22e6e32afc18a808828f1e233361244/src/paths.js
+setx VSCODE_APPDATA U:\.vscode
 
 :: create batchfile to start vsc with the folge C_Uebung and ensure the environment paths
 echo :: change direction for extensions in environment varbiable > %cuebungstart%
@@ -121,35 +123,23 @@ call %vscerweiterung% --list-extensions > "%temp%/listextension.txt"
 
 :: install extension code-runner and write in logfile
 findstr code-runner "%temp%\listextension.txt"
-if %errorlevel% == 0 (
-    set coderunner_info="Meldung: Code-Runner Extension wurde/ist installiert."
-) ELSE (
-    set coderunner_info="Fehler : Bei der Installation von der Code-Runner Extension ist ein Fehler aufgetreten!"
-)
+if %errorlevel% == 0 ( set coderunner_info="Meldung: Code-Runner Extension wurde/ist installiert."
+) ELSE ( set coderunner_info="Fehler : Bei der Installation von der Code-Runner Extension ist ein Fehler aufgetreten! )
 
 :: install extension C/C++ and write in logfile
 findstr cpptools "%temp%\listextension.txt"
-if %errorlevel% == 0 (
-    set cpptools_info="Meldung: C/C++ Extension wurde/ist installiert."
-) ELSE (
-    set cpptools_info="Fehler: Bei der Installation von der C/C++ Extension ist ein Fehler aufgetreten!"
-)
+if %errorlevel% == 0 ( set cpptools_info="Meldung: C/C++ Extension wurde/ist installiert."
+) ELSE ( set cpptools_info="Fehler: Bei der Installation von der C/C++ Extension ist ein Fehler aufgetreten!" )
 
 :: install extension LiveShare and write in logfile
 findstr liveshare "%temp%\listextension.txt"
-if %errorlevel% == 0 (
-    set liveshare_info="Meldung: Live Share Extension wurde/ist installiert."
-) ELSE (
-    set liveshare_info="Fehler: Bei der Installation von der Live Share Extension ist ein Fehler aufgetreten!"
-)
+if %errorlevel% == 0 ( set liveshare_info="Meldung: Live Share Extension wurde/ist installiert."
+) ELSE ( set liveshare_info="Fehler: Bei der Installation von der Live Share Extension ist ein Fehler aufgetreten!" )
 
 :: install extension LiveShare-Audio and write in logfile
 findstr liveshare-audio "%temp%\listextension.txt"
-if %errorlevel% == 0 (
-    set liveshareaudio_info="Meldung: Live Share Audio Extension wurde/ist installiert."
-) ELSE (
-    set liveshareaudio_info="Fehler: Bei der Installation von der Live Share Audio Extension ist ein Fehler aufgetreten!"
-)
+if %errorlevel% == 0 ( set liveshareaudio_info="Meldung: Live Share Audio Extension wurde/ist installiert."
+) ELSE ( set liveshareaudio_info="Fehler: Bei der Installation von der Live Share Audio Extension ist ein Fehler aufgetreten!" )
 
 :: end install
 
