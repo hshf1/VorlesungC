@@ -55,7 +55,7 @@ curl -o U:/.vscode/Code/User/tasks.json https://github.com/hshf1/VorlesungC/blob
 :: create/overwrite testprog.c and create direction if not exist - usage is to test debugger and coderunner
 curl --create-dirs -o U:/C_Uebung/testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/testprog.c
 :: start VSCode to surely initialize new environment and close again
-call %vscerweiterung% && timeout /T 5 /NOBREAK && taskkill /IM code.exe >nul
+call %vscerweiterung%.exe && timeout /T 5 /NOBREAK && taskkill /IM code.exe >nul
 :: install vscode extension code-runner
 call %vscerweiterung% --install-extension formulahendry.code-runner
 :: install vscode extension C/C++
@@ -119,28 +119,32 @@ if EXIST %tasksjson% (
 echo call %vscerweiterung% --list-extension > "%temp%\listextension.txt"
 
 :: install extension code-runner and write in logfile
-if findstr code-runner "%temp%\listextension.txt" (
+findstr code-runner "%temp%\listextension.txt"
+if %errorlevel% == 0 (
     set coderunner_info="Meldung: Code-Runner Extension wurde/ist installiert."
 ) ELSE (
     set coderunner_info="Fehler : Bei der Installation von der Code-Runner Extension ist ein Fehler aufgetreten!"
 )
 
 :: install extension C/C++ and write in logfile
-if findstr cpptools "%temp%\listextension.txt" (
+findstr cpptools "%temp%\listextension.txt"
+if %errorlevel% == 0 (
     set cpptools_info="Meldung: C/C++ Extension wurde/ist installiert."
 ) ELSE (
     set cpptools_info="Fehler: Bei der Installation von der C/C++ Extension ist ein Fehler aufgetreten!"
 )
 
 :: install extension LiveShare and write in logfile
-if findstr liveshare "%temp%\listextension.txt" (
+findstr liveshare "%temp%\listextension.txt"
+if %errorlevel% == 0 (
     set liveshare_info="Meldung: Live Share Extension wurde/ist installiert."
 ) ELSE (
     set liveshare_info="Fehler: Bei der Installation von der Live Share Extension ist ein Fehler aufgetreten!"
 )
 
 :: install extension LiveShare-Audio and write in logfile
-if findstr liveshare-audio "%temp%\listextension.txt" (
+findstr liveshare-audio "%temp%\listextension.txt"
+if %errorlevel% == 0 (
     set liveshareaudio_info="Meldung: Live Share Audio Extension wurde/ist installiert."
 ) ELSE (
     set liveshareaudio_info="Fehler: Bei der Installation von der Live Share Audio Extension ist ein Fehler aufgetreten!"
