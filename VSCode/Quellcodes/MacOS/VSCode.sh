@@ -5,28 +5,21 @@
 # last modified by Can Kocak | 26.10.2022 | Hochschule Hannover #
 #################################################################
 
-# for install VSCode open terminal and execute following code (copy oneline without #)
+# for install VSCode open terminal and execute following code
 #
 # curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/VSCode.sh | bash 
 #
-# description: load script and execute it with bash shell
+# load script and execute it with bash shell
 
-# for uninstall VSCode open terminal end execute following code (copy oneline without #)
+# for uninstall VSCode open terminal end execute following code
 #
 # curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/VSCode.sh | uninstall=true bash 
 #
-# description: load script and execute it with bash shell while set parameter for this terminal
+# load script and execute it with bash shell while set parameter for this terminal
 
 # get current date and time
 dateinfo=$(date '+%F')
 timeinfo=$(date '+%H:%M:%S')
-
-# check if do install or uninstall
-if [ "$uninstall" = "true" ]; then
-    usageinfo="Deinstallation"
-else
-    usageinfo="Installation"
-fi
 
 # determine systeminformation
 softwareinfo=$(sw_vers)
@@ -42,6 +35,9 @@ fi
 #### begin uninstall if var is true ####
 
 if [ "$uninstall" = "true" ]; then
+    
+    # set uninstall as var for logfile
+    usageinfo="Deinstallation"
 
     ## Stage: doing uninstall ##
 
@@ -80,6 +76,9 @@ if [ "$uninstall" = "true" ]; then
 else
 
     #### begin install if not deinstall ####
+
+    # set install as var for logfile
+    usageinfo="Installation"
 
     ## Stage: doing install ##
 
