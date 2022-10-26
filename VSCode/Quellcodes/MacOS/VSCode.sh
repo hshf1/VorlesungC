@@ -181,34 +181,35 @@ else
         tasksinfo="Fehler: Neue tasks.json konnten nicht erstellt werden."
     fi
 
+    # set installed extensions into a var
     installedextensions=$( code --list-extensions )
 
     # check if code-runner installed
     if echo "$installedextensions" | grep 'code-runner' > /dev/null 2>&1; then
         coderunnerinfo="Meldung: Die Extension Code-Runner wurde erfolgreich installiert."
     else
-        coderunnerinfo="Fehler: Bei der Installation der Extension Code-Runner trat ein Fehler."
+        coderunnerinfo="Fehler: Bei der Installation der Extension Code-Runner trat ein Fehler auf."
     fi
 
     # check if C/C++ installed
-    if echo "$installedextensions" | grep 'affe' > /dev/null 2>&1; then
+    if echo "$installedextensions" | grep 'cpptools' > /dev/null 2>&1; then
         cppinfo="Meldung: Die Extension C/C++ wurde erfolgreich installiert."
     else
-        cppinfo="Fehler: Bei der Installation der Extension C/C++ trat ein Fehler."
+        cppinfo="Fehler: Bei der Installation der Extension C/C++ trat ein Fehler auf."
     fi
 
     # check if liveshare installed
     if echo "$installedextensions" | grep 'liveshare' > /dev/null 2>&1; then
         liveshareinfo="Meldung: Die Extension Live Share wurde erfolgreich installiert."
     else
-        liveshareinfo="Fehler: Bei der Installation der Extension Live Share trat ein Fehler."
+        liveshareinfo="Fehler: Bei der Installation der Extension Live Share trat ein Fehler auf."
     fi
 
     # check if lldb installed
     if echo "$installedextensions" | grep 'lldb' > /dev/null 2>&1; then
         lldbinfo="Meldung: Die Extension lldb Compiler wurde erfolgreich installiert."
     else
-        lldbinfo="Fehler: Bei der Installation der Extension lldb Compiler trat ein Fehler."
+        lldbinfo="Fehler: Bei der Installation der Extension lldb Compiler trat ein Fehler auf."
     fi
 
     #### end install ####
