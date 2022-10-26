@@ -42,10 +42,6 @@ if %errorlevel% == 0 (
 
 :: set environment variables
 setx Path "%Path%;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Dev-Cpp\MinGW64\bin"
-:: change direction for extensions in environment varbiable for more information look https://github.com/microsoft/vscode/blob/a5f84617e22e6e32afc18a808828f1e233361244/src/vs/platform/environment/node/environmentService.ts#L121
-setx VSCODE_EXTENSIONS U:\.vscode\extensions
-:: change direction for global settings folder in environment variable for more information look https://github.com/microsoft/vscode/blob/a5f84617e22e6e32afc18a808828f1e233361244/src/paths.js
-setx VSCODE_APPDATA U:\.vscode
 :: create/overwrite settings.json and create direction if not exist
 curl --create-dirs -o U:/.vscode/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/settings.json
 :: create/overwrite launch.json
@@ -55,7 +51,12 @@ curl -o U:/.vscode/Code/User/tasks.json https://github.com/hshf1/VorlesungC/blob
 :: create/overwrite testprog.c and create direction if not exist - usage is to test debugger and coderunner
 curl --create-dirs -o U:/C_Uebung/testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/testprog.c
 :: start VSCode to surely initialize new environment and close again
-call code && timeout /T 5 /NOBREAK && taskkill /im Code.exe /t /f
+call code
+:: change direction for extensions in environment varbiable for more information look https://github.com/microsoft/vscode/blob/a5f84617e22e6e32afc18a808828f1e233361244/src/vs/platform/environment/node/environmentService.ts#L121
+setx VSCODE_EXTENSIONS U:\.vscode\extensions
+:: change direction for global settings folder in environment variable for more information look https://github.com/microsoft/vscode/blob/a5f84617e22e6e32afc18a808828f1e233361244/src/paths.js
+setx VSCODE_APPDATA U:\.vscode
+timeout /T 5 /NOBREAK && taskkill /im Code.exe /t /f
 :: install vscode extension code-runner
 call %vscerweiterung% --install-extension formulahendry.code-runner
 :: install vscode extension C/C++
@@ -116,7 +117,7 @@ if EXIST %tasksjson% (
     set tasksjson_info="Fehler : Neue tasks.json konnte nicht erfolgreich erstellt werden!"
 )
 
-call %vscerweiterung% --list-extension > "%temp%\listextension.txt"
+call %vscerweiterung% --list-extensions > "%temp%/listextension.txt"
 
 :: install extension code-runner and write in logfile
 findstr code-runner "%temp%\listextension.txt"
@@ -153,6 +154,7 @@ if %errorlevel% == 0 (
 :: end install
 
 :: begin logfile
+
 (
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
