@@ -60,7 +60,7 @@ call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare
 call %vscerweiterung% --install-extension ms-vsliveshare.vsliveshare-audio
 
 if EXIST U:\.vscode if NOT EXIST U:\.vscode\extensions del U:\.vscode
-if NOT EXIST U:\.vscode xcopy %USERPROFILE%\.vscode U:\ /E /H /C /I
+if NOT EXIST U:\.vscode xcopy %USERPROFILE%\.vscode U:\.vscode /E /H /C /I
 del %USERPROFILE%\.vscode
 
 :: change direction for extensions in environment varbiable for more information look https://github.com/microsoft/vscode/blob/a5f84617e22e6e32afc18a808828f1e233361244/src/vs/platform/environment/node/environmentService.ts#L121
@@ -141,12 +141,13 @@ findstr liveshare-audio "%temp%\listextension.txt"
 if %errorlevel% == 0 ( set liveshareaudio_info="Meldung: Live Share Audio Extension wurde/ist installiert."
 ) ELSE ( set liveshareaudio_info="Fehler: Bei der Installation von der Live Share Audio Extension ist ein Fehler aufgetreten!" )
 
+del %temp%/listextension.txt
+
 :: end install
 
 :: begin logfile
 
-(
-echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
+(echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo ---------------------------------------------------------------------------------------------------------------------------------------------------------
 echo Logfile zur Installation von VSCode für Windows-Computerraum am %mydate% um %mytime%.
 echo.
