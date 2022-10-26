@@ -184,28 +184,28 @@ else
     installedextensions=$( code --list-extensions )
 
     # check if code-runner installed
-    if [ echo "$installedextensions" | grep 'code-runner' > /dev/null 2>&1 ]; then
+    if echo "$installedextensions" | grep 'code-runner' > /dev/null 2>&1; then
         coderunnerinfo="Meldung: Die Extension Code-Runner wurde erfolgreich installiert."
     else
         coderunnerinfo="Fehler: Bei der Installation der Extension Code-Runner trat ein Fehler."
     fi
 
     # check if C/C++ installed
-    if [ echo code --list-extensions | grep cpptoolss ]; then
+    if echo "$installedextensions" | grep 'affe' > /dev/null 2>&1; then
         cppinfo="Meldung: Die Extension C/C++ wurde erfolgreich installiert."
     else
         cppinfo="Fehler: Bei der Installation der Extension C/C++ trat ein Fehler."
     fi
 
     # check if liveshare installed
-    if [ code --list-extensions | grep liveshare ]; then
+    if echo "$installedextensions" | grep 'liveshare' > /dev/null 2>&1; then
         liveshareinfo="Meldung: Die Extension Live Share wurde erfolgreich installiert."
     else
         liveshareinfo="Fehler: Bei der Installation der Extension Live Share trat ein Fehler."
     fi
 
     # check if lldb installed
-    if [ code --list-extensions | grep -q code-runner ]; then
+    if echo "$installedextensions" | grep 'lldb' > /dev/null 2>&1; then
         lldbinfo="Meldung: Die Extension lldb Compiler wurde erfolgreich installiert."
     else
         lldbinfo="Fehler: Bei der Installation der Extension lldb Compiler trat ein Fehler."
