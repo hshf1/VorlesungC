@@ -1,0 +1,62 @@
+// settings.json for Windows
+
+{
+    // Allgemeine Nutzereinstellungen
+    "liveshare.anonymousGuestApproval": "accept",   // Live Share eingeladene Anonyme Nutzer automatisch akzeptieren
+    "liveshare.guestApprovalRequired": false,       // Live Share um eingeladene Nutzer automatisch zu akzeptieren auf false einstellen
+    "extensions.ignoreRecommendations": true,       // Keine Empfehlungen mehr Anzeigen
+    "files.encoding": "cp437",                      // Zur richtigen Darstellung von Umlauten
+    //"files.autoGuessEncoding": true,              // Zurzeit, deaktiviert, da noch instabil! Automatische Anpassung der Encodierung, falls möglich
+    "editor.unicodeHighlight.nonBasicASCII": false, // Nicht Basic ASCII Zeichen nicht hervorheben
+    "files.autoSave": "onFocusChange",              // Dateien werden bei Änderungen des Fokus automatisch gespeichert
+    "code-runner.saveFileBeforeRun": true,          // speichert aktuelle Datei bevor sie mit CodeRunner ausgef�hrt wird
+    "editor.bracketPairColorization.enabled": true, // Um Klammern und andere farbig darzustellen
+    "editor.insertSpaces": true,                    // Ersezt ein Tab durch Leerzeichen
+    "editor.tabSize": 4,                            // Setzt die Zahl der durch einen Tab zu ersetzenden Leerzeichen
+    "editor.renderWhitespace": "none",              // Zeigt keine Leerzeichen ein 
+    //"editor.renderWhitespace": "selection",       // Nur im markierten Bereich Leerzeichen anzeigen
+    "extensions.autoUpdate": false,                 // Deaktivieren von Auto-Updates der Extensions
+    "C_Cpp.debugShortcut": false,                   // Deaktivieren der instabilen neue Funktion von C/C++ Erweiterung
+    "code-runner.runInTerminal": true,              // Um Eingaben in seinem Programm tätigen zu können z.B. für scanf
+    "code-runner.preserveFocus": false,             // damit springt man automatisch ins Terminal bei Abarbeitung
+    "code-runner.executorMap": {
+        "c": "clear && cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword",
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            }
+        ]
+    },
+    // Einstellungen für den Debugger
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "cppdbg",
+                "request": "launch",
+                "name": "debuggen",
+                "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "args": [],
+                "stopAtEntry": false,
+                "cwd": "${workspaceFolder}",
+                "environment": [],
+                "externalConsole": false,
+                "MIMode": "gdb",
+                "miDebuggerPath": "C:\\ProgramData\\chocolatey\\bin\\gdb.exe",
+                "setupCommands": [
+                    {
+                        "description": "Automatische Strukturierung und Einrückung für \"gdb\" aktivieren",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    }
+                ],
+                "preLaunchTask": "C/C++: gcc.exe Aktive Datei kompilieren"
+            }
+        ]
+    }
+}
