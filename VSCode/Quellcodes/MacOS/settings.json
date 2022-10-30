@@ -1,7 +1,7 @@
 // settings.json for MacOS
 
 {
-    // Allgemeine Nutzereinstellungen
+ // Allgemeine Nutzereinstellungen
  "liveshare.anonymousGuestApproval": "accept",   // Live Share eingeladene Anonyme Nutzer automatisch akzeptieren
  "liveshare.guestApprovalRequired": false,       // Live Share um eingeladene Nutzer automatisch zu akzeptieren auf false einstellen
  "extensions.ignoreRecommendations": true,       // Keine Empfehlungen mehr Anzeigen
@@ -19,24 +19,4 @@
  "code-runner.runInTerminal": true,              // Um Eingaben in seinem Programm tätigen zu können z.B. für scanf
  "code-runner.preserveFocus": false,             // damit springt man automatisch ins Terminal bei Abarbeitung
  "code-runner.defaultLanguage": "C",
-     // Einstellungen für den Debugger
-     "launch": {
-         "version": "0.2.0",
-         "configurations": [
-             {
-             "type": "lldb",
-             "request": "launch",
-             "name": "debuggen",
-             "runtimeExecutable": "/usr/bin/gcc",
-             "program": "${fileDirname}/${fileBasenameNoExtension}",
-             "args": [],
-             "stopAtEntry": false,
-             "cwd": "${fileDirname}",
-             "environment": [],
-             "externalConsole": false,
-             "MIMode": "lldb",
-             "preLaunchTask": "C/C++: gcc Aktive Datei kompilieren"
-             }
-         ]
-     }
- }
+}
