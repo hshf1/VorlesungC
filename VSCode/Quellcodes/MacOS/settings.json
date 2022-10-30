@@ -1,22 +1,41 @@
 // settings.json for MacOS
-
 {
- // Allgemeine Nutzereinstellungen
- "liveshare.anonymousGuestApproval": "accept",   // Live Share eingeladene Anonyme Nutzer automatisch akzeptieren
- "liveshare.guestApprovalRequired": false,       // Live Share um eingeladene Nutzer automatisch zu akzeptieren auf false einstellen
- "extensions.ignoreRecommendations": true,       // Keine Empfehlungen mehr Anzeigen
- "files.encoding": "utf8",                       // Zur richtigen Darstellung von Umlauten
- //"files.autoGuessEncoding": true,              // Zurzeit deaktiviert, da noch instabil! Automatische Anpassung der Encodierung, falls möglich
- "editor.unicodeHighlight.nonBasicASCII": false, // Nicht Basic ASCII Zeichen nicht hervorheben
- "files.autoSave": "onFocusChange",              // Dateien werden bei Änderungen des Fokus automatisch gespeichert
- "code-runner.saveFileBeforeRun": true,          // speichert aktuelle Datei bevor sie mit CodeRunner ausgeführt wird
- "editor.bracketPairColorization.enabled": true, // Um Klammern und andere farbig darzustellen
- "editor.insertSpaces": true,                    // Ersetzt ein Tab durch Leerzeichen
- "editor.tabSize": 4,                            // Setzt die Zahl der durch einen Tab zu ersetzenden Leerzeichen
- "editor.renderWhitespace": "none",              // Zeigt keine Leerzeichen ein 
- //"editor.renderWhitespace": "selection",       // Nur im markierten Bereich Leerzeichen anzeigen
- "C_Cpp.debugShortcut": false,                   // Deaktivieren der nicht getesteten neuen Funktion von C/C++ Erweiterung
- "code-runner.runInTerminal": true,              // Um Eingaben in seinem Programm tätigen zu können z.B. für scanf
- "code-runner.preserveFocus": false,             // damit springt man automatisch ins Terminal bei Abarbeitung
- "code-runner.defaultLanguage": "C",
+    // Allgemeine Nutzereinstellungen
+    "liveshare.anonymousGuestApproval": "accept", // Live Share eingeladene Anonyme Nutzer automatisch akzeptieren
+    "liveshare.guestApprovalRequired": false, // Live Share um eingeladene Nutzer automatisch zu akzeptieren auf false einstellen
+    "extensions.ignoreRecommendations": true, // Keine Empfehlungen mehr Anzeigen
+    "files.encoding": "utf8", // Zur richtigen Darstellung von Umlauten
+    //"files.autoGuessEncoding": true,              // Zurzeit deaktiviert, da noch instabil! Automatische Anpassung der Encodierung, falls möglich
+    "editor.unicodeHighlight.nonBasicASCII": false, // Nicht Basic ASCII Zeichen nicht hervorheben
+    "files.autoSave": "onFocusChange", // Dateien werden bei Änderungen des Fokus automatisch gespeichert
+    "code-runner.saveFileBeforeRun": true, // speichert aktuelle Datei bevor sie mit CodeRunner ausgeführt wird
+    "editor.bracketPairColorization.enabled": true, // Um Klammern und andere farbig darzustellen
+    "editor.insertSpaces": true, // Ersetzt ein Tab durch Leerzeichen
+    "editor.tabSize": 4, // Setzt die Zahl der durch einen Tab zu ersetzenden Leerzeichen
+    "editor.renderWhitespace": "none", // Zeigt keine Leerzeichen ein 
+    //"editor.renderWhitespace": "selection",       // Nur im markierten Bereich Leerzeichen anzeigen
+    "C_Cpp.debugShortcut": false, // Deaktivieren der nicht getesteten neuen Funktion von C/C++ Erweiterung
+    "code-runner.runInTerminal": true, // Um Eingaben in seinem Programm tätigen zu können z.B. für scanf
+    "code-runner.preserveFocus": false, // damit springt man automatisch ins Terminal bei Abarbeitung
+    "code-runner.defaultLanguage": "C",
+    // Einstellungen für den Debugger
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "lldb",
+                "request": "launch",
+                "name": "debuggen",
+                "runtimeExecutable": "/usr/bin/gcc",
+                "program": "${fileDirname}/${fileBasenameNoExtension}",
+                "args": [],
+                "stopAtEntry": false,
+                "cwd": "${fileDirname}",
+                "environment": [],
+                "externalConsole": false,
+                "MIMode": "lldb",
+                "preLaunchTask": "C/C++: gcc Aktive Datei kompilieren"
+            }
+        ]
+    }
 }
