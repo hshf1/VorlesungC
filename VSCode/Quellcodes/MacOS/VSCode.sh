@@ -66,8 +66,6 @@ else
 
     # create/overwrite settings.json and create direction if not exist
     curl --create-dirs -o ~/Library/Application\ Support/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/settings.json
-    # create/overwrite launch.json
-    curl -o ~/Library/Application\ Support/Code/User/launch.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/launch.json
     # create/overwrite tasks.json
     curl -o ~/Library/Application\ Support/Code/User/tasks.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/tasks.json
     # create/overwrite testprog.c and create direction if not exist - usage is to test debugger and coderunner
