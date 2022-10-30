@@ -2,7 +2,7 @@
 ::                          VSCode Installation for Computerraum ::
 ::                   created for Hochschule Hannover Vorlesung C ::
 ::       created by Can Kocak | 19.04.2022 | Hochschule Hannover ::
-:: last modified by Can Kocak | 26.10.2022 | Hochschule Hannover ::
+:: last modified by Can Kocak | 30.10.2022 | Hochschule Hannover ::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :: to install the configuration for VSCode open terminal (no need for being administrator) and execute following code (copy as oneline without ::)
