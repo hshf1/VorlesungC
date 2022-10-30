@@ -2,7 +2,7 @@
 ::                          VSCode Installation for Computerraum ::
 ::                   created for Hochschule Hannover Vorlesung C ::
 ::       created by Can Kocak | 19.04.2022 | Hochschule Hannover ::
-:: last modified by Can Kocak | 30.10.2022 | Hochschule Hannover ::
+:: last modified by Can Kocak | 31.10.2022 | Hochschule Hannover ::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :: to install the configuration for VSCode open terminal (no need for being administrator) and execute following code (copy as oneline without ::)
@@ -39,7 +39,7 @@ call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension ms-vscode
 call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension ms-vsliveshare.vsliveshare
 :: install vscode extension Liveshare-Audio
 call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension ms-vsliveshare.vsliveshare-audio
-:: create batchfile to start vsc with the folge C_Uebung and ensure the environment paths
+:: create batchfile to start vsc with the folder C_Uebung
 echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r U:\C_Uebung > "U:\Systemordner\Desktop\C_Uebung.cmd"
 echo EXIT /B >> "U:\Systemordner\Desktop\C_Uebung.cmd"
 
