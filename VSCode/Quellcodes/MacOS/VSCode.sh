@@ -52,9 +52,8 @@ else
         rm ~/Downloads/vsc.zip
     fi
 
-    # install compiler if exist do nothing
+    # install compiler if not exist
     command xcode-select --install
-    fi
 
     # set environmentpath
     cat <<-EOF >>~/.bash_profile
@@ -92,7 +91,9 @@ else
     }" > ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
     # link vscode workspace on the desktop - then the desktop link can be moved anywhere
     ln -sf ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace ~/Desktop/C_Uebung.code-workspace
+    
     #### end install ####
+    
 fi
 
 # output just in terminal
