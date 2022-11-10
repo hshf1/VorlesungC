@@ -230,7 +230,8 @@ echo '{
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-lm"
             ],
             "options": {
                 "cwd": "${fileDirname}"
