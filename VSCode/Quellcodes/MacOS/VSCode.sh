@@ -71,8 +71,10 @@ else
     code --install-extension formulahendry.code-runner
     # VSCode Extension C/C++ installieren
     code --install-extension ms-vscode.cpptools
-    # VSCode Extension Liveshare and Liveshare-Audio installieren
-    code --install-extension ms-vsliveshare.vsliveshare-pack
+    # VSCode Extension Liveshare installieren
+    code --install-extension ms-vsliveshare.vsliveshare
+    # VSCode Extension Liveshare-Audio installieren
+    code --install-extension ms-vsliveshare.vsliveshare-audio
     # VSCode Extension lldb installieren - nötig für Compiler
     code --install-extension vadimcn.vscode-lldb
     # Erstellen/Überschreiben von C_Uebung.code-workspace
