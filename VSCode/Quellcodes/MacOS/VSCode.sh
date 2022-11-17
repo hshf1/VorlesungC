@@ -61,6 +61,8 @@ else
 
     # Erstellen/Überschreiben von settings.json und Ordner erstellen, wenn nicht existiert
     curl --create-dirs -o ~/Library/Application\ Support/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/settings.json
+    # Erstellen/Überschreiben von launch.json
+    curl -o ~/Library/Application\ Support/Code/User/launch.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/launch.json
     # Erstellen/Überschreiben von tasks.json
     curl -o ~/Library/Application\ Support/Code/User/tasks.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/tasks.json
     # Erstellen/Überschreiben von testprog.c und Ordner erstellen, wenn nicht existiert
