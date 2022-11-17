@@ -1,84 +1,79 @@
 #################################################################
-#                                 VSCode Installation for MacOS #
-#                   created for Hochschule Hannover Vorlesung C #
-#       created by Can Kocak | 16.04.2022 | Hochschule Hannover #
-# last modified by Can Kocak | 30.10.2022 | Hochschule Hannover #
+#                                 VSCode Installation für MacOS #
+#                             Hochschule Hannover - Vorlesung C #
+#                                zuletzt geändert am 17.11.2022 #
 #################################################################
 
-# for install VSCode open terminal and execute following code
+# zum installieren folgenden Code im Terminal ausführen (ohne #)
 #
 # curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/VSCode.sh | bash 
-#
-# load script and execute it with bash shell
 
-# for uninstall VSCode open terminal end execute following code
+# zum deinstallieren folgenden Code im Terminal ausführen (ohne #)
 #
 # curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/VSCode.sh | uninstall=true bash 
-#
-# load script and execute it with bash shell while set parameter for this terminal
-
-#### begin uninstall if var is true ####
 
 if [ "$uninstall" = "true" ]; then
+
+    #### Beginn Deinstallation, wenn uninstall=true ####
     
-    # set uninstall as var
+    # Setzen der Verwendung als Variable
     usageinfo="Deinstallation"
 
-    # Löschen von VSCode und Ausgabe in der Logdatei
+    # Löschen von VSCode
     rm -R /Applications/Visual\ Studio\ Code.app
-    # Löschen aller Einstellungen und Ausgabe in der Logdatei
+    # Löschen aller Einstellungen
     rm -R ~/Library/Application\ Support/Code
-    # Löschen aller Extensions und Ausgabe in der Logdatei
+    # Löschen aller Extensions
     rm -R ~/.vscode
+    # Löschen der Verknüpfung auf dem Bildschirm
+    rm -R ~/Desktop/C_Uebung.code-workspace
 
-    #### end uninstall ####
+    #### Ende Deinstallation ####
 
 else
 
-    #### begin install if not deinstall ####
+    #### Beginn Installation, wenn uninstall!=true ####
 
-    # set install as var
+    # Setzen der Verwendung als Variable
     usageinfo="Installation"
 
-    # check vscode if not exist install
+    # VSCode installieren, falls nicht vorhanden
     if [ -e "/Applications/Visual Studio Code.app" ]; then
     echo >nul
     else
-        # download/overwrite vsc.zip
+        # Downloaden der Zip
         curl -o ~/Downloads/vsc.zip https://az764295.vo.msecnd.net/stable/dfd34e8260c270da74b5c2d86d61aee4b6d56977/VSCode-darwin-universal.zip
-        # unzip with target Applications
+        # unzip mit Zielordner /Applications
         unzip ~/Downloads/vsc.zip -d /Applications
-        # after unzip delete zipfile
-        rm ~/Downloads/vsc.zip
+        # Nach unzip die zip in Downloads löschen
+        rm -R ~/Downloads/vsc.zip
     fi
 
-    # install compiler if not exist
+    # Compiler installieren, falls nicht vorhanden
     command xcode-select --install
 
-    # set environmentpath
+    # Umgebungsvariable für die aktuelle Terminalsitzung hinzufügen und aktualisieren
     cat <<-EOF >>~/.bash_profile
 	# Add Visual Studio Code (code)
 	export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 	EOF
-
-    # refresh terminal bash profile with new environmentpath
     source ~/.bash_profile
 
-    # create/overwrite settings.json and create direction if not exist
+    # Erstellen/Überschreiben von settings.json und Ordner erstellen, wenn nicht existiert
     curl --create-dirs -o ~/Library/Application\ Support/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/settings.json
-    # create/overwrite tasks.json
+    # Erstellen/Überschreiben von tasks.json
     curl -o ~/Library/Application\ Support/Code/User/tasks.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/tasks.json
-    # create/overwrite testprog.c and create direction if not exist - usage is to test debugger and coderunner
+    # Erstellen/Überschreiben von testprog.c und Ordner erstellen, wenn nicht existiert
     curl --create-dirs -o ~/Documents/C_Uebung/testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/testprog.c
-    # install vscode extension code-runner
+    # VSCode Extension code-runner installieren
     code --install-extension formulahendry.code-runner
-    # install vscode extension C/C++
+    # VSCode Extension C/C++ installieren
     code --install-extension ms-vscode.cpptools
-    # install vscode extension Liveshare and Liveshare-Audio
+    # VSCode Extension Liveshare and Liveshare-Audio installieren
     code --install-extension ms-vsliveshare.vsliveshare-pack
-    # install vscode extension lldb (compiler)
+    # VSCode Extension lldb installieren - nötig für Compiler
     code --install-extension vadimcn.vscode-lldb
-    # create/overwrite vscode workspace
+    # Erstellen/Überschreiben von C_Uebung.code-workspace
     echo "
     {
         \"folders\": [
@@ -87,14 +82,14 @@ else
             }
         ]
     }" > ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
-    # link vscode workspace on the desktop - then the desktop link can be moved anywhere
+    # Verknüpfung von C_Uebung.code-workspace auf Desktop - so kann es überall hinverschoben oder umbenannt werden
     ln -sf ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace ~/Desktop/C_Uebung.code-workspace
     
-    #### end install ####
+    #### Ende Installation ####
     
 fi
 
-# output just in terminal
+# Output im Terminal
 echo "$usageinfo beendet! Das Terminal kann jetzt geschlossen werden."
 
 # exit script
