@@ -1,8 +1,8 @@
-#################################################################
-#                                VSCode Fehleranalyse für MacOS #
-#                             Hochschule Hannover - Vorlesung C #
-#                                zuletzt geändert am 18.11.2022 #
-#################################################################
+#####################################
+#    VSCode Fehleranalyse für MacOS #
+# Hochschule Hannover - Vorlesung C #
+#    zuletzt geändert am 18.11.2022 #
+#####################################
 
 # zur Fehleranalyse folgenden Code im Terminal ausführen (ohne #)
 #
@@ -152,8 +152,7 @@ Versionen installierter VSCode Extensions:
 $installedextensions
 
 Fehleranalyse beendet!
--------------------------------------------------------------------------------------------
-" >> ~/Desktop/logVSC.txt
+-------------------------------------------------------------------------------------------" >> ~/Desktop/logVSC.txt
     
 #### Ende Fehleranalyse ####
 
