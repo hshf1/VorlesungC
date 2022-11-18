@@ -8,7 +8,7 @@
 <!--Start Anleitung-->
 # VSCode Installationsanleitung
 
-Dies ist eine Anleitung (von Studenten für Studenten) zur Installation von VSCode für die Vorlesung C. Für die Installation ist es erforderlich, dass über <b>Adminrechte</b> verfügt wird.<br />
+Dies ist eine Anleitung (von Studenten für Studenten) zur Installation von VSCode für die Vorlesung C.<br />
 
 Sollten Probleme auftreten, könnt ihr die in dieser Anleitung erklärte Fehleranalyse ausführen. Dort werden einige mögliche Fehler ausfindig gemacht und ein Fehlercode ausgegeben. Hier kann dann nach einer Lösung geschaut werden: [03_Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md). <br />
 
@@ -105,10 +105,8 @@ Die in der LogFile angezeigten Fehler enthalten Fehlercodes, die in der [Fehlerb
 <!--Neue Windows-Anleitung ohne Download-->
 <details>
 <summary>VSCode auf Windows installieren.</summary>
-<br />
-AKTUELLER HINWEIS: Auf Windows 11 bzw. an Windowssystemen, die OneDrive nutzen, kommt es zurzeit zu einer Fehlermeldung am Ende der Installation, dass der Pfad für die LogDatei nicht gefunden wurde. Dies wird demnächst behoben, hat jedoch keine Auswirkung auf die Installation. VSCode kann dennoch nach der Installation genutzt werden!
-<br /><br />
-Für die Installation ist die Windows Eingabeaufforderung (Windows Terminal) als Administrator zu starten.<br /><br />
+
+Für die Installation ist die Windows Eingabeaufforderung (Windows Terminal) als <b>Administrator</b> zu starten.<br /><br />
   
 ![Screenshot (29)_LI](https://user-images.githubusercontent.com/100713757/197366401-965de1cc-424d-459d-beeb-154240fe5653.jpg)
 
