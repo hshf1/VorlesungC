@@ -100,7 +100,7 @@ Die in der LogFile angezeigten Fehler enthalten Fehlercodes, die in der [Fehlerb
 <!--Ende MacOS-Anleitung-->
 
 <!--Start Windows-Anleitung-->
-## Windows
+## <p align="center">Windows</p>
 <!--Neue Windows-Anleitung ohne Download-->
 <details>
 <summary>VSCode auf Windows installieren.</summary>
@@ -132,42 +132,6 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
   
 </details>  
 <!--Ende neue Windows-Anleitung ohne Download-->
-
-<!-- Alte Windows-Anleitung wird auskommentiert
-<details> 
-<summary>Mit Download VSCode auf Windows installieren.</summary> 
-<br />
-AKTUELLER HINWEIS: Auf Windows 11 bzw. an Windowssystemen, die OneDrive nutzen, kommt es zurzeit zu einer Fehlermeldung am Ende der Installation, dass der Pfad für die LogDatei nicht gefunden wurde. Dies wird demnächst behoben, hat jedoch keine Auswirkung auf die Installation. VSCode kann dennoch nach der Installation genutzt werden!
-<br /><br />
-Ihr könnt die Installation bei Problemen oder bei bereits installiertem VSCode ohne etwas deinstallieren zu müssen einfach ausführen. <br />
-Es werden automatisch nur fehlende oder unvollständige installationen durchgeführt. <br /><br />
-
-<a href="https://github.com/hshf1/VorlesungC/files/9840676/installVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.06_21.10.2022-success?logo=windows" height="50" /></a>
-
-<br /><br />
-
-Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
-![Screenshot (18)](https://user-images.githubusercontent.com/100713757/166149097-c7db2762-97ca-4e0d-8d5a-8b200b9b0154.png)
-  
-Mit einem rechtsklick starten wir die Datei mit Administrationsrechten.
-![Screenshot (19)_LI](https://user-images.githubusercontent.com/100713757/166149297-687bde95-dcd8-4953-a427-0f4aa85b07bf.jpg)
-
-Es kann die Meldung auftauchen, dass Windows den Computer schützt. Das kommt standardmäßig bei allen Batch-Dateien vor, die aus dem Internet runtergeladen werden. In diesem Fall klickt ihr auf weitere Informationen und anschließend auf den erscheinenden Button <b>Trotzdem ausführen</b>.
-![Screenshot (20)_LI](https://user-images.githubusercontent.com/100713757/166149294-92720791-6f03-44db-af79-039775eeab98.jpg)
-![Screenshot (21)_LI](https://user-images.githubusercontent.com/100713757/166149327-3bf6a5d3-277c-4748-bc6d-35f3116d4f44.jpg)
-
-Nun läuft die Installation von alleine und meldet euch, wenn es fertig ist.
-![Screenshot (22)](https://user-images.githubusercontent.com/100713757/166149376-7700c166-11da-442f-a8ab-68e2da784fe9.png)
-
-Bei der Meldung klicken wir auf <b>OK</b>, dass Terminal schließt nun automatisch und es erscheint ein Logfile, welches sich auf eurem Desktop befindet.
-![Screenshot (23)](https://user-images.githubusercontent.com/100713757/166149506-b4171410-2132-45ac-af4d-1284638c1e3d.png)
-  
-Ist kein Fehler aufgetreten könnt ihr die Logfile auch wieder löschen. Sollten Probleme oder Fehler auftauchen, stehen diese da drin.
-Zur Problembehandlung könnt ihr im Logfile sehen, was nicht geklappt hat. Solltet ihr das Problem nicht beheben können, schickt bitte die Logfile mit als Anhang.
-  
-Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
-</details>
-Alte Windows-Anleitung Ende der Auskommentierung-->
     
 <details>
 <summary>VSCode ist bereits installiert.</summary>
@@ -204,44 +168,12 @@ Zur Problembehandlung könnt ihr im Logfile sehen, was nicht geklappt hat. Sollt
 Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
   
 </details>
-  
-<!--Alte Deinstallation für Windows auskommentiert
-  <details>
-  <summary>Hier klicken, um bei anhaltenden Fehlern VSCode zu deinstallieren und neu zu installieren.</summary>
-<br />
-Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. Danach kann man erneut die oben beschriebene Installation durchführen.
-<br /><br />
 
-<a href="https://github.com/hshf1/VorlesungC/files/8936792/uninstallVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.01_20.06.2022-success?logo=windows" height="50" /></a>
-<br /><br />
-  
-Die Datei im ZIP-Ordner entpacken wir, z.B. in Downloads oder Desktop.
-![Screenshot (18)](https://user-images.githubusercontent.com/100713757/166149097-c7db2762-97ca-4e0d-8d5a-8b200b9b0154.png)
-  
-Mit einem rechtsklick starten wir die Datei mit Administrationsrechten.
-![Screenshot (19)_LI](https://user-images.githubusercontent.com/100713757/166149297-687bde95-dcd8-4953-a427-0f4aa85b07bf.jpg)
-
-Es kann die Meldung auftauchen, dass Windows den Computer schützt. Das kommt standardmäßig bei allen Batch-Dateien vor, die aus dem Internet runtergeladen werden. In diesem Fall klickt ihr auf weitere Informationen und anschließend auf den erscheinenden Button <b>Trotzdem ausführen</b>.
-![Screenshot (20)_LI](https://user-images.githubusercontent.com/100713757/166149294-92720791-6f03-44db-af79-039775eeab98.jpg)
-![Screenshot (21)_LI](https://user-images.githubusercontent.com/100713757/166149327-3bf6a5d3-277c-4748-bc6d-35f3116d4f44.jpg)
-
-Nun läuft die Deinstallation von alleine und meldet euch, wenn es fertig ist.
-![Screenshot (22)](https://user-images.githubusercontent.com/100713757/166149376-7700c166-11da-442f-a8ab-68e2da784fe9.png)
-
-Bei der Meldung klicken wir auf <b>OK</b>, dass Terminal schließt nun automatisch und es erscheint ein Logfile, welches sich auf eurem Desktop befindet.
-![Screenshot (23)](https://user-images.githubusercontent.com/100713757/166149506-b4171410-2132-45ac-af4d-1284638c1e3d.png)
-  
-Ist kein Fehler aufgetreten könnt ihr die Logfile auch wieder löschen. Sollten Probleme oder Fehler auftauchen, stehen diese da drin.
-Zur Problembehandlung könnt ihr im Logfile sehen, was nicht geklappt hat. Solltet ihr das Problem nicht beheben können, schickt bitte die Logfile mit als Anhang.
-    
-Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
-    
-  </details>
-Deinstallation Ende der Auskommentierung-->
 <!--Ende Windows-Anleitung-->
 
 <!--Start Linux-Anleitung-->
-## Linux
+
+## <p align="center">Linux</p>
 
 <!--Neue Linux-Anleiung-->
 <details>
@@ -262,31 +194,6 @@ Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Deskto
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
 
 </details>
-
-<!--Alte Linux-Anleitung
-<details>
-  <summary>Hier klicken, um VSCode auf Linux zu installieren.</summary>
-<br />
-Bisher getestet für: Ubuntu / Zorin 15.3<br /><br />
-<a href="https://github.com/hshf1/VorlesungC/files/9541810/installVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.00_10.09.2022-success?logo=linux" height="50" /></a>
-<br /><br />
-Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop). <br />
-<img width="401" alt="Bildschirmfoto 2022-04-17 um 05 35 45" src="https://user-images.githubusercontent.com/100713757/163699203-aff40972-d3a1-4212-ad96-71e6606950f9.png"> <br />
-  
-Nun öffnet ihr das Terminal <br />
-<img width="566" alt="Bildschirmfoto 2022-04-17 um 05 31 43" src="https://user-images.githubusercontent.com/100713757/163699216-b1eb7dd1-ffce-4bcd-be21-1691adaf0c6b.png">
-  
-und gebt folgendes ein:
-  
-> sh ~/Desktop/installVSCode.sh
-  
-<img width="561" alt="Bildschirmfoto 2022-04-17 um 05 38 53" src="https://user-images.githubusercontent.com/100713757/163699298-7f71c5ab-07f6-43cd-857b-e3eb61dab502.png">
-
-Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Desktop) befindende Logfile, die ihr nach erfolgreicher Installation löschen könnt. Bei anhaltenden Problemen bitte diesen Logfile im Anhang per Mail abschicken.
-
-Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
-</details>
-Ende alte Linux-Anleitung-->
 
 <details>
 <summary>Hier klicken, falls VSCode schon installiert ist.</summary>
@@ -403,5 +310,7 @@ Von hier aus können wir unseren Ordner dann auswählen und debuggen können.
 Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
 </details>
 Alte CR-Anleitung Ende Auskommentierung-->
+
 <!--Ende Computerraum-Anleitung-->
+
 <!--Ende Anleitung-->
