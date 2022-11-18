@@ -110,14 +110,15 @@ echo -e "-----------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
 Logfile zur Fehleranalyse von VSCode für MacOS am $dateinfo um $timeinfo.
 
-Die aktuelle Version gibt es hier:
-https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
+Die meisten Probleme lassen sich beheben, indem die VSCode Installation erneut ausgeführt wird.
+Es kann auch hilfreich sein, zuerst die Deinstallation auszuführen und dann erneut die Installation. 
+VSCode Installation: https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
 
-Bei Fehlern könnt ihr hier nach Lösungen schauen:
-https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
+Einige Fehler können hier entdeckt werden. Diese sind am Ende der Zeile mit einem Fehlercode bezeichnet.
+Unter Fehlerbebehung: https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
+kann nach den Fehlercodes gesucht werden, um zu sehen, wie diese behoben werden können.
+
 Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
-
-Fehler sind an \"Fehler :\" zu erkennen. Sind keine Fehler vorhanden, dann kann diese Datei gelöscht werden.
 -------------------------------------------------------------------------------------------
 
 Ausführendes Betriebssystem:
