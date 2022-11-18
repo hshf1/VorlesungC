@@ -38,52 +38,14 @@ Nun werdet ihr nach eurem Passwort gefragt. <br />
   
 Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt und drückt auf Enter auf der Tastatur. -->
 
-Am Ende sollte dann für 5 Sekunden Installation beendet erscheinen. <br />
+Am Ende sollte dann Installation beendet erscheinen. <br />
 <img width="750" alt="Bildschirmfoto 2022-04-17 um 05 33 50" src="https://user-images.githubusercontent.com/100713757/163699227-a2bf91bd-3c4f-42d6-a16b-a7946f22f5c9.png">
   
-Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Desktop) befindende Logfile, die ihr nach erfolgreicher Installation löschen könnt. Bei anhaltenden Problemen bitte diesen Logfile im Anhang per Mail abschicken.
+Das Terminal kann nun beendet werden.
 
 Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
   
 </details>
-
-<!--Alte MacOS-Anleitung auskommentieren
-<details>
-  <summary>Hier klicken, um VSCode auf dem MacOS zu installieren.</summary>
-<br />
-
-  <a href="https://github.com/hshf1/VorlesungC/files/9840809/installVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.03_21.10.2022-success?logo=apple" height="50" /></a>
-
-<br /><br />
-
-Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop). <br />
-<img width="401" alt="Bildschirmfoto 2022-04-17 um 05 35 45" src="https://user-images.githubusercontent.com/100713757/163699203-aff40972-d3a1-4212-ad96-71e6606950f9.png"> <br />
-  
-Nun öffnet ihr das Terminal <br />
-<img width="566" alt="Bildschirmfoto 2022-04-17 um 05 31 43" src="https://user-images.githubusercontent.com/100713757/163699216-b1eb7dd1-ffce-4bcd-be21-1691adaf0c6b.png">
-  
-und gebt folgendes ein:
-  
-> sh ~/Desktop/installVSCode.sh
-  
-<img width="561" alt="Bildschirmfoto 2022-04-17 um 05 38 53" src="https://user-images.githubusercontent.com/100713757/163699298-7f71c5ab-07f6-43cd-857b-e3eb61dab502.png">
-
-Nun werdet ihr nach eurem Passwort gefragt. <br />
-
-<img width="561" alt="Bildschirmfoto 2022-04-17 um 05 38 59" src="https://user-images.githubusercontent.com/100713757/163699305-1b6cf156-158f-4c7c-880f-c51858000e5e.png">
-  
-Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt und drückt auf Enter auf der Tastatur.
-  
-Am Ende sollte dann für 5 Sekunden Installation beendet erscheinen. <br />
-<img width="750" alt="Bildschirmfoto 2022-04-17 um 05 33 50" src="https://user-images.githubusercontent.com/100713757/163699227-a2bf91bd-3c4f-42d6-a16b-a7946f22f5c9.png">
-  
-Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Desktop) befindende Logfile, die ihr nach erfolgreicher Installation löschen könnt. Bei anhaltenden Problemen bitte diesen Logfile im Anhang per Mail abschicken.
-
-Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSCode/02_Erste_Schritte.md) weiter machen.
-
-
-</details>
-Ende der Auskommentierung-->
 
 <details>
 <summary>VSCode ist bereits installiert.</summary>
@@ -107,12 +69,6 @@ Nun wird folgender Code kopiert, im Terminal eingefügt und mit der ENTER-Taste 
 ```sh
 curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/VSCode.sh | uninstall=true bash 
 ```
-<!--Passwort wird zurzeit nicht abgefragt: sudo wurde entfernt
-Nun werdet ihr nach eurem Passwort gefragt. <br />
-
-<img width="561" alt="Bildschirmfoto 2022-04-17 um 05 38 59" src="https://user-images.githubusercontent.com/100713757/163699305-1b6cf156-158f-4c7c-880f-c51858000e5e.png">
-  
-Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt und drückt auf Enter auf der Tastatur.-->
   
 Am Ende sollte dann für 5 Sekunden Installation beendet erscheinen. <br />
 <img width="750" alt="Bildschirmfoto 2022-04-17 um 05 33 50" src="https://user-images.githubusercontent.com/100713757/163699227-a2bf91bd-3c4f-42d6-a16b-a7946f22f5c9.png">
@@ -123,41 +79,23 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
   
 </details>
 
-<!--Alte Deinstallationsanleitung auskommentiert
-  <details>
-  <summary>Hier klicken, um bei Fehler VSCode zu deinstallieren und neu zu installieren.</summary>
-<br />
-Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. Danach kann man erneut die oben beschriebene Installation durchführen.
-<br /><br />
-<a href="https://github.com/hshf1/VorlesungC/files/8937317/uninstallVSCode.zip"><img src="https://img.shields.io/badge/Download-v1.00_20.06.2022-success?logo=apple" height="50" /></a>
-<br /><br />
+<details>
+<summary>Fehleranalyse am MacOS</summary>
 
-Die Datei aus diesem ZIP-Ordner schiebt ihr auf euren Schreibtisch (Desktop). <br />
-<img width="401" alt="Bildschirmfoto 2022-04-17 um 05 35 45" src="https://user-images.githubusercontent.com/100713757/163699203-aff40972-d3a1-4212-ad96-71e6606950f9.png"> <br />
+Für die Fehleranalyse von VSCode auf dem MacOS ist das Terminal zu starten.<br /><br />
   
-Nun öffnet ihr das Terminal <br />
-<img width="566" alt="Bildschirmfoto 2022-04-17 um 05 31 43" src="https://user-images.githubusercontent.com/100713757/163699216-b1eb7dd1-ffce-4bcd-be21-1691adaf0c6b.png">
-  
-und gebt folgendes ein:
-  
-> sh ~/Desktop/uninstallVSCode.sh
-  
-<img width="561" alt="Bildschirmfoto 2022-04-17 um 05 38 53" src="https://user-images.githubusercontent.com/100713757/163699298-7f71c5ab-07f6-43cd-857b-e3eb61dab502.png">
+<img width="392" alt="Bildschirmfoto 2022-10-23 um 02 47 45" src="https://user-images.githubusercontent.com/100713757/197367855-42cb8849-0f3f-48de-88da-cea064dcccfe.png">
 
-Nun werdet ihr nach eurem Passwort gefragt. <br />
+Nun wird folgender Code kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+  
+```sh
+curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/Fehleranalyse.sh | bash 
+```
 
-<img width="561" alt="Bildschirmfoto 2022-04-17 um 05 38 59" src="https://user-images.githubusercontent.com/100713757/163699305-1b6cf156-158f-4c7c-880f-c51858000e5e.png">
+Die in der LogFile angezeigten Fehler enthalten Fehlercodes, die in der [Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md) nachgesehen werden können. Dort wird erklärt, wie vorzugehen ist.
   
-Gebt das Passwort ein, dass ihr auch für die Anmeldung am Laptop nutzt und drückt auf Enter auf der Tastatur.
-  
-Am Ende sollte dann für 5 Sekunden Installation beendet erscheinen. <br />
-<img width="750" alt="Bildschirmfoto 2022-04-17 um 05 33 50" src="https://user-images.githubusercontent.com/100713757/163699227-a2bf91bd-3c4f-42d6-a16b-a7946f22f5c9.png">
-  
-Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Desktop) befindende Logfile. Ist kein Fehler aufgetreten könnt ihr die Logfile auch wieder löschen. Sollten Probleme oder Fehler auftauchen, stehen diese da drin. Zur Problembehandlung könnt ihr im Logfile sehen, was nicht geklappt hat. Solltet ihr das Problem nicht beheben können, schickt bitte die Logfile mit als Anhang.
-    
-Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wieder von vorne begonnen werden.
-  </details>
-Ende der Auskommentierung der alten Deinstallation-->
+</details>
+
 <!--Ende MacOS-Anleitung-->
 
 <!--Start Windows-Anleitung-->
