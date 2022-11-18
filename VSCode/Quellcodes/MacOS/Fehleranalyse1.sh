@@ -36,8 +36,7 @@ fi
 clang --version
 if (($? == 0)); then
     gccversion=$(clang --version)
-    gccinfo="Meldung: Compiler bereits installiert. Compiler-Version:
-    $gccversion"
+    gccinfo="Meldung: Compiler bereits installiert.\nCompiler-Version: $gccversion"
 else
     gccinfo="Meldung: Compiler konnte nicht erkannt werden!"
 fi
@@ -104,7 +103,7 @@ else
 fi
 
 # LogFile schreiben und Variablen einsetzen
-echo "-------------------------------------------------------------------------------------------
+echo -e "-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
 Logfile zur Fehleranalyse von VSCode für MacOS am $dateinfo um $timeinfo.
 
