@@ -3,7 +3,9 @@
 
 # Fehlerbehebung
 
-Sollte euer Fehler hier nicht enthalten sein, so schickt ihr bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in. 
+Einige Fehler können mit der Fehleranalyse aufgedeckt werden. Wie die Fehleranalyse ausgeführt wird, steht ebenfalls in der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md). Im LogFile stehen dann mögliche Fehler mit Fehlercodes, die hier näher beschrieben sind und zur Fehlerbehebung helfen.
+
+Sollte der Fehler weiterhin bestehen oder neu und hier nicht enthalten sein, so ist ein Screenshot der Fehlermeldung mit dem LogFile im Anhang an die lehrende Person zu mailen. 
 
 ## Allgemeine Fehler
 
