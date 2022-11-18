@@ -11,6 +11,7 @@
 Dies ist eine Anleitung (von Studenten für Studenten) zur Installation von VSCode für die Vorlesung C. Für die Installation ist es erforderlich, dass über <b>Adminrechte</b> verfügt wird.<br />
 
 Sollten Probleme auftreten, könnt ihr die in dieser Anleitung erklärte Fehleranalyse ausführen. Dort werden einige mögliche Fehler ausfindig gemacht und ein Fehlercode ausgegeben. Hier kann dann nach einer Lösung geschaut werden: [03_Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md). <br />
+
 Ist euer Problem dort nicht geschildert oder dennoch nicht behoben, so schickt ihr bitte eine E-Mail mit der Logfile im Anhang an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.<br />
 
 <p align="center">:warning:<b>Hinweis</b>:warning:</p>
@@ -205,7 +206,7 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 <!--Ende Linux-Anleitung-->
 
 <!--Start Computerraum-Anleitung-->
-## Computerraum an der Hochschule
+## <p align="center">Computerraum an der Hochschule</p>
 
 <details>
 <summary>VSCode auf Rechner im CR installieren.</summary>
