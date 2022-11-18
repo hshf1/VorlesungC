@@ -18,7 +18,7 @@ Nach der Installation erscheint eine Datei auf dem Desktop mit dem Namen "C_Uebu
 
 <!--Start MacOS-Anleitung-->
 
-## MacOS
+## <p align="center">MacOS</p>
 
 <details>
 <summary>VSCode auf MacOS installieren.</summary>
