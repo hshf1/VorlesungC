@@ -1,7 +1,7 @@
 #################################################################
 #                                VSCode Fehleranalyse für MacOS #
 #                             Hochschule Hannover - Vorlesung C #
-#                                zuletzt geändert am 17.11.2022 #
+#                                zuletzt geändert am 18.11.2022 #
 #################################################################
 
 # zur Fehleranalyse folgenden Code im Terminal ausführen (ohne #)
@@ -36,7 +36,8 @@ fi
 clang --version
 if (($? == 0)); then
     gccversion=$(clang --version)
-    gccinfo="Meldung: Compiler bereits installiert. Compiler-Version: $gccversion"
+    gccinfo="Meldung: Compiler bereits installiert. Compiler-Version:
+    $gccversion"
 else
     gccinfo="Meldung: Compiler konnte nicht erkannt werden!"
 fi
@@ -65,8 +66,14 @@ else
     tasksinfo="Meldung: tasks.json konnte nicht gefunden werden!"
 fi
 
+# Umgebungsvariable setzen und aktualisieren um code zu nutzen
+cat <<-EOF >>~/.bash_profile
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+EOF
+
 # Liste installierter Extensions in Variable setzen
-installedextensions=$( code --list-extensions )
+installedextensions=$(code --list-extensions)
 
 # Prüfen, ob VSCode Extension code-runner installiert ist
 if echo "$installedextensions" | grep 'code-runner' > /dev/null 2>&1; then
@@ -119,8 +126,6 @@ $pinginfo
 $vscinfo2
 
 $gccinfo
-
-$pathinfo
 
 $settingsinfo
 
