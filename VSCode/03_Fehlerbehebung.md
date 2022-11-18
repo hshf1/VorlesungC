@@ -5,9 +5,11 @@
 
 Einige Fehler können mit der Fehleranalyse aufgedeckt werden. Wie die Fehleranalyse ausgeführt wird, steht ebenfalls in der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md). Im LogFile stehen dann mögliche Fehler mit Fehlercodes, die hier näher beschrieben sind und zur Fehlerbehebung helfen.
 
-Sollte der Fehler weiterhin bestehen oder neu und hier nicht enthalten sein, so ist ein Screenshot der Fehlermeldung mit dem LogFile im Anhang an die lehrende Person zu mailen. 
+Zuallererst sollte bei einem Problem die Installations gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt werden. Es hilft auch, zuerst die Deinstallation auszuführen und dann erneut die Installation. Die Deinstallation ist ebenfalls in der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) erklärt.
 
-## Allgemeine Fehler
+Sollte das Problem weiterhin bestehen oder neu und hier nicht enthalten sein, so ist ein Screenshot der Fehlermeldung mit dem LogFile im Anhang an die lehrende Person zu mailen.
+
+## Allgemeine Fehler (Fehlercodes ab 0000)
 
 ### Sonder- oder Leerzeichen irgendwo im Pfad?
 
@@ -31,7 +33,7 @@ Der hauseigene Virenscanner von Windows (Defender) ist bisher eher zurückhalten
 
 In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstellen und es so probieren. Beim Testen von Compiler und Debugger kann man die Internetverbindung vorher trennen.
 
-## MacOs Fehler
+## MacOs (Fehlercodes ab 1000)
 
 ### XCRUN
 <details>
@@ -45,46 +47,7 @@ Dies lässt sich im Terminal wie folgt beheben:
 
 </details>
 
-### GitLens
-<details>
-<summary>"GitLens was unable to find Git. Please make sure Git is installed. Also ensure that Git is either in the PATH, or that 'git.path' is pointed to its installed location."</summary>
-
-Dann hat vermutlich die Installation von xcode-select nicht geklappt. Manchmal "verschwindet" die Installation auch nach einem Update, z.B. des Betriebssystems.
-
-Dies lässt sich im Terminal wie folgt beheben:
-
-> xcode-select --install
-
-</details>
-
-## Windows Fehler
-Als allgemeine Fehlerbehebung könnt ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholen, ohne etwas zu deinstallieren.<br /> 
-In der Regel lassen sich so einige Fehler automatisch beheben.
-
-### Datei a.exe nicht gefunden
-<details>
-  <summary>Beim debuggen oder ausführen kommt die Fehlermeldung, a.exe wurde nicht gefunden.</summary>
-  Dieser Fehler lässt sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
-  </details>
-
-### Choco
-<details>
-<summary>Die Benennung "choco" wurde nicht als Name eines Cmdlet, einer Funktion, einer Skriptdatei oder eines ausführbaren Programms erkannt.</summary>
-
-Entweder wurde chocolatey nicht installiert, das Ende der Installation wurde nicht abgewartet oder das CMD Terminal wurde nach der Installation nicht beendet. Einfach Terminal schließen und wieder als Administrator öffnen. Bleibt der Fehler, so lässt es sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
-
-</details>
-
-### Existing Chocolatey installation
-<details>
-<summary>An existing Chocolatey installation was detected. Installation will not continue.
-For security reasons, this script will not overwrite existing installations.</summary>
-
-Eine unvollständige Installation von Chocolatey kann man mit folgendem Befehl im CMD Terminal mit Administrationsrechten entfernen:
-
-> RMDIR /S /Q C:\ProgramData\chocolatey
-
-</details>
+## Windows (Fehlercodes ab 2000)
 
 ### .vscode-Ordner nicht im "obersten" geöffneten Ordner?
 Bei alten Installationen muss der erste geöffnete Ordner in VSCode einen Ordner .vscode enthalten, der wiederum die Dateien launch.json, settings.json und tasks.json enthalten muss. Dieser Fehler lässt sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
@@ -101,10 +64,32 @@ Interessanterweise ist beim Ausführen des Programms (mittels Code Runner) oft C
 
 </details>
 
-<!--
-Dies ist eine Sammlung bekannter Fehlermeldungen.
-Solltest du keine Lösung zu deinem Problem finden, so schick bitte eine E-Mail mit einem Screenshot der Fehlermeldung und der Angabe eures genutzten Betriebssystems an den/die vom Prof. benannte/n Betreuer/in dieser Anleitung.
+### Fehler ohne Fehlercode
+<details>
+<summary>An existing Chocolatey installation was detected. Installation will not continue.
+For security reasons, this script will not overwrite existing installations.</summary>
 
+Eine unvollständige Installation von Chocolatey kann man mit folgendem Befehl im CMD Terminal mit Administrationsrechten entfernen:
+
+> RMDIR /S /Q C:\ProgramData\chocolatey
+
+</details>
+
+<details>
+  <summary>Beim debuggen oder ausführen kommt die Fehlermeldung, a.exe wurde nicht gefunden.</summary>
+  Dieser Fehler lässt sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
+  </details>
+
+<details>
+<summary>Die Benennung "choco" wurde nicht als Name eines Cmdlet, einer Funktion, einer Skriptdatei oder eines ausführbaren Programms erkannt.</summary>
+
+Entweder wurde chocolatey nicht installiert, das Ende der Installation wurde nicht abgewartet oder das CMD Terminal wurde nach der Installation nicht beendet. Einfach Terminal schließen und wieder als Administrator öffnen. Bleibt der Fehler, so lässt es sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
+
+</details>
+
+## Linux (Fehlercodes ab 3000)
+
+<!--
 ### Die Idee ist es die github Suchfunktion für dieses Respository zu nutzen:
 
 ![githubSuche](https://user-images.githubusercontent.com/81232074/113470733-0f520b00-9458-11eb-9f0c-46f9ba9994a9.png)
