@@ -20,8 +20,8 @@ Nach der Installation erscheint eine Datei auf dem Desktop mit dem Namen "C_Uebu
 
 ## <p align="center">MacOS</p>
 
-<details>
-  <summary><p align="center">VSCode auf MacOS installieren.</p></summary>
+<p align="center"><details>
+  <summary>VSCode auf MacOS installieren.</summary>
 <br />
 Für die Installation von VSCode auf dem MacOS ist das Terminal zu starten.<br /><br />
   
@@ -96,7 +96,7 @@ curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcod
 Die in der LogFile angezeigten Fehler enthalten Fehlercodes, die in der [Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md) nachgesehen werden können. Dort wird erklärt, wie vorzugehen ist.
   
 </details>
-
+</p>
 <!--Ende MacOS-Anleitung-->
 
 <!--Start Windows-Anleitung-->
