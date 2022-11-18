@@ -1,8 +1,8 @@
-#################################################################
-#                                 VSCode Installation für MacOS #
-#                             Hochschule Hannover - Vorlesung C #
-#                                zuletzt geändert am 17.11.2022 #
-#################################################################
+#####################################
+#     VSCode Installation für MacOS #
+# Hochschule Hannover - Vorlesung C #
+#    zuletzt geändert am 18.11.2022 #
+#####################################
 
 # zum installieren folgenden Code im Terminal ausführen (ohne #)
 #
@@ -71,10 +71,8 @@ else
     code --install-extension formulahendry.code-runner
     # VSCode Extension C/C++ installieren
     code --install-extension ms-vscode.cpptools
-    # VSCode Extension Liveshare installieren
-    code --install-extension ms-vsliveshare.vsliveshare
-    # VSCode Extension Liveshare-Audio installieren
-    code --install-extension ms-vsliveshare.vsliveshare-audio
+    # VSCode Extension Liveshare and Liveshare-Audio installieren
+    code --install-extension ms-vsliveshare.vsliveshare-pack
     # VSCode Extension lldb installieren - nötig für Compiler
     code --install-extension vadimcn.vscode-lldb
     # Erstellen/Überschreiben von C_Uebung.code-workspace
