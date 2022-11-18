@@ -66,7 +66,7 @@ else
 fi
 
 # Umgebungsvariable setzen und aktualisieren um code zu nutzen
-cat <<-EOF >>~/.bash_profile
+cat <<EOF >>~/.bash_profile
 # Add Visual Studio Code (code)
 export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 EOF
