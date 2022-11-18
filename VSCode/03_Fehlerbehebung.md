@@ -7,6 +7,8 @@ Einige Fehler können mit der Fehleranalyse aufgedeckt werden. Wie die Fehlerana
 
 Zuallererst sollte bei einem Problem die Installations gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt werden. Es hilft auch, zuerst die Deinstallation auszuführen und dann erneut die Installation. Die Deinstallation ist ebenfalls in der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) erklärt.
 
+:warning: Sollte keine LogFile erstellt werden und es taucht eine Fehlermeldung auf, bitte mit Windowsversion eine Mail schreiben.
+
 Sollte das Problem weiterhin bestehen oder neu und hier nicht enthalten sein, so ist ein Screenshot der Fehlermeldung mit dem LogFile im Anhang an die lehrende Person zu mailen.
 
 ## Allgemeine Fehler (Fehlercodes ab 0000)
