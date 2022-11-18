@@ -82,7 +82,7 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 </details>
 
 <details>
-<summary>Fehleranalyse am MacOS</summary>
+<summary>Fehleranalyse am MacOS.</summary>
 
 Für die Fehleranalyse von VSCode auf dem MacOS ist das Terminal zu starten.<br /><br />
   
@@ -170,6 +170,11 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
   
 </details>
 
+<details>
+<summary>Fehleranalyse am Windows. (folgt) </summary>
+  
+</details>
+
 <!--Ende Windows-Anleitung-->
 
 <!--Start Linux-Anleitung-->
@@ -197,11 +202,21 @@ Hiermit wäre die Installation auch schon fertig und wir können mit [Erste Schr
 </details>
 
 <details>
-<summary>Hier klicken, falls VSCode schon installiert ist.</summary>
+<summary>VSCode ist bereits installiert.</summary>
   
 Das ist kein Problem, führe die oben beschriebene Installationsanleitung einfach ganz normal durch.
 Bereits installierte Programme bleiben erhalten und nur fehlende dazu installiert.
 
+</details>
+
+<details>
+<summary>VSCode auf Linux deinstallieren. (folgt) </summary>
+  
+</details>
+
+<details>
+<summary>Fehleranalyse am Linux. (folgt) </summary>
+  
 </details>
 <!--Ende Linux-Anleitung-->
 
