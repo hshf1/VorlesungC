@@ -18,7 +18,7 @@ Sollte das Problem weiterhin bestehen oder neu und hier nicht enthalten sein, so
 
 Heißt die Datei z. B. Prüfsumme.c? Irgendeiner der Ordner, in der sich die Datei schließlich befindet "Übung" oder "Neue Projekte"? Ist der Benutzername Ségolène? Es dürfen im Datei- und Ordnernamen keine Umlaute oder Leerzeichen befinden!
 
-</details
+</details>
   
 <details>
 <summary>Virenscanner?</summary>
