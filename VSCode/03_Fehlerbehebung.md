@@ -11,20 +11,18 @@ Sollte das Problem weiterhin bestehen oder neu und hier nicht enthalten sein, so
 
 ## Allgemeine Fehler (Fehlercodes ab 0000)
 
-### Sonder- oder Leerzeichen irgendwo im Pfad?
+### Weitere Fehler ohne Fehlercodes
 
-Insbesondere, aber nicht nur, bei den Fehlermeldungen
+<details>
+<summary>File not found oder No such file or directory beim Debuggen</summary>
 
-### File not found oder No such file or directory
+Heißt die Datei z. B. Prüfsumme.c? Irgendeiner der Ordner, in der sich die Datei schließlich befindet "Übung" oder "Neue Projekte"? Ist der Benutzername Ségolène? Es dürfen im Datei- und Ordnernamen keine Umlaute oder Leerzeichen befinden!
 
-sollte man dies nochmal genau überprüfen:
-
-  Heißt die Datei z. B. Prüfsumme.c?
-  Irgendeiner der Ordner, in der sich die Datei schließlich befindet "Übung" oder "Neue Projekte"?
-  Ist der Benutzername Ségolène?
+</details
   
-### Virenscanner?
-
+<details>
+<summary>Virenscanner?</summary>
+  
 Bei der Installation, insbesondere dem Herunterladen und Installieren von Chocolatey können übereifrige Virenscanner Probleme machen.
 
 Auch das Aufrufen des Compilers oder -noch öfter- des Debuggers kann Virenscanner irritieren.
@@ -33,9 +31,12 @@ Der hauseigene Virenscanner von Windows (Defender) ist bisher eher zurückhalten
 
 In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstellen und es so probieren. Beim Testen von Compiler und Debugger kann man die Internetverbindung vorher trennen.
 
+</details>
+
 ## MacOs (Fehlercodes ab 1000)
 
-### XCRUN
+### Weitere Fehler ohne Fehlercodes
+
 <details>
 <summary>xcrun: error: invalid active developer path... </summary>
 
@@ -49,12 +50,10 @@ Dies lässt sich im Terminal wie folgt beheben:
 
 ## Windows (Fehlercodes ab 2000)
 
-### .vscode-Ordner nicht im "obersten" geöffneten Ordner?
-Bei alten Installationen muss der erste geöffnete Ordner in VSCode einen Ordner .vscode enthalten, der wiederum die Dateien launch.json, settings.json und tasks.json enthalten muss. Dieser Fehler lässt sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
-
+### Weitere Fehler ohne Fehlercodes
 
 <details>
-<summary>Umlaute werden nicht richtig dargestellt.</summary>
+<summary>Umlaute werden nicht richtig dargestellt</summary>
 
 Nicht-ASCII-Zeichen sind nicht ganz einfach in den Griff zu bekommen, da dies nicht nur von VSCode abhängt.
 
@@ -64,7 +63,6 @@ Interessanterweise ist beim Ausführen des Programms (mittels Code Runner) oft C
 
 </details>
 
-### Fehler ohne Fehlercode
 <details>
 <summary>An existing Chocolatey installation was detected. Installation will not continue.
 For security reasons, this script will not overwrite existing installations.</summary>
@@ -76,9 +74,11 @@ Eine unvollständige Installation von Chocolatey kann man mit folgendem Befehl i
 </details>
 
 <details>
-  <summary>Beim debuggen oder ausführen kommt die Fehlermeldung, a.exe wurde nicht gefunden.</summary>
-  Dieser Fehler lässt sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
-  </details>
+<summary>Beim debuggen oder ausführen kommt die Fehlermeldung, a.exe wurde nicht gefunden.</summary>
+  
+Dieser Fehler lässt sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung (https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
+
+</details>
 
 <details>
 <summary>Die Benennung "choco" wurde nicht als Name eines Cmdlet, einer Funktion, einer Skriptdatei oder eines ausführbaren Programms erkannt.</summary>
