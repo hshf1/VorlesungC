@@ -21,7 +21,7 @@ Nach der Installation erscheint eine Datei auf dem Desktop mit dem Namen "C_Uebu
 ## <p align="center">MacOS</p>
 
 <details>
-<summary>VSCode auf MacOS installieren.</summary>
+<summary><p align="center">VSCode auf MacOS installieren.<</sum/p>mary>
 <br />
 Für die Installation von VSCode auf dem MacOS ist das Terminal zu starten.<br /><br />
   
