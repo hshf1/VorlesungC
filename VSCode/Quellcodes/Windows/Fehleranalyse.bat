@@ -6,7 +6,7 @@
 
 :: zur Fehleranalyse folgenden Code im Terminal ausführen (ohne ::)
 ::
-:: curl -o %temp%\Fehleranalyse.bat https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.bat && %temp%\Fehleranalyse.bat>"%USERPROFILE%\Desktop\logVSC.txt" && del %temp%\Fehleranalyse.bat && start "%USERPROFILE%\Desktop\logVSC.txt"
+:: curl -o %temp%\Fehleranalyse.bat https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.bat && %temp%\Fehleranalyse.bat>"%USERPROFILE%\Desktop\logVSC.txt" && del %temp%\Fehleranalyse.bat && start "" "%USERPROFILE%\Desktop\logVSC.txt"
 
 :::: Beginn Fehleranalyse ::::
 
@@ -47,22 +47,6 @@ if %errorlevel% == 0 (
     echo Choco: Choco ist installiert und hat folgende Version: & choco -v & echo.
 ) ELSE (
     echo Choco: Choco konnte nicht gefunden werden! & echo.
-)
-
-:: Prüfen, ob VSCode installiert ist
-code --version>NUL
-if %errorlevel% == 0 (
-    echo VSCode: VSCode ist installiert und hat folgende Version: & code --version & echo.
-) ELSE (
-    echo VSCode: VSCode ist nicht installiert oder konnte nicht gefunden werden! (Fehlercode: 0003^) & echo.
-)
-
-:: Prüfen, ob Compiler installiert ist
-gcc --version>NUL
-if %errorlevel% == 0 (
-    echo Compiler: Compiler ist installiert und hat folgende Version: & gcc --version & echo.
-) ELSE (
-    echo Compiler: Compiler ist nicht installiert oder konnte nicht erkannt werden! (Fehlercode: 0004^) & echo.
 )
 
 :: Prüfen, ob settings.json vorhanden ist (Inhalt wird nicht überprüft!)
