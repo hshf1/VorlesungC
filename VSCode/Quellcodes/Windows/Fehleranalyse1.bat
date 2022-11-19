@@ -61,9 +61,9 @@ if EXIST "%APPDATA%\Code\User\tasks.json" (
     echo tasks.json: %APPDATA%\Code\User\tasks.json konnte nicht gefunden werden! ^(Fehlercode: 0005^) & echo.
 )
 
-:: Version der Extensions & Ende LogFile
-code --list-extensions --show-versions & echo. & echo Fehleranalyse beendet!
-echo -------------------------------------------------------------------------------------------
+:: Version der Extensions und Ende LogFile
+code --list-extensions --show-versions
+echo. & echo Fehleranalyse beendet! & echo -------------------------------------------------------------------------------------------
 
 :: Ausgabe vom Ende und exit skript
 echo #################################################################################################>CON
