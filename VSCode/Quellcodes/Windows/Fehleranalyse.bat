@@ -62,8 +62,9 @@ if EXIST "%APPDATA%\Code\User\tasks.json" (
 )
 
 :: Version der Extensions und Ende LogFile
-code --list-extensions --show-versions
-echo. & echo Fehleranalyse beendet! & echo -------------------------------------------------------------------------------------------
+echo.
+echo Fehleranalyse beendet!
+echo -------------------------------------------------------------------------------------------
 
 :: Ausgabe vom Ende und exit skript
 echo #################################################################################################>CON
