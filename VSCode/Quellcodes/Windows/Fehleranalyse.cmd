@@ -49,14 +49,6 @@ if %errorlevel% == 0 (
     echo Choco: Choco konnte nicht gefunden werden! & echo.
 )
 
-:: Prüfen, ob Compiler installiert ist
-gcc --version>NUL
-if %errorlevel% == 0 (
-    echo Compiler: Compiler ist installiert und hat folgende Version: & gcc --version & echo.
-) ELSE (
-    echo Compiler: Compiler ist nicht installiert oder konnte nicht erkannt werden! (Fehlercode: 0004^) & echo.
-)
-
 :: Prüfen, ob settings.json vorhanden ist (Inhalt wird nicht überprüft!)
 if EXIST "%APPDATA%\Code\User\settings.json" (
     echo settings.json: %APPDATA%\Code\User\settings.json wurde gefunden. & echo.
