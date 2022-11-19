@@ -40,6 +40,30 @@ if %errorlevel% == 0 (
     echo Internetverbindung: Es konnte keine Verbindung zum Internet erkannt werden! ^(Fehlercode: 0002^) & echo.
 )
 
+:: Prüfen, ob choco installiert ist
+choco -v>NUL
+if %errorlevel% == 0 (
+    echo Choco: Choco ist installiert und hat folgende Version: & choco -v & echo.
+) ELSE (
+    echo Choco: Choco konnte nicht gefunden werden! & echo.
+)
+
+:: Prüfen, ob VSCode installiert ist
+call "C:\Program Files\Microsoft VS Code\bin\code" --version>NUL
+if %errorlevel% == 0 (
+    echo VSCode: VSCode ist installiert und hat folgende Version: & code --version & echo.
+) ELSE (
+    echo VSCode: VSCode ist nicht installiert oder konnte nicht gefunden werden! (Fehlercode: 0003^) & echo.
+)
+
+:: Prüfen, ob Compiler installiert ist
+gcc --version>NUL
+if %errorlevel% == 0 (
+    echo Compiler: Compiler ist installiert und hat folgende Version: & gcc --version & echo.
+) ELSE (
+    echo Compiler: Compiler ist nicht installiert oder konnte nicht erkannt werden! ^(Fehlercode: 0004^) & echo.
+)
+
 :: Prüfen, ob settings.json vorhanden ist (Inhalt wird nicht überprüft!)
 if EXIST "%APPDATA%\Code\User\settings.json" (
     echo settings.json: %APPDATA%\Code\User\settings.json wurde gefunden. & echo.
@@ -63,7 +87,7 @@ if EXIST "%APPDATA%\Code\User\tasks.json" (
 
 :: Liste installierter Extensions
 if EXIST "%temp%\installedextensions.txt" del "%temp%\installedextensions.txt"
-echo. & code --list-extensions>"%temp%\installedextensions.txt"
+call "C:\Program Files\Microsoft VS Code\bin\code" --list-extensions>"%temp%\installedextensions.txt"
 
 :: Prüfen, ob VSCode Extension code-runner installiert ist
 findstr code-runner "%temp%\installedextensions.txt">NUL
@@ -89,10 +113,12 @@ if %errorlevel% == 0 (
     echo LiveShare: Die Extension LiveShare konnte nicht gefunden werden. (Fehlercode: 0006^) & echo.
 )
 
-:: Version der Extensions und Ende LogFile
-echo.
-echo Fehleranalyse beendet!
+:: Version der Extensions & Ende LogFile
+call "C:\Program Files\Microsoft VS Code\bin\code" --list-extensions --show-versions & echo. & echo Fehleranalyse beendet!
 echo -------------------------------------------------------------------------------------------
+
+:: LogFile anzeigen
+:: start "" "%USERPROFILE%\Desktop\logVSC.txt"
 
 :: Ausgabe vom Ende und exit skript
 echo #################################################################################################>CON
@@ -100,6 +126,6 @@ echo.>CON
 echo Fehleranalyse beendet! Das Terminal kann jetzt geschlossen werden.>CON
 echo.>CON
 echo #################################################################################################>CON
-EXIT /B & start "" "%USERPROFILE%\Desktop\logVSC.txt"
+EXIT /B
 
 :::: Ende Fehleranalyse ::::
