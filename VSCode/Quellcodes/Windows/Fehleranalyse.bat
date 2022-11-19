@@ -26,8 +26,44 @@ echo kann nach den Fehlercodes gesucht werden, um zu sehen, wie diese behoben we
 echo Datei- und Ordnernamen dürfen keine Umlaute oder Leerzeichen enthalten!
 echo Zum Debuggen muss in VSCode ein Ordner geöffnet sein und keine einzelne Datei! & echo.
 echo Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
+echo ------------------------------------------------------------------------------------------- & echo.
+
+:: Info zum Betriebssystem
+FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO ( echo Ausführendes Betriebssystem:
+echo %%i %%j %%k & echo. )
+
+:: Internetverbindung prüfen
+ping -n 1 google.de>NUL
+if %errorlevel% == 0 (
+    echo Internetverbindung: Es konnte eine Verbindung zum Internet erkannt werden. & echo.
+) ELSE (
+    echo Internetverbindung: Es konnte keine Verbindung zum Internet erkannt werden! ^(Fehlercode: 0002^) & echo.
+)
+
+:: Prüfen, ob settings.json vorhanden ist (Inhalt wird nicht überprüft!)
+if EXIST "%APPDATA%\Code\User\settings.json" (
+    echo settings.json: %APPDATA%\Code\User\settings.json wurde gefunden. & echo.
+) ELSE (
+    echo settings.json: %APPDATA%\Code\User\settings.json konnte nicht gefunden werden! ^(Fehlercode: 0005^) & echo.
+)
+
+:: Prüfen, ob launch.json vorhanden ist (Inhalt wird nicht überprüft!)
+if EXIST "%APPDATA%\Code\User\launch.json" (
+    echo launch.json: %APPDATA%\Code\User\launch.json wurde gefunden. & echo.
+) ELSE (
+    echo launch.json: %APPDATA%\Code\User\launch.json konnte nicht gefunden werden! ^(Fehlercode: 0005^) & echo.
+)
+
+:: Prüfen, ob tasks.json vorhanden ist (Inhalt wird nicht überprüft!)
+if EXIST "%APPDATA%\Code\User\tasks.json" (
+    echo tasks.json: %APPDATA%\Code\User\tasks.json wurde gefunden. & echo.
+) ELSE (
+    echo tasks.json: %APPDATA%\Code\User\tasks.json konnte nicht gefunden werden! ^(Fehlercode: 0005^) & echo.
+)
+
+:: Version der Extensions & Ende LogFile
+code --list-extensions --show-versions & echo. & echo Fehleranalyse beendet!
 echo -------------------------------------------------------------------------------------------
-echo.
 
 :: Ausgabe vom Ende und exit skript
 echo #################################################################################################>CON
