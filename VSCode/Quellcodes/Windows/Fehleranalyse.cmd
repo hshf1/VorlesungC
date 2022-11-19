@@ -49,14 +49,6 @@ if %errorlevel% == 0 (
     ( echo Choco: Choco konnte nicht gefunden werden! & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 )
 
-:: Prüfen, ob VSCode installiert ist
-code -v
-if %errorlevel% == 0 (
-    ( echo VSCode: VSCode ist installiert und hat folgende Version: & code -v & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
-) ELSE (
-    ( echo VSCode: VSCode ist nicht installiert oder konnte nicht gefunden werden! (Fehlercode: 0003^) & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
-)
-
 :: Prüfen, ob Compiler installiert ist
 gcc --version
 if %errorlevel% == 0 (
