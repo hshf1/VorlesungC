@@ -1,12 +1,12 @@
 :::::::::::::::::::::::::::::::::::::::
-::    VSCode Fehleranalyse für MacOS ::
+::  VSCode Fehleranalyse für Windows ::
 :: Hochschule Hannover - Vorlesung C ::
-::    zuletzt geändert am 18.11.2022 ::
+::    zuletzt geändert am 19.11.2022 ::
 :::::::::::::::::::::::::::::::::::::::
 
 :: zur Fehleranalyse folgenden Code im Terminal ausführen (ohne ::)
 ::
-:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.cmd && %temp%\Fehleranalyse.cmd && del %temp%\Fehleranalyse.cmd
+:: curl -o %temp%\Fehleranalyse.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.cmd && %temp%\Fehleranalyse.cmd && del %temp%\Fehleranalyse.cmd
 
 :::: Beginn Fehleranalyse ::::
 
@@ -21,7 +21,7 @@ set timeinfo=%time%
 FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO set softwareinfo = %%i %%j %%k
 
 :: Internetverbindung prüfen
-ping -c 1 google.de
+ping -n 1 google.de
 if %errorlevel% == 0 (
     set pinginfo="Internetverbindung: Es konnte eine Verbindung zum Internet erkannt werden."
 ) ELSE (
