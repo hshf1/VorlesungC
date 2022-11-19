@@ -126,6 +126,5 @@ echo.>CON
 echo Das Terminal kann jetzt geschlossen werden.>CON
 echo.>CON
 echo #################################################################################################>CON
-EXIT /B & start "" "%USERPROFILE%\Desktop\logVSC.txt"
 
 :::: Ende Fehleranalyse ::::
