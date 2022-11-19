@@ -34,7 +34,7 @@ FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windo
 echo %%i %%j %%k & echo. )
 
 :: Internetverbindung prüfen
-ping -n 1 google.de >NUL
+ping -n 1 google.de>NUL
 if %errorlevel% == 0 (
     echo Internetverbindung: Es konnte eine Verbindung zum Internet erkannt werden. & echo.
 ) ELSE (
@@ -42,23 +42,15 @@ if %errorlevel% == 0 (
 )
 
 :: Prüfen, ob choco installiert ist
-choco -v >NUL
+choco -v>NUL
 if %errorlevel% == 0 (
     echo Choco: Choco ist installiert und hat folgende Version: & choco -v & echo.
 ) ELSE (
     echo Choco: Choco konnte nicht gefunden werden! & echo.
 )
 
-:: Prüfen, ob VSCode installiert ist
-code --version >NUL
-if %errorlevel% == 0 (
-    echo VSCode: VSCode ist installiert und hat folgende Version: & code --version & echo.
-) ELSE (
-    echo VSCode: VSCode ist nicht installiert oder konnte nicht gefunden werden! (Fehlercode: 0003) & echo.
-)
-
 :: Prüfen, ob Compiler installiert ist
-gcc --version >NUL
+gcc --version>NUL
 if %errorlevel% == 0 (
     echo Compiler: Compiler ist installiert und hat folgende Version: & gcc --version & echo.
 ) ELSE (
@@ -91,15 +83,15 @@ if EXIST "%temp%\installedextensions.txt" del "%temp%\installedextensions.txt"
 echo code --list-extensions --show-versions > "%temp%\installedextensions.txt"
 
 :: Prüfen, ob VSCode Extension code-runner installiert ist
-findstr code-runner "%temp%\installedextensions.txt" >NUL
+findstr code-runner "%temp%\installedextensions.txt">NUL
 if %errorlevel% == 0 (
-    ( echo Code-Runner: Die Extension Code-Runner ist installiert. & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
+    echo Code-Runner: Die Extension Code-Runner ist installiert. & echo. 
 ) ELSE (
-    ( echo Code-Runner: Die Extension Code-Runner konnte nicht gefunden werden. (Fehlercode: 0006) & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
+    echo Code-Runner: Die Extension Code-Runner konnte nicht gefunden werden. (Fehlercode: 0006) & echo.
 )
 
 :: Prüfen, ob VSCode Extension cpptools installiert ist
-findstr cpptools "%temp%\installedextensions.txt" >NUL
+findstr cpptools "%temp%\installedextensions.txt">NUL
 if %errorlevel% == 0 (
     echo C/C++: Die Extension C/C++ ist installiert. & echo.
 ) ELSE (
@@ -107,7 +99,7 @@ if %errorlevel% == 0 (
 )
 
 :: Prüfen, ob VSCode Extension LiveShare installiert ist
-findstr liveshare "%temp%\installedextensions.txt" >NUL
+findstr liveshare "%temp%\installedextensions.txt">NUL
 if %errorlevel% == 0 (
     echo LiveShare: Die Extension LiveShare ist installiert. & echo.
 ) ELSE (
@@ -119,11 +111,11 @@ code --list-extensions --show-version & echo. & echo Fehleranalyse beendet!
 echo -------------------------------------------------------------------------------------------
 
 :: Ausgabe vom Ende und exit skript
-echo ################################################################################################# >CON
-echo. >CON
-echo Fehleranalyse beendet! Das Terminal kann jetzt geschlossen werden. >CON
-echo. >CON
-echo ################################################################################################# >CON
+echo #################################################################################################>CON
+echo.>CON
+echo Fehleranalyse beendet! Das Terminal kann jetzt geschlossen werden.>CON
+echo.>CON
+echo #################################################################################################>CON
 EXIT /B
 
 :::: Ende Fehleranalyse ::::
