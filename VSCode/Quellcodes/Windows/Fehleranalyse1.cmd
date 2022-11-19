@@ -89,10 +89,12 @@ if %errorlevel% == 0 (
 )
 
 :: Version der Extensions und Ende LogFile
-code --list-extensions --show-versions
 echo.
 echo Fehleranalyse beendet!
 echo -------------------------------------------------------------------------------------------
+
+:: LogFile anzeigen
+start "" "%USERPROFILE%\Desktop\logVSC.txt"
 
 :: Ausgabe vom Ende und exit skript
 echo #################################################################################################>CON
