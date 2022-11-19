@@ -23,89 +23,89 @@ FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windo
 :: Internetverbindung prüfen
 ping -n 1 google.de
 if %errorlevel% == 0 (
-    set pinginfo = Internetverbindung: Es konnte eine Verbindung zum Internet erkannt werden.
+    set pinginfo=Internetverbindung: Es konnte eine Verbindung zum Internet erkannt werden.
 ) ELSE (
-    set pinginfo= Internetverbindung: Es konnte keine Verbindung zum Internet erkannt werden! (Fehlercode: 0002)
+    set pinginfo=Internetverbindung: Es konnte keine Verbindung zum Internet erkannt werden! (Fehlercode: 0002)
 )
 
 :: Prüfen, ob choco installiert ist
 choco -v
 if %errorlevel% == 0 (
-    set chocoversion=choco -v
-    set chocoinfo = choco ist installiert.
+    FOR /F "tokens=1" %%i IN ('choco -v') DO ( set chocoversion = %%i )
+    set chocoinfo=choco ist installiert.
 ) ELSE (
-    set chocoinfo = choco konnte nicht gefunden werden!
+    set chocoinfo=choco konnte nicht gefunden werden!
 )
 
 :: Prüfen, ob VSCode installiert ist
 code --version
 if %errorlevel% == 0 (
     FOR /F "tokens=1" %%i IN (`code --version`) DO (set codeversion = %%i)
-    set vscinfo2 = VSCode: VSCode ist installiert.
+    set vscinfo2=VSCode: VSCode ist installiert.
 ) ELSE (
-    set vscinfo2 = VSCode: VSCode ist nicht installiert oder konnte nicht gefunden werden! (Fehlercode: 0003)
+    set vscinfo2=VSCode: VSCode ist nicht installiert oder konnte nicht gefunden werden! (Fehlercode: 0003)
 )
 
 :: Prüfen, ob Compiler installiert ist
 gcc --version
 if %errorlevel% == 0 (
-    FOR /F "tokens=1" %%i IN (`gcc --version`) DO set gccversion = %%i
-    set gccinfo = Compiler: Compiler ist installiert.
+    FOR /F "tokens=1" %%i IN ('gcc --version') DO set gccversion = %%i
+    set gccinfo=Compiler: Compiler ist installiert.
 ) ELSE (
-    set gccinfo = Compiler: Compiler ist nicht installiert oder konnte nicht erkannt werden! (Fehlercode: 0004)
+    set gccinfo=Compiler: Compiler ist nicht installiert oder konnte nicht erkannt werden! (Fehlercode: 0004)
 )
 
 :: Prüfen, ob settings.json vorhanden ist (Inhalt wird nicht überprüft!)
 if EXIST "%APPDATA%\Code\User\settings.json" (
-    set settingsinfo = settings.json: %APPDATA%\Code\User\settings.json wurde gefunden.
+    set settingsinfo=settings.json: %APPDATA%\Code\User\settings.json wurde gefunden.
 ) ELSE (
-    set settingsinfo = settings.json: %APPDATA%\Code\User\settings.json konnte nicht gefunden werden! (Fehlercode: 0005)
+    set settingsinfo=settings.json: %APPDATA%\Code\User\settings.json konnte nicht gefunden werden! (Fehlercode: 0005)
 )
 
 :: Prüfen, ob launch.json vorhanden ist (Inhalt wird nicht überprüft!)
 if EXIST "%APPDATA%\Code\User\launch.json" (
-    set launchinfo = launch.json: %APPDATA%\Code\User\launch.json wurde gefunden.
+    set launchinfo=launch.json: %APPDATA%\Code\User\launch.json wurde gefunden.
 ) ELSE (
-    set launchinfo = launch.json: %APPDATA%\Code\User\launch.json konnte nicht gefunden werden! (Fehlercode: 0005)
+    set launchinfo=launch.json: %APPDATA%\Code\User\launch.json konnte nicht gefunden werden! (Fehlercode: 0005)
 )
 
 :: Prüfen, ob tasks.json vorhanden ist (Inhalt wird nicht überprüft!)
 if EXIST "%APPDATA%\Code\User\tasks.json" (
-    set tasksinfo = tasks.json: %APPDATA%\Code\User\tasks.json wurde gefunden.
+    set tasksinfo=tasks.json: %APPDATA%\Code\User\tasks.json wurde gefunden.
 ) ELSE (
-    set tasksinfo = tasks.json: %APPDATA%\Code\User\tasks.json konnte nicht gefunden werden! (Fehlercode: 0005)
+    set tasksinfo=tasks.json: %APPDATA%\Code\User\tasks.json konnte nicht gefunden werden! (Fehlercode: 0005)
 )
 
 :: Liste installierter Extensions
 del "%temp%\installedextensions.txt"
 FOR /F "tokens=*" %%i IN ('code --list-extensions --show-versions') DO (echo %%i >> "%temp%\installedextensions.txt")
-set /p installedextensions = < "%temp%\installedextensions.txt"
+set /p installedextensions=<"%temp%\installedextensions.txt"
 
 :: Prüfen, ob VSCode Extension code-runner installiert ist
 findstr code-runner "%temp%\installedextensions.txt"
 if %errorlevel% == 0 (
     FOR /F "tokens=1" %%i IN ('gcc --version') DO set gccversion= %%i
-    set coderunnerinfo="Code-Runner: Die Extension Code-Runner ist installiert."
+    set coderunnerinfo=Code-Runner: Die Extension Code-Runner ist installiert.
 ) ELSE (
-    set coderunnerinfo="Code-Runner: Die Extension Code-Runner konnte nicht gefunden werden. (Fehlercode: 0006)"
+    set coderunnerinfo=Code-Runner: Die Extension Code-Runner konnte nicht gefunden werden. (Fehlercode: 0006)
 )
 
 :: Prüfen, ob VSCode Extension cpptools installiert ist
 findstr cpptools "%temp%\installedextensions.txt"
 if %errorlevel% == 0 (
     FOR /F "tokens=1" %%i IN ('gcc --version') DO set gccversion= %%i
-    set cppinfo="C/C++: Die Extension C/C++ ist installiert."
+    set cppinfo=C/C++: Die Extension C/C++ ist installiert.
 ) ELSE (
-    set cppinfo="C/C++: Die Extension C/C++ konnte nicht gefunden werden. Fehlercode: 0006)"
+    set cppinfo=C/C++: Die Extension C/C++ konnte nicht gefunden werden. (Fehlercode: 0006)
 )
 
 :: Prüfen, ob VSCode Extension LiveShare installiert ist
 findstr liveshare "%temp%\installedextensions.txt"
 if %errorlevel% == 0 (
     FOR /F "tokens=1" %%i IN ('gcc --version') DO set gccversion= %%i
-    set liveshareinfo="LiveShare: Die Extension LiveShare ist installiert."
+    set liveshareinfo=LiveShare: Die Extension LiveShare ist installiert.
 ) ELSE (
-    set liveshareinfo="LiveShare: Die Extension LiveShare konnte nicht gefunden werden. (Fehlercode: 0006)"
+    set liveshareinfo=LiveShare: Die Extension LiveShare konnte nicht gefunden werden. (Fehlercode: 0006)
 )
 
 :: LogFile schreiben und Variablen einsetzen
