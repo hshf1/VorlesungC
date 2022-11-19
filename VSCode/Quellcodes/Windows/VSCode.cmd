@@ -1,7 +1,7 @@
 :::::::::::::::::::::::::::::::::::::::
 ::   VSCode Installation für Windows ::
 :: Hochschule Hannover - Vorlesung C ::
-::    zuletzt geändert am 18.11.2022 ::
+::    zuletzt geändert am 19.11.2022 ::
 :::::::::::::::::::::::::::::::::::::::
 
 :: Zum installieren Terminal als Adminstrator ausführen! und folgende Zeile Code ausführen (ohne ::)
@@ -20,9 +20,9 @@ fsutil dirty query %systemdrive% >nul
 if %errorlevel% == 0 (
     echo. >nul
 ) ELSE (
-    set msgbox_text="abgebrochen! Das Programm muss mit Adminrechten gestartet werden."
-    set msgbox_info="abgebrochen."
-    GOTO END
+    :: Ausgabe vom Abbruch und exit skript
+    echo "Das Programm konnte nicht ausgeführt werden! Das Terminal muss als Administrator gestartet werden!"
+    EXIT /B
 )
 
 :: Prüfen ob es installieren oder deinstallieren soll
@@ -89,9 +89,11 @@ del "%USERPROFILE%\Desktop\C_Uebung.code-workspace"
 :: Verknüpfung von C_Uebung.code-workspace auf Desktop, so kann es überall hin verschoben oder umbenannt werden
 mklink "%USERPROFILE%\Desktop\C_Uebung.code-workspace" "%APPDATA%\Code\User\C_Uebung.code-workspace"
 
-:::: Ende Installation ::::
+:: Ausgabe vom Ende und exit skript
+echo "Installation beendet! Das Terminal kann jetzt geschlossen werden."
+EXIT /B
 
-GOTO END
+:::: Ende Installation ::::
 
 :::: Beginn Deinstallation ::::
 
@@ -106,13 +108,8 @@ rd /s /q "%APPDATA%\Code"
 :: VSCode Extensions löschen
 rd /s /q "%USERPROFILE%\.vscode"
 
-:::: Ende Deinstallation ::::
-
-:END
-:: Popup Anzeige Ende des Skriptes
-echo msgbox"%msgbox_text%",vbInformation , "%msgbox_info%" > %temp%\msg.vbs 
-%temp%\msg.vbs 
-erase %temp%\msg.vbs
-
-:: exit Skript
+:: Ausgabe vom Ende und exit skript
+echo "Deinstallation beendet! Das Terminal kann jetzt geschlossen werden."
 EXIT /B
+
+:::: Ende Deinstallation ::::
