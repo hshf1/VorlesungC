@@ -51,7 +51,7 @@ if %errorlevel% == 0 (
 :: Prüfen, ob VSCode installiert ist
 call "C:\Program Files\Microsoft VS Code\bin\code" --version>NUL
 if %errorlevel% == 0 (
-    echo VSCode: VSCode ist installiert und hat folgende Version: & code --version & echo.
+    echo VSCode: VSCode ist installiert und hat folgende Version: & call "C:\Program Files\Microsoft VS Code\bin\code" --version & echo.
 ) ELSE (
     echo VSCode: VSCode ist nicht installiert oder konnte nicht gefunden werden! (Fehlercode: 0003^) & echo.
 )
@@ -59,7 +59,7 @@ if %errorlevel% == 0 (
 :: Prüfen, ob Compiler installiert ist
 gcc --version>NUL
 if %errorlevel% == 0 (
-    echo Compiler: Compiler ist installiert und hat folgende Version: & call gcc --version & echo.
+    echo Compiler: Compiler ist installiert und hat folgende Version: & gcc --version & echo.
 ) ELSE (
     echo Compiler: Compiler ist nicht installiert oder konnte nicht erkannt werden! ^(Fehlercode: 0004^) & echo.
 )
