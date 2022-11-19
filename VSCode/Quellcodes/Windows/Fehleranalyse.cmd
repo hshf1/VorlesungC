@@ -38,7 +38,7 @@ ping -n 1 google.de>NUL
 if %errorlevel% == 0 (
     echo Internetverbindung: Es konnte eine Verbindung zum Internet erkannt werden. & echo.
 ) ELSE (
-    echo Internetverbindung: Es konnte keine Verbindung zum Internet erkannt werden! (Fehlercode: 0002) & echo.
+    echo Internetverbindung: Es konnte keine Verbindung zum Internet erkannt werden! (Fehlercode: 0002^) & echo.
 )
 
 :: Prüfen, ob choco installiert ist
@@ -49,45 +49,53 @@ if %errorlevel% == 0 (
     echo Choco: Choco konnte nicht gefunden werden! & echo.
 )
 
+:: Prüfen, ob VSCode installiert ist
+code --version>NUL
+if %errorlevel% == 0 (
+    echo VSCode: VSCode ist installiert und hat folgende Version: & code --version & echo.
+) ELSE (
+    echo VSCode: VSCode ist nicht installiert oder konnte nicht gefunden werden! (Fehlercode: 0003^) & echo.
+)
+
 :: Prüfen, ob Compiler installiert ist
 gcc --version>NUL
 if %errorlevel% == 0 (
     echo Compiler: Compiler ist installiert und hat folgende Version: & gcc --version & echo.
 ) ELSE (
-    echo Compiler: Compiler ist nicht installiert oder konnte nicht erkannt werden! (Fehlercode: 0004) & echo.
+    echo Compiler: Compiler ist nicht installiert oder konnte nicht erkannt werden! (Fehlercode: 0004^) & echo.
 )
 
 :: Prüfen, ob settings.json vorhanden ist (Inhalt wird nicht überprüft!)
 if EXIST "%APPDATA%\Code\User\settings.json" (
     echo settings.json: %APPDATA%\Code\User\settings.json wurde gefunden. & echo.
 ) ELSE (
-    echo settings.json: %APPDATA%\Code\User\settings.json konnte nicht gefunden werden! (Fehlercode: 0005) & echo.
+    echo settings.json: %APPDATA%\Code\User\settings.json konnte nicht gefunden werden! (Fehlercode: 0005^) & echo.
 )
 
 :: Prüfen, ob launch.json vorhanden ist (Inhalt wird nicht überprüft!)
 if EXIST "%APPDATA%\Code\User\launch.json" (
     echo launch.json: %APPDATA%\Code\User\launch.json wurde gefunden. & echo.
 ) ELSE (
-    echo launch.json: %APPDATA%\Code\User\launch.json konnte nicht gefunden werden! (Fehlercode: 0005) & echo.
+    echo launch.json: %APPDATA%\Code\User\launch.json konnte nicht gefunden werden! (Fehlercode: 0005^) & echo.
 )
 
 :: Prüfen, ob tasks.json vorhanden ist (Inhalt wird nicht überprüft!)
 if EXIST "%APPDATA%\Code\User\tasks.json" (
     echo tasks.json: %APPDATA%\Code\User\tasks.json wurde gefunden. & echo.
 ) ELSE (
-    echo tasks.json: %APPDATA%\Code\User\tasks.json konnte nicht gefunden werden! (Fehlercode: 0005) & echo.
+    echo tasks.json: %APPDATA%\Code\User\tasks.json konnte nicht gefunden werden! (Fehlercode: 0005^) & echo.
 )
 
 :: Liste installierter Extensions
 if EXIST "%temp%\installedextensions.txt" del "%temp%\installedextensions.txt"
-echo code --list-extensions --show-versions > "%temp%\installedextensions.txt"
+code --list-extensions>"%temp%\installedextensions.txt"
 
 :: Prüfen, ob VSCode Extension code-runner installiert ist
 findstr code-runner "%temp%\installedextensions.txt">NUL
 if %errorlevel% == 0 (
     echo Code-Runner: Die Extension Code-Runner ist installiert. & echo. 
 ) ELSE (
-    echo Code-Runner: Die Extension Code-Runner konnte nicht gefunden werden. (Fehlercode: 0006) & echo.
+    echo Code-Runner: Die Extension Code-Runner konnte nicht gefunden werden. (Fehlercode: 0006^) & echo.
 )
 
 :: Prüfen, ob VSCode Extension cpptools installiert ist
@@ -95,7 +103,7 @@ findstr cpptools "%temp%\installedextensions.txt">NUL
 if %errorlevel% == 0 (
     echo C/C++: Die Extension C/C++ ist installiert. & echo.
 ) ELSE (
-    echo C/C++: Die Extension C/C++ konnte nicht gefunden werden. (Fehlercode: 0006) & echo.
+    echo C/C++: Die Extension C/C++ konnte nicht gefunden werden. (Fehlercode: 0006^) & echo.
 )
 
 :: Prüfen, ob VSCode Extension LiveShare installiert ist
@@ -103,11 +111,11 @@ findstr liveshare "%temp%\installedextensions.txt">NUL
 if %errorlevel% == 0 (
     echo LiveShare: Die Extension LiveShare ist installiert. & echo.
 ) ELSE (
-    echo LiveShare: Die Extension LiveShare konnte nicht gefunden werden. (Fehlercode: 0006) & echo.
+    echo LiveShare: Die Extension LiveShare konnte nicht gefunden werden. (Fehlercode: 0006^) & echo.
 )
 
 :: Version der Extensions & Ende LogFile
-code --list-extensions --show-version & echo. & echo Fehleranalyse beendet!
+code --list-extensions --show-versions & echo. & echo Fehleranalyse beendet!
 echo -------------------------------------------------------------------------------------------
 
 :: Ausgabe vom Ende und exit skript
