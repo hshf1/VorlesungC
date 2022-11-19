@@ -31,7 +31,7 @@ if %errorlevel% == 0 (
 :: Prüfen, ob choco installiert ist
 choco -v
 if %errorlevel% == 0 (
-    FOR /F "tokens=1" %%i IN ('choco -v') DO ( set chocoversion = %%i )
+    FOR /F "usebackq tokens=1" %%i IN ('choco -v') DO ( set chocoversion = %%i )
     set chocoinfo=choco ist installiert.
 ) ELSE (
     set chocoinfo=choco konnte nicht gefunden werden!
@@ -40,7 +40,7 @@ if %errorlevel% == 0 (
 :: Prüfen, ob VSCode installiert ist
 code --version
 if %errorlevel% == 0 (
-    FOR /F "tokens=1" %%i IN (`code --version`) DO (set codeversion = %%i)
+    FOR /F "usebackq tokens=1" %%i IN ('code --version') DO (set codeversion = %%i)
     set vscinfo2=VSCode: VSCode ist installiert.
 ) ELSE (
     set vscinfo2=VSCode: VSCode ist nicht installiert oder konnte nicht gefunden werden! (Fehlercode: 0003)
@@ -49,7 +49,7 @@ if %errorlevel% == 0 (
 :: Prüfen, ob Compiler installiert ist
 gcc --version
 if %errorlevel% == 0 (
-    FOR /F "tokens=1" %%i IN ('gcc --version') DO set gccversion = %%i
+    FOR /F "usebackq tokens=1" %%i IN ('gcc --version') DO set gccversion = %%i
     set gccinfo=Compiler: Compiler ist installiert.
 ) ELSE (
     set gccinfo=Compiler: Compiler ist nicht installiert oder konnte nicht erkannt werden! (Fehlercode: 0004)
@@ -78,7 +78,7 @@ if EXIST "%APPDATA%\Code\User\tasks.json" (
 
 :: Liste installierter Extensions
 del "%temp%\installedextensions.txt"
-FOR /F "tokens=*" %%i IN ('code --list-extensions --show-versions') DO (echo %%i >> "%temp%\installedextensions.txt")
+FOR /F "usebackq tokens=*" %%i IN ('code --list-extensions --show-versions') DO (echo %%i >> "%temp%\installedextensions.txt")
 set /p installedextensions=<"%temp%\installedextensions.txt"
 
 :: Prüfen, ob VSCode Extension code-runner installiert ist
