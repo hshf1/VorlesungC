@@ -21,7 +21,11 @@ if %errorlevel% == 0 (
     echo. >nul
 ) ELSE (
     :: Ausgabe vom Abbruch und exit skript
-    echo "Das Programm konnte nicht ausgeführt werden! Das Terminal muss als Administrator gestartet werden!"
+    echo "#################################################################################################"
+    echo.
+    echo "Das Programm konnte nicht gestartet werden! Das Terminal muss als Administrator gestartet werden!"
+    echo.
+    echo "#################################################################################################"
     EXIT /B
 )
 
@@ -90,7 +94,11 @@ del "%USERPROFILE%\Desktop\C_Uebung.code-workspace"
 mklink "%USERPROFILE%\Desktop\C_Uebung.code-workspace" "%APPDATA%\Code\User\C_Uebung.code-workspace"
 
 :: Ausgabe vom Ende und exit skript
+echo "#################################################################################################"
+echo.
 echo "Installation beendet! Das Terminal kann jetzt geschlossen werden."
+echo.
+echo "#################################################################################################"
 EXIT /B
 
 :::: Ende Installation ::::
@@ -109,7 +117,11 @@ rd /s /q "%APPDATA%\Code"
 rd /s /q "%USERPROFILE%\.vscode"
 
 :: Ausgabe vom Ende und exit skript
+echo "#################################################################################################"
+echo.
 echo "Deinstallation beendet! Das Terminal kann jetzt geschlossen werden."
+echo.
+echo "#################################################################################################"
 EXIT /B
 
 :::: Ende Deinstallation ::::
