@@ -67,13 +67,13 @@ curl -o %APPDATA%\Code\User\tasks.json https://github.com/hshf1/VorlesungC/blob/
 curl --create-dirs -o %USERPROFILE%\Documents\C_Uebung\testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/testprog.c
 
 :: VSCode Extension code-runner installieren
-call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension formulahendry.code-runner
+call code --install-extension formulahendry.code-runner
 :: VSCode Extension C/C++ installieren
-call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension ms-vscode.cpptools
+call code --install-extension ms-vscode.cpptools
 :: VSCode Extension Liveshare installieren
-call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension ms-vsliveshare.vsliveshare
+call code --install-extension ms-vsliveshare.vsliveshare
 :: VSCode Extension Liveshare-Audio installieren
-call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension ms-vsliveshare.vsliveshare-audio
+call code --install-extension ms-vsliveshare.vsliveshare-audio
 
 :: Erstellen/Überschreiben von C_Uebung.code-workspace
 (echo {
@@ -83,7 +83,7 @@ echo			"path": "../../../../Documents/C_Uebung"
 echo		}
 echo	]
 echo }
-echo >CON ) > "%APPDATA%\Code\User\C_Uebung.code-workspace"
+echo ) > "%APPDATA%\Code\User\C_Uebung.code-workspace"
 
 :: löschen von C_Uebung.code-workspace auf dem Desktop, falls vorhanden
 if EXIST "%USERPROFILE%\Desktop\C_Uebung.code-workspace" (
