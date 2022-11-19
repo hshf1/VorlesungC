@@ -87,7 +87,7 @@ if EXIST "%APPDATA%\Code\User\tasks.json" (
 
 :: Liste installierter Extensions
 if EXIST "%temp%\installedextensions.txt" del "%temp%\installedextensions.txt"
-call "C:\Program Files\Microsoft VS Code\bin\code" --list-extensions>"%temp%\installedextensions.txt"
+call code --list-extensions>"%temp%\installedextensions.txt"
 
 :: Prüfen, ob VSCode Extension code-runner installiert ist
 findstr code-runner "%temp%\installedextensions.txt">NUL
@@ -114,16 +114,16 @@ if %errorlevel% == 0 (
 )
 
 :: Version der Extensions & Ende LogFile
-call "C:\Program Files\Microsoft VS Code\bin\code" --list-extensions --show-versions & echo. & echo Fehleranalyse beendet!
+call code --list-extensions --show-versions & echo. & echo Fehleranalyse beendet!
 echo -------------------------------------------------------------------------------------------
-
-:: LogFile anzeigen
-:: start "" "%USERPROFILE%\Desktop\logVSC.txt"
 
 :: Ausgabe vom Ende und exit skript
 echo #################################################################################################>CON
 echo.>CON
-echo Fehleranalyse beendet! Das Terminal kann jetzt geschlossen werden.>CON
+echo Fehleranalyse beendet! Die LogFile befindet sich hier:>CON
+echo %USERPROFILE%\Desktop\logVSC.txt>CON
+echo.>CON
+echo Das Terminal kann jetzt geschlossen werden.>CON
 echo.>CON
 echo #################################################################################################>CON
 EXIT /B
