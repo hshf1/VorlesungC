@@ -49,14 +49,6 @@ if %errorlevel% == 0 (
     echo Choco: Choco konnte nicht gefunden werden! & echo.
 )
 
-:: Prüfen, ob VSCode installiert ist
-code --version>NUL
-if %errorlevel% == 0 (
-    echo VSCode: VSCode ist installiert und hat folgende Version: & code --version & echo.
-) ELSE (
-    echo VSCode: VSCode ist nicht installiert oder konnte nicht gefunden werden! (Fehlercode: 0003^) & echo.
-)
-
 :: Prüfen, ob Compiler installiert ist
 gcc --version>NUL
 if %errorlevel% == 0 (
