@@ -61,7 +61,36 @@ if EXIST "%APPDATA%\Code\User\tasks.json" (
     echo tasks.json: %APPDATA%\Code\User\tasks.json konnte nicht gefunden werden! ^(Fehlercode: 0005^) & echo.
 )
 
+:: Liste installierter Extensions
+if EXIST "%temp%\installedextensions.txt" del "%temp%\installedextensions.txt"
+code --list-extensions>"%temp%\installedextensions.txt"
+
+:: Prüfen, ob VSCode Extension code-runner installiert ist
+findstr code-runner "%temp%\installedextensions.txt">NUL
+if %errorlevel% == 0 (
+    echo Code-Runner: Die Extension Code-Runner ist installiert. & echo. 
+) ELSE (
+    echo Code-Runner: Die Extension Code-Runner konnte nicht gefunden werden. (Fehlercode: 0006^) & echo.
+)
+
+:: Prüfen, ob VSCode Extension cpptools installiert ist
+findstr cpptools "%temp%\installedextensions.txt">NUL
+if %errorlevel% == 0 (
+    echo C/C++: Die Extension C/C++ ist installiert. & echo.
+) ELSE (
+    echo C/C++: Die Extension C/C++ konnte nicht gefunden werden. (Fehlercode: 0006^) & echo.
+)
+
+:: Prüfen, ob VSCode Extension LiveShare installiert ist
+findstr liveshare "%temp%\installedextensions.txt">NUL
+if %errorlevel% == 0 (
+    echo LiveShare: Die Extension LiveShare ist installiert. & echo.
+) ELSE (
+    echo LiveShare: Die Extension LiveShare konnte nicht gefunden werden. (Fehlercode: 0006^) & echo.
+)
+
 :: Version der Extensions und Ende LogFile
+code --list-extensions --show-versions
 echo.
 echo Fehleranalyse beendet!
 echo -------------------------------------------------------------------------------------------
