@@ -63,7 +63,6 @@ if EXIST "%APPDATA%\Code\User\tasks.json" (
 
 :: Liste installierter Extensions
 if EXIST "%temp%\installedextensions.txt" del "%temp%\installedextensions.txt"
-code --list-extensions>"%temp%\installedextensions.txt"
 
 :: Prüfen, ob VSCode Extension code-runner installiert ist
 findstr code-runner "%temp%\installedextensions.txt">NUL
