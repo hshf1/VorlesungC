@@ -13,25 +13,41 @@
 :: Auszuführende Befehle nicht nochmal im Terminal anzeigen
 @echo off
 
-:: Datum und Uhrzeit festhalten
-set dateinfo=%date%
-set timeinfo=%time%
+:: LogFile Anfang
+( echo ------------------------------------------------------------------------------------------------------
+echo ------------------------------------------------------------------------------------------------------
+echo Logfile zur Fehleranalyse von VSCode für Windows am %date% um %time%.
+echo.
+echo Die meisten Probleme lassen sich beheben, indem die VSCode Installation erneut ausgeführt
+echo wird. Es kann auch hilfreich sein, zuerst die Deinstallation auszuführen.
+echo.
+echo VSCode Installation: https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
+echo.
+echo Einige Fehler können hier entdeckt werden und sind am Ende der Zeile mit einem Fehlercode bezeichnet.
+echo Unter Fehlerbebehung: https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
+echo kann nach den Fehlercodes gesucht werden, um zu sehen, wie diese behoben werden können.
+echo.
+echo Datei- und Ordnernamen dürfen keine Umlaute oder Leerzeichen enthalten!
+echo Zum Debuggen muss in VSCode ein Ordner geöffnet sein und keine einzelne Datei!
+echo.
+echo Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
+echo -------------------------------------------------------------------------------------------
+echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 
 :: Info zum Betriebssystem
-FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO set softwareinfo = %%i %%j %%k
+FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO ( echo Ausführendes Betriebssystem:
+echo %%i %%j %%k
+echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 
 :: Internetverbindung prüfen
 ping -n 1 google.de
-if %errorlevel% == 0 (
-    set pinginfo=Internetverbindung: Es konnte eine Verbindung zum Internet erkannt werden.
-) ELSE (
-    set pinginfo=Internetverbindung: Es konnte keine Verbindung zum Internet erkannt werden! (Fehlercode: 0002)
-)
+echo (%errorlevel% == 0) ? Internetverbindung: Es konnte eine Verbindung zum Internet erkannt werden. : Internetverbindung: Es konnte keine Verbindung zum Internet erkannt werden! (Fehlercode: 0002) >> "%USERPROFILE%\Desktop\logVSC.txt"
 
 :: Prüfen, ob choco installiert ist
 choco -v
 if %errorlevel% == 0 (
-    FOR /F "usebackq tokens=1" %%i IN ('choco -v') DO ( set chocoversion = %%i )
+    echo choco -v DO ( set chocoversion = %%i )
+    set /p chocoversion=<"%temp%\fehleranalyse.txt"
     set chocoinfo=choco ist installiert.
 ) ELSE (
     set chocoinfo=choco konnte nicht gefunden werden!
@@ -40,7 +56,7 @@ if %errorlevel% == 0 (
 :: Prüfen, ob VSCode installiert ist
 code --version
 if %errorlevel% == 0 (
-    FOR /F "usebackq tokens=1" %%i IN ('code --version') DO (set codeversion = %%i)
+    FOR /F "usebackq tokens=1" %%i IN ('code --version') DO ( set codeversion = %%i )
     set vscinfo2=VSCode: VSCode ist installiert.
 ) ELSE (
     set vscinfo2=VSCode: VSCode ist nicht installiert oder konnte nicht gefunden werden! (Fehlercode: 0003)
@@ -77,8 +93,7 @@ if EXIST "%APPDATA%\Code\User\tasks.json" (
 )
 
 :: Liste installierter Extensions
-del "%temp%\installedextensions.txt"
-FOR /F "usebackq tokens=*" %%i IN ('code --list-extensions --show-versions') DO (echo %%i >> "%temp%\installedextensions.txt")
+echo code --list-extensions --show-versions > "%temp%\installedextensions.txt"
 set /p installedextensions=<"%temp%\installedextensions.txt"
 
 :: Prüfen, ob VSCode Extension code-runner installiert ist
@@ -108,29 +123,7 @@ if %errorlevel% == 0 (
     set liveshareinfo=LiveShare: Die Extension LiveShare konnte nicht gefunden werden. (Fehlercode: 0006)
 )
 
-:: LogFile schreiben und Variablen einsetzen
-(
-echo ------------------------------------------------------------------------------------------------------
-echo ------------------------------------------------------------------------------------------------------
-echo Logfile zur Fehleranalyse von VSCode für Windows am %dateinfo% um %timeinfo%.
-echo.
-echo Die meisten Probleme lassen sich beheben, indem die VSCode Installation erneut ausgeführt
-echo wird. Es kann auch hilfreich sein, zuerst die Deinstallation auszuführen.
-echo.
-echo VSCode Installation: https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md
-echo.
-echo Einige Fehler können hier entdeckt werden und sind am Ende der Zeile mit einem Fehlercode bezeichnet.
-echo Unter Fehlerbebehung: https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md
-echo kann nach den Fehlercodes gesucht werden, um zu sehen, wie diese behoben werden können.
-echo.
-echo Datei- und Ordnernamen dürfen keine Umlaute oder Leerzeichen enthalten!
-echo Zum Debuggen muss in VSCode ein Ordner geöffnet sein und keine einzelne Datei!
-echo.
-echo Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
-echo -------------------------------------------------------------------------------------------
-echo.
-echo Ausführendes Betriebssystem:
-echo %softwareinfo% 
+:: Ende LogFile
 echo.
 echo %pinginfo%
 echo.
