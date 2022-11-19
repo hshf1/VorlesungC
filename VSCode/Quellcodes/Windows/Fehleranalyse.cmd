@@ -6,7 +6,7 @@
 
 :: zur Fehleranalyse folgenden Code im Terminal ausführen (ohne ::)
 ::
-:: curl -o %temp%\Fehleranalyse.bat https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.bat && %temp%\Fehleranalyse.bat>"%USERPROFILE%\Desktop\logVSC.txt" && del %temp%\Fehleranalyse.bat && start "" "%USERPROFILE%\Desktop\logVSC.txt"
+:: curl -o %temp%\Fehleranalyse.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.cmd && %temp%\Fehleranalyse.cmd>"%USERPROFILE%\Desktop\logVSC.txt" && del %temp%\Fehleranalyse.cmd && start "" "%USERPROFILE%\Desktop\logVSC.txt"
 
 :::: Beginn Fehleranalyse ::::
 
@@ -26,7 +26,7 @@ echo kann nach den Fehlercodes gesucht werden, um zu sehen, wie diese behoben we
 echo Datei- und Ordnernamen dürfen keine Umlaute oder Leerzeichen enthalten!
 echo Zum Debuggen muss in VSCode ein Ordner geöffnet sein und keine einzelne Datei! & echo.
 echo Bei anhaltenden oder neuen Problemen diese Datei per Mail an euren Dozenten schicken.
-echo ------------------------------------------------------------------------------------------- & echo.
+echo ------------------------------------------------------------------------------------------------------ & echo.
 
 :: Info zum Betriebssystem
 FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO ( echo Ausführendes Betriebssystem:
@@ -115,7 +115,7 @@ if %errorlevel% == 0 (
 
 :: Version der Extensions & Ende LogFile
 call code --list-extensions --show-versions & echo. & echo Fehleranalyse beendet!
-echo -------------------------------------------------------------------------------------------
+echo ------------------------------------------------------------------------------------------------------
 
 :: Ausgabe vom Ende und exit skript
 echo #################################################################################################>CON
@@ -126,6 +126,6 @@ echo.>CON
 echo Das Terminal kann jetzt geschlossen werden.>CON
 echo.>CON
 echo #################################################################################################>CON
-EXIT /B
+EXIT /B & start "" "%USERPROFILE%\Desktop\logVSC.txt"
 
 :::: Ende Fehleranalyse ::::
