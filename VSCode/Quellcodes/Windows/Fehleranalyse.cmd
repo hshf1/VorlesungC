@@ -52,7 +52,7 @@ if %errorlevel% == 0 (
 :: Prüfen, ob VSCode installiert ist
 code -v
 if %errorlevel% == 0 (
-    ( echo VSCode: VSCode ist installiert und hat folgende Version: & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
+    ( echo VSCode: VSCode ist installiert und hat folgende Version: & code -v & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 ) ELSE (
     ( echo VSCode: VSCode ist nicht installiert oder konnte nicht gefunden werden! (Fehlercode: 0003) & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 )
@@ -60,7 +60,7 @@ if %errorlevel% == 0 (
 :: Prüfen, ob Compiler installiert ist
 gcc --version
 if %errorlevel% == 0 (
-    ( echo Compiler: Compiler ist installiert und hat folgende Version: & gcc --version & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
+    ( echo Compiler: Compiler ist installiert und hat folgende Version: & gcc -v & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 ) ELSE (
     ( echo Compiler: Compiler ist nicht installiert oder konnte nicht erkannt werden! (Fehlercode: 0004) & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 )
