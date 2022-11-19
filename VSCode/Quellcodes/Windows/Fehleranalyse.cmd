@@ -52,7 +52,7 @@ if %errorlevel% == 0 (
 :: Prüfen, ob VSCode installiert ist
 code -v
 if %errorlevel% == 0 (
-    ( echo VSCode: VSCode ist installiert und hat folgende Version: & code -v & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
+    ( echo VSCode: VSCode ist installiert und hat folgende Version: & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 ) ELSE (
     ( echo VSCode: VSCode ist nicht installiert oder konnte nicht gefunden werden! (Fehlercode: 0003) & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 )
