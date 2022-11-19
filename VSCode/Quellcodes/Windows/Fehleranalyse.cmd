@@ -59,7 +59,7 @@ if %errorlevel% == 0 (
 :: Prüfen, ob Compiler installiert ist
 call gcc --version>NUL
 if %errorlevel% == 0 (
-    echo Compiler: Compiler ist installiert und hat folgende Version: & call gcc --version & echo.
+    echo Compiler: Compiler ist installiert und hat folgende Version: & call gcc --version
 ) ELSE (
     echo Compiler: Compiler ist nicht installiert oder konnte nicht erkannt werden! ^(Fehlercode: 0004^) & echo.
 )
