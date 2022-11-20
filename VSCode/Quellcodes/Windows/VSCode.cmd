@@ -30,7 +30,7 @@ if %errorlevel% == 0 (
 )
 
 :: Prüfen ob es installieren oder deinstallieren soll
-if /i var==uninstall (GOTO UNINSTALL)
+if /i "var"=="uninstall" (GOTO UNINSTALL)
 
 :::: Beginn Installation ::::
 
