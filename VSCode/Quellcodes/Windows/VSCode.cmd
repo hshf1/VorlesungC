@@ -6,11 +6,11 @@
 
 :: Zum installieren Terminal als Adminstrator ausführen! und folgende Zeile Code ausführen (ohne ::)
 ::
-:: curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd | cmd>nul
+:: curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd | cmd>nul 2>&1
 
 :: Zum deinstallieren Terminal als Administrator ausführen! und folgende Zeile Code ausführen (ohne ::)
 ::
-:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd uninstall && del %temp%\VSCode.cmd
+:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd uninstall >nul 2>&1 && del %temp%\VSCode.cmd
 
 :: Auszuführende Befehle nicht nochmal im Terminal anzeigen
 @echo off
@@ -41,6 +41,12 @@ if %errorlevel% == 0 (
 ) ELSE (
     call %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "((new-object net.webclient).DownloadFile('https://community.chocolatey.org/install.ps1','%temp%/installChoco.ps1'))"
     rd /s /q C:\ProgramData\chocolatey
+    :: Da alles im Hintergrund läuft hier was für den USER
+    echo #################################################################################################>CON
+    echo.>CON
+    echo Choco wird installiert. Dies kann einige Minuten dauern. Bitte warten!>CON
+    echo.>CON
+    echo #################################################################################################>CON
     :: %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%temp%/installChoco.ps1' %*" <- %* entfernt
     call %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%temp%/installChoco.ps1'"
     del "%temp%\installChoco.ps1"
@@ -68,13 +74,13 @@ curl -o %APPDATA%\Code\User\tasks.json https://github.com/hshf1/VorlesungC/blob/
 curl --create-dirs -o %USERPROFILE%\Documents\C_Uebung\testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/testprog.c
 
 :: VSCode Extension code-runner installieren
-call code --install-extension formulahendry.code-runner
+call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension formulahendry.code-runner
 :: VSCode Extension C/C++ installieren
-call code --install-extension ms-vscode.cpptools
+call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension ms-vscode.cpptools
 :: VSCode Extension Liveshare installieren
-call code --install-extension ms-vsliveshare.vsliveshare
+call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension ms-vsliveshare.vsliveshare
 :: VSCode Extension Liveshare-Audio installieren
-call code --install-extension ms-vsliveshare.vsliveshare-audio
+call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension ms-vsliveshare.vsliveshare-audio
 
 :: Erstellen/Überschreiben von C_Uebung.code-workspace
 (echo {
