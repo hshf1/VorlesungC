@@ -13,6 +13,8 @@
 :: Auszuführende Befehle nicht nochmal im Terminal anzeigen
 @echo off
 
+:: Beginn Ausgabe in LogFile
+>> "%USERPROFILE%\Desktop\logVSC.txt" (
 :: LogFile Anfang
 echo ------------------------------------------------------------------------------------------------------
 echo ------------------------------------------------------------------------------------------------------
@@ -117,7 +119,10 @@ if %errorlevel% == 0 (
 call code --list-extensions --show-versions & echo. & echo Fehleranalyse beendet!
 echo ------------------------------------------------------------------------------------------------------
 
-:: Ausgabe vom Ende und exit skript
+:: Ende Ausgabe in LogFile
+) 
+
+:: Ausgabe vom Ende
 echo #################################################################################################>CON
 echo.>CON
 echo Fehleranalyse beendet! Die LogFile befindet sich hier:>CON
@@ -126,6 +131,9 @@ echo.>CON
 echo Das Terminal kann jetzt geschlossen werden.>CON
 echo.>CON
 echo #################################################################################################>CON
-EXIT /B | start "" "%USERPROFILE%\Desktop\logVSC.txt"
+
+:: LogFile öffnen und Skript-exit
+start "" "%USERPROFILE%\Desktop\logVSC.txt"
+EXIT /B
 
 :::: Ende Fehleranalyse ::::
