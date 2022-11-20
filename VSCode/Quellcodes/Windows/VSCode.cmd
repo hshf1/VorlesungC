@@ -48,7 +48,7 @@ if %errorlevel% == 0 (
     echo.>CON
     echo #################################################################################################>CON
     :: %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%temp%/installChoco.ps1' %*" <- %* entfernt und mit >nul 2>&1 wird jede Ausgabe verhindert außer >CON
-    %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%temp%/installChoco.ps1 %*'" >nul 2>&1
+    %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%temp%/installChoco.ps1 %*'"
     del "%temp%\installChoco.ps1"
 )
 
