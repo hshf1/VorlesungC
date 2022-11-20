@@ -14,7 +14,7 @@
 @echo off
 
 :: Beginn Ausgabe in LogFile
->"%USERPROFILE%\Desktop\logVSC.txt" (
+>%USERPROFILE%\Desktop\logVSC.txt (
 :: LogFile Anfang
 echo ------------------------------------------------------------------------------------------------------
 echo ------------------------------------------------------------------------------------------------------
