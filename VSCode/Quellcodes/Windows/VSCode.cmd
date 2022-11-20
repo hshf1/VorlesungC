@@ -58,29 +58,17 @@ setx PATH "%ALLUSERSPROFILE%\chocolatey\bin;C:\ProgramData\chocolatey\lib\mingw\
 :: Compiler und Debugger mit choco installieren (hier ist Version vorderfiniert, ggf. in Zukunft ändern)
 choco install mingw --version=8.1.0 -y
 :: choco install mingw -y müsste die aktuellste Version installieren, falls irgendwann 8.1.0 defekt
-:: Da alles im Hintergrund läuft hier was für den USER
-echo #################################################################################################>CON
-echo.>CON
-echo Compiler wird installiert. Dies kann einige Minuten dauern. Bitte warten!>CON
-echo.>CON
-echo #################################################################################################>CON
 
 :: VSCode installieren bzw. neu installieren, falls fehlerhaft
 if NOT EXIST "C:\Program Files\Microsoft VS Code\Code.exe" if EXIST "C:\ProgramData\chocolatey\choco.exe" (choco uninstall vscode vscode.install -y)
-call choco install vscode -y
-:: Da alles im Hintergrund läuft hier was für den USER
-echo #################################################################################################>CON
-echo.>CON
-echo VSCode wird installiert. Dies kann etwas dauern. Bitte warten!>CON
-echo.>CON
-echo #################################################################################################>CON
+choco install vscode -y
 
 :: Erstellen/Überschreiben von settings.json und Ordner erstellen, falls nicht vorhanden
 curl --create-dirs -o %APPDATA%\Code\User\settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/settings.json
 :: Erstellen/Überschreiben von launch.json
 curl -o %APPDATA%\Code\User\launch.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/launch.json
 :: Erstellen/Überschreiben von tasks.json
-curl -o %APPDATA%\Code\User\tasks.json https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Windows/tasks.json
+curl -o %APPDATA%\Code\User\tasks.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/tasks.json
 :: Erstellen/Überschreiben von testprog.c und Ordner erstellen, falls nicht vorhanden
 curl --create-dirs -o %USERPROFILE%\Documents\C_Uebung\testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/testprog.c
 
@@ -133,6 +121,8 @@ call "C:\Program Files\Microsoft VS Code\unins000.exe"
 rd /s /q "%APPDATA%\Code"
 :: VSCode Extensions löschen
 rd /s /q "%USERPROFILE%\.vscode"
+:: Verknüpfung auf Desktop löschen
+del "%USERPROFILE%\Desktop\C_Uebung.code-workspace"
 
 :: Ausgabe vom Ende und exit skript
 echo #################################################################################################>CON
