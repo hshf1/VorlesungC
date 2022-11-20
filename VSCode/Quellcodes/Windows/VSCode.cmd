@@ -6,11 +6,11 @@
 
 :: Zum installieren Terminal als Adminstrator ausführen! und folgende Zeile Code ausführen (ohne ::)
 ::
-:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd >nul 2>&1
+:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd
 
 :: Zum deinstallieren Terminal als Administrator ausführen! und folgende Zeile Code ausführen (ohne ::)
 ::
-:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd uninstall >nul 2>&1
+:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd uninstall
 
 :: Auszuführende Befehle nicht nochmal im Terminal anzeigen
 @echo off
@@ -39,7 +39,7 @@ choco -v
 if %errorlevel% == 0 (
     echo. >nul
 ) ELSE (
-    %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "((new-object net.webclient).DownloadFile('https://community.chocolatey.org/install.ps1','%temp%/installChoco.ps1'))"
+    call %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "((new-object net.webclient).DownloadFile('https://community.chocolatey.org/install.ps1','%temp%/installChoco.ps1'))"
     rd /s /q C:\ProgramData\chocolatey
     :: Da alles im Hintergrund läuft hier was für den USER
     echo #################################################################################################>CON
@@ -47,8 +47,7 @@ if %errorlevel% == 0 (
     echo Choco wird installiert. Dies kann einige Minuten dauern. Bitte warten!>CON
     echo.>CON
     echo #################################################################################################>CON
-    :: %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%temp%/installChoco.ps1' %*" <- %* entfernt und mit >nul 2>&1 wird jede Ausgabe verhindert außer >CON
-    %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%temp%/installChoco.ps1 %*'"
+    call %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%temp%/installChoco.ps1' %*"
     del "%temp%\installChoco.ps1"
 )
 
