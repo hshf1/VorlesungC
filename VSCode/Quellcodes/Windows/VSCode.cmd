@@ -6,7 +6,7 @@
 
 :: Zum installieren Terminal als Adminstrator ausführen! und folgende Zeile Code ausführen (ohne ::)
 ::
-:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd && del %temp%\VSCode.cmd
+:: curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd | cmd>nul
 
 :: Zum deinstallieren Terminal als Administrator ausführen! und folgende Zeile Code ausführen (ohne ::)
 ::
@@ -21,11 +21,11 @@ if %errorlevel% == 0 (
     echo. >nul
 ) ELSE (
     :: Ausgabe vom Abbruch und exit skript
-    echo #################################################################################################
-    echo.
-    echo Das Programm konnte nicht gestartet werden! Das Terminal muss als Administrator gestartet werden!
-    echo.
-    echo #################################################################################################
+    echo #################################################################################################>CON
+    echo.>CON
+    echo Das Programm konnte nicht gestartet werden! Das Terminal muss als Administrator gestartet werden!>CON
+    echo.>CON
+    echo #################################################################################################>CON
     EXIT /B
 )
 
@@ -94,11 +94,11 @@ del "%USERPROFILE%\Desktop\C_Uebung.code-workspace"
 mklink "%USERPROFILE%\Desktop\C_Uebung.code-workspace" "%APPDATA%\Code\User\C_Uebung.code-workspace"
 
 :: Ausgabe vom Ende und exit skript
-echo #################################################################################################
-echo.
-echo Installation beendet! Das Terminal kann jetzt geschlossen werden.
-echo.
-echo #################################################################################################
+echo #################################################################################################>CON
+echo.>CON
+echo Installation beendet! Das Terminal kann jetzt geschlossen werden.>CON
+echo.>CON
+echo #################################################################################################>CON
 EXIT /B
 
 :::: Ende Installation ::::
@@ -117,11 +117,11 @@ rd /s /q "%APPDATA%\Code"
 rd /s /q "%USERPROFILE%\.vscode"
 
 :: Ausgabe vom Ende und exit skript
-echo #################################################################################################
-echo.
-echo Deinstallation beendet! Das Terminal kann jetzt geschlossen werden.
-echo.
-echo #################################################################################################
+echo #################################################################################################>CON
+echo.>CON
+echo Deinstallation beendet! Das Terminal kann jetzt geschlossen werden.>CON
+echo.>CON
+echo #################################################################################################>CON
 EXIT /B
 
 :::: Ende Deinstallation ::::
