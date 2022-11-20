@@ -6,7 +6,7 @@
 
 :: zur Fehleranalyse folgenden Code im Terminal ausführen (ohne ::)
 ::
-:: curl -O https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.cmd && Fehleranalyse.cmd>"%USERPROFILE%\Desktop\logVSC.txt" && del Fehleranalyse.cmd
+:: curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.cmd ] cmd>"%USERPROFILE%\Desktop\logVSC.txt"
 
 :::: Beginn Fehleranalyse ::::
 
@@ -126,6 +126,6 @@ echo.>CON
 echo Das Terminal kann jetzt geschlossen werden.>CON
 echo.>CON
 echo #################################################################################################>CON
-start "" "%USERPROFILE%\Desktop\logVSC.txt" & EXIT /B
+EXIT /B && start "" "%USERPROFILE%\Desktop\logVSC.txt"
 
 :::: Ende Fehleranalyse ::::
