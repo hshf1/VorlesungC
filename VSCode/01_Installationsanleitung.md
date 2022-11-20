@@ -113,7 +113,7 @@ Für die Installation ist die Windows Eingabeaufforderung (Windows Terminal) als
 Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 
 ```cmd
-curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeWindows.cmd -o %temp%\VSCodeWindows.cmd && %temp%\VSCodeWindows.cmd && del %temp%\VSCodeWindows.cmd && EXIT /B
+curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd | cmd>nul
 ```
 
 Nun läuft die Installation von alleine und meldet euch, wenn es fertig ist. <br /><br />
@@ -152,7 +152,7 @@ Für die Deinstallation ist die Windows Eingabeaufforderung (Windows Terminal) a
 Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 
 ```cmd
-curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeWindows.cmd -o %temp%\VSCodeWindows.cmd && %temp%\VSCodeWindows.cmd uninstall && del %temp%\VSCodeWindows.cmd && EXIT /B
+curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd | cmd uninstall
 ```
 
 Nun läuft die Deinstallation von alleine und meldet euch, wenn es fertig ist.
@@ -169,8 +169,20 @@ Nun ist alles deinstalliert und gelöscht und es kann mit der Installation wiede
 </details>
 
 <details>
-<summary>Fehleranalyse am Windows. (folgt) </summary>
+<summary>Fehleranalyse am Windows.</summary>
+
+Für die Fehleranalyse ist die Windows Eingabeaufforderung (Windows Terminal) zu starten.<br /><br />
   
+![Screenshot (29)_LI](https://user-images.githubusercontent.com/100713757/197366401-965de1cc-424d-459d-beeb-154240fe5653.jpg)
+
+Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+
+```cmd
+curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.cmd | cmd>nul
+```
+
+Die in der LogFile angezeigten Fehler enthalten Fehlercodes, die in der [Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md) nachgesehen werden können. Dort wird erklärt, wie vorzugehen ist.
+
 </details>
 
 <!--Ende Windows-Anleitung-->
