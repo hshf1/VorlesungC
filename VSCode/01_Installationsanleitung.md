@@ -152,7 +152,7 @@ Für die Deinstallation ist die Windows Eingabeaufforderung (Windows Terminal) a
 Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 
 ```cmd
-curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd | cmd uninstall
+curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd uninstall && del %temp%\VSCode.cmd
 ```
 
 Nun läuft die Deinstallation von alleine und meldet euch, wenn es fertig ist.
@@ -202,7 +202,7 @@ Für die Installation ist das Terminal zu öffnen.<br />
   
 Der folgende Code wird kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 ```sh
-sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeLinux.sh | bash && exit
+sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/VSCodeLinux.sh | bash
 ```
 
 Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Desktop) befindende Logfile, die ihr nach erfolgreicher Installation löschen könnt. Bei anhaltenden Problemen bitte diesen Logfile im Anhang per Mail abschicken.
@@ -220,13 +220,35 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 </details>
 
 <details>
-<summary>VSCode auf Linux deinstallieren. (folgt) </summary>
+<summary>VSCode auf Linux deinstallieren.</summary>
+
+Bisher getestet für: Ubuntu / Zorin 15.3<br /><br />
+Für die Deinstallation ist das Terminal zu öffnen.<br />
+
+<img width="566" alt="Bildschirmfoto 2022-04-17 um 05 31 43" src="https://user-images.githubusercontent.com/100713757/163699216-b1eb7dd1-ffce-4bcd-be21-1691adaf0c6b.png">
   
+Der folgende Code wird kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+```sh
+sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/VSCode.sh | uninstall=true bash 
+```
+
 </details>
 
 <details>
-<summary>Fehleranalyse am Linux. (folgt) </summary>
+<summary>Fehleranalyse am Linux.</summary>
   
+Bisher getestet für: Ubuntu / Zorin 15.3<br /><br />
+Für die Fehleranalyse ist das Terminal zu öffnen.<br />
+
+<img width="566" alt="Bildschirmfoto 2022-04-17 um 05 31 43" src="https://user-images.githubusercontent.com/100713757/163699216-b1eb7dd1-ffce-4bcd-be21-1691adaf0c6b.png">
+  
+Der folgende Code wird kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+```sh
+sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/Fehleranalyse.sh | bash
+```
+
+Die in der LogFile angezeigten Fehler enthalten Fehlercodes, die in der [Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md) nachgesehen werden können. Dort wird erklärt, wie vorzugehen ist.
+
 </details>
 <!--Ende Linux-Anleitung-->
 
