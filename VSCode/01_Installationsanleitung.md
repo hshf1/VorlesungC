@@ -178,7 +178,7 @@ Für die Fehleranalyse ist die Windows Eingabeaufforderung (Windows Terminal) zu
 Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 
 ```cmd
-curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.cmd | cmd>nul
+curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.cmd | cmd>nul 2>&1
 ```
 
 Die in der LogFile angezeigten Fehler enthalten Fehlercodes, die in der [Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md) nachgesehen werden können. Dort wird erklärt, wie vorzugehen ist.
