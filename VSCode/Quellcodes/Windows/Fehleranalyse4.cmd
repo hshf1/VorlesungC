@@ -30,23 +30,23 @@
 
 :: Info zum Betriebssystem
 FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO (
-    echo Ausführendes Betriebssystem: & echo %%i %%j %%k & echo. >> "%USERPROFILE%\Desktop\logVSC.txt"
+( echo Ausführendes Betriebssystem: & echo %%i %%j %%k & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 )
 
 :: Internetverbindung prüfen
 ping -n 1 google.de>NUL
 if %errorlevel% == 0 (
-    echo Internetverbindung: Es konnte eine Verbindung zum Internet erkannt werden. & echo. >> "%USERPROFILE%\Desktop\logVSC.txt"
+    ( echo Internetverbindung: Es konnte eine Verbindung zum Internet erkannt werden. & echo.) >> "%USERPROFILE%\Desktop\logVSC.txt"
 ) ELSE (
-    echo Internetverbindung: Es konnte keine Verbindung zum Internet erkannt werden! ^(Fehlercode: 0002^) & echo. >> "%USERPROFILE%\Desktop\logVSC.txt"
+    ( echo Internetverbindung: Es konnte keine Verbindung zum Internet erkannt werden! ^(Fehlercode: 0002^) & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 )
 
 :: Prüfen, ob choco installiert ist
 choco -v>NUL
 if %errorlevel% == 0 (
-    echo Choco: Choco ist installiert und hat folgende Version: & choco -v & echo. >> "%USERPROFILE%\Desktop\logVSC.txt"
+    ( echo Choco: Choco ist installiert und hat folgende Version: & choco -v & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 ) ELSE (
-    echo Choco: Choco konnte nicht gefunden werden! & echo. >> "%USERPROFILE%\Desktop\logVSC.txt"
+    ( echo Choco: Choco konnte nicht gefunden werden! & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 )
 
     :: Prüfen, ob VSCode installiert ist
