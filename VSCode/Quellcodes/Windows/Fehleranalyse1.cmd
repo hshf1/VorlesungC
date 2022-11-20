@@ -14,7 +14,7 @@
 @echo off
 
 :: Beginn Ausgabe in LogFile
->%USERPROFILE%\Desktop\logVSC.txt (
+(
 :: LogFile Anfang
 echo ------------------------------------------------------------------------------------------------------
 echo ------------------------------------------------------------------------------------------------------
@@ -120,7 +120,7 @@ call code --list-extensions --show-versions & echo. & echo Fehleranalyse beendet
 echo ------------------------------------------------------------------------------------------------------
 
 :: Ende Ausgabe in LogFile
-) 
+) >"%USERPROFILE%\Desktop\logVSC.txt"
 
 :: Ausgabe vom Ende
 echo #################################################################################################>CON
