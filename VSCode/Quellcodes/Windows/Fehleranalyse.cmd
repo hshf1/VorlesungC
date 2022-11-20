@@ -6,7 +6,7 @@
 
 :: zur Fehleranalyse folgenden Code im Terminal ausführen (ohne ::)
 ::
-:: curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.cmd | cmd>nul
+:: curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.cmd | cmd>nul 2>&1
 
 :::: Beginn Fehleranalyse ::::
 
