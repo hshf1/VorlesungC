@@ -10,12 +10,11 @@
 
 :::: Beginn Fehleranalyse ::::
 
-:: Auszuführende Befehle nicht nochmal im Terminal anzeigen
+:: Auszuführende Befehle nicht nochmal im Terminal anzeigen und LogFile-Beginn
 @echo off
 
-:: LogFile Anfang
-
 >logVSC.txt (
+
 echo ------------------------------------------------------------------------------------------------------
 echo ------------------------------------------------------------------------------------------------------
 echo Logfile zur Fehleranalyse von VSCode für Windows am %date% um %time%. & echo.
