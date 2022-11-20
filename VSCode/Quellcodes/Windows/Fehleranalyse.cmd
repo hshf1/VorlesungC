@@ -14,9 +14,10 @@
 @echo off
 
 :: Beginn Ausgabe in LogFile
-call:LogFile >> "%USERPROFILE%\Desktop\logVSC.txt"
+call:sub_logfile >> "%USERPROFILE%\Desktop\logVSC.txt"
 GOTO: END
 
+:sub_logfile
 :: LogFile Anfang
 echo ------------------------------------------------------------------------------------------------------
 echo ------------------------------------------------------------------------------------------------------
