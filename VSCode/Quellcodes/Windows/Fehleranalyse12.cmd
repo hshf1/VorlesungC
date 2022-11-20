@@ -1,4 +1,3 @@
->%USERPROFILE%\Desktop\logVSC.txt (
 :::::::::::::::::::::::::::::::::::::::
 ::  VSCode Fehleranalyse für Windows ::
 :: Hochschule Hannover - Vorlesung C ::
@@ -14,6 +13,7 @@
 :: Auszuführende Befehle nicht nochmal im Terminal anzeigen
 @echo off
 
+>logVSC.txt (
 :: LogFile Anfang
 echo ------------------------------------------------------------------------------------------------------
 echo ------------------------------------------------------------------------------------------------------
