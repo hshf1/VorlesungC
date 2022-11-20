@@ -30,12 +30,9 @@
 
 :: Info zum Betriebssystem
 FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO (
-
-(   echo Ausführendes Betriebssystem:
+    echo Ausführendes Betriebssystem:
     echo %%i %%j %%k & echo.
 ) >> "%USERPROFILE%\Desktop\logVSC.txt"
-
-)
 
 :: Internetverbindung prüfen
 ping -n 1 google.de>NUL
