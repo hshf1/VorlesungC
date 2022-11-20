@@ -1,12 +1,12 @@
 :::::::::::::::::::::::::::::::::::::::
 ::  VSCode Fehleranalyse für Windows ::
 :: Hochschule Hannover - Vorlesung C ::
-::    zuletzt geändert am 19.11.2022 ::
+::    zuletzt geändert am 20.11.2022 ::
 :::::::::::::::::::::::::::::::::::::::
 
 :: zur Fehleranalyse folgenden Code im Terminal ausführen (ohne ::)
 ::
-:: curl -o %temp%\Fehleranalyse.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.cmd && %temp%\Fehleranalyse.cmd>"%USERPROFILE%\Desktop\logVSC.txt" && del %temp%\Fehleranalyse.cmd && start "" "%USERPROFILE%\Desktop\logVSC.txt"
+:: curl -O https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.cmd && Fehleranalyse.cmd>"%USERPROFILE%\Desktop\logVSC.txt" && del Fehleranalyse.cmd
 
 :::: Beginn Fehleranalyse ::::
 
@@ -126,5 +126,6 @@ echo.>CON
 echo Das Terminal kann jetzt geschlossen werden.>CON
 echo.>CON
 echo #################################################################################################>CON
+start "" "%USERPROFILE%\Desktop\logVSC.txt" & EXIT /B
 
 :::: Ende Fehleranalyse ::::
