@@ -13,8 +13,7 @@
 :: Auszuführende Befehle nicht nochmal im Terminal anzeigen und LogFile-Beginn
 @echo off
 
->logVSC.txt(
-    echo ------------------------------------------------------------------------------------------------------
+(   echo ------------------------------------------------------------------------------------------------------
     echo ------------------------------------------------------------------------------------------------------
     echo Logfile zur Fehleranalyse von VSCode für Windows am %date% um %time%. & echo.
     echo Die meisten Probleme lassen sich beheben, indem die VSCode Installation erneut ausgeführt
@@ -116,7 +115,7 @@
     :: Version der Extensions & Ende LogFile
     call code --list-extensions --show-versions & echo. & echo Fehleranalyse beendet!
     echo ------------------------------------------------------------------------------------------------------
-)
+) >> log.txt
 
 :: Ausgabe vom Ende
 echo #################################################################################################>CON
