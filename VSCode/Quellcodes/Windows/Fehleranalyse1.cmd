@@ -14,7 +14,9 @@
 @echo off
 
 :: Beginn Ausgabe in LogFile
-(
+call:LogFile >> "%USERPROFILE%\Desktop\logVSC.txt"
+GOTO: END
+
 :: LogFile Anfang
 echo ------------------------------------------------------------------------------------------------------
 echo ------------------------------------------------------------------------------------------------------
@@ -120,9 +122,10 @@ call code --list-extensions --show-versions & echo. & echo Fehleranalyse beendet
 echo ------------------------------------------------------------------------------------------------------
 
 :: Ende Ausgabe in LogFile
-) >"%USERPROFILE%\Desktop\logVSC.txt"
+EXIT /B
 
 :: Ausgabe vom Ende
+:END
 echo #################################################################################################>CON
 echo.>CON
 echo Fehleranalyse beendet! Die LogFile befindet sich hier:>CON
