@@ -30,7 +30,7 @@
 
 :: Info zum Betriebssystem
 echo Ausführendes Betriebssystem: >> "%USERPROFILE%\Desktop\logVSC.txt"
-FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO ( echo %%i %%j %%k ) >> "%USERPROFILE%\Desktop\logVSC.txt"
+FOR /F "usebackq tokens=3,4,5" %%i IN (`REG query "hklm\software\microsoft\windows NT\CurrentVersion" /v ProductName`) DO ( echo %%i %%j %%k >> "%USERPROFILE%\Desktop\logVSC.txt" )
 echo. >> "%USERPROFILE%\Desktop\logVSC.txt"
 
 :: Internetverbindung prüfen
