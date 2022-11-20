@@ -118,7 +118,6 @@ if %errorlevel% == 0 (
 :: Version der Extensions & Ende LogFile
 call code --list-extensions --show-versions & echo. & echo Fehleranalyse beendet!
 echo ------------------------------------------------------------------------------------------------------
-
 )
 
 :: Ausgabe vom Ende
