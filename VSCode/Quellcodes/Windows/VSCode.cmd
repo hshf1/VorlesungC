@@ -6,11 +6,11 @@
 
 :: Zum installieren Terminal als Adminstrator ausführen! und folgende Zeile Code ausführen (ohne ::)
 ::
-:: curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd | cmd>nul
+:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd
 
 :: Zum deinstallieren Terminal als Administrator ausführen! und folgende Zeile Code ausführen (ohne ::)
 ::
-:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd uninstall && del %temp%\VSCode.cmd
+:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd uninstall
 
 :: Auszuführende Befehle nicht nochmal im Terminal anzeigen
 @echo off
@@ -39,7 +39,7 @@ choco -v
 if %errorlevel% == 0 (
     echo. >nul
 ) ELSE (
-    call %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "((new-object net.webclient).DownloadFile('https://community.chocolatey.org/install.ps1','%temp%/installChoco.ps1'))">nul 2>&1
+    %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "((new-object net.webclient).DownloadFile('https://community.chocolatey.org/install.ps1','%temp%/installChoco.ps1'))">nul 2>&1
     rd /s /q C:\ProgramData\chocolatey
     :: Da alles im Hintergrund läuft hier was für den USER
     echo #################################################################################################>CON
@@ -48,7 +48,7 @@ if %errorlevel% == 0 (
     echo.>CON
     echo #################################################################################################>CON
     :: %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%temp%/installChoco.ps1' %*" <- %* entfernt und mit >nul 2>&1 wird jede Ausgabe verhindert außer >CON
-    call %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%temp%/installChoco.ps1'" >nul 2>&1
+    %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%temp%/installChoco.ps1 %*'" >nul 2>&1
     del "%temp%\installChoco.ps1"
 )
 
@@ -57,7 +57,7 @@ for /f "usebackq tokens=2,*" %%A in (`reg query HKCU\Environment /v PATH`) do se
 setx PATH "%ALLUSERSPROFILE%\chocolatey\bin;C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\bin;%my_user_path%"
 
 :: Compiler und Debugger mit choco installieren (hier ist Version vorderfiniert, ggf. in Zukunft ändern)
-call choco install mingw --version=8.1.0 -y
+choco install mingw --version=8.1.0 -y
 :: choco install mingw -y müsste die aktuellste Version installieren, falls irgendwann 8.1.0 defekt
 :: Da alles im Hintergrund läuft hier was für den USER
 echo #################################################################################################>CON
@@ -66,7 +66,7 @@ echo Compiler wird installiert. Dies kann einige Minuten dauern. Bitte warten!>C
 echo.>CON
 echo #################################################################################################>CON
 
-:: VScode installieren bzw. neu installieren, falls fehlerhaft
+:: VSCode installieren bzw. neu installieren, falls fehlerhaft
 if NOT EXIST "C:\Program Files\Microsoft VS Code\Code.exe" if EXIST "C:\ProgramData\chocolatey\choco.exe" (choco uninstall vscode vscode.install -y)
 call choco install vscode -y
 :: Da alles im Hintergrund läuft hier was für den USER
