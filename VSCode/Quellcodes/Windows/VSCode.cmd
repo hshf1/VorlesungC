@@ -6,7 +6,7 @@
 
 :: Zum installieren Terminal als Adminstrator ausführen! und folgende Zeile Code ausführen (ohne ::)
 ::
-:: curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd | cmd>nul
+:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd && del %temp%\VSCode.cmd
 
 :: Zum deinstallieren Terminal als Administrator ausführen! und folgende Zeile Code ausführen (ohne ::)
 ::
@@ -30,7 +30,7 @@ if %errorlevel% == 0 (
 )
 
 :: Prüfen ob es installieren oder deinstallieren soll
-if /i "var"=="uninstall" (GOTO UNINSTALL)
+if /i "%~1"=="uninstall" (GOTO UNINSTALL)
 
 :::: Beginn Installation ::::
 
