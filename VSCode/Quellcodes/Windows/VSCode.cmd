@@ -39,7 +39,7 @@ choco -v
 if %errorlevel% == 0 (
     echo. >nul
 ) ELSE (
-    %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "((new-object net.webclient).DownloadFile('https://community.chocolatey.org/install.ps1','%temp%/installChoco.ps1'))">nul 2>&1
+    %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "((new-object net.webclient).DownloadFile('https://community.chocolatey.org/install.ps1','%temp%/installChoco.ps1'))"
     rd /s /q C:\ProgramData\chocolatey
     :: Da alles im Hintergrund läuft hier was für den USER
     echo #################################################################################################>CON
