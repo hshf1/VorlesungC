@@ -11,7 +11,14 @@ Zuallererst sollte bei einem Problem die Installations gemäß der [Installation
 
 Sollte das Problem weiterhin bestehen oder neu und hier nicht enthalten sein, so ist ein Screenshot der Fehlermeldung mit dem LogFile im Anhang an die lehrende Person zu mailen.
 
-## Allgemeine Fehler (Fehlercodes ab 0000)
+## <p align"center">Allgemeine Fehler (Fehlercodes ab 0000)</p>
+
+<details>
+<summary>Fehlercode: 0000 | Es konnte keine Verbindung zum Internet erkannt werden!</summary>
+  
+Ohne Internet wäre das Ausführen des Skriptes gar nicht möglich. Jedoch sollte überprüft werden, dass während der gesamten Ausführungszeit eine stabile Internetverbindung vorliegt.
+
+</details>
 
 ### Weitere Fehler ohne Fehlercodes
 
@@ -35,7 +42,56 @@ In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstel
 
 </details>
 
-## MacOs (Fehlercodes ab 1000)
+## <p align"center">MacOs (Fehlercodes ab 1000)</p>
+
+<details>
+<summary>Fehlercode: 1000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 1001 | VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 1002 | Compiler ist nicht installiert oder konnte nicht erkannt werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 1003 | Die Extension Code-Runner konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 1004 | Die Extension C/C++ konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 1005 | Die Extension LiveShare konnte nicht gefunden werden! (Fehlercode: 1005)</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 1006 | Die Extension lldb konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
 
 ### Weitere Fehler ohne Fehlercodes
 
@@ -50,7 +106,63 @@ Dies lässt sich im Terminal wie folgt beheben:
 
 </details>
 
-## Windows (Fehlercodes ab 2000)
+## <p align"center">Windows (Fehlercodes ab 2000)</p>
+
+<details>
+<summary>Fehlercode: 2000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 2001 | VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 2002 | Compiler ist nicht installiert oder konnte nicht erkannt werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 2003 | Die Extension Code-Runner konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 2004 | Die Extension C/C++ konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 2005 | Die Extension LiveShare konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 2006 | Das Terminal wurde nicht als Administrator gestartet!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 2007 | Choco konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
 
 ### Weitere Fehler ohne Fehlercodes
 
@@ -89,7 +201,56 @@ Entweder wurde chocolatey nicht installiert, das Ende der Installation wurde nic
 
 </details>
 
-## Linux (Fehlercodes ab 3000)
+## <p align"center">Linux (Fehlercodes ab 3000)</p>
+
+<details>
+<summary>Fehlercode: 3000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 3001 | VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 3002 | Compiler ist nicht installiert oder konnte nicht erkannt werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 3003 | Die Extension Code-Runner konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 3004 | Die Extension C/C++ konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 3005 | Die Extension LiveShare konnte nicht gefunden werden! (Fehlercode: 1005)</summary>
+  
+TBD
+
+</details>
+
+<details>
+<summary>Fehlercode: 3006 | Die Extension lldb konnte nicht gefunden werden!</summary>
+  
+TBD
+
+</details>
 
 <!--
 ### Die Idee ist es die github Suchfunktion für dieses Respository zu nutzen:
