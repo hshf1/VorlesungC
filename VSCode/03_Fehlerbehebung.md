@@ -47,6 +47,7 @@ In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstel
 <details>
 <summary>Fehlercode: 1000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
 -----------------------------------------------------------------------------------------------------
+  
 Befinden sich die *.json-Dateien nicht in <b>~/Library/Application\ Support/Code/User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht erstellt werden, so gibt es 2 Möglichkeiten:
@@ -88,44 +89,56 @@ Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/Vo
 
 <details>
 <summary>Fehlercode: 1001 | VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
+-----------------------------------------------------------------------------------------------------
   
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 1002 | Compiler ist nicht installiert oder konnte nicht erkannt werden!</summary>
+-----------------------------------------------------------------------------------------------------
   
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 1003 | Die Extension Code-Runner konnte nicht gefunden werden!</summary>
+-----------------------------------------------------------------------------------------------------
   
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 1004 | Die Extension C/C++ konnte nicht gefunden werden!</summary>
-  
+-----------------------------------------------------------------------------------------------------
+
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 1005 | Die Extension LiveShare konnte nicht gefunden werden!</summary>
+-----------------------------------------------------------------------------------------------------
   
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 1006 | Die Extension lldb konnte nicht gefunden werden!</summary>
+-----------------------------------------------------------------------------------------------------
   
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 ### Weitere Fehler ohne Fehlercodes
@@ -145,58 +158,74 @@ Dies lässt sich im Terminal wie folgt beheben:
 
 <details>
 <summary>Fehlercode: 2000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
+-----------------------------------------------------------------------------------------------------
   
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 2001 | VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
+-----------------------------------------------------------------------------------------------------
   
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 2002 | Compiler ist nicht installiert oder konnte nicht erkannt werden!</summary>
-  
+-----------------------------------------------------------------------------------------------------
+
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 2003 | Die Extension Code-Runner konnte nicht gefunden werden!</summary>
-  
+-----------------------------------------------------------------------------------------------------
+
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 2004 | Die Extension C/C++ konnte nicht gefunden werden!</summary>
-  
+-----------------------------------------------------------------------------------------------------
+
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 2005 | Die Extension LiveShare konnte nicht gefunden werden!</summary>
-  
+-----------------------------------------------------------------------------------------------------
+
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 2006 | Das Terminal wurde nicht als Administrator gestartet!</summary>
-  
+-----------------------------------------------------------------------------------------------------
+
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 2007 | Choco konnte nicht gefunden werden!</summary>
-  
+-----------------------------------------------------------------------------------------------------
+
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 ### Weitere Fehler ohne Fehlercodes
@@ -240,51 +269,65 @@ Entweder wurde chocolatey nicht installiert, das Ende der Installation wurde nic
 
 <details>
 <summary>Fehlercode: 3000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
-  
+-----------------------------------------------------------------------------------------------------
+
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 3001 | VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
-  
+-----------------------------------------------------------------------------------------------------
+
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 3002 | Compiler ist nicht installiert oder konnte nicht erkannt werden!</summary>
-  
+-----------------------------------------------------------------------------------------------------
+
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 3003 | Die Extension Code-Runner konnte nicht gefunden werden!</summary>
-  
+-----------------------------------------------------------------------------------------------------
+
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 3004 | Die Extension C/C++ konnte nicht gefunden werden!</summary>
-  
+-----------------------------------------------------------------------------------------------------
+
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 3005 | Die Extension LiveShare konnte nicht gefunden werden!</summary>
-  
+-----------------------------------------------------------------------------------------------------
+
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 3006 | Die Extension lldb konnte nicht gefunden werden!</summary>
-  
+-----------------------------------------------------------------------------------------------------
+
 TBD
 
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <!--
