@@ -28,6 +28,13 @@ Ohne Internet wäre das Ausführen des Skriptes gar nicht möglich. Jedoch sollt
 Heißt die Datei z. B. Prüfsumme.c? Irgendeiner der Ordner, in der sich die Datei schließlich befindet "Übung" oder "Neue Projekte"? Ist der Benutzername Ségolène? Es dürfen im Datei- und Ordnernamen keine Umlaute oder Leerzeichen befinden!
 
 </details>
+
+<details>
+<summary>"Running the contributed command :'extension.pickRemoteNativeProcess' failed"</summary>
+
+[Problem mit dem Virenscanner](https://github.com/hshf1/cprog/blob/main/installation.md#virenscanner)
+
+</details>
   
 <details>
 <summary>Virenscanner?</summary>
@@ -297,48 +304,179 @@ TBD
 <details>
 <summary>Fehlercode: 3003 | Die Extension Code-Runner konnte nicht gefunden werden!</summary>
 -----------------------------------------------------------------------------------------------------
+  
+Fehlt die VSCode Extension <b>Code-Runner</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+<br />
+Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
-TBD
+<details>
+<summary>VSCode Extension Code-Runner automatisch installieren</summary>
+  
+Um die VSCode Extension <b>Code-Runner</b> zu installieren, ist das Terminal zu starten. Dann muss zuerst <b>code</b> zur Umgebungsvariable hinzugefügt werden, indem der folgende Code ins Terminal kopiert und mit der ENTER-Taste ausgeführt wird:
+```sh
+cat <<-EOF >>~/.bash_profile
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+EOF
+```
+Im Anschluss ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
+```sh
+source ~/.bash_profile
+```
+Nun wird für die Installation die folgende Codezeile im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+```sh
+code --install-extension formulahendry.code-runner
+```
+  
+</details>
+<details>
+<summary>VSCode Extension Code-Runner manuell installieren (am einfachsten und schnellsten)</summary>
 
+Zuerst ist VSCode zu starten. Links gibt es die Rubrik Extensions (Icon mit 4 Rechtecken).
+
+<img width="367" alt="image" src="https://user-images.githubusercontent.com/78163337/112048606-e031c480-8b4e-11eb-81a7-13dccddf3201.png">
+
+Dort kann in der Suche nun <b>Code-Runner</b> reingeschrieben werden. Unter der Extension ist auf den Button Install zu klicken und im Anschluss ggf. VSCode neuzustarten.
+  
+Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
+  
+<img width="792" alt="Bildschirm­foto 2022-11-21 um 22 37 45" src="https://user-images.githubusercontent.com/100713757/203163145-23d2a7a9-7d91-404b-99de-8cc5f84a0312.png">
+
+</details>
 -----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 3004 | Die Extension C/C++ konnte nicht gefunden werden!</summary>
 -----------------------------------------------------------------------------------------------------
+  
+Fehlt die VSCode Extension <b>C/C++</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+<br />
+Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
-TBD
+<details>
+<summary>VSCode Extension C/C++ automatisch installieren</summary>
+  
+Um die VSCode Extension <b>C/C++</b> zu installieren, ist das Terminal zu starten. Dann muss zuerst <b>code</b> zur Umgebungsvariable hinzugefügt werden, indem der folgende Code ins Terminal kopiert und mit der ENTER-Taste ausgeführt wird:
+```sh
+cat <<-EOF >>~/.bash_profile
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+EOF
+```
+Im Anschluss ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
+```sh
+source ~/.bash_profile
+```
+Nun wird für die Installation die folgende Codezeile im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+```sh
+code --install-extension ms-vscode.cpptools
+```
+  
+</details>
+<details>
+<summary>VSCode Extension C/C++ manuell installieren (am einfachsten und schnellsten)</summary>
 
+Zuerst ist VSCode zu starten. Links gibt es die Rubrik Extensions (Icon mit 4 Rechtecken).
+
+<img width="367" alt="image" src="https://user-images.githubusercontent.com/78163337/112048606-e031c480-8b4e-11eb-81a7-13dccddf3201.png">
+
+Dort kann in der Suche nun <b>C/C++</b> reingeschrieben werden. Unter der Extension ist auf den Button Install zu klicken und im Anschluss ggf. VSCode neuzustarten.
+  
+Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
+  
+<img width="792" alt="Bildschirm­foto 2022-11-21 um 22 28 09" src="https://user-images.githubusercontent.com/100713757/203161578-c56ff44f-09e7-4b91-a6bb-48c371701d56.png">
+
+</details>
 -----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 3005 | Die Extension LiveShare konnte nicht gefunden werden!</summary>
 -----------------------------------------------------------------------------------------------------
+  
+Fehlt die VSCode Extension <b>LiveShare</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+<br />
+Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
-TBD
+<details>
+<summary>VSCode Extension LiveShare automatisch installieren</summary>
+  
+Um die VSCode Extension <b>LiveShare</b> zu installieren, ist das Terminal zu starten. Dann muss zuerst <b>code</b> zur Umgebungsvariable hinzugefügt werden, indem der folgende Code ins Terminal kopiert und mit der ENTER-Taste ausgeführt wird:
+```sh
+cat <<-EOF >>~/.bash_profile
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+EOF
+```
+Im Anschluss ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
+```sh
+source ~/.bash_profile
+```
+Nun wird für die Installation die folgende Codezeile im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+```sh
+code --install-extension ms-vsliveshare.vsliveshare-pack
+```
+  
+</details>
+<details>
+<summary>VSCode Extension LiveShare manuell installieren (am einfachsten und schnellsten)</summary>
 
+Zuerst ist VSCode zu starten. Links gibt es die Rubrik Extensions (Icon mit 4 Rechtecken).
+
+<img width="367" alt="image" src="https://user-images.githubusercontent.com/78163337/112048606-e031c480-8b4e-11eb-81a7-13dccddf3201.png">
+
+Dort kann in der Suche nun <b>LiveShare</b> reingeschrieben werden. Unter der Extension ist auf den Button Install zu klicken und im Anschluss ggf. VSCode neuzustarten.
+  
+Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
+  
+<img width="792" alt="Bildschirm­foto 2022-11-21 um 22 25 26" src="https://user-images.githubusercontent.com/100713757/203161129-69856ae6-097d-4dba-9671-ee98d09480b9.png">
+
+</details>
 -----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 3006 | Die Extension lldb konnte nicht gefunden werden!</summary>
 -----------------------------------------------------------------------------------------------------
-
-TBD
-
------------------------------------------------------------------------------------------------------
-</details>
-
-<!--
-### Die Idee ist es die github Suchfunktion für dieses Respository zu nutzen:
-
-![githubSuche](https://user-images.githubusercontent.com/81232074/113470733-0f520b00-9458-11eb-9f0c-46f9ba9994a9.png)
+  
+Fehlt die VSCode Extension <b>lldb</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+<br />
+Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
 <details>
-<summary>"Running the contributed command :'extension.pickRemoteNativeProcess' failed"</summary>
+<summary>VSCode Extension lldb automatisch installieren</summary>
+  
+Um die VSCode Extension lldb zu installieren, ist das Terminal zu starten. Dann muss zuerst <b>code</b> zur Umgebungsvariable hinzugefügt werden, indem der folgende Code ins Terminal kopiert und mit der ENTER-Taste ausgeführt wird:
+```sh
+cat <<-EOF >>~/.bash_profile
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+EOF
+```
+Im Anschluss ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
+```sh
+source ~/.bash_profile
+```
+Nun wird für die Installation die folgende Codezeile im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+```sh
+code --install-extension vadimcn.vscode-lldb
+```
+  
+</details>
+<details>
+<summary>VSCode Extension lldb manuell installieren (am einfachsten und schnellsten)</summary>
 
-[Problem mit dem Virenscanner](https://github.com/hshf1/cprog/blob/main/installation.md#virenscanner)
+Zuerst ist VSCode zu starten. Links gibt es die Rubrik Extensions (Icon mit 4 Rechtecken).
+
+<img width="367" alt="image" src="https://user-images.githubusercontent.com/78163337/112048606-e031c480-8b4e-11eb-81a7-13dccddf3201.png">
+
+Dort kann in der Suche nun <b>lldb</b> reingeschrieben werden. Unter der Extension ist auf den Button Install zu klicken und im Anschluss ggf. VSCode neuzustarten.
+  
+Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
+  
+<img width="792" alt="Bildschirm­foto 2022-11-21 um 22 19 49" src="https://user-images.githubusercontent.com/100713757/203160275-164fbe82-000f-4e91-aea5-f81192e165f9.png">
 
 </details>
--->
+-----------------------------------------------------------------------------------------------------
+</details>
