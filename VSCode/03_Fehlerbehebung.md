@@ -54,7 +54,7 @@ In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstel
 <details>
 <summary>Fehlercode: 1000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
 -----------------------------------------------------------------------------------------------------
-  
+
 Befinden sich die *.json-Dateien nicht in <b>~/Library/Application\ Support/Code/User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht erstellt werden, so gibt es 2 Möglichkeiten:
@@ -261,7 +261,7 @@ Eine unvollständige Installation von Chocolatey kann man mit folgendem Befehl i
 <details>
 <summary>Beim debuggen oder ausführen kommt die Fehlermeldung, a.exe wurde nicht gefunden.</summary>
   
-Dieser Fehler lässt sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung (https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
+Dieser Fehler lässt sich ganz einfach beheben, indem die Installation gemäß der [Anleitung (https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt wird, ohne etwas zu deinstallieren.
 
 </details>
 
@@ -278,8 +278,42 @@ Entweder wurde chocolatey nicht installiert, das Ende der Installation wurde nic
 <summary>Fehlercode: 3000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
 -----------------------------------------------------------------------------------------------------
 
-TBD
+Befinden sich die *.json-Dateien nicht in <b>~/.config/Code/User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
+<br />
+Sollte es mit der Installation dennoch nicht erstellt werden, so gibt es 2 Möglichkeiten:
 
+<details>
+<summary>*.json-Dateien automatisch erstellen</summary>
+  
+Um die *.json-Dateien automatisch zu erstellen, ist das Terminal zu starten und die folgenden Codezeilen aus der Installation einzeln auszuführen.<br />
+Für die settings.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
+```sh
+curl --create-dirs -o ~/.config/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/settings.json
+```
+Für die launch.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
+```sh
+curl --create-dirs -o ~/.config/Code/User/launch.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/launch.json
+```
+Für die tasks.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
+```sh
+curl --create-dirs -o ~/.config/Code/User/tasks.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/tasks.json
+```
+  
+</details>
+<details>
+<summary>*.json-Dateien manuell erstellen</summary>
+
+Um die *.json-Dateien manuell zu erstellen, ist zuerst das Verzeichnis <b>~/.config/Code/User</b> zu öffnen. Sollte das Verzeichnis noch nicht vorhanden, muss das erstellt werden. Dieses Verzeichnis wird aber auch automatisch erstellt, sobald VSCode geöffnet wird.
+  <br />
+Dann sind 3 neue Text-Dateien dort zu erstellen. Diese sind so zu benennen, wie hier geschrieben. Schreibfehler führen dazu, dass die Dateien nicht erkannt werden. Die Dateiendungen müssen unbedingt *.json sein und nicht *.txt oder anderes.
+  <br />
+Für die settings.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/MacOS/settings.json) einzufügen und zu speichern.
+  
+Für die launch.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/MacOS/launch.json) einzufügen und zu speichern.
+  
+Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/MacOS/tasks.json) einzufügen und zu speichern.
+
+</details>
 -----------------------------------------------------------------------------------------------------
 </details>
 
@@ -287,8 +321,17 @@ TBD
 <summary>Fehlercode: 3001 | VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
 -----------------------------------------------------------------------------------------------------
 
-TBD
+Fehlt <b>VSCode</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. VSCode sollte damit installiert werden.<br />
+<br />
+Sollte es mit der Installation dennoch nicht installiert werden, kann dieser Schritt nochmal einzeln ausgeführt werden:
 
+Um <b>VSCode</b> zu installieren, ist das Terminal zu starten. Nun wird für die Installation die folgende Codezeile im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+```sh
+sudo snap install --classic code
+```
+  
+Aufgrund des Befehls 'sudo' sind hier Adminrechte nötig!
+  
 -----------------------------------------------------------------------------------------------------
 </details>
 
@@ -296,15 +339,24 @@ TBD
 <summary>Fehlercode: 3002 | Compiler ist nicht installiert oder konnte nicht erkannt werden!</summary>
 -----------------------------------------------------------------------------------------------------
 
-TBD
+Fehlt der <b>Compiler</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Der Compiler sollte damit installiert werden.<br />
+<br />
+Sollte es mit der Installation dennoch nicht installiert werden, kann dieser Schritt nochmal einzeln ausgeführt werden:
 
+Um den <b>Compiler</b> zu installieren, ist das Terminal zu starten. Nun wird für die Installation die folgende Codezeile im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
+```sh
+sudo apt install gcc
+```
+  
+Aufgrund des Befehls 'sudo' sind hier Adminrechte nötig!
+  
 -----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
 <summary>Fehlercode: 3003 | Die Extension Code-Runner konnte nicht gefunden werden!</summary>
 -----------------------------------------------------------------------------------------------------
-  
+
 Fehlt die VSCode Extension <b>Code-Runner</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
