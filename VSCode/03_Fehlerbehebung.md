@@ -3,7 +3,7 @@
 
 # Fehlerbehebung
 
-Einige Fehler können mit der Fehleranalyse aufgedeckt werden. Wie die Fehleranalyse ausgeführt wird, steht ebenfalls in der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md). Im LogFile stehen dann mögliche Fehler mit Fehlercodes, die hier näher beschrieben sind und zur Fehlerbehebung helfen.
+Einige Fehler können mit der Fehleranalyse aufgedeckt werden. Wie die Fehleranalyse ausgeführt wird, steht ebenfalls in der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md). Im LogFile stehen dann mögliche Fehler mit Fehlercodes, die hier näher beschrieben sind und zur Fehlerbehebung helfen. Dabei steht die erste Ziffer des Fehlercodes für das System -> 0*** sind Allgemeine Fehler, 1*** sind Fehler beim MacOS, 2*** sind Fehler beim Windows und 3*** sind Fehler beim Linux.
 
 Zuallererst sollte bei einem Problem die Installations gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt werden. Es hilft auch, zuerst die Deinstallation auszuführen und dann erneut die Installation. Die Deinstallation ist ebenfalls in der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) erklärt.
 
@@ -11,7 +11,7 @@ Zuallererst sollte bei einem Problem die Installations gemäß der [Installation
 
 Sollte das Problem weiterhin bestehen oder neu und hier nicht enthalten sein, so ist ein Screenshot der Fehlermeldung mit dem LogFile im Anhang an die lehrende Person zu mailen.
 
-## <p align="center">Allgemeine Fehler (Fehlercodes ab 0000)</p>
+## <p align="center">Allgemeine Fehler</p>
 
 <details>
 <summary>Fehlercode: 0000 | Es konnte keine Verbindung zum Internet erkannt werden!</summary>
@@ -42,7 +42,7 @@ In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstel
 
 </details>
 
-## <p align="center">MacOs (Fehlercodes ab 1000)</p>
+## <p align="center">MacOS</p>
 
 <details>
 <summary>Fehlercode: 1000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
@@ -106,7 +106,7 @@ Dies lässt sich im Terminal wie folgt beheben:
 
 </details>
 
-## <p align="center">Windows (Fehlercodes ab 2000)</p>
+## <p align="center">Windows</p>
 
 <details>
 <summary>Fehlercode: 2000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
@@ -201,7 +201,7 @@ Entweder wurde chocolatey nicht installiert, das Ende der Installation wurde nic
 
 </details>
 
-## <p align="center">Linux (Fehlercodes ab 3000)</p>
+## <p align="center">Linux</p>
 
 <details>
 <summary>Fehlercode: 3000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
