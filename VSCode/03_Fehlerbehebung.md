@@ -307,11 +307,11 @@ Um die *.json-Dateien manuell zu erstellen, ist zuerst das Verzeichnis <b>~/.con
   <br />
 Dann sind 3 neue Text-Dateien dort zu erstellen. Diese sind so zu benennen, wie hier geschrieben. Schreibfehler führen dazu, dass die Dateien nicht erkannt werden. Die Dateiendungen müssen unbedingt *.json sein und nicht *.txt oder anderes.
   <br />
-Für die settings.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/MacOS/settings.json) einzufügen und zu speichern.
+Für die settings.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Linux/settings.json) einzufügen und zu speichern.
   
-Für die launch.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/MacOS/launch.json) einzufügen und zu speichern.
+Für die launch.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Linux/launch.json) einzufügen und zu speichern.
   
-Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/MacOS/tasks.json) einzufügen und zu speichern.
+Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Linux/tasks.json) einzufügen und zu speichern.
 
 </details>
 -----------------------------------------------------------------------------------------------------
@@ -329,8 +329,8 @@ Um <b>VSCode</b> zu installieren, ist das Terminal zu starten. Nun wird für die
 ```sh
 sudo snap install --classic code
 ```
- 
 Aufgrund des Befehls 'sudo' sind hier Adminrechte nötig!
+
 -----------------------------------------------------------------------------------------------------
 </details>
 
@@ -346,7 +346,6 @@ Um den <b>Compiler</b> zu installieren, ist das Terminal zu starten. Nun wird f�
 ```sh
 sudo apt install gcc
 ```
-  
 Aufgrund des Befehls 'sudo' sind hier Adminrechte nötig!
 -----------------------------------------------------------------------------------------------------
 </details>
