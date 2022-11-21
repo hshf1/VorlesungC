@@ -11,7 +11,7 @@ Zuallererst sollte bei einem Problem die Installations gemäß der [Installation
 
 Sollte das Problem weiterhin bestehen oder neu und hier nicht enthalten sein, so ist ein Screenshot der Fehlermeldung mit dem LogFile im Anhang an die lehrende Person zu mailen.
 
-## <p align"center">Allgemeine Fehler (Fehlercodes ab 0000)</p>
+## <p align="center">Allgemeine Fehler (Fehlercodes ab 0000)</p>
 
 <details>
 <summary>Fehlercode: 0000 | Es konnte keine Verbindung zum Internet erkannt werden!</summary>
@@ -42,7 +42,7 @@ In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstel
 
 </details>
 
-## <p align"center">MacOs (Fehlercodes ab 1000)</p>
+## <p align="center">MacOs (Fehlercodes ab 1000)</p>
 
 <details>
 <summary>Fehlercode: 1000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
@@ -106,7 +106,7 @@ Dies lässt sich im Terminal wie folgt beheben:
 
 </details>
 
-## <p align"center">Windows (Fehlercodes ab 2000)</p>
+## <p align="center">Windows (Fehlercodes ab 2000)</p>
 
 <details>
 <summary>Fehlercode: 2000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
@@ -201,7 +201,7 @@ Entweder wurde chocolatey nicht installiert, das Ende der Installation wurde nic
 
 </details>
 
-## <p align"center">Linux (Fehlercodes ab 3000)</p>
+## <p align="center">Linux (Fehlercodes ab 3000)</p>
 
 <details>
 <summary>Fehlercode: 3000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
