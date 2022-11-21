@@ -32,9 +32,9 @@ else vscinfo2="VSCode: VSCode ist nicht installiert oder konnte nicht gefunden w
 fi
 
 # Prüfen, ob Compiler installiert ist
-clang --version
+gcc --version
 if [ $? -eq 0 ]
-then gccversion=$(clang --version)
+then gccversion=$(gcc --version)
 gccinfo="Compiler: Compiler ist installiert.\nCompiler-Version: $gccversion"
 else gccinfo="Compiler: Compiler ist nicht installiert oder konnte nicht erkannt werden! (Fehlercode: 0004)"
 fi
@@ -73,6 +73,7 @@ EOF
 source ~/.bash_profile
 
 # Liste installierter Extensions in Variable setzen
+installedextensions="Keine VSCode Extensions gefunden!"
 installedextensions=$(code --list-extensions --show-versions)
 
 # Prüfen, ob VSCode Extension code-runner installiert ist
