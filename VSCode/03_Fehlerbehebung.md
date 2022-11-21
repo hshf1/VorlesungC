@@ -329,9 +329,11 @@ Um <b>VSCode</b> zu installieren, ist das Terminal zu starten. Nun wird für die
 ```sh
 sudo snap install --classic code
 ```
-Aufgrund des Befehls 'sudo' sind hier Adminrechte nötig!
+  
+Aufgrund des Befehls <b>sudo</b> sind hier Adminrechte nötig!
 
 -----------------------------------------------------------------------------------------------------
+
 </details>
 
 <details>
@@ -346,8 +348,11 @@ Um den <b>Compiler</b> zu installieren, ist das Terminal zu starten. Nun wird f�
 ```sh
 sudo apt install gcc
 ```
-Aufgrund des Befehls 'sudo' sind hier Adminrechte nötig!
+  
+Aufgrund des Befehls <b>sudo</b> sind hier Adminrechte nötig!
+  
 -----------------------------------------------------------------------------------------------------
+  
 </details>
 
 <details>
