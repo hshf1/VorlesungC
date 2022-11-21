@@ -46,7 +46,7 @@ In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstel
 
 <details>
 <summary>Fehlercode: 1000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
-  
+-----------------------------------------------------------------------------------------------------
 Befinden sich die *.json-Dateien nicht in <b>~/Library/Application\ Support/Code/User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht erstellt werden, so gibt es 2 Möglichkeiten:
@@ -83,7 +83,7 @@ Für die launch.json ist der Inhalt [von diesem Link](https://github.com/hshf1/V
 Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/MacOS/tasks.json) einzufügen und zu speichern.
 
 </details>
-
+-----------------------------------------------------------------------------------------------------
 </details>
 
 <details>
