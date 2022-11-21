@@ -25,8 +25,6 @@ if [ "$uninstall" = "true" ]; then
     rm -rf ~/.config/Code
     # Löschen aller Extensions
     rm -rf ~/.vscode
-    # Löschen der Verknüpfung auf dem Bildschirm
-    rm -rf ~/Desktop/C_Uebung.code-workspace
 
     #### Ende Deinstallation ####
 
@@ -78,17 +76,6 @@ else
     code --install-extension ms-vsliveshare.vsliveshare-audio
     # VSCode Extension lldb installieren - nötig für Compiler
     code --install-extension vadimcn.vscode-lldb
-    # Erstellen/Überschreiben von C_Uebung.code-workspace
-    echo "
-    {
-        \"folders\": [
-            {
-	            \"path\": \"../../../../Documents/C_Uebung\"
-            }
-        ]
-    }" > ~/.config/Code/User/C_Uebung.code-workspace
-    # Verknüpfung von C_Uebung.code-workspace auf Desktop - so kann es überall hinverschoben oder umbenannt werden
-    ln -sf ~/.config/Code/User/C_Uebung.code-workspace ~/Desktop/C_Uebung.code-workspace
 
     #### Ende Installation ####
 
