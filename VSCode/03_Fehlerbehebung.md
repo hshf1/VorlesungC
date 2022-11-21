@@ -331,8 +331,9 @@ sudo snap install --classic code
 ```
   
 Aufgrund des Befehls 'sudo' sind hier Adminrechte nötig!
-  
+ 
 -----------------------------------------------------------------------------------------------------
+
 </details>
 
 <details>
@@ -351,6 +352,7 @@ sudo apt install gcc
 Aufgrund des Befehls 'sudo' sind hier Adminrechte nötig!
   
 -----------------------------------------------------------------------------------------------------
+
 </details>
 
 <details>
