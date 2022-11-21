@@ -50,8 +50,9 @@ In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstel
 Befinden sich die *.json-Dateien nicht in <b>~/Library/Application\ Support/Code/User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht erstellt werden, so gibt es 2 Möglichkeiten:
+
 <details>
-<summary>*.json-Dateien automatisch erstellen<summary>
+<summary>*.json-Dateien automatisch erstellen</summary>
   
 Um die *.json-Dateien automatisch zu erstellen, ist das Terminal zu starten und die folgenden Codezeilen aus der Installation einzeln auszuführen.<br />
 Für die settings.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
@@ -69,7 +70,7 @@ curl --create-dirs -o ~/Library/Application\ Support/Code/User/tasks.json https:
   
 </details>
 <details>
-<summary>*.json-Dateien manuell erstellen<summary>
+<summary>*.json-Dateien manuell erstellen</summary>
 
 Um die *.json-Dateien manuell zu erstellen, ist zuerst das Verzeichnis <b>~/Library/Application\ Support/Code/User</b> zu öffnen. Sollte das Verzeichnis noch nicht vorhanden, muss das erstellt werden. Dieses Verzeichnis wird aber auch automatisch erstellt, sobald VSCode geöffnet wird.
   <br />
