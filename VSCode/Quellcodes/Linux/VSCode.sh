@@ -41,9 +41,6 @@ else
     # Compiler installieren, falls nicht vorhanden
     sudo apt install gcc
 
-    # VSCode als default Texteditor einstellen
-    xdg-mime default code.desktop text/plain
-
     # Umgebungsvariable für die aktuelle Terminalsitzung hinzufügen und aktualisieren
     cat <<-EOF >>~/.bash_profile
 	# Add Visual Studio Code (code)
