@@ -159,7 +159,10 @@ Fehleranalyse beendet!
 echo "
 ------------------------------------------------------------------
 
-Fehleranalyse beendet! Das Terminal kann jetzt geschlossen werden.
+Fehleranalyse beendet! Die LogFile befindet sich hier:
+~/Desktop/logVSC.txt
+
+Das Terminal kann jetzt geschlossen werden.
 
 ------------------------------------------------------------------"
 
