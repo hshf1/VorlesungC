@@ -5,7 +5,7 @@
 
 Einige Fehler können mit der Fehleranalyse aufgedeckt werden. Wie die Fehleranalyse ausgeführt wird, steht ebenfalls in der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md). Im LogFile stehen dann mögliche Fehler mit Fehlercodes, die hier näher beschrieben sind und zur Fehlerbehebung helfen. Dabei steht die erste Ziffer des Fehlercodes für das System -> 0*** sind Allgemeine Fehler, 1*** sind Fehler beim MacOS, 2*** sind Fehler beim Windows und 3*** sind Fehler beim Linux.
 
-Zuallererst sollte bei einem Problem die Installations gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt werden. Es hilft auch, zuerst die Deinstallation auszuführen und dann erneut die Installation. Die Deinstallation ist ebenfalls in der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) erklärt.
+:information_source: Zuallererst sollte bei einem Problem die Installations gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt werden. Es hilft auch, zuerst die :information_source: Deinstallation auszuführen und dann erneut die Installation. Die Deinstallation ist ebenfalls in der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) erklärt.
 
 :warning: Sollte keine LogFile erstellt werden und es taucht eine Fehlermeldung auf, bitte mit Windowsversion eine Mail schreiben.
 
