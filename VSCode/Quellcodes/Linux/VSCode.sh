@@ -44,7 +44,7 @@ else
     sudo apt install gcc
 
     # VSCode als default Texteditor einstellen
-    sudo update-alternatives --set editor /usr/bin/code
+    xdg-mime default code.desktop text/plain
 
     # Umgebungsvariable für die aktuelle Terminalsitzung hinzufügen und aktualisieren
     cat <<-EOF >>~/.bash_profile
