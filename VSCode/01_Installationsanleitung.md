@@ -202,7 +202,7 @@ Für die Installation ist das Terminal zu öffnen.<br />
   
 Der folgende Code wird kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 ```sh
-sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Linux/VSCode.sh | bash
+sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/VSCode.sh | bash
 ```
 
 Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Desktop) befindende Logfile, die ihr nach erfolgreicher Installation löschen könnt. Bei anhaltenden Problemen bitte diesen Logfile im Anhang per Mail abschicken.
