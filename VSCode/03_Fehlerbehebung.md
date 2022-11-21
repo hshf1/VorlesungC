@@ -16,7 +16,7 @@ Sollte das Problem weiterhin bestehen oder neu und hier nicht enthalten sein, so
 <details>
 <summary>Fehlercode: 0000 | Es konnte keine Verbindung zum Internet erkannt werden!</summary>
   
-Ohne Internet wäre das Ausführen des Skriptes gar nicht möglich. Jedoch sollte überprüft werden, dass während der gesamten Ausführungszeit eine stabile Internetverbindung vorliegt.
+Ohne Internet wäre das Ausführen des Skriptes gar nicht möglich. Jedoch sollte darauf geachtet werden, dass während der gesamten Ausführungszeit eine stabile Internetverbindung vorliegt.
 
 </details>
 
@@ -47,7 +47,41 @@ In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstel
 <details>
 <summary>Fehlercode: 1000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
   
-TBD
+Befinden sich die *.json-Dateien nicht in <b>~/Library/Application\ Support/Code/User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
+<br />
+Sollte es mit der Installation dennoch nicht erstellt werden, so gibt es 2 Möglichkeiten:
+<details>
+<summary>*.json-Dateien automatisch erstellen<summary>
+  
+Um die *.json-Dateien automatisch zu erstellen, ist das Terminal zu starten und die folgenden Codezeilen aus der Installation einzeln auszuführen.<br />
+Für die settings.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
+```sh
+curl --create-dirs -o ~/Library/Application\ Support/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/settings.json
+```
+Für die launch.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
+```sh
+curl --create-dirs -o ~/Library/Application\ Support/Code/User/launch.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/launch.json
+```
+Für die tasks.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
+```sh
+curl --create-dirs -o ~/Library/Application\ Support/Code/User/tasks.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/tasks.json
+```
+  
+</details>
+<details>
+<summary>*.json-Dateien manuell erstellen<summary>
+
+Um die *.json-Dateien manuell zu erstellen, ist zuerst das Verzeichnis <b>~/Library/Application\ Support/Code/User</b> zu öffnen. Sollte das Verzeichnis noch nicht vorhanden, muss das erstellt werden. Dieses Verzeichnis wird aber auch automatisch erstellt, sobald VSCode geöffnet wird.
+  <br />
+Dann sind 3 neue Text-Dateien dort zu erstellen. Diese sind so zu benennen, wie hier geschrieben. Schreibfehler führen dazu, dass die Dateien nicht erkannt werden. Die Dateiendungen müssen unbedingt *.json sein und nicht *.txt oder anderes.
+  <br />
+Für die settings.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/MacOS/settings.json) einzufügen und zu speichern.
+  
+Für die launch.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/MacOS/launch.json) einzufügen und zu speichern.
+  
+Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/MacOS/tasks.json) einzufügen und zu speichern.
+
+</details>
 
 </details>
 
@@ -80,7 +114,7 @@ TBD
 </details>
 
 <details>
-<summary>Fehlercode: 1005 | Die Extension LiveShare konnte nicht gefunden werden! (Fehlercode: 1005)</summary>
+<summary>Fehlercode: 1005 | Die Extension LiveShare konnte nicht gefunden werden!</summary>
   
 TBD
 
@@ -239,7 +273,7 @@ TBD
 </details>
 
 <details>
-<summary>Fehlercode: 3005 | Die Extension LiveShare konnte nicht gefunden werden! (Fehlercode: 1005)</summary>
+<summary>Fehlercode: 3005 | Die Extension LiveShare konnte nicht gefunden werden!</summary>
   
 TBD
 
