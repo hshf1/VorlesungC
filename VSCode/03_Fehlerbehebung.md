@@ -150,7 +150,14 @@ command xcode-select --install
 <summary>Fehlercode: 1003 | Die Extension Code-Runner konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
-  
+
+Fehlt die VSCode Extension <b>Code-Runner</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+<br />
+Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
+
+<details>
+<summary>VSCode Extension Code-Runner automatisch installieren</summary>
+
 Um die VSCode Extension <b>Code-Runner</b> zu installieren, ist das Terminal zu starten. Dann muss zuerst <b>code</b> zur Umgebungsvariable hinzugefügt werden, indem der folgende Code ins Terminal kopiert und mit der ENTER-Taste ausgeführt wird:
 ```sh
 cat <<-EOF >>~/.bash_profile
