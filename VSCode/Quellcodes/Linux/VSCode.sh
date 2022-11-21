@@ -1,8 +1,8 @@
-#################################################################
-#                                 VSCode Installation für Linux #
-#                             Hochschule Hannover - Vorlesung C #
-#                                zuletzt geändert am 18.11.2022 #
-#################################################################
+#####################################
+#     VSCode Installation für Linux #
+# Hochschule Hannover - Vorlesung C #
+#    zuletzt geändert am 21.11.2022 #
+#####################################
 
 # zum installieren folgenden Code im Terminal ausführen (ohne #)
 #
@@ -43,6 +43,9 @@ else
     # Compiler installieren, falls nicht vorhanden
     sudo apt install gcc
 
+    # VSCode als default Texteditor einstellen
+    sudo update-alternatives --install /usr/bin/editor editor $(which code) 10
+
     # Umgebungsvariable für die aktuelle Terminalsitzung hinzufügen und aktualisieren
     cat <<-EOF >>~/.bash_profile
 	# Add Visual Studio Code (code)
@@ -51,11 +54,11 @@ else
     source ~/.bash_profile
 
     # Erstellen/Überschreiben von settings.json und Ordner erstellen, wenn nicht existiert
-    curl --create-dirs -o ~/Library/Application\ Support/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/settings.json
+    curl --create-dirs -o ~/.config/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/settings.json
     # Erstellen/Überschreiben von launch.json
-    curl -o ~/Library/Application\ Support/Code/User/launch.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/launch.json
+    curl -o ~/.config/Code/User/launch.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/launch.json
     # Erstellen/Überschreiben von tasks.json
-    curl -o ~/Library/Application\ Support/Code/User/tasks.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/tasks.json
+    curl -o ~/.config/Code/User/tasks.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/tasks.json
     # Erstellen/Überschreiben von testprog.c und Ordner erstellen, wenn nicht existiert
     curl --create-dirs -o ~/Documents/C_Uebung/testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/testprog.c
     # VSCode Extension code-runner installieren
@@ -76,9 +79,9 @@ else
 	            \"path\": \"../../../../Documents/C_Uebung\"
             }
         ]
-    }" > ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace
+    }" > ~/.config/Code/User/C_Uebung.code-workspace
     # Verknüpfung von C_Uebung.code-workspace auf Desktop - so kann es überall hinverschoben oder umbenannt werden
-    ln -sf ~/Library/Application\ Support/Code/User/C_Uebung.code-workspace ~/Desktop/C_Uebung.code-workspace
+    ln -sf ~/.config/Code/User/C_Uebung.code-workspace ~/Desktop/C_Uebung.code-workspace
 
     #### Ende Installation ####
 
