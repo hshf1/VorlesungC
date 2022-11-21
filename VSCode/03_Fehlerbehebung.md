@@ -492,6 +492,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 
 <details>
 <summary>Fehlercode: 3006 | Die Extension lldb konnte nicht gefunden werden!</summary>
+
 -----------------------------------------------------------------------------------------------------
   
 Fehlt die VSCode Extension <b>lldb</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
@@ -532,5 +533,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 <img width="792" alt="Bildschirm­foto 2022-11-21 um 22 19 49" src="https://user-images.githubusercontent.com/100713757/203160275-164fbe82-000f-4e91-aea5-f81192e165f9.png">
 
 </details>
+
 -----------------------------------------------------------------------------------------------------
+
 </details>
