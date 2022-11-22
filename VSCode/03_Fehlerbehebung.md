@@ -11,6 +11,8 @@ Einige Fehler können mit der Fehleranalyse aufgedeckt werden. Wie die Fehlerana
 
 Sollte das Problem weiterhin bestehen oder neu und hier nicht enthalten sein, so ist ein Screenshot der Fehlermeldung mit dem LogFile im Anhang an die lehrende Person zu mailen.
 
+:warning: Sehr oft gibt es Probleme mit dem Debugger! Dies liegt daran das vergessen wird, einen Ordner in VSCode zu öffnen. Dateien, die einzeln in VSCode geöffnet werden, können nicht debugged werden. Dafür sollte auch zur Hilfe eine Verknüpfung auf dem Desktop (Windows und MacOS, kein Linux) bei der Installation erstellt worden sein. Dadurch öffnet sich automatisch ein Ordner. Auch gibt es die meisten Probleme, wenn Umlaute oder Leerzeichen im Dateinamen oder in irgendeinem Ordnernamen (gesamter Verzeichnis bis zur Datei) enthalten ist.
+
 ## <p align="center">Allgemeine Fehler</p>
 
 <details>
