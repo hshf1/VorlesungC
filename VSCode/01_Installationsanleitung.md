@@ -113,7 +113,7 @@ Für die Installation ist die Windows Eingabeaufforderung (Windows Terminal) als
 Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 
 ```cmd
-curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd | cmd>nul
+curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd
 ```
 
 Nun läuft die Installation von alleine und meldet euch, wenn es fertig ist. <br /><br />
