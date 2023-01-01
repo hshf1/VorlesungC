@@ -86,9 +86,9 @@ else
     
     # Umgebungsvariable für die aktuelle Terminalsitzung hinzufügen und aktualisieren
     cat <<-EOF >>~/.bash_profile
-        # Add Visual Studio Code (code)
-        export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-    EOF
+	# Add Visual Studio Code (code)
+	export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+	EOF
     source ~/.bash_profile
     
     # VSCode Extension AddOn4VSC installieren - alles weitere folgt dort
