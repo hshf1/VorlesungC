@@ -61,7 +61,7 @@ else
         echo >nul
         else
             # Downloaden der Zip
-            curl -o ~/Downloads/vsc.zip https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal
+            curl -sL https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal -o ~/Downloads/vsc.zip 
             # unzip mit Zielordner /Applications
             unzip ~/Downloads/vsc.zip -d /Applications
             # Nach unzip die zip in Downloads löschen
