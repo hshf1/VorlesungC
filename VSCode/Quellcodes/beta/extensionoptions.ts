@@ -7,6 +7,6 @@ ckurs_prof2 = "Prof. Imiela";
 ckurs_link2 = "https://www.moodle.hs-hannover.de";
 
 ckurs_prof3 = "Prof. Homann";
-ckurs_prof3 = "https://www.hs-hannover.de";
+ckurs_link3 = "https://www.hs-hannover.de";
 
 quiz_active = "nein";
