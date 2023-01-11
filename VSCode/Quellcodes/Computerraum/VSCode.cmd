@@ -36,8 +36,6 @@ call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension formulahe
 call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension ms-vscode.cpptools
 :: VSCode Extension Liveshare installieren
 call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension ms-vsliveshare.vsliveshare
-:: VSCode Extension Liveshare-Audio installieren
-call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension ms-vsliveshare.vsliveshare-audio
 :: Alternative zu Workspacefolder - Batchfile auf Desktop erstellen/überschreiben, C_Uebung.cmd kann überall verschoben und umbenannt werden
 echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r U:\C_Uebung > "U:\Systemordner\Desktop\C_Uebung.cmd"
 echo EXIT /B >> "U:\Systemordner\Desktop\C_Uebung.cmd"
