@@ -1,19 +1,19 @@
-question1: C ist eine objektorientierte Programmiersprache;
-answers1: Wahr, Falsch, Lieber am Handy sein;
+question0: C ist eine objektorientierte Programmiersprache;
+answers0: Wahr, Falsch, Lieber am Handy sein;
+correctAnswer0: Falsch;
+
+question1: Fluss- und Struktogramme drücken unterschiedliche Dinge aus.;
+answers1: Wahr, Falsch;
 correctAnswer1: Falsch;
 
-question2: Fluss- und Struktogramme drücken unterschiedliche Dinge aus.;
-answers2: Wahr, Falsch;
-correctAnswer2: Falsch;
+question2: Womit beginnt die kopfgesteuerte Schleife?;
+answers2: Bedingung, Anweisung;
+correctAnswer2: Bedingung;
 
-question3: Womit beginnt die kopfgesteuerte Schleife?;
-answers3: Bedingung, Anweisung;
-correctAnswer3: Bedingung;
-
-question4: Wie groß ist ein Byte in Bit?;
-answers4: 0, 1, 4, 8, 10, keiner dieser Antworten;
-correctAnswer4: 8;
+question3: Wie groß ist ein Byte in Bit?;
+answers3: 0, 1, 4, 8, 10, keiner dieser Antworten;
+correctAnswer3: 8;
    
-question5: Ein Algorithmus bentigt endlich viele Arbeitsschritte.;
-answers5: Wahr, Falsch;
-correctAnswer5: Wahr;
+question4: Ein Algorithmus bentigt endlich viele Arbeitsschritte.;
+answers4: Wahr, Falsch;
+correctAnswer4: Wahr;
