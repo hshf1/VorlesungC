@@ -177,8 +177,6 @@ $gccinfo
 
 $settingsinfo
 
-$launchinfo
-
 $tasksinfo
 
 $coderunnerinfo
