@@ -14,9 +14,6 @@ Sollten Probleme auftreten, könnt ihr die in dieser Anleitung erklärte Fehlera
 
 Ist das Problem dort nicht geschildert oder dennoch nicht behoben, so ist ein Screenshot mit der Fehlermeldung / dem Fehler und der LogFile als Anhang an die lehrende Person zu mailen.<br />
 
-<p align="center">:warning:<b>Hinweis</b>:warning:</p>
-Nach der Installation erscheint eine Datei auf dem Desktop mit dem Namen "C_Uebung.code-workspace" (im Computerraum heißt es "C_Uebung.cmd"). Die Datei kann nach belieben verschoben werden. Mit einem Doppelklick auf diese Datei öffnet sich VSCode automatisch mit dem Ordner, der bei der Installation miterstellt wurde (in Dokumente/C_Uebung bzw. im Computerraum U:/C_Uebung). Dort können Programme erstellt und gespeichert werden. Der Debugger und der Runner funktionieren nur richtig, wenn ein Ordner geöffnet wurde. So hilft die Verknüpfung, dies nicht zu vergessen. 
-
 <!--Start MacOS-Anleitung-->
 
 ## <p align="center">MacOS</p>
@@ -257,6 +254,9 @@ Die in der LogFile angezeigten Fehler enthalten Fehlercodes, die in der [Fehlerb
 
 <details>
 <summary>VSCode auf Rechner im CR installieren.</summary>
+<br />
+<p align="center">:warning:<b>Hinweis</b>:warning:</p>
+Nach der Installation erscheint eine Datei auf dem Desktop mit dem Namen "C_Uebung.cmd". Die Datei kann nach belieben verschoben werden. Mit einem Doppelklick auf diese Datei öffnet sich VSCode automatisch mit dem Ordner, der bei der Installation miterstellt wurde (in U:/C_Uebung). Dort können Programme erstellt und gespeichert werden. Der Debugger und der Runner funktionieren nur richtig, wenn ein Ordner geöffnet wurde. So hilft die Verknüpfung, dies nicht zu vergessen.
 <br />
 <b>Anmerkung: Um im Computerraum richtig debuggen zu können, muss Schritt 2 befolgt werden. Andernfalls erhält man eine Fehlermeldung beim Ausführen des Debuggers.</b>
 <br /><br />
