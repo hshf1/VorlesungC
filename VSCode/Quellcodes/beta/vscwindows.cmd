@@ -1,16 +1,16 @@
 :::::::::::::::::::::::::::::::::::::::
 ::   VSCode Installation für Windows ::
 :: Hochschule Hannover - Vorlesung C ::
-::    zuletzt geändert am 02.01.2023 ::
+::    zuletzt geändert am 11.01.2023 ::
 :::::::::::::::::::::::::::::::::::::::
 
 :: Zum installieren Terminal als Adminstrator ausführen! und folgende Zeile Code ausführen (ohne ::)
 ::
-:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd
+:: curl -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vscwindows.cmd && %temp%\vsc.cmd
 
 :: Zum deinstallieren Terminal als Administrator ausführen! und folgende Zeile Code ausführen (ohne ::)
 ::
-:: curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd uninstall
+:: curl -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vscwindows.cmd && %temp%\vsc.cmd uninstall
 
 :: Auszuführende Befehle nicht nochmal im Terminal anzeigen
 @echo off
