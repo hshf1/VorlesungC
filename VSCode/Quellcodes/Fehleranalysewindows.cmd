@@ -1,12 +1,12 @@
 :::::::::::::::::::::::::::::::::::::::
 ::  VSCode Fehleranalyse für Windows ::
 :: Hochschule Hannover - Vorlesung C ::
-::    zuletzt geändert am 20.11.2022 ::
+::    zuletzt geändert am 11.01.2023 ::
 :::::::::::::::::::::::::::::::::::::::
 
 :: zur Fehleranalyse folgenden Code im Terminal ausführen (ohne ::)
 ::
-:: curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.cmd | cmd>nul 2>&1
+:: curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Fehleranalysewindows.cmd | cmd>nul 2>&1
 
 :::: Beginn Fehleranalyse ::::
 
@@ -70,13 +70,6 @@ if EXIST "%APPDATA%\Code\User\settings.json" (
     ( echo settings.json: %APPDATA%\Code\User\settings.json wurde gefunden. & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 ) ELSE (
     ( echo settings.json: %APPDATA%\Code\User\settings.json konnte nicht gefunden werden! ^(Fehlercode: 0005^) & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
-)
-
-:: Prüfen, ob launch.json vorhanden ist (Inhalt wird nicht überprüft!)
-if EXIST "%APPDATA%\Code\User\launch.json" (
-    ( echo launch.json: %APPDATA%\Code\User\launch.json wurde gefunden. & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
-) ELSE (
-    ( echo launch.json: %APPDATA%\Code\User\launch.json konnte nicht gefunden werden! ^(Fehlercode: 0005^) & echo. ) >> "%USERPROFILE%\Desktop\logVSC.txt"
 )
 
 :: Prüfen, ob tasks.json vorhanden ist (Inhalt wird nicht überprüft!)
