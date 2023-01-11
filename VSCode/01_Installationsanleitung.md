@@ -31,7 +31,7 @@ Für die Installation von VSCode auf dem MacOS ist das Terminal zu starten.<br /
 Nun wird folgender Code kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
   
 ```sh
-curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/VSCode.sh | bash 
+curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vsclinuxosx.sh | bash 
 ```
 <!--Passwort wird zurzeit nicht abgefragt: sudo wurde entfernt
 Nun werdet ihr nach eurem Passwort gefragt. <br />
@@ -69,7 +69,7 @@ Für die Deinstallation von VSCode auf dem MacOS ist das Terminal zu starten.<br
 Nun wird folgender Code kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
   
 ```sh
-curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/VSCode.sh | uninstall=true bash 
+curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vsclinuxosx.sh | uninstall=true bash 
 ```
   
 Am Ende sollte dann für 5 Sekunden Installation beendet erscheinen. <br />
@@ -91,7 +91,7 @@ Für die Fehleranalyse von VSCode auf dem MacOS ist das Terminal zu starten.<br 
 Nun wird folgender Code kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
   
 ```sh
-curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/Fehleranalyse.sh | bash 
+curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Fehleranalyselinuxosx.sh | bash 
 ```
 
 Die in der LogFile angezeigten Fehler enthalten Fehlercodes, die in der [Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md) nachgesehen werden können. Dort wird erklärt, wie vorzugehen ist.
@@ -113,7 +113,7 @@ Für die Installation ist die Windows Eingabeaufforderung (Windows Terminal) als
 Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 
 ```cmd
-curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd
+curl -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vscwindows.cmd && %temp%\vsc.cmd
 ```
 
 Nun läuft die Installation von alleine und meldet euch, wenn es fertig ist. <br /><br />
@@ -152,7 +152,7 @@ Für die Deinstallation ist die Windows Eingabeaufforderung (Windows Terminal) a
 Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 
 ```cmd
-curl -o %temp%\VSCode.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/VSCode.cmd && %temp%\VSCode.cmd uninstall && del %temp%\VSCode.cmd
+curl -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vscwindows.cmd && %temp%\vsc.cmd uninstall
 ```
 
 Nun läuft die Deinstallation von alleine und meldet euch, wenn es fertig ist.
@@ -178,7 +178,7 @@ Für die Fehleranalyse ist die Windows Eingabeaufforderung (Windows Terminal) zu
 Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 
 ```cmd
-curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/Fehleranalyse.cmd | cmd>nul 2>&1
+curl https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Fehleranalysewindows.cmd | cmd>nul 2>&1
 ```
 
 Die in der LogFile angezeigten Fehler enthalten Fehlercodes, die in der [Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md) nachgesehen werden können. Dort wird erklärt, wie vorzugehen ist.
@@ -202,7 +202,7 @@ Für die Installation ist das Terminal zu öffnen.<br />
   
 Der folgende Code wird kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 ```sh
-sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/VSCode.sh | bash
+sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vsclinuxosx.sh | bash
 ```
 
 Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Desktop) befindende Logfile, die ihr nach erfolgreicher Installation löschen könnt. Bei anhaltenden Problemen bitte diesen Logfile im Anhang per Mail abschicken.
@@ -229,7 +229,7 @@ Für die Deinstallation ist das Terminal zu öffnen.<br />
   
 Der folgende Code wird kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 ```sh
-sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/VSCode.sh | uninstall=true bash 
+sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vsclinuxosx.sh | uninstall=true bash 
 ```
 
 </details>
@@ -244,7 +244,7 @@ Für die Fehleranalyse ist das Terminal zu öffnen.<br />
   
 Der folgende Code wird kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 ```sh
-sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/Fehleranalyse.sh | bash
+sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Fehleranalyselinuxosx.sh | bash
 ```
 
 Die in der LogFile angezeigten Fehler enthalten Fehlercodes, die in der [Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md) nachgesehen werden können. Dort wird erklärt, wie vorzugehen ist.
@@ -302,8 +302,7 @@ Nun gehen wir noch auf Systemordner.
 Von hier aus können wir unseren Ordner dann auswählen und debuggen können.
   
 Hiermit wäre die Installation auch schon fertig und VSCode ist nun im Computerraum nutzbar.
-  
-  
+
 </details>
 
 <!--Alte CR-Anleitung wird auskommentiert
