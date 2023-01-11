@@ -14,6 +14,6 @@ frage4: Wie groß ist ein Byte in Bit?;
 antworten4: 0, 1, 4, 8, 10, keiner dieser Antworten;
 loesung4: 8;
 
-frage5: Ein Algorithmus bentigt endlich viele Arbeitsschritte.;
+frage5: Ein Algorithmus benötigt endlich viele Arbeitsschritte.;
 antworten5: Wahr, Falsch;
 loesung5: Wahr;
