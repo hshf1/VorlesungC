@@ -1,16 +1,16 @@
 ###############################################
 #     VSCode Installation für MacOS und Linux #
 #           Hochschule Hannover - Vorlesung C #
-#              zuletzt geändert am 01.01.2023 #
+#              zuletzt geändert am 11.01.2023 #
 ###############################################
 
-# zum installieren folgenden Code im Terminal ausführen (ohne #)
+# zum installieren folgenden Code im Terminal ausführen (ohne #) (für Linux "sudo snap install curl &&" vorhängen)
 #
-# curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/beta/vsclinuxosx.sh | bash 
+# curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vsclinuxosx.sh | bash 
 
-# zum deinstallieren folgenden Code im Terminal ausführen (ohne #)
+# zum deinstallieren folgenden Code im Terminal ausführen (ohne #) (für Linux "sudo snap install curl &&" vorhängen)
 #
-# curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/beta/vsclinuxosx.sh | uninstall=true bash
+# curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vsclinuxosx.sh | uninstall=true bash
 
 # System bestimmen
 os_name=$(uname -s)
