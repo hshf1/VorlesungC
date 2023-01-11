@@ -1,19 +1,19 @@
-question: 'C ist eine objektorientierte Programmiersprache';
-answers: ['Wahr', 'Falsch', 'Lieber am Handy sein'];
-correctAnswer: 'Falsch';
+question1: 'C ist eine objektorientierte Programmiersprache';
+answers1: ['Wahr', 'Falsch', 'Lieber am Handy sein'];
+correctAnswer1: 'Falsch';
 
-question: 'Fluss- und Struktogramme drücken unterschiedliche Dinge aus.';
-answers: ['Wahr', 'Falsch'];
-correctAnswer: 'Falsch';
+question2: 'Fluss- und Struktogramme drücken unterschiedliche Dinge aus.';
+answers2: ['Wahr', 'Falsch'];
+correctAnswer2: 'Falsch';
 
-question: 'Womit beginnt die kopfgesteuerte Schleife?';
-answers: ['Bedingung', 'Anweisung'];
-correctAnswer: 'Bedingung';
+question3: 'Womit beginnt die kopfgesteuerte Schleife?';
+answers3: ['Bedingung', 'Anweisung'];
+correctAnswer3: 'Bedingung';
 
-question: 'Wie groß ist ein Byte in Bit?';
-answers: ['0', '1', '4', '8', '10', 'keiner dieser Antworten'];
-correctAnswer: '8';
+question4: 'Wie groß ist ein Byte in Bit?';
+answers4: ['0', '1', '4', '8', '10', 'keiner dieser Antworten'];
+correctAnswer4: '8';
    
-question: 'Ein Algorithmus benötigt endlich viele Arbeitsschritte.';
-answers: ['Wahr', 'Falsch'];
-correctAnswer: 'Wahr';
+question5: 'Ein Algorithmus benötigt endlich viele Arbeitsschritte.';
+answers5: ['Wahr', 'Falsch'];
+correctAnswer5: 'Wahr';
