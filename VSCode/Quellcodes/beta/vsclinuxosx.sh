@@ -6,11 +6,11 @@
 
 # zum installieren folgenden Code im Terminal ausführen (ohne #)
 #
-# curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/beta/vscodelinuxosx.sh | bash 
+# curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/beta/vsclinuxosx.sh | bash 
 
 # zum deinstallieren folgenden Code im Terminal ausführen (ohne #)
 #
-# curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/beta/vscodelinuxosx.sh | uninstall=true bash
+# curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/beta/vsclinuxosx.sh | uninstall=true bash
 
 # System bestimmen
 os_name=$(uname -s)
