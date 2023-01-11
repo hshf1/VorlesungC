@@ -1,7 +1,7 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::                          VSCode Installation für Computerraum ::
 ::                               Hochschule Hannover Vorlesung C ::
-::                                zuletzt geändert am 17.11.2022 ::
+::                                zuletzt geändert am 11.01.2023 ::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 :: zum installieren Terminal öffnen (keine Adminrechte nötig!) und folgende Zeile Code ausführen (ohne ::)
