@@ -28,14 +28,9 @@ curl -o U:\.vscode\Code\User\launch.json https://raw.githubusercontent.com/hshf1
 curl -o U:\.vscode\Code\User\tasks.json https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Computerraum/tasks.json
 :: create/overwrite testprog.c and create direction if not exist - usage is to test debugger and coderunner
 curl --create-dirs -o U:\C_Uebung\testprog.c https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Computerraum/testprog.c
-:: set installpath for extensions
-code --extensions-dir U:\.vscode\extensions
-:: VSCode Extension code-runner installieren
-call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension formulahendry.code-runner
-:: VSCode Extension C/C++ installieren
-call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension ms-vscode.cpptools
-:: VSCode Extension Liveshare installieren
-call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension ms-vsliveshare.vsliveshare
+
+:: VSCode Extension installieren
+call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension cako.addon4vsc
 :: Alternative zu Workspacefolder - Batchfile auf Desktop erstellen/überschreiben, C_Uebung.cmd kann überall verschoben und umbenannt werden
 echo start "" "C:\Program Files\Microsoft VS Code\Code.exe" -r U:\C_Uebung > "U:\Systemordner\Desktop\C_Uebung.cmd"
 echo EXIT /B >> "U:\Systemordner\Desktop\C_Uebung.cmd"
