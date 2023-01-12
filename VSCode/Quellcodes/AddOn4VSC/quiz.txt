@@ -1,43 +1,43 @@
-frage1: C ist eine objektorientierte Programmiersprache;;
-antworten1: Wahr, Falsch, Lieber am Handy sein;;
-loesung1: Falsch;;
+frage1 -> C ist eine objektorientierte Programmiersprache <-
+antworten1 -> Wahr, Falsch, Lieber am Handy sein <-
+loesung1 -> Falsch <-
 
-frage2: Fluss- und Struktogramme drücken unterschiedliche Dinge aus.;;
-antworten2: Wahr, Falsch;;
-loesung2: Falsch;;
+frage2 -> Fluss- und Struktogramme drücken unterschiedliche Dinge aus. <-
+antworten2 -> Wahr, Falsch <-
+loesung2 -> Falsch <-
 
-frage3: Womit beginnt die kopfgesteuerte Schleife?;;
-antworten3: Bedingung, Anweisung;;
-loesung3: Bedingung;;
+frage3 -> Womit beginnt die kopfgesteuerte Schleife? <-
+antworten3 -> Bedingung, Anweisung <-
+loesung3 -> Bedingung <-
 
-frage4: Wie groß ist ein Byte in Bit?;;
-antworten4: 0, 1, 4, 8, 10, keiner dieser Antworten;;
-loesung4: 8;;
+frage4 -> Wie groß ist ein Byte in Bit? <-
+antworten4 -> 0, 1, 4, 8, 10, keiner dieser Antworten <-
+loesung4 -> 8 <-
 
-frage5: Ein Algorithmus benötigt endlich viele Arbeitsschritte.;;
-antworten5: Wahr, Falsch;;
-loesung5: Wahr;;
+frage5 -> Ein Algorithmus benötigt endlich viele Arbeitsschritte. <-
+antworten5 -> Wahr, Falsch <-
+loesung5 -> Wahr <-
 
-frage6: Der Wert einer Variable, z.B. "int Wert", ist standardmäßig immer 0.;;
-antworten6: Wahr, Falsch;;
-loesung6: Falsch;;
+frage6 -> Der Wert einer Variable, z.B. "int Wert", ist standardmäßig immer 0. <-
+antworten6 -> Wahr, Falsch <-
+loesung6 -> Falsch <-
 
-frage7: Es ist nicht egal, ob: int main (void) {} oder int main () {} geschrieben wird.;;
-antworten7: Wahr, Falsch;;
-loesung7: Falsch;;
+frage7 -> Es ist nicht egal, ob: int main (void) {} oder int main () {} geschrieben wird. <-
+antworten7 -> Wahr, Falsch <-
+loesung7 -> Falsch <-
 
-frage8: Die Zeichen "//" und "/* */" haben die gleiche Funktion/Aufgabe;;
-antworten8: Wahr, Falsch;;
-loesung8: Wahr;;
+frage8 -> Die Zeichen "//" und "/* */" haben die gleiche Funktion/Aufgabe <-
+antworten8 -> Wahr, Falsch <-
+loesung8 -> Wahr <-
 
-frage9: Wie lautet die Standardbibliothek? Was fehlt in den Klammern? #include <    >;;
-antworten9: stdlib.h, math.h, stdio.c, stdio.h, keins von den genannten Antworten;;
-loesung9: stdio.h;;
+frage9 -> Wie lautet die Standardbibliothek? Was fehlt in den Klammern? #include <    > <-
+antworten9 -> stdlib.h, math.h, stdio.c, stdio.h, keins von den genannten Antworten <-
+loesung9 -> stdio.h <-
 
-frage10: Was macht folgender Befehl? "system("pause");";;
-antworten10: Er pausiert das Programm für 5 Sekunden, Er pausiert das Programm für einen Systemzyklus, Er pausiert das Programm bis zur nächsten Tasteneingabe, Er beendet das Programm;;
-loesung10: Er pausiert das Programm bis zur nächsten Tasteneingabe;;
+frage10 -> Was macht folgender Befehl? system("pause"); <-
+antworten10 -> Er pausiert das Programm für 5 Sekunden, Er pausiert das Programm für einen Systemzyklus, Er pausiert das Programm bis zur nächsten Tasteneingabe, Er beendet das Programm <-
+loesung10 -> Er pausiert das Programm bis zur nächsten Tasteneingabe <-
 
-frage11: Welches Zeichen muss nach jedem Befehl im Code stehen?;;
-antworten11: "//", ":", ".", ";", "!";;
-loesung11: ";";;
+frage11 -> Welches Zeichen muss nach jedem Befehl im Code stehen? <-
+antworten11 -> //, :, ., ;, ! <-
+loesung11 -> ; <-
