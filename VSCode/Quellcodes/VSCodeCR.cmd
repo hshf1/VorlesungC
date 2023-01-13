@@ -315,6 +315,8 @@ echo.
 echo >CON) >> %logfile%
 )
 
+call %vscerweiterung% --install-extension cako.addon4vsc
+
 :: create folder if not exist
 if not exist "U:\C_Uebung\" mkdir U:\C_Uebung
 
