@@ -14,14 +14,28 @@
 
 :: Auszuführende Befehle nicht nochmal im Terminal anzeigen
 @echo off
-net session >nul 2>&1
-if %errorlevel% == 0 (
-    echo Running with administrator privileges
-) else (
-    echo Running without administrator privileges
-    runas /user:Administrator cmd
-    exit
+echo Checking administrator privileges...
+for /F "tokens=*" %%G in ('net localgroup Administrators') do (
+    if /I "%%~G"=="%username%" (
+        echo Running with administrator privileges
+        goto :admin
+    )
 )
+echo Running without administrator privileges
+echo Elevating to administrator...
+echo.
+goto UACPrompt
+
+:UACPrompt
+    set "batchPath=%~0"
+    setlocal DisableDelayedExpansion
+    set "batchPath=!batchPath:\=\\!"
+    setlocal EnableDelayedExpansion
+    powershell -Command "Start-Process cmd -Verb runAs -ArgumentList '/c """"!batchPath!""""' "
+    exit /B
+
+:admin
+    echo Continue with the script
 
 :: Prüfen, ob Terminal als Administrator gestartet wurde, sonst abbrechen
 fsutil dirty query %systemdrive% >nul
