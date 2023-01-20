@@ -57,8 +57,8 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 <details>
 <summary>VSCode auf MacOS deinstallieren.</summary>
 <br />
-Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. <br />
-<b>ACHTUNG: Bei der Deinstallation werden auch manuell installierte Erweiterungen und manuell gesetzte Einstellungen gelöscht! Diese müssen nach der erneuten Installation wieder manuell hinzugefügt werden!</b>
+Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. <br /><br />
+<b>ACHTUNG: Bei der Deinstallation werden auch manuell installierte Erweiterungen und manuell gesetzte Einstellungen gelöscht! Diese müssen nach der erneuten Installation wieder manuell hinzugefügt werden!</b><br /><br />
 Danach kann man erneut die oben beschriebene Installation durchführen.
 <br />
 Für die Deinstallation von VSCode auf dem MacOS ist das Terminal zu starten.<br /><br />
@@ -142,7 +142,9 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 <details>
 <summary>VSCode auf Windows deinstallieren.</summary>
 <br />
-Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben lassen, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. Danach kann man erneut die oben beschriebene Installation durchführen.
+Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben lassen, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. <br /><br />
+<b>ACHTUNG: Bei der Deinstallation werden auch manuell installierte Erweiterungen und manuell gesetzte Einstellungen gelöscht! Diese müssen nach der erneuten Installation wieder manuell hinzugefügt werden!</b><br /><br />
+Danach kann man erneut die oben beschriebene Installation durchführen.
 <br />
 Für die Deinstallation ist die Windows Eingabeaufforderung (Windows Terminal) als Administrator zu starten.<br /><br />
   
@@ -220,6 +222,11 @@ Bereits installierte Programme bleiben erhalten und nur fehlende dazu installier
 
 <details>
 <summary>VSCode auf Linux deinstallieren.</summary>
+<br />
+Falls trotz erneuter Installation nach der obigen Anleitung Fehler auftreten und sich nicht beheben lassen, besteht die Möglichkeit, alles komplett zu deinstallieren und zu löschen. <br /><br />
+<b>ACHTUNG: Bei der Deinstallation werden auch manuell installierte Erweiterungen und manuell gesetzte Einstellungen gelöscht! Diese müssen nach der erneuten Installation wieder manuell hinzugefügt werden!</b><br /><br />
+Danach kann man erneut die oben beschriebene Installation durchführen.
+<br />
 
 Bisher getestet für: Ubuntu / Zorin 15.3<br /><br />
 Für die Deinstallation ist das Terminal zu öffnen.<br />
