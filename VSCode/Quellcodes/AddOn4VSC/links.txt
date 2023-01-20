@@ -1,15 +1,15 @@
 name -> Moodle-Kurs - Quizfragen <-
 link -> https://moodle.hs-hannover.de/course/view.php?id=22214 <-
-gueltig_bis -> 01.07.2023 <-
+gueltig_bis -> 07.01.2023 <-
 
 name -> Moodle-Kurs - Prof. Fragner <-
 link -> https://hs-hannover.de <-
-gueltig_bis -> 01.01.2023 <-
+gueltig_bis -> 01.07.2023 <-
 
 name -> Moodle-Kurs - Prof. Imiela <-
 link -> https://moodle.hs-hannover.de <-
-gueltig_bis -> 01.01.2023 <-
+gueltig_bis ->  <-
 
 name -> Moodle-Kurs - Prof. Will <-
 link -> https://moodle.hs-hannover.de <-
-gueltig_bis -> 01.01.2023 <-
+gueltig_bis -> 22.22.2022 <-
