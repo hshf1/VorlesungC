@@ -33,7 +33,6 @@ if %errorlevel% == 0 (
 if /i "%~1"=="uninstall" (GOTO UNINSTALL)
 if /i "%~1"=="install" (
     set modus=install
-    set "1="
 )
 
 :::: Beginn Installation ::::
@@ -51,6 +50,7 @@ if %errorlevel% == 0 (
     echo Choco wird installiert. Dies kann einige Minuten dauern. Bitte warten!>CON
     echo.>CON
     echo #################################################################################################>CON
+    shift
     call %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%temp%/installChoco.ps1'"
     del "%temp%\installChoco.ps1"
 )
