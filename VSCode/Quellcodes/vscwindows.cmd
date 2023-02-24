@@ -60,11 +60,17 @@ choco install mingw --version=8.1.0 -y
 :: choco install mingw -y müsste die aktuellste Version installieren, falls irgendwann 8.1.0 defekt
 
 :: VSCode installieren bzw. neu installieren, falls fehlerhaft
-if NOT EXIST "C:\Program Files\Microsoft VS Code\Code.exe" if EXIST "C:\ProgramData\chocolatey\choco.exe" (choco uninstall vscode vscode.install -y)
-choco install vscode -y
+where code | find "%searchString%" > nul 2>&1
+if %errorlevel% equ 0 (
+    echo "Microsoft VS Code ist installiert."
+) else (
+    echo "Microsoft VS Code ist nicht installiert. Installation..."
+    if NOT EXIST "C:\Program Files\Microsoft VS Code\Code.exe" if EXIST "C:\ProgramData\chocolatey\choco.exe" (choco uninstall vscode vscode.install -y)
+    choco install vscode -y
+)
 
 :: VSCode Extension AddOn4VSC - Rest wird darüber automatisch installiert
-call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension cako.addon4vsc
+call code --install-extension cako.addon4vsc
 
 :: Ausgabe vom Ende und exit skript
 echo #################################################################################################>CON
