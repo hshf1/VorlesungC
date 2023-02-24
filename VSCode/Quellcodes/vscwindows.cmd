@@ -1,7 +1,7 @@
 :::::::::::::::::::::::::::::::::::::::
 ::   VSCode Installation für Windows ::
 :: Hochschule Hannover - Vorlesung C ::
-::    zuletzt geändert am 11.01.2023 ::
+::    zuletzt geändert am 24.02.2023 ::
 :::::::::::::::::::::::::::::::::::::::
 
 :: Zum installieren Terminal als Adminstrator ausführen! und folgende Zeile Code ausführen (ohne ::)
