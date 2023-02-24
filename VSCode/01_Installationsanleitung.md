@@ -112,7 +112,7 @@ Für die Installation ist die Windows Eingabeaufforderung (Windows Terminal) als
 Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 
 ```cmd
-curl -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vscwindows.cmd && %temp%\vsc.cmd
+curl -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vscwindows.cmd && %temp%\vsc.cmd install
 ```
 
 Nun läuft die Installation von alleine und meldet euch, wenn es fertig ist. <br /><br />
