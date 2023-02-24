@@ -67,7 +67,9 @@ if /i "%~1"=="install" (
 )
 
 :: VSCode Extension AddOn4VSC - Rest wird darüber automatisch installiert
-call code --install-extension cako.addon4vsc
+if /i "%~1"=="install" (
+    call "C:\Program Files\Microsoft VS Code\bin\code" --install-extension cako.addon4vsc
+)
 
 :: Ausgabe vom Ende und exit skript
 echo #################################################################################################>CON
