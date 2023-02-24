@@ -47,7 +47,7 @@ if %errorlevel% == 0 (
     echo Choco wird installiert. Dies kann einige Minuten dauern. Bitte warten!>CON
     echo.>CON
     echo #################################################################################################>CON
-    call %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%temp%/installChoco.ps1' %*"
+    call %systemroot%\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& '%temp%/installChoco.ps1'"
     del "%temp%\installChoco.ps1"
 )
 
