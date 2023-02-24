@@ -61,7 +61,7 @@ choco install mingw --version=8.1.0 -y
 
 :: VSCode installieren bzw. neu installieren, falls fehlerhaft
 
-/i "%~1"=="install" (
+if /i "%~1"=="install" (
     if NOT EXIST "C:\Program Files\Microsoft VS Code\Code.exe" if EXIST "C:\ProgramData\chocolatey\choco.exe" (choco uninstall vscode vscode.install -y)
     choco install vscode -y
 )
