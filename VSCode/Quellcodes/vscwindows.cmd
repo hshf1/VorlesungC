@@ -33,9 +33,8 @@ if %errorlevel% == 0 (
 if /i "%~1"=="uninstall" (GOTO UNINSTALL)
 if /i "%~1"=="install" (
     set modus=install
+    set "1="
 )
-
-shift
 
 :::: Beginn Installation ::::
 
