@@ -60,11 +60,8 @@ choco install mingw --version=8.1.0 -y
 :: choco install mingw -y müsste die aktuellste Version installieren, falls irgendwann 8.1.0 defekt
 
 :: VSCode installieren bzw. neu installieren, falls fehlerhaft
-where code | find "Microsoft VS Code" > nul 2>&1
-if %errorlevel% equ 0 (
-    echo Microsoft VS Code ist installiert.>CON
-) else (
-    echo Microsoft VS Code ist nicht installiert. Installation...>CON
+
+/i "%~1"=="install" (
     if NOT EXIST "C:\Program Files\Microsoft VS Code\Code.exe" if EXIST "C:\ProgramData\chocolatey\choco.exe" (choco uninstall vscode vscode.install -y)
     choco install vscode -y
 )
