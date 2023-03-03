@@ -27,21 +27,28 @@ Wenn Sie die Installation starten, öffnet sich folgendes Fenster:
 
 <img width="450" alt="Bild3" src="https://user-images.githubusercontent.com/114981111/222816242-2b0ff10b-f0b4-414a-8411-7c85bc02811a.PNG">
 
-Lesen Sie sich die Lizenzvereinbarung und akzeptieren Sie Diese. Klicken Sie dann auf "Weiter".
+Lesen Sie sich die Lizenzvereinbarung und akzeptieren Sie Diese. Klicken Sie dann auf _"Weiter"_.
 
 Nun sollte das Fenster wie folgt aussehen:
 
 <img width="452" alt="Bild4" src="https://user-images.githubusercontent.com/114981111/222817647-452f0ce1-7531-40a0-be4f-47a3a1645dfe.PNG">
 
-Lassen Sie den angebenen Pfad und klicken Sie auf "Weiter".
+Lassen Sie den angebenen Pfad und klicken Sie auf _"Weiter"_.
 
 Folglich sieht das Fenster so aus:
 
 <img width="452" alt="Bild5" src="https://user-images.githubusercontent.com/114981111/222818572-6eb9d947-943d-44f9-ba5a-84eaa966c359.PNG">
 
-Belassen Sie auch alles so wie es ist und klicken Sie auf "Weiter".
+Belassen Sie auch alles so wie es ist und klicken Sie auf _"Weiter"_.
 
 Die nächste Ansicht sieht dann so aus:
 
 <img width="451" alt="Bild6" src="https://user-images.githubusercontent.com/114981111/222820534-8d81b295-0839-42c0-8491-96e9d3e5f380.PNG">
 
+Setzen Sie die Häkchen so wie sie auf dem Bild zu sehen sind und klicken Sie auf _"Weiter"_.
+
+Danach sehen Sie eine Zusammenfassung Ihrer Einstellungen:
+
+<img width="451" alt="Bild7" src="https://user-images.githubusercontent.com/114981111/222821414-fc536202-8585-4e59-a488-c98388f4b217.PNG">
+
+Klicken Sie nun auf _"Installieren"_.
