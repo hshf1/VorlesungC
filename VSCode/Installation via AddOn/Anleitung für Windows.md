@@ -11,7 +11,7 @@ Sie sollten nun folgende Ansicht haben:
 
 ## Schritt 2:
 
-Klicken Sie auf die Schaltfäche, auf die der rote Pfeil zeigt
+Klicken Sie auf die Schaltfäche, auf die der rote Pfeil zeigt.
 
 <img width="1115" alt="Bild1_1" src="https://user-images.githubusercontent.com/114981111/222764490-47ed46f3-70ac-4388-a9cc-00faea2b0810.png">
 
@@ -51,4 +51,12 @@ Danach sehen Sie eine Zusammenfassung Ihrer Einstellungen:
 
 <img width="451" alt="Bild7" src="https://user-images.githubusercontent.com/114981111/222821414-fc536202-8585-4e59-a488-c98388f4b217.PNG">
 
-Klicken Sie nun auf _"Installieren"_.
+Klicken Sie nun auf _"Installieren"_. Warten Sie ab bis die Installation abgeschlossen ist:
+
+<img width="452" alt="Bild8" src="https://user-images.githubusercontent.com/114981111/222822620-f4981e72-af3a-426e-ae65-f4938027d7bd.PNG">
+
+Zum Schluss sieht das Fenster nun so aus:
+
+<img width="452" alt="Bild9" src="https://user-images.githubusercontent.com/114981111/222822720-5d80be49-3168-4dff-92ee-54dd97c9fef3.PNG">
+
+Setzen Sie den Haken bei _"Visual Studio Code starten"_ und klicken Sie auf _"Fertigstellen"_.
