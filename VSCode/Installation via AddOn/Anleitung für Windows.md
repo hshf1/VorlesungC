@@ -60,3 +60,5 @@ Zum Schluss sieht das Fenster nun so aus:
 <img width="452" alt="Bild9" src="https://user-images.githubusercontent.com/114981111/222822720-5d80be49-3168-4dff-92ee-54dd97c9fef3.PNG">
 
 Setzen Sie den Haken bei _"Visual Studio Code starten"_ und klicken Sie auf _"Fertigstellen"_.
+
+## Schritt 4
