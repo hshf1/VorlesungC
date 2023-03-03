@@ -29,6 +29,19 @@ Wenn Sie die Installation starten, öffnet sich folgendes Fenster:
 
 Lesen Sie sich die Lizenzvereinbarung und akzeptieren Sie Diese. Klicken Sie dann auf "Weiter".
 
+Nun sollte das Fenster wie folgt aussehen:
 
+<img width="452" alt="Bild4" src="https://user-images.githubusercontent.com/114981111/222817647-452f0ce1-7531-40a0-be4f-47a3a1645dfe.PNG">
 
+Lassen Sie den angebenen Pfad und klicken Sie auf "Weiter".
+
+Folglich sieht das Fenster so aus:
+
+<img width="452" alt="Bild5" src="https://user-images.githubusercontent.com/114981111/222818572-6eb9d947-943d-44f9-ba5a-84eaa966c359.PNG">
+
+Belassen Sie auch alles so wie es ist und klicken Sie auf "Weiter".
+
+Die nächste Ansicht sieht dann so aus:
+
+<img width="451" alt="Bild6" src="https://user-images.githubusercontent.com/114981111/222820534-8d81b295-0839-42c0-8491-96e9d3e5f380.PNG">
 
