@@ -5,7 +5,7 @@
 
 Öffnen Sie in Ihrem Webbrowser folgenden Link: https://code.visualstudio.com/
 
-Sie sollten nun folgende Anleitung haben:
+Sie sollten nun folgende Ansicht haben:
 
 <img width="1115" alt="Bild1" src="https://user-images.githubusercontent.com/114981111/222764098-b3cc7c5d-c95b-46bb-a441-bac1059ead11.PNG">
 
