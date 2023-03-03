@@ -19,3 +19,5 @@ Es öffnet sich ein Dropdown-Menü. Laden Sie den Stable User Installer für Win
 
 <img width="1115" alt="Bild2" src="https://user-images.githubusercontent.com/114981111/222764992-d1579007-1074-4992-8384-521ece274285.PNG">
 
+Nachdem der Installer heruntergeladen wurde, starten Sie die Installation.
+
