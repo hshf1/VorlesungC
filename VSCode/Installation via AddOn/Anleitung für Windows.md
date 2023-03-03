@@ -21,3 +21,14 @@ Es öffnet sich ein Dropdown-Menü. Laden Sie den Stable User Installer für Win
 
 Nachdem der Installer heruntergeladen wurde, starten Sie die Installation.
 
+## Schritt 3
+
+Wenn Sie die Installation starten, öffnet sich folgendes Fenster:
+
+<img width="450" alt="Bild3" src="https://user-images.githubusercontent.com/114981111/222816242-2b0ff10b-f0b4-414a-8411-7c85bc02811a.PNG">
+
+Lesen Sie sich die Lizenzvereinbarung und akzeptieren Sie Diese. Klicken Sie dann auf "Weiter".
+
+
+
+
