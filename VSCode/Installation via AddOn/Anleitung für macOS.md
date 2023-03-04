@@ -47,5 +47,8 @@ Klicken Sie nun auf das unterste Symbol in der Leiste auf der linken Seite, um z
 
 <img width="1136" alt="Bildschirm­foto 2023-03-04 um 12 25 55" src="https://user-images.githubusercontent.com/114981111/222899947-da71eeac-cf53-4c61-add7-0a0896743056.png">
 
+Geben Sie in die Suchleiste _HSH_AddOn4VSC_ ein.
+
+<img width="1136" alt="Bildschirm­foto 2023-03-04 um 12 26 15" src="https://user-images.githubusercontent.com/114981111/222900096-397e0b3e-9cc9-4598-9961-32a67d4aa6ba.png">
 
 
