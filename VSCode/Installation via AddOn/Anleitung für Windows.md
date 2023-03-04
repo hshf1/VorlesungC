@@ -110,10 +110,10 @@ Starten im Anschluss daran Visual Studio Code erneut. über das Startmenü oder 
 
 Danach wird nochmal ein CMD-Fenster öffnen. Warten Sie auch hier ab, bis alle Befehle abgearbeitet wurden und schließen Sie das Fenster, nachdem Sie den Hinweis dafür erhalten.
 
-<img width="677" alt="Bild16" src="https://user-images.githubusercontent.com/114981111/222896772-399da6c0-7471-4806-8761-ad4e6c02a3db.PNG">
+<img width="677" alt="Bild19" src="https://user-images.githubusercontent.com/114981111/222896813-f5a899da-0235-4c7b-8520-09adae472052.PNG">
 
 Zum Schluss klicken Sie auf den, mit dem roten Pfeil markierten, Button und starten Sie Visual Studio Code neu:
 
 <img width="773" alt="Bild20" src="https://user-images.githubusercontent.com/114981111/222896781-ab37d82c-ff7f-400d-bdc2-99dc36d95040.PNG">
 
-
+Nach dem Neustart sind Sie mit der Installation fertig.
