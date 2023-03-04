@@ -75,3 +75,45 @@ Wenn Sie sich dazu entscheiden das Sprachpaket herunterzuladen, startet Visual S
 
 <img width="772" alt="Bild11" src="https://user-images.githubusercontent.com/114981111/222895882-03a3d7e9-2b7b-4dfd-82f7-e6a26f6e6cb2.PNG">
 
+Klicken Sie nun auf das Symbol, auf das der rote Pfeil zeigt.
+
+<img width="772" alt="Bild11_1" src="https://user-images.githubusercontent.com/114981111/222896133-d2397a88-b49d-4247-8df6-110b420828b2.png">
+
+Sie sollten nun folgende Ansicht haben:
+
+<img width="773" alt="Bild12" src="https://user-images.githubusercontent.com/114981111/222896150-d3609f54-d00e-440d-98fb-4d890cb3d682.PNG">
+
+Geben Sie in die Suchleiste _HSH_AddOn4VSC_ ein.
+
+<img width="773" alt="Bild13" src="https://user-images.githubusercontent.com/114981111/222896237-7f084d85-51f4-462e-a5cf-194dfde9f5fc.PNG">
+
+Wenn Sie auf das AddOn klicken öffnet sich ein neuer Tab mit den Informationen zum AddOn:
+
+<img width="774" alt="Bild14" src="https://user-images.githubusercontent.com/114981111/222896289-6fc234f3-7320-496f-ab90-1e17a7d68563.PNG">
+
+Klicken Sie nun auf _"Installieren"_. Eventuell starten Visual Studio Code dan eigenständig nochmal neu. Nach der Installation erhalten Sie jedoch definitv diese Ansicht:
+
+<img width="771" alt="Bild15" src="https://user-images.githubusercontent.com/114981111/222896460-788504f1-c640-450b-8629-c16ffe15ddb6.PNG">
+
+Zusätzlich öffnet sich ein CMD-Fenster:
+
+<img width="677" alt="Bild16" src="https://user-images.githubusercontent.com/114981111/222896482-3d502e6a-ae59-48f1-9616-5e6a2dd86c90.PNG">
+
+Warten Sie ab, bis im CMD-Fenster alle Befehle abgearbeitet wurden. Sie werden dann den Hinweis bekommen, dass Sie es Schließen können.
+Schließen Sie danach Visual Studio Code in dem Sie aufs X klicken:
+
+<img width="773" alt="Bild17" src="https://user-images.githubusercontent.com/114981111/222896566-90be1b6e-f184-48d1-a764-63dfeff14401.PNG">
+
+Starten im Anschluss daran Visual Studio Code erneut. über das Startmenü oder in dem Sie auf das Desktop Icon klicken:
+
+<img width="60" alt="Bild18" src="https://user-images.githubusercontent.com/114981111/222896626-9e1db715-8409-4bc7-b523-c1a2a659646b.PNG">
+
+Danach wird nochmal ein CMD-Fenster öffnen. Warten Sie auch hier ab, bis alle Befehle abgearbeitet wurden und schließen Sie das Fenster, nachdem Sie den Hinweis dafür erhalten.
+
+<img width="677" alt="Bild16" src="https://user-images.githubusercontent.com/114981111/222896772-399da6c0-7471-4806-8761-ad4e6c02a3db.PNG">
+
+Zum Schluss klicken Sie auf den, mit dem roten Pfeil markierten, Button und starten Sie Visual Studio Code neu:
+
+<img width="773" alt="Bild20" src="https://user-images.githubusercontent.com/114981111/222896781-ab37d82c-ff7f-400d-bdc2-99dc36d95040.PNG">
+
+
