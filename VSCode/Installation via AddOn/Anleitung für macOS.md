@@ -35,7 +35,7 @@ Starten Sie Visual Studio Code in dem Sie auf das Icon klicken.
 
 Sie sollten nun folgende Ansicht haben:
 
-<img width="1026" alt="Bildschirm­foto 2023-03-04 um 12 24 39" src="https://user-images.githubusercontent.com/114981111/222899096-288a7653-71ba-4d75-882e-e85af2efc2a4.png">
+<img width="1136" alt="Bildschirm­foto 2023-03-04 um 12 24 39" src="https://user-images.githubusercontent.com/114981111/222899096-288a7653-71ba-4d75-882e-e85af2efc2a4.png">
 
 Bei Bedarf können Sie das deutsche Sprachpaket herunterladen, in dem Sie in der unteren rechten Ecke auf _"Installieren und neustarten"_ klicken. Ansonsten behält Visual Studio Code Englisch als Standardsprache bei.
 
