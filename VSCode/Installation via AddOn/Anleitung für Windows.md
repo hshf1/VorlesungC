@@ -62,3 +62,7 @@ Zum Schluss sieht das Fenster nun so aus:
 Setzen Sie den Haken bei _"Visual Studio Code starten"_ und klicken Sie auf _"Fertigstellen"_.
 
 ## Schritt 4
+
+Wenn Sie Visual Studio Code starten erhalten Sie diese Ansicht:
+
+<img width="772" alt="Bild10" src="https://user-images.githubusercontent.com/114981111/222895617-682d0285-f7b5-408f-8e5f-946e152cacde.PNG">
