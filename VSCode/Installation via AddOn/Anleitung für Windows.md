@@ -66,3 +66,12 @@ Setzen Sie den Haken bei _"Visual Studio Code starten"_ und klicken Sie auf _"Fe
 Wenn Sie Visual Studio Code starten erhalten Sie diese Ansicht:
 
 <img width="772" alt="Bild10" src="https://user-images.githubusercontent.com/114981111/222895617-682d0285-f7b5-408f-8e5f-946e152cacde.PNG">
+
+Bei Bedarf können Sie auf den, mit dem roten Pfeil markierten, Button klicken um das deutsche Sprachpaket zu installieren. Wenn Sie es nicht tun, behält Visual Studio Code Englisch als Standardsprache bei.
+
+<img width="772" alt="Bild10_1" src="https://user-images.githubusercontent.com/114981111/222895819-c546244a-7377-4895-9e95-06aba614bf92.png">
+
+Wenn Sie sich dazu entscheiden das Sprachpaket herunterzuladen, startet Visual Studio Code kurz nochmal neu und öffnet sich mit Deutsch als Standardsprache.
+
+<img width="772" alt="Bild11" src="https://user-images.githubusercontent.com/114981111/222895882-03a3d7e9-2b7b-4dfd-82f7-e6a26f6e6cb2.PNG">
+
