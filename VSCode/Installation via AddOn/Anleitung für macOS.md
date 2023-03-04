@@ -51,4 +51,12 @@ Geben Sie in die Suchleiste _HSH_AddOn4VSC_ ein.
 
 <img width="1136" alt="Bildschirm­foto 2023-03-04 um 12 26 15" src="https://user-images.githubusercontent.com/114981111/222900096-397e0b3e-9cc9-4598-9961-32a67d4aa6ba.png">
 
+Wenn Sie auf das AddOn klicken öffnet sich ein neuer Tab mit den Informationen zum AddOn:
 
+<img width="1092" alt="Bildschirm­foto 2023-03-04 um 12 26 34" src="https://user-images.githubusercontent.com/114981111/222900171-69b5fee2-6169-4e34-9a1c-405252797cb7.png">
+
+Klicken Sie nun auf Installieren. Nach der Installation sollten sie diese Ansicht haben:
+
+<img width="1136" alt="Bildschirm­foto 2023-03-04 um 12 27 07" src="https://user-images.githubusercontent.com/114981111/222900228-c3c1dfc3-72d6-4d57-9818-1797880c4a21.png">
+
+Klicken Sie nun auf _"Ja, ich vertraue den Autoren"_. Danach haben Sie die Installation abgeschlossen.
