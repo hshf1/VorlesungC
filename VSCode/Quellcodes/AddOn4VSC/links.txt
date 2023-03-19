@@ -2,10 +2,10 @@ name -> Moodle-Kurs - Quizfragen <-
 link -> https://moodle.hs-hannover.de/course/view.php?id=22214 <-
 
 name -> Moodle-Kurs - Prof. Fragner <-
-link -> https://hs-hannover.de <-
+link -> https://moodle.hs-hannover.de/enrol/index.php?id=22518 <-
 
 name -> Moodle-Kurs - Prof. Imiela <-
-link -> https://moodle.hs-hannover.de <-
+link -> https://moodle.hs-hannover.de/enrol/index.php?id=22532 <-
 
 name -> Moodle-Kurs - Prof. Will <-
-link -> https://moodle.hs-hannover.de <-
+link -> https://moodle.hs-hannover.de/enrol/index.php?id=22894 <-
