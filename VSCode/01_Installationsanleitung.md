@@ -28,7 +28,7 @@ Für die Installation von VSCode auf dem MacOS ist das Terminal zu starten.<br /
 Nun wird folgender Code kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
   
 ```sh
-curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vsclinuxosx.sh | bash 
+curl -sL https://raw.githubusercontent.com/hshf1/HSH_AddOn4VSC/master/script/vsclinuxosx.sh | bash 
 ```
 <!--Passwort wird zurzeit nicht abgefragt: sudo wurde entfernt
 Nun werdet ihr nach eurem Passwort gefragt. <br />
@@ -68,7 +68,7 @@ Für die Deinstallation von VSCode auf dem MacOS ist das Terminal zu starten.<br
 Nun wird folgender Code kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
   
 ```sh
-curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vsclinuxosx.sh | uninstall=true bash 
+curl -sL https://raw.githubusercontent.com/hshf1/HSH_AddOn4VSC/master/script/vsclinuxosx.sh | uninstall=true bash 
 ```
   
 Am Ende sollte dann für 5 Sekunden Installation beendet erscheinen. <br />
@@ -112,7 +112,7 @@ Für die Installation ist die Windows Eingabeaufforderung (Windows Terminal) als
 Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 
 ```cmd
-curl -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vscwindows.cmd && %temp%\vsc.cmd install
+curl -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/HSH_AddOn4VSC/master/script/vscwindows.cmd && %temp%\vsc.cmd install
 ```
 
 Nun läuft die Installation von alleine und meldet euch, wenn es fertig ist. <br /><br />
@@ -153,7 +153,7 @@ Für die Deinstallation ist die Windows Eingabeaufforderung (Windows Terminal) a
 Nun wird der folgende Code kopiert und im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 
 ```cmd
-curl -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vscwindows.cmd && %temp%\vsc.cmd uninstall
+curl -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/HSH_AddOn4VSC/master/script/vscwindows.cmd && %temp%\vsc.cmd uninstall
 ```
 
 Nun läuft die Deinstallation von alleine und meldet euch, wenn es fertig ist.
@@ -203,7 +203,7 @@ Für die Installation ist das Terminal zu öffnen.<br />
   
 Der folgende Code wird kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 ```sh
-sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vsclinuxosx.sh | bash
+sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/HSH_AddOn4VSC/master/script/vsclinuxosx.sh | bash
 ```
 
 Das Terminal beendet sich selbst und öffnet eine auf eurem Schreibtisch (Desktop) befindende Logfile, die ihr nach erfolgreicher Installation löschen könnt. Bei anhaltenden Problemen bitte diesen Logfile im Anhang per Mail abschicken.
@@ -235,7 +235,7 @@ Für die Deinstallation ist das Terminal zu öffnen.<br />
   
 Der folgende Code wird kopiert, im Terminal eingefügt und mit der ENTER-Taste ausgeführt:
 ```sh
-sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vsclinuxosx.sh | uninstall=true bash 
+sudo snap install curl && curl -sL https://raw.githubusercontent.com/hshf1/HSH_AddOn4VSC/master/script/vsclinuxosx.sh | uninstall=true bash 
 ```
 
 </details>
