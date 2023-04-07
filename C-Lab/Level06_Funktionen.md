@@ -168,7 +168,7 @@ Im Funktionsaufruf werden dann Wert1 und Wert2 als Argumente hinterlegt. Die bei
 
 ## Unterschied zwischen Parametern und Argumenten bei Funktionen
 
-Parameter und Funktionen sind **nicht** ein und dasselbe. Das wird häufig gerne verwechselt.
+Parameter und Argumente sind **nicht** ein und dasselbe. Das wird häufig gerne verwechselt.
 
 Parameter werden beim Erstellen einer Funktion miterstellt. Sie dienen dazu Argumente zu empfangen und sind auch nur innerhalb der Funktion gültig. Beim Aufruf einer Funktion wird ihnen also der Wert des Arguments zugewiesen.
 
