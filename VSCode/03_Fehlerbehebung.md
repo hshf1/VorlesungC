@@ -668,6 +668,22 @@ Entweder wurde chocolatey nicht installiert, das Ende der Installation wurde nic
 
 </details>
 
+<details>
+<summary>Der scanf Befehl wird nicht ausgeführt</summary>
+
+-----------------------------------------------------------------------------------------------------
+
+Dass der scanf Befehl nicht richtig funktioniert, kann daran liegen, dass dieser nicht im Terminal ausgeführt wird. Um das Problem zu lösen, muss unter Einstellungen im Suchfeld "code runner: run in terminal" gesucht werden, dann erscheint die Option "Code-runner: Run In Terminal", bei der Option den Haken setzen und ggf. VS-Code neu starten. Anschließend sollte die Ausgabe des Codes dann im Terminal stattfinden.
+  
+![Code_Runner_Setting](https://user-images.githubusercontent.com/128408093/231420129-0a7059e1-8b30-439d-82e9-2e4b62b5c3ba.jpg)
+
+
+-----------------------------------------------------------------------------------------------------
+
+</details>
+
+
+
 ## <p align="center">Linux</p>
 
 <details>
