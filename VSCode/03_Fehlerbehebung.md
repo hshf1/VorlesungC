@@ -682,6 +682,23 @@ Dass der scanf Befehl nicht richtig funktioniert, kann daran liegen, dass dieser
 
 </details>
 
+<details>
+<summary>Fehler beim Versuch die Erweiterung zu installieren "Unkown error (0x80092012)"</summary>
+
+-----------------------------------------------------------------------------------------------------
+![Unkown error 0x80092012](https://user-images.githubusercontent.com/128408093/231423868-adc8bec6-2224-4988-98e5-71d1ce8b96de.jpg)
+  
+Erscheint diese Fehlermeldung im Terminal, kann versucht werden, den Zertifikatscheck mit dem Einfügen eines zusätzlichen Parameters zu überbrücken. Dazu muss folgender Befehl in die Eingabeaufforderung kopiert werden:
+  
+```
+curl --ssl-no-revoke -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vscwindows.cmd && %temp%\vsc.cmd  
+```
+
+(ggf. kann es sein, dass nach ausführen des Codes, sich Anti-Viren-Porgramme dazwischen schalten, es wäre ratsam diese für die Dauer der Installation zu deaktivieren.)
+  
+-----------------------------------------------------------------------------------------------------
+
+</details>
 
 
 ## <p align="center">Linux</p>
