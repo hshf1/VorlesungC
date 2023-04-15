@@ -691,7 +691,7 @@ Dass der scanf Befehl nicht richtig funktioniert, kann daran liegen, dass dieser
 Erscheint diese Fehlermeldung im Terminal, kann versucht werden, den Zertifikatscheck mit dem Einfügen eines zusätzlichen Parameters zu überbrücken. Dazu muss folgender Befehl in die Eingabeaufforderung kopiert werden:
   
 ```
-curl --ssl-no-revoke -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/vscwindows.cmd && %temp%\vsc.cmd  
+curl --ssl-no-revoke -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/HSH_AddOn4VSC/master/script/vscwindows.cmd && %temp%\vsc.cmd install  
 ```
 
 (ggf. kann es sein, dass nach ausführen des Codes, sich Anti-Viren-Porgramme dazwischen schalten, es wäre ratsam diese für die Dauer der Installation zu deaktivieren.)
