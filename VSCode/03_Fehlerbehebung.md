@@ -13,24 +13,6 @@ Sollte das Problem weiterhin bestehen oder neu und hier nicht enthalten sein, so
 
 :warning: Sehr oft gibt es Probleme mit dem Debugger! Dies liegt daran das vergessen wird, einen Ordner in VSCode zu öffnen. Dateien, die einzeln in VSCode geöffnet werden, können nicht debugged werden. Dafür sollte auch zur Hilfe eine Verknüpfung auf dem Desktop (Windows und MacOS, kein Linux) bei der Installation erstellt worden sein. Dadurch öffnet sich automatisch ein Ordner. Auch gibt es die meisten Probleme, wenn Umlaute oder Leerzeichen im Dateinamen oder in irgendeinem Ordnernamen (gesamter Verzeichnis bis zur Datei) enthalten ist.
 
-## Aktueller Fehler (28.04.2023) FIXED
-
-**Neues Update (03.05.23) führt diese Schritte Automatisch aus. (ggf. VS-Code Neustarten)**
-
-Bei einem der letzten Updates (28.04.2023) des HSH Addons, hat sich ein Fehler eingeschlichen, der dafür sorgt, das VS-Code den Compiler nicht richtig findet und die Benutzervariablen zurückgesetzt hat.
-Um den Fehler zu beheben wurde ein weiteres Update rausgebracht, dass den Bug fixed. Dazu einfach das HSH Addon auf den neuesten Stand bringen und anschließend in dem HSH Menü unter den Einstellungen die Settings.json und die Task.json zurücksetzen.
-
-
-Um die Pfade wiederherzustellen muss für **WINDOWS** Benutzer der folgende Befehl in der Konsole eingefügt werden:
-(Um Konsole zu öffnen "CMD" bei Windows suchen)
-
-```
-setx PATH "%ALLUSERSPROFILE%\chocolatey\bin;C:\ProgramData\chocolatey\lib\mingw\tools\install\mingw64\bin;
-```
-Druch diesen Befehl werden die Pfade wieder neu hinzugefügt und anschließend sollte alles wieder wie gewohnt funktionieren.
-(ggf. VS-Code neustarten)"
-  
-
 
 ## <p align="center">Allgemeine Fehler</p>
 
