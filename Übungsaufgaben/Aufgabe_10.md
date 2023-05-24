@@ -53,7 +53,10 @@
  <summary>Klicken zum Öffnen</summary>
  Erstellen Sie zu jeder Teilaufgabe ein Struktogramm
  
- Erstellen Sie eine Funktion zum einlesen der Zeichenketten. Die Funktion bekommt eine Zeichenkette übergeben und über diese soll Eingabe des Nutzers zurück gegeben werden. 
+ 
+ Erstellen Sie eine Funktion zum einlesen der Zeichenketten. Die Funktion bekommt eine Zeichenkette übergeben und über diese soll die Eingabe des Nutzers zurück gegeben werden. 
+ 
+ 
  Erstellen Sie eine Funktion zum invertieren von Zeichenketten. Die Funtkion bekommt 2 Zeichenketten übergeben. In der ersten wird der Originalsatz übergeben. In der zweiten Zeichenkette soll die Zeichenkette in umgekehrter Reigenfolge wieder ausgegeben werden. 
   
   </details>
