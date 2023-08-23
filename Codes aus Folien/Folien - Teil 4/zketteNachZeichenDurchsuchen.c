@@ -2,20 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(void)
+int main(void)
 {
-    char zeichenkette[] = "Hello World";
-    char *ges_zeichen = strchr(zeichenkette, 'l');
+    char zeichenkette[] = "Hello World";
+    char *ges_zeichen = strchr(zeichenkette, 'W');
+    printf("Die Zeichenkette lautet: \"%s\"\n", zeichenkette);
+    printf("Adresse des gefundenen Zeichens: %p\n",ges_zeichen );
+    printf("Adresse des ersten Satzzeichens: %p\n",&zeichenkette[0] );
+    printf("Index des Zeichens: %d\n", (int) (ges_zeichen - &zeichenkette[0]) );
 
-    printf("Die Zeichenkette lautet: \"%s\"\n", zeichenkette);
-
-    for (int i = 0; zeichenkette[i] != '\0'; i++)
-    {
-        int index = i;
-        if (zeichenkette[i] == *ges_zeichen)
-        {
-            printf("Das erste \"%c\" hat den Index %d in der Zeichenkette.\n", *ges_zeichen, index);
-            break;
-        }
-    }
 }
