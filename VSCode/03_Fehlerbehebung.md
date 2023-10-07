@@ -20,6 +20,7 @@ In einzelfällen kommt es vor, dass sich choco nicht installieren lässt oder we
 <details>
   <summary>Hier klicken um choco zu installieren</summary>
   In der Kommandozeile (CMD/Terminal) folgenden Code eingeben und installieren: <br />
+  Achtung: Längerer Code, am besten auf die Kopierfunktion am rechten Rand des Codes klicken. <br />
   
   ```cmd
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command " [System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
