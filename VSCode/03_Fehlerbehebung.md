@@ -21,16 +21,20 @@ In einzelfällen kommt es vor, dass sich choco nicht installieren lässt oder we
   <summary>Hier klicken um choco zu installieren</summary>
   In der Kommandozeile (CMD/Terminal) folgenden Code eingeben und installieren: <br />
   
-  `CMD
-  @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command " [System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"`
+  ```cmd
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command " [System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+```
+
 </details>
 
 <details>
   <summary>Hier klicken um mingw (Compiler) zu installieren</summary>
   In der Kommandozeile (CMD/Terminal) folgenden Code eingeben und installieren: <br />
-  
-  `CMD
-  choco install mingw --version=8.1.0 -y -f`
+
+  ```cmd
+choco install mingw --version=8.1.0 -y -f
+```
+
 </details>
 
 
