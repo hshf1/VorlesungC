@@ -13,7 +13,7 @@ Sollte das Problem weiterhin bestehen oder neu und hier nicht enthalten sein, so
 
 :warning: Sehr oft gibt es Probleme mit dem Debugger! Dies liegt daran das vergessen wird, einen Ordner in VSCode zu öffnen. Dateien, die einzeln in VSCode geöffnet werden, können nicht debugged werden. Dafür sollte auch zur Hilfe eine Verknüpfung auf dem Desktop (Windows und MacOS, kein Linux) bei der Installation erstellt worden sein. Dadurch öffnet sich automatisch ein Ordner. Auch gibt es die meisten Probleme, wenn Umlaute oder Leerzeichen im Dateinamen oder in irgendeinem Ordnernamen (gesamter Verzeichnis bis zur Datei) enthalten ist.
 
-## ℹ️ Installation von choco oder vom compiler nicht möglich
+## ℹ️ WINDOWS: Installation von choco oder vom compiler nicht möglich
 
 In einzelfällen kommt es vor, dass sich choco nicht installieren lässt oder wenn es dann doch installiert ist, dann lässt sich der Compiler nicht installieren. Auch kann es vorkommen, dass choco ggf. sagt, dass mingw bereits installiert ist. Das kann dennoch manuell im CMD (Terminal) installiert werden. Falls choco bereits installiert ist, dann direkt den Compiler installieren.
 
