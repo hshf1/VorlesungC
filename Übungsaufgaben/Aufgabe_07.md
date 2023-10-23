@@ -31,7 +31,8 @@ Was besonders praktisch ist: Die Widerstandswerte in der E12-Reihe unterscheiden
 
  Wikipedia: https://de.wikipedia.org/wiki/E-Reihe
 
- In C können Sie die E12-Reihe mit der pow()-Funktion aus math.h berechnen.
+ In C können Sie die E12-Reihe mit der pow()-Funktion aus math.h berechnen. 
+ Dabei können Sie die Wurzel-Funktionen der E-Reihe in Potenzfunktionen umwandeln.
 
 <details>
 <summary>Beispiel zur Anwendung der pow-Funktion</summary>
