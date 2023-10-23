@@ -11,7 +11,7 @@
 
 Schreiben Sie ein C-Programm, das eine einfache Notenverwaltung für Schulklassen ermöglicht. Das Programm soll den Benutzer nach der Gesamtanzahl der Schüler in der Klasse fragen und dann die Möglichkeit bieten, die Noten für jeden Schüler einzugeben. Anschließend sollen die eingegebenen Noten ausgegeben werden.
 
-Legen Sie eine (Zeiger-)Variable namens "grade_list" und eine Variable namens "size" an, beide vom Typ "int". Die Variable "grade_list" wird später auf ein dynamisches Array zeigen, in dem die Noten gespeichert werden, und "size" wird die Anzahl der Schüler in der Klasse festhalten.
+Legen Sie eine (Zeiger-)Variable namens "grade_list" und eine Variable namens "size" an, beide vom Typ "int*". Die Variable "grade_list" wird später auf ein dynamisches Array zeigen, in dem die Noten gespeichert werden, und "size" wird die Anzahl der Schüler in der Klasse festhalten.
 
 Fragen Sie den Benutzer nach der Gesamtanzahl der Schüler in der Klasse.
 
