@@ -46,15 +46,15 @@ Frage: Mit welchen Werten sollten Ihre Hilfsvariablen initialisiert werden?
 
 Ihr Programm soll nun so erweitert/verändert werden, dass die unten aufgelisteten Aufgaben in Unterprogrammen umgesetzt sind.
 
-- [ ] Summe berechnen. Neue Funktion: int summe( int [10] )
+- [ ] Summe berechnen. Neue Funktion: int summeBerechnen( int [10] )
   
   Berechnung der Summe aller Elemente des übergebenen Feldes int [10]
 
-- [ ] Mittelwert berechnen. Neue Funktion:  float mittelwert( int [10] )
+- [ ] Mittelwert berechnen. Neue Funktion:  float mittelwertBerechnen( int [10] )
   
   Berechnung des Mittelwerts aller Elemente des übergebenen Feldes int [10]
 
-- [ ] Größtes Feldelement und Stelle suchen. Neue Funktion: int maximum( int [10], int* )
+- [ ] Größtes Feldelement und Stelle suchen. Neue Funktion: int maximumBerechnen( int [10], int* )
   
 Suche nach dem größten Feldelement und Ausgabe seiner Position (Index) im Feld.
 
