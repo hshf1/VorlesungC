@@ -139,9 +139,9 @@ Es werden 2 ineinander geschachtelte Schleifen verwendet.
    >   
    >   i=1  j=2;  1 10 5 2 7 -> f[2]=5  <   f[1]=10 -> tausche: 5 und 10
    >   
-   >   i=1  j=3;  5 10 2 1 7 -> f[3]=2  <   f[1]=2 -> tausche: 5 und 2
+   >   i=1  j=3;  1 5 10 2 7 -> f[3]=2  <   f[1]=2 -> tausche: 5 und 2
    >   
-   >   i=1  j=4;  2 10 5 1 7 -> f[4]=7  <   f[1]=2 _Nein_ -> nicht tauschen
+   >   i=1  j=4;  1 2 10 5 7 -> f[4]=7  <   f[1]=2 _Nein_ -> nicht tauschen
    >   
    >   f[0] und f[1] sind sortiert, weiter mit dem Rest
    >   
