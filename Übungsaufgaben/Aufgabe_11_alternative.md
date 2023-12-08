@@ -2,7 +2,7 @@
 <a href="https://github.com/hshf1/VorlesungC/discussions/categories/02_übungsaufgaben"><img src="https://img.shields.io/badge/Übungsaufgaben-Q%26A-informational?logo=c" height="25"/></a>
 <a href="https://github.com/hshf1/VorlesungC/discussions/12"><img src="https://img.shields.io/badge/Aufgabe_bewerten-red?logo=c" height="25"/></a>
 
-# Aufgabe 9
+# Aufgabe 11 Alternative
 
 ## Teil 1
 
