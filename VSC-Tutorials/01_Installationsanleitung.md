@@ -35,7 +35,7 @@ Mit einem Klick auf Installieren wird die Erweiterung heruntergeladen und instal
 <br />
 Hat die installierte Erweiterung die Initialisierung abgeschlossen, so wird ein Ordner auf dem Rechner unter <b>Dokumente</b> und in diesem Ordner eine erste Datei erstellt (je nach ausgewählter Programmiersprache ändert sich der Ordner und / oder die Datei, dazu mehr unter 
   
-[<b>02_Erste_Schritte</b>](https://github.com/hshf1/VSC-Tutorial/blob/main/02_Erste_Schritte.md)). Dieser Ordner wird auch direkt in VSCode geöffnet. Außerdem sollte auf der linken Seite ein Logo mit der Aufschrift HsH erscheinen (s. nachfolgendes Bild).<br />
+[<b>02_Erste_Schritte</b>](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/02_Erste_Schritte.md). Dieser Ordner wird auch direkt in VSCode geöffnet. Außerdem sollte auf der linken Seite ein Logo mit der Aufschrift HsH erscheinen (s. nachfolgendes Bild).<br />
 <img width="426" alt="Screenshot 2023-09-21 at 15 28 55" src="https://github.com/hshf1/VSCode/assets/100713757/cbd1aff0-d555-41a9-a35a-72f83f697122"><br />
 </details>
 <!--Ende Erweiterung HSH_AddOn4VSC-->
