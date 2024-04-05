@@ -3,7 +3,7 @@
 
 Dies ist eine Anleitung (von Studenten für Studenten) zur Installation von <b>VSCode</b> und der hilfreichen Erweiterung <b>HSH_AddOn4VSC</b>.<br />
 
-Bei Problemen kann hier nach einer Lösung geschaut werden: [03_Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorial/03_Fehlerbehebung.md).<br />
+Bei Problemen kann hier nach einer Lösung geschaut werden: [03_Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/03_Fehlerbehebung.md).<br />
 <!--Start Download und Installation-->
 ## Download und Installation
 <!--Start VSCode-->
