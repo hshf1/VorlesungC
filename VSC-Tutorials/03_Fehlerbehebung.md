@@ -1,8 +1,8 @@
 # Fehlerbehebung
 
-Einige Fehler können mit der Fehleranalyse aufgedeckt werden. Wie die Fehleranalyse ausgeführt wird, steht ebenfalls in der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md). Im LogFile stehen dann mögliche Fehler mit Fehlercodes, die hier näher beschrieben sind und zur Fehlerbehebung helfen. Dabei steht die erste Ziffer des Fehlercodes für das System -> 0*** sind Allgemeine Fehler, 1*** sind Fehler beim MacOS, 2*** sind Fehler beim Windows und 3*** sind Fehler beim Linux.
+Einige Fehler können mit der Fehleranalyse aufgedeckt werden. Wie die Fehleranalyse ausgeführt wird, steht ebenfalls in der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md). Im LogFile stehen dann mögliche Fehler mit Fehlercodes, die hier näher beschrieben sind und zur Fehlerbehebung helfen. Dabei steht die erste Ziffer des Fehlercodes für das System -> 0*** sind Allgemeine Fehler, 1*** sind Fehler beim MacOS, 2*** sind Fehler beim Windows und 3*** sind Fehler beim Linux.
 
-:information_source: Zuallererst sollte bei einem Problem die Installations gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt werden. Es hilft auch, zuerst :information_source: die Deinstallation auszuführen und dann erneut die Installation. Die Deinstallation ist ebenfalls in der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) erklärt.
+:information_source: Zuallererst sollte bei einem Problem die Installations gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach wiederholt werden. Es hilft auch, zuerst :information_source: die Deinstallation auszuführen und dann erneut die Installation. Die Deinstallation ist ebenfalls in der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) erklärt.
 
 :warning: Sollte keine LogFile erstellt werden und es taucht eine Fehlermeldung auf, bitte mit Windowsversion eine Mail schreiben.
 
@@ -61,7 +61,7 @@ In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstel
 
 -----------------------------------------------------------------------------------------------------
 
-Befinden sich die *.json-Dateien nicht in <b>~/Library/Application\ Support/Code/User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
+Befinden sich die *.json-Dateien nicht in <b>~/Library/Application\ Support/Code/User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht erstellt werden, so gibt es 2 Möglichkeiten:
 
@@ -90,11 +90,11 @@ Um die *.json-Dateien manuell zu erstellen, ist zuerst das Verzeichnis <b>~/Libr
   <br />
 Dann sind 3 neue Text-Dateien dort zu erstellen. Diese sind so zu benennen, wie hier geschrieben. Schreibfehler führen dazu, dass die Dateien nicht erkannt werden. Die Dateiendungen müssen unbedingt *.json sein und nicht *.txt oder anderes.
   <br />
-Für die settings.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/MacOS/settings.json) einzufügen und zu speichern.
+Für die settings.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/MacOS/settings.json) einzufügen und zu speichern.
   
-Für die launch.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/MacOS/launch.json) einzufügen und zu speichern.
+Für die launch.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/MacOS/launch.json) einzufügen und zu speichern.
   
-Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/MacOS/tasks.json) einzufügen und zu speichern.
+Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/MacOS/tasks.json) einzufügen und zu speichern.
 
 </details>
 
@@ -107,7 +107,7 @@ Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/Vo
 
 -----------------------------------------------------------------------------------------------------
   
-Fehlt <b>VSCode</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. VSCode sollte damit installiert werden.<br />
+Fehlt <b>VSCode</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. VSCode sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, kann dieser Schritt nochmal einzeln ausgeführt werden:
 
@@ -133,7 +133,7 @@ rm -R ~/Downloads/vsc.zip
 
 -----------------------------------------------------------------------------------------------------
   
-Fehlt der <b>Compiler</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Der Compiler sollte damit installiert werden.<br />
+Fehlt der <b>Compiler</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Der Compiler sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, kann dieser Schritt nochmal einzeln ausgeführt werden:
 
@@ -151,7 +151,7 @@ command xcode-select --install
 
 -----------------------------------------------------------------------------------------------------
 
-Fehlt die VSCode Extension <b>Code-Runner</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+Fehlt die VSCode Extension <b>Code-Runner</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
@@ -199,7 +199,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 
 -----------------------------------------------------------------------------------------------------
 
-Fehlt die VSCode Extension <b>C/C++</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+Fehlt die VSCode Extension <b>C/C++</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
@@ -247,7 +247,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 
 -----------------------------------------------------------------------------------------------------
   
-Fehlt die VSCode Extension <b>LiveShare</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+Fehlt die VSCode Extension <b>LiveShare</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
@@ -295,7 +295,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 
 -----------------------------------------------------------------------------------------------------
   
-Fehlt die VSCode Extension <b>lldb</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+Fehlt die VSCode Extension <b>lldb</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
@@ -362,7 +362,7 @@ Dies lässt sich im Terminal wie folgt beheben:
 
 -----------------------------------------------------------------------------------------------------
   
-Befinden sich die *.json-Dateien nicht in <b>%APPDATA%\Code\User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
+Befinden sich die *.json-Dateien nicht in <b>%APPDATA%\Code\User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht erstellt werden, so gibt es 2 Möglichkeiten:
 
@@ -391,11 +391,11 @@ Um die *.json-Dateien manuell zu erstellen, ist zuerst das Verzeichnis <b>%APPDA
   <br />
 Dann sind 3 neue Text-Dateien dort zu erstellen. Diese sind so zu benennen, wie hier geschrieben. Schreibfehler führen dazu, dass die Dateien nicht erkannt werden. Die Dateiendungen müssen unbedingt *.json sein und nicht *.txt oder anderes.
 <br />
-Für die settings.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Windows/settings.json) einzufügen und zu speichern.
+Für die settings.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/Windows/settings.json) einzufügen und zu speichern.
   
-Für die launch.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Windows/launch.json) einzufügen und zu speichern.
+Für die launch.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/Windows/launch.json) einzufügen und zu speichern.
   
-Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Windows/tasks.json) einzufügen und zu speichern.
+Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/Windows/tasks.json) einzufügen und zu speichern.
 
 </details>
 
@@ -408,7 +408,7 @@ Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/Vo
 
 -----------------------------------------------------------------------------------------------------
   
-Fehlt <b>VSCode</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. VSCode sollte damit installiert werden.<br />
+Fehlt <b>VSCode</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. VSCode sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, kann dieser Schritt nochmal einzeln ausgeführt werden:
 
@@ -430,7 +430,7 @@ choco install vscode -y
 
 -----------------------------------------------------------------------------------------------------
 
-Fehlt der <b>Compiler</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Der Compiler sollte damit installiert werden.<br />
+Fehlt der <b>Compiler</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Der Compiler sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, kann dieser Schritt nochmal einzeln ausgeführt werden:
 
@@ -452,7 +452,7 @@ choco install mingw --version=8.1.0 -y
 
 -----------------------------------------------------------------------------------------------------
 
-Fehlt die VSCode Extension <b>Code-Runner</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+Fehlt die VSCode Extension <b>Code-Runner</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
@@ -489,7 +489,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 
 -----------------------------------------------------------------------------------------------------
 
-Fehlt die VSCode Extension <b>C/C++</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+Fehlt die VSCode Extension <b>C/C++</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
@@ -526,7 +526,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 
 -----------------------------------------------------------------------------------------------------
 
-Fehlt die VSCode Extension <b>LiveShare</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+Fehlt die VSCode Extension <b>LiveShare</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
@@ -584,7 +584,7 @@ Während der Fehleranalyse ist es egal, ob das Terminal als Admin gestartet wurd
 
 -----------------------------------------------------------------------------------------------------
 
-Fehlt <b>Choco</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Choco sollte damit installiert werden.<br />
+Fehlt <b>Choco</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Choco sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, kann dieser Schritt nochmal einzeln ausgeführt werden:
 
@@ -660,7 +660,7 @@ Dieser Fehler lässt sich ganz einfach beheben, indem die Installation gemäß d
 
 -----------------------------------------------------------------------------------------------------
 
-Entweder wurde chocolatey nicht installiert, das Ende der Installation wurde nicht abgewartet oder das CMD Terminal wurde nach der Installation nicht beendet. Einfach Terminal schließen und wieder als Administrator öffnen. Bleibt der Fehler, so lässt es sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
+Entweder wurde chocolatey nicht installiert, das Ende der Installation wurde nicht abgewartet oder das CMD Terminal wurde nach der Installation nicht beendet. Einfach Terminal schließen und wieder als Administrator öffnen. Bleibt der Fehler, so lässt es sich ganz einfach beheben, indem ihr die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach wiederholt, ohne etwas zu deinstallieren.
 
 -----------------------------------------------------------------------------------------------------
 
@@ -706,7 +706,7 @@ curl --ssl-no-revoke -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/H
 
 -----------------------------------------------------------------------------------------------------
 
-Befinden sich die *.json-Dateien nicht in <b>~/.config/Code/User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
+Befinden sich die *.json-Dateien nicht in <b>~/.config/Code/User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht erstellt werden, so gibt es 2 Möglichkeiten:
 
@@ -735,11 +735,11 @@ Um die *.json-Dateien manuell zu erstellen, ist zuerst das Verzeichnis <b>~/.con
   <br />
 Dann sind 3 neue Text-Dateien dort zu erstellen. Diese sind so zu benennen, wie hier geschrieben. Schreibfehler führen dazu, dass die Dateien nicht erkannt werden. Die Dateiendungen müssen unbedingt *.json sein und nicht *.txt oder anderes.
   <br />
-Für die settings.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Linux/settings.json) einzufügen und zu speichern.
+Für die settings.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/Linux/settings.json) einzufügen und zu speichern.
   
-Für die launch.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Linux/launch.json) einzufügen und zu speichern.
+Für die launch.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/Linux/launch.json) einzufügen und zu speichern.
   
-Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSCode/Quellcodes/Linux/tasks.json) einzufügen und zu speichern.
+Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/Linux/tasks.json) einzufügen und zu speichern.
 
 </details>
 
@@ -752,7 +752,7 @@ Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/Vo
 
 -----------------------------------------------------------------------------------------------------
 
-Fehlt <b>VSCode</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. VSCode sollte damit installiert werden.<br />
+Fehlt <b>VSCode</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. VSCode sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, kann dieser Schritt nochmal einzeln ausgeführt werden:
 
@@ -772,7 +772,7 @@ Aufgrund des Befehls <b>sudo</b> sind hier Adminrechte nötig!
 
 -----------------------------------------------------------------------------------------------------
 
-Fehlt der <b>Compiler</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Der Compiler sollte damit installiert werden.<br />
+Fehlt der <b>Compiler</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Der Compiler sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, kann dieser Schritt nochmal einzeln ausgeführt werden:
 
@@ -792,7 +792,7 @@ Aufgrund des Befehls <b>sudo</b> sind hier Adminrechte nötig!
 
 -----------------------------------------------------------------------------------------------------
 
-Fehlt die VSCode Extension <b>Code-Runner</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+Fehlt die VSCode Extension <b>Code-Runner</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
@@ -840,7 +840,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 
 -----------------------------------------------------------------------------------------------------
   
-Fehlt die VSCode Extension <b>C/C++</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+Fehlt die VSCode Extension <b>C/C++</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
@@ -888,7 +888,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 
 -----------------------------------------------------------------------------------------------------
   
-Fehlt die VSCode Extension <b>LiveShare</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+Fehlt die VSCode Extension <b>LiveShare</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
@@ -936,7 +936,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 
 -----------------------------------------------------------------------------------------------------
   
-Fehlt die VSCode Extension <b>lldb</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
+Fehlt die VSCode Extension <b>lldb</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Die VSCode Extension sollte damit installiert werden.<br />
 <br />
 Sollte es mit der Installation dennoch nicht installiert werden, so gibt es 2 Möglichkeiten:
 
