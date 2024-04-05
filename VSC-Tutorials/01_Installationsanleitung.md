@@ -10,7 +10,7 @@ Bei Problemen kann hier nach einer Lösung geschaut werden: [03_Fehlerbehebung](
 <details>
 <summary>VSCode</summary>
 <br />
-🛑 Ist VSCode bereits installiert (wie es z.B. auf den Rechnern der HsH ist), so kann der Download von VSCode übersprungen und die Erweiterung, wie folgend beschrieben, installiert werden.<br />
+🛑 Ist VSCode bereits installiert (<b>wie es z.B. auf den Rechnern der HsH ist</b>), so kann der Download von VSCode übersprungen werden. Bitte dann mit der Installation des HSH_AddOn4VSC (s.u.) weitermachen.<br />
 <br />
 Die neueste Version von VSCode kann hier runtergeladen und installiert werden:
   
