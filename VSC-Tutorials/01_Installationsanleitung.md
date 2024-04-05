@@ -24,10 +24,10 @@ Nach der Installation ist VSCode zu öffnen. Es erscheint die folgende Benutzero
 <summary>Erweiterung HSH_AddOn4VSC</summary>
 <br />
 Auf der linken Seite kann auf den Marktplatz zugegriffen werden (s. nachfolgendes Bild).<br />
-<img width="426" alt="Screenshot 2023-09-21 at 15 25 10" src="https://github.com/hshf1/VSC-Tutorial/assets/100713757/45216f6b-136a-4485-8178-749eef98535f"><br />
+<img width="426" alt="Screenshot 2023-09-21 at 15 25 10" src="https://github.com/hshf1/VSCode/assets/100713757/45216f6b-136a-4485-8178-749eef98535f"><br />
 <br />
 Dort können Erweiterungen für VSCode installiert werden. Mit der Suche nach <b>HSH_AddOn4VSC</b> taucht die folgende Erweiterung auf (Stand: 21.09.2023):<br />
-<img width="426" alt="Screenshot 2023-09-21 at 15 26 40" src="https://github.com/hshf1/VSC-Tutorial/assets/100713757/6cb07cd6-630f-4503-8bd9-b0ff941128a8"><br />
+<img width="426" alt="Screenshot 2023-09-21 at 15 26 40" src="https://github.com/hshf1/VSCode/assets/100713757/6cb07cd6-630f-4503-8bd9-b0ff941128a8"><br />
 <br />
 Mit einem Klick auf Installieren wird die Erweiterung heruntergeladen und installiert. Sobald die Installation abgeschlossen ist, führt VSCode die Erweiterung sofort aus. Ab da werden alle weiteren benötigten Erweiterungen und zusetzende Einstellungen von der Erweiterung automatisch ausgeführt. Dies kann bei der ersten Installation etwas dauern und es kann je nach System ein externes Terminal (CMD) öffnen, wo noch benötigte Ressourcen installiert werden.<br />
 <br />
