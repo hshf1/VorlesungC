@@ -72,7 +72,7 @@ printf("Die Zahl lautet %d.\n", x);
 
 ## HSH_AddOn4VSC
 
-Dieser Abschnitt setzt voraus, dass ihr das HSH_AddOn4VSC bereits installiert habt. Ist dies nicht der Fall, dann findet Ihr die Installationsanleitung hier: [01_Installationsanleitung.md](https://github.com/hshf1/VSCode/blob/main/01_Installationsanleitung.md).
+Dieser Abschnitt setzt voraus, dass ihr das HSH_AddOn4VSC bereits installiert habt. Ist dies nicht der Fall, dann findet Ihr die Installationsanleitung hier: [01_Installationsanleitung.md](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md).
 
 <details>
 <summary> Schnellstart HSH_AddOn4VSC</summary>
