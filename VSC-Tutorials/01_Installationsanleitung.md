@@ -44,8 +44,8 @@ Hat die installierte Erweiterung die Initialisierung abgeschlossen, so wird ein 
 
 ## Weiterführende Links
 
-[02_Erste_Schritte](https://github.com/hshf1/VSC-Tutorial/blob/main/02_Erste_Schritte.md)<br />
-[03_Fehlerbehebung](https://github.com/hshf1/VSC-Tutorial/blob/main/03_Fehlerbehebung.md)<br />
+[02_Erste_Schritte](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/02_Erste_Schritte.md)<br />
+[03_Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/03_Fehlerbehebung.md)<br />
 [Source-Code der Erweiterung HSH_AddOn4VSC](https://github.com/hshf1/HSH_AddOn4VSC)<br />
 [Vorlesung-C Git-Repository](https://github.com/hshf1/VorlesungC)<br />
 <!--Ende Weiterführende Links-->
