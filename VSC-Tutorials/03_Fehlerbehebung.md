@@ -39,7 +39,7 @@ In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstel
 ## <p align="center">MacOS</p>
 
 <details>
-<summary>Fehlercode: 1001 | VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
+<summary>VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
   
@@ -65,7 +65,7 @@ rm -R ~/Downloads/vsc.zip
 </details>
 
 <details>
-<summary>Fehlercode: 1002 | Compiler ist nicht installiert oder konnte nicht erkannt werden!</summary>
+<summary>Compiler ist nicht installiert oder konnte nicht erkannt werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
   
@@ -83,7 +83,7 @@ command xcode-select --install
 </details>
 
 <details>
-<summary>Fehlercode: 1003 | Die Extension Code-Runner konnte nicht gefunden werden!</summary>
+<summary>Die Extension Code-Runner konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
 
@@ -131,7 +131,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 </details>
 
 <details>
-<summary>Fehlercode: 1004 | Die Extension C/C++ konnte nicht gefunden werden!</summary>
+<summary>Die Extension C/C++ konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
 
@@ -179,7 +179,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 </details>
 
 <details>
-<summary>Fehlercode: 1005 | Die Extension LiveShare konnte nicht gefunden werden!</summary>
+<summary>Die Extension LiveShare konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
   
@@ -227,7 +227,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 </details>
 
 <details>
-<summary>Fehlercode: 1006 | Die Extension lldb konnte nicht gefunden werden!</summary>
+<summary>Die Extension lldb konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
   
@@ -294,7 +294,7 @@ Dies lässt sich im Terminal wie folgt beheben:
 ## <p align="center">Windows</p>
 
 <details>
-<summary>Fehlercode: 2001 | VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
+<summary>VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
   
@@ -316,7 +316,7 @@ choco install vscode -y
 </details>
 
 <details>
-<summary>Fehlercode: 2002 | Compiler ist nicht installiert oder konnte nicht erkannt werden!</summary>
+<summary>Compiler ist nicht installiert oder konnte nicht erkannt werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
 
@@ -338,7 +338,7 @@ choco install mingw --version=8.1.0 -y
 </details>
 
 <details>
-<summary>Fehlercode: 2003 | Die Extension Code-Runner konnte nicht gefunden werden!</summary>
+<summary>Die Extension Code-Runner konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
 
@@ -375,7 +375,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 </details>
 
 <details>
-<summary>Fehlercode: 2004 | Die Extension C/C++ konnte nicht gefunden werden!</summary>
+<summary>Die Extension C/C++ konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
 
@@ -412,7 +412,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 </details>
 
 <details>
-<summary>Fehlercode: 2005 | Die Extension LiveShare konnte nicht gefunden werden!</summary>
+<summary>Die Extension LiveShare konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
 
@@ -455,7 +455,7 @@ Es ist darauf zu achten, dass es diese Extensions von diesem Publisher sind (2 E
 </details>
 
 <details>
-<summary>Fehlercode: 2006 | Das Terminal wurde nicht als Administrator gestartet!</summary>
+<summary>Das Terminal wurde nicht als Administrator gestartet!</summary>
 
 -----------------------------------------------------------------------------------------------------
 
@@ -470,7 +470,7 @@ Während der Fehleranalyse ist es egal, ob das Terminal als Admin gestartet wurd
 </details>
 
 <details>
-<summary>Fehlercode: 2007 | Choco konnte nicht gefunden werden!</summary>
+<summary>Choco konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
 
@@ -592,7 +592,7 @@ curl --ssl-no-revoke -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/H
 ## <p align="center">Linux</p>
 
 <details>
-<summary>Fehlercode: 3001 | VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
+<summary>VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
 
@@ -612,7 +612,7 @@ Aufgrund des Befehls <b>sudo</b> sind hier Adminrechte nötig!
 </details>
 
 <details>
-<summary>Fehlercode: 3002 | Compiler ist nicht installiert oder konnte nicht erkannt werden!</summary>
+<summary>Compiler ist nicht installiert oder konnte nicht erkannt werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
 
@@ -632,7 +632,7 @@ Aufgrund des Befehls <b>sudo</b> sind hier Adminrechte nötig!
 </details>
 
 <details>
-<summary>Fehlercode: 3003 | Die Extension Code-Runner konnte nicht gefunden werden!</summary>
+<summary>Die Extension Code-Runner konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
 
@@ -680,7 +680,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 </details>
 
 <details>
-<summary>Fehlercode: 3004 | Die Extension C/C++ konnte nicht gefunden werden!</summary>
+<summary>Die Extension C/C++ konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
   
@@ -728,7 +728,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 </details>
 
 <details>
-<summary>Fehlercode: 3005 | Die Extension LiveShare konnte nicht gefunden werden!</summary>
+<summary>Die Extension LiveShare konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
   
@@ -776,7 +776,7 @@ Es ist darauf zu achten, dass es diese Extension von diesem Publisher ist:
 </details>
 
 <details>
-<summary>Fehlercode: 3006 | Die Extension lldb konnte nicht gefunden werden!</summary>
+<summary>Die Extension lldb konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
   
