@@ -1,6 +1,6 @@
 ## Allgemeine Hinweise
 
-Bei Problemen und Fehlern schaut hier: [03_Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/03_Fehlerbehebung.md).
+Bei Problemen und Fehlern schaut hier: [03_Fehlerbehebung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/03_Fehlerbehebung.md).
 
 VSCode wird wahrscheinlich ein Update auf die Insiders-Version (Beta-Version) anbieten, wovon abgeraten wird.<br />
 Ein stabiler Betrieb ist wichtiger als die neuesten Features, die beim C-Programmieren kaum zum Tragen kommen werden.
