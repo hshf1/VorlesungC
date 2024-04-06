@@ -57,52 +57,6 @@ In diesem Fall kann man das Anti-Virus Programm für einen kurzen Moment ausstel
 ## <p align="center">MacOS</p>
 
 <details>
-<summary>Fehlercode: 1000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
-
------------------------------------------------------------------------------------------------------
-
-Befinden sich die *.json-Dateien nicht in <b>~/Library/Application\ Support/Code/User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
-<br />
-Sollte es mit der Installation dennoch nicht erstellt werden, so gibt es 2 Möglichkeiten:
-
-<details>
-<summary>*.json-Dateien automatisch erstellen</summary>
-  
-Um die *.json-Dateien automatisch zu erstellen, ist das Terminal zu starten und die folgenden Codezeilen aus der Installation einzeln auszuführen.<br />
-Für die settings.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
-```sh
-curl --create-dirs -o ~/Library/Application\ Support/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/settings.json
-```
-Für die launch.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
-```sh
-curl --create-dirs -o ~/Library/Application\ Support/Code/User/launch.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/launch.json
-```
-Für die tasks.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
-```sh
-curl --create-dirs -o ~/Library/Application\ Support/Code/User/tasks.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/MacOS/tasks.json
-```
-  
-</details>
-<details>
-<summary>*.json-Dateien manuell erstellen</summary>
-
-Um die *.json-Dateien manuell zu erstellen, ist zuerst das Verzeichnis <b>~/Library/Application\ Support/Code/User</b> zu öffnen. Sollte das Verzeichnis noch nicht vorhanden, muss das erstellt werden. Dieses Verzeichnis wird aber auch automatisch erstellt, sobald VSCode geöffnet wird.
-  <br />
-Dann sind 3 neue Text-Dateien dort zu erstellen. Diese sind so zu benennen, wie hier geschrieben. Schreibfehler führen dazu, dass die Dateien nicht erkannt werden. Die Dateiendungen müssen unbedingt *.json sein und nicht *.txt oder anderes.
-  <br />
-Für die settings.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/MacOS/settings.json) einzufügen und zu speichern.
-  
-Für die launch.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/MacOS/launch.json) einzufügen und zu speichern.
-  
-Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/MacOS/tasks.json) einzufügen und zu speichern.
-
-</details>
-
------------------------------------------------------------------------------------------------------
-
-</details>
-
-<details>
 <summary>Fehlercode: 1001 | VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
 
 -----------------------------------------------------------------------------------------------------
@@ -356,52 +310,6 @@ Dies lässt sich im Terminal wie folgt beheben:
 </details>
 
 ## <p align="center">Windows</p>
-
-<details>
-<summary>Fehlercode: 2000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
-
------------------------------------------------------------------------------------------------------
-  
-Befinden sich die *.json-Dateien nicht in <b>%APPDATA%\Code\User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
-<br />
-Sollte es mit der Installation dennoch nicht erstellt werden, so gibt es 2 Möglichkeiten:
-
-<details>
-<summary>*.json-Dateien automatisch erstellen</summary>
-  
-Um die *.json-Dateien automatisch zu erstellen, ist das Terminal zu starten und die folgenden Codezeilen aus der Installation einzeln auszuführen.<br />
-Für die settings.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
-```sh
-curl --create-dirs -o %APPDATA%\Code\User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/settings.json
-```
-Für die launch.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
-```sh
-curl --create-dirs -o %APPDATA%\Code\User/launch.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/launch.json
-```
-Für die tasks.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
-```sh
-curl --create-dirs -o %APPDATA%\Code\User/tasks.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Windows/tasks.json
-```
-  
-</details>
-<details>
-<summary>*.json-Dateien manuell erstellen</summary>
-
-Um die *.json-Dateien manuell zu erstellen, ist zuerst das Verzeichnis <b>%APPDATA%\Code\User</b> zu öffnen. Sollte das Verzeichnis noch nicht vorhanden, muss das erstellt werden. Dieses Verzeichnis wird aber auch automatisch erstellt, sobald VSCode geöffnet wird.
-  <br />
-Dann sind 3 neue Text-Dateien dort zu erstellen. Diese sind so zu benennen, wie hier geschrieben. Schreibfehler führen dazu, dass die Dateien nicht erkannt werden. Die Dateiendungen müssen unbedingt *.json sein und nicht *.txt oder anderes.
-<br />
-Für die settings.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/Windows/settings.json) einzufügen und zu speichern.
-  
-Für die launch.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/Windows/launch.json) einzufügen und zu speichern.
-  
-Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/Windows/tasks.json) einzufügen und zu speichern.
-
-</details>
-
------------------------------------------------------------------------------------------------------
-
-</details>
 
 <details>
 <summary>Fehlercode: 2001 | VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
@@ -700,52 +608,6 @@ curl --ssl-no-revoke -o %temp%\vsc.cmd https://raw.githubusercontent.com/hshf1/H
 
 
 ## <p align="center">Linux</p>
-
-<details>
-<summary>Fehlercode: 3000 | settings/launch/tasks.json konnte nicht gefunden werden!</summary>
-
------------------------------------------------------------------------------------------------------
-
-Befinden sich die *.json-Dateien nicht in <b>~/.config/Code/User</b>, so kann die Installation gemäß der [Installationsanleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach erneut ausgeführt werden. Diese sollten während der Installation dort erstellt werden.<br />
-<br />
-Sollte es mit der Installation dennoch nicht erstellt werden, so gibt es 2 Möglichkeiten:
-
-<details>
-<summary>*.json-Dateien automatisch erstellen</summary>
-  
-Um die *.json-Dateien automatisch zu erstellen, ist das Terminal zu starten und die folgenden Codezeilen aus der Installation einzeln auszuführen.<br />
-Für die settings.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
-```sh
-curl --create-dirs -o ~/.config/Code/User/settings.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/settings.json
-```
-Für die launch.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
-```sh
-curl --create-dirs -o ~/.config/Code/User/launch.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/launch.json
-```
-Für die tasks.json ist die folgende Codezeile im Terminal einzufügen und mit der ENTER-Taste auszuführen:
-```sh
-curl --create-dirs -o ~/.config/Code/User/tasks.json https://raw.githubusercontent.com/hshf1/VorlesungC/main/VSCode/Quellcodes/Linux/tasks.json
-```
-  
-</details>
-<details>
-<summary>*.json-Dateien manuell erstellen</summary>
-
-Um die *.json-Dateien manuell zu erstellen, ist zuerst das Verzeichnis <b>~/.config/Code/User</b> zu öffnen. Sollte das Verzeichnis noch nicht vorhanden, muss das erstellt werden. Dieses Verzeichnis wird aber auch automatisch erstellt, sobald VSCode geöffnet wird.
-  <br />
-Dann sind 3 neue Text-Dateien dort zu erstellen. Diese sind so zu benennen, wie hier geschrieben. Schreibfehler führen dazu, dass die Dateien nicht erkannt werden. Die Dateiendungen müssen unbedingt *.json sein und nicht *.txt oder anderes.
-  <br />
-Für die settings.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/Linux/settings.json) einzufügen und zu speichern.
-  
-Für die launch.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/Linux/launch.json) einzufügen und zu speichern.
-  
-Für die tasks.json ist der Inhalt [von diesem Link](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/Quellcodes/Linux/tasks.json) einzufügen und zu speichern.
-
-</details>
-
------------------------------------------------------------------------------------------------------
-
-</details>
 
 <details>
 <summary>Fehlercode: 3001 | VSCode ist nicht installiert oder konnte nicht gefunden werden!</summary>
