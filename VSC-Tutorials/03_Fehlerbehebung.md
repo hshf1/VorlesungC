@@ -539,7 +539,7 @@ Eine unvollständige Installation von Chocolatey kann man mit folgendem Befehl i
 
 -----------------------------------------------------------------------------------------------------
 
-Dieser Fehler lässt sich ganz einfach beheben, indem die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSCode/01_Installationsanleitung.md) einfach wiederholt wird, ohne etwas zu deinstallieren.
+Dieser Fehler lässt sich ganz einfach beheben, indem die Installation gemäß der [Anleitung](https://github.com/hshf1/VorlesungC/blob/main/VSC-Tutorials/01_Installationsanleitung.md) einfach wiederholt wird, ohne etwas zu deinstallieren.
 
 -----------------------------------------------------------------------------------------------------
 
