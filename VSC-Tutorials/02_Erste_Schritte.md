@@ -182,8 +182,8 @@ Man kann auch hier auswählen, ob man die normalle Session in eine read-only Ses
   
 Wenn wir während der Session wieder unten links im blauen Balken auf unseren Namen klicken, so öffnet sich oben wieder ein Menü.
   
-![LiveShare Exit]()
-  
+![LiveShare Exit](https://github.com/hshf1/VorlesungC/assets/100713757/0d00ef4f-2414-445a-bb03-013e62cf72ae)
+
 Dort können wir den Einladungslink wieder kopieren, einen Audio Call starten oder die Session beenden.
   
 </details>
@@ -194,13 +194,12 @@ Dort können wir den Einladungslink wieder kopieren, einen Audio Call starten od
 <summary>Ausführliche Anleitung zum Debuggen</summary>
 Das Folgende ist eher ein Funktionstest oder ein erstes Kennenlernen des Debuggers, kein kompletter Vorgehensvorschlag oder Best Practice zum Debuggen! Einen Link zu einer etwas tiefergehenden Einführung zur Arbeit mit dem Debugger findet ihr am Ende dieser Sektion!  
   
-Zum Debugger gelangen wir z.B., indem wir links auf das Symbol mit Play-Button und Käfer ([Bug](https://de.wikipedia.org/wiki/Programmfehler)) klicken.
+Zum Debugger gelangen wir z.B., indem wir links auf das Symbol mit Play-Button und Käfer klicken.
 Indem wir links neben die Zeilennummern klicken, können wir sogenannte Breakpoints einfügen, die sich durch rote Punkte zu erkennen geben, und wollen dies auch großzügig wie im gezeigten Screenshot tun, danach starten wir den Debugger durch Klick auch den grünen Play-Button:
 
-![image](https://user-images.githubusercontent.com/78163337/111460491-5207a980-871c-11eb-85d0-c31a90780bdc.png)
+![image](https://github.com/hshf1/VorlesungC/assets/100713757/43739f52-b1f2-441f-adf0-b08cb7c45f47)
 
 Debugging
-
 
 Um Fehler in einem Programm zu finden, ist es hilfreich das Programm während der Laufzeit debuggen, d.h. beobachten zu können. 
 
@@ -240,15 +239,14 @@ int main ()
   
 Klickt einfach links neben die Zeilennummer 7 und es erscheint ein roter Punkt, Breakpoint genannt:
 
-![Bildschirmfoto 2021-10-13 um 12 16 31](https://user-images.githubusercontent.com/81232074/137114565-5bcbf5a7-b129-4c5c-b970-dfc95ef393fd.png)
+![Bildschirmfoto 2021-10-13 um 12 16 31](https://github.com/hshf1/VorlesungC/assets/100713757/3ce8b0b3-7331-4612-a1e7-30831f837f19)
 
 Alternativ könnt ihr an die gleiche Stelle auch rechtsklicken und so einen Breakpoint hinzufügen. Durch rechtsklick auf einen bestehenden Breakpoint könnt ihr ihn entfernen.
 
-![breakpointrechtsklick](https://user-images.githubusercontent.com/81232074/137114867-905cc110-b14b-454e-bafc-4d1296dccbbf.png)
+![breakpointrechtsklick](https://github.com/hshf1/VorlesungC/assets/100713757/717c62a1-08ce-4b05-87b7-0fcf751c4275)
 
 Den Debugger startet man mit klick auf das grüne "Play"-Symbol oben links, oder durch drücken von F5:
-![startdebugging](https://user-images.githubusercontent.com/81232074/137124654-35256b0b-c20f-4b9f-b33d-34ec7b8c23f1.png)
-
+![startdebugging](https://github.com/hshf1/VorlesungC/assets/100713757/e7fb9738-ed12-47e7-8d87-db49cf28bcd6)
 
 Bitte betrachtet jetzt den folgenden Screenshot. Hier könnt ihr folgendes erkennen:
 1. Das Programm steht in der Zeile 7. Die Zeile 7 wurde noch NICHT ausgeführt.
@@ -256,35 +254,32 @@ Bitte betrachtet jetzt den folgenden Screenshot. Hier könnt ihr folgendes erken
 3. Das Ausgabefenster (Terminal) ist noch leer, da noch nichts über den Befehl printfausgegeben wurde. 
 4. Am oberen Rand des Fensters seht ihr eine neue Schaltfläche für den Debugger.
 
-![debuggingfirststep](https://user-images.githubusercontent.com/81232074/137118222-7c9f8f64-9d90-44f0-b4ca-2a841a9cbd50.png)
-
+![debuggingfirststep](https://github.com/hshf1/VorlesungC/assets/100713757/3be16ab0-4302-4668-8e90-7b022107122b)
 
 Im Debugger Fenster könnt ihr jetzt per klick auf das + rechts neben "WATCH" Variablen hinzufügen, die ihr beobachten möchtet. Hier bietet sich die Variable i an: 
 
-![addexpression](https://user-images.githubusercontent.com/81232074/137119279-010a069c-b2f3-4a83-9312-fbc39030477b.png)
+![addexpression](https://github.com/hshf1/VorlesungC/assets/100713757/ca3b145c-e7b5-4aa2-bedd-33233562c8b0)
 
 In der Debugging-Toolbar befindet sich ein Pfeil nach unten mit einem Punkt darunter. Diese Funktion hört in VSCode auf den schönen Namen "Step into", wird hier jedoch im folgenden "nächster Schritt genannt. .Sie lässt sich auch mit F11 aufrufen.
 
-![debuggingtoolbar](https://user-images.githubusercontent.com/81232074/137120101-a40c0633-5adc-48a6-b332-2bb3e655c157.png)
-
+![debuggingtoolbar](https://github.com/hshf1/VorlesungC/assets/100713757/5ce20264-d74d-4598-9b1a-44b26d8e651c)
 
 Klickt nun bitte 3x auf die Schaltfläche „Nächster Schritt“. Status danach:
 1. Das Abarbeitungszeichen zeigt auf die Zeile 10. 
 2. Die "Debug Console" zeigt „@"Hallo!\r\n"
 3. Die Variable i hat den Inhalt 1 (i: 1).
 
-![debuggingline10](https://user-images.githubusercontent.com/81232074/137121570-edf50dcd-53b3-429a-aafc-a0302b12cf6f.png)
+![debuggingline10](https://github.com/hshf1/VorlesungC/assets/100713757/689b0f10-8838-4ef6-9368-b8fa020af2ea)
 
 Wenn ihr über „Nächsten Schritt“ das Programm bis zur Zeile 15 (return 0;) weiter ausführt, habt ihr dieses Bild:
 
-![debuggingcomplete](https://user-images.githubusercontent.com/81232074/137122349-4f5097f3-dd5e-44e4-86df-53cd08955eec.png)
+![debuggingcomplete](https://github.com/hshf1/VorlesungC/assets/100713757/09e9909c-3e16-461c-820d-1c46f7b01022)
 
 Es wurden die vier "Hallos" ausgegeben und die Variable i trägt den Wert 3.
 
 Manch einer mag sich gefragt haben, was es bringen soll die Variable i "doppelt" zu überwachen. Unter "WATCH" kann nicht nur Variablen anzeigen lassen, sondern ganze Ausdrücke. Mit "i, c" z. B. den zugehörigen Character oder mit "2\*i" den doppelten Wert von i. Wenn man z. B. 8\*M_PI als Abbruchbedingung für eine Schleife gewählt hat ist es sicherlich komfortabler i < 8\*3.14 zu überwachen, als das im Kopf auszurechnen.
 
-![image](https://user-images.githubusercontent.com/81232074/137126018-be99777a-565b-4bcf-9d87-fdf386361bf3.png)
-
+![image](https://github.com/hshf1/VorlesungC/assets/100713757/192b82ae-65aa-44f7-b482-77e65e2f1557)
 
 Zum weiteren üben bieten sich die folgenden Schritte an:
 
@@ -304,7 +299,7 @@ Jetzt ist es endlich soweit und wir öffnen Visual Studio Code.
   
 In der Startansicht wählen wir „Open folder…“
 
-<img width="239" alt="image" src="https://user-images.githubusercontent.com/78163337/111457735-dce6a500-8718-11eb-8ad8-504a45538b74.png">
+<img width="239" alt="image" src="https://github.com/hshf1/VorlesungC/assets/100713757/4b536145-961d-487a-8e1b-75878d28f9de">
 
 Und wählen unter Dokumente\VSCodeForC\ den Ordner Projekte
   
@@ -312,7 +307,7 @@ Und wählen unter Dokumente\VSCodeForC\ den Ordner Projekte
   
   Erläuterung: VSCode sucht im obersten geöffneten Ordner, und nur dort, nach einem Ordner ".vscode". Wenn es fündig wird entnimmt es diesem Einstellungen die man sonst von Hand vornehmen müsste. Die habe ich vorbereitet und als ihr den "git"-Befehl ausgeführt habt, habt ihr die runtergeladen. Wenn ihr aus irgendeinem Grund beim Öffnen von VSCode oder später in VSCode einen Ordner öffnet und dort Programme speichern möchtet, muss in diesen Ordner eine Kopie des .vscode-Ordners. 
 
-<img width="371" alt="image" src="https://user-images.githubusercontent.com/78163337/111457815-f7b91980-8718-11eb-8ec2-c96cdb9df8e1.png">
+<img width="371" alt="image" src="https://github.com/hshf1/VorlesungC/assets/100713757/21bdb64a-cf94-47d2-a117-31d12d8d6fe4">
 
 Wir finden im Ordner Programmiersprache_C fertig vorbereitet die Datei HelloWorld.C 
 
@@ -322,9 +317,10 @@ Damit unsere Programme später Input vom Terminal entgegennehmen können, z. B. 
 
 Also begeben wir uns die die Settings, geben „code-runner.runinterminal“ in die Suche ein und setzen den entsprechenden Haken.
 
-<img width="310" alt="image" src="https://user-images.githubusercontent.com/78163337/111459570-246e3080-871b-11eb-8050-d287916a961c.png">
+<img width="310" alt="image" src="https://github.com/hshf1/VorlesungC/assets/100713757/cfbaff5f-216f-4dd0-991b-e51b287623c0">
 
-![image](https://user-images.githubusercontent.com/78163337/111459615-351ea680-871b-11eb-9819-b7dce6bfdf37.png) 
+![image](https://github.com/hshf1/VorlesungC/assets/100713757/e7e2eef2-4869-4ad7-bf26-41570d367d96)
+
 
 #### Konfiguration des Debuggers
 
@@ -343,13 +339,13 @@ und dann
 
 Auf meinem Rechner ist noch ein weiterer Compiler installiert, nicht irritieren lassen, wenn die Auswahl ein wenig anders aussieht.
 
-![image](https://user-images.githubusercontent.com/78163337/112050085-bd081480-8b50-11eb-80df-a291eb903839.png)
+![image](https://github.com/hshf1/VorlesungC/assets/100713757/dd8c3d74-909d-43a1-ba35-fb4db0c1d43b)
 
 In unserem Projekte Ordner legt uns VSCode nun automatisch eine Datei „tasks.json“ an. Diese gilt auch für alle Programme in diesem Ordner, wir müssen diesen Schritt also nur einmal ausführen. Sollte es im Folgenden Probleme geben, ist eine funktionierende Version dieser Datei im Anhang. Pfade, etc. können aber abweichen, daher dient diese eher dem Vergleich, als dem kompletten Ersetzen.
 
 Wir schreiben nun unser zweites Programm „debugtest.c“, mit dem Inhalt aus dem Screenshot unten:
 
-<img width="226" alt="image" src="https://user-images.githubusercontent.com/78163337/112050268-f2146700-8b50-11eb-8565-632c2626e7f5.png">
+<img width="226" alt="image" src="https://github.com/hshf1/VorlesungC/assets/100713757/5c75b526-4074-415a-a669-46dfdaad525e">
 
 **_Jetzt ist es wichtig, dass tatsächlich auch debugtest.c geöffnet und markiert ist (Focus hat), und nicht tasks.json, da VSCode nun eine weitere Konfigurationsdatei erzeugen wird, und zwar basierend auf der aktiven Datei._**
 
@@ -359,19 +355,19 @@ und dann
 > Start Debugging
 und gehen dann wie auf den Screenshots markiert vor:
 
-![image](https://user-images.githubusercontent.com/78163337/112050854-939bb880-8b51-11eb-82ba-055a312bffa0.png)
+![image](https://github.com/hshf1/VorlesungC/assets/100713757/73014890-75c1-48ca-90f1-a74866a41af8)
 
-![image](https://user-images.githubusercontent.com/78163337/112050881-97c7d600-8b51-11eb-869a-f05a0b726c1c.png)
+![image](https://github.com/hshf1/VorlesungC/assets/100713757/f4f31c83-63d8-40df-82ff-3973e2fc24c8)
 
 Das Programm ist kurz und unspektakulär, aber ein echter Klassiker.
 
 Wir rechtsklicken in das Fenster mit unserem Code und wählen „Run Code“
 
-<img width="385" alt="image" src="https://user-images.githubusercontent.com/78163337/111458152-626a5500-8719-11eb-87fc-40ae6b391886.png">
+<img width="385" alt="image" src="https://github.com/hshf1/VorlesungC/assets/100713757/7195a2cb-dc32-49c3-a57c-d1a376dd0517">
 
 Weiter unten sehen wir in der Mitte von vielen anderen, eher kryptisch anmutenden Dingen, die Ausgabe unseres Programms, nämlich "hello world".
 
-<img width="283" alt="image" src="https://user-images.githubusercontent.com/78163337/111458210-77df7f00-8719-11eb-9e41-39180d41cfda.png">
+<img width="283" alt="image" src="https://github.com/hshf1/VorlesungC/assets/100713757/9f51c5e1-96f0-419a-87c4-0d07d69fe10e">
 
 Wer diese Ausgabe *nicht* erhält sollte sich an dieser Stelle der Troubleshooting-Sektion zuwenden. Solange ein Programm nicht abgearbeitet wird, wird auch das Folgende nicht funktionieren.
 
@@ -385,7 +381,7 @@ Wie fast immer in VSCode führen viele Wege ans Ziel und es ist Geschmackssache,
 
 Im folgenden Screenshot sind mal drei Möglichkeiten markiert (eine mit vorherigem Rechtsklick):
 
-![image](https://user-images.githubusercontent.com/81232074/132040960-43f63a87-b822-47b2-806e-7571c6a6661e.png)
+![image](https://github.com/hshf1/VorlesungC/assets/100713757/65d98f36-2bd7-4bb2-883b-a53da886db83)
 
 
 - [x] Ordner angelegt
@@ -556,37 +552,37 @@ Bei MacOSsystemen dagegen öffnet sich keine und man kann jedes mal beim Debugge
 }
   ```
 
-  
 ### Schritt 3
 
 Damit wir später auch Programme mit Benutzereingaben, z. B. mit scanf ausführen können, klicken wir unten links auf das Zahnrad und wählen dann Settings.
 
-<img width="219" alt="image" src="https://user-images.githubusercontent.com/78163337/112049574-1ae82c80-8b50-11eb-9a04-7d40bc4943b6.png">
+<img width="219" alt="image" src="https://github.com/hshf1/VorlesungC/assets/100713757/7f2d8ffb-fadc-45f0-b327-81539f6fcd1d">
 
 Dort geben wir „code-runner.runintermimal“ in die Suche ein und überprüfen, ob der Haken gesetzt ist. Falls nicht, setzen wir den entsprechenden Haken. 
 
-![image](https://user-images.githubusercontent.com/78163337/111459615-351ea680-871b-11eb-9819-b7dce6bfdf37.png)
+![image](https://github.com/hshf1/VorlesungC/assets/100713757/ae353239-9764-4341-8b11-05062cdae49a)
 
 ### Schritt 4
 
 Um den Debugger einzustellen und zu testen öffnen wir die Datei debugtest.c und klicken oben auf 'Run' dann 'Start Debugging' und gehen dann wie auf den Screenshots markiert vor:
 
-<img width="453" alt="image" src="https://user-images.githubusercontent.com/78163337/111460420-3ef4d980-871c-11eb-8171-68ef90b857eb.png">
+<img width="453" alt="image" src="https://github.com/hshf1/VorlesungC/assets/100713757/22d822e5-4a6c-4ff0-8f80-e6357a11f255">
 
-<img width="453" alt="image" src="https://user-images.githubusercontent.com/78163337/111460432-42886080-871c-11eb-8ad9-c00c8c94a59f.png">
+<img width="453" alt="image" src="https://github.com/hshf1/VorlesungC/assets/100713757/02b6aa6f-99e4-4925-ac82-bb55f948e7fe">
 
 Bei Windowssystemen öffnet sich eine .json Datei, welche wir wieder einfach schließen können. 
 Bei MacOS haben wir das in Schritt 1 schon alles erledigt und der Debugger sollte einfach funktionieren.
 Eine genauere Anleitung zum Debuggen findet ihr weiter unten.
 
 
- <img width="421" alt="image" src="https://user-images.githubusercontent.com/78163337/111458047-44045980-8719-11eb-8bdf-54a3d9e8febd.png">  
+ <img width="421" alt="image" src="https://github.com/hshf1/VorlesungC/assets/100713757/0d1bd197-0625-49ac-a1ee-a3a5fb743297">
   
 Wir gehen zuerst auf die Datei HelloWorld.c und starten das Programm, indem wir oben rechts auf Play drücken oder einen Rechtsklick im Code machen und Run Code wählen.
 
-![image](https://user-images.githubusercontent.com/78163337/112048960-41f22e80-8b4f-11eb-9cb2-14f6c10ee3bd.png)
+![image](https://github.com/hshf1/VorlesungC/assets/100713757/7c2836f5-a4e3-4314-bbb5-71a67eaad531)
   
 Jetzt sollte das Programm erfolgreich durchlaufen worden sein und wir sehen im unteren Terminal die printf-Ausgabe hello world.
 
-<img width="283" alt="image" src="https://user-images.githubusercontent.com/78163337/112049524-09068980-8b50-11eb-94c8-79f7167ca78e.png">
+<img width="283" alt="image" src="https://github.com/hshf1/VorlesungC/assets/100713757/c47ef79b-9d5d-4ec0-8741-962b3c4ca3dc">
+
 --->
