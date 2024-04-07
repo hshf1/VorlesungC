@@ -5,7 +5,7 @@ Bei Problemen und Fehlern schaut hier: [03_Fehlerbehebung](https://github.com/hs
 VSCode wird wahrscheinlich ein Update auf die Insiders-Version (Beta-Version) anbieten, wovon abgeraten wird.<br />
 Ein stabiler Betrieb ist wichtiger als die neuesten Features, die beim C-Programmieren kaum zum Tragen kommen werden.
 
-<img width="419" alt="image" src="https://user-images.githubusercontent.com/78163337/111457567-a446cb80-8718-11eb-9e1d-26213b51a86c.png">
+<img width="419" alt="image" src="https://github.com/hshf1/VorlesungC/assets/100713757/9d69026b-4db7-4297-9024-9dc0bf2e1925">
 
 Bei dieser Meldung also einfach auf `<Nicht mehr anzeigen>` klicken.
 
@@ -19,7 +19,7 @@ Ordnernamen und auch Dateinamen sollten weder Leerzeichen noch Umlaute enthalten
   <summary>Mit der Umgebung von VSCode vertraut machen</summary>
 
 Damit wir uns überhaupt zurechtfinden, schauen wir uns aber erstmal an was uns VSCode in der Grundansicht alles bietet:
-![VSCodeUserInterface](https://user-images.githubusercontent.com/81232074/139573863-45d9073b-3110-40dc-8c92-5878025da812.png)
+![VSCodeUserInterface](https://github.com/hshf1/VorlesungC/assets/100713757/89810d0d-07e8-4eb7-93ad-d770a4583267)
 
 In der Activity Bar können wir auswählen, was uns in der Side Bar angezeigt wird. Standardmäßig ist ganz oben 
 der Explorer, in dem wir unsere Dateien auswählen können, darunter 
@@ -45,11 +45,11 @@ In der Startansicht wählen wir `<„Open folder…“>`
 Hier wählen wir irgendeinen Ordner, in der wir unsere Programme speichern wollen.
 Höchstwahrscheinlich ist das ein leerer Ordner und wir erstellen nun unsere erste Datei darin. Denkt dran, dass weder Umlaute noch Leerzeichen im Ordner- oder Dateinamen enthalten sind.
   
-![image](https://user-images.githubusercontent.com/100713757/160576258-b32cd335-9008-454a-8c44-84c15d4fe8b9.png)
-  
+![image](https://github.com/hshf1/VorlesungC/assets/100713757/8588d259-44a8-43fb-9cb7-cb5772a7e9c2)
+
 Um eine neue Datei zu erstellen, gehen wir im VSCode Explorer neben dem Namen unseres Ordners und klicken auf das erste Button, dass Blatt mit einem plus und benennen unserer Datei, in meinem Fall z.B. helloworld.c. Wichtig ist, dass ihr die Endung .c habt, damit VSCode weiß, in welcher Sprache ihr programmieren wollt.
 
-![images](https://user-images.githubusercontent.com/100713757/160576382-884093a7-e1b5-4cf1-a55e-46d3fc850a89.png)
+![images](https://github.com/hshf1/VorlesungC/assets/100713757/c9b0649a-9b9e-4eb1-afe3-ba09df39a796)
 
 ### Schritt 2
   
@@ -78,11 +78,11 @@ Dieser Abschnitt setzt voraus, dass ihr das HSH_AddOn4VSC bereits installiert ha
 <summary> Schnellstart HSH_AddOn4VSC</summary>
 Wenn das HSH_Addon4VSC erfolgreich installiert wurde, dann findet ihr in der Activity Bar das HsH-Icon. Das sieht in etwa so aus:
 
-![image](https://github.com/hshf1/VSCode/assets/125041387/0e600dc2-371a-4bef-835a-9971f34ba85e)
+![image](https://github.com/hshf1/VorlesungC/assets/100713757/73207f6c-d553-43a6-bffd-48cc6dcbfc05)
 
 Jetzt beschäftigen wir uns kurz mit den Funktionalitäten des Addons. Hierfür klickt ihr einmal auf das HsH-Icon in der Acitivity Bar. Darauf hin solltet ihr im Explorer folgende Menüpunkte finden:
 
-![04_addon_settings](https://github.com/hshf1/VSCode/assets/125041387/c10f6e56-697b-4d0b-96c9-1f3e93e1f1cb)
+![04_addon_settings](https://github.com/hshf1/VorlesungC/assets/100713757/c0f97150-ec49-4b64-b41e-2e6c037d8222)
 
 `<GitHub: VSCode (HsH-Repository)>`: Ein Klick auf den Button öffnet das GitHub-Repository in dem man die Installationsanleitung, die ersten Schritte und Fehlerbehebungen findet.
 
@@ -92,7 +92,7 @@ Jetzt beschäftigen wir uns kurz mit den Funktionalitäten des Addons. Hierfür 
 
 `<Compiler>`: Ein Klick auf den Button öffnet die Einstellungen für Compiler. Derzeit unterstützt das HsH-Addon die Programmiersprachen C, Java und Python.
 
-![05_compiler_settings](https://github.com/hshf1/VSCode/assets/125041387/227fca23-57c7-4f01-8ec9-8857c1312f2d)
+![05_compiler_settings](https://github.com/hshf1/VorlesungC/assets/100713757/fcb97887-fb25-4bdb-b556-a0d7a41ae4e0)
 
 Mit einem Klick auf `<C-Compiler prüfen / installieren>`, `<Java-Compiler prüfen / installieren>` oder `<Python-Compiler prüfen / installieren>` in den jeweiligen Menü-Unterpunktten C-Compiler, Java-Compiler oder Python-Compiler überprüft ihr eure aktuelle Compiler-Konfiguration, wenn keine gefunden wird, dann wird ein Compiler für die ausgewählte Programmiersprache automatisch installiert, so dass ihr gleich los legen könnt.
 
@@ -100,7 +100,7 @@ Ihr könnt die entsprechenden Compiler mit einem Klick auf `< ... deinstallieren
 
 `<Einstellungen>`: Häufig sind gängige Probleme, wie zum Beispiel ein nicht funktionierender Debugger auf die Konfiguration von settings.json beziehungsweise tasks.json zurück zu führen. Daher findet sich unter "Einstellungen" auch eine Reihe von Optionen, die eine Konfiguration der beiden json-Dateien erleichtert.
 
-![06_einstellungen](https://github.com/hshf1/VSCode/assets/125041387/47327c59-a0f0-4038-b82f-547d940ec8c3)
+![06_einstellungen](https://github.com/hshf1/VorlesungC/assets/100713757/b2864631-a452-452e-8d48-5e774d94dc62)
 
 Die settings.json bzw. tasks.json kann mit einem Klick auf `<... überprüfen>` auf fehlende Konfigurationen überprüft werden. Sobald die Überprüfung abgeschlossen und die Anpassungen ergänzt wurden gibt das Addon eine Erfolgsmeldung aus.
 
@@ -120,27 +120,27 @@ Auch die tasks.json kann mit einem Klick auf `<tasks.json zurücksetzen>` zurüc
 <summary>Ein Problem mit dem Addon melden</summary>
 Der nachfolgende Abschnitt behandelt das Formular mit dem ihr ein auftrendes Problem des HsH-Addons melden könnt. Um das Formular zu öffnen, klickt einfach das das HsH-Logo in eurer Activity Bar und wählt dann den letzten Punkt `<Problem melden>` aus.  Als erstes werdet ihr aufgefordert eure Hochschul-Mailadresse einzugeben, hierzu vervollständigt ihr einfach eure Adresse in dem vorgegebenen Feld.
 
-![01_report_formular](https://github.com/hshf1/VSCode/assets/125041387/313b28d1-5bfa-4c8a-bcc6-cfe9d846abd4)
+![01_report_formular](https://github.com/hshf1/VorlesungC/assets/100713757/96c439f0-ac1e-48aa-b342-4d3ce5570101)
 
 Nach dem Abschicken des Problems erhaltet ihr eine Kopie der Meldung an eure E-Mail-Adresse. Sie ist außerdem hilfreich, um euch bei eventuellen Rückfragen oder individuellen Lösungesansätzen bezüglich eures Problems zu kontaktieren.
 
 Habt ihr die Eingabe eurer E-Mail-Adresse mit einem Druck auf die Enter-Taste bestätigt, werdet ihr im zweiten Schritt dazu aufgefordert, euer Problem zu erläutern.
 
-![02_report_formular](https://github.com/hshf1/VSCode/assets/125041387/8fa7d5e7-702b-43c0-b590-c76b4b70ee15)
+![02_report_formular](https://github.com/hshf1/VorlesungC/assets/100713757/0f27f0f6-f0b2-42cf-8f62-94114faf644e)
 
 Hier beschreibt ihr kurz den Zusammenhang eures Problems. Wenn ihr fertig seid, drückt ihr erneut auf "Enter". Im dritten Schritt könnt der Anfertigung eines Screenshots zustimmen, oder ablehnen.
 
-![03_report_problem](https://github.com/hshf1/VSCode/assets/125041387/f57b01f5-c8b1-46a2-8304-2b434ecdee41)
+![03_report_problem](https://github.com/hshf1/VorlesungC/assets/100713757/eff0c808-8084-43f7-b7f1-91baf3ac3241)
 
 Hierfür klickt ihr entweder auf "Ja" oder "Nein". Bei einem Klick auf "Ja" wird automatisch ein Screenshot von eurem aktuellen Bildschirm angefertigt, sodass ein späteres Nachvollziehen des aufgetretenden Problems leichter nachvollziehbar wird.
 
 Im vierten Schritt werdet ihr gefragt ob ihre eure momentan geöffnete Datei an die Problemmeldung anhängen möchtet. Eine Kopie der Datei, die im Zusammenhang mit eurem Problem hängt, kann eine Lösung des Problems deutlicher spezifizieren. Möchtet ihr die Datei anhängen, dann bestätgit es mit einem Klick auf "Ja" oder lehnt mit "Nein" ab.
 
-![04_report_formular](https://github.com/hshf1/VSCode/assets/125041387/9fbc9a4b-2c3a-41ba-9cbc-2d79e4d20a2b)
+![04_report_formular](https://github.com/hshf1/VorlesungC/assets/100713757/03b4a46c-2d71-4350-9c16-38d1baa62627)
 
 Euere Meldung sollte nun vorbereitet sein, so dass ihr zum Schluss noch gefragt werdet, ob sie absenden wollt. "Klickt hier auf "Ja" um euer Problem zu melden oder auf "Nein" um den Vorgang abzubrechen
 
-![05_report_formular](https://github.com/hshf1/VSCode/assets/125041387/479e131e-e30a-4532-aab5-d05904139cee)
+![05_report_formular](https://github.com/hshf1/VorlesungC/assets/100713757/459b97bf-294b-41b2-b1b5-e1b18248f989)
 
 Ihr könnt auch in jedem Schritt des Formulars den Vorgang abbrechen, in dem ihr auf die "ESC"-Taste drückt.
 </details>
@@ -155,34 +155,34 @@ Live Share ist eine optionale Erweiterung für euch. Ihr könnt damit zusammen m
   <summary>Live Share Anleitung</summary>
 Zur Verwendung von Live Share muss die Erweiterung Live Share Extension Pack in VSCode installiert sein. Dieses sollte bei der Installation von VSCode mitinstalliert worden sein. Falls dies nicht der Fall ist, z.B. weil nach einer alten Anleitung installiert wurde, dann installiert ihr die Erweiterung, indem ihr Links auf die 3+1 Würfel drauf klickt und im Suchfenster Live Share Extension Pack eingebt.
 
-![Erweiterung LiveShare](https://user-images.githubusercontent.com/100713757/160299351-5c54548a-d681-4181-b5f5-3c4b2e6700cb.png)
+![Erweiterung LiveShare](https://github.com/hshf1/VorlesungC/assets/100713757/886ed166-4474-4e5e-b1aa-334fcd78e0ea)
   
 Dann müsst ihr nur die Erweiterung installieren und VSCode neustarten.
 Nach dem Neustart sollte unten links im blauen Balken ein Button von LiveShare erscheinen.
 
-![LiveShare Button](https://user-images.githubusercontent.com/100713757/160299453-9d938a4f-389c-49b5-b110-bfa4a1e433ac.png)
+![LiveShare Button](https://github.com/hshf1/VorlesungC/assets/100713757/1e6db185-428c-45fb-97b1-1c554e825ec8)
 
 Dort klicken wir auf den Live Share Button und es öffnet sich oben ein Menü mit der Auswahl, wie man sich anmelden möchte. Es besteht die Möglichkeit, mit einem vorhandenen GitHub Account sich anzumelden oder mit einem Microsoft Konto. Einen Microsoft Konto habt ihr von der Hochschule bekommen, dieser kann auch hier verwendet werden.
   
-![LiveShare Anmeldung](https://user-images.githubusercontent.com/100713757/160299585-7ebcbdd2-83c6-4ff6-a569-6239965a048b.png)
-  
+![LiveShare Anmeldung](https://github.com/hshf1/VorlesungC/assets/100713757/d9131605-b8e3-440b-98bb-aba34270797a)
+
 Nach der Anmeldung ist unten links im blauen Balken neben dem Live Share Button nun auch ein Button mit dem Namen eures Kontos, den ihr zur Anmeldung genutzt habt.
   
-![LiveShare nach Anmeldung](https://user-images.githubusercontent.com/100713757/160299637-de41d750-f513-4321-bfa5-de56354c1e07.png)
+![LiveShare nach Anmeldung](https://github.com/hshf1/VorlesungC/assets/100713757/c2c92fa1-c263-4338-8223-48646f4e7b43)
   
 Klicken wir nun auf unseren Namen, erscheint oben ein Menü. Da können wir auswählen, ob wir eine normale Collaboration Session starten wollen, wo jeder schreiben und lesen kann, eine read-only Collaboration Session starten wollen, wo jeder eingeladene nur lesen kann oder ob wir einer vorhandenen Collaboration Session mittels eines links beitreten wollen.
   
-![Live Share Collaboration](https://user-images.githubusercontent.com/100713757/160299828-b53d5fb5-570c-460f-89c2-e0e95115dffd.png)
+![Live Share Collaboration](https://github.com/hshf1/VorlesungC/assets/100713757/6c5f1ceb-9b2c-43f5-8aa0-59892e18febe)
   
 Wir können auch neben dem Namen auf den Live Share Button klicken. Der öffnet dann eine normale Collaboration Session und man bekommt rechts unten eine Auswahlmöglichkeit.
   
-![LiveShare Button](https://user-images.githubusercontent.com/100713757/160299918-62a373dd-8545-44ac-ad63-c17ed769d1e3.png)
+![LiveShare Button](https://github.com/hshf1/VorlesungC/assets/100713757/877822cd-5e52-450b-84c1-419bae231f9f)
 
 Man kann auch hier auswählen, ob man die normalle Session in eine read-only Session umwandeln möchte und man kann den Einladungslink nochmal kopieren. Diesen Link könnt ihr allen schicken, die beitreten sollen. Auch eingeladene Personen benötigen Live Share.
   
 Wenn wir während der Session wieder unten links im blauen Balken auf unseren Namen klicken, so öffnet sich oben wieder ein Menü.
   
-![LiveShare Exit](https://user-images.githubusercontent.com/100713757/160300082-1aeb9b75-39a1-4a64-a0c1-e61d8fa6da6e.png)
+![LiveShare Exit]()
   
 Dort können wir den Einladungslink wieder kopieren, einen Audio Call starten oder die Session beenden.
   
