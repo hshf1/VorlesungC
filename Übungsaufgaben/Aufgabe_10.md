@@ -38,7 +38,7 @@
 <details>
  <summary>Tipp - Vokale</summary>
  
- - Zeichen können auch in Zahlen umgewandelt werden. Dafür gibt es eine bestimmte Tabelle (ASCII)
+ - Zeichen können auch als Zahlen dargestellt werden. Dafür gibt es eine bestimmte Tabelle (ASCII)
  - Mittels einer oder mehrerer logische(n/r) Operation(en) können die gewünschten Kriterien kombiniert werden. Möglicherweise macht auch die CASE Anweisung Sinn. 
  
  </details>
