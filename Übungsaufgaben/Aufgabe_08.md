@@ -215,6 +215,7 @@ So könnte der Code aussehen
 
  ```   
   </details>
+ </details>
   
   # Level 2 ~ Freiwillig - Klausuraufgabe zum Thema
   <details>
