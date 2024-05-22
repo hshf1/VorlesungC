@@ -173,16 +173,16 @@ Die Variable m ist 1, also werden die Werte 5 und 6 verglichen. Da 5 kleiner als
   ## 8.5
 
 <details>
-<summary>Klicken zum Öffnen</summary>
+  <summary>Klicken zum Öffnen</summary>
   Erweitern Sie nun Ihr Programm um folgende Funktionen.
   
 
-### Feld mit Zufallszahlen Initialisieren
+  ### Feld mit Zufallszahlen Initialisieren
   
   Das Feld soll jetzt mit Zufallszahlen initialisiert werden.  
   Entwickeln Sie die Funktion
   > void feld_initRand(int [10])
-> 
+  > 
   nutzen Sie für die Initialisierung des Feldes folgende Funktionen.
 
   >rand() in <stdlib.h>
@@ -194,12 +194,30 @@ Die Variable m ist 1, also werden die Werte 5 und 6 verglichen. Da 5 kleiner als
 
   Definieren Sie ebenso eine #define Variable, MAX_ZUFALLSZAHL, welche die größte Zufallszahl darstellt, die Sie ermitteln wollen.
 
-### Tipp 1 (Info) - feld_initRand
-<details>
-<summary>Klicken zum Öffnen</summary>
+  ### Tipp 1 (Info) - feld_initRand
+  <details>
+  <summary>Klicken zum Öffnen</summary>
+  So könnte der Code aussehen:
+   ```C
+
+  
+  /* Zufallsgenerator initialisieren */
+  
+  srand (time(NULL));
+
+  /* Zufallszahlen generieren, */	
+  i_zufallszahl = (MAX_ZUFALLSZAHL * rand() ) / RAND_MAX;
+
+  
+
+ ```   
 
   </details>
- </details>
+</details>
+
+
+
+
   
   # Level 2 ~ Freiwillig - Klausuraufgabe zum Thema
   <details>
