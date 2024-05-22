@@ -182,10 +182,13 @@ Die Variable m ist 1, also werden die Werte 5 und 6 verglichen. Da 5 kleiner als
   Das Feld soll jetzt mit Zufallszahlen initialisiert werden.  
   Entwickeln Sie die Funktion
   > void feld_initRand(int [10])
+> 
   nutzen Sie für die Initialisierung des Feldes folgende Funktionen.
-  Die Funktion rand() in <stdlib.h> gibt eine pseudo-zufällige Ganzzahl zwischen 0 und RAND_MAX.
+  Die Funktion 
+  >rand() in <stdlib.h>
+>gibt eine pseudo-zufällige Ganzzahl zwischen 0 und RAND_MAX.
   Um den Randomizer zu initialisieren (einen seed-Wert zu geben), wird die Funktion srand (time(NULL)); genutzt.
-  > Time ist in der Bibliothek <time.h>. Damit wird der Seed-Wert auf die seit 1.1.1970 vergangen Sekunden gesetzt.
+  Time ist in der Bibliothek <time.h>. Damit wird der Seed-Wert auf die seit 1.1.1970 vergangen Sekunden gesetzt.
 
   Definieren Sie ebenso eine #define Variable, MAX_ZUFALLSZAHL, welche die größte Zufallszahl darstellt, die Sie ermitteln wollen.
 
