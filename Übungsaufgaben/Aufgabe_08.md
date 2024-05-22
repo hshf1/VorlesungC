@@ -190,7 +190,7 @@ Die Variable m ist 1, also werden die Werte 5 und 6 verglichen. Da 5 kleiner als
   >
   Die Funktion rand() gibt eine pseudo-zufällige Ganzzahl zwischen 0 und RAND_MAX aus. RAND_MAX ist in stdlib.h deklariert.
   Um den Randomizer zu initialisieren (einen seed-Wert zu geben), wird die Funktion srand (time(NULL)); genutzt.
-   Damit wird der Seed-Wert auf die seit 1.1.1970 vergangen Sekunden gesetzt.
+  Damit wird der Seed-Wert auf die seit 1.1.1970 vergangen Sekunden gesetzt.
 
   Definieren Sie ebenso eine #define Variable, MAX_ZUFALLSZAHL, welche die größte Zufallszahl darstellt, die Sie ermitteln wollen.
 
@@ -198,21 +198,19 @@ Die Variable m ist 1, also werden die Werte 5 und 6 verglichen. Da 5 kleiner als
   <details>
   <summary>Klicken zum Öffnen</summary>
   So könnte der Code aussehen:
-   ```C
-
-      
-      #define Max_Zufallszahl 1000  
-      
-      //Zufallsgenerator initialisieren 
-      
-      srand (time(NULL));
+     ```C
+    #include <stdio.h>
+        
+        
+     int main(){
+        
+      int init;
+      char reihenfolge;
+      short anz;
+      // Feld array mit 10 Feldern vom Typ short definieren und jedes Element
+      // mit 0 initialisieren
     
-      //Zufallszahlen generieren, 
-      i_zufallszahl = (MAX_ZUFALLSZAHL * rand() ) / RAND_MAX;
-    
-      
-
- ```   
+     ```   
 
   </details>
 </details>
