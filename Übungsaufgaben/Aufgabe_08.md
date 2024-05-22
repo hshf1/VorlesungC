@@ -196,24 +196,15 @@ Die Variable m ist 1, also werden die Werte 5 und 6 verglichen. Da 5 kleiner als
 
   ### Tipp 1 (Info) - feld_initRand
   So könnte der Code aussehen:
-      <details>
-         <summary> Klicken zum Programmvorlage zu öffnen </summary>
+  <details>
+<summary> Klicken zum Programmvorlage zu öffnen </summary>
                 
-         ```C
-         #include <stdio.h>
+```C
+#include <stdio.h>
 
+```   
 
-         int main(){
-
-         int init;
-         char reihenfolge;
-         short anz;
-         // Feld array mit 10 Feldern vom Typ short definieren und jedes Element
-         // mit 0 initialisieren
-
-         ```   
-
-      </details>
+</details>
 
 </details>
 </details>
