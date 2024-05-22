@@ -220,6 +220,7 @@ Die Variable m ist 1, also werden die Werte 5 und 6 verglichen. Da 5 kleiner als
 
   </details>
 </details>
+</details>
 
 
 
