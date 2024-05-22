@@ -195,7 +195,6 @@ Die Variable m ist 1, also werden die Werte 5 und 6 verglichen. Da 5 kleiner als
   Definieren Sie ebenso eine #define Variable, MAX_ZUFALLSZAHL, welche die größte Zufallszahl darstellt, die Sie ermitteln wollen.
 
   ### Tipp 1 (Info) - feld_initRand
-  <details>
   So könnte der Code aussehen:
       <details>
      <summary> Klicken zum Programmvorlage zu öffnen </summary>
@@ -218,7 +217,6 @@ Die Variable m ist 1, also werden die Werte 5 und 6 verglichen. Da 5 kleiner als
      ```   
     </details>
 
-  </details>
 </details>
 </details>
 
