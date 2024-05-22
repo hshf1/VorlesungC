@@ -198,19 +198,26 @@ Die Variable m ist 1, also werden die Werte 5 und 6 verglichen. Da 5 kleiner als
   <details>
   <summary>Klicken zum Öffnen</summary>
   So könnte der Code aussehen:
-     ```C
-    #include <stdio.h>
+      <details>
+ <summary> Klicken zum Programmvorlage zu öffnen </summary>
         
-        
-     int main(){
-        
-      int init;
-      char reihenfolge;
-      short anz;
-      // Feld array mit 10 Feldern vom Typ short definieren und jedes Element
-      // mit 0 initialisieren
+ ```C
+#include <stdio.h>
     
-     ```   
+    
+ int main(){
+    
+  int init;
+  char reihenfolge;
+  short anz;
+  // Feld array mit 10 Feldern vom Typ short definieren und jedes Element
+  // mit 0 initialisieren
+    
+    
+
+    
+ ```   
+</details>
 
   </details>
 </details>
