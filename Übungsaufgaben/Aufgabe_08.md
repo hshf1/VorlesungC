@@ -200,7 +200,17 @@ Die Variable m ist 1, also werden die Werte 5 und 6 verglichen. Da 5 kleiner als
 <summary> Klicken zum Programmvorlage zu öffnen </summary>
                 
 ```C
-#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+      
+#define Max_Zufallszahl 1000  
+      
+// Zufallsgenerator initialisieren 
+      
+srand (time(NULL));
+    
+//Zufallszahlen generieren, 
+i_zufallszahl = (MAX_ZUFALLSZAHL * rand() ) / RAND_MAX;h>
 
 ```   
 
