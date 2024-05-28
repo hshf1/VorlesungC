@@ -2,7 +2,6 @@
 #include <stdio.h>
 typedef struct ARTIKEL {
 	int Nummer;
-
 	float Preis;
 	char Name[11];
 } artikel_t;
