@@ -32,7 +32,7 @@ Schrittweite beginnend ab Winkel 0 bis 360° die o.g. 4 Werte je Zeile separiert
 ## Teil 2
 
 - Lesen Sie in der Funktion ```leseCSV```  die Datei wieder ein zuerst die Überschrift (```char
-Array[50]```) nutzen Sie dafür ```fgets()``` und dann die Messwerte in ein
+Array[80]```) nutzen Sie dafür ```fgets()``` und dann die Messwerte in ein
 ```Messwertarray[1000][4]``` (```scanf(%f;%f;…)```) Geben Sie die Werte ohne Semikolon
 mit Tab und Feldweite 7 bei 3 Nachkommastellen auf dem Bildschirm aus. Lesen Sie max.
 100 Werte oder bis Sie EOF erhalten.
