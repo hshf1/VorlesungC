@@ -1,6 +1,6 @@
 // Folie 4 – strukturinit.c
 
-typedef struct ARTIKEL {
+typedef struct artikel_s {
     int Artikelnummer;
     char ArtikelBezeichnung[20];
     double Preis;
