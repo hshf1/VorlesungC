@@ -4,8 +4,7 @@
 
 int main(){
 
-    int *ptr;
-    ptr = NULL;
+    int *ptr= NULL;
     printf("Pointer zu Anfang:\n");
     printf("   Adr: \t%p\n", ptr);
 
