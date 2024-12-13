@@ -16,7 +16,7 @@ Ein Lagerplatz wird beschrieben durch eine Struktur ```PLATZ_T```, die folgende 
   - Fahrzeug: Als Zeichenkette char* mit Fahrzeugtyp ("Kombi","Limousine","Cabrio")
   - KW:       Die Motorstärke als KW-Ganzzahl hinterlegt
 
-Deklarieren Sie über ```typedef``` den Datentypen ```TYP_T```
+Deklarieren Sie über ```typedef``` den Datentypen ```TYP_T```.<br>
 Deklarieren Sie die Datenstruktur für ```PLATZ_T``` und definieren Sie ein Feld mit Namen ```lager``` mit 20 Einträgen von Typ ```PLATZ_T```.
 Diese 20 Plätze sollen durch Änderung beliebig erweitert werden.
 Initialisieren Sie in Ihrem Hauptprogramm die ersten 5 Einträge des Feldes ```lager``` mit beliebigen Werten (Fest oder Einlesen von der Tastatur).
