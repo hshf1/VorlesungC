@@ -1,7 +1,7 @@
 // Folie 4 – felderstruktur.c
 #include <stdio.h>
 #include <string.h>
-typedef struct ARTIKEL {
+typedef struct artikel_s {
     int Nummer;
     float Preis;
     char Name[10];
@@ -17,7 +17,7 @@ int main(void) {
         fflush(stdin);
         fgets(Eingabe,10,stdin);
         strcpy(ArtFeld[i].Name, Eingabe);
-        printf("%d \t %5.2f \t %s\n", ArtFeld[i].Nummer, ArtFeld[i].Preis,
+        printf("%d    %5.2f   %s\n", ArtFeld[i].Nummer, ArtFeld[i].Preis,
          ArtFeld[i].Name);
     }
     
