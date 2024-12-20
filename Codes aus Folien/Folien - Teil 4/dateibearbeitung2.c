@@ -13,9 +13,10 @@ int main(void) {
 	
     for (i = 0; i < 3; i++) {
         fileInput[i]= (char *) malloc(51);
+	if (fileInput[i]== NULL) break;
         res=fgets(fileInput[i], 51, filePointer );
         if (res == NULL) break;
-            puts(fileInput[i]);
+        puts(fileInput[i]);
     }
   
     // Speicher freigeben
