@@ -13,12 +13,13 @@ int main(void) {
     if (filePointer !=NULL) {
         do{
             fileInput[i]= (char *) malloc(51);
+	    if (fileInput[i]== NULL) break;
             res=fgets(fileInput[i], 50, filePointer );
             puts(fileInput[i]);
             i++;
         } while (res!=NULL && i < 200);
         for (y = 0; y < i; y++) {
-            free(fileInput[y]);
+            if (fileInput[i]!= NULL) free(fileInput[y]);
             fileInput[y]=NULL;
         }
 
