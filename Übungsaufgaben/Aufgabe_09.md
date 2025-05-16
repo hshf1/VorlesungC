@@ -102,7 +102,7 @@ Im ersten Punkt mit "Buchstabe einlesen", ist noch eine Fehlerabfrage eingebaut,
   
   Erweitern Sie Ihr Programm um eine weitere Funktion, die überprüft, ob die eingegebene Zahl mindestens 5-stellig ist und diese bei Bedarf korrigiert.
   
-  ```korrigieren2``` soll nach der Funktion aus Teil 1 aufgerufen werden. Füllen Sie dazu die fehlenden Stellen **rechts** neben der Zahl mit 0 auf, bis 5 Stellen erreicht sind.
+  ```korrigieren2``` soll nach der Funktion aus Teil 1 aufgerufen werden. Füllen Sie dazu die fehlenden Stellen **rechts** neben der Zahl mit 0en auf, bis 5 Stellen erreicht sind. D.h. aus einer 2 wird eine 20000.
   
    > void korrigieren2( int* )
    > 
