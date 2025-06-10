@@ -12,9 +12,9 @@ int main(void)
     printf("Integer Format      c: #%c#\n", ZahlINT);
     printf("Integer Format      x: #%x#\n", ZahlINT);
     printf("Integer Format      X: #%X#\n", ZahlINT);
-    printf("Neg Integer Format  d: #%d#\n", ZahlNEG);
-    printf("Neg Integer Format  u: #%u#\n", ZahlNEG);
-    printf("Integer Format      X: #%X#\n", ZahlNEG);
+    printf("Neg Integer Format hd: #%hd#\n", ZahlNEG);
+    printf("Neg Integer Format hu: #%hu#\n", ZahlNEG);
+    printf("Integer Format     hX: #%hX#\n", ZahlNEG);
     printf("Float Format        f: #%f#\n", ZahlFLOAT);
     
     return 0;
