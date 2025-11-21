@@ -122,19 +122,7 @@ finden sie ein Bespiel.
     {
         for (int j = 0; j < 8; j++) // Innere for-Schleife
         {
-            if ((i % 2 == 0) && (j % 2 == 0))
-            {
-                printf("[O][X]");
-            }
-            else if ((i % 2 != 0) && (j % 2 == 0))
-            {
-                printf("[X][O]");
-            }
-
-            if (j == 7)
-            {
-                printf("\n");
-            }
+         rParalel = calculateTwoResistorsInParallel( calculateE12Resistor(i), calculateE12Resistor(j) );
         }
     }
 ```
