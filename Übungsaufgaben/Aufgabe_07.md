@@ -103,12 +103,9 @@ Zur Berechnung des besten Einzelwiderstandes sollen Sie eine for-Schleife verwen
 <details>
 <summary>Aufgabenstellung zu Teil 4</summary>
 
-Eweitern Sie nun Ihr Programm um zwei weitere Funktionen. Die eine Funktion soll die
-Parallelschaltung aus zwei Widerständen berechnen und zurückgeben. Die Andere soll den, vom User eingebenen, Wert mit berechneten Parallelwiderständen vergleichen und auf der Konsole das Ergebnis ausgeben.
-
-Zur Berechnung der Parallelschaltung erstellen Sie die Funktion "calculateTwoResistorsInParallel"
-vom Typ float. An die Funktion sollen die Werte von zwei Widerständen des Typs float übergeben
-werden können.
+Eweitern Sie nun Ihr Programm um zwei weitere Funktionen. 
+Die eine Funktion soll die Parallelschaltung aus zwei Widerständen berechnen und zurückgeben. Dazu erstellen Sie die Funktion "calculateTwoResistorsInParallel"
+vom Typ float. An die Funktion sollen die Werte von zwei Widerständen des Typs float übergeben werden können und der resultierende Parallelwiderstand wird zurückgegeben.
 
 Die andere Funktion soll vom Typ void sein und den Namen "findBestTwoResistorsInParallel"
 haben. Die Umsetzung ist analog zur Funktion "findBestSingleResistor". Statt einer einfachen
