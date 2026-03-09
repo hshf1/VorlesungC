@@ -9,7 +9,13 @@ Hier finden sie alles, was sie für die C-Programmieren Übungen brauchen.
 
 **Bitte beachten sie: Dieser Guide gilt nur für Windows!**
 
-Installieren zu bitte zunächst Visual Studio Code (**NICHT** Visual Studio)
+Installieren zu bitte zunächst Visual Studio Code (**NICHT** Visual Studio) und die Plugins
+
+C/C++
+
+Code Runner
+
+<img width="352" height="567" alt="image" src="https://github.com/user-attachments/assets/51b7e435-c887-4ef1-8747-68de8e19aaef" />
 
 Laden sie dann dieses Repository herunter:
 
@@ -24,6 +30,8 @@ Anschließend öffnen sie Visual Studio Code und klicken auf "Open Folder":
 <img width="338" height="263" alt="image" src="https://github.com/user-attachments/assets/58c02c76-2ecc-4503-8cba-74b64919766c" />
 
 Hier wählen sie dann den Ort aus, wo sie das Zip File entpackt haben:
+
+**Wählen sie WIRKLICH den angezeigten Ordner, sonst funktioniert es nicht!**
 
 <img width="848" height="443" alt="image" src="https://github.com/user-attachments/assets/f2e6cc69-6dc7-4b99-8b64-09e2290249ab" />
 
