@@ -9,7 +9,7 @@ Hier finden sie alles, was sie für die C-Programmieren Übungen brauchen.
 
 **Bitte beachten sie: Dieser Guide gilt nur für Windows!**
 
-Installieren zu bitte zunächst Visual Studio Code (**NICHT** Visual Studio) und die Plugins
+Installieren zu bitte zunächst Visual Studio **Code** (**NICHT** Visual Studio) und die Plugins
 
 C/C++
 
@@ -21,7 +21,7 @@ Laden sie dann dieses Repository herunter:
 
 <img width="544" height="382" alt="image" src="https://github.com/user-attachments/assets/14b1d3f8-58e0-4dd7-bdcd-5cc23a9fc0f5" />
 
-Dann entspacken sie den Ordner an eine sinnvolle Stelle (z.B. unter C:\Studium\02_Semester\)
+Dann entpacken sie den Ordner an eine sinnvolle Stelle (z.B. unter C:\Studium\02_Semester\)
 
 <img width="561" height="184" alt="image" src="https://github.com/user-attachments/assets/03542c74-65b6-44c3-9b2f-540aeb8ab835" />
 
