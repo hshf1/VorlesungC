@@ -31,6 +31,8 @@ Lösen Sie dazu die folgenden Teilaufgaben:
     - calloc(5, sizeof(int)) -> Gute Praxis ist es, die Datengröße des Typs so einzutragen. Datentyp *int* umfasst nicht auf allen Systemen 4 Byte. Wenn doch, dann entspricht dies dem Aufruf calloc(5,4) 
   
   https://www.tutorialspoint.com/c_standard_library/c_function_calloc.htm
+
+  
   Hinweis: strok() verändert den eingegebenen String. Der Originalsatz wird verändert. Der Originalsatz kann nicht mehr ausgegeben werden. 
   
   </details>
