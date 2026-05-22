@@ -11,7 +11,7 @@ Lösen Sie dazu die folgenden Teilaufgaben:
 - Legen Sie ein char*-Feld mit 5 Elementen mit dem Namen ````wortSpeicher```` an. Für jedes Feldelement reservieren Sie mit dem Befehl ```calloc``` Speicher für mindestens 20 Zeichen.
 - Ermitteln Sie die ersten 5 Worte innerhalb der eingegebenen Zeichenkette und kopieren Sie jedes einzelne Wort in den Wortspeicher. 
   - Hinweis zur erlaubten Eingabe eines Satzes: Worte sind durch das Leerzeichen getrennt, der Satz endet immer mit einem "."
-- Geben Sie jedes Wort des Wortspeichers auf dem Bildschirm aus, falls der Satz weniger als 5 Wörter hat.
+- Geben Sie jetzt den eingegebenen Satz und jedes Wort des Wortspeichers auf dem Bildschirm aus.
 
 
 ## Info - calloc
